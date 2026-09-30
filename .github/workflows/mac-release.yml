@@ -89,7 +89,32 @@ jobs:
       - name: Overlay macOS layer and stamp the version
         run: |
           set -euo pipefail
-          rm -rf macos && cp -R _mac/macos macos && rm -rf _mac
+          rm -rf macos && cp -R _mac/macos macos
+          # Until a tag contains the macOS PR, carry in what it adds outside
+          # macos/: the Mac string variants (keys the tag lacks, nothing
+          # it has) and start.js's platform-aware user agent.
+          python3 - <<'PY'
+          import json, pathlib
+          for src in pathlib.Path("_mac/client/languages").glob("*.json"):
+              dst = pathlib.Path("client/languages") / src.name
+              if src.name == "language_map.json" or not dst.exists():
+                  continue
+              theirs = json.loads(dst.read_text(encoding="utf-8"))
+              ours = json.loads(src.read_text(encoding="utf-8"))
+              added = {k: v for k, v in ours.items() if k not in theirs}
+              if added:
+                  theirs.update(added)
+                  dst.write_text(json.dumps(theirs, ensure_ascii=False, indent=4) + "\n", encoding="utf-8")
+                  print(f"{src.name}: +{len(added)} Mac strings")
+          start = pathlib.Path("client/api_patches/start.js")
+          js = start.read_text(encoding="utf-8")
+          if "process.platform === 'darwin'" not in js:
+              start.write_text(js.replace(
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ",
+                  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "), encoding="utf-8")
+              print("start.js: Mac user agent")
+          PY
+          rm -rf _mac
           version="${{ matrix.tag }}"; version="${version#v}"
           printf '__version__ = "%s"\n' "$version" > client/version.py
 
