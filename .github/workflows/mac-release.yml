@@ -80,13 +80,27 @@ jobs:
           repository: ${{ env.UPSTREAM }}
           ref: ${{ matrix.tag }}
 
+      - name: Does the tag carry the macOS layer?
+        id: layer
+        run: |
+          # Since #337 upstream ships macos/ itself; from then on the tag's
+          # own layer is the reviewed one and must not be overwritten.
+          if [ -f macos/winzapp_mac/__init__.py ]; then
+            echo "in_tag=true" >> "$GITHUB_OUTPUT"
+            echo "Using the macOS layer from ${{ matrix.tag }}"
+          else
+            echo "in_tag=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: The macOS layer
+        if: steps.layer.outputs.in_tag != 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ env.MAC_BRANCH }}
           path: _mac
 
-      - name: Overlay macOS layer and stamp the version
+      - name: Overlay macOS layer (tags before #337)
+        if: steps.layer.outputs.in_tag != 'true'
         run: |
           set -euo pipefail
           rm -rf macos && cp -R _mac/macos macos
@@ -115,6 +129,10 @@ jobs:
               print("start.js: Mac user agent")
           PY
           rm -rf _mac
+
+      - name: Stamp the version
+        run: |
+          set -euo pipefail
           version="${{ matrix.tag }}"; version="${version#v}"
           printf '__version__ = "%s"\n' "$version" > client/version.py
 
