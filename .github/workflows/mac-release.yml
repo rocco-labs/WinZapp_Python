@@ -130,9 +130,16 @@ jobs:
           PY
           rm -rf _mac
 
-      - name: Stamp the version
+      - name: Stamp the version (tags before the release-tag version fix)
+        # Since upstream #351 the build refuses a modified tracked file, and
+        # since #401 the Mac layer takes the version from the release tag
+        # itself (winzapp_mac/version_mac.py). Stamp only older tags.
         run: |
           set -euo pipefail
+          if [ -f macos/winzapp_mac/version_mac.py ]; then
+            echo "Tag takes its version from WinZappReleaseTag; not stamping"
+            exit 0
+          fi
           version="${{ matrix.tag }}"; version="${version#v}"
           printf '__version__ = "%s"\n' "$version" > client/version.py
 
@@ -172,6 +179,8 @@ jobs:
           WINZAPP_NOTARY_KEY_ID: ${{ secrets.NOTARY_KEY_ID }}
           WINZAPP_NOTARY_ISSUER: ${{ secrets.NOTARY_ISSUER }}
           WINZAPP_MAC_RELEASES_REPO: ${{ github.repository }}
+          # The checkout has no tags; build_app checks HEAD is this tag's commit.
+          WINZAPP_RELEASE_TAG: ${{ matrix.tag }}
         run: python macos/build_app.py --zip
 
       - name: Remove signing material
@@ -183,7 +192,9 @@ jobs:
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: ${{ matrix.tag }}-${{ matrix.target.arch }}
-          path: macos/dist/WinZapp-macOS-${{ matrix.target.arch }}.zip
+          path: |
+            macos/dist/WinZapp-macOS-${{ matrix.target.arch }}.zip
+            macos/dist/WinZapp-macOS-provenance-${{ matrix.target.arch }}.json
           if-no-files-found: error
 
   publish:
@@ -214,5 +225,7 @@ jobs:
           jq -r '.body // ""' upstream.json > notes.md
           flags=()
           case "$(echo "$TAG" | tr '[:upper:]' '[:lower:]')" in *alpha*) flags+=(--prerelease);; esac
-          gh release create "$TAG" WinZapp-macOS-*.zip SHA256SUMS.txt \
+          # Provenance (upstream #351) exists for tags that build_app ties to
+          # an official commit; the Mac updater refuses a release without it.
+          gh release create "$TAG" WinZapp-macOS-*.zip SHA256SUMS.txt $(ls WinZapp-macOS-provenance-*.json 2>/dev/null) \
             --repo "$GITHUB_REPOSITORY" --title "$name" --notes-file notes.md "${flags[@]}"
