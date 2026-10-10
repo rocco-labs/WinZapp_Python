@@ -50,7 +50,9 @@ jobs:
           fi
           upstream=$(gh api "repos/$UPSTREAM/releases?per_page=30" \
             --jq '[.[] | select(.draft | not)]')
-          stable=$(echo "$upstream" | jq -r '[.[] | select((.tag_name + .name | ascii_downcase | contains("alpha")) | not)][0].tag_name // empty')
+          # The newest stable can be older than the last 30 releases (alphas
+          # ship several a day), so ask for it directly.
+          stable=$(gh api "repos/$UPSTREAM/releases/latest" --jq 'select((.tag_name + .name | ascii_downcase | contains("alpha")) | not) | .tag_name' 2>/dev/null || true)
           alpha=$(echo "$upstream" | jq -r '[.[] | select(.tag_name + .name | ascii_downcase | contains("alpha"))][0].tag_name // empty')
           ours=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '.[].tag_name')
           todo=()
@@ -188,7 +190,20 @@ jobs:
           WINZAPP_MAC_RELEASES_REPO: ${{ github.repository }}
           # The checkout has no tags; build_app checks HEAD is this tag's commit.
           WINZAPP_RELEASE_TAG: ${{ matrix.tag }}
-        run: python macos/build_app.py --zip
+        run: |
+          set +e -uo pipefail
+          # build_app checks the tag against the official repository through
+          # GitHub's unauthenticated API, which shared runner addresses often
+          # exhaust. Retry only that refusal; any other failure stops here.
+          for attempt in 1 2 3 4 5; do
+            python macos/build_app.py --zip 2>&1 | tee "$RUNNER_TEMP/build.log"
+            status=${PIPESTATUS[0]}
+            [ "$status" -eq 0 ] && exit 0
+            grep -q "GitHub unreachable or rate-limited" "$RUNNER_TEMP/build.log" || exit "$status"
+            echo "::warning::GitHub API rate-limited (attempt $attempt); retrying in $((attempt * 120)) s"
+            sleep $((attempt * 120))
+          done
+          exit 1
 
       - name: Remove signing material
         if: always()
