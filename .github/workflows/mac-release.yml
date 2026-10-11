@@ -190,8 +190,27 @@ jobs:
           WINZAPP_MAC_RELEASES_REPO: ${{ github.repository }}
           # The checkout has no tags; build_app checks HEAD is this tag's commit.
           WINZAPP_RELEASE_TAG: ${{ matrix.tag }}
+          WINZAPP_CI_GITHUB_TOKEN: ${{ github.token }}
         run: |
           set +e -uo pipefail
+          # build_app's provenance check asks api.github.com unauthenticated, and
+          # shared runner addresses are nearly always over the 60/hour limit
+          # (retries alone failed 5 times in a row on 2026-10-10/11). For THIS
+          # build process only, authenticate those reads with the job token:
+          # same public answers, the job's own rate limit. The shipped app is
+          # untouched (it still never sends a token).
+          mkdir -p "$RUNNER_TEMP/gh-auth"
+          cat > "$RUNNER_TEMP/gh-auth/sitecustomize.py" <<'PY'
+          import os, urllib.request
+          _tok = os.environ.get("WINZAPP_CI_GITHUB_TOKEN", "")
+          _init = urllib.request.Request.__init__
+          def _with_token(self, url, *a, **kw):
+              _init(self, url, *a, **kw)
+              if _tok and self.host == "api.github.com" and self.type == "https":
+                  self.add_header("Authorization", "Bearer " + _tok)
+          urllib.request.Request.__init__ = _with_token
+          PY
+          export PYTHONPATH="$RUNNER_TEMP/gh-auth${PYTHONPATH:+:$PYTHONPATH}"
           # build_app checks the tag against the official repository through
           # GitHub's unauthenticated API, which shared runner addresses often
           # exhaust. Retry only that refusal; any other failure stops here.
