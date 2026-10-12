@@ -10,7 +10,17 @@ name: macOS releases
 #
 # Secrets: MACOS_CERT_P12 (base64 Developer ID Application identity),
 # MACOS_CERT_PASSWORD, MACOS_PROVISIONING_PROFILE (base64),
-# NOTARY_KEY_P8 (base64 App Store Connect key), NOTARY_KEY_ID, NOTARY_ISSUER.
+# NOTARY_KEY_P8 (base64 App Store Connect key), NOTARY_KEY_ID, NOTARY_ISSUER,
+# SPARKLE_ED_PRIVATE_KEY (Sparkle's EdDSA private key, as generate_keys -x
+# exports it).
+# Variables: SPARKLE_PUBLIC_ED_KEY (its public key) and SPARKLE_FEED_BASE
+# (https://rocco-labs.github.io/WinZapp_Python). Without them builds carry no
+# Sparkle keys and update as before. With them, every published release whose
+# tag has Sparkle (macos/release/appcast.py) is added to appcast-<arch>.xml:
+# the feed's state lives on the appcast branch and the feed is published with
+# GitHub Pages (Settings > Pages > Source: GitHub Actions). The releases
+# themselves are unchanged (zips, provenance, SHA256SUMS.txt), so builds from
+# before Sparkle keep updating through them to the first Sparkle build.
 
 on:
   schedule:
@@ -191,6 +201,9 @@ jobs:
           # The checkout has no tags; build_app checks HEAD is this tag's commit.
           WINZAPP_RELEASE_TAG: ${{ matrix.tag }}
           WINZAPP_CI_GITHUB_TOKEN: ${{ github.token }}
+          # Read only by a tag whose build_app knows Sparkle; older tags ignore them.
+          WINZAPP_SPARKLE_PUBLIC_KEY: ${{ vars.SPARKLE_PUBLIC_ED_KEY }}
+          WINZAPP_SPARKLE_FEED_BASE: ${{ vars.SPARKLE_FEED_BASE }}
         run: |
           set +e -uo pipefail
           # build_app's provenance check asks api.github.com unauthenticated, and
@@ -279,3 +292,223 @@ jobs:
           # an official commit; the Mac updater refuses a release without it.
           gh release create "$TAG" WinZapp-macOS-*.zip SHA256SUMS.txt $(ls WinZapp-macOS-provenance-*.json 2>/dev/null) \
             --repo "$GITHUB_REPOSITORY" --title "$name" --notes-file notes.md "${flags[@]}"
+
+  appcast-plan:
+    # Which published releases the appcast still lacks, read from the
+    # releases and the appcast itself, not from this run's plan: a release
+    # whose appcast job failed (or that an earlier run published) is added
+    # on the next run. A tag older than the newest item of its channel
+    # already in a feed is never re-queued: that feed keeps only its newest
+    # items (appcast.py merge), so it would be pruned again on every run.
+    needs: publish
+    if: ${{ !cancelled() && vars.SPARKLE_PUBLIC_ED_KEY != '' }}
+    runs-on: ubuntu-latest
+    outputs:
+      tags: ${{ steps.plan.outputs.tags }}
+    steps:
+      - id: plan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import base64, json, os, re, subprocess
+
+          REPO, UPSTREAM = os.environ["GITHUB_REPOSITORY"], os.environ["UPSTREAM"]
+          TAG = re.compile(r"v(\d+)\.(\d+)\.(\d+)\.(\d+)(alpha|beta)?")
+
+          def key(tag):   # provenance.tag_is_newer's order
+              m = TAG.fullmatch(tag)
+              return tuple(int(m.group(i)) for i in range(1, 5)) + ({"alpha": 1, "beta": 2}.get(m.group(5), 3),)
+
+          def channel(tag):
+              return "alpha" if tag.endswith("alpha") else ""
+
+          def gh(*args, ok=False):
+              r = subprocess.run(["gh", *args], capture_output=True, text=True)
+              if r.returncode and not (ok and "404" in r.stderr):
+                  raise SystemExit(r.stderr)
+              return r.returncode == 0, r.stdout
+
+          feeds = {}
+          for arch in ("arm64", "x86_64"):
+              found, out = gh("api", f"repos/{REPO}/contents/appcast-{arch}.json?ref=appcast", ok=True)
+              items = json.loads(base64.b64decode(json.loads(out)["content"])) if found else []
+              feeds[arch] = {i["tag"]: channel(i["tag"]) for i in items}
+
+          def needed(tag, arch):
+              listed = feeds[arch]
+              if tag in listed:
+                  return False
+              same = [t for t, c in listed.items() if c == channel(tag)]
+              return not same or key(tag) > max(map(key, same))
+
+          _, out = gh("api", f"repos/{REPO}/releases?per_page=30",
+                      "--jq", ".[] | select(.draft | not) | .tag_name")
+          todo = []
+          for tag in sorted((t for t in out.split() if TAG.fullmatch(t)), key=key):
+              if not (needed(tag, "arm64") or needed(tag, "x86_64")):
+                  continue
+              _, assets = gh("release", "view", tag, "--repo", REPO, "--json", "assets",
+                             "--jq", ".assets[].name")
+              if not {"WinZapp-macOS-arm64.zip", "WinZapp-macOS-x86_64.zip",
+                      "SHA256SUMS.txt"} <= set(assets.split()):
+                  continue
+              # Only tags whose own macOS layer has Sparkle: their builds carry
+              # the key. Older tags are not appcast material.
+              if not gh("api", f"repos/{UPSTREAM}/contents/macos/release/appcast.py?ref={tag}",
+                        "--silent", ok=True)[0]:
+                  continue
+              todo.append(tag)
+          print("tags=" + json.dumps(todo))
+          PY
+
+  appcast:
+    needs: appcast-plan
+    if: ${{ !cancelled() && needs.appcast-plan.outputs.tags != '' && needs.appcast-plan.outputs.tags != '[]' }}
+    runs-on: macos-15
+    permissions:
+      contents: write     # the appcast branch (the feed's state)
+      pages: write        # actions/deploy-pages
+      id-token: write     # actions/deploy-pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      # Sparkle's tools for signing, pinned here (not taken from the tag):
+      # the official release archive and the SHA-256 GitHub publishes for it,
+      # the same pin as build_app.py's.
+      SPARKLE_URL: https://github.com/sparkle-project/Sparkle/releases/download/2.10.0/Sparkle-2.10.0.tar.xz
+      SPARKLE_SHA256: c2bf58aa8387266ac179357b1415d6f2635f044da8be41042af32425dae6da0c
+    steps:
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+
+      - name: This workflow's own appcast tools
+        # .github/mac-release-tools on this branch, at the commit that runs:
+        # the signing step below runs this code and nothing from a tag.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          path: self
+          sparse-checkout: .github/mac-release-tools
+
+      - name: Sparkle's sign_update, pinned by SHA-256
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/sparkle"
+          curl -fsSL -o "$RUNNER_TEMP/sparkle.tar.xz" "$SPARKLE_URL"
+          echo "$SPARKLE_SHA256  $RUNNER_TEMP/sparkle.tar.xz" | shasum -a 256 -c
+          tar -xJf "$RUNNER_TEMP/sparkle.tar.xz" -C "$RUNNER_TEMP/sparkle" ./bin/sign_update
+
+      - name: The appcast branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: site
+
+      - name: Switch to it (created on first use)
+        working-directory: site
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin appcast >/dev/null; then
+            git fetch --depth 1 origin appcast
+            git checkout -B appcast FETCH_HEAD
+          else
+            git checkout --orphan appcast
+            git rm -rf --quiet .
+          fi
+
+      - name: The published zips, and each tag's changelogs (read as data)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAGS: ${{ needs.appcast-plan.outputs.tags }}
+        run: |
+          set -euo pipefail
+          for tag in $(echo "$TAGS" | jq -r '.[]'); do
+            w="work/$tag" && mkdir -p "$w/pub"
+            # The published assets themselves: the EdDSA signature is made over
+            # the bytes users download, never over a rebuild or a local copy.
+            gh release download "$tag" --repo "$GITHUB_REPOSITORY" --dir "$w/pub" \
+              --pattern 'WinZapp-macOS-*.zip' --pattern SHA256SUMS.txt
+            (cd "$w/pub" && shasum -a 256 -c SHA256SUMS.txt)
+            # Release notes from the tag's changelogs: files only, never run.
+            git clone --quiet --depth 1 --branch "$tag" --no-checkout "https://github.com/$UPSTREAM.git" "$w/src"
+            git -C "$w/src" sparse-checkout set --no-cone '/client/changelog_*.txt' '/client/languages/language_map.json'
+            git -C "$w/src" checkout --quiet
+            gh api "repos/$UPSTREAM/releases/tags/$tag" --jq '.body // ""' > "$w/notes.md"
+          done
+
+      - name: Sign them and add them to appcast-<arch>.xml
+        # The only step that sees the private key, and it runs only this
+        # branch's pinned appcast.py, which hands the key to the pinned
+        # sign_update on standard input. The tag is only read as data.
+        env:
+          TAGS: ${{ needs.appcast-plan.outputs.tags }}
+          PUBLIC_KEY: ${{ vars.SPARKLE_PUBLIC_ED_KEY }}
+          SPARKLE_ED_PRIVATE_KEY: ${{ secrets.SPARKLE_ED_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          tool=self/.github/mac-release-tools/release/appcast.py
+          sign="$RUNNER_TEMP/sparkle/bin/sign_update"
+          : > refused.txt
+          for tag in $(echo "$TAGS" | jq -r '.[]'); do
+            w="work/$tag"
+            # Every release in the appcast must carry this repository's Sparkle
+            # key (Sparkle refuses an update that drops it, after the whole
+            # download): sign-zip refuses a zip whose app does not. Both
+            # architectures or neither.
+            ok=1
+            for arch in arm64 x86_64; do
+              python -I "$tool" sign-zip --sign-update "$sign" --tag "$tag" --public-key "$PUBLIC_KEY" \
+                --zip "$w/pub/WinZapp-macOS-$arch.zip" --out "$w/sparkle-$arch.json" || ok=0
+            done
+            if [ "$ok" != 1 ]; then
+              echo "::error::$tag is not added to the appcast: its build does not carry the Sparkle key"
+              echo "$tag" >> refused.txt
+              continue
+            fi
+            for arch in arm64 x86_64; do
+              python -I "$tool" add --sign-update "$sign" --source "$w/src" --site site \
+                --tag "$tag" --arch "$arch" --repo "$GITHUB_REPOSITORY" \
+                --signature "$w/sparkle-$arch.json" --notes-markdown "$w/notes.md"
+            done
+          done
+
+      - name: Keep the appcast's state on its branch
+        working-directory: site
+        env:
+          TAGS: ${{ needs.appcast-plan.outputs.tags }}
+        run: |
+          set -euo pipefail
+          git add -A
+          if git diff --cached --quiet; then echo "appcast unchanged"; exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit --quiet -m "appcast: $TAGS"
+          git push origin appcast
+
+      # A push made with GITHUB_TOKEN does not trigger a Pages build ("Commits
+      # pushed by a GitHub Actions workflow that uses the GITHUB_TOKEN do not
+      # trigger a GitHub Pages build", docs.github.com, "Configuring a
+      # publishing source"), so the feed is deployed here, explicitly.
+      - name: The site
+        run: |
+          rm -rf _site && mkdir _site
+          # None yet when the only release so far was refused.
+          find site -maxdepth 1 -name 'appcast-*.xml' -exec cp {} _site/ \;
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+      - name: A release was refused
+        # After the good ones are published: the run still fails, so a release
+        # built without the key is seen and fixed (it is asked about again on
+        # every run until a newer release of its channel is in the appcast).
+        if: ${{ !cancelled() && hashFiles('refused.txt') != '' }}
+        run: |
+          if [ -s refused.txt ]; then
+            echo "::error::Not in the appcast (no Sparkle key in the build): $(tr '\n' ' ' < refused.txt)"
+            exit 1
+          fi
