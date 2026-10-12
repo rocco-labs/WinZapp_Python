@@ -224,6 +224,27 @@ jobs:
           urllib.request.Request.__init__ = _with_token
           PY
           export PYTHONPATH="$RUNNER_TEMP/gh-auth${PYTHONPATH:+:$PYTHONPATH}"
+          # `xcrun stapler staple` fetches the notarization ticket from Apple's
+          # CloudKit right after notarization, and on these runners that lookup
+          # often drops ("The network connection was lost", Error 68: 4304, 4310
+          # and twice 4324 on 2026-10-12), failing a build that notarized fine.
+          # For this build only, put an xcrun in front that retries just that
+          # one command; everything else goes straight to the real xcrun.
+          mkdir -p "$RUNNER_TEMP/xcrun-shim"
+          cat > "$RUNNER_TEMP/xcrun-shim/xcrun" <<'SH'
+          #!/bin/bash
+          if [ "${1:-}" = "stapler" ] && [ "${2:-}" = "staple" ]; then
+            for attempt in 1 2 3 4 5 6; do
+              /usr/bin/xcrun "$@" && exit 0
+              echo "::warning::stapler failed (attempt $attempt); retrying in $((attempt * 30)) s" >&2
+              sleep $((attempt * 30))
+            done
+            exit 68
+          fi
+          exec /usr/bin/xcrun "$@"
+          SH
+          chmod +x "$RUNNER_TEMP/xcrun-shim/xcrun"
+          export PATH="$RUNNER_TEMP/xcrun-shim:$PATH"
           # build_app checks the tag against the official repository through
           # GitHub's unauthenticated API, which shared runner addresses often
           # exhaust. Retry only that refusal; any other failure stops here.
