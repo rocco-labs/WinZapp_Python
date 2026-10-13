@@ -5,10 +5,10 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4363alpha</title>
-      <pubDate>Tue, 13 Oct 2026 17:42:17 +0000</pubDate>
-      <sparkle:version>2.1.0.43631</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4363alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4365alpha</title>
+      <pubDate>Tue, 13 Oct 2026 22:20:24 +0000</pubDate>
+      <sparkle:version>2.1.0.43651</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4365alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <description xml:lang="en" sparkle:format="plain-text">This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
@@ -149,7 +149,9 @@ FIXES
 
 - When an update or the Node download was cancelled at the same moment it finished, WinZapp could show an "Attempt to exit a non-running event loop" error. Late completions are now ignored.
 
-- Forward dialog: pressing Down arrow in the search field now moves to the first result and focuses the list, as in the conversations search.</description>
+- Forward dialog: pressing Down arrow in the search field now moves to the first result and focuses the list, as in the conversations search.
+
+- The country selector for pairing by phone number now lists every country and territory WhatsApp supports (the Netherlands, Kenya, Belarus and North Macedonia, among others, were missing), and country names are now shown in your chosen language for Polish, Turkish and Romanian too.</description>
       <description xml:lang="pt-BR" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
 NOVIDADES
@@ -288,7 +290,9 @@ CORREÇÕES
 
 - Quando uma atualização ou o download do Node era cancelado no mesmo instante em que terminava, o WinZapp podia mostrar o erro "Attempt to exit a non-running event loop". Agora as conclusões tardias são ignoradas.
 
-- Diálogo de encaminhar: a seta para baixo no campo de pesquisa agora vai para o primeiro resultado e foca a lista, como na pesquisa de conversas.</description>
+- Diálogo de encaminhar: a seta para baixo no campo de pesquisa agora vai para o primeiro resultado e foca a lista, como na pesquisa de conversas.
+
+- Na seleção de país do pareamento por número de telefone, a lista agora contém todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, Países Baixos, Quênia, Belarus e Macedônia do Norte), e os nomes dos países aparecem no idioma escolhido também em polonês, turco e romeno.</description>
       <description xml:lang="pt-PT" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
 NOVIDADES
@@ -427,7 +431,9 @@ CORREÇÕES
 
 - Quando uma atualização ou a transferência do Node era cancelada no mesmo instante em que terminava, o WinZapp podia mostrar o erro "Attempt to exit a non-running event loop". Agora as conclusões tardias são ignoradas.
 
-- Diálogo de reencaminhar: a seta para baixo no campo de pesquisa passa a ir para o primeiro resultado e a focar a lista, como na pesquisa de conversas.</description>
+- Diálogo de reencaminhar: a seta para baixo no campo de pesquisa passa a ir para o primeiro resultado e a focar a lista, como na pesquisa de conversas.
+
+- Na seleção de país do emparelhamento por número de telefone, a lista passa a conter todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, os Países Baixos, o Quénia, a Bielorrússia e a Macedónia do Norte), e os nomes dos países aparecem no idioma escolhido também em polaco, turco e romeno.</description>
       <description xml:lang="es" sparkle:format="plain-text">Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
 NOVEDADES
@@ -566,7 +572,9 @@ CORRECCIONES
 
 - Si se cancelaba una actualización o la descarga de Node justo cuando terminaban, WinZapp podía mostrar el error "Attempt to exit a non-running event loop". Ahora las finalizaciones tardías se ignoran.
 
-- Diálogo de reenviar: la flecha abajo en el campo de búsqueda ahora va al primer resultado y enfoca la lista, como en la búsqueda de conversaciones.</description>
+- Diálogo de reenviar: la flecha abajo en el campo de búsqueda ahora va al primer resultado y enfoca la lista, como en la búsqueda de conversaciones.
+
+- El selector de país del emparejamiento por número de teléfono ahora incluye todos los países y territorios que admite WhatsApp (faltaban, por ejemplo, los Países Bajos, Kenia, Bielorrusia y Macedonia del Norte), y los nombres de los países también se muestran en el idioma elegido para polaco, turco y rumano.</description>
       <description xml:lang="pl" sparkle:format="plain-text">W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
 NOWOŚCI
@@ -705,7 +713,9 @@ POPRAWKI
 
 - Gdy aktualizacja lub pobieranie Node zostały anulowane dokładnie w chwili zakończenia, WinZapp mógł pokazać błąd "Attempt to exit a non-running event loop". Spóźnione zakończenia są teraz ignorowane.
 
-- Okno przekazywania: strzałka w dół w polu wyszukiwania przechodzi teraz do pierwszego wyniku i ustawia fokus na liście, tak jak w wyszukiwaniu rozmów.</description>
+- Okno przekazywania: strzałka w dół w polu wyszukiwania przechodzi teraz do pierwszego wyniku i ustawia fokus na liście, tak jak w wyszukiwaniu rozmów.
+
+- Lista wyboru kraju przy parowaniu przez numer telefonu zawiera teraz wszystkie kraje i terytoria obsługiwane przez WhatsApp (brakowało m.in. Holandii, Kenii, Białorusi i Macedonii Północnej), a nazwy krajów są wyświetlane w wybranym języku także po polsku, turecku i rumuńsku.</description>
       <description xml:lang="tr" sparkle:format="plain-text">Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
 YENİLİKLER
@@ -844,7 +854,9 @@ DÜZELTMELER
 
 - Bir güncelleme veya Node indirmesi tam bittiği anda iptal edildiğinde WinZapp "Attempt to exit a non-running event loop" hatasını gösterebiliyordu. Geç gelen tamamlanmalar artık yok sayılıyor.
 
-- İlet penceresi: arama alanında aşağı ok artık ilk sonuca gidip odağı listeye taşıyor; sohbet aramasındaki gibi.</description>
+- İlet penceresi: arama alanında aşağı ok artık ilk sonuca gidip odağı listeye taşıyor; sohbet aramasındaki gibi.
+
+- Telefon numarasıyla eşleştirmede ülke seçimi artık WhatsApp'ın desteklediği tüm ülke ve bölgeleri içeriyor (Hollanda, Kenya, Belarus ve Kuzey Makedonya gibi ülkeler eksikti) ve ülke adları Lehçe, Türkçe ve Rumence için de seçilen dilde gösteriliyor.</description>
       <description xml:lang="ro" sparkle:format="plain-text">Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
 NOUTĂȚI
@@ -983,7 +995,18 @@ CORECTĂRI
 
 - Când o actualizare sau descărcarea Node era anulată exact în momentul în care se termina, WinZapp putea afișa eroarea "Attempt to exit a non-running event loop". Finalizările întârziate sunt acum ignorate.
 
-- Dialogul de redirecționare: săgeata în jos din câmpul de căutare merge acum la primul rezultat și mută focalizarea pe listă, ca în căutarea conversațiilor.</description>
+- Dialogul de redirecționare: săgeata în jos din câmpul de căutare merge acum la primul rezultat și mută focalizarea pe listă, ca în căutarea conversațiilor.
+
+- Lista de țări de la asocierea prin număr de telefon conține acum toate țările și teritoriile acceptate de WhatsApp (lipseau, de exemplu, Țările de Jos, Kenya, Belarus și Macedonia de Nord), iar numele țărilor apar în limba aleasă și pentru poloneză, turcă și română.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4365alpha/WinZapp-macOS-x86_64.zip" length="413801623" type="application/octet-stream" sparkle:edSignature="A7F/gHWoaRDVyG5bxNFwQ6rY52f8Lyr1ML3Fwo9+0XVHsC8B9/jPOW2d2bRlTmdtGWmlVO29xMK6nKp3GZvBAA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4363alpha</title>
+      <pubDate>Tue, 13 Oct 2026 17:42:17 +0000</pubDate>
+      <sparkle:version>2.1.0.43631</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4363alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4363alpha/WinZapp-macOS-x86_64.zip" length="413875260" type="application/octet-stream" sparkle:edSignature="KXyAAJ3FoZVX4drrUomu4Sla1REncwFZO/GoblbXAoyx8jMwLB0EW2hYFg5qCUEqqih1D7a/g4wz2IwJGQocDw=="></enclosure>
     </item>
     <item>
@@ -1006,6 +1029,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: /lVICE0PYtamZ7t5MQPxekssKeGk3/wjeyGFqGMerlyLtN4K1Lp33ZDpsIW30w9j5sD28aVJp+XdjBWCkWpPAg==
-length: 207315
+edSignature: 7THLGNNuWzYUloJSfbZ2gEGeKY/AdryuMJBRRIcpX1rCSJMx1Ixu4sJLCPQixMwCMFiP+WhCNcSY0Ga6sLpEDg==
+length: 210092
 -->
