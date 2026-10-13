@@ -5,10 +5,10 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4356alpha</title>
-      <pubDate>Tue, 13 Oct 2026 01:25:11 +0000</pubDate>
-      <sparkle:version>2.1.0.43561</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4356alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4363alpha</title>
+      <pubDate>Tue, 13 Oct 2026 17:42:17 +0000</pubDate>
+      <sparkle:version>2.1.0.43631</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4363alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <description xml:lang="en" sparkle:format="plain-text">This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
@@ -94,6 +94,8 @@ WHAT'S NEW
 - macOS: release builds now update through Sparkle 2's standard windows, which VoiceOver reads well. "Check for updates", the automatic check every 3 hours and "Check for alpha updates" open Sparkle. Before a release is offered, when you choose Install and once more at "Ready to Install", WinZapp checks that the release's tag exists in the official repository, points at its declared commit and is newer than the version you are running; if any of that fails, or GitHub cannot be reached, the update is cancelled and the reason is shown. When you choose Install, your other accounts close and no account can start until the update ends; if the update does not install, they open again. An update found in the background is announced by speech and by a notification, and "Ready to Install" is announced too. Account locks left behind by past quits no longer block updates or start-up on the Mac.
 
 FIXES
+
+- Synchronization: replayed history messages keep their chronological position instead of appearing as new arrivals. Temporary failures when checking an alternate chat address remain queued for retry.
 
 - Forwarding no longer opens a box when it worked. "Message forwarded." (or how many messages were forwarded) is now said by the screen reader, with no window to close and without cutting off what is being read; it works with WinZapp in the tray too.
 
@@ -232,6 +234,8 @@ NOVIDADES
 
 CORREÇÕES
 
+- Sincronização: mensagens antigas recebidas novamente mantêm a ordem cronológica, em vez de aparecerem como novas. Falhas temporárias ao consultar um endereço alternativo da conversa continuam na fila para nova tentativa.
+
 - Encaminhar não abre mais uma caixa quando dá certo. "Mensagem encaminhada." (ou quantas mensagens foram encaminhadas) agora é falado pelo leitor de tela, sem janela para fechar e sem interromper o que está sendo lido; funciona também com o WinZapp na bandeja.
 
 - A sincronização e o preenchimento do histórico das conversas agora pedem ao WhatsApp Web as mensagens de no máximo duas conversas por vez, em vez de até seis, o que mantém baixo o uso de processador e de memória em computadores pequenos e servidores durante a primeira sincronização, sem deixá-la visivelmente mais lenta. Abrir uma conversa, rolar para cima e ressincronizar uma conversa não ficam mais lentos.
@@ -368,6 +372,8 @@ NOVIDADES
 - macOS: as versões de lançamento atualizam-se agora pelas janelas padrão do Sparkle 2, que o VoiceOver lê bem. "Verificar atualizações", a verificação automática de 3 em 3 horas e "Verificar atualizações alpha" abrem o Sparkle. Antes de oferecer uma versão, quando escolhe Instalar e mais uma vez em "Pronto para instalar", o WinZapp confirma que a etiqueta da versão existe no repositório oficial, aponta para o commit declarado e é mais recente do que a versão em uso; se alguma destas condições falhar, ou se o GitHub não puder ser alcançado, a atualização é cancelada e o motivo é mostrado. Ao escolher Instalar, as suas outras contas são fechadas e nenhuma conta pode iniciar até ao fim da atualização; se a atualização não for instalada, são abertas novamente. Uma atualização encontrada em segundo plano é anunciada por voz e por uma notificação, e "Pronto para instalar" também é anunciado. Os bloqueios de conta deixados por encerramentos anteriores já não impedem as atualizações nem o arranque no Mac.
 
 CORREÇÕES
+
+- Sincronização: mensagens antigas recebidas novamente mantêm a ordem cronológica, em vez de aparecerem como novas. Falhas temporárias ao consultar um endereço alternativo da conversa continuam na fila para nova tentativa.
 
 - Reencaminhar deixa de abrir uma caixa quando corre bem. "Mensagem reencaminhada." (ou quantas mensagens foram reencaminhadas) passa a ser dito pelo leitor de ecrã, sem janela para fechar e sem interromper o que está a ser lido; funciona também com o WinZapp na área de notificação.
 
@@ -506,6 +512,8 @@ NOVEDADES
 
 CORRECCIONES
 
+- Sincronización: los mensajes antiguos recibidos de nuevo mantienen su orden cronológico en lugar de aparecer como nuevos. Los fallos temporales al consultar una dirección alternativa del chat quedan pendientes para volver a intentarlo.
+
 - Reenviar ya no abre un cuadro cuando sale bien. "Mensaje reenviado." (o cuántos mensajes se han reenviado) ahora lo dice el lector de pantalla, sin ventana que cerrar y sin interrumpir lo que se está leyendo; también funciona con WinZapp en la bandeja.
 
 - La sincronización y la carga del historial de los chats ahora piden a WhatsApp Web los mensajes de como máximo dos chats a la vez, en lugar de hasta seis, lo que mantiene bajo el uso de procesador y de memoria en ordenadores pequeños y servidores durante la primera sincronización, sin hacerla notablemente más lenta. Abrir un chat, desplazarse hacia arriba y resincronizar una conversación no se ralentizan.
@@ -569,7 +577,7 @@ NOWOŚCI
 
 - W Ustawieniach &gt; Transkrypcja lokalna pamięć podręczna transkrypcji ma teraz własne elementy: opcję ogólną (domyślnie włączoną) zapisywania transkrypcji przy wiadomościach, aby nie robić ich ponownie, wybór dla każdego modelu (zgodnie z ustawieniem ogólnym, włączona lub wyłączona) oraz przycisk "Wyczyść zapisane transkrypcje wszystkich modeli", który czyści pamięć podręczną wszystkich modeli we wszystkich rozmowach. Gdy pamięć podręczna jest wyłączona dla modelu, jego nowe transkrypcje nie są zapisywane i pojawiają się w oknie wyniku; te już zapisane pozostają do czasu ich usunięcia.
 
-- W Ustawieniach &gt; Transkrypcja lokalna opcja "Automatycznie transkrybuj odebrane wiadomości głosowe i umieszczaj tekst w wierszu wiadomości", domyślnie wyłączona, transkrybuje lokalnie każdą nadchodzącą wiadomość głosową i pokazuje tekst w wierszu wiadomości, tak jak ręcznie wykonana transkrypcja w wierszu. Transkrypcje są wykonywane po jednej, tylko dla świeżo odebranych wiadomości (do 10 minut nagrania) i poza zablokowanymi rozmowami. Bez okien i komunikatów przy każdej wiadomości; jeśli transkrypcja lokalna nie jest gotowa, WinZapp powie o tym raz i zrobi przerwę.
+- W Ustawieniach &gt; Transkrypcja lokalna opcja "Automatycznie transkrybuj odebrane wiadomości głosowe i umieszczaj tekst w wierszu wiadomości", domyślnie wyłączona, transkrybuje lokalnie każdą nadchodzącą wiadomość głosową i pokazuje tekst w wierszu wiadomości, tak jak ręcznie wykonana transkrypcja w wierszu. Transkrypcje są wykonywane po jednej, tylko dla świeżo odebranych wiadomości (do 10 minut nagrania) i poza zabezpieczonymi czatami. Bez okien i komunikatów przy każdej wiadomości; jeśli transkrypcja lokalna nie jest gotowa, WinZapp powie o tym raz i zrobi przerwę.
 
 - W Ustawieniach &gt; Transkrypcja lokalna grupa "Użyj ponownie plików pobranych do innego folderu" pozwala wskazać folder z bibliotekami CUDA (cublas64_12.dll i cublasLt64_12.dll) oraz folder z programami whisper.cpp, które WinZapp już pobrał (ten z folderami cpu i cuda), zamiast pobierać wszystko od nowa. Folder jest tylko odczytywany: nic w nim nie jest kopiowane, zmieniane ani usuwane. Biblioteki CUDA muszą się załadować, a programy whisper.cpp przechodzą te same kontrole co te pobierane przez WinZapp.
 
@@ -609,7 +617,7 @@ NOWOŚCI
 
 - Opcja "Zachowuj kolejność przypiętych czatów" na karcie Interfejs użytkownika w Ustawieniach. Po jej włączeniu nowe wiadomości nie zmieniają pozycji przypiętych czatów, a kolejność jest zachowywana po ponownym uruchomieniu. Domyślnie jest wyłączona; nieprzypięte czaty nadal przesuwają się w górę po otrzymaniu nowych wiadomości.
 
-- Transkrybuj i opisuj pliki za pomocą AI. Nowa karta „AI online: transkrypcje i opisy” w Ustawieniach włącza funkcje AI (domyślnie są wyłączone) i przyjmuje klucz API jednego lub kilku dostawców — Gemini, OpenAI, Claude, Groq i OpenRouter — którzy są wypróbowywani w ustawionej przez Ciebie kolejności; gdy jeden zawiedzie lub wyczerpie limit, odpowiada następny. W menu kontekstowym wiadomości lub skrótem Ctrl+Shift+I „Transkrybuj za pomocą AI online” zamienia wiadomość głosową na tekst, „Opisz” opisuje zdjęcie lub film, „Opisz naklejkę” opisuje naklejkę, a „Konwertuj na dostępny tekst” zamienia plik PDF w zwykły, czytelny tekst. Wynik otwiera się w oknie z tekstem, a dla zdjęć i filmów możesz w nim zadawać dodatkowe pytania. WinZapp pyta przed wysłaniem pliku do dostawcy, a w zablokowanych czatach pyta za każdym razem; klucze są szyfrowane na Twoim komputerze i wysyłane tylko do dostawcy, do którego należą. Podczas pracy dostawcy odtwarzany jest dźwięk oczekiwania, a odpowiedzi mogą być czytane na głos automatycznie. Tekst jest w języku aplikacji.
+- Transkrybuj i opisuj pliki za pomocą AI. Nowa karta „AI online: transkrypcje i opisy” w Ustawieniach włącza funkcje AI (domyślnie są wyłączone) i przyjmuje klucz API jednego lub kilku dostawców — Gemini, OpenAI, Claude, Groq i OpenRouter — którzy są wypróbowywani w ustawionej przez Ciebie kolejności; gdy jeden zawiedzie lub wyczerpie limit, odpowiada następny. W menu kontekstowym wiadomości lub skrótem Ctrl+Shift+I „Transkrybuj za pomocą AI online” zamienia wiadomość głosową na tekst, „Opisz” opisuje zdjęcie lub film, „Opisz naklejkę” opisuje naklejkę, a „Konwertuj na dostępny tekst” zamienia plik PDF w zwykły, czytelny tekst. Wynik otwiera się w oknie z tekstem, a dla zdjęć i filmów możesz w nim zadawać dodatkowe pytania. WinZapp pyta przed wysłaniem pliku do dostawcy, a w zabezpieczonych czatach pyta za każdym razem; klucze są szyfrowane na Twoim komputerze i wysyłane tylko do dostawcy, do którego należą. Podczas pracy dostawcy odtwarzany jest dźwięk oczekiwania, a odpowiedzi mogą być czytane na głos automatycznie. Tekst jest w języku aplikacji.
 
 - Lokalna transkrypcja wiadomości głosowych i plików audio. „Transkrybuj wiadomość lokalnie za pomocą Whispera” w menu kontekstowym wiadomości głosowej lub pliku audio albo skrót Alt+Shift+T zamienia dźwięk na tekst na Twoim własnym komputerze, za pomocą Whispera: nic nie jest nigdzie wysyłane. Tekst otwiera się w oknie, z którego można go skopiować, zapisać lub wstawić do wiadomości, i zostaje zapisany razem z wiadomością, zaszyfrowany tak jak ona; potem Alt+Shift+T ponownie pokazuje zapisaną transkrypcję, a menu kontekstowe oferuje „Pokaż transkrypcję”, „Transkrybuj ponownie” i „Usuń transkrypcję”. Wszystko ustawia się na nowej karcie „Transkrypcja lokalna” w Ustawieniach. Są dwa składniki transkrypcji: faster-whisper, domyślny, dostarczany razem z WinZapp, oraz whisper.cpp, opcjonalny program, który karta instaluje w wersji dla procesora lub w wersji dla kart graficznych NVIDIA. whisper.cpp jest eksperymentalny: nie został jeszcze przetestowany z końcowym pakietem wydania, więc obsługiwanym składnikiem jest faster-whisper. Również faster-whisper może korzystać z karty graficznej NVIDIA po zainstalowaniu pozycji „Biblioteki CUDA” na tej samej karcie. Modele są pobierane tylko wtedy, gdy o to poprosisz, we wszystkich rozmiarach, od tiny po large-v3 i large-v3-turbo, a dla whisper.cpp także w mniejszych wersjach 8- i 5-bitowych, a niektóre również w większej wersji 32-bitowej o pełnej precyzji. Lista zawiera też modele rozumiejące tylko jeden język, oznaczone na niej: modele tylko angielskie oraz modele innych wydawców dla szwedzkiego, hebrajskiego, jidysz i japońskiego. „Gdzie wykonywać transkrypcję” i „Precyzja obliczeń” faster-whispera pozostają na ustawieniu Automatycznie albo możesz je wybrać samodzielnie. Modelu, który masz już pobrany w innym folderze, można użyć z listy „Modele w innych folderach” bez kopiowania go, a folder modeli można przenieść w inne miejsce razem z modelami. Filtr mowy nie pozwala Whisperowi wymyślać tekstu w ciszy na końcu wiadomości; gdy nie można go użyć, WinZapp o tym informuje. Ta funkcja nie zastępuje „Transkrybuj za pomocą AI online”: to dwa różne polecenia i tylko to z AI online wysyła dźwięk do dostawcy. Gdy włączona jest opcja „Pobieraj aktualizacje i pliki transkrypcji w tle” (Ustawienia &gt; Ogólne), pobieranie z tej karty — modeli, whisper.cpp i bibliotek CUDA — również odbywa się bez okna postępu, a WinZapp informuje o zakończeniu każdego z nich. Na liście modeli Ctrl+Spacja zaznacza model (Spacja zaznacza dalej, dopóki coś jest zaznaczone, a Esc odznacza wszystko, według tych samych dwóch opcji co listy czatów i wiadomości), a Pobierz pobiera wtedy wszystkie zaznaczone modele jeden po drugim. Pobieranie w tle można przerwać przyciskiem „Anuluj pobieranie w tle”. Alt+Shift+N wstawia transkrypcję do wiersza samej wiadomości („…, czas trwania: 0:12, transkrypcja: …”) i czyta ją na głos, bez otwierania okna. Nowa opcja „Enter i Spacja na wiadomości głosowej transkrybują ją w jej wierszu…” w Ustawienia &gt; Interfejs użytkownika zamienia to z odtwarzaniem: po włączeniu Enter i Spacja transkrybują, a Alt+Shift+N odtwarza lub wstrzymuje; po wyłączeniu, jak zawsze, Enter i Spacja odtwarzają, a Alt+Shift+N transkrybuje w wierszu.
 
@@ -642,6 +650,8 @@ NOWOŚCI
 - macOS: wersje wydania aktualizują się teraz przez standardowe okna Sparkle 2, które VoiceOver czyta dobrze. „Sprawdź aktualizacje”, automatyczne sprawdzanie co 3 godziny i „Sprawdzaj aktualizacje alfa” otwierają Sparkle. Zanim wersja zostanie zaproponowana, po wybraniu Zainstaluj i jeszcze raz przy „Gotowe do instalacji” WinZapp sprawdza, czy tag wersji istnieje w oficjalnym repozytorium, wskazuje zadeklarowany commit i jest nowszy od używanej wersji; jeśli cokolwiek z tego zawiedzie albo GitHub jest nieosiągalny, aktualizacja jest anulowana, a przyczyna wyświetlona. Po wybraniu Zainstaluj pozostałe konta są zamykane i żadne konto nie może się uruchomić do końca aktualizacji; jeśli aktualizacja nie zostanie zainstalowana, konta są otwierane ponownie. Aktualizacja znaleziona w tle jest zapowiadana głosowo i powiadomieniem, a „Gotowe do instalacji” również jest zapowiadane. Blokady kont pozostawione po wcześniejszych zamknięciach nie blokują już aktualizacji ani uruchamiania na Macu.
 
 POPRAWKI
+
+- Synchronizacja: ponownie otrzymane starsze wiadomości zachowują kolejność chronologiczną, zamiast pojawiać się jako nowe. Tymczasowe błędy sprawdzania alternatywnego adresu czatu pozostają w kolejce do ponowienia.
 
 - Przekazywanie dalej nie otwiera już okna, gdy się uda. „Wiadomość przekazana.” (albo liczbę przekazanych wiadomości) mówi teraz czytnik ekranu, bez okna do zamknięcia i bez przerywania tego, co jest czytane; działa też, gdy WinZapp jest w zasobniku.
 
@@ -780,6 +790,8 @@ YENİLİKLER
 
 DÜZELTMELER
 
+- Eşitleme: Tekrar gelen geçmiş mesajlar yeni gelmiş gibi sona eklenmez; tarih sırası korunur. Sohbetin alternatif adresini sorgularken oluşan geçici hatalar yeniden denemek üzere kuyrukta tutulur.
+
 - İletme başarılı olduğunda artık bir kutu açmıyor. "Mesaj iletildi." (ya da kaç mesajın iletildiği) artık ekran okuyucu tarafından söyleniyor; kapatılacak bir pencere yok ve okunan şey kesilmiyor. WinZapp sistem tepsisindeyken de çalışır.
 
 - Sohbet geçmişinin eşitlenmesi ve tamamlanması artık WhatsApp Web'den en fazla altı yerine aynı anda en fazla iki sohbetin mesajlarını ister; bu, ilk eşitleme sırasında küçük bilgisayarlarda ve sunucularda işlemci ve bellek kullanımını düşük tutar ve eşitlemeyi belirgin biçimde yavaşlatmaz. Bir sohbeti açmak, yukarı kaydırmak ve bir görüşmeyi yeniden eşitlemek yavaşlamaz.
@@ -917,6 +929,8 @@ NOUTĂȚI
 
 CORECTĂRI
 
+- Sincronizare: mesajele vechi primite din nou își păstrează ordinea cronologică, în loc să apară ca mesaje noi. Erorile temporare la verificarea unei adrese alternative a conversației rămân în coadă pentru o nouă încercare.
+
 - Redirecționarea nu mai deschide o casetă când a reușit. „Mesajul a fost redirecționat.” (sau câte mesaje au fost redirecționate) este acum rostit de cititorul de ecran, fără o fereastră de închis și fără a întrerupe ce se citește; funcționează și cu WinZapp în bara de sistem.
 
 - Sincronizarea și completarea istoricului conversațiilor cer acum de la WhatsApp Web mesajele a cel mult două conversații odată, în loc de până la șase, ceea ce menține scăzută utilizarea procesorului și a memoriei pe calculatoarele mici și pe servere în timpul primei sincronizări, fără a o încetini vizibil. Deschiderea unei conversații, derularea în sus și resincronizarea unei conversații nu sunt încetinite.
@@ -970,6 +984,15 @@ CORECTĂRI
 - Când o actualizare sau descărcarea Node era anulată exact în momentul în care se termina, WinZapp putea afișa eroarea "Attempt to exit a non-running event loop". Finalizările întârziate sunt acum ignorate.
 
 - Dialogul de redirecționare: săgeata în jos din câmpul de căutare merge acum la primul rezultat și mută focalizarea pe listă, ca în căutarea conversațiilor.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4363alpha/WinZapp-macOS-arm64.zip" length="378196340" type="application/octet-stream" sparkle:edSignature="f7JulfMmq3GZXFwv/4DLr9IXwLO+jvQqRKbD5pm4fEL5ToUmJO1o2CxpFx+ZB1CXxcYyWyyhq/3X5VPwSvJuDw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4356alpha</title>
+      <pubDate>Tue, 13 Oct 2026 01:25:11 +0000</pubDate>
+      <sparkle:version>2.1.0.43561</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4356alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4356alpha/WinZapp-macOS-arm64.zip" length="378306968" type="application/octet-stream" sparkle:edSignature="Qa3PBjnbEx0smo2posxNBKDSJgJZ/spGtTAZvMPdBLrboznbqlBkwLcmeSZt1Xj02yBrTb+IHtoJRDFFIQRnBw=="></enclosure>
     </item>
     <item>
@@ -983,6 +1006,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VSP5fGuB5qSrKBJzpIEmWLQZeDRbq9PzqYXO8nSyg85BMAY+xAPaZxWa/TakkiPtCwrsp4zvWK30Gq1/bO8FBQ==
-length: 205051
+edSignature: YBhshM/PkxDEDiQQGxCQf1r2sODpcm9UYyxZB2JaJDu0BIgyh9ivdnsWX6uQWun3uzX2Hf2F+sARxv07uwlZCw==
+length: 207311
 -->
