@@ -5,10 +5,10 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4370alpha</title>
-      <pubDate>Wed, 14 Oct 2026 01:10:08 +0000</pubDate>
-      <sparkle:version>2.1.0.43701</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4370alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4391alpha</title>
+      <pubDate>Wed, 14 Oct 2026 05:58:00 +0000</pubDate>
+      <sparkle:version>2.1.0.43911</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4391alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <description xml:lang="en" sparkle:format="plain-text">This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
@@ -95,7 +95,13 @@ WHAT'S NEW
 
 - Spoken progress for sync and media downloads: during a sync (the full one on first pairing or F5, and also the update of changed chats when WinZapp opens) and the media download that follows it, WinZapp shows in the window title and speaks, roughly every 5 seconds, how far it has got: "Syncing chats: 12 of 80" and "Downloading media: 30 of 120 processed (8 downloaded)". Before, nothing was heard between the start and finish announcements, and a long sync sounded stuck. "Processed" also counts media that did not need downloading (already on the computer, for example), and the total only includes media your Storage settings still allow downloading, not the whole history. The progress follows the "Announce sync, media downloads and automatic offline mode" option in Settings &gt; General and is not spoken when WinZapp starts in the background or during a voice call; the automatic check that runs every minute stays silent. In Settings &gt; Spoken content, the "Announce chat sync progress every few seconds" and "Announce media download progress every few seconds" boxes, checked by default, turn each of these announcements off separately; the window title still shows the numbers.
 
+- New File &gt; WhatsApp settings window, with a Privacy tab for the privacy of your WhatsApp account, applied directly on WhatsApp: last seen, who can see when you're online, About, profile photo, read receipts, who can add you to groups and who can see your status (my contacts, my contacts except... or only share with...). The people for the status are picked from your synchronised contacts in a list you can search, ticking each one with Space. The window loads the current values from WhatsApp, sends only what you changed and then reads it back, saying which settings WhatsApp did not confirm.
+
 FIXES
+
+- Updates: "Check for updates" in the Help menu now tells you when WinZapp could not reach the update server, instead of saying nothing.
+
+- Replies: when the original message cannot be found before sending, WinZapp reports the missing quote and keeps your text for editing from the message menu. It does not silently send without the quote or report a connection loss. Uncertain sends are still not retried automatically.
 
 - Synchronization: replayed history messages keep their chronological position instead of appearing as new arrivals. Temporary failures when checking an alternate chat address remain queued for retry.
 
@@ -153,7 +159,9 @@ FIXES
 
 - Forward dialog: pressing Down arrow in the search field now moves to the first result and focuses the list, as in the conversations search.
 
-- The country selector for pairing by phone number now lists every country and territory WhatsApp supports (the Netherlands, Kenya, Belarus and North Macedonia, among others, were missing), and country names are now shown in your chosen language for Polish, Turkish and Romanian too.</description>
+- The country selector for pairing by phone number now lists every country and territory WhatsApp supports (the Netherlands, Kenya, Belarus and North Macedonia, among others, were missing), and country names are now shown in your chosen language for Polish, Turkish and Romanian too.
+
+- Verified WhatsApp Business accounts (banks, payment apps, utilities) that you have not saved as contacts showed only their phone number in the chat list. They now show the business's verified name, as in WhatsApp. A name saved in your contacts still takes precedence.</description>
       <description xml:lang="pt-BR" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
 NOVIDADES
@@ -238,7 +246,13 @@ NOVIDADES
 
 - Progresso falado da sincronização e do download de mídias: numa sincronização (a completa, do primeiro pareamento ou do F5, e também, ao abrir o WinZapp, a atualização das conversas que mudaram) e no download de mídias que vem depois, o WinZapp mostra no título da janela e fala, a cada 5 segundos mais ou menos, quanto já foi feito: "Sincronizando conversas: 12 de 80" e "Baixando mídias: 30 de 120 processadas (8 baixadas)". Antes, entre o aviso de início e o de conclusão não se ouvia nada, e uma sincronização demorada parecia travada. "Processadas" conta também as mídias que não precisaram ser baixadas (já estavam no computador, por exemplo), e o total considera só as mídias que ainda podem ser baixadas pelas suas configurações de Armazenamento, não todo o histórico. O progresso respeita a opção "Anunciar sincronização, download de mídias e modo offline automático" de Configurações &gt; Geral e não é falado quando o WinZapp inicia em segundo plano nem durante uma ligação de voz; a verificação automática que roda a cada minuto continua em silêncio. Em Configurações &gt; Conteúdo falado, as caixas "Anunciar a cada poucos segundos o progresso da sincronização de conversas" e "Anunciar a cada poucos segundos o progresso do download de mídias", marcadas por padrão, desligam cada um desses anúncios separadamente; o título da janela continua mostrando os números.
 
+- Nova janela Arquivo &gt; Configurações do WhatsApp, com a aba Privacidade para a privacidade da sua conta do WhatsApp, aplicada direto no WhatsApp: visto por último, quem pode ver quando você está online, recado, foto do perfil, confirmação de leitura, quem pode adicionar você a grupos e quem pode ver o seu status (meus contatos, meus contatos exceto... ou compartilhar somente com...). As pessoas do status são escolhidas entre os seus contatos sincronizados, numa lista com pesquisa em que cada uma é marcada com Espaço. A janela carrega os valores atuais do WhatsApp, envia só o que você mudou e depois confere, dizendo quais configurações o WhatsApp não confirmou.
+
 CORREÇÕES
+
+- Atualizações: "Verificar atualizações", no menu Ajuda, agora avisa quando o WinZapp não consegue acessar o servidor de atualizações, em vez de não dizer nada.
+
+- Respostas: quando a mensagem original não é encontrada antes do envio, o WinZapp informa a citação ausente e mantém seu texto para edição pelo menu da mensagem. Não envia silenciosamente sem a citação nem informa perda de conexão. Envios incertos continuam sem repetição automática.
 
 - Sincronização: mensagens antigas recebidas novamente mantêm a ordem cronológica, em vez de aparecerem como novas. Falhas temporárias ao consultar um endereço alternativo da conversa continuam na fila para nova tentativa.
 
@@ -296,7 +310,9 @@ CORREÇÕES
 
 - Diálogo de encaminhar: a seta para baixo no campo de pesquisa agora vai para o primeiro resultado e foca a lista, como na pesquisa de conversas.
 
-- Na seleção de país do pareamento por número de telefone, a lista agora contém todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, Países Baixos, Quênia, Belarus e Macedônia do Norte), e os nomes dos países aparecem no idioma escolhido também em polonês, turco e romeno.</description>
+- Na seleção de país do pareamento por número de telefone, a lista agora contém todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, Países Baixos, Quênia, Belarus e Macedônia do Norte), e os nomes dos países aparecem no idioma escolhido também em polonês, turco e romeno.
+
+- Contas comerciais verificadas do WhatsApp (bancos, aplicativos de pagamento, concessionárias) que você não salvou nos contatos apareciam na lista de conversas só com o número de telefone. Agora aparecem com o nome verificado da empresa, como no WhatsApp. Um nome salvo nos seus contatos continua tendo preferência.</description>
       <description xml:lang="pt-PT" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
 NOVIDADES
@@ -381,7 +397,13 @@ NOVIDADES
 
 - Progresso falado da sincronização e da transferência de ficheiros multimédia: numa sincronização (a completa, do primeiro emparelhamento ou do F5, e também, ao abrir o WinZapp, a atualização das conversas que mudaram) e na transferência de multimédia que vem depois, o WinZapp mostra no título da janela e diz, mais ou menos a cada 5 segundos, quanto já foi feito: "A sincronizar conversas: 12 de 80" e "A descarregar ficheiros multimédia: 30 de 120 processados (8 descarregados)". Antes, entre o aviso de início e o de conclusão não se ouvia nada, e uma sincronização demorada parecia bloqueada. "Processados" conta também os ficheiros que não precisaram de ser descarregados (já estavam no computador, por exemplo), e o total considera só os que ainda podem ser descarregados segundo as definições de Armazenamento, não todo o histórico. O progresso respeita a opção "Anunciar sincronização, descarregamento de mídias e modo offline automático" das Definições &gt; Geral e não é dito quando o WinZapp inicia em segundo plano nem durante uma chamada de voz; a verificação automática que corre a cada minuto continua em silêncio. Em Definições &gt; Conteúdo falado, as caixas "Anunciar a cada poucos segundos o progresso da sincronização de conversas" e "Anunciar a cada poucos segundos o progresso do descarregamento de ficheiros multimédia", marcadas por predefinição, desligam cada um destes anúncios em separado; o título da janela continua a mostrar os números.
 
+- Nova janela Ficheiro &gt; Definições do WhatsApp, com o separador Privacidade para a privacidade da sua conta do WhatsApp, aplicada diretamente no WhatsApp: visto pela última vez, quem pode ver quando está online, recado, foto de perfil, confirmação de leitura, quem o pode adicionar a grupos e quem pode ver o seu estado (os meus contactos, os meus contactos exceto... ou partilhar apenas com...). As pessoas do estado são escolhidas entre os seus contactos sincronizados, numa lista com pesquisa em que cada uma é marcada com Espaço. A janela carrega os valores atuais do WhatsApp, envia apenas o que alterou e depois confirma, indicando quais as definições que o WhatsApp não confirmou.
+
 CORREÇÕES
+
+- Atualizações: "Verificar atualizações", no menu Ajuda, passa a avisar quando o WinZapp não consegue aceder ao servidor de atualizações, em vez de não dizer nada.
+
+- Respostas: quando a mensagem original não é encontrada antes do envio, o WinZapp informa a citação em falta e mantém o texto para edição no menu da mensagem. Não envia silenciosamente sem a citação nem anuncia perda de ligação. Os envios incertos continuam sem repetição automática.
 
 - Sincronização: mensagens antigas recebidas novamente mantêm a ordem cronológica, em vez de aparecerem como novas. Falhas temporárias ao consultar um endereço alternativo da conversa continuam na fila para nova tentativa.
 
@@ -439,7 +461,9 @@ CORREÇÕES
 
 - Diálogo de reencaminhar: a seta para baixo no campo de pesquisa passa a ir para o primeiro resultado e a focar a lista, como na pesquisa de conversas.
 
-- Na seleção de país do emparelhamento por número de telefone, a lista passa a conter todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, os Países Baixos, o Quénia, a Bielorrússia e a Macedónia do Norte), e os nomes dos países aparecem no idioma escolhido também em polaco, turco e romeno.</description>
+- Na seleção de país do emparelhamento por número de telefone, a lista passa a conter todos os países e territórios que o WhatsApp aceita (faltavam, por exemplo, os Países Baixos, o Quénia, a Bielorrússia e a Macedónia do Norte), e os nomes dos países aparecem no idioma escolhido também em polaco, turco e romeno.
+
+- Contas comerciais verificadas do WhatsApp (bancos, aplicações de pagamento, empresas de serviços) que não guardou nos contactos apareciam na lista de conversas só com o número de telefone. Agora aparecem com o nome verificado da empresa, como no WhatsApp. Um nome guardado nos seus contactos continua a ter preferência.</description>
       <description xml:lang="es" sparkle:format="plain-text">Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
 NOVEDADES
@@ -524,7 +548,13 @@ NOVEDADES
 
 - Progreso hablado de la sincronización y de la descarga de medios: en una sincronización (la completa de la primera vinculación o de F5, y también, al abrir WinZapp, la actualización de las conversaciones que cambiaron) y en la descarga de medios que viene después, WinZapp muestra en el título de la ventana y anuncia, más o menos cada 5 segundos, cuánto lleva hecho: "Sincronizando conversaciones: 12 de 80" y "Descargando medios: 30 de 120 procesados (8 descargados)". Antes no se oía nada entre el aviso de inicio y el de fin, y una sincronización larga parecía bloqueada. "Procesados" cuenta también los medios que no hacía falta descargar (ya estaban en el equipo, por ejemplo), y el total solo incluye los que tu configuración de Almacenamiento todavía permite descargar, no todo el historial. El progreso respeta la opción "Anunciar sincronización, descarga de medios y modo sin conexión automático" de Configuración &gt; General y no se anuncia cuando WinZapp se inicia en segundo plano ni durante una llamada de voz; la comprobación automática que se ejecuta cada minuto sigue en silencio. En Configuración &gt; Contenido hablado, las casillas "Anunciar cada pocos segundos el progreso de la sincronización de conversaciones" y "Anunciar cada pocos segundos el progreso de la descarga de medios", marcadas por defecto, desactivan cada uno de estos avisos por separado; el título de la ventana sigue mostrando los números.
 
+- Nueva ventana Archivo &gt; Configuración de WhatsApp, con la pestaña Privacidad para la privacidad de tu cuenta de WhatsApp, aplicada directamente en WhatsApp: última vez, quién puede ver cuándo estás en línea, info, foto de perfil, confirmaciones de lectura, quién puede añadirte a grupos y quién puede ver tu estado (mis contactos, mis contactos excepto... o compartir solo con...). Las personas del estado se eligen entre tus contactos sincronizados, en una lista con búsqueda en la que cada una se marca con Espacio. La ventana carga los valores actuales de WhatsApp, envía solo lo que cambiaste y después lo comprueba, indicando qué ajustes no confirmó WhatsApp.
+
 CORRECCIONES
+
+- Actualizaciones: "Comprobar actualizaciones", en el menú Ayuda, ahora avisa cuando WinZapp no puede conectar con el servidor de actualizaciones, en lugar de no decir nada.
+
+- Respuestas: si no se encuentra el mensaje original antes de enviar, WinZapp informa de la cita ausente y conserva el texto para editarlo desde el menú del mensaje. No lo envía silenciosamente sin la cita ni anuncia una pérdida de conexión. Los envíos inciertos siguen sin reintentarse automáticamente.
 
 - Sincronización: los mensajes antiguos recibidos de nuevo mantienen su orden cronológico en lugar de aparecer como nuevos. Los fallos temporales al consultar una dirección alternativa del chat quedan pendientes para volver a intentarlo.
 
@@ -582,7 +612,9 @@ CORRECCIONES
 
 - Diálogo de reenviar: la flecha abajo en el campo de búsqueda ahora va al primer resultado y enfoca la lista, como en la búsqueda de conversaciones.
 
-- El selector de país del emparejamiento por número de teléfono ahora incluye todos los países y territorios que admite WhatsApp (faltaban, por ejemplo, los Países Bajos, Kenia, Bielorrusia y Macedonia del Norte), y los nombres de los países también se muestran en el idioma elegido para polaco, turco y rumano.</description>
+- El selector de país del emparejamiento por número de teléfono ahora incluye todos los países y territorios que admite WhatsApp (faltaban, por ejemplo, los Países Bajos, Kenia, Bielorrusia y Macedonia del Norte), y los nombres de los países también se muestran en el idioma elegido para polaco, turco y rumano.
+
+- Las cuentas de empresa verificadas de WhatsApp (bancos, aplicaciones de pago, compañías de servicios) que no tienes guardadas en contactos aparecían en la lista de chats solo con el número de teléfono. Ahora aparecen con el nombre verificado de la empresa, como en WhatsApp. Un nombre guardado en tus contactos sigue teniendo prioridad.</description>
       <description xml:lang="pl" sparkle:format="plain-text">W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
 NOWOŚCI
@@ -667,7 +699,13 @@ NOWOŚCI
 
 - Odczytywany postęp synchronizacji i pobierania multimediów: podczas synchronizacji (pełnej przy pierwszym parowaniu lub po F5, a także aktualizacji zmienionych czatów przy otwieraniu WinZapp) i pobierania multimediów, które po niej następuje, WinZapp pokazuje w tytule okna i odczytuje mniej więcej co 5 sekund, ile już zrobiono: „Synchronizowanie czatów: 12 z 80” i „Pobieranie multimediów: 30 z 120 przetworzonych (8 pobranych)”. Wcześniej między komunikatem o rozpoczęciu a komunikatem o zakończeniu nic nie było słychać, a długa synchronizacja sprawiała wrażenie zawieszonej. „Przetworzone” obejmuje też multimedia, których nie trzeba było pobierać (na przykład już były na komputerze), a suma obejmuje tylko te, które ustawienia Pamięci nadal pozwalają pobrać, a nie całą historię. Postęp respektuje opcję „Ogłaszaj synchronizację, pobieranie multimediów i automatyczne przejście w tryb offline” w Ustawienia &gt; Ogólne i nie jest odczytywany, gdy WinZapp uruchamia się w tle, ani podczas połączenia głosowego; automatyczne sprawdzanie co minutę pozostaje ciche. W Ustawienia &gt; Zawartość mówiona pola „Ogłaszaj co kilka sekund postęp synchronizacji czatów” i „Ogłaszaj co kilka sekund postęp pobierania multimediów”, domyślnie zaznaczone, wyłączają każdy z tych komunikatów osobno; tytuł okna nadal pokazuje liczby.
 
+- Nowe okno Plik &gt; Ustawienia WhatsApp z kartą Prywatność, w której ustawiasz prywatność swojego konta WhatsApp bezpośrednio w WhatsApp: ostatnio widziano, kto widzi, że jesteś online, informacje, zdjęcie profilowe, potwierdzenia odczytu, kto może dodawać Cię do grup oraz kto widzi Twój status (moje kontakty, moje kontakty oprócz... lub udostępniaj tylko...). Osoby dla statusu wybierasz spośród zsynchronizowanych kontaktów na liście z wyszukiwaniem, zaznaczając każdą Spacją. Okno wczytuje bieżące wartości z WhatsApp, wysyła tylko to, co zmieniono, a potem sprawdza wynik i informuje, których ustawień WhatsApp nie potwierdził.
+
 POPRAWKI
+
+- Aktualizacje: „Sprawdź aktualizacje” w menu Pomoc informuje teraz, gdy WinZapp nie może połączyć się z serwerem aktualizacji, zamiast nic nie mówić.
+
+- Odpowiedzi: jeśli przed wysłaniem nie można znaleźć oryginalnej wiadomości, WinZapp informuje o brakującym cytacie i zachowuje tekst do edycji z menu wiadomości. Nie wysyła go po cichu bez cytatu ani nie zgłasza utraty połączenia. Wysyłki o niepewnym wyniku nadal nie są automatycznie ponawiane.
 
 - Synchronizacja: ponownie otrzymane starsze wiadomości zachowują kolejność chronologiczną, zamiast pojawiać się jako nowe. Tymczasowe błędy sprawdzania alternatywnego adresu czatu pozostają w kolejce do ponowienia.
 
@@ -725,7 +763,9 @@ POPRAWKI
 
 - Okno przekazywania: strzałka w dół w polu wyszukiwania przechodzi teraz do pierwszego wyniku i ustawia fokus na liście, tak jak w wyszukiwaniu rozmów.
 
-- Lista wyboru kraju przy parowaniu przez numer telefonu zawiera teraz wszystkie kraje i terytoria obsługiwane przez WhatsApp (brakowało m.in. Holandii, Kenii, Białorusi i Macedonii Północnej), a nazwy krajów są wyświetlane w wybranym języku także po polsku, turecku i rumuńsku.</description>
+- Lista wyboru kraju przy parowaniu przez numer telefonu zawiera teraz wszystkie kraje i terytoria obsługiwane przez WhatsApp (brakowało m.in. Holandii, Kenii, Białorusi i Macedonii Północnej), a nazwy krajów są wyświetlane w wybranym języku także po polsku, turecku i rumuńsku.
+
+- Zweryfikowane konta firmowe WhatsApp (banki, aplikacje płatnicze, dostawcy usług), których nie masz zapisanych w kontaktach, były widoczne na liście czatów tylko z numerem telefonu. Teraz pokazują zweryfikowaną nazwę firmy, tak jak w WhatsApp. Nazwa zapisana w kontaktach nadal ma pierwszeństwo.</description>
       <description xml:lang="tr" sparkle:format="plain-text">Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
 YENİLİKLER
@@ -810,7 +850,13 @@ YENİLİKLER
 
 - Eşitleme ve medya indirme için sesli ilerleme: bir eşitleme (ilk eşleştirmede veya F5 ile yapılan tam eşitleme ve WinZapp açıldığında yapılan, değişen sohbetlerin güncellenmesi) ve ardından gelen medya indirme sırasında WinZapp, yaklaşık her 5 saniyede bir ne kadarının bittiğini pencere başlığında gösterir ve seslendirir: "Sohbetler eşitleniyor: 12 / 80" ve "Medya indiriliyor: 30 / 120 işlendi (8 indirildi)". Önceden başlangıç ve bitiş duyuruları arasında hiçbir şey duyulmuyordu ve uzun bir eşitleme takılmış gibi görünüyordu. "İşlendi", indirilmesine gerek kalmayan medyaları da (örneğin zaten bilgisayarda olanları) sayar; toplam ise tüm geçmişi değil, yalnızca Depolama ayarlarınızın hâlâ indirilmesine izin verdiği medyaları kapsar. İlerleme, Ayarlar &gt; Genel bölümündeki "Eşitlemeyi, medya indirmelerini ve otomatik çevrimdışı modu duyur" seçeneğine uyar ve WinZapp arka planda başlatıldığında veya sesli arama sırasında seslendirilmez; her dakika çalışan otomatik kontrol sessiz kalır. Ayarlar &gt; Konuşulan içerik bölümündeki, varsayılan olarak işaretli "Sohbet eşitlemesinin ilerlemesini birkaç saniyede bir duyur" ve "Medya indirme ilerlemesini birkaç saniyede bir duyur" kutuları bu duyuruların her birini ayrı ayrı kapatır; pencere başlığı sayıları göstermeye devam eder.
 
+- Yeni Dosya &gt; WhatsApp ayarları penceresi: Gizlilik sekmesinde WhatsApp hesabınızın gizliliği doğrudan WhatsApp'ta ayarlanır: son görülme, çevrimiçi olduğunuzu kimlerin görebileceği, hakkımda, profil fotoğrafı, okundu bilgisi, sizi gruplara kimlerin ekleyebileceği ve durumunuzu kimlerin görebileceği (kişilerim, kişilerim şunlar hariç... veya yalnızca şunlarla paylaş...). Durum için kişiler, eşitlenmiş kişileriniz arasından aranabilir bir listede Boşluk ile işaretlenerek seçilir. Pencere geçerli değerleri WhatsApp'tan yükler, yalnızca değiştirdiklerinizi gönderir, ardından kontrol eder ve WhatsApp'ın onaylamadığı ayarları bildirir.
+
 DÜZELTMELER
+
+- Güncellemeler: Yardım menüsündeki "Güncellemeleri denetle", WinZapp güncelleme sunucusuna ulaşamadığında artık sessiz kalmak yerine bunu bildirir.
+
+- Yanıtlar: gönderimden önce özgün mesaj bulunamazsa WinZapp eksik alıntıyı bildirir ve metninizi mesaj menüsünden düzenleyebilmeniz için korur. Alıntıyı sessizce kaldırıp göndermez veya bağlantı kesildiğini söylemez. Sonucu belirsiz gönderimler otomatik olarak tekrar denenmez.
 
 - Eşitleme: Tekrar gelen geçmiş mesajlar yeni gelmiş gibi sona eklenmez; tarih sırası korunur. Sohbetin alternatif adresini sorgularken oluşan geçici hatalar yeniden denemek üzere kuyrukta tutulur.
 
@@ -868,7 +914,9 @@ DÜZELTMELER
 
 - İlet penceresi: arama alanında aşağı ok artık ilk sonuca gidip odağı listeye taşıyor; sohbet aramasındaki gibi.
 
-- Telefon numarasıyla eşleştirmede ülke seçimi artık WhatsApp'ın desteklediği tüm ülke ve bölgeleri içeriyor (Hollanda, Kenya, Belarus ve Kuzey Makedonya gibi ülkeler eksikti) ve ülke adları Lehçe, Türkçe ve Rumence için de seçilen dilde gösteriliyor.</description>
+- Telefon numarasıyla eşleştirmede ülke seçimi artık WhatsApp'ın desteklediği tüm ülke ve bölgeleri içeriyor (Hollanda, Kenya, Belarus ve Kuzey Makedonya gibi ülkeler eksikti) ve ülke adları Lehçe, Türkçe ve Rumence için de seçilen dilde gösteriliyor.
+
+- Kişilerinize kaydetmediğiniz doğrulanmış WhatsApp Business hesapları (bankalar, ödeme uygulamaları, hizmet şirketleri) sohbet listesinde yalnızca telefon numarasıyla görünüyordu. Artık WhatsApp'ta olduğu gibi işletmenin doğrulanmış adıyla görünür. Kişilerinizde kayıtlı bir ad yine önceliklidir.</description>
       <description xml:lang="ro" sparkle:format="plain-text">Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
 NOUTĂȚI
@@ -953,7 +1001,13 @@ NOUTĂȚI
 
 - Progres rostit pentru sincronizare și descărcarea media: în timpul unei sincronizări (a celei complete, la prima asociere sau la F5, dar și, la deschiderea WinZapp, a actualizării conversațiilor modificate) și al descărcării media care urmează, WinZapp afișează în titlul ferestrei și rostește, cam la fiecare 5 secunde, cât a făcut: „Se sincronizează conversațiile: 12 din 80” și „Descărcare media: 30 din 120 procesate (8 descărcate)”. Înainte nu se auzea nimic între anunțul de început și cel de sfârșit, iar o sincronizare lungă părea blocată. „Procesate” include și fișierele media care nu au trebuit descărcate (erau deja pe computer, de exemplu), iar totalul cuprinde doar ce mai permit setările de Stocare să fie descărcat, nu tot istoricul. Progresul respectă opțiunea „Anunțați sincronizarea, descărcări media și modul offline automat” din Setări &gt; Generale și nu este rostit când WinZapp pornește în fundal sau în timpul unui apel vocal; verificarea automată care rulează în fiecare minut rămâne silențioasă. În Setări &gt; Conținut vorbit, casetele „Anunțați la câteva secunde progresul sincronizării conversațiilor” și „Anunțați la câteva secunde progresul descărcării media”, bifate implicit, dezactivează separat fiecare dintre aceste anunțuri; titlul ferestrei continuă să afișeze numerele.
 
+- Fereastră nouă Fișier &gt; Setări WhatsApp, cu fila Confidențialitate pentru confidențialitatea contului dvs. WhatsApp, aplicată direct în WhatsApp: văzut ultima dată, cine poate vedea când sunteți online, despre, fotografia de profil, confirmările de citire, cine vă poate adăuga în grupuri și cine vă poate vedea starea (contactele mele, contactele mele cu excepția... sau partajați doar cu...). Persoanele pentru stare se aleg dintre contactele sincronizate, într-o listă cu căutare în care fiecare se bifează cu Spațiu. Fereastra încarcă valorile actuale din WhatsApp, trimite doar ce ați modificat și apoi verifică, spunând ce setări nu a confirmat WhatsApp.
+
 CORECTĂRI
+
+- Actualizări: „Verificați actualizările” din meniul Ajutor vă anunță acum când WinZapp nu poate contacta serverul de actualizări, în loc să nu spună nimic.
+
+- Răspunsuri: dacă mesajul original nu este găsit înainte de trimitere, WinZapp anunță citatul lipsă și păstrează textul pentru editare din meniul mesajului. Nu trimite în tăcere fără citat și nu anunță pierderea conexiunii. Trimiterile cu rezultat incert nu sunt reîncercate automat.
 
 - Sincronizare: mesajele vechi primite din nou își păstrează ordinea cronologică, în loc să apară ca mesaje noi. Erorile temporare la verificarea unei adrese alternative a conversației rămân în coadă pentru o nouă încercare.
 
@@ -1011,7 +1065,18 @@ CORECTĂRI
 
 - Dialogul de redirecționare: săgeata în jos din câmpul de căutare merge acum la primul rezultat și mută focalizarea pe listă, ca în căutarea conversațiilor.
 
-- Lista de țări de la asocierea prin număr de telefon conține acum toate țările și teritoriile acceptate de WhatsApp (lipseau, de exemplu, Țările de Jos, Kenya, Belarus și Macedonia de Nord), iar numele țărilor apar în limba aleasă și pentru poloneză, turcă și română.</description>
+- Lista de țări de la asocierea prin număr de telefon conține acum toate țările și teritoriile acceptate de WhatsApp (lipseau, de exemplu, Țările de Jos, Kenya, Belarus și Macedonia de Nord), iar numele țărilor apar în limba aleasă și pentru poloneză, turcă și română.
+
+- Conturile business WhatsApp verificate (bănci, aplicații de plată, furnizori de utilități) pe care nu le-ați salvat în contacte apăreau în lista de conversații doar cu numărul de telefon. Acum apar cu numele verificat al companiei, ca în WhatsApp. Un nume salvat în contacte are în continuare prioritate.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4391alpha/WinZapp-macOS-arm64.zip" length="378043857" type="application/octet-stream" sparkle:edSignature="qZbjBkSZKYJbU4Na6vTj/nfcZbXMUfo85IbxIMJ/XJYLDsaeujzV7rC0zAJBGx+MYVvD+ZpJfy68ilvgpG8JCg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4370alpha</title>
+      <pubDate>Wed, 14 Oct 2026 01:10:08 +0000</pubDate>
+      <sparkle:version>2.1.0.43701</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4370alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4370alpha/WinZapp-macOS-arm64.zip" length="378041061" type="application/octet-stream" sparkle:edSignature="/1sxh3EFjPjkbajh15sxelWiRibdm33IdE4dNWsySlJ9A6eM5a09mWn7y807TTzvmsVvk4SJxr2M5uX6OYalBQ=="></enclosure>
     </item>
     <item>
@@ -1041,17 +1106,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4356alpha/WinZapp-macOS-arm64.zip" length="378306968" type="application/octet-stream" sparkle:edSignature="Qa3PBjnbEx0smo2posxNBKDSJgJZ/spGtTAZvMPdBLrboznbqlBkwLcmeSZt1Xj02yBrTb+IHtoJRDFFIQRnBw=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4324alpha</title>
-      <pubDate>Tue, 13 Oct 2026 00:09:51 +0000</pubDate>
-      <sparkle:version>2.1.0.43241</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4324alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4324alpha/WinZapp-macOS-arm64.zip" length="378428522" type="application/octet-stream" sparkle:edSignature="dDG1wMwxWtLxzXqIZpoolQIim5iVzJQzvWqn4Tgp27K3LyKpcn3qN0k1YC7d8N+E3N+lLJJwZxzG4aS9WrlXBg=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: IUb6ubt1K9WbGRHkEqKqnVhQbo/FzCCyUQ7lpVUoYqimzm0SsqnYnIbvkS6naN15dUPNTjxuPyyS0lJpldhaDQ==
-length: 220611
+edSignature: IffcHANi9eqqnbeHydVuvUsGRCXhO/h8dIaQ2xrT2qwT9N+uBtXLvRZzP6Emh9f5i9SEobsriDT758RVk0ixAg==
+length: 230856
 -->
