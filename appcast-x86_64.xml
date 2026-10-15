@@ -5,10 +5,10 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4397alpha</title>
-      <pubDate>Wed, 14 Oct 2026 20:12:25 +0000</pubDate>
-      <sparkle:version>2.1.0.43971</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4397alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4412alpha</title>
+      <pubDate>Thu, 15 Oct 2026 17:26:59 +0000</pubDate>
+      <sparkle:version>2.1.0.44121</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4412alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <description xml:lang="en" sparkle:format="plain-text">This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
@@ -121,11 +121,13 @@ WHAT'S NEW
 
 - New File &gt; WhatsApp settings window, with a Privacy tab for the privacy of your WhatsApp account, applied directly on WhatsApp: last seen, who can see when you're online, About, profile photo, read receipts, who can add you to groups and who can see your status (my contacts, my contacts except... or only share with...). The people for the status are picked from your synchronised contacts in a list you can search, ticking each one with Space. The window loads the current values from WhatsApp, sends only what you changed and then reads it back, saying which settings WhatsApp did not confirm.
 
-- The same File &gt; WhatsApp settings window also has a Profile tab, to change the display name, the About text and the profile photo of your WhatsApp account without picking up the phone. A field left empty stays as it is on WhatsApp, each one is saved on its own (one that WhatsApp refuses does not stop the others, and the window lists which ones failed), and the photo is chosen from a JPG or PNG file.
+- The same File &gt; WhatsApp settings window also has a Profile tab, to change the display name, the About text and the profile photo of your WhatsApp account without picking up the phone. The tab opens already showing your current name and About text, and whether you have a photo; a field left empty or unchanged stays as it is on WhatsApp, each one is saved on its own (one that WhatsApp refuses does not stop the others, and the window lists which ones failed), and the photo is chosen from a JPG or PNG file. The window opens from anywhere with Ctrl+Shift+comma (the key of Settings plus Shift), which can be changed on the Keyboard shortcuts tab.
 
 - The info of a personal chat now shows whether its notifications are muted (and until when) and, when WhatsApp reports it, the disappearing messages timer.
 
 - Communities is now a row of the navigation list, after Calls, with its Alt+8 shortcut in the row's name, so it can be reached by arrowing through the list as well as with Alt+8.
+
+- Help &gt; "Usage guide" opens, in the default browser, the complete guide to using the program, in the chosen language: where each feature is, the shortcuts and what the screen reader says. It has search and a section menu, and the shortcut tables come straight from the program.
 
 FIXES
 
@@ -201,7 +203,9 @@ FIXES
 
 - WPPConnect Server updated to 2.10.55. Besides upstream fixes for requests that were answered twice, when WhatsApp Web could not look a number up (for example while the page was reloading), the send is now tried again instead of wrongly reporting that the number does not exist. The same recipient in one request is also looked up only once. If WinZapp offers the WPPConnect update at startup, accept it to install the new version.
 
-- Logging out of a session that was left unfinished (for example an account that never finished pairing) now gets an answer instead of failing silently.</description>
+- Logging out of a session that was left unfinished (for example an account that never finished pairing) now gets an answer instead of failing silently.
+
+- Downloaded files whose size is a multiple of 16 bytes (an APK, for example) no longer end with 16 extra bytes. Android refused to install them with "problem parsing the package"; now the saved file is identical to the original.</description>
       <description xml:lang="pt-BR" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
 NOVIDADES
@@ -312,11 +316,13 @@ NOVIDADES
 
 - Nova janela Arquivo &gt; Configurações do WhatsApp, com a aba Privacidade para a privacidade da sua conta do WhatsApp, aplicada direto no WhatsApp: visto por último, quem pode ver quando você está online, recado, foto do perfil, confirmação de leitura, quem pode adicionar você a grupos e quem pode ver o seu status (meus contatos, meus contatos exceto... ou compartilhar somente com...). As pessoas do status são escolhidas entre os seus contatos sincronizados, numa lista com pesquisa em que cada uma é marcada com Espaço. A janela carrega os valores atuais do WhatsApp, envia só o que você mudou e depois confere, dizendo quais configurações o WhatsApp não confirmou.
 
-- A mesma janela Arquivo &gt; Configurações do WhatsApp tem também a aba Perfil, para mudar o nome exibido, o recado e a foto de perfil da sua conta do WhatsApp sem pegar o celular. Um campo deixado em branco continua como está no WhatsApp, cada um é salvo separadamente (um que o WhatsApp recuse não impede os outros, e a janela lista os que falharam), e a foto é escolhida num arquivo JPG ou PNG.
+- A mesma janela Arquivo &gt; Configurações do WhatsApp tem também a aba Perfil, para mudar o nome exibido, o recado e a foto de perfil da sua conta do WhatsApp sem pegar o celular. A aba já abre mostrando o seu nome e recado atuais e se você tem foto; um campo deixado em branco ou sem mudança continua como está no WhatsApp, cada um é salvo separadamente (um que o WhatsApp recuse não impede os outros, e a janela lista os que falharam), e a foto é escolhida num arquivo JPG ou PNG. A janela abre de qualquer lugar com Ctrl+Shift+vírgula (a tecla das Configurações mais Shift), que pode ser trocada na aba Atalhos de teclado.
 
 - As informações do chat pessoal mostram se as notificações dele estão silenciadas (e até quando) e, quando o WhatsApp informa, o tempo das mensagens temporárias.
 
 - Comunidades agora é um item da lista de navegação, depois de Ligações, com o atalho Alt+8 no nome do item; dá para chegar nela descendo pela lista e não só com Alt+8.
+
+- Ajuda &gt; "Guia de uso" abre, no navegador padrão, o guia completo de como usar o programa, no idioma escolhido: onde fica cada função, os atalhos e o que o leitor de tela diz. Tem busca e menu de seções, e as tabelas de atalhos vêm direto do programa.
 
 CORREÇÕES
 
@@ -392,7 +398,9 @@ CORREÇÕES
 
 - WPPConnect Server atualizado para a 2.10.55. Além das correções da biblioteca para pedidos respondidos duas vezes, quando o WhatsApp Web não consegue consultar um número (por exemplo, enquanto a página recarrega), o envio agora é tentado de novo em vez de dizer, erradamente, que o número não existe. O mesmo destinatário num único pedido também é consultado uma só vez. Se o WinZapp oferecer a atualização do WPPConnect ao iniciar, aceite para instalar a nova versão.
 
-- Sair de uma sessão que ficou pela metade (por exemplo, uma conta que nunca terminou de ser pareada) agora recebe uma resposta, em vez de falhar em silêncio.</description>
+- Sair de uma sessão que ficou pela metade (por exemplo, uma conta que nunca terminou de ser pareada) agora recebe uma resposta, em vez de falhar em silêncio.
+
+- Arquivos baixados cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android se recusava a instalá-los com "problema ao analisar o pacote"; agora o arquivo salvo é idêntico ao original.</description>
       <description xml:lang="pt-PT" sparkle:format="plain-text">Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
 NOVIDADES
@@ -503,11 +511,13 @@ NOVIDADES
 
 - Nova janela Ficheiro &gt; Definições do WhatsApp, com o separador Privacidade para a privacidade da sua conta do WhatsApp, aplicada diretamente no WhatsApp: visto pela última vez, quem pode ver quando está online, recado, foto de perfil, confirmação de leitura, quem o pode adicionar a grupos e quem pode ver o seu estado (os meus contactos, os meus contactos exceto... ou partilhar apenas com...). As pessoas do estado são escolhidas entre os seus contactos sincronizados, numa lista com pesquisa em que cada uma é marcada com Espaço. A janela carrega os valores atuais do WhatsApp, envia apenas o que alterou e depois confirma, indicando quais as definições que o WhatsApp não confirmou.
 
-- A mesma janela Ficheiro &gt; Definições do WhatsApp tem também o separador Perfil, para mudar o nome apresentado, o recado e a foto de perfil da sua conta do WhatsApp sem pegar no telemóvel. Um campo deixado em branco fica como está no WhatsApp, cada um é guardado em separado (um que o WhatsApp recuse não impede os outros, e a janela indica os que falharam), e a foto é escolhida a partir de um ficheiro JPG ou PNG.
+- A mesma janela Ficheiro &gt; Definições do WhatsApp tem também o separador Perfil, para mudar o nome apresentado, o recado e a foto de perfil da sua conta do WhatsApp sem pegar no telemóvel. O separador já abre a mostrar o seu nome e recado atuais e se tem foto; um campo deixado em branco ou sem alteração fica como está no WhatsApp, cada um é guardado em separado (um que o WhatsApp recuse não impede os outros, e a janela indica os que falharam), e a foto é escolhida a partir de um ficheiro JPG ou PNG. A janela abre a partir de qualquer lugar com Ctrl+Shift+vírgula (a tecla das Definições mais Shift), que pode ser alterada no separador Atalhos de teclado.
 
 - As informações da conversa pessoal mostram se as notificações estão silenciadas (e até quando) e, quando o WhatsApp o indica, o tempo das mensagens temporárias.
 
 - As comunidades passam a ser um item da lista de navegação, depois de Chamadas, com o atalho Alt+8 no nome do item; pode chegar-se lá descendo pela lista e não só com Alt+8.
+
+- Ajuda &gt; "Guia de utilização" abre, no navegador padrão, o guia completo de como usar o programa, no idioma escolhido: onde fica cada função, os atalhos e o que o leitor de ecrã diz. Tem pesquisa e menu de secções, e as tabelas de atalhos vêm diretamente do programa.
 
 CORREÇÕES
 
@@ -583,7 +593,9 @@ CORREÇÕES
 
 - WPPConnect Server atualizado para a 2.10.55. Para além das correções da biblioteca para pedidos respondidos duas vezes, quando o WhatsApp Web não consegue consultar um número (por exemplo, enquanto a página recarrega), o envio passa a ser tentado de novo em vez de dizer, erradamente, que o número não existe. O mesmo destinatário num único pedido também é consultado apenas uma vez. Se o WinZapp oferecer a atualização do WPPConnect ao iniciar, aceite para instalar a nova versão.
 
-- Terminar uma sessão que ficou a meio (por exemplo, uma conta que nunca chegou a ser emparelhada) passa a receber uma resposta, em vez de falhar em silêncio.</description>
+- Terminar uma sessão que ficou a meio (por exemplo, uma conta que nunca chegou a ser emparelhada) passa a receber uma resposta, em vez de falhar em silêncio.
+
+- Os ficheiros transferidos cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android recusava-se a instalá-los com "problema ao analisar o pacote"; agora o ficheiro guardado é idêntico ao original.</description>
       <description xml:lang="es" sparkle:format="plain-text">Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
 NOVEDADES
@@ -694,11 +706,13 @@ NOVEDADES
 
 - Nueva ventana Archivo &gt; Configuración de WhatsApp, con la pestaña Privacidad para la privacidad de tu cuenta de WhatsApp, aplicada directamente en WhatsApp: última vez, quién puede ver cuándo estás en línea, info, foto de perfil, confirmaciones de lectura, quién puede añadirte a grupos y quién puede ver tu estado (mis contactos, mis contactos excepto... o compartir solo con...). Las personas del estado se eligen entre tus contactos sincronizados, en una lista con búsqueda en la que cada una se marca con Espacio. La ventana carga los valores actuales de WhatsApp, envía solo lo que cambiaste y después lo comprueba, indicando qué ajustes no confirmó WhatsApp.
 
-- La misma ventana Archivo &gt; Configuración de WhatsApp tiene también la pestaña Perfil, para cambiar el nombre mostrado, la info y la foto de perfil de tu cuenta de WhatsApp sin coger el teléfono. Un campo que dejes en blanco se queda como está en WhatsApp, cada uno se guarda por separado (uno que WhatsApp rechace no impide los demás, y la ventana indica cuáles fallaron), y la foto se elige de un archivo JPG o PNG.
+- La misma ventana Archivo &gt; Configuración de WhatsApp tiene también la pestaña Perfil, para cambiar el nombre mostrado, la info y la foto de perfil de tu cuenta de WhatsApp sin coger el teléfono. La pestaña ya se abre mostrando tu nombre e info actuales y si tienes foto; un campo que dejes en blanco o sin cambios se queda como está en WhatsApp, cada uno se guarda por separado (uno que WhatsApp rechace no impide los demás, y la ventana indica cuáles fallaron), y la foto se elige de un archivo JPG o PNG. La ventana se abre desde cualquier sitio con Ctrl+Shift+coma (la tecla de Configuración más Shift), que se puede cambiar en la pestaña Atajos de teclado.
 
 - La información del chat personal muestra si sus notificaciones están silenciadas (y hasta cuándo) y, cuando WhatsApp lo indica, el tiempo de los mensajes temporales.
 
 - Comunidades es ahora un elemento de la lista de navegación, después de Llamadas, con su atajo Alt+8 en el nombre del elemento; se puede llegar bajando por la lista y no solo con Alt+8.
+
+- Ayuda &gt; "Guía de uso" abre, en el navegador predeterminado, la guía completa de cómo usar el programa, en el idioma elegido: dónde está cada función, los atajos y lo que dice el lector de pantalla. Tiene búsqueda y menú de secciones, y las tablas de atajos vienen directamente del programa.
 
 CORRECCIONES
 
@@ -774,7 +788,9 @@ CORRECCIONES
 
 - WPPConnect Server actualizado a la 2.10.55. Además de las correcciones de la biblioteca para peticiones respondidas dos veces, cuando WhatsApp Web no puede consultar un número (por ejemplo, mientras la página se recarga), el envío ahora se reintenta en lugar de decir, por error, que el número no existe. Un mismo destinatario en una sola petición también se consulta una sola vez. Si WinZapp ofrece la actualización de WPPConnect al iniciar, acéptela para instalar la nueva versión.
 
-- Cerrar una sesión que quedó a medias (por ejemplo, una cuenta que nunca terminó de vincularse) ahora recibe una respuesta, en lugar de fallar en silencio.</description>
+- Cerrar una sesión que quedó a medias (por ejemplo, una cuenta que nunca terminó de vincularse) ahora recibe una respuesta, en lugar de fallar en silencio.
+
+- Los archivos descargados cuyo tamaño es múltiplo de 16 bytes (un APK, por ejemplo) ya no terminan con 16 bytes de más. Android se negaba a instalarlos con "problema al analizar el paquete"; ahora el archivo guardado es idéntico al original.</description>
       <description xml:lang="pl" sparkle:format="plain-text">W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
 NOWOŚCI
@@ -885,11 +901,13 @@ NOWOŚCI
 
 - Nowe okno Plik &gt; Ustawienia WhatsApp z kartą Prywatność, w której ustawiasz prywatność swojego konta WhatsApp bezpośrednio w WhatsApp: ostatnio widziano, kto widzi, że jesteś online, informacje, zdjęcie profilowe, potwierdzenia odczytu, kto może dodawać Cię do grup oraz kto widzi Twój status (moje kontakty, moje kontakty oprócz... lub udostępniaj tylko...). Osoby dla statusu wybierasz spośród zsynchronizowanych kontaktów na liście z wyszukiwaniem, zaznaczając każdą Spacją. Okno wczytuje bieżące wartości z WhatsApp, wysyła tylko to, co zmieniono, a potem sprawdza wynik i informuje, których ustawień WhatsApp nie potwierdził.
 
-- To samo okno Plik &gt; Ustawienia WhatsApp ma także kartę Profil, w której zmienisz wyświetlaną nazwę, informacje i zdjęcie profilowe swojego konta WhatsApp bez sięgania po telefon. Pole pozostawione puste zostaje takie, jakie jest w WhatsApp, każde pole zapisuje się osobno (jedno odrzucone przez WhatsApp nie blokuje pozostałych, a okno wymienia te, które się nie udały), a zdjęcie wybierasz z pliku JPG lub PNG.
+- To samo okno Plik &gt; Ustawienia WhatsApp ma także kartę Profil, w której zmienisz wyświetlaną nazwę, informacje i zdjęcie profilowe swojego konta WhatsApp bez sięgania po telefon. Karta od razu pokazuje Twoją bieżącą nazwę i informacje oraz to, czy masz zdjęcie; pole puste lub niezmienione zostaje takie, jakie jest w WhatsApp, każde pole zapisuje się osobno (jedno odrzucone przez WhatsApp nie blokuje pozostałych, a okno wymienia te, które się nie udały), a zdjęcie wybierasz z pliku JPG lub PNG. Okno otwiera się z dowolnego miejsca skrótem Ctrl+Shift+przecinek (klawisz Ustawień plus Shift), który można zmienić na karcie Skróty klawiszowe.
 
 - Informacje o czacie prywatnym pokazują, czy jego powiadomienia są wyciszone (i do kiedy) oraz, gdy WhatsApp to podaje, czas znikających wiadomości.
 
 - Społeczności są teraz pozycją listy nawigacji, po Połączeniach, ze skrótem Alt+8 w nazwie pozycji; można do nich dojść strzałkami po liście, a nie tylko skrótem Alt+8.
+
+- Pomoc &gt; "Przewodnik użytkownika" otwiera w domyślnej przeglądarce pełny przewodnik po programie w wybranym języku: gdzie jest każda funkcja, jakie są skróty i co mówi czytnik ekranu. Ma wyszukiwarkę i menu sekcji, a tabele skrótów pochodzą prosto z programu.
 
 POPRAWKI
 
@@ -965,7 +983,9 @@ POPRAWKI
 
 - Zaktualizowano WPPConnect Server do wersji 2.10.55. Oprócz poprawek biblioteki dotyczących żądań, na które odpowiadano dwukrotnie: gdy WhatsApp Web nie może sprawdzić numeru (na przykład podczas przeładowania strony), wysyłanie jest teraz ponawiane, zamiast błędnie twierdzić, że numer nie istnieje. Ten sam odbiorca w jednym żądaniu jest też sprawdzany tylko raz. Jeśli WinZapp zaproponuje aktualizację WPPConnect przy uruchomieniu, zaakceptuj ją, aby zainstalować nową wersję.
 
-- Wylogowanie z sesji, która została niedokończona (na przykład konta, które nigdy nie zakończyło parowania), dostaje teraz odpowiedź zamiast kończyć się po cichu niepowodzeniem.</description>
+- Wylogowanie z sesji, która została niedokończona (na przykład konta, które nigdy nie zakończyło parowania), dostaje teraz odpowiedź zamiast kończyć się po cichu niepowodzeniem.
+
+- Pobrane pliki, których rozmiar jest wielokrotnością 16 bajtów (na przykład APK), nie kończą się już 16 dodatkowymi bajtami. Android odmawiał ich instalacji z komunikatem „problem podczas analizowania pakietu”; teraz zapisany plik jest identyczny z oryginałem.</description>
       <description xml:lang="tr" sparkle:format="plain-text">Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
 YENİLİKLER
@@ -1076,11 +1096,13 @@ YENİLİKLER
 
 - Yeni Dosya &gt; WhatsApp ayarları penceresi: Gizlilik sekmesinde WhatsApp hesabınızın gizliliği doğrudan WhatsApp'ta ayarlanır: son görülme, çevrimiçi olduğunuzu kimlerin görebileceği, hakkımda, profil fotoğrafı, okundu bilgisi, sizi gruplara kimlerin ekleyebileceği ve durumunuzu kimlerin görebileceği (kişilerim, kişilerim şunlar hariç... veya yalnızca şunlarla paylaş...). Durum için kişiler, eşitlenmiş kişileriniz arasından aranabilir bir listede Boşluk ile işaretlenerek seçilir. Pencere geçerli değerleri WhatsApp'tan yükler, yalnızca değiştirdiklerinizi gönderir, ardından kontrol eder ve WhatsApp'ın onaylamadığı ayarları bildirir.
 
-- Aynı Dosya &gt; WhatsApp ayarları penceresinde ayrıca Profil sekmesi var: WhatsApp hesabınızın görünen adını, hakkımda metnini ve profil fotoğrafını telefona dokunmadan değiştirebilirsiniz. Boş bıraktığınız alan WhatsApp'ta olduğu gibi kalır, her alan ayrı kaydedilir (WhatsApp'ın reddettiği biri diğerlerini engellemez ve pencere hangilerinin başarısız olduğunu listeler), fotoğraf bir JPG veya PNG dosyasından seçilir.
+- Aynı Dosya &gt; WhatsApp ayarları penceresinde ayrıca Profil sekmesi var: WhatsApp hesabınızın görünen adını, hakkımda metnini ve profil fotoğrafını telefona dokunmadan değiştirebilirsiniz. Sekme, mevcut adınız ve hakkımda metninizle ve fotoğrafınız olup olmadığıyla birlikte açılır; boş bıraktığınız veya değiştirmediğiniz alan WhatsApp'ta olduğu gibi kalır, her alan ayrı kaydedilir (WhatsApp'ın reddettiği biri diğerlerini engellemez ve pencere hangilerinin başarısız olduğunu listeler), fotoğraf bir JPG veya PNG dosyasından seçilir. Pencere her yerden Ctrl+Shift+virgül ile açılır (Ayarlar tuşu artı Shift); bu tuş Klavye kısayolları sekmesinden değiştirilebilir.
 
 - Kişisel sohbet bilgileri artık bildirimlerin sessize alınıp alınmadığını (ve ne zamana kadar) ve WhatsApp bildirdiğinde kaybolan mesajların süresini gösteriyor.
 
 - Topluluklar artık gezinme listesinde Aramalar'dan sonra gelen bir öğedir ve öğenin adında Alt+8 kısayolu yer alır; yalnızca Alt+8 ile değil, listede ilerleyerek de ulaşılabilir.
+
+- Yardım &gt; "Kullanım kılavuzu", programın nasıl kullanılacağını anlatan eksiksiz kılavuzu seçili dilde varsayılan tarayıcıda açar: her işlevin nerede olduğu, kısayollar ve ekran okuyucunun ne söylediği. Arama ve bölüm menüsü vardır; kısayol tabloları doğrudan programdan gelir.
 
 DÜZELTMELER
 
@@ -1156,7 +1178,9 @@ DÜZELTMELER
 
 - WPPConnect Server 2.10.55 sürümüne güncellendi. İki kez yanıtlanan isteklere ilişkin kütüphane düzeltmelerine ek olarak, WhatsApp Web bir numarayı sorgulayamadığında (örneğin sayfa yeniden yüklenirken) gönderme artık numaranın yok olduğunu yanlış söylemek yerine yeniden denenir. Tek bir istekteki aynı alıcı da yalnızca bir kez sorgulanır. WinZapp başlangıçta WPPConnect güncellemesini önerirse, yeni sürümü yüklemek için kabul edin.
 
-- Yarım kalmış bir oturumdan (örneğin eşleştirmesi hiç tamamlanmamış bir hesap) çıkış yapmak artık sessizce başarısız olmak yerine bir yanıt alır.</description>
+- Yarım kalmış bir oturumdan (örneğin eşleştirmesi hiç tamamlanmamış bir hesap) çıkış yapmak artık sessizce başarısız olmak yerine bir yanıt alır.
+
+- Boyutu 16 baytın katı olan indirilen dosyalar (örneğin bir APK) artık sonunda fazladan 16 bayt taşımıyor. Android bunları "paket ayrıştırılırken sorun oluştu" hatasıyla yüklemiyordu; artık kaydedilen dosya aslıyla birebir aynı.</description>
       <description xml:lang="ro" sparkle:format="plain-text">Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
 NOUTĂȚI
@@ -1267,11 +1291,13 @@ NOUTĂȚI
 
 - Fereastră nouă Fișier &gt; Setări WhatsApp, cu fila Confidențialitate pentru confidențialitatea contului dvs. WhatsApp, aplicată direct în WhatsApp: văzut ultima dată, cine poate vedea când sunteți online, despre, fotografia de profil, confirmările de citire, cine vă poate adăuga în grupuri și cine vă poate vedea starea (contactele mele, contactele mele cu excepția... sau partajați doar cu...). Persoanele pentru stare se aleg dintre contactele sincronizate, într-o listă cu căutare în care fiecare se bifează cu Spațiu. Fereastra încarcă valorile actuale din WhatsApp, trimite doar ce ați modificat și apoi verifică, spunând ce setări nu a confirmat WhatsApp.
 
-- Aceeași fereastră Fișier &gt; Setări WhatsApp are și fila Profil, pentru a schimba numele afișat, despre și fotografia de profil ale contului dvs. WhatsApp fără a lua telefonul în mână. Un câmp lăsat necompletat rămâne așa cum este în WhatsApp, fiecare se salvează separat (unul refuzat de WhatsApp nu le oprește pe celelalte, iar fereastra le enumeră pe cele care au eșuat), iar fotografia se alege dintr-un fișier JPG sau PNG.
+- Aceeași fereastră Fișier &gt; Setări WhatsApp are și fila Profil, pentru a schimba numele afișat, despre și fotografia de profil ale contului dvs. WhatsApp fără a lua telefonul în mână. Fila se deschide deja cu numele și textul Despre actuale și arată dacă aveți fotografie; un câmp lăsat necompletat sau nemodificat rămâne așa cum este în WhatsApp, fiecare se salvează separat (unul refuzat de WhatsApp nu le oprește pe celelalte, iar fereastra le enumeră pe cele care au eșuat), iar fotografia se alege dintr-un fișier JPG sau PNG. Fereastra se deschide de oriunde cu Ctrl+Shift+virgulă (tasta Setărilor plus Shift), care poate fi schimbată în fila Comenzi rapide de la tastatură.
 
 - Informațiile despre conversația personală arată acum dacă notificările sunt dezactivate (și până când) și, când WhatsApp le transmite, durata mesajelor care dispar.
 
 - Comunitățile sunt acum un element al listei de navigare, după Apeluri, cu scurtătura Alt+8 în numele elementului; se poate ajunge la ele coborând prin listă, nu doar cu Alt+8.
+
+- Ajutor &gt; "Ghid de utilizare" deschide, în browserul implicit, ghidul complet de folosire a programului, în limba aleasă: unde se află fiecare funcție, comenzile rapide și ce spune cititorul de ecran. Are căutare și meniu de secțiuni, iar tabelele de comenzi rapide vin direct din program.
 
 CORECTĂRI
 
@@ -1347,7 +1373,18 @@ CORECTĂRI
 
 - WPPConnect Server a fost actualizat la 2.10.55. Pe lângă corecțiile bibliotecii pentru cererile cărora li se răspundea de două ori: când WhatsApp Web nu poate verifica un număr (de exemplu cât timp pagina se reîncarcă), trimiterea este acum reîncercată, în loc să spună greșit că numărul nu există. Același destinatar dintr-o singură cerere este verificat o singură dată. Dacă WinZapp oferă actualizarea WPPConnect la pornire, acceptați-o pentru a instala noua versiune.
 
-- Deconectarea dintr-o sesiune rămasă neterminată (de exemplu un cont care nu a terminat niciodată asocierea) primește acum un răspuns, în loc să eșueze în tăcere.</description>
+- Deconectarea dintr-o sesiune rămasă neterminată (de exemplu un cont care nu a terminat niciodată asocierea) primește acum un răspuns, în loc să eșueze în tăcere.
+
+- Fișierele descărcate a căror dimensiune este multiplu de 16 octeți (un APK, de exemplu) nu mai se termină cu 16 octeți în plus. Android refuza să le instaleze cu „problemă la analizarea pachetului”; acum fișierul salvat este identic cu originalul.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4412alpha/WinZapp-macOS-x86_64.zip" length="414081169" type="application/octet-stream" sparkle:edSignature="4ceZc31GFJ25vCtHduWrv8TTIn7wMNZOva0+c7ptUK4IqaEfaRDHD3QdW37B33AjvtBhKT51GzJOqu6P7xYmCg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4397alpha</title>
+      <pubDate>Wed, 14 Oct 2026 20:12:25 +0000</pubDate>
+      <sparkle:version>2.1.0.43971</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4397alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4397alpha/WinZapp-macOS-x86_64.zip" length="414121742" type="application/octet-stream" sparkle:edSignature="2p/VUAI/YPkxguBMSCTkx9kPyU88o2p4zeDycXpZgUczL2Qk88bdTwQhFmzkZZEo9QRALhUaN4MVzlQwhdMFAA=="></enclosure>
     </item>
     <item>
@@ -1377,17 +1414,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4365alpha/WinZapp-macOS-x86_64.zip" length="413801623" type="application/octet-stream" sparkle:edSignature="A7F/gHWoaRDVyG5bxNFwQ6rY52f8Lyr1ML3Fwo9+0XVHsC8B9/jPOW2d2bRlTmdtGWmlVO29xMK6nKp3GZvBAA=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4363alpha</title>
-      <pubDate>Tue, 13 Oct 2026 17:42:17 +0000</pubDate>
-      <sparkle:version>2.1.0.43631</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4363alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4363alpha/WinZapp-macOS-x86_64.zip" length="413875260" type="application/octet-stream" sparkle:edSignature="KXyAAJ3FoZVX4drrUomu4Sla1REncwFZO/GoblbXAoyx8jMwLB0EW2hYFg5qCUEqqih1D7a/g4wz2IwJGQocDw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: FZM+TCTHJARdzU8eEhE2ub1qNfSpQJ248yl8QnVD8rPq/h4OETnv3EsMnCWQm3bu9oouetpTvqtyDIBJSxq5DQ==
-length: 313540
+edSignature: kFa5JTpeFUmW4LW1FGfrpukCXnH/ZAKOpsKf38dLFZOtcfToDjI8ZQtFgI0/ykFc4k07QmCvx/4iKbcuVlqdAw==
+length: 319100
 -->
