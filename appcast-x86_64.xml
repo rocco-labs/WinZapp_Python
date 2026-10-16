@@ -5,14 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4434alpha</title>
-      <pubDate>Fri, 16 Oct 2026 04:06:59 +0000</pubDate>
-      <sparkle:version>2.1.0.44341</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4434alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4440alpha</title>
+      <pubDate>Fri, 16 Oct 2026 04:38:36 +0000</pubDate>
+      <sparkle:version>2.1.0.44401</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4440alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
@@ -138,6 +138,8 @@ WHAT'S NEW
 
 FIXES
 
+- Sending voice messages and documents failed with "Cannot read properties of undefined (reading 'prepRawMedia')" on a WhatsApp Web build released on 15 October, which moved that function. WinZapp now ships the matching version of its WhatsApp Web library (WA-JS 4.7.1). If sending still fails after updating, reinstall WPPConnect from the update window.
+
 - macOS: in the chat and message lists, VoiceOver no longer loses its place when a row changes, for example when an unread count changes, someone starts recording audio or a new message arrives. Opening a chat with VoiceOver now works at once and every time, instead of sometimes failing or acting only after a pause, and VoiceOver then moves to the message field; notices such as the one about pinned messages are spoken after the field instead of cutting it off.
 
 - The buttons for recording in the other mode (stereo or mono) and for recording with the computer's audio told the screen reader their shortcut was Ctrl+R. They now announce their own, Ctrl+Shift+G and Ctrl+Shift+H, or the keys you assigned to them.
@@ -217,8 +219,8 @@ FIXES
 - Downloaded files whose size is a multiple of 16 bytes (an APK, for example) no longer end with 16 extra bytes. Android refused to install them with "problem parsing the package"; now the saved file is identical to the original.
 
 - macOS: installing an update, and the first launch after it, are much faster. The app has far fewer files to unpack (about 24,000 instead of 61,000), its server is put in place in a fraction of a second instead of several seconds, the previous copy is deleted in the background, and the browser WhatsApp runs in (about 190 MB) is kept instead of being downloaded again after every update.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
@@ -344,6 +346,8 @@ NOVIDADES
 
 CORREÇÕES
 
+- O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada em 15 de outubro, que mudou essa função de lugar. O WinZapp agora traz a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar falhando depois de atualizar, reinstale o WPPConnect pela janela de atualização.
+
 - macOS: nas listas de conversas e de mensagens, o VoiceOver não perde mais o lugar quando uma linha muda, por exemplo quando um contador de não lidas muda, alguém começa a gravar áudio ou chega uma mensagem nova. Abrir uma conversa com o VoiceOver agora funciona na hora e sempre, em vez de às vezes falhar ou só agir depois de uma pausa, e o VoiceOver vai em seguida para o campo de mensagem; avisos como o das mensagens fixadas são falados depois do campo em vez de interrompê-lo.
 
 - Os botões de gravar no outro modo (estéreo ou mono) e de gravar com o áudio do computador informavam ao leitor de tela o atalho Ctrl+R. Agora cada um informa o seu, Ctrl+Shift+G e Ctrl+Shift+H, ou as teclas que você definiu para eles.
@@ -423,8 +427,8 @@ CORREÇÕES
 - Arquivos baixados cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android se recusava a instalá-los com "problema ao analisar o pacote"; agora o arquivo salvo é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. O app tem bem menos arquivos para descompactar (cerca de 24.000 em vez de 61.000), o servidor é colocado no lugar em uma fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp roda (cerca de 190 MB) é mantido em vez de ser baixado de novo a cada atualização.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
@@ -550,6 +554,8 @@ NOVIDADES
 
 CORREÇÕES
 
+- O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada a 15 de outubro, que mudou essa função de sítio. O WinZapp passa a incluir a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar a falhar depois de atualizar, reinstale o WPPConnect na janela de atualização.
+
 - macOS: nas listas de conversas e de mensagens, o VoiceOver já não perde o lugar quando uma linha muda, por exemplo quando um contador de não lidas muda, alguém começa a gravar áudio ou chega uma mensagem nova. Abrir uma conversa com o VoiceOver funciona agora de imediato e sempre, em vez de por vezes falhar ou só atuar depois de uma pausa, e o VoiceOver passa em seguida para o campo de mensagem; avisos como o das mensagens afixadas são lidos depois do campo em vez de o interromperem.
 
 - Os botões de gravar no outro modo (estéreo ou mono) e de gravar com o áudio do computador indicavam ao leitor de ecrã o atalho Ctrl+R. Agora cada um indica o seu, Ctrl+Shift+G e Ctrl+Shift+H, ou as teclas que definiu para eles.
@@ -629,8 +635,8 @@ CORREÇÕES
 - Os ficheiros transferidos cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android recusava-se a instalá-los com "problema ao analisar o pacote"; agora o ficheiro guardado é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. A app tem bastante menos ficheiros para descompactar (cerca de 24 000 em vez de 61 000), o servidor é colocado no lugar numa fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp corre (cerca de 190 MB) é mantido em vez de ser transferido de novo a cada atualização.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
@@ -756,6 +762,8 @@ NOVEDADES
 
 CORRECCIONES
 
+- El envío de mensajes de voz y de documentos fallaba con "Cannot read properties of undefined (reading 'prepRawMedia')" en una versión de WhatsApp Web publicada el 15 de octubre, que movió esa función. WinZapp ahora incluye la versión correspondiente de su biblioteca de WhatsApp Web (WA-JS 4.7.1). Si el envío sigue fallando tras actualizar, reinstala WPPConnect desde la ventana de actualización.
+
 - macOS: en las listas de chats y de mensajes, VoiceOver ya no pierde su sitio cuando cambia una fila, por ejemplo cuando cambia un contador de no leídos, alguien empieza a grabar audio o llega un mensaje nuevo. Abrir un chat con VoiceOver ahora funciona al instante y siempre, en lugar de fallar a veces o actuar solo tras una pausa, y VoiceOver pasa después al campo de mensaje; avisos como el de los mensajes fijados se leen después del campo en lugar de interrumpirlo.
 
 - Los botones de grabar en el otro modo (estéreo o mono) y de grabar con el audio del ordenador indicaban al lector de pantalla el atajo Ctrl+R. Ahora cada uno indica el suyo, Ctrl+Shift+G y Ctrl+Shift+H, o las teclas que les hayas asignado.
@@ -835,8 +843,8 @@ CORRECCIONES
 - Los archivos descargados cuyo tamaño es múltiplo de 16 bytes (un APK, por ejemplo) ya no terminan con 16 bytes de más. Android se negaba a instalarlos con "problema al analizar el paquete"; ahora el archivo guardado es idéntico al original.
 
 - macOS: instalar una actualización, y la primera apertura después de ella, son mucho más rápidos. La app tiene muchos menos archivos que descomprimir (unos 24.000 en lugar de 61.000), su servidor se coloca en su sitio en una fracción de segundo en lugar de varios segundos, la copia anterior se borra en segundo plano, y el navegador en el que funciona WhatsApp (unos 190 MB) se conserva en lugar de descargarse de nuevo con cada actualización.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
@@ -962,6 +970,8 @@ NOWOŚCI
 
 POPRAWKI
 
+- Wysyłanie wiadomości głosowych i dokumentów kończyło się błędem "Cannot read properties of undefined (reading 'prepRawMedia')" w wersji WhatsApp Web wydanej 15 października, która przeniosła tę funkcję. WinZapp zawiera teraz odpowiednią wersję swojej biblioteki WhatsApp Web (WA-JS 4.7.1). Jeśli wysyłanie nadal nie działa po aktualizacji, zainstaluj ponownie WPPConnect z okna aktualizacji.
+
 - macOS: na listach czatów i wiadomości VoiceOver nie gubi już swojego miejsca, gdy zmienia się wiersz, na przykład gdy zmienia się licznik nieprzeczytanych, ktoś zaczyna nagrywać audio albo przychodzi nowa wiadomość. Otwieranie czatu za pomocą VoiceOver działa teraz od razu i za każdym razem, zamiast czasem zawodzić albo działać dopiero po przerwie, a VoiceOver przechodzi potem do pola wiadomości; komunikaty takie jak ten o przypiętych wiadomościach są odczytywane po polu, zamiast mu przerywać.
 
 - Przyciski nagrywania w drugim trybie (stereo lub mono) i nagrywania z dźwiękiem komputera podawały czytnikowi ekranu skrót Ctrl+R. Teraz każdy podaje swój, Ctrl+Shift+G i Ctrl+Shift+H, albo klawisze, które im przypisano.
@@ -1041,8 +1051,8 @@ POPRAWKI
 - Pobrane pliki, których rozmiar jest wielokrotnością 16 bajtów (na przykład APK), nie kończą się już 16 dodatkowymi bajtami. Android odmawiał ich instalacji z komunikatem „problem podczas analizowania pakietu”; teraz zapisany plik jest identyczny z oryginałem.
 
 - macOS: instalacja aktualizacji i pierwsze uruchomienie po niej są znacznie szybsze. Aplikacja ma dużo mniej plików do rozpakowania (około 24 000 zamiast 61 000), jej serwer trafia na miejsce w ułamku sekundy zamiast w kilka sekund, poprzednia kopia jest usuwana w tle, a przeglądarka, w której działa WhatsApp (około 190 MB), jest zachowywana zamiast pobierania jej ponownie po każdej aktualizacji.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
@@ -1168,6 +1178,8 @@ YENİLİKLER
 
 DÜZELTMELER
 
+- Sesli mesajların ve belgelerin gönderimi, 15 Ekim'de yayımlanan ve bu işlevi taşıyan bir WhatsApp Web sürümünde "Cannot read properties of undefined (reading 'prepRawMedia')" hatasıyla başarısız oluyordu. WinZapp artık WhatsApp Web kitaplığının uyumlu sürümünü (WA-JS 4.7.1) içeriyor. Güncellemeden sonra gönderim hâlâ başarısız olursa WPPConnect'i güncelleme penceresinden yeniden yükleyin.
+
 - macOS: sohbet ve mesaj listelerinde, bir satır değiştiğinde (örneğin okunmamış sayısı değiştiğinde, biri ses kaydetmeye başladığında veya yeni bir mesaj geldiğinde) VoiceOver artık yerini kaybetmiyor. VoiceOver ile bir sohbeti açmak artık bazen başarısız olmak veya ancak bir duraklamadan sonra çalışmak yerine hemen ve her seferinde çalışıyor ve VoiceOver ardından mesaj alanına geçiyor; sabitlenmiş mesajlarla ilgili olan gibi bildirimler alanı kesmek yerine alandan sonra okunuyor.
 
 - Diğer modda (stereo veya mono) kayıt ve bilgisayar sesiyle kayıt düğmeleri ekran okuyucuya kısayol olarak Ctrl+R bildiriyordu. Artık her biri kendi kısayolunu, Ctrl+Shift+G ve Ctrl+Shift+H'yi ya da onlara atadığınız tuşları bildiriyor.
@@ -1247,8 +1259,8 @@ DÜZELTMELER
 - Boyutu 16 baytın katı olan indirilen dosyalar (örneğin bir APK) artık sonunda fazladan 16 bayt taşımıyor. Android bunları "paket ayrıştırılırken sorun oluştu" hatasıyla yüklemiyordu; artık kaydedilen dosya aslıyla birebir aynı.
 
 - macOS: bir güncellemeyi yüklemek ve sonrasındaki ilk açılış çok daha hızlı. Uygulamada açılacak dosya sayısı çok daha az (61.000 yerine yaklaşık 24.000), sunucusu birkaç saniye yerine saniyenin küçük bir kesrinde yerine konur, önceki kopya arka planda silinir ve WhatsApp'ın çalıştığı tarayıcı (yaklaşık 190 MB) her güncellemeden sonra yeniden indirilmek yerine korunur.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- macOS: background updates, faster updates, VoiceOver list fixes (from #507) (#510)
-- macOS: background updates, faster updates, VoiceOver list fixes (#507)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
+- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
@@ -1374,6 +1386,8 @@ NOUTĂȚI
 
 CORECTĂRI
 
+- Trimiterea mesajelor vocale și a documentelor eșua cu "Cannot read properties of undefined (reading 'prepRawMedia')" pe o versiune de WhatsApp Web lansată pe 15 octombrie, care a mutat acea funcție. WinZapp include acum versiunea corespunzătoare a bibliotecii sale WhatsApp Web (WA-JS 4.7.1). Dacă trimiterea tot eșuează după actualizare, reinstalează WPPConnect din fereastra de actualizare.
+
 - macOS: în listele de conversații și de mesaje, VoiceOver nu își mai pierde locul când un rând se schimbă, de exemplu când se schimbă numărul de mesaje necitite, cineva începe să înregistreze audio sau sosește un mesaj nou. Deschiderea unei conversații cu VoiceOver funcționează acum imediat și de fiecare dată, în loc să eșueze uneori sau să acționeze abia după o pauză, iar VoiceOver trece apoi la câmpul de mesaj; anunțuri precum cel despre mesajele fixate sunt rostite după câmp în loc să îl întrerupă.
 
 - Butoanele de înregistrare în celălalt mod (stereo sau mono) și de înregistrare cu sunetul computerului anunțau cititorului de ecran comanda rapidă Ctrl+R. Acum fiecare o anunță pe a sa, Ctrl+Shift+G și Ctrl+Shift+H, sau tastele pe care le-ați atribuit.
@@ -1453,6 +1467,15 @@ CORECTĂRI
 - Fișierele descărcate a căror dimensiune este multiplu de 16 octeți (un APK, de exemplu) nu mai se termină cu 16 octeți în plus. Android refuza să le instaleze cu „problemă la analizarea pachetului”; acum fișierul salvat este identic cu originalul.
 
 - macOS: instalarea unei actualizări și prima pornire după ea sunt mult mai rapide. Aplicația are mult mai puține fișiere de dezarhivat (aproximativ 24.000 în loc de 61.000), serverul ei este pus la locul lui într-o fracțiune de secundă în loc de câteva secunde, copia anterioară este ștearsă în fundal, iar browserul în care rulează WhatsApp (aproximativ 190 MB) este păstrat în loc să fie descărcat din nou după fiecare actualizare.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4440alpha/WinZapp-macOS-x86_64.zip" length="340361471" type="application/octet-stream" sparkle:edSignature="RHDSygmSvCKv4pROy9NZSeyrK91HMZIHC+JNfT68Hu9ooWDCOjUdDwFx0aj1V1YsKV8h8E9IjzpCJFsx7+E8Dw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4434alpha</title>
+      <pubDate>Fri, 16 Oct 2026 04:06:59 +0000</pubDate>
+      <sparkle:version>2.1.0.44341</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4434alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4434alpha/WinZapp-macOS-x86_64.zip" length="353246702" type="application/octet-stream" sparkle:edSignature="srBqHH3AKLabC8uqeIP9dpZ1PXtzRSGPkNi2bX6V1Vvxxz7Nu3E04halxwiFAtb+gk6t84jGvkBkPuEYTxm5AQ=="></enclosure>
     </item>
     <item>
@@ -1482,17 +1505,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4397alpha/WinZapp-macOS-x86_64.zip" length="414121742" type="application/octet-stream" sparkle:edSignature="2p/VUAI/YPkxguBMSCTkx9kPyU88o2p4zeDycXpZgUczL2Qk88bdTwQhFmzkZZEo9QRALhUaN4MVzlQwhdMFAA=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4391alpha</title>
-      <pubDate>Wed, 14 Oct 2026 05:58:00 +0000</pubDate>
-      <sparkle:version>2.1.0.43911</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4391alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4391alpha/WinZapp-macOS-x86_64.zip" length="413724266" type="application/octet-stream" sparkle:edSignature="36DOCl19FrsthPOQ17gXxRRxKbSlzB4hOM65bJ7b9dzX5MWFKIylfGA8kCJ0eP4jpMxOBVKV5lxGioabY07rCA=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: sCBcUjVQOLs/WxWdvlrcMhGYPngOr4yQuRqZnZzuzGwukwy7iHAsiM3Q3rWqpl/XNqPkMdoJk4RwrEZN4E6hCA==
-length: 342569
+edSignature: YnSvb/Rwot6EL+tKYlPV7dGfy7jcWuUBf7pGsBRBaDfbqDiE5TBah36a2yFkpZcW8qMfXLnx3/Jjpx8x8zSrBQ==
+length: 345692
 -->
