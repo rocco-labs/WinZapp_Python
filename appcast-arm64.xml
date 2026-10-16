@@ -5,10 +5,10 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4412alpha</title>
-      <pubDate>Thu, 15 Oct 2026 17:26:59 +0000</pubDate>
-      <sparkle:version>2.1.0.44121</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4412alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4431alpha</title>
+      <pubDate>Fri, 16 Oct 2026 00:10:11 +0000</pubDate>
+      <sparkle:version>2.1.0.44311</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4431alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <description xml:lang="en" sparkle:format="plain-text">This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
@@ -128,6 +128,10 @@ WHAT'S NEW
 - Communities is now a row of the navigation list, after Calls, with its Alt+8 shortcut in the row's name, so it can be reached by arrowing through the list as well as with Alt+8.
 
 - Help &gt; "Usage guide" opens, in the default browser, the complete guide to using the program, in the chosen language: where each feature is, the shortcuts and what the screen reader says. It has search and a section menu, and the shortcut tables come straight from the program.
+
+- Media cleanup: Settings &gt; Storage &gt; "Media cleanup" frees disk space by deleting the downloaded media files of the conversations you choose; the messages stay. You pick the conversations, the media types and a minimum size, "Gather data" shows how many files and MB match without deleting anything, and "Proceed with cleanup" asks for confirmation and deletes exactly what was shown. Files you saved with Save As and the media of unsent messages are never touched, and cleaned files are not downloaded again by automatic downloads or syncs until you log out or pair again.
+
+- Online transcription and description in the message line, automatic: the AI result window gets "Put transcription in the message line" (voice messages) and "Put description in the message line" (pictures, stickers and videos). In Settings &gt; Transcriptions &amp; Descriptions, two new options, both off by default, transcribe received voice messages and describe received pictures, stickers and videos automatically with the online providers, without a window or sound per message; turning one on asks for the usual consent and turns off the local automatic transcription, and the other way round. The conversation data window of each chat has "transcribe" and "describe" boxes (they also apply to the local automatic transcription), with a choice between "All conversations, except the ones I turn off" and "Only the conversations I turn on". To protect your API quota you can choose how old a received message may be and still be processed (5 minutes, 15, 30 or 1 hour) and set a daily ceiling on automatic online requests (50 by default, 0 for none); when every provider refuses for a reason that repeats, such as quota or key, the automatic queue pauses for an hour and says so once.
 
 FIXES
 
@@ -324,6 +328,10 @@ NOVIDADES
 
 - Ajuda &gt; "Guia de uso" abre, no navegador padrão, o guia completo de como usar o programa, no idioma escolhido: onde fica cada função, os atalhos e o que o leitor de tela diz. Tem busca e menu de seções, e as tabelas de atalhos vêm direto do programa.
 
+- Limpeza de mídia: Configurações &gt; Armazenamento &gt; "Limpeza de mídia" libera espaço em disco apagando os arquivos de mídia baixados das conversas que você escolher; as mensagens ficam. Você escolhe as conversas, os tipos de mídia e um tamanho mínimo, "Reunir dados" mostra quantos arquivos e MB correspondem sem apagar nada, e "Prosseguir com a limpeza" pede confirmação e apaga exatamente o que foi mostrado. Arquivos salvos com Salvar como e a mídia de mensagens não enviadas nunca são tocados, e os arquivos apagados não são baixados de novo pelos downloads automáticos nem pelas sincronizações até você sair da conta ou parear de novo.
+
+- Transcrição e descrição online na linha da mensagem, de forma automática: a janela de resultado da IA ganhou "Colocar a transcrição na linha da mensagem" (mensagens de voz) e "Colocar a descrição na linha da mensagem" (imagens, figurinhas e vídeos). Em Configurações &gt; Transcrições e Descrições, duas novas opções, desligadas por padrão, transcrevem automaticamente as mensagens de voz recebidas e descrevem as imagens, figurinhas e vídeos recebidos com os provedores online, sem janela nem som a cada mensagem; ligar uma delas pede o consentimento de sempre e desliga a transcrição automática local, e vice-versa. A janela de dados de cada conversa tem as caixas "transcrever" e "descrever" (elas valem também para a transcrição automática local), com a escolha entre "Todas as conversas, exceto as que eu desligar" e "Somente as conversas que eu ligar". Para proteger a sua cota da API, você escolhe a idade máxima de uma mensagem recebida para ser processada (5 minutos, 15, 30 ou 1 hora) e define um limite diário de pedidos online automáticos (50 por padrão, 0 para nenhum limite); quando todos os provedores recusam por um motivo que se repete, como cota ou chave, a fila automática pausa por uma hora e avisa uma única vez.
+
 CORREÇÕES
 
 - Os botões de gravar no outro modo (estéreo ou mono) e de gravar com o áudio do computador informavam ao leitor de tela o atalho Ctrl+R. Agora cada um informa o seu, Ctrl+Shift+G e Ctrl+Shift+H, ou as teclas que você definiu para eles.
@@ -518,6 +526,10 @@ NOVIDADES
 - As comunidades passam a ser um item da lista de navegação, depois de Chamadas, com o atalho Alt+8 no nome do item; pode chegar-se lá descendo pela lista e não só com Alt+8.
 
 - Ajuda &gt; "Guia de utilização" abre, no navegador padrão, o guia completo de como usar o programa, no idioma escolhido: onde fica cada função, os atalhos e o que o leitor de ecrã diz. Tem pesquisa e menu de secções, e as tabelas de atalhos vêm diretamente do programa.
+
+- Limpeza de multimédia: Definições &gt; Armazenamento &gt; "Limpeza de multimédia" liberta espaço em disco apagando os ficheiros multimédia descarregados das conversas que escolher; as mensagens ficam. Escolhe as conversas, os tipos de multimédia e um tamanho mínimo, "Reunir dados" mostra quantos ficheiros e MB correspondem sem apagar nada, e "Continuar com a limpeza" pede confirmação e apaga exatamente o que foi mostrado. Os ficheiros guardados com Guardar como e o multimédia de mensagens por enviar nunca são tocados, e os ficheiros apagados não são descarregados de novo pelas transferências automáticas nem pelas sincronizações até terminar a sessão ou emparelhar de novo.
+
+- Transcrição e descrição online na linha da mensagem, de forma automática: a janela de resultado da IA ganhou "Colocar a transcrição na linha da mensagem" (mensagens de voz) e "Colocar a descrição na linha da mensagem" (imagens, autocolantes e vídeos). Em Definições &gt; Transcrições e Descrições, duas novas opções, desligadas por predefinição, transcrevem automaticamente as mensagens de voz recebidas e descrevem as imagens, autocolantes e vídeos recebidos com os fornecedores online, sem janela nem som a cada mensagem; ligar uma delas pede o consentimento habitual e desliga a transcrição automática local, e vice-versa. A janela de dados de cada conversa tem as caixas "transcrever" e "descrever" (valem também para a transcrição automática local), com a escolha entre "Todas as conversas, exceto as que eu desligar" e "Apenas as conversas que eu ligar". Para proteger a sua quota da API, escolhe a idade máxima de uma mensagem recebida para ser processada (5 minutos, 15, 30 ou 1 hora) e define um limite diário de pedidos online automáticos (50 por predefinição, 0 para nenhum limite); quando todos os fornecedores recusam por um motivo que se repete, como quota ou chave, a fila automática faz uma pausa de uma hora e avisa uma única vez.
 
 CORREÇÕES
 
@@ -714,6 +726,10 @@ NOVEDADES
 
 - Ayuda &gt; "Guía de uso" abre, en el navegador predeterminado, la guía completa de cómo usar el programa, en el idioma elegido: dónde está cada función, los atajos y lo que dice el lector de pantalla. Tiene búsqueda y menú de secciones, y las tablas de atajos vienen directamente del programa.
 
+- Limpieza de multimedia: Ajustes &gt; Almacenamiento &gt; "Limpieza de multimedia" libera espacio en disco borrando los archivos multimedia descargados de las conversaciones que elijas; los mensajes se quedan. Eliges las conversaciones, los tipos de multimedia y un tamaño mínimo, "Reunir datos" muestra cuántos archivos y MB coinciden sin borrar nada, y "Continuar con la limpieza" pide confirmación y borra exactamente lo mostrado. Los archivos guardados con Guardar como y el contenido de mensajes sin enviar nunca se tocan, y los archivos limpiados no se vuelven a descargar con las descargas automáticas ni las sincronizaciones hasta que cierres sesión o emparejes de nuevo.
+
+- Transcripción y descripción en línea en la línea del mensaje, de forma automática: la ventana de resultado de la IA incorpora "Poner la transcripción en la línea del mensaje" (mensajes de voz) y "Poner la descripción en la línea del mensaje" (imágenes, stickers y vídeos). En Ajustes &gt; Transcripciones y Descripciones, dos opciones nuevas, desactivadas por defecto, transcriben automáticamente los mensajes de voz recibidos y describen las imágenes, stickers y vídeos recibidos con los proveedores en línea, sin ventana ni sonido por mensaje; activar una pide el consentimiento habitual y desactiva la transcripción automática local, y al revés. La ventana de datos de cada conversación tiene las casillas "transcribir" y "describir" (también valen para la transcripción automática local), con la opción de elegir entre "Todas las conversaciones, salvo las que yo desactive" y "Solo las conversaciones que yo active". Para proteger tu cuota de la API puedes elegir la antigüedad máxima de un mensaje recibido para procesarlo (5 minutos, 15, 30 o 1 hora) y fijar un límite diario de solicitudes automáticas en línea (50 por defecto, 0 para ninguno); cuando todos los proveedores rechazan por un motivo que se repite, como la cuota o la clave, la cola automática se pausa durante una hora y lo avisa una sola vez.
+
 CORRECCIONES
 
 - Los botones de grabar en el otro modo (estéreo o mono) y de grabar con el audio del ordenador indicaban al lector de pantalla el atajo Ctrl+R. Ahora cada uno indica el suyo, Ctrl+Shift+G y Ctrl+Shift+H, o las teclas que les hayas asignado.
@@ -908,6 +924,10 @@ NOWOŚCI
 - Społeczności są teraz pozycją listy nawigacji, po Połączeniach, ze skrótem Alt+8 w nazwie pozycji; można do nich dojść strzałkami po liście, a nie tylko skrótem Alt+8.
 
 - Pomoc &gt; "Przewodnik użytkownika" otwiera w domyślnej przeglądarce pełny przewodnik po programie w wybranym języku: gdzie jest każda funkcja, jakie są skróty i co mówi czytnik ekranu. Ma wyszukiwarkę i menu sekcji, a tabele skrótów pochodzą prosto z programu.
+
+- Czyszczenie multimediów: Ustawienia &gt; Pamięć &gt; „Czyszczenie multimediów" zwalnia miejsce na dysku, usuwając pobrane pliki multimedialne z wybranych czatów; wiadomości zostają. Wybierasz czaty, rodzaje multimediów i minimalny rozmiar, „Zbierz dane" pokazuje, ile plików i MB pasuje, niczego nie usuwając, a „Kontynuuj czyszczenie" prosi o potwierdzenie i usuwa dokładnie to, co pokazano. Pliki zapisane przez Zapisz jako i multimedia niewysłanych wiadomości nigdy nie są ruszane, a wyczyszczone pliki nie są pobierane ponownie przez pobieranie automatyczne ani synchronizację, dopóki się nie wylogujesz lub nie sparujesz ponownie.
+
+- Transkrypcja i opis online w wierszu wiadomości, w trybie automatycznym: okno wyniku AI ma nowe polecenia "Umieść transkrypcję w wierszu wiadomości" (wiadomości głosowe) oraz "Umieść opis w wierszu wiadomości" (obrazy, naklejki i filmy). W Ustawienia &gt; Transkrypcje i opisy dwie nowe opcje, domyślnie wyłączone, automatycznie transkrybują odebrane wiadomości głosowe i opisują odebrane obrazy, naklejki i filmy u dostawców online, bez okna i dźwięku przy każdej wiadomości; włączenie jednej prosi o zwykłą zgodę i wyłącza lokalną transkrypcję automatyczną, i odwrotnie. Okno danych każdej rozmowy ma pola "transkrybuj" i "opisuj" (dotyczą też lokalnej transkrypcji automatycznej) oraz wybór między "Wszystkie rozmowy oprócz tych, które wyłączę" a "Tylko rozmowy, które włączę". Aby chronić limit API, wybierasz, jak stara może być odebrana wiadomość, by została przetworzona (5 minut, 15, 30 lub 1 godzina), i ustawiasz dzienny limit automatycznych zapytań online (domyślnie 50, 0 oznacza brak limitu); gdy wszyscy dostawcy odmawiają z powtarzającego się powodu, takiego jak limit lub klucz, kolejka automatyczna zatrzymuje się na godzinę i informuje o tym jeden raz.
 
 POPRAWKI
 
@@ -1104,6 +1124,10 @@ YENİLİKLER
 
 - Yardım &gt; "Kullanım kılavuzu", programın nasıl kullanılacağını anlatan eksiksiz kılavuzu seçili dilde varsayılan tarayıcıda açar: her işlevin nerede olduğu, kısayollar ve ekran okuyucunun ne söylediği. Arama ve bölüm menüsü vardır; kısayol tabloları doğrudan programdan gelir.
 
+- Ortam temizliği: Ayarlar &gt; Depolama &gt; "Ortam dosyalarını temizle", seçtiğiniz konuşmaların indirilmiş ortam dosyalarını silerek disk alanı açar; mesajlar kalır. Konuşmaları, ortam türlerini ve en küçük boyutu seçersiniz; "Verileri topla" hiçbir şeyi silmeden kaç dosya ve MB eşleştiğini gösterir, "Temizlemeye devam et" onay ister ve gösterilenin tam olarak aynısını siler. Farklı kaydet ile kaydettiğiniz dosyalara ve gönderilmemiş mesajların ortamlarına hiç dokunulmaz; temizlenen dosyalar, oturumu kapatana veya yeniden eşleştirene kadar otomatik indirmelerle ya da eşitlemelerle yeniden indirilmez.
+
+- Mesaj satırında çevrimiçi yazıya dökme ve betimleme, otomatik olarak: yapay zekâ sonuç penceresine "Yazıya dökmeyi mesaj satırına koy" (sesli mesajlar) ve "Betimlemeyi mesaj satırına koy" (resimler, çıkartmalar ve videolar) eklendi. Ayarlar &gt; Yazıya Dökmeler ve Betimlemeler içinde, varsayılan olarak kapalı iki yeni seçenek, alınan sesli mesajları otomatik olarak yazıya döker ve alınan resim, çıkartma ve videoları çevrimiçi sağlayıcılarla betimler; her mesaj için pencere veya ses çıkmaz. Birini açmak olağan onayı ister ve yerel otomatik yazıya dökmeyi kapatır, tersi de geçerlidir. Her konuşmanın veri penceresinde "yazıya dök" ve "betimle" kutuları vardır (yerel otomatik yazıya dökme için de geçerlidir); "Kapattıklarım dışında tüm konuşmalar" ile "Yalnızca açtığım konuşmalar" arasında seçim yapılır. API kotanızı korumak için alınan bir mesajın işlenebilmesi için en fazla ne kadar eski olabileceğini (5 dakika, 15, 30 veya 1 saat) seçebilir ve otomatik çevrimiçi isteklere günlük bir üst sınır koyabilirsiniz (varsayılan 50, 0 sınır yok); tüm sağlayıcılar kota veya anahtar gibi yinelenen bir nedenle reddederse otomatik kuyruk bir saat duraklar ve bunu bir kez bildirir.
+
 DÜZELTMELER
 
 - Diğer modda (stereo veya mono) kayıt ve bilgisayar sesiyle kayıt düğmeleri ekran okuyucuya kısayol olarak Ctrl+R bildiriyordu. Artık her biri kendi kısayolunu, Ctrl+Shift+G ve Ctrl+Shift+H'yi ya da onlara atadığınız tuşları bildiriyor.
@@ -1299,6 +1323,10 @@ NOUTĂȚI
 
 - Ajutor &gt; "Ghid de utilizare" deschide, în browserul implicit, ghidul complet de folosire a programului, în limba aleasă: unde se află fiecare funcție, comenzile rapide și ce spune cititorul de ecran. Are căutare și meniu de secțiuni, iar tabelele de comenzi rapide vin direct din program.
 
+- Curățarea fișierelor media: Setări &gt; Stocare &gt; „Curățarea fișierelor media" eliberează spațiu pe disc ștergând fișierele media descărcate din conversațiile alese; mesajele rămân. Alegi conversațiile, tipurile de media și o dimensiune minimă, „Adună datele" arată câte fișiere și MB corespund fără a șterge nimic, iar „Continuă curățarea" cere confirmare și șterge exact ce a fost afișat. Fișierele salvate cu Salvează ca și media mesajelor netrimise nu sunt atinse niciodată, iar fișierele curățate nu mai sunt descărcate de descărcările automate sau de sincronizări până când te deconectezi sau asociezi din nou.
+
+- Transcriere și descriere online în linia mesajului, în mod automat: fereastra de rezultat al AI are acum "Pune transcrierea în linia mesajului" (mesaje vocale) și "Pune descrierea în linia mesajului" (imagini, stickere și videoclipuri). În Setări &gt; Transcrieri și Descrieri, două opțiuni noi, dezactivate implicit, transcriu automat mesajele vocale primite și descriu imaginile, stickerele și videoclipurile primite cu furnizorii online, fără fereastră sau sunet la fiecare mesaj; activarea uneia cere consimțământul obișnuit și dezactivează transcrierea automată locală, și invers. Fereastra de date a fiecărei conversații are casetele "transcrie" și "descrie" (se aplică și transcrierii automate locale), cu alegerea între "Toate conversațiile, cu excepția celor pe care le dezactivez" și "Numai conversațiile pe care le activez". Pentru a-ți proteja cota API, alegi cât de vechi poate fi un mesaj primit ca să fie procesat (5 minute, 15, 30 sau 1 oră) și stabilești o limită zilnică de cereri online automate (50 implicit, 0 pentru nicio limită); când toți furnizorii refuză dintr-un motiv care se repetă, cum ar fi cota sau cheia, coada automată se oprește o oră și anunță o singură dată.
+
 CORECTĂRI
 
 - Butoanele de înregistrare în celălalt mod (stereo sau mono) și de înregistrare cu sunetul computerului anunțau cititorului de ecran comanda rapidă Ctrl+R. Acum fiecare o anunță pe a sa, Ctrl+Shift+G și Ctrl+Shift+H, sau tastele pe care le-ați atribuit.
@@ -1376,6 +1404,15 @@ CORECTĂRI
 - Deconectarea dintr-o sesiune rămasă neterminată (de exemplu un cont care nu a terminat niciodată asocierea) primește acum un răspuns, în loc să eșueze în tăcere.
 
 - Fișierele descărcate a căror dimensiune este multiplu de 16 octeți (un APK, de exemplu) nu mai se termină cu 16 octeți în plus. Android refuza să le instaleze cu „problemă la analizarea pachetului”; acum fișierul salvat este identic cu originalul.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4431alpha/WinZapp-macOS-arm64.zip" length="378290846" type="application/octet-stream" sparkle:edSignature="5+cHGy5WZ8VSVe8pNcIczbvm9qZaj34JzKdby7n00ah6TZhknIOdXvHT1/CPq8eCbiQuqcZgdCXVxfB8hjUwCw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4412alpha</title>
+      <pubDate>Thu, 15 Oct 2026 17:26:59 +0000</pubDate>
+      <sparkle:version>2.1.0.44121</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4412alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4412alpha/WinZapp-macOS-arm64.zip" length="378399159" type="application/octet-stream" sparkle:edSignature="O5P6qeq7uV6rT+NugxcSLNRi39hI1AvnySPMPhVNBp7bLX/c2OwNOxJyJctERfEjOM7+FKrxn64jhYoX81SABQ=="></enclosure>
     </item>
     <item>
@@ -1405,17 +1442,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4370alpha/WinZapp-macOS-arm64.zip" length="378041061" type="application/octet-stream" sparkle:edSignature="/1sxh3EFjPjkbajh15sxelWiRibdm33IdE4dNWsySlJ9A6eM5a09mWn7y807TTzvmsVvk4SJxr2M5uX6OYalBQ=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4365alpha</title>
-      <pubDate>Tue, 13 Oct 2026 22:20:24 +0000</pubDate>
-      <sparkle:version>2.1.0.43651</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4365alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4365alpha/WinZapp-macOS-arm64.zip" length="378123407" type="application/octet-stream" sparkle:edSignature="mEt3pXXji0EjvkgTY6gCSx2M/R/ZP2W/+s67Riawg+kVZLq9TAh4ksvAkXvq3EBeZdlI4IM02j/pyNq2ir8jDg=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: AiFDLI8bfNZ4o6ZQb0QjNRPWdiaLNfiZTmY9uoOi+mrpSqgIM3fv83WLNhhHWe6RWLjmRievtFkxg0CXAUMDCA==
-length: 319094
+edSignature: ZbqPjLRyChEkKwmdkTudG97jRCosyezD7TfgExmPp92jky0QnSw/wKQpoYEXrwSohTY3uncKUezDC8CgCx8IDQ==
+length: 332600
 -->
