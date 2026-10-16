@@ -5,13 +5,17 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4442alpha</title>
-      <pubDate>Fri, 16 Oct 2026 14:26:01 +0000</pubDate>
-      <sparkle:version>2.1.0.44421</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4442alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4454alpha</title>
+      <pubDate>Fri, 16 Oct 2026 15:12:44 +0000</pubDate>
+      <sparkle:version>2.1.0.44541</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4454alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="en" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
@@ -135,11 +139,15 @@ WHAT'S NEW
 
 - Online transcription and description in the message line, automatic: the AI result window gets "Put transcription in the message line" (voice messages) and "Put description in the message line" (pictures, stickers and videos). In Settings &gt; Transcriptions &amp; Descriptions, two new options, both off by default, transcribe received voice messages and describe received pictures, stickers and videos automatically with the online providers, without a window or sound per message; turning one on asks for the usual consent and turns off the local automatic transcription, and the other way round. The conversation data window of each chat has "transcribe" and "describe" boxes (they also apply to the local automatic transcription), with a choice between "All conversations, except the ones I turn off" and "Only the conversations I turn on". To protect your API quota you can choose how old a received message may be and still be processed (5 minutes, 15, 30 or 1 hour) and set a daily ceiling on automatic online requests (50 by default, 0 for none); when every provider refuses for a reason that repeats, such as quota or key, the automatic queue pauses for an hour and says so once.
 
+- A new or empty personal chat now extends the "no messages" line with a notice that messages and calls are end-to-end encrypted and, if the chat has a disappearing messages timer, its duration. The chat info also states the encryption.
+
 FIXES
 
 - Sending voice messages and documents failed with "Cannot read properties of undefined (reading 'prepRawMedia')" on a WhatsApp Web build released on 15 October, which moved that function. WinZapp now ships the matching version of its WhatsApp Web library (WA-JS 4.7.1). If sending still fails after updating, reinstall WPPConnect from the update window.
 
 - macOS: in the chat and message lists, VoiceOver no longer loses its place when a row changes, for example when an unread count changes, someone starts recording audio or a new message arrives. Opening a chat with VoiceOver now works at once and every time, instead of sometimes failing or acting only after a pause, and VoiceOver then moves to the message field; notices such as the one about pinned messages are spoken after the field instead of cutting it off.
+
+- macOS: Command shortcuts now do the same thing on every screen. A button's underlined letter used to take over Command and that letter: while "Read more" was shown, Command-R pressed it instead of recording a voice message, and other buttons took other shortcuts the same way. A button's underlined letter is now pressed with Command-Option and the letter, the Mac form of Alt and the letter on Windows, and a WinZapp shortcut on the same keys still comes first, as on Windows.
 
 - The buttons for recording in the other mode (stereo or mono) and for recording with the computer's audio told the screen reader their shortcut was Ctrl+R. They now announce their own, Ctrl+Shift+G and Ctrl+Shift+H, or the keys you assigned to them.
 
@@ -218,7 +226,11 @@ FIXES
 - Downloaded files whose size is a multiple of 16 bytes (an APK, for example) no longer end with 16 extra bytes. Android refused to install them with "problem parsing the package"; now the saved file is identical to the original.
 
 - macOS: installing an update, and the first launch after it, are much faster. The app has far fewer files to unpack (about 24,000 instead of 61,000), its server is put in place in a fraction of a second instead of several seconds, the previous copy is deleted in the background, and the browser WhatsApp runs in (about 190 MB) is kept instead of being downloaded again after every update.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
@@ -342,11 +354,15 @@ NOVIDADES
 
 - Transcrição e descrição online na linha da mensagem, de forma automática: a janela de resultado da IA ganhou "Colocar a transcrição na linha da mensagem" (mensagens de voz) e "Colocar a descrição na linha da mensagem" (imagens, figurinhas e vídeos). Em Configurações &gt; Transcrições e Descrições, duas novas opções, desligadas por padrão, transcrevem automaticamente as mensagens de voz recebidas e descrevem as imagens, figurinhas e vídeos recebidos com os provedores online, sem janela nem som a cada mensagem; ligar uma delas pede o consentimento de sempre e desliga a transcrição automática local, e vice-versa. A janela de dados de cada conversa tem as caixas "transcrever" e "descrever" (elas valem também para a transcrição automática local), com a escolha entre "Todas as conversas, exceto as que eu desligar" e "Somente as conversas que eu ligar". Para proteger a sua cota da API, você escolhe a idade máxima de uma mensagem recebida para ser processada (5 minutos, 15, 30 ou 1 hora) e define um limite diário de pedidos online automáticos (50 por padrão, 0 para nenhum limite); quando todos os provedores recusam por um motivo que se repete, como cota ou chave, a fila automática pausa por uma hora e avisa uma única vez.
 
+- Um chat pessoal novo ou vazio agora informa, na linha de "nenhuma mensagem", que as mensagens e ligações são protegidas com criptografia de ponta a ponta e, se houver mensagens temporárias, o prazo. As informações do chat também mencionam a criptografia.
+
 CORREÇÕES
 
 - O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada em 15 de outubro, que mudou essa função de lugar. O WinZapp agora traz a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar falhando depois de atualizar, reinstale o WPPConnect pela janela de atualização.
 
 - macOS: nas listas de conversas e de mensagens, o VoiceOver não perde mais o lugar quando uma linha muda, por exemplo quando um contador de não lidas muda, alguém começa a gravar áudio ou chega uma mensagem nova. Abrir uma conversa com o VoiceOver agora funciona na hora e sempre, em vez de às vezes falhar ou só agir depois de uma pausa, e o VoiceOver vai em seguida para o campo de mensagem; avisos como o das mensagens fixadas são falados depois do campo em vez de interrompê-lo.
+
+- macOS: os atalhos com Command agora fazem a mesma coisa em todas as telas. A letra sublinhada de um botão tomava o Command com essa letra: enquanto "Ler mais" aparecia, Command-L o acionava, e outros botões tomavam outros atalhos do mesmo jeito. A letra sublinhada de um botão agora é acionada com Command-Option e a letra, a forma Mac de Alt e a letra no Windows, e um atalho do WinZapp nas mesmas teclas continua tendo prioridade, como no Windows.
 
 - Os botões de gravar no outro modo (estéreo ou mono) e de gravar com o áudio do computador informavam ao leitor de tela o atalho Ctrl+R. Agora cada um informa o seu, Ctrl+Shift+G e Ctrl+Shift+H, ou as teclas que você definiu para eles.
 
@@ -425,7 +441,11 @@ CORREÇÕES
 - Arquivos baixados cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android se recusava a instalá-los com "problema ao analisar o pacote"; agora o arquivo salvo é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. O app tem bem menos arquivos para descompactar (cerca de 24.000 em vez de 61.000), o servidor é colocado no lugar em uma fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp roda (cerca de 190 MB) é mantido em vez de ser baixado de novo a cada atualização.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
@@ -549,11 +569,15 @@ NOVIDADES
 
 - Transcrição e descrição online na linha da mensagem, de forma automática: a janela de resultado da IA ganhou "Colocar a transcrição na linha da mensagem" (mensagens de voz) e "Colocar a descrição na linha da mensagem" (imagens, autocolantes e vídeos). Em Definições &gt; Transcrições e Descrições, duas novas opções, desligadas por predefinição, transcrevem automaticamente as mensagens de voz recebidas e descrevem as imagens, autocolantes e vídeos recebidos com os fornecedores online, sem janela nem som a cada mensagem; ligar uma delas pede o consentimento habitual e desliga a transcrição automática local, e vice-versa. A janela de dados de cada conversa tem as caixas "transcrever" e "descrever" (valem também para a transcrição automática local), com a escolha entre "Todas as conversas, exceto as que eu desligar" e "Apenas as conversas que eu ligar". Para proteger a sua quota da API, escolhe a idade máxima de uma mensagem recebida para ser processada (5 minutos, 15, 30 ou 1 hora) e define um limite diário de pedidos online automáticos (50 por predefinição, 0 para nenhum limite); quando todos os fornecedores recusam por um motivo que se repete, como quota ou chave, a fila automática faz uma pausa de uma hora e avisa uma única vez.
 
+- Uma conversa pessoal nova ou vazia passa a indicar, na linha de "nenhuma mensagem", que as mensagens e as chamadas são protegidas com encriptação de ponta a ponta e, se houver mensagens temporárias, o prazo. As informações da conversa também referem a encriptação.
+
 CORREÇÕES
 
 - O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada a 15 de outubro, que mudou essa função de sítio. O WinZapp passa a incluir a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar a falhar depois de atualizar, reinstale o WPPConnect na janela de atualização.
 
 - macOS: nas listas de conversas e de mensagens, o VoiceOver já não perde o lugar quando uma linha muda, por exemplo quando um contador de não lidas muda, alguém começa a gravar áudio ou chega uma mensagem nova. Abrir uma conversa com o VoiceOver funciona agora de imediato e sempre, em vez de por vezes falhar ou só atuar depois de uma pausa, e o VoiceOver passa em seguida para o campo de mensagem; avisos como o das mensagens afixadas são lidos depois do campo em vez de o interromperem.
+
+- macOS: os atalhos com Command fazem agora a mesma coisa em todos os ecrãs. A letra sublinhada de um botão apoderava-se do Command com essa letra: enquanto "Ler mais" era mostrado, Command-L acionava-o, e outros botões apoderavam-se de outros atalhos da mesma forma. A letra sublinhada de um botão é agora acionada com Command-Option e a letra, a forma Mac de Alt e a letra no Windows, e um atalho do WinZapp nas mesmas teclas continua a ter prioridade, como no Windows.
 
 - Os botões de gravar no outro modo (estéreo ou mono) e de gravar com o áudio do computador indicavam ao leitor de ecrã o atalho Ctrl+R. Agora cada um indica o seu, Ctrl+Shift+G e Ctrl+Shift+H, ou as teclas que definiu para eles.
 
@@ -632,7 +656,11 @@ CORREÇÕES
 - Os ficheiros transferidos cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android recusava-se a instalá-los com "problema ao analisar o pacote"; agora o ficheiro guardado é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. A app tem bastante menos ficheiros para descompactar (cerca de 24 000 em vez de 61 000), o servidor é colocado no lugar numa fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp corre (cerca de 190 MB) é mantido em vez de ser transferido de novo a cada atualização.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="es" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
@@ -756,11 +784,15 @@ NOVEDADES
 
 - Transcripción y descripción en línea en la línea del mensaje, de forma automática: la ventana de resultado de la IA incorpora "Poner la transcripción en la línea del mensaje" (mensajes de voz) y "Poner la descripción en la línea del mensaje" (imágenes, stickers y vídeos). En Ajustes &gt; Transcripciones y Descripciones, dos opciones nuevas, desactivadas por defecto, transcriben automáticamente los mensajes de voz recibidos y describen las imágenes, stickers y vídeos recibidos con los proveedores en línea, sin ventana ni sonido por mensaje; activar una pide el consentimiento habitual y desactiva la transcripción automática local, y al revés. La ventana de datos de cada conversación tiene las casillas "transcribir" y "describir" (también valen para la transcripción automática local), con la opción de elegir entre "Todas las conversaciones, salvo las que yo desactive" y "Solo las conversaciones que yo active". Para proteger tu cuota de la API puedes elegir la antigüedad máxima de un mensaje recibido para procesarlo (5 minutos, 15, 30 o 1 hora) y fijar un límite diario de solicitudes automáticas en línea (50 por defecto, 0 para ninguno); cuando todos los proveedores rechazan por un motivo que se repite, como la cuota o la clave, la cola automática se pausa durante una hora y lo avisa una sola vez.
 
+- Un chat personal nuevo o vacío indica ahora, en la línea de "no hay mensajes", que los mensajes y las llamadas están cifrados de extremo a extremo y, si hay mensajes temporales, su duración. La información del chat también menciona el cifrado.
+
 CORRECCIONES
 
 - El envío de mensajes de voz y de documentos fallaba con "Cannot read properties of undefined (reading 'prepRawMedia')" en una versión de WhatsApp Web publicada el 15 de octubre, que movió esa función. WinZapp ahora incluye la versión correspondiente de su biblioteca de WhatsApp Web (WA-JS 4.7.1). Si el envío sigue fallando tras actualizar, reinstala WPPConnect desde la ventana de actualización.
 
 - macOS: en las listas de chats y de mensajes, VoiceOver ya no pierde su sitio cuando cambia una fila, por ejemplo cuando cambia un contador de no leídos, alguien empieza a grabar audio o llega un mensaje nuevo. Abrir un chat con VoiceOver ahora funciona al instante y siempre, en lugar de fallar a veces o actuar solo tras una pausa, y VoiceOver pasa después al campo de mensaje; avisos como el de los mensajes fijados se leen después del campo en lugar de interrumpirlo.
+
+- macOS: los atajos con Comando ahora hacen lo mismo en todas las pantallas. La letra subrayada de un botón se quedaba con Comando y esa letra: mientras se mostraba "Leer más", Comando-L lo pulsaba, y otros botones se quedaban con otros atajos de la misma forma. La letra subrayada de un botón ahora se pulsa con Comando-Opción y la letra, la forma Mac de Alt y la letra en Windows, y un atajo de WinZapp con las mismas teclas sigue teniendo prioridad, como en Windows.
 
 - Los botones de grabar en el otro modo (estéreo o mono) y de grabar con el audio del ordenador indicaban al lector de pantalla el atajo Ctrl+R. Ahora cada uno indica el suyo, Ctrl+Shift+G y Ctrl+Shift+H, o las teclas que les hayas asignado.
 
@@ -839,7 +871,11 @@ CORRECCIONES
 - Los archivos descargados cuyo tamaño es múltiplo de 16 bytes (un APK, por ejemplo) ya no terminan con 16 bytes de más. Android se negaba a instalarlos con "problema al analizar el paquete"; ahora el archivo guardado es idéntico al original.
 
 - macOS: instalar una actualización, y la primera apertura después de ella, son mucho más rápidos. La app tiene muchos menos archivos que descomprimir (unos 24.000 en lugar de 61.000), su servidor se coloca en su sitio en una fracción de segundo en lugar de varios segundos, la copia anterior se borra en segundo plano, y el navegador en el que funciona WhatsApp (unos 190 MB) se conserva en lugar de descargarse de nuevo con cada actualización.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="pl" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
@@ -963,11 +999,15 @@ NOWOŚCI
 
 - Transkrypcja i opis online w wierszu wiadomości, w trybie automatycznym: okno wyniku AI ma nowe polecenia "Umieść transkrypcję w wierszu wiadomości" (wiadomości głosowe) oraz "Umieść opis w wierszu wiadomości" (obrazy, naklejki i filmy). W Ustawienia &gt; Transkrypcje i opisy dwie nowe opcje, domyślnie wyłączone, automatycznie transkrybują odebrane wiadomości głosowe i opisują odebrane obrazy, naklejki i filmy u dostawców online, bez okna i dźwięku przy każdej wiadomości; włączenie jednej prosi o zwykłą zgodę i wyłącza lokalną transkrypcję automatyczną, i odwrotnie. Okno danych każdej rozmowy ma pola "transkrybuj" i "opisuj" (dotyczą też lokalnej transkrypcji automatycznej) oraz wybór między "Wszystkie rozmowy oprócz tych, które wyłączę" a "Tylko rozmowy, które włączę". Aby chronić limit API, wybierasz, jak stara może być odebrana wiadomość, by została przetworzona (5 minut, 15, 30 lub 1 godzina), i ustawiasz dzienny limit automatycznych zapytań online (domyślnie 50, 0 oznacza brak limitu); gdy wszyscy dostawcy odmawiają z powtarzającego się powodu, takiego jak limit lub klucz, kolejka automatyczna zatrzymuje się na godzinę i informuje o tym jeden raz.
 
+- Nowy lub pusty czat prywatny podaje teraz w wierszu o braku wiadomości, że wiadomości i połączenia są szyfrowane end-to-end oraz, jeśli włączono znikające wiadomości, ich czas. Informacje o czacie także wspominają o szyfrowaniu.
+
 POPRAWKI
 
 - Wysyłanie wiadomości głosowych i dokumentów kończyło się błędem "Cannot read properties of undefined (reading 'prepRawMedia')" w wersji WhatsApp Web wydanej 15 października, która przeniosła tę funkcję. WinZapp zawiera teraz odpowiednią wersję swojej biblioteki WhatsApp Web (WA-JS 4.7.1). Jeśli wysyłanie nadal nie działa po aktualizacji, zainstaluj ponownie WPPConnect z okna aktualizacji.
 
 - macOS: na listach czatów i wiadomości VoiceOver nie gubi już swojego miejsca, gdy zmienia się wiersz, na przykład gdy zmienia się licznik nieprzeczytanych, ktoś zaczyna nagrywać audio albo przychodzi nowa wiadomość. Otwieranie czatu za pomocą VoiceOver działa teraz od razu i za każdym razem, zamiast czasem zawodzić albo działać dopiero po przerwie, a VoiceOver przechodzi potem do pola wiadomości; komunikaty takie jak ten o przypiętych wiadomościach są odczytywane po polu, zamiast mu przerywać.
+
+- macOS: skróty z Command działają teraz tak samo na każdym ekranie. Podkreślona litera przycisku przejmowała Command z tą literą: gdy widoczny był przycisk „Czytaj więcej”, Command-C naciskało go zamiast kopiować, a inne przyciski w ten sam sposób przejmowały inne skróty. Podkreśloną literę przycisku naciska się teraz przez Command-Option i literę, macową wersję Alt i litery z Windows, a skrót WinZapp na tych samych klawiszach nadal ma pierwszeństwo, jak w Windows.
 
 - Przyciski nagrywania w drugim trybie (stereo lub mono) i nagrywania z dźwiękiem komputera podawały czytnikowi ekranu skrót Ctrl+R. Teraz każdy podaje swój, Ctrl+Shift+G i Ctrl+Shift+H, albo klawisze, które im przypisano.
 
@@ -1046,7 +1086,11 @@ POPRAWKI
 - Pobrane pliki, których rozmiar jest wielokrotnością 16 bajtów (na przykład APK), nie kończą się już 16 dodatkowymi bajtami. Android odmawiał ich instalacji z komunikatem „problem podczas analizowania pakietu”; teraz zapisany plik jest identyczny z oryginałem.
 
 - macOS: instalacja aktualizacji i pierwsze uruchomienie po niej są znacznie szybsze. Aplikacja ma dużo mniej plików do rozpakowania (około 24 000 zamiast 61 000), jej serwer trafia na miejsce w ułamku sekundy zamiast w kilka sekund, poprzednia kopia jest usuwana w tle, a przeglądarka, w której działa WhatsApp (około 190 MB), jest zachowywana zamiast pobierania jej ponownie po każdej aktualizacji.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="tr" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
@@ -1170,11 +1214,15 @@ YENİLİKLER
 
 - Mesaj satırında çevrimiçi yazıya dökme ve betimleme, otomatik olarak: yapay zekâ sonuç penceresine "Yazıya dökmeyi mesaj satırına koy" (sesli mesajlar) ve "Betimlemeyi mesaj satırına koy" (resimler, çıkartmalar ve videolar) eklendi. Ayarlar &gt; Yazıya Dökmeler ve Betimlemeler içinde, varsayılan olarak kapalı iki yeni seçenek, alınan sesli mesajları otomatik olarak yazıya döker ve alınan resim, çıkartma ve videoları çevrimiçi sağlayıcılarla betimler; her mesaj için pencere veya ses çıkmaz. Birini açmak olağan onayı ister ve yerel otomatik yazıya dökmeyi kapatır, tersi de geçerlidir. Her konuşmanın veri penceresinde "yazıya dök" ve "betimle" kutuları vardır (yerel otomatik yazıya dökme için de geçerlidir); "Kapattıklarım dışında tüm konuşmalar" ile "Yalnızca açtığım konuşmalar" arasında seçim yapılır. API kotanızı korumak için alınan bir mesajın işlenebilmesi için en fazla ne kadar eski olabileceğini (5 dakika, 15, 30 veya 1 saat) seçebilir ve otomatik çevrimiçi isteklere günlük bir üst sınır koyabilirsiniz (varsayılan 50, 0 sınır yok); tüm sağlayıcılar kota veya anahtar gibi yinelenen bir nedenle reddederse otomatik kuyruk bir saat duraklar ve bunu bir kez bildirir.
 
+- Yeni veya boş bir kişisel sohbet artık "mesaj yok" satırında mesajların ve aramaların uçtan uca şifreli olduğunu ve kaybolan mesajlar açıksa süresini belirtiyor. Sohbet bilgileri de şifrelemeden söz ediyor.
+
 DÜZELTMELER
 
 - Sesli mesajların ve belgelerin gönderimi, 15 Ekim'de yayımlanan ve bu işlevi taşıyan bir WhatsApp Web sürümünde "Cannot read properties of undefined (reading 'prepRawMedia')" hatasıyla başarısız oluyordu. WinZapp artık WhatsApp Web kitaplığının uyumlu sürümünü (WA-JS 4.7.1) içeriyor. Güncellemeden sonra gönderim hâlâ başarısız olursa WPPConnect'i güncelleme penceresinden yeniden yükleyin.
 
 - macOS: sohbet ve mesaj listelerinde, bir satır değiştiğinde (örneğin okunmamış sayısı değiştiğinde, biri ses kaydetmeye başladığında veya yeni bir mesaj geldiğinde) VoiceOver artık yerini kaybetmiyor. VoiceOver ile bir sohbeti açmak artık bazen başarısız olmak veya ancak bir duraklamadan sonra çalışmak yerine hemen ve her seferinde çalışıyor ve VoiceOver ardından mesaj alanına geçiyor; sabitlenmiş mesajlarla ilgili olan gibi bildirimler alanı kesmek yerine alandan sonra okunuyor.
+
+- macOS: Command kısayolları artık her ekranda aynı işi yapıyor. Bir düğmenin altı çizili harfi, Command ve o harfi ele geçiriyordu: "Devamını oku" görünürken Command-O onu tetikliyordu ve diğer düğmeler de aynı şekilde başka kısayolları alıyordu. Bir düğmenin altı çizili harfi artık Command-Option ve harfle, Windows'taki Alt ve harfin Mac karşılığıyla, tetikleniyor ve aynı tuşlardaki bir WinZapp kısayolu, Windows'ta olduğu gibi, yine önce geliyor.
 
 - Diğer modda (stereo veya mono) kayıt ve bilgisayar sesiyle kayıt düğmeleri ekran okuyucuya kısayol olarak Ctrl+R bildiriyordu. Artık her biri kendi kısayolunu, Ctrl+Shift+G ve Ctrl+Shift+H'yi ya da onlara atadığınız tuşları bildiriyor.
 
@@ -1253,7 +1301,11 @@ DÜZELTMELER
 - Boyutu 16 baytın katı olan indirilen dosyalar (örneğin bir APK) artık sonunda fazladan 16 bayt taşımıyor. Android bunları "paket ayrıştırılırken sorun oluştu" hatasıyla yüklemiyordu; artık kaydedilen dosya aslıyla birebir aynı.
 
 - macOS: bir güncellemeyi yüklemek ve sonrasındaki ilk açılış çok daha hızlı. Uygulamada açılacak dosya sayısı çok daha az (61.000 yerine yaklaşık 24.000), sunucusu birkaç saniye yerine saniyenin küçük bir kesrinde yerine konur, önceki kopya arka planda silinir ve WhatsApp'ın çalıştığı tarayıcı (yaklaşık 190 MB) her güncellemeden sonra yeniden indirilmek yerine korunur.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
+      <description xml:lang="ro" sparkle:format="plain-text">- CI: stop bumping main's version.py when a stable release is published (#515)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#516)
+- macOS: chat rows open the chat they show, and buttons no longer take Command shortcuts (#511)
+- Feat: show encryption and disappearing-messages notices in a new personal chat (#517)
+- Feat: display if this chat has a disapearing messages (#512)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
@@ -1377,11 +1429,15 @@ NOUTĂȚI
 
 - Transcriere și descriere online în linia mesajului, în mod automat: fereastra de rezultat al AI are acum "Pune transcrierea în linia mesajului" (mesaje vocale) și "Pune descrierea în linia mesajului" (imagini, stickere și videoclipuri). În Setări &gt; Transcrieri și Descrieri, două opțiuni noi, dezactivate implicit, transcriu automat mesajele vocale primite și descriu imaginile, stickerele și videoclipurile primite cu furnizorii online, fără fereastră sau sunet la fiecare mesaj; activarea uneia cere consimțământul obișnuit și dezactivează transcrierea automată locală, și invers. Fereastra de date a fiecărei conversații are casetele "transcrie" și "descrie" (se aplică și transcrierii automate locale), cu alegerea între "Toate conversațiile, cu excepția celor pe care le dezactivez" și "Numai conversațiile pe care le activez". Pentru a-ți proteja cota API, alegi cât de vechi poate fi un mesaj primit ca să fie procesat (5 minute, 15, 30 sau 1 oră) și stabilești o limită zilnică de cereri online automate (50 implicit, 0 pentru nicio limită); când toți furnizorii refuză dintr-un motiv care se repetă, cum ar fi cota sau cheia, coada automată se oprește o oră și anunță o singură dată.
 
+- O conversație personală nouă sau goală indică acum, în rândul „nu există mesaje”, că mesajele și apelurile sunt criptate end-to-end și, dacă există mesaje care dispar, durata. Informațiile despre conversație menționează și criptarea.
+
 CORECTĂRI
 
 - Trimiterea mesajelor vocale și a documentelor eșua cu "Cannot read properties of undefined (reading 'prepRawMedia')" pe o versiune de WhatsApp Web lansată pe 15 octombrie, care a mutat acea funcție. WinZapp include acum versiunea corespunzătoare a bibliotecii sale WhatsApp Web (WA-JS 4.7.1). Dacă trimiterea tot eșuează după actualizare, reinstalează WPPConnect din fereastra de actualizare.
 
 - macOS: în listele de conversații și de mesaje, VoiceOver nu își mai pierde locul când un rând se schimbă, de exemplu când se schimbă numărul de mesaje necitite, cineva începe să înregistreze audio sau sosește un mesaj nou. Deschiderea unei conversații cu VoiceOver funcționează acum imediat și de fiecare dată, în loc să eșueze uneori sau să acționeze abia după o pauză, iar VoiceOver trece apoi la câmpul de mesaj; anunțuri precum cel despre mesajele fixate sunt rostite după câmp în loc să îl întrerupă.
+
+- macOS: comenzile rapide cu Command fac acum același lucru pe orice ecran. Litera subliniată a unui buton prelua Command cu acea literă: cât timp era afișat „Citiți mai multe”, Command-C îl apăsa în loc să copieze, iar alte butoane preluau în același fel alte comenzi rapide. Litera subliniată a unui buton se apasă acum cu Command-Option și litera, forma de Mac a lui Alt și litera din Windows, iar o comandă rapidă WinZapp pe aceleași taste are în continuare prioritate, ca în Windows.
 
 - Butoanele de înregistrare în celălalt mod (stereo sau mono) și de înregistrare cu sunetul computerului anunțau cititorului de ecran comanda rapidă Ctrl+R. Acum fiecare o anunță pe a sa, Ctrl+Shift+G și Ctrl+Shift+H, sau tastele pe care le-ați atribuit.
 
@@ -1460,6 +1516,15 @@ CORECTĂRI
 - Fișierele descărcate a căror dimensiune este multiplu de 16 octeți (un APK, de exemplu) nu mai se termină cu 16 octeți în plus. Android refuza să le instaleze cu „problemă la analizarea pachetului”; acum fișierul salvat este identic cu originalul.
 
 - macOS: instalarea unei actualizări și prima pornire după ea sunt mult mai rapide. Aplicația are mult mai puține fișiere de dezarhivat (aproximativ 24.000 în loc de 61.000), serverul ei este pus la locul lui într-o fracțiune de secundă în loc de câteva secunde, copia anterioară este ștearsă în fundal, iar browserul în care rulează WhatsApp (aproximativ 190 MB) este păstrat în loc să fie descărcat din nou după fiecare actualizare.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4454alpha/WinZapp-macOS-x86_64.zip" length="340024248" type="application/octet-stream" sparkle:edSignature="iDeKY1fLlrJ7beSt1DX8u7gwuAbfNxy0iRsxEH7U8eSfHFGPXMes/l4LndXHCHsT/GQL/HIUfHT+KTuTPrA5CA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4442alpha</title>
+      <pubDate>Fri, 16 Oct 2026 14:26:01 +0000</pubDate>
+      <sparkle:version>2.1.0.44421</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4442alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4442alpha/WinZapp-macOS-x86_64.zip" length="340100712" type="application/octet-stream" sparkle:edSignature="dhVljTcNhmLePOPHxJoqIvHIXfmNi4KCS/PaxFzRY9rrN7IvNGvUQNeUKJlMETCdI1mfn5bmCkeMfWkuYV8cAA=="></enclosure>
     </item>
     <item>
@@ -1489,17 +1554,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4431alpha/WinZapp-macOS-x86_64.zip" length="413972539" type="application/octet-stream" sparkle:edSignature="DlMWBO4YHOfneDOCPH5FcpBStgEQwLQQFVmWAcFcev599luttbkMvQjx75byhS6nvT6oHpzBle/QfZVCY28BBw=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4412alpha</title>
-      <pubDate>Thu, 15 Oct 2026 17:26:59 +0000</pubDate>
-      <sparkle:version>2.1.0.44121</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4412alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4412alpha/WinZapp-macOS-x86_64.zip" length="414081169" type="application/octet-stream" sparkle:edSignature="4ceZc31GFJ25vCtHduWrv8TTIn7wMNZOva0+c7ptUK4IqaEfaRDHD3QdW37B33AjvtBhKT51GzJOqu6P7xYmCg=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: RCe5L9YGdBaPay+hHeKCAk2a4ixUdXxbf2lCvA6dNlMfMIxTI0d5xDFey60ZJIIRebWUJG7eG6Vot6f7JtDpDw==
-length: 344894
+edSignature: ikD8oydj5Euyg3zgU7wK8BqkTFdm7I9Fy6TJGCeFVY4TWg0ArUhdUkDEPciRdRsOGtxk9mUBhTxljakjmBJmAA==
+length: 352415
 -->
