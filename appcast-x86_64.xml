@@ -5,14 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4440alpha</title>
-      <pubDate>Fri, 16 Oct 2026 04:38:36 +0000</pubDate>
-      <sparkle:version>2.1.0.44401</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4440alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4442alpha</title>
+      <pubDate>Fri, 16 Oct 2026 14:26:01 +0000</pubDate>
+      <sparkle:version>2.1.0.44421</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4442alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="en" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
@@ -219,8 +218,7 @@ FIXES
 - Downloaded files whose size is a multiple of 16 bytes (an APK, for example) no longer end with 16 extra bytes. Android refused to install them with "problem parsing the package"; now the saved file is identical to the original.
 
 - macOS: installing an update, and the first launch after it, are much faster. The app has far fewer files to unpack (about 24,000 instead of 61,000), its server is put in place in a fraction of a second instead of several seconds, the previous copy is deleted in the background, and the browser WhatsApp runs in (about 190 MB) is kept instead of being downloaded again after every update.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
@@ -427,8 +425,7 @@ CORREÇÕES
 - Arquivos baixados cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android se recusava a instalá-los com "problema ao analisar o pacote"; agora o arquivo salvo é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. O app tem bem menos arquivos para descompactar (cerca de 24.000 em vez de 61.000), o servidor é colocado no lugar em uma fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp roda (cerca de 190 MB) é mantido em vez de ser baixado de novo a cada atualização.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
@@ -635,8 +632,7 @@ CORREÇÕES
 - Os ficheiros transferidos cujo tamanho é múltiplo de 16 bytes (um APK, por exemplo) deixam de terminar com 16 bytes a mais. O Android recusava-se a instalá-los com "problema ao analisar o pacote"; agora o ficheiro guardado é idêntico ao original.
 
 - macOS: instalar uma atualização, e a primeira abertura depois dela, ficaram muito mais rápidos. A app tem bastante menos ficheiros para descompactar (cerca de 24 000 em vez de 61 000), o servidor é colocado no lugar numa fração de segundo em vez de vários segundos, a cópia anterior é apagada em segundo plano, e o navegador em que o WhatsApp corre (cerca de 190 MB) é mantido em vez de ser transferido de novo a cada atualização.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="es" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
@@ -843,8 +839,7 @@ CORRECCIONES
 - Los archivos descargados cuyo tamaño es múltiplo de 16 bytes (un APK, por ejemplo) ya no terminan con 16 bytes de más. Android se negaba a instalarlos con "problema al analizar el paquete"; ahora el archivo guardado es idéntico al original.
 
 - macOS: instalar una actualización, y la primera apertura después de ella, son mucho más rápidos. La app tiene muchos menos archivos que descomprimir (unos 24.000 en lugar de 61.000), su servidor se coloca en su sitio en una fracción de segundo en lugar de varios segundos, la copia anterior se borra en segundo plano, y el navegador en el que funciona WhatsApp (unos 190 MB) se conserva en lugar de descargarse de nuevo con cada actualización.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="pl" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
@@ -1051,8 +1046,7 @@ POPRAWKI
 - Pobrane pliki, których rozmiar jest wielokrotnością 16 bajtów (na przykład APK), nie kończą się już 16 dodatkowymi bajtami. Android odmawiał ich instalacji z komunikatem „problem podczas analizowania pakietu”; teraz zapisany plik jest identyczny z oryginałem.
 
 - macOS: instalacja aktualizacji i pierwsze uruchomienie po niej są znacznie szybsze. Aplikacja ma dużo mniej plików do rozpakowania (około 24 000 zamiast 61 000), jej serwer trafia na miejsce w ułamku sekundy zamiast w kilka sekund, poprzednia kopia jest usuwana w tle, a przeglądarka, w której działa WhatsApp (około 190 MB), jest zachowywana zamiast pobierania jej ponownie po każdej aktualizacji.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="tr" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
@@ -1259,8 +1253,7 @@ DÜZELTMELER
 - Boyutu 16 baytın katı olan indirilen dosyalar (örneğin bir APK) artık sonunda fazladan 16 bayt taşımıyor. Android bunları "paket ayrıştırılırken sorun oluştu" hatasıyla yüklemiyordu; artık kaydedilen dosya aslıyla birebir aynı.
 
 - macOS: bir güncellemeyi yüklemek ve sonrasındaki ilk açılış çok daha hızlı. Uygulamada açılacak dosya sayısı çok daha az (61.000 yerine yaklaşık 24.000), sunucusu birkaç saniye yerine saniyenin küçük bir kesrinde yerine konur, önceki kopya arka planda silinir ve WhatsApp'ın çalıştığı tarayıcı (yaklaşık 190 MB) her güncellemeden sonra yeniden indirilmek yerine korunur.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 and wppconnect 2.3.5 (#509)
-- Fix sending voice messages and documents on the new WhatsApp Web build: wa-js 4.7.1 (#508)
+      <description xml:lang="ro" sparkle:format="plain-text">- Release 2.0.1.0: WPPConnect 2.3.5 / WA-JS 4.7.1 / server 2.10.55 for stable (#513)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
@@ -1467,6 +1460,15 @@ CORECTĂRI
 - Fișierele descărcate a căror dimensiune este multiplu de 16 octeți (un APK, de exemplu) nu mai se termină cu 16 octeți în plus. Android refuza să le instaleze cu „problemă la analizarea pachetului”; acum fișierul salvat este identic cu originalul.
 
 - macOS: instalarea unei actualizări și prima pornire după ea sunt mult mai rapide. Aplicația are mult mai puține fișiere de dezarhivat (aproximativ 24.000 în loc de 61.000), serverul ei este pus la locul lui într-o fracțiune de secundă în loc de câteva secunde, copia anterioară este ștearsă în fundal, iar browserul în care rulează WhatsApp (aproximativ 190 MB) este păstrat în loc să fie descărcat din nou după fiecare actualizare.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4442alpha/WinZapp-macOS-x86_64.zip" length="340100712" type="application/octet-stream" sparkle:edSignature="dhVljTcNhmLePOPHxJoqIvHIXfmNi4KCS/PaxFzRY9rrN7IvNGvUQNeUKJlMETCdI1mfn5bmCkeMfWkuYV8cAA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4440alpha</title>
+      <pubDate>Fri, 16 Oct 2026 04:38:36 +0000</pubDate>
+      <sparkle:version>2.1.0.44401</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4440alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4440alpha/WinZapp-macOS-x86_64.zip" length="340361471" type="application/octet-stream" sparkle:edSignature="RHDSygmSvCKv4pROy9NZSeyrK91HMZIHC+JNfT68Hu9ooWDCOjUdDwFx0aj1V1YsKV8h8E9IjzpCJFsx7+E8Dw=="></enclosure>
     </item>
     <item>
@@ -1496,17 +1498,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4412alpha/WinZapp-macOS-x86_64.zip" length="414081169" type="application/octet-stream" sparkle:edSignature="4ceZc31GFJ25vCtHduWrv8TTIn7wMNZOva0+c7ptUK4IqaEfaRDHD3QdW37B33AjvtBhKT51GzJOqu6P7xYmCg=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4397alpha</title>
-      <pubDate>Wed, 14 Oct 2026 20:12:25 +0000</pubDate>
-      <sparkle:version>2.1.0.43971</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4397alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4397alpha/WinZapp-macOS-x86_64.zip" length="414121742" type="application/octet-stream" sparkle:edSignature="2p/VUAI/YPkxguBMSCTkx9kPyU88o2p4zeDycXpZgUczL2Qk88bdTwQhFmzkZZEo9QRALhUaN4MVzlQwhdMFAA=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: YnSvb/Rwot6EL+tKYlPV7dGfy7jcWuUBf7pGsBRBaDfbqDiE5TBah36a2yFkpZcW8qMfXLnx3/Jjpx8x8zSrBQ==
-length: 345692
+edSignature: RCe5L9YGdBaPay+hHeKCAk2a4ixUdXxbf2lCvA6dNlMfMIxTI0d5xDFey60ZJIIRebWUJG7eG6Vot6f7JtDpDw==
+length: 344894
 -->
