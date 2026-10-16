@@ -1,7 +1,7 @@
 name: macOS releases
 
 # Lives on the default branch of the fork that publishes the macOS builds
-# (rocco-labs/WinZapp_Python). Every 30 minutes it looks at WinZapp's newest
+# (rocco-labs/WinZapp_Python). When dispatched (and twice a day) it looks at WinZapp's newest
 # stable and alpha releases upstream; for each one not yet published here it
 # builds WinZapp.app for Apple Silicon and Intel from that exact upstream
 # tag plus the macOS layer (branch macos-support), signs it with the
@@ -24,7 +24,11 @@ name: macOS releases
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    # Twice a day, as a fallback only: the release watchdog on the
+    # maintainer's Mac dispatches this workflow within minutes of an
+    # upstream release (and turns Actions back on if GitHub disables them
+    # on this fork), so frequent empty scheduled runs are not needed.
+    - cron: "17 5,17 * * *"
   workflow_dispatch:
     inputs:
       tag:
