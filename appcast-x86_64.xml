@@ -5,14 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4489alpha</title>
-      <pubDate>Sat, 17 Oct 2026 23:12:56 +0000</pubDate>
-      <sparkle:version>2.1.0.44891</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4489alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4491alpha</title>
+      <pubDate>Sat, 17 Oct 2026 23:42:04 +0000</pubDate>
+      <sparkle:version>2.1.0.44911</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4491alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
@@ -146,7 +145,7 @@ WHAT'S NEW
 
 - The caption field of attachments now takes several lines, like WhatsApp Desktop: Enter still sends the attachment with its caption, and Shift+Enter or Ctrl+Enter start a new line, as in the message field.
 
-- Removing an account now removes everything it owns: besides its messages and settings, the browser profile that holds its WhatsApp login and that profile's backups are deleted too, and anything that could not be removed is finished the next time WinZapp starts. When the account is the only one, you can now remove it from Accounts &gt; Manage: WinZapp asks for confirmation, closes, and the next start is a first run.
+- Removing an account now removes everything it owns: besides its messages and settings, the browser profile that holds its WhatsApp login and that profile's backups are deleted too, and anything that could not be removed is finished the next time WinZapp starts. When the account is the only one, you can now remove it from Accounts &gt; Manage accounts: WinZapp asks for confirmation, closes, and the next start is a first run.
 
 FIXES
 
@@ -241,8 +240,7 @@ FIXES
 - Link previews no longer show raw HTML codes such as &amp;amp; or &amp;eacute; in the description. When a preview is sent from WinZapp, and when one is read, those codes now become the real characters.
 
 - Echo cancellation in voice and video calls now works on calls you answer. The speaker had been playing since the call rang, so the canceller compared your microphone with audio from before it opened and never found the echo: the other person kept hearing their own voice even with the option on. The reference now starts when the microphone opens.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
@@ -376,7 +374,7 @@ NOVIDADES
 
 - O campo de legenda dos anexos agora aceita várias linhas, como no WhatsApp Desktop: Enter continua enviando o anexo com a legenda, e Shift+Enter ou Ctrl+Enter criam uma nova linha, como no campo de mensagem.
 
-- Excluir uma conta agora remove tudo o que ela possui: além das mensagens e das configurações, o perfil do navegador que guarda o login do WhatsApp e as cópias de segurança desse perfil também são apagados, e o que não puder ser removido é concluído na próxima vez que o WinZapp iniciar. Quando a conta é a única, agora é possível excluí-la em Contas &gt; Gerenciar: o WinZapp pede confirmação, fecha, e a próxima abertura é uma primeira execução.
+- Excluir uma conta agora remove tudo o que ela possui: além das mensagens e das configurações, o perfil do navegador que guarda o login do WhatsApp e as cópias de segurança desse perfil também são apagados, e o que não puder ser removido é concluído na próxima vez que o WinZapp iniciar. Quando a conta é a única, agora é possível excluí-la em Contas &gt; Gerenciar contas: o WinZapp pede confirmação, fecha, e a próxima abertura é uma primeira execução.
 
 CORREÇÕES
 
@@ -471,8 +469,7 @@ CORREÇÕES
 - As prévias de links não mostram mais códigos HTML como &amp;amp; ou &amp;eacute; na descrição. Quando uma prévia é enviada pelo WinZapp, e quando uma é lida, esses códigos agora viram os caracteres de verdade.
 
 - O cancelamento de eco nas chamadas de voz e vídeo agora funciona nas chamadas que você atende. O alto-falante já tocava desde que a chamada começou a chamar, então o cancelador comparava o seu microfone com áudio anterior à abertura dele e nunca achava o eco: a outra pessoa continuava ouvindo a própria voz mesmo com a opção ligada. Agora a referência começa quando o microfone abre.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
@@ -606,7 +603,7 @@ NOVIDADES
 
 - O campo de legenda dos anexos passa a aceitar várias linhas, como no WhatsApp Desktop: Enter continua a enviar o anexo com a legenda, e Shift+Enter ou Ctrl+Enter criam uma nova linha, como no campo de mensagem.
 
-- Eliminar uma conta passa a remover tudo o que ela possui: além das mensagens e das definições, o perfil do navegador que guarda o início de sessão do WhatsApp e as cópias de segurança desse perfil também são apagados, e o que não puder ser removido é concluído na próxima vez que o WinZapp arrancar. Quando a conta é a única, já é possível eliminá-la em Contas &gt; Gerir: o WinZapp pede confirmação, fecha, e o arranque seguinte é uma primeira execução.
+- Eliminar uma conta passa a remover tudo o que ela possui: além das mensagens e das definições, o perfil do navegador que guarda o início de sessão do WhatsApp e as cópias de segurança desse perfil também são apagados, e o que não puder ser removido é concluído na próxima vez que o WinZapp arrancar. Quando a conta é a única, já é possível eliminá-la em Contas &gt; Gerir contas: o WinZapp pede confirmação, fecha, e o arranque seguinte é uma primeira execução.
 
 CORREÇÕES
 
@@ -701,8 +698,7 @@ CORREÇÕES
 - As pré-visualizações de ligações já não mostram códigos HTML como &amp;amp; ou &amp;eacute; na descrição. Quando uma pré-visualização é enviada pelo WinZapp, e quando uma é lida, esses códigos passam a ser os caracteres verdadeiros.
 
 - O cancelamento de eco nas chamadas de voz e vídeo passa a funcionar nas chamadas que atende. O altifalante já tocava desde que a chamada começou a tocar, por isso o cancelador comparava o seu microfone com áudio anterior à abertura dele e nunca encontrava o eco: a outra pessoa continuava a ouvir a própria voz mesmo com a opção ativada. Agora a referência começa quando o microfone abre.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
@@ -836,7 +832,7 @@ NOVEDADES
 
 - El campo de pie de foto de los archivos adjuntos ahora admite varias líneas, como WhatsApp Desktop: Intro sigue enviando el adjunto con su pie de foto, y Mayús+Intro o Ctrl+Intro crean una línea nueva, como en el campo de mensaje.
 
-- Eliminar una cuenta ahora elimina todo lo que le pertenece: además de los mensajes y los ajustes, también se borran el perfil del navegador que guarda el inicio de sesión de WhatsApp y las copias de seguridad de ese perfil, y lo que no se pueda eliminar se termina la próxima vez que se inicie WinZapp. Cuando la cuenta es la única, ahora se puede eliminar desde Cuentas &gt; Administrar: WinZapp pide confirmación, se cierra y el siguiente inicio es una primera ejecución.
+- Eliminar una cuenta ahora elimina todo lo que le pertenece: además de los mensajes y los ajustes, también se borran el perfil del navegador que guarda el inicio de sesión de WhatsApp y las copias de seguridad de ese perfil, y lo que no se pueda eliminar se termina la próxima vez que se inicie WinZapp. Cuando la cuenta es la única, ahora se puede eliminar desde Cuentas &gt; Administrar cuentas: WinZapp pide confirmación, se cierra y el siguiente inicio es una primera ejecución.
 
 CORRECCIONES
 
@@ -931,8 +927,7 @@ CORRECCIONES
 - Las vistas previas de enlaces ya no muestran códigos HTML como &amp;amp; o &amp;eacute; en la descripción. Cuando WinZapp envía una vista previa, y cuando se lee una, esos códigos ahora se convierten en los caracteres reales.
 
 - La cancelación de eco en las llamadas de voz y vídeo ahora funciona en las llamadas que contestas. El altavoz ya sonaba desde que la llamada daba tono, así que el cancelador comparaba tu micrófono con audio anterior a su apertura y nunca encontraba el eco: la otra persona seguía oyendo su propia voz aunque la opción estuviera activada. Ahora la referencia empieza cuando se abre el micrófono.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
@@ -1066,7 +1061,7 @@ NOWOŚCI
 
 - Pole podpisu załączników przyjmuje teraz wiele wierszy, tak jak WhatsApp Desktop: Enter nadal wysyła załącznik z podpisem, a Shift+Enter lub Ctrl+Enter zaczynają nowy wiersz, tak jak w polu wiadomości.
 
-- Usunięcie konta usuwa teraz wszystko, co do niego należy: oprócz wiadomości i ustawień kasowany jest także profil przeglądarki z logowaniem do WhatsApp oraz kopie zapasowe tego profilu, a to, czego nie udało się usunąć, zostanie dokończone przy następnym uruchomieniu WinZapp. Gdy konto jest jedyne, można je teraz usunąć w menu Konta &gt; Zarządzaj: WinZapp prosi o potwierdzenie, zamyka się, a następne uruchomienie jest pierwszym uruchomieniem.
+- Usunięcie konta usuwa teraz wszystko, co do niego należy: oprócz wiadomości i ustawień kasowany jest także profil przeglądarki z logowaniem do WhatsApp oraz kopie zapasowe tego profilu, a to, czego nie udało się usunąć, zostanie dokończone przy następnym uruchomieniu WinZapp. Gdy konto jest jedyne, można je teraz usunąć w menu Konta &gt; Zarządzaj kontami: WinZapp prosi o potwierdzenie, zamyka się, a następne uruchomienie jest pierwszym uruchomieniem.
 
 POPRAWKI
 
@@ -1161,8 +1156,7 @@ POPRAWKI
 - Podglądy linków nie pokazują już w opisie surowych kodów HTML, takich jak &amp;amp; czy &amp;eacute;. Gdy podgląd jest wysyłany z WinZapp i gdy jest odczytywany, te kody zamieniają się teraz w prawdziwe znaki.
 
 - Redukcja echa w rozmowach głosowych i wideo działa teraz w rozmowach, które odbierasz. Głośnik grał już od dzwonienia, więc redukcja porównywała mikrofon z dźwiękiem sprzed jego otwarcia i nigdy nie znajdowała echa: druga osoba nadal słyszała własny głos mimo włączonej opcji. Odniesienie zaczyna się teraz w chwili otwarcia mikrofonu.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
@@ -1296,7 +1290,7 @@ YENİLİKLER
 
 - Ek dosyaların açıklama alanı artık WhatsApp Desktop gibi birden çok satır kabul ediyor: Enter eki açıklamasıyla göndermeye devam eder, Shift+Enter veya Ctrl+Enter ise mesaj alanındaki gibi yeni satır açar.
 
-- Bir hesabı kaldırmak artık ona ait her şeyi kaldırıyor: mesajlara ve ayarlara ek olarak WhatsApp oturumunu tutan tarayıcı profili ve bu profilin yedekleri de siliniyor, kaldırılamayan her şey WinZapp'ın bir sonraki başlatılışında tamamlanıyor. Hesap tek hesapsa artık Hesaplar &gt; Yönet bölümünden kaldırılabilir: WinZapp onay ister, kapanır ve sonraki başlatma ilk çalıştırma olur.
+- Bir hesabı kaldırmak artık ona ait her şeyi kaldırıyor: mesajlara ve ayarlara ek olarak WhatsApp oturumunu tutan tarayıcı profili ve bu profilin yedekleri de siliniyor, kaldırılamayan her şey WinZapp'ın bir sonraki başlatılışında tamamlanıyor. Hesap tek hesapsa artık Hesaplar &gt; Hesapları yönet bölümünden kaldırılabilir: WinZapp onay ister, kapanır ve sonraki başlatma ilk çalıştırma olur.
 
 DÜZELTMELER
 
@@ -1391,8 +1385,7 @@ DÜZELTMELER
 - Bağlantı önizlemelerinin açıklamasında artık &amp;amp; veya &amp;eacute; gibi ham HTML kodları görünmüyor. Bir önizleme WinZapp'tan gönderilirken ve okunurken bu kodlar artık gerçek karakterlere dönüşüyor.
 
 - Sesli ve görüntülü aramalarda yankı giderme artık yanıtladığınız aramalarda çalışıyor. Hoparlör arama çalmaya başladığından beri çalıyordu; bu yüzden yankı giderici mikrofonunuzu açılmadan önceki sesle karşılaştırıyor ve yankıyı hiç bulamıyordu: seçenek açıkken bile karşı taraf kendi sesini duymaya devam ediyordu. Referans artık mikrofon açıldığı anda başlıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Removing an account removes everything it owns, and the only account can be removed (#537)
-- Removing an account removes everything it owns, and the only account can be removed (#531)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix menu labels and Romanian register in the account removal texts (#539)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
@@ -1526,7 +1519,7 @@ NOUTĂȚI
 
 - Câmpul de descriere al atașamentelor acceptă acum mai multe rânduri, ca în WhatsApp Desktop: Enter trimite în continuare atașamentul cu descrierea, iar Shift+Enter sau Ctrl+Enter încep un rând nou, ca în câmpul de mesaj.
 
-- Ștergerea unui cont elimină acum tot ce îi aparține: pe lângă mesaje și setări, sunt șterse și profilul browserului care păstrează autentificarea WhatsApp și copiile de siguranță ale acelui profil, iar ce nu a putut fi eliminat este finalizat la următoarea pornire a WinZapp. Când contul este singurul, îl poți șterge acum din Conturi &gt; Gestionare: WinZapp cere confirmare, se închide, iar următoarea pornire este o primă rulare.
+- Ștergerea unui cont elimină acum tot ce îi aparține: pe lângă mesaje și setări, sunt șterse și profilul browserului care păstrează autentificarea WhatsApp și copiile de siguranță ale acelui profil, iar ce nu a putut fi eliminat este finalizat la următoarea pornire a WinZapp. Când contul este singurul, îl poți șterge acum din Conturi &gt; Gestionați conturile: WinZapp cere confirmare, se închide, iar următoarea pornire este o primă rulare.
 
 CORECTĂRI
 
@@ -1621,6 +1614,15 @@ CORECTĂRI
 - Previzualizările linkurilor nu mai arată în descriere coduri HTML brute precum &amp;amp; sau &amp;eacute;. Când o previzualizare este trimisă din WinZapp și când este citită, aceste coduri devin acum caracterele reale.
 
 - Anularea ecoului în apelurile vocale și video funcționează acum în apelurile pe care le preiei. Difuzorul cânta încă de când apelul suna, așa că anulatorul compara microfonul cu sunet dinaintea deschiderii lui și nu găsea niciodată ecoul: cealaltă persoană își auzea în continuare propria voce chiar cu opțiunea activată. Referința începe acum când se deschide microfonul.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4491alpha/WinZapp-macOS-x86_64.zip" length="339460268" type="application/octet-stream" sparkle:edSignature="rhdR44qCE3LHhN7wjIN9BOC5bFnParGjEM2gdvcBygTRan/TqIW62/SUn8xXHwtKbjzURsmdnqII4t3JMzajBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4489alpha</title>
+      <pubDate>Sat, 17 Oct 2026 23:12:56 +0000</pubDate>
+      <sparkle:version>2.1.0.44891</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4489alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4489alpha/WinZapp-macOS-x86_64.zip" length="339460887" type="application/octet-stream" sparkle:edSignature="nOF3QSH0QLGO0zIlZiKPoMkpadCe05VsVy5o8X0/WAzQ9PEEtK4GAuE4JzvX3qn+eF+YN2h93+TEE4Lwu09+Dg=="></enclosure>
     </item>
     <item>
@@ -1650,17 +1652,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4474alpha/WinZapp-macOS-x86_64.zip" length="340034422" type="application/octet-stream" sparkle:edSignature="RS6WPNzcpVMBvVw/ZDQeqFzYUvIgPGgNnB+XoEmqB7NLp+FSvlFBIQRK/QI0pI/20TUqeXKLiar+Y2EykTyxCg=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4471alpha</title>
-      <pubDate>Fri, 16 Oct 2026 16:44:24 +0000</pubDate>
-      <sparkle:version>2.1.0.44711</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4471alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4471alpha/WinZapp-macOS-x86_64.zip" length="340031833" type="application/octet-stream" sparkle:edSignature="cSibKVWg6jQaYcr/IkeqpU16V0K5ZxdpLtEymiOvEe31iUuXuKSldLFK5+gNwgdvq6xkrvZikCzsiwHlVXKrDw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: LwcLYri0go6nkQ3fDjHLsuoZOGWzomkl7v+C1ykBhNYlNRg8XU2xlztDoR8IdLFCaOSHozwoosh29TmijBrnBQ==
-length: 369993
+edSignature: 3SKhVJNiKBoiINJMWE4nspMxfapcKG0ewbr1GgKaI7b5rd1VtjCa1VtX5YJfdHrzBb9/jIohQPiyJvhJ50OEDQ==
+length: 369284
 -->
