@@ -5,18 +5,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4474alpha</title>
-      <pubDate>Fri, 16 Oct 2026 17:23:20 +0000</pubDate>
-      <sparkle:version>2.1.0.44741</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4474alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4481alpha</title>
+      <pubDate>Sat, 17 Oct 2026 00:13:59 +0000</pubDate>
+      <sparkle:version>2.1.0.44811</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4481alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="en" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
 WHAT'S NEW
+
+- Your online status now follows the current window even when you switch away quickly, hide WinZapp to the tray or reconnect in the background. A delayed online update can no longer overtake the offline update, and a failed offline update is retried.
 
 - New shortcuts, each one changeable on the Keyboard shortcuts tab of Settings: Alt+8 opens communities from anywhere in the window; Alt+Shift+B opens the catalog and cart of the business in the selected or open chat; and on a WhatsApp Business account, Ctrl+Shift+N creates an order for the contact of the chat. Where they do not apply, WinZapp says why. Enter on an order message opens the order.
 
@@ -144,6 +148,8 @@ WHAT'S NEW
 
 FIXES
 
+- Receiving a file no longer downloads it into the message notification because of an unused webhook setting. Upload and download progress updates now keep only the latest pending value, avoiding a buildup of screen updates during fast transfers.
+
 - Fixed repeated conversation synchronization when WhatsApp's chat list was available but could not be transferred to the local server. Existing conversations are kept and the list can finish synchronizing.
 
 - Sending voice messages and documents failed with "Cannot read properties of undefined (reading 'prepRawMedia')" on a WhatsApp Web build released on 15 October, which moved that function. WinZapp now ships the matching version of its WhatsApp Web library (WA-JS 4.7.1). If sending still fails after updating, reinstall WPPConnect from the update window.
@@ -233,12 +239,16 @@ FIXES
 - Link previews no longer show raw HTML codes such as &amp;amp; or &amp;eacute; in the description. When a preview is sent from WinZapp, and when one is read, those codes now become the real characters.
 
 - Echo cancellation in voice and video calls now works on calls you answer. The speaker had been playing since the call rang, so the canceller compared your microphone with audio from before it opened and never found the echo: the other person kept hearing their own voice even with the option on. The reference now starts when the microphone opens.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
 NOVIDADES
+
+- Seu estado online agora acompanha a janela atual mesmo ao alternar rapidamente para outro programa, ocultar o WinZapp na bandeja ou reconectar em segundo plano. Uma atualização atrasada de online não passa mais à frente da de offline, e uma falha ao informar offline é tentada novamente.
 
 - Novos atalhos, cada um alterável na aba Atalhos de teclado das configurações: Alt+8 abre as comunidades de qualquer lugar da janela; Alt+Shift+B abre o catálogo e o carrinho da empresa da conversa selecionada ou aberta; e numa conta do WhatsApp Business, Ctrl+Shift+N cria um pedido para o contato da conversa. Onde não se aplicam, o WinZapp diz o motivo. Enter numa mensagem de pedido abre o pedido.
 
@@ -366,6 +376,8 @@ NOVIDADES
 
 CORREÇÕES
 
+- Receber um arquivo deixa de baixá-lo dentro da notificação da mensagem por causa de uma configuração de webhook sem uso. As atualizações de progresso de envio e download passam a manter apenas o valor mais recente pendente, evitando o acúmulo de atualizações de tela nas transferências rápidas.
+
 - Corrigida a sincronização repetida de conversas quando a lista do WhatsApp estava disponível, mas não conseguia ser transferida para o servidor local. As conversas existentes são preservadas e a sincronização da lista pode ser concluída.
 
 - O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada em 15 de outubro, que mudou essa função de lugar. O WinZapp agora traz a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar falhando depois de atualizar, reinstale o WPPConnect pela janela de atualização.
@@ -455,12 +467,16 @@ CORREÇÕES
 - As prévias de links não mostram mais códigos HTML como &amp;amp; ou &amp;eacute; na descrição. Quando uma prévia é enviada pelo WinZapp, e quando uma é lida, esses códigos agora viram os caracteres de verdade.
 
 - O cancelamento de eco nas chamadas de voz e vídeo agora funciona nas chamadas que você atende. O alto-falante já tocava desde que a chamada começou a chamar, então o cancelador comparava o seu microfone com áudio anterior à abertura dele e nunca achava o eco: a outra pessoa continuava ouvindo a própria voz mesmo com a opção ligada. Agora a referência começa quando o microfone abre.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
 NOVIDADES
+
+- O seu estado online passa a acompanhar a janela atual mesmo ao mudar rapidamente para outro programa, ocultar o WinZapp na área de notificação ou voltar a ligar em segundo plano. Uma atualização atrasada de online já não passa à frente da de offline, e uma falha ao informar offline é tentada novamente.
 
 - Novos atalhos, cada um alterável no separador Atalhos de teclado das definições: Alt+8 abre as comunidades a partir de qualquer ponto da janela; Alt+Shift+B abre o catálogo e o carrinho da empresa da conversa selecionada ou aberta; e numa conta do WhatsApp Business, Ctrl+Shift+N cria uma encomenda para o contacto da conversa. Onde não se aplicam, o WinZapp diz o motivo. Enter numa mensagem de encomenda abre a encomenda.
 
@@ -588,6 +604,8 @@ NOVIDADES
 
 CORREÇÕES
 
+- Receber um ficheiro deixa de o descarregar dentro da notificação da mensagem devido a uma configuração de webhook sem utilização. As atualizações de progresso de envio e descarga passam a manter apenas o valor mais recente pendente, evitando a acumulação de atualizações do ecrã nas transferências rápidas.
+
 - Corrigida a sincronização repetida de conversas quando a lista do WhatsApp estava disponível, mas não podia ser transferida para o servidor local. As conversas existentes são preservadas e a sincronização da lista pode ser concluída.
 
 - O envio de mensagens de voz e de documentos falhava com "Cannot read properties of undefined (reading 'prepRawMedia')" numa versão do WhatsApp Web lançada a 15 de outubro, que mudou essa função de sítio. O WinZapp passa a incluir a versão correspondente da sua biblioteca do WhatsApp Web (WA-JS 4.7.1). Se o envio continuar a falhar depois de atualizar, reinstale o WPPConnect na janela de atualização.
@@ -677,12 +695,16 @@ CORREÇÕES
 - As pré-visualizações de ligações já não mostram códigos HTML como &amp;amp; ou &amp;eacute; na descrição. Quando uma pré-visualização é enviada pelo WinZapp, e quando uma é lida, esses códigos passam a ser os caracteres verdadeiros.
 
 - O cancelamento de eco nas chamadas de voz e vídeo passa a funcionar nas chamadas que atende. O altifalante já tocava desde que a chamada começou a tocar, por isso o cancelador comparava o seu microfone com áudio anterior à abertura dele e nunca encontrava o eco: a outra pessoa continuava a ouvir a própria voz mesmo com a opção ativada. Agora a referência começa quando o microfone abre.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="es" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
 NOVEDADES
+
+- Tu estado en línea ahora sigue el estado actual de la ventana incluso al cambiar rápidamente a otro programa, ocultar WinZapp en la bandeja o reconectarse en segundo plano. Una actualización retrasada de «en línea» ya no se adelanta a la de «sin conexión», y si falla el envío del estado «sin conexión», se vuelve a intentar.
 
 - Nuevos atajos, cada uno modificable en la pestaña Atajos de teclado de la configuración: Alt+8 abre las comunidades desde cualquier lugar de la ventana; Alt+Shift+B abre el catálogo y el carrito de la empresa del chat seleccionado o abierto; y en una cuenta de WhatsApp Business, Ctrl+Shift+N crea un pedido para el contacto del chat. Donde no se aplican, WinZapp dice el motivo. Intro en un mensaje de pedido abre el pedido.
 
@@ -810,6 +832,8 @@ NOVEDADES
 
 CORRECCIONES
 
+- Recibir un archivo ya no lo descarga dentro de la notificación del mensaje debido a una configuración de webhook sin uso. Las actualizaciones de progreso de envío y descarga conservan solo el último valor pendiente, evitando que se acumulen actualizaciones de pantalla durante las transferencias rápidas.
+
 - Corregida la sincronización repetida de conversaciones cuando la lista de WhatsApp estaba disponible, pero no podía transferirse al servidor local. Se conservan las conversaciones existentes y la sincronización de la lista puede completarse.
 
 - El envío de mensajes de voz y de documentos fallaba con "Cannot read properties of undefined (reading 'prepRawMedia')" en una versión de WhatsApp Web publicada el 15 de octubre, que movió esa función. WinZapp ahora incluye la versión correspondiente de su biblioteca de WhatsApp Web (WA-JS 4.7.1). Si el envío sigue fallando tras actualizar, reinstala WPPConnect desde la ventana de actualización.
@@ -899,12 +923,16 @@ CORRECCIONES
 - Las vistas previas de enlaces ya no muestran códigos HTML como &amp;amp; o &amp;eacute; en la descripción. Cuando WinZapp envía una vista previa, y cuando se lee una, esos códigos ahora se convierten en los caracteres reales.
 
 - La cancelación de eco en las llamadas de voz y vídeo ahora funciona en las llamadas que contestas. El altavoz ya sonaba desde que la llamada daba tono, así que el cancelador comparaba tu micrófono con audio anterior a su apertura y nunca encontraba el eco: la otra persona seguía oyendo su propia voz aunque la opción estuviera activada. Ahora la referencia empieza cuando se abre el micrófono.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="pl" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
 NOWOŚCI
+
+- Twój status online odpowiada teraz bieżącemu stanowi okna także po szybkim przełączeniu do innego programu, ukryciu WinZapp w zasobniku lub ponownym połączeniu w tle. Opóźniona aktualizacja statusu online nie wyprzedza już aktualizacji statusu offline, a nieudana próba ustawienia statusu offline jest ponawiana.
 
 - Nowe skróty, każdy do zmiany na karcie Skróty klawiszowe w ustawieniach: Alt+8 otwiera społeczności z dowolnego miejsca okna; Alt+Shift+B otwiera katalog i koszyk firmy z zaznaczonego lub otwartego czatu; a na koncie WhatsApp Business Ctrl+Shift+N tworzy zamówienie dla kontaktu z czatu. Tam, gdzie nie mają zastosowania, WinZapp mówi dlaczego. Enter na wiadomości z zamówieniem otwiera zamówienie.
 
@@ -1032,6 +1060,8 @@ NOWOŚCI
 
 POPRAWKI
 
+- Otrzymanie pliku nie powoduje już pobierania go do powiadomienia o wiadomości z powodu nieużywanego ustawienia webhooka. Aktualizacje postępu wysyłania i pobierania zachowują tylko najnowszą oczekującą wartość, zapobiegając gromadzeniu aktualizacji ekranu podczas szybkich transferów.
+
 - Naprawiono powtarzającą się synchronizację rozmów, gdy lista czatów WhatsApp była dostępna, ale nie można jej było przekazać do lokalnego serwera. Istniejące rozmowy są zachowywane, a synchronizacja listy może się zakończyć.
 
 - Wysyłanie wiadomości głosowych i dokumentów kończyło się błędem "Cannot read properties of undefined (reading 'prepRawMedia')" w wersji WhatsApp Web wydanej 15 października, która przeniosła tę funkcję. WinZapp zawiera teraz odpowiednią wersję swojej biblioteki WhatsApp Web (WA-JS 4.7.1). Jeśli wysyłanie nadal nie działa po aktualizacji, zainstaluj ponownie WPPConnect z okna aktualizacji.
@@ -1121,12 +1151,16 @@ POPRAWKI
 - Podglądy linków nie pokazują już w opisie surowych kodów HTML, takich jak &amp;amp; czy &amp;eacute;. Gdy podgląd jest wysyłany z WinZapp i gdy jest odczytywany, te kody zamieniają się teraz w prawdziwe znaki.
 
 - Redukcja echa w rozmowach głosowych i wideo działa teraz w rozmowach, które odbierasz. Głośnik grał już od dzwonienia, więc redukcja porównywała mikrofon z dźwiękiem sprzed jego otwarcia i nigdy nie znajdowała echa: druga osoba nadal słyszała własny głos mimo włączonej opcji. Odniesienie zaczyna się teraz w chwili otwarcia mikrofonu.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="tr" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
 YENİLİKLER
+
+- Çevrimiçi durumunuz artık başka bir programa hızla geçtiğinizde, WinZapp'ı sistem tepsisine gizlediğinizde veya arka planda yeniden bağlandığınızda da pencerenin güncel durumunu izler. Gecikmiş bir çevrimiçi güncellemesi artık çevrimdışı güncellemesinden sonra uygulanmaz; çevrimdışı durumunu bildirme başarısız olursa yeniden denenir.
 
 - Her biri Ayarlar'daki Kısayollar sekmesinden değiştirilebilen yeni kısayollar: Alt+8 pencerenin her yerinden toplulukları açar; Alt+Shift+B seçili veya açık sohbetteki işletmenin kataloğunu ve sepetini açar; WhatsApp Business hesabında Ctrl+Shift+N sohbetteki kişi için sipariş oluşturur. Uygulanamadıkları yerde WinZapp nedenini söyler. Bir sipariş mesajında Enter siparişi açar.
 
@@ -1254,6 +1288,8 @@ YENİLİKLER
 
 DÜZELTMELER
 
+- Kullanılmayan bir webhook ayarı nedeniyle gelen dosyanın mesaj bildiriminin içine indirilmesi önlendi. Gönderme ve indirme ilerlemesi güncellemeleri artık yalnızca bekleyen en son değeri tutarak hızlı aktarımlarda ekran güncellemelerinin birikmesini önlüyor.
+
 - WhatsApp sohbet listesi kullanılabilir olduğu hâlde yerel sunucuya aktarılamadığında konuşmaların tekrar tekrar eşitlenmesi düzeltildi. Mevcut konuşmalar korunur ve listenin eşitlenmesi tamamlanabilir.
 
 - Sesli mesajların ve belgelerin gönderimi, 15 Ekim'de yayımlanan ve bu işlevi taşıyan bir WhatsApp Web sürümünde "Cannot read properties of undefined (reading 'prepRawMedia')" hatasıyla başarısız oluyordu. WinZapp artık WhatsApp Web kitaplığının uyumlu sürümünü (WA-JS 4.7.1) içeriyor. Güncellemeden sonra gönderim hâlâ başarısız olursa WPPConnect'i güncelleme penceresinden yeniden yükleyin.
@@ -1343,12 +1379,16 @@ DÜZELTMELER
 - Bağlantı önizlemelerinin açıklamasında artık &amp;amp; veya &amp;eacute; gibi ham HTML kodları görünmüyor. Bir önizleme WinZapp'tan gönderilirken ve okunurken bu kodlar artık gerçek karakterlere dönüşüyor.
 
 - Sesli ve görüntülü aramalarda yankı giderme artık yanıtladığınız aramalarda çalışıyor. Hoparlör arama çalmaya başladığından beri çalıyordu; bu yüzden yankı giderici mikrofonunuzu açılmadan önceki sesle karşılaştırıyor ve yankıyı hiç bulamıyordu: seçenek açıkken bile karşı taraf kendi sesini duymaya devam ediyordu. Referans artık mikrofon açıldığı anda başlıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Corrige ressincronização causada pela serialização da lista via CDP (#523)
-- Corrige ressincronização causada pela serialização da lista via CDP (#522)
+      <description xml:lang="ro" sparkle:format="plain-text">- Presença: evita permanecer online ao sair da janela (continuação do #524) (#526)
+- Presença: evita permanecer online ao sair da janela (#524)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (continua #525) (#527)
+- Evita downloads indevidos de mídia e acúmulo de atualizações de progresso (#525)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
 NOUTĂȚI
+
+- Starea dumneavoastră online corespunde acum stării actuale a ferestrei chiar și atunci când treceți rapid la alt program, ascundeți WinZapp în zona de notificare sau vă reconectați în fundal. O actualizare online întârziată nu mai poate ajunge după cea offline, iar o încercare nereușită de a seta starea offline este repetată.
 
 - Comenzi rapide noi, fiecare modificabilă în fila Comenzi rapide din setări: Alt+8 deschide comunitățile de oriunde din fereastră; Alt+Shift+B deschide catalogul și coșul firmei din conversația selectată sau deschisă; iar într-un cont WhatsApp Business, Ctrl+Shift+N creează o comandă pentru contactul din conversație. Acolo unde nu se aplică, WinZapp spune motivul. Enter pe un mesaj de comandă deschide comanda.
 
@@ -1476,6 +1516,8 @@ NOUTĂȚI
 
 CORECTĂRI
 
+- Primirea unui fișier nu îl mai descarcă în notificarea mesajului din cauza unei setări webhook neutilizate. Actualizările progresului de trimitere și descărcare păstrează doar cea mai recentă valoare în așteptare, evitând acumularea actualizărilor ecranului în timpul transferurilor rapide.
+
 - S-a corectat sincronizarea repetată a conversațiilor când lista WhatsApp era disponibilă, dar nu putea fi transferată către serverul local. Conversațiile existente sunt păstrate, iar sincronizarea listei se poate încheia.
 
 - Trimiterea mesajelor vocale și a documentelor eșua cu "Cannot read properties of undefined (reading 'prepRawMedia')" pe o versiune de WhatsApp Web lansată pe 15 octombrie, care a mutat acea funcție. WinZapp include acum versiunea corespunzătoare a bibliotecii sale WhatsApp Web (WA-JS 4.7.1). Dacă trimiterea tot eșuează după actualizare, reinstalează WPPConnect din fereastra de actualizare.
@@ -1565,6 +1607,15 @@ CORECTĂRI
 - Previzualizările linkurilor nu mai arată în descriere coduri HTML brute precum &amp;amp; sau &amp;eacute;. Când o previzualizare este trimisă din WinZapp și când este citită, aceste coduri devin acum caracterele reale.
 
 - Anularea ecoului în apelurile vocale și video funcționează acum în apelurile pe care le preiei. Difuzorul cânta încă de când apelul suna, așa că anulatorul compara microfonul cu sunet dinaintea deschiderii lui și nu găsea niciodată ecoul: cealaltă persoană își auzea în continuare propria voce chiar cu opțiunea activată. Referința începe acum când se deschide microfonul.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4481alpha/WinZapp-macOS-arm64.zip" length="306178279" type="application/octet-stream" sparkle:edSignature="GKSvha/wMLOV9knmmrZIOAHTmL60gz5eBN0aQ2MTrJJomNjKwi9hbdhdYvOIFAvazJO+XZrZCXaFg/NUmxTxDQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4474alpha</title>
+      <pubDate>Fri, 16 Oct 2026 17:23:20 +0000</pubDate>
+      <sparkle:version>2.1.0.44741</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4474alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4474alpha/WinZapp-macOS-arm64.zip" length="306344978" type="application/octet-stream" sparkle:edSignature="XPmuS5bcm1Zj7WNqE7SJ4090LQriTtp5UpZ9/r036Arsczd7XlpEjZsAvA46hKfUpDlxeJuw8WYr4dQZ7seCCg=="></enclosure>
     </item>
     <item>
@@ -1594,17 +1645,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4442alpha/WinZapp-macOS-arm64.zip" length="306411216" type="application/octet-stream" sparkle:edSignature="RNkpVTe32tm2yWpppEWdjVuk/JBdJj6YAqLWUhn6w6Kp//uhNi+m8jNAZ2N/vrN0MDeQ+q4fe0Um7MC7KRl0AQ=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4440alpha</title>
-      <pubDate>Fri, 16 Oct 2026 04:38:36 +0000</pubDate>
-      <sparkle:version>2.1.0.44401</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4440alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4440alpha/WinZapp-macOS-arm64.zip" length="306674581" type="application/octet-stream" sparkle:edSignature="SN5CLbg+rtbw0TAZwjL9w3eaJEQGuoJiHDw4LJgOu0Gt+gyoYeM+pWK2Iy/El9vG8sVC2dW89mJ+YBdNvHfWDQ=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: oN6FoWpFrlyah7g+F7RSET5q9l6kVeUmvPMi/MAnOfU/UQYeK0QA9cNHqvt11nTsNhX3lX3qJec4Mnr3e0HfAQ==
-length: 360124
+edSignature: CGUXu001eG0nPCuVitMm6FP4EVLPPvqhndRKSq/qCKIQ0FHCegsftL4/BUlcppHpBQijNr3GBX77t5G/Obc6Cg==
+length: 365695
 -->
