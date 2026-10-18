@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 2.1.0.4502alpha</title>
-      <pubDate>Sun, 18 Oct 2026 17:45:21 +0000</pubDate>
-      <sparkle:version>2.1.0.45021</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4502alpha</sparkle:shortVersionString>
+      <title>WinZapp 2.1.0.4503alpha</title>
+      <pubDate>Sun, 18 Oct 2026 19:05:30 +0000</pubDate>
+      <sparkle:version>2.1.0.45031</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4503alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="en" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 This release brings transcription of voice messages on your own computer, with nothing sent anywhere, and online AI transcription and description of voice messages, images, videos, stickers and PDFs.
 
@@ -248,7 +248,7 @@ FIXES
 - WPPConnect Server updated to 2.10.58. Upstream now refuses to start a session while sessions are being backed up or restored, saves each session's token file atomically so a crash can no longer leave it half-written, and reuses a checked access token for a minute instead of checking it again on every request. If WinZapp offers the WPPConnect update at startup, accept it to install the new version.
 
 - WPPConnect Server updates are no longer suggested on their own. WinZapp used to look for a newer upstream release and offer it, but its fixes are ported to each release by hand, so an update could land on a version it does not support yet. Now WinZapp only offers the version it was tested with, or one the WinZapp team has checked against your WinZapp version, usually an update that only brings security fixes to the libraries the server uses; that one is recommended and you can decline it. An update that changes the server itself waits for the WinZapp version that supports it. Help &gt; Force reinstall WPPConnect also uses the newest of these versions, and a new install uses the one this WinZapp was tested with.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada a lugar nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, figurinhas e PDFs.
 
@@ -485,7 +485,7 @@ CORREÇÕES
 - WPPConnect Server atualizado para a 2.10.58. A biblioteca agora recusa iniciar uma sessão enquanto as sessões estão sendo copiadas ou restauradas, grava o arquivo de token de cada sessão de forma atômica, para que uma falha não o deixe pela metade, e reaproveita por um minuto um token de acesso já verificado em vez de verificá-lo de novo a cada requisição. Se o WinZapp oferecer a atualização do WPPConnect ao iniciar, aceite-a para instalar a nova versão.
 
 - As atualizações do WPPConnect Server não são mais sugeridas por conta própria. O WinZapp procurava uma versão mais nova do projeto original e a oferecia, mas as correções dele são portadas a cada versão manualmente, então uma atualização podia cair numa versão que ele ainda não suporta. Agora o WinZapp só oferece a versão com a qual foi testado, ou uma que a equipe do WinZapp verificou para a sua versão do WinZapp, em geral uma atualização que só traz correções de segurança nas bibliotecas usadas pelo servidor; essa é recomendada, e você pode recusá-la. Uma atualização que muda o próprio servidor espera pela versão do WinZapp que a suporta. Ajuda &gt; Forçar reinstalação da WPPConnect também usa a mais nova dessas versões, e uma instalação nova usa a versão com a qual este WinZapp foi testado.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 Esta versão traz a transcrição de mensagens de voz no seu próprio computador, sem enviar nada para lado nenhum, e a transcrição e a descrição com IA online de mensagens de voz, imagens, vídeos, autocolantes e PDFs.
 
@@ -722,7 +722,7 @@ CORREÇÕES
 - WPPConnect Server atualizado para a 2.10.58. A biblioteca passa a recusar iniciar uma sessão enquanto as sessões estão a ser copiadas ou restauradas, grava o ficheiro de token de cada sessão de forma atómica, para que uma falha não o deixe a meio, e reaproveita durante um minuto um token de acesso já verificado em vez de o verificar de novo em cada pedido. Se o WinZapp oferecer a atualização do WPPConnect ao iniciar, aceite-a para instalar a nova versão.
 
 - As atualizações do WPPConnect Server deixam de ser sugeridas por iniciativa própria. O WinZapp procurava uma versão mais recente do projeto original e oferecia-a, mas as correções dele são portadas manualmente para cada versão, pelo que uma atualização podia calhar numa versão que ainda não suporta. Agora o WinZapp só oferece a versão com que foi testado, ou uma que a equipa do WinZapp verificou para a sua versão do WinZapp, em geral uma atualização que só traz correções de segurança nas bibliotecas usadas pelo servidor; essa é recomendada, e pode recusá-la. Uma atualização que muda o próprio servidor espera pela versão do WinZapp que a suporta. Ajuda &gt; Forçar reinstalação da WPPConnect também usa a mais recente dessas versões, e uma instalação nova usa a versão com que este WinZapp foi testado.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="es" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 Esta versión trae la transcripción de mensajes de voz en tu propio ordenador, sin enviar nada a ningún sitio, y la transcripción y descripción con IA en línea de mensajes de voz, imágenes, vídeos, stickers y PDF.
 
@@ -959,7 +959,7 @@ CORRECCIONES
 - WPPConnect Server actualizado a la 2.10.58. La biblioteca ahora se niega a iniciar una sesión mientras se hace una copia de seguridad o una restauración de las sesiones, guarda el archivo de token de cada sesión de forma atómica para que un fallo no lo deje a medias, y reutiliza durante un minuto un token de acceso ya comprobado en lugar de comprobarlo de nuevo en cada petición. Si WinZapp ofrece la actualización de WPPConnect al iniciar, acéptala para instalar la nueva versión.
 
 - Las actualizaciones de WPPConnect Server ya no se sugieren por sí solas. WinZapp buscaba una versión más reciente del proyecto original y la ofrecía, pero sus correcciones se portan a mano a cada versión, así que una actualización podía acabar en una versión que aún no admite. Ahora WinZapp solo ofrece la versión con la que se probó, o una que el equipo de WinZapp ha verificado para su versión de WinZapp, normalmente una actualización que solo trae correcciones de seguridad en las bibliotecas que usa el servidor; esa es recomendada y puede rechazarla. Una actualización que cambia el propio servidor espera a la versión de WinZapp que la admite. Ayuda &gt; Forzar reinstalación de WPPConnect también usa la más reciente de esas versiones, y una instalación nueva usa la versión con la que se probó este WinZapp.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="pl" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 W tej wersji pojawia się transkrypcja wiadomości głosowych na Twoim własnym komputerze, bez wysyłania czegokolwiek, a także transkrypcje i opisy wiadomości głosowych, obrazów, filmów, naklejek i plików PDF tworzone przez AI online.
 
@@ -1196,7 +1196,7 @@ POPRAWKI
 - Zaktualizowano WPPConnect Server do wersji 2.10.58. Biblioteka odmawia teraz uruchomienia sesji, gdy trwa kopia zapasowa lub przywracanie sesji, zapisuje plik tokenu każdej sesji atomowo, aby awaria nie zostawiła go w połowie zapisanego, i przez minutę ponownie wykorzystuje już sprawdzony token dostępu zamiast sprawdzać go przy każdym żądaniu. Jeśli WinZapp zaproponuje aktualizację WPPConnect przy uruchomieniu, zaakceptuj ją, aby zainstalować nową wersję.
 
 - Aktualizacje WPPConnect Server nie są już proponowane samoczynnie. WinZapp szukał nowszej wersji oryginalnego projektu i ją oferował, ale jego poprawki są przenoszone do każdej wersji ręcznie, więc aktualizacja mogła trafić na wersję, której jeszcze nie obsługuje. Teraz WinZapp proponuje tylko wersję, z którą go testowano, albo wersję sprawdzoną przez zespół WinZapp dla Twojej wersji WinZapp, zwykle aktualizację, która przynosi jedynie poprawki bezpieczeństwa w bibliotekach używanych przez serwer; taka aktualizacja jest zalecana i można ją odrzucić. Aktualizacja zmieniająca sam serwer czeka na wersję WinZapp, która ją obsługuje. Pomoc &gt; Wymuś ponowną instalację WPPConnect również używa najnowszej z tych wersji, a nowa instalacja używa wersji, z którą testowano ten WinZapp.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="tr" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 Bu sürüm, hiçbir yere bir şey gönderilmeden sesli mesajların kendi bilgisayarınızda yazıya dökülmesini ve sesli mesajların, görsellerin, videoların, çıkartmaların ve PDF'lerin çevrimiçi yapay zekâ ile yazıya dökülmesini ve betimlenmesini getiriyor.
 
@@ -1433,7 +1433,7 @@ DÜZELTMELER
 - WPPConnect Server 2.10.58 sürümüne güncellendi. Kütüphane artık oturumlar yedeklenirken veya geri yüklenirken yeni bir oturum başlatmayı reddediyor, her oturumun belirteç dosyasını atomik olarak kaydediyor (bir çökme dosyayı yarım bırakamasın) ve doğrulanmış bir erişim belirtecini her istekte yeniden denetlemek yerine bir dakika boyunca yeniden kullanıyor. WinZapp açılışta WPPConnect güncellemesini sunarsa, yeni sürümü kurmak için kabul edin.
 
 - WPPConnect Server güncellemeleri artık kendiliğinden önerilmiyor. WinZapp özgün projenin daha yeni bir sürümünü arayıp sunuyordu, ancak düzeltmeleri her sürüme elle uyarlanıyor; bu yüzden bir güncelleme henüz desteklemediği bir sürüme denk gelebiliyordu. Artık WinZapp yalnızca test edildiği sürümü ya da WinZapp ekibinin sizin WinZapp sürümünüz için doğruladığı bir sürümü sunuyor; bu genellikle yalnızca sunucunun kullandığı kütüphanelere güvenlik düzeltmeleri getiren bir güncellemedir, önerilir ve reddedebilirsiniz. Sunucunun kendisini değiştiren bir güncelleme, onu destekleyen WinZapp sürümünü bekler. Yardım &gt; WPPConnect'i yeniden yüklemeye zorla da bu sürümlerin en yenisini kullanır; yeni bir kurulum ise bu WinZapp'ın test edildiği sürümü kullanır.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- WPPConnect Server: oferecer versões aprovadas para o pin de cada build (#544)
+      <description xml:lang="ro" sparkle:format="plain-text">- Changelog: notas da estável 2.0.2.0 na main (#546)
 
 Această versiune aduce transcrierea mesajelor vocale pe propriul dumneavoastră computer, fără să fie trimis nimic nicăieri, și transcrierea și descrierea cu AI online a mesajelor vocale, imaginilor, videoclipurilor, autocolantelor și PDF-urilor.
 
@@ -1670,6 +1670,15 @@ CORECTĂRI
 - WPPConnect Server a fost actualizat la 2.10.58. Biblioteca refuză acum pornirea unei sesiuni cât timp sesiunile sunt copiate sau restaurate, salvează atomic fișierul de token al fiecărei sesiuni, ca o eroare să nu-l lase scris pe jumătate, și reutilizează timp de un minut un token de acces deja verificat, în loc să-l verifice din nou la fiecare cerere. Dacă WinZapp oferă actualizarea WPPConnect la pornire, acceptați-o pentru a instala noua versiune.
 
 - Actualizările WPPConnect Server nu mai sunt sugerate de la sine. WinZapp căuta o versiune mai nouă a proiectului original și o oferea, dar corecturile lui sunt portate manual la fiecare versiune, așa că o actualizare putea ajunge la o versiune pe care încă nu o acceptă. Acum WinZapp oferă doar versiunea cu care a fost testat sau una pe care echipa WinZapp a verificat-o pentru versiunea dvs. de WinZapp, de obicei o actualizare care aduce doar corecturi de securitate în bibliotecile folosite de server; aceasta este recomandată și o puteți refuza. O actualizare care schimbă serverul însuși așteaptă versiunea de WinZapp care o acceptă. Ajutor &gt; Forțați reinstalarea WPPConnect folosește și ea cea mai nouă dintre aceste versiuni, iar o instalare nouă folosește versiunea cu care a fost testat acest WinZapp.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4503alpha/WinZapp-macOS-arm64.zip" length="305806062" type="application/octet-stream" sparkle:edSignature="bUQ2G+dVAX7zJWEOCTZghqgcoBG4B/qr6lbpLm+nre15BAivcyJZSrUpLYIbITCXedaxDWvVyxLWzgpIBQQoBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 2.1.0.4502alpha</title>
+      <pubDate>Sun, 18 Oct 2026 17:45:21 +0000</pubDate>
+      <sparkle:version>2.1.0.45021</sparkle:version>
+      <sparkle:shortVersionString>2.1.0.4502alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4502alpha/WinZapp-macOS-arm64.zip" length="305804452" type="application/octet-stream" sparkle:edSignature="Ac5uzPlEDN6PdslE4K7E0g9TiZdt6lxABeUMqiIKJNYxEi8Wf8c9HU5ipmqyrp7Fc/E+ax9tDkIBDhAKM4kSBA=="></enclosure>
     </item>
     <item>
@@ -1699,17 +1708,8 @@ CORECTĂRI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4494alpha/WinZapp-macOS-arm64.zip" length="305882710" type="application/octet-stream" sparkle:edSignature="Rm0Y/PziGuAduDE6rzzvIT8ZIr85qXVAc12R+Rn7b4QbX4tUaeSGnobAti5+9cRgQkdsPiNKDn2mijSYF8hiBA=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4491alpha</title>
-      <pubDate>Sat, 17 Oct 2026 23:42:04 +0000</pubDate>
-      <sparkle:version>2.1.0.44911</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4491alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4491alpha/WinZapp-macOS-arm64.zip" length="305772244" type="application/octet-stream" sparkle:edSignature="5nXiqbicmtj8n4Wp7zyZfr17EbI7gCTIoBs8AfZk31+AUK+KB0LrA920zI3nNKlkk4jy/BP1Tj2Ar2vdHqIGDA=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: RwEOjuULHYFbM7DCtkEXE+wEPHukeoYG0sz74kpPg4bpIVD74/DKlf9nXdCuTRz0E1wANYY8rsByF9seK6tcDA==
-length: 382480
+edSignature: wh4ru4HpbaW6hz/pokswbO4pDIJmBY7R4qmHfrq0sey0/K4ywwlT3REDKz9YXxMRPjU9wA7pR4gy3LinLeakAg==
+length: 382291
 -->
