@@ -5,15 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4536alpha</title>
-      <pubDate>Mon, 19 Oct 2026 01:18:32 +0000</pubDate>
-      <sparkle:version>3.0.0.45361</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4536alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4541alpha</title>
+      <pubDate>Mon, 19 Oct 2026 04:01:55 +0000</pubDate>
+      <sparkle:version>3.0.0.45411</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4541alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -27,10 +25,12 @@ WHAT'S NEW
 
 - Community announcement replies: open a message menu and choose "Community announcement replies" to read and send replies. The window can refresh replies and keeps your text when sending is not confirmed. Announcements report the known reply count. Authors use saved or profile names, and your replies respect your self-reference setting.
 
-- Communities is now a row of the navigation list, after Calls, with its Alt+8 shortcut in the row's name, so it can be reached by arrowing through the list as well as with Alt+8.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- Communities is now a row of the navigation list, after Calls, with its Alt+8 shortcut in the row's name, so it can be reached by arrowing through the list as well as with Alt+8.
+
+- Blocking a number that is not saved in your contacts no longer fails with "Could not block this contact": WinZapp now opens the chat WhatsApp requires before blocking.
+
+- A new conversation started with a Brazilian number typed with the extra 9 no longer shows up twice in the conversation list after you send the first message: WinZapp keeps the conversation under the number WhatsApp itself uses.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -44,10 +44,12 @@ NOVIDADES
 
 - Respostas aos avisos de comunidades: abra o menu de uma mensagem e escolha "Respostas ao aviso da comunidade" para ler e enviar respostas. A janela permite atualizar as respostas e conserva o texto quando o envio não é confirmado. Os avisos anunciam a contagem conhecida de respostas. Os autores usam nomes salvos ou de perfil, e respostas próprias respeitam a configuração de como se referir a você.
 
-- Comunidades agora é um item da lista de navegação, depois de Ligações, com o atalho Alt+8 no nome do item; dá para chegar nela descendo pela lista e não só com Alt+8.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- Comunidades agora é um item da lista de navegação, depois de Ligações, com o atalho Alt+8 no nome do item; dá para chegar nela descendo pela lista e não só com Alt+8.
+
+- Bloquear um número que não está salvo nos seus contatos não falha mais com "Não foi possível bloquear este contato": o WinZapp agora abre a conversa que o WhatsApp exige antes de bloquear.
+
+- Uma conversa nova iniciada com um número brasileiro digitado com o 9 extra não aparece mais duplicada na lista de conversas depois que você envia a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -61,10 +63,12 @@ NOVIDADES
 
 - Respostas aos avisos de comunidades: abra o menu de uma mensagem e escolha "Respostas ao aviso da comunidade" para ler e enviar respostas. A janela permite atualizar as respostas e conserva o texto quando o envio não é confirmado. Os avisos anunciam a contagem conhecida de respostas. Os autores usam nomes guardados ou de perfil, e as suas respostas respeitam a configuração de como se referir a si.
 
-- As comunidades passam a ser um item da lista de navegação, depois de Chamadas, com o atalho Alt+8 no nome do item; pode chegar-se lá descendo pela lista e não só com Alt+8.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- As comunidades passam a ser um item da lista de navegação, depois de Chamadas, com o atalho Alt+8 no nome do item; pode chegar-se lá descendo pela lista e não só com Alt+8.
+
+- Bloquear um número que não está guardado nos seus contactos já não falha com "Não foi possível bloquear este contacto": o WinZapp passa a abrir a conversa que o WhatsApp exige antes de bloquear.
+
+- Uma conversa nova iniciada com um número brasileiro escrito com o 9 extra deixa de aparecer duplicada na lista de conversas depois de enviar a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -78,10 +82,12 @@ NOVEDADES
 
 - Respuestas a los anuncios de comunidades: abre el menú de un mensaje y elige "Respuestas al anuncio de la comunidad" para leer y enviar respuestas. La ventana permite actualizar las respuestas y conserva tu texto si el envío no se confirma. Los anuncios indican el número conocido de respuestas. Los autores usan nombres guardados o de perfil, y tus respuestas respetan la configuración de cómo referirse a ti.
 
-- Comunidades es ahora un elemento de la lista de navegación, después de Llamadas, con su atajo Alt+8 en el nombre del elemento; se puede llegar bajando por la lista y no solo con Alt+8.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- Comunidades es ahora un elemento de la lista de navegación, después de Llamadas, con su atajo Alt+8 en el nombre del elemento; se puede llegar bajando por la lista y no solo con Alt+8.
+
+- Bloquear un número que no está guardado en tus contactos ya no falla con "No se pudo bloquear este contacto": WinZapp ahora abre el chat que WhatsApp exige antes de bloquear.
+
+- Una conversación nueva iniciada con un número brasileño escrito con el 9 extra ya no aparece duplicada en la lista de conversaciones después de enviar el primer mensaje: WinZapp mantiene la conversación con el número que usa el propio WhatsApp.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -95,10 +101,12 @@ NOWOŚCI
 
 - Odpowiedzi na ogłoszenia społeczności: otwórz menu wiadomości i wybierz "Odpowiedzi na ogłoszenie społeczności", aby czytać i wysyłać odpowiedzi. Okno umożliwia odświeżanie odpowiedzi i zachowuje tekst, gdy wysłanie nie zostanie potwierdzone. Ogłoszenia podają znaną liczbę odpowiedzi. Autorzy mają zapisane nazwy lub nazwy profilu, a własne odpowiedzi uwzględniają ustawienie sposobu odnoszenia się do użytkownika.
 
-- Społeczności są teraz pozycją listy nawigacji, po Połączeniach, ze skrótem Alt+8 w nazwie pozycji; można do nich dojść strzałkami po liście, a nie tylko skrótem Alt+8.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- Społeczności są teraz pozycją listy nawigacji, po Połączeniach, ze skrótem Alt+8 w nazwie pozycji; można do nich dojść strzałkami po liście, a nie tylko skrótem Alt+8.
+
+- Blokowanie numeru, którego nie ma w zapisanych kontaktach, nie kończy się już błędem „Nie można zablokować tego kontaktu”: WinZapp otwiera teraz czat, którego WhatsApp wymaga przed zablokowaniem.
+
+- Nowa rozmowa rozpoczęta z brazylijskim numerem wpisanym z dodatkową dziewiątką nie pojawia się już dwa razy na liście rozmów po wysłaniu pierwszej wiadomości: WinZapp zachowuje rozmowę pod numerem, którego używa sam WhatsApp.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -112,10 +120,12 @@ YENİLİKLER
 
 - Topluluk duyurusu yanıtları: yanıtları okumak ve göndermek için mesaj menüsünü açıp "Topluluk duyurusunun yanıtları" seçeneğini seçin. Pencerede yanıtları yenileyebilirsiniz; gönderim doğrulanmazsa metniniz korunur. Duyurular bilinen yanıt sayısını belirtir. Yazarlar kayıtlı veya profil adlarıyla gösterilir; kendi yanıtlarınızda kendinize hitap etme ayarınız kullanılır.
 
-- Topluluklar artık gezinme listesinde Aramalar'dan sonra gelen bir öğedir ve öğenin adında Alt+8 kısayolu yer alır; yalnızca Alt+8 ile değil, listede ilerleyerek de ulaşılabilir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- CLAUDE.md: fechar o PR antigo assim que abrir o derivado (#553)
-- Settings: the WhatsApp account settings become a category of the settings window (#550)
-- Guia de uso: descreve a janela de configurações reorganizada e as configurações do WhatsApp (#552)
+- Topluluklar artık gezinme listesinde Aramalar'dan sonra gelen bir öğedir ve öğenin adında Alt+8 kısayolu yer alır; yalnızca Alt+8 ile değil, listede ilerleyerek de ulaşılabilir.
+
+- Kayıtlı olmayan bir numarayı engellemek artık "Bu kişi engellenemedi" hatasıyla sonuçlanmıyor: WinZapp, engellemeden önce WhatsApp'ın istediği sohbeti artık açıyor.
+
+- Fazladan 9 ile yazılmış bir Brezilya numarasıyla başlatılan yeni sohbet, ilk mesajı gönderdikten sonra sohbet listesinde artık iki kez görünmüyor: WinZapp sohbeti WhatsApp'ın kendisinin kullandığı numara altında tutar.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -129,7 +139,20 @@ NOUTĂȚI
 
 - Răspunsuri la anunțurile comunităților: deschide meniul unui mesaj și alege "Răspunsuri la anunțul comunității" pentru a citi și trimite răspunsuri. Fereastra poate actualiza răspunsurile și păstrează textul când trimiterea nu este confirmată. Anunțurile indică numărul cunoscut de răspunsuri. Autorii folosesc numele salvate sau de profil, iar răspunsurile tale respectă setarea privind modul în care ți se face referire.
 
-- Comunitățile sunt acum un element al listei de navigare, după Apeluri, cu scurtătura Alt+8 în numele elementului; se poate ajunge la ele coborând prin listă, nu doar cu Alt+8.</description>
+- Comunitățile sunt acum un element al listei de navigare, după Apeluri, cu scurtătura Alt+8 în numele elementului; se poate ajunge la ele coborând prin listă, nu doar cu Alt+8.
+
+- Blocarea unui număr care nu este salvat în contacte nu mai eșuează cu „Nu s-a putut bloca acest contact”: WinZapp deschide acum conversația pe care WhatsApp o cere înainte de blocare.
+
+- O conversație nouă începută cu un număr brazilian scris cu cifra 9 în plus nu mai apare dublată în lista de conversații după ce trimiți primul mesaj: WinZapp păstrează conversația sub numărul pe care îl folosește WhatsApp.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4541alpha/WinZapp-macOS-arm64.zip" length="305856467" type="application/octet-stream" sparkle:edSignature="cDyp19VYkFZphMe0OFJdRvxctDssgsuVxo9Ez1EVNKiY3I8iscN1PDqMjnaFzNK3yiAOac/v7NS+ksumI0+KBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4536alpha</title>
+      <pubDate>Mon, 19 Oct 2026 01:18:32 +0000</pubDate>
+      <sparkle:version>3.0.0.45361</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4536alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4536alpha/WinZapp-macOS-arm64.zip" length="305753688" type="application/octet-stream" sparkle:edSignature="rnE6g/x8+CKBHuS/X5yJpOIML94BBrooI4/ZFG2eN9TnBlBYxW0UzjPEGJTyESFY0skcrrP2E3+u9F4YZXIZAw=="></enclosure>
     </item>
     <item>
@@ -159,17 +182,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4503alpha/WinZapp-macOS-arm64.zip" length="305806062" type="application/octet-stream" sparkle:edSignature="bUQ2G+dVAX7zJWEOCTZghqgcoBG4B/qr6lbpLm+nre15BAivcyJZSrUpLYIbITCXedaxDWvVyxLWzgpIBQQoBw=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4502alpha</title>
-      <pubDate>Sun, 18 Oct 2026 17:45:21 +0000</pubDate>
-      <sparkle:version>2.1.0.45021</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4502alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4502alpha/WinZapp-macOS-arm64.zip" length="305804452" type="application/octet-stream" sparkle:edSignature="Ac5uzPlEDN6PdslE4K7E0g9TiZdt6lxABeUMqiIKJNYxEi8Wf8c9HU5ipmqyrp7Fc/E+ax9tDkIBDhAKM4kSBA=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: oUM5mbO5APTp7rHO+9a0qmMsXpQeE4zSAqkVXvS7LkzOBrH9JfGLAcsdJsST+x0owBMRFdEPgsPGwtXk2yywAA==
-length: 25374
+edSignature: TBvVAIq01qXE7XSmk2IIfvTWpIHG//iPiqeeUFtVRvcCO66bP/HWbOd9OvvHeZQF/VUJ5hb//lh/iv2Iny9bCg==
+length: 27152
 -->
