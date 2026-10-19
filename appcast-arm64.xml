@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4541alpha</title>
-      <pubDate>Mon, 19 Oct 2026 04:01:55 +0000</pubDate>
-      <sparkle:version>3.0.0.45411</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4541alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4546alpha</title>
+      <pubDate>Mon, 19 Oct 2026 05:13:44 +0000</pubDate>
+      <sparkle:version>3.0.0.45461</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4546alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+      <description xml:lang="en" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -29,8 +29,10 @@ WHAT'S NEW
 
 - Blocking a number that is not saved in your contacts no longer fails with "Could not block this contact": WinZapp now opens the chat WhatsApp requires before blocking.
 
-- A new conversation started with a Brazilian number typed with the extra 9 no longer shows up twice in the conversation list after you send the first message: WinZapp keeps the conversation under the number WhatsApp itself uses.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- A new conversation started with a Brazilian number typed with the extra 9 no longer shows up twice in the conversation list after you send the first message: WinZapp keeps the conversation under the number WhatsApp itself uses.
+
+- Video messages (the round videos sent instead of a voice message) are now shown as videos, instead of "Incompatible message", and are named "video message" in the list, with the same duration, playback and Save as as any video.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -48,8 +50,10 @@ NOVIDADES
 
 - Bloquear um número que não está salvo nos seus contatos não falha mais com "Não foi possível bloquear este contato": o WinZapp agora abre a conversa que o WhatsApp exige antes de bloquear.
 
-- Uma conversa nova iniciada com um número brasileiro digitado com o 9 extra não aparece mais duplicada na lista de conversas depois que você envia a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- Uma conversa nova iniciada com um número brasileiro digitado com o 9 extra não aparece mais duplicada na lista de conversas depois que você envia a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.
+
+- As mensagens de vídeo (os vídeos redondos enviados no lugar de uma mensagem de voz) agora aparecem como vídeos, em vez de "Mensagem incompatível", e se chamam "mensagem de vídeo" na lista, com a mesma duração, reprodução e Salvar como de qualquer vídeo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -67,8 +71,10 @@ NOVIDADES
 
 - Bloquear um número que não está guardado nos seus contactos já não falha com "Não foi possível bloquear este contacto": o WinZapp passa a abrir a conversa que o WhatsApp exige antes de bloquear.
 
-- Uma conversa nova iniciada com um número brasileiro escrito com o 9 extra deixa de aparecer duplicada na lista de conversas depois de enviar a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- Uma conversa nova iniciada com um número brasileiro escrito com o 9 extra deixa de aparecer duplicada na lista de conversas depois de enviar a primeira mensagem: o WinZapp mantém a conversa no número que o próprio WhatsApp usa.
+
+- As mensagens de vídeo (os vídeos redondos enviados em vez de uma mensagem de voz) passam a aparecer como vídeos, em vez de "Mensagem incompatível", e chamam-se "mensagem de vídeo" na lista, com a mesma duração, reprodução e Guardar como de qualquer vídeo.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -86,8 +92,10 @@ NOVEDADES
 
 - Bloquear un número que no está guardado en tus contactos ya no falla con "No se pudo bloquear este contacto": WinZapp ahora abre el chat que WhatsApp exige antes de bloquear.
 
-- Una conversación nueva iniciada con un número brasileño escrito con el 9 extra ya no aparece duplicada en la lista de conversaciones después de enviar el primer mensaje: WinZapp mantiene la conversación con el número que usa el propio WhatsApp.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- Una conversación nueva iniciada con un número brasileño escrito con el 9 extra ya no aparece duplicada en la lista de conversaciones después de enviar el primer mensaje: WinZapp mantiene la conversación con el número que usa el propio WhatsApp.
+
+- Los mensajes de video (los videos redondos que se envían en lugar de un mensaje de voz) ahora se muestran como videos, en lugar de "Mensaje incompatible", y se llaman "mensaje de vídeo" en la lista, con la misma duración, reproducción y Guardar como que cualquier vídeo.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -105,8 +113,10 @@ NOWOŚCI
 
 - Blokowanie numeru, którego nie ma w zapisanych kontaktach, nie kończy się już błędem „Nie można zablokować tego kontaktu”: WinZapp otwiera teraz czat, którego WhatsApp wymaga przed zablokowaniem.
 
-- Nowa rozmowa rozpoczęta z brazylijskim numerem wpisanym z dodatkową dziewiątką nie pojawia się już dwa razy na liście rozmów po wysłaniu pierwszej wiadomości: WinZapp zachowuje rozmowę pod numerem, którego używa sam WhatsApp.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- Nowa rozmowa rozpoczęta z brazylijskim numerem wpisanym z dodatkową dziewiątką nie pojawia się już dwa razy na liście rozmów po wysłaniu pierwszej wiadomości: WinZapp zachowuje rozmowę pod numerem, którego używa sam WhatsApp.
+
+- Wiadomości wideo (okrągłe filmy wysyłane zamiast wiadomości głosowej) są teraz wyświetlane jako filmy, zamiast „Niezgodna wiadomość”, i są nazwane „wiadomość wideo” na liście, z tym samym czasem trwania, odtwarzaniem i opcją Zapisz jako co każdy film.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -124,8 +134,10 @@ YENİLİKLER
 
 - Kayıtlı olmayan bir numarayı engellemek artık "Bu kişi engellenemedi" hatasıyla sonuçlanmıyor: WinZapp, engellemeden önce WhatsApp'ın istediği sohbeti artık açıyor.
 
-- Fazladan 9 ile yazılmış bir Brezilya numarasıyla başlatılan yeni sohbet, ilk mesajı gönderdikten sonra sohbet listesinde artık iki kez görünmüyor: WinZapp sohbeti WhatsApp'ın kendisinin kullandığı numara altında tutar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix blocking an unsaved number and duplicate chat with Brazilian extra 9 (#555)
+- Fazladan 9 ile yazılmış bir Brezilya numarasıyla başlatılan yeni sohbet, ilk mesajı gönderdikten sonra sohbet listesinde artık iki kez görünmüyor: WinZapp sohbeti WhatsApp'ın kendisinin kullandığı numara altında tutar.
+
+- Video mesajlar (sesli mesaj yerine gönderilen yuvarlak videolar) artık "Uyumsuz mesaj" yerine video olarak gösteriliyor, listede "video mesaj" adıyla görünüyor ve her videoyla aynı süre, oynatma ve Farklı kaydet seçeneklerine sahip.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Name video messages (ptv) "video message" (#554)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -143,7 +155,18 @@ NOUTĂȚI
 
 - Blocarea unui număr care nu este salvat în contacte nu mai eșuează cu „Nu s-a putut bloca acest contact”: WinZapp deschide acum conversația pe care WhatsApp o cere înainte de blocare.
 
-- O conversație nouă începută cu un număr brazilian scris cu cifra 9 în plus nu mai apare dublată în lista de conversații după ce trimiți primul mesaj: WinZapp păstrează conversația sub numărul pe care îl folosește WhatsApp.</description>
+- O conversație nouă începută cu un număr brazilian scris cu cifra 9 în plus nu mai apare dublată în lista de conversații după ce trimiți primul mesaj: WinZapp păstrează conversația sub numărul pe care îl folosește WhatsApp.
+
+- Mesajele video (videoclipurile rotunde trimise în loc de un mesaj vocal) sunt acum afișate ca videoclipuri, în loc de „Mesaj incompatibil”, și se numesc „mesaj video” în listă, cu aceeași durată, redare și Salvează ca ca orice videoclip.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4546alpha/WinZapp-macOS-arm64.zip" length="305771052" type="application/octet-stream" sparkle:edSignature="gvnImVLrRFdgtgN6GcI7ohbooK+TCbYRCOC5VrmyM/az+1HDgH5ZKZRlTDRj3BgEY6m0ehvltn1lb3DlH0pkDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4541alpha</title>
+      <pubDate>Mon, 19 Oct 2026 04:01:55 +0000</pubDate>
+      <sparkle:version>3.0.0.45411</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4541alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4541alpha/WinZapp-macOS-arm64.zip" length="305856467" type="application/octet-stream" sparkle:edSignature="cDyp19VYkFZphMe0OFJdRvxctDssgsuVxo9Ez1EVNKiY3I8iscN1PDqMjnaFzNK3yiAOac/v7NS+ksumI0+KBA=="></enclosure>
     </item>
     <item>
@@ -173,17 +196,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4504alpha/WinZapp-macOS-arm64.zip" length="305813322" type="application/octet-stream" sparkle:edSignature="3VzZugXlxw2u/YRkT7IDwSj5u7kOBGtmUuHwI+2kqYS1m+L+OPJ8iXpIrlKPzLqR5nhpj83sA2Bha/moYofmDg=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 2.1.0.4503alpha</title>
-      <pubDate>Sun, 18 Oct 2026 19:05:30 +0000</pubDate>
-      <sparkle:version>2.1.0.45031</sparkle:version>
-      <sparkle:shortVersionString>2.1.0.4503alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v2.1.0.4503alpha/WinZapp-macOS-arm64.zip" length="305806062" type="application/octet-stream" sparkle:edSignature="bUQ2G+dVAX7zJWEOCTZghqgcoBG4B/qr6lbpLm+nre15BAivcyJZSrUpLYIbITCXedaxDWvVyxLWzgpIBQQoBw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: TBvVAIq01qXE7XSmk2IIfvTWpIHG//iPiqeeUFtVRvcCO66bP/HWbOd9OvvHeZQF/VUJ5hb//lh/iv2Iny9bCg==
-length: 27152
+edSignature: Ml5KDSkFWkjuK9oosB9aOeaQYMtYrxokCCdvW4E6GH71S2tNBl7FSDqPkk8ONVGiQfk1fgTJHy5bEQbvpTgPCQ==
+length: 28766
 -->
