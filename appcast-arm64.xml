@@ -5,20 +5,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4552alpha</title>
-      <pubDate>Mon, 19 Oct 2026 12:31:38 +0000</pubDate>
-      <sparkle:version>3.0.0.45521</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4552alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4557alpha</title>
+      <pubDate>Mon, 19 Oct 2026 13:08:53 +0000</pubDate>
+      <sparkle:version>3.0.0.45571</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4557alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="en" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
 - Updates: installation keeps ownership after WinZapp closes, and a downloaded package waiting to install is kept. Only a complete copy counts as success; a successful update clears an earlier failure warning. Automatic reopening waits for the installer to finish and does not proceed when its wait limit is reached. After an incomplete or unconfirmed copy, WinZapp stays closed and opens recovery instructions in Notepad.
+
+- Voice calls preserve timing across audio packets and use band-limited conversion when the microphone or speaker needs a different sample rate. Audio already at the call rate keeps the direct path.
 
 - The Settings window now has a search field and a list of categories: the arrow keys change category, Tab enters its options and, in the search, the down arrow goes to the results, where Enter or Space opens the option found, even when it is in the window of a button. Several categories were merged: Audio (devices, audio pasted with Ctrl+V, voice messages and silencing while recording), Event sounds (sound events and alert tones) and Storage (with the save folder). Spoken content, Audio playback, Profile backup, Keyboard shortcuts, Reactions, Notifications, Messages, Chats, Locked chats and Confirmations became buttons that open the window of each subject. "User Interface" is now called "Interface", and Connection moved to the end of the list.
 
@@ -37,14 +38,15 @@ WHAT'S NEW
 - Video messages (the round videos sent instead of a voice message) are now shown as videos, instead of "Incompatible message", and are named "video message" in the list, with the same duration, playback and Save as as any video.
 
 - Echo cancellation in voice and video calls was rebuilt on the same engine Google Meet and WhatsApp itself use (WebRTC's echo canceller): talking through a laptop speaker or with a mixer's loopback turned on no longer makes the other person hear their own voice. The option is now on, also for people who already used WinZapp; to turn it off, uncheck "Enable echo cancellation" in "Call audio settings". Microphone noise reduction during calls now uses this engine too.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
 - Atualizações: a instalação mantém a exclusividade depois que o WinZapp fecha, e o pacote baixado que aguarda instalação é preservado. Só uma cópia completa conta como sucesso; uma atualização bem-sucedida remove o aviso de falha anterior. A reabertura automática espera o instalador terminar e não ocorre quando o limite de espera é atingido. Depois de uma cópia incompleta ou não confirmada, o WinZapp permanece fechado e abre instruções de recuperação no Bloco de Notas.
+
+- As chamadas de voz preservam o tempo entre os pacotes de áudio e usam conversão com limitação de banda quando o microfone ou o alto-falante precisa de outra taxa de amostragem. O áudio que já está na taxa da chamada continua pelo caminho direto.
 
 - A janela de Configurações agora tem um campo de busca e uma lista de categorias: as setas trocam de categoria, Tab entra nas opções dela e, na busca, a seta para baixo vai aos resultados, onde Enter ou Espaço abre a opção encontrada, mesmo quando ela fica na janela de um botão. Várias categorias foram reunidas: Áudio (dispositivos, áudios colados com Ctrl+V, mensagens de voz e silenciar ao gravar), Sons de eventos (eventos de som e toques de alerta) e Armazenamento (com a pasta de salvamento). Conteúdo falado, Reprodução de áudio, Cópia de segurança, Atalhos de teclado, Reações, Notificações, Mensagens, Conversas, Conversas trancadas e Confirmações viraram botões que abrem a janela de cada assunto. "Interface do usuário" agora se chama "Interface", e Conexão passou para o fim da lista.
 
@@ -63,14 +65,15 @@ NOVIDADES
 - As mensagens de vídeo (os vídeos redondos enviados no lugar de uma mensagem de voz) agora aparecem como vídeos, em vez de "Mensagem incompatível", e se chamam "mensagem de vídeo" na lista, com a mesma duração, reprodução e Salvar como de qualquer vídeo.
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo alto-falante do notebook ou com o retorno (loopback) da mesa de som ligado não faz mais a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para desligar, desmarque "Ativar cancelamento de eco" em "Configurações de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar esse motor.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
 - Atualizações: a instalação mantém a exclusividade depois de o WinZapp fechar, e o pacote descarregado que aguarda instalação é preservado. Só uma cópia completa conta como sucesso; uma atualização bem-sucedida remove o aviso de falha anterior. A reabertura automática espera que o instalador termine e não ocorre quando o limite de espera é atingido. Após uma cópia incompleta ou não confirmada, o WinZapp permanece fechado e abre instruções de recuperação no Bloco de Notas.
+
+- As chamadas de voz preservam a temporização entre os pacotes de áudio e usam conversão com limitação de banda quando o microfone ou o altifalante precisa de outra frequência de amostragem. O áudio que já está na frequência da chamada continua pelo percurso direto.
 
 - A janela de Definições tem agora um campo de pesquisa e uma lista de categorias: as setas mudam de categoria, Tab entra nas opções dela e, na pesquisa, a seta para baixo vai aos resultados, onde Enter ou Espaço abre a opção encontrada, mesmo quando está na janela de um botão. Várias categorias foram reunidas: Áudio (dispositivos, áudios colados com Ctrl+V, mensagens de voz e silenciar ao gravar), Sons de eventos (eventos de som e toques de alerta) e Armazenamento (com a pasta de gravação). Conteúdo falado, Reprodução de áudio, Cópia de segurança, Atalhos de teclado, Reações, Notificações, Mensagens, Conversas, Conversas trancadas e Confirmações passaram a botões que abrem a janela de cada assunto. "Interface do utilizador" chama-se agora "Interface", e Ligação passou para o fim da lista.
 
@@ -89,14 +92,15 @@ NOVIDADES
 - As mensagens de vídeo (os vídeos redondos enviados em vez de uma mensagem de voz) passam a aparecer como vídeos, em vez de "Mensagem incompatível", e chamam-se "mensagem de vídeo" na lista, com a mesma duração, reprodução e Guardar como de qualquer vídeo.
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo altifalante do portátil ou com o retorno (loopback) da mesa de som ligado já não faz a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para a desligar, desmarque "Ativar cancelamento de eco" em "Definições de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar este motor.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="es" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
 - Actualizaciones: la instalación mantiene la exclusividad después de que WinZapp se cierre y conserva el paquete descargado que espera para instalarse. Solo una copia completa cuenta como éxito; una actualización correcta elimina el aviso de un fallo anterior. La reapertura automática espera a que termine el instalador y no se produce al alcanzar el límite de espera. Tras una copia incompleta o no confirmada, WinZapp permanece cerrado y abre instrucciones de recuperación en el Bloc de notas.
+
+- Las llamadas de voz conservan la temporización entre los paquetes de audio y usan conversión con limitación de banda cuando el micrófono o el altavoz necesita otra frecuencia de muestreo. El audio que ya tiene la frecuencia de la llamada sigue por la ruta directa.
 
 - La ventana de Configuración ahora tiene un campo de búsqueda y una lista de categorías: las flechas cambian de categoría, Tab entra en sus opciones y, en la búsqueda, la flecha abajo va a los resultados, donde Enter o Espacio abre la opción encontrada, incluso cuando está en la ventana de un botón. Se reunieron varias categorías: Audio (dispositivos, audios pegados con Ctrl+V, mensajes de voz y silenciar al grabar), Sonidos de eventos (eventos de sonido y tonos de alerta) y Almacenamiento (con la carpeta de guardado). Contenido hablado, Reproducción de audio, Copia de seguridad, Atajos de teclado, Reacciones, Notificaciones, Mensajes, Conversaciones, Chats bloqueados y Confirmaciones pasaron a ser botones que abren la ventana de cada tema. "Interfaz de usuario" ahora se llama "Interfaz", y Conexión pasó al final de la lista.
 
@@ -115,14 +119,15 @@ NOVEDADES
 - Los mensajes de video (los videos redondos que se envían en lugar de un mensaje de voz) ahora se muestran como videos, en lugar de "Mensaje incompatible", y se llaman "mensaje de vídeo" en la lista, con la misma duración, reproducción y Guardar como que cualquier vídeo.
 
 - La cancelación de eco en las llamadas de voz y vídeo se rehízo con el mismo motor que usan Google Meet y el propio WhatsApp (el cancelador de eco de WebRTC): hablar por el altavoz del portátil o con el retorno (loopback) de la mesa de mezclas activado ya no hace que la otra persona oiga su propia voz. La opción ahora viene activada, también para quien ya usaba WinZapp; para desactivarla, desmarca "Activar cancelación de eco" en "Configuración de audio de la llamada". La reducción de ruido del micrófono en la llamada también usa ahora este motor.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="pl" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
 - Aktualizacje: instalacja zachowuje wyłączność po zamknięciu WinZapp, a pobrany pakiet oczekujący na instalację jest zachowywany. Tylko pełna kopia oznacza sukces; udana aktualizacja usuwa ostrzeżenie o wcześniejszym błędzie. Automatyczne ponowne otwarcie czeka na zakończenie instalatora i nie następuje po przekroczeniu limitu oczekiwania. Po niepełnym lub niepotwierdzonym kopiowaniu WinZapp pozostaje zamknięty i otwiera instrukcje naprawy w Notatniku.
+
+- Połączenia głosowe zachowują ciągłość czasową między pakietami audio i używają konwersji z ograniczeniem pasma, gdy mikrofon lub głośnik wymaga innej częstotliwości próbkowania. Dźwięk o częstotliwości używanej w połączeniu nadal trafia bezpośrednio do dalszego przetwarzania.
 
 - Okno Ustawienia ma teraz pole wyszukiwania i listę kategorii: strzałki zmieniają kategorię, Tab przechodzi do jej opcji, a w wyszukiwaniu strzałka w dół prowadzi do wyników, gdzie Enter lub Spacja otwiera znalezioną opcję, nawet gdy jest w oknie przycisku. Kilka kategorii połączono: Dźwięk (urządzenia, audio wklejone Ctrl+V, wiadomości głosowe i wyciszanie podczas nagrywania), Dźwięki zdarzeń (zdarzenia dźwiękowe i dźwięki powiadomień) i Pamięć (z folderem zapisu). Zawartość mówiona, Odtwarzanie audio, Kopia zapasowa, Skróty klawiszowe, Reakcje, Powiadomienia, Wiadomości, Rozmowy, Zabezpieczone czaty i Potwierdzenia stały się przyciskami, które otwierają okno każdego tematu. „Interfejs użytkownika” nazywa się teraz „Interfejs”, a Połączenie przeniesiono na koniec listy.
 
@@ -141,14 +146,15 @@ NOWOŚCI
 - Wiadomości wideo (okrągłe filmy wysyłane zamiast wiadomości głosowej) są teraz wyświetlane jako filmy, zamiast „Niezgodna wiadomość”, i są nazwane „wiadomość wideo” na liście, z tym samym czasem trwania, odtwarzaniem i opcją Zapisz jako co każdy film.
 
 - Eliminacja echa w połączeniach głosowych i wideo została przebudowana na tym samym silniku, którego używają Google Meet i sam WhatsApp (eliminator echa WebRTC): rozmowa przez głośnik laptopa lub z włączonym odsłuchem (loopback) miksera nie sprawia już, że druga osoba słyszy własny głos. Opcja jest teraz włączona, także dla osób, które już używały WinZapp; aby ją wyłączyć, odznacz "Włącz eliminację echa" w "Ustawienia dźwięku połączenia". Redukcja szumów mikrofonu podczas połączenia również korzysta teraz z tego silnika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="tr" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
 - Güncellemeler: WinZapp kapandıktan sonra da kurulum sahipliği korunur ve kurulmayı bekleyen indirilmiş paket saklanır. Yalnızca tamamlanan kopyalama başarılı sayılır; başarılı güncelleme önceki hata uyarısını kaldırır. Otomatik yeniden açılış kurucunun bitmesini bekler ve bekleme sınırına ulaşıldığında gerçekleşmez. Eksik veya tamamlandığı doğrulanamayan kopyalamadan sonra WinZapp kapalı kalır ve onarım yönergelerini Not Defteri'nde açar.
+
+- Sesli aramalarda mikrofon veya hoparlör farklı bir örnekleme hızı gerektirdiğinde, ses paketleri arasındaki zamanlama korunur ve bant sınırlı dönüşüm kullanılır. Aramanın örnekleme hızında çalışan ses doğrudan aktarılmaya devam eder.
 
 - Ayarlar penceresinde artık bir arama alanı ve bir kategori listesi var: oklar kategoriyi değiştirir, Tab seçeneklerine girer ve aramada aşağı ok sonuçlara götürür; orada Enter veya Boşluk, bir düğmenin penceresindeki seçenek olsa bile bulunan seçeneği açar. Birkaç kategori birleştirildi: Ses (cihazlar, Ctrl+V ile yapıştırılan sesler, sesli mesajlar ve kayıt sırasında susturma), Olay sesleri (ses olayları ve uyarı tonları) ve Depolama (kaydetme klasörüyle). Konuşulan içerik, Ses oynatma, Profil yedekleme, Kısayollar, Tepkiler, Bildirimler, Mesajlar, Sohbetler, Kilitli sohbetler ve Onaylar, her konunun penceresini açan düğmelere dönüştü. "Kullanıcı Arayüzü" artık "Arayüz" adını taşıyor ve Bağlantı listenin sonuna taşındı.
 
@@ -167,14 +173,15 @@ YENİLİKLER
 - Video mesajlar (sesli mesaj yerine gönderilen yuvarlak videolar) artık "Uyumsuz mesaj" yerine video olarak gösteriliyor, listede "video mesaj" adıyla görünüyor ve her videoyla aynı süre, oynatma ve Farklı kaydet seçeneklerine sahip.
 
 - Sesli ve görüntülü aramalardaki yankı önleme, Google Meet'in ve WhatsApp'ın kendisinin kullandığı motorla (WebRTC yankı gidericisi) yeniden yapıldı: dizüstü bilgisayarın hoparlöründen ya da mikserin geri dönüşü (loopback) açıkken konuşmak artık karşıdaki kişinin kendi sesini duymasına yol açmıyor. Seçenek artık açık geliyor, WinZapp'ı zaten kullananlar için de; kapatmak için "Arama ses ayarları" içinde "Yankı önlemeyi etkinleştir" kutusunun işaretini kaldırın. Aramadaki mikrofon gürültü azaltma da artık bu motoru kullanıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Calls: WebRTC echo cancellation (AEC3), on by default (#556)
-- Harden updater handoff, copy results and failed-install recovery (#558)
+      <description xml:lang="ro" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
 - Actualizări: instalarea păstrează exclusivitatea după închiderea WinZapp, iar pachetul descărcat care așteaptă instalarea este păstrat. Doar o copiere completă înseamnă succes; o actualizare reușită elimină avertizarea despre un eșec anterior. Redeschiderea automată așteaptă terminarea programului de instalare și nu are loc la atingerea limitei de așteptare. După o copiere incompletă sau neconfirmată, WinZapp rămâne închis și deschide instrucțiuni de reparare în Notepad.
+
+- Apelurile vocale păstrează continuitatea temporală între pachetele audio și folosesc conversie cu bandă limitată când microfonul sau difuzorul necesită altă rată de eșantionare. Sunetul care are deja rata apelului continuă pe calea directă.
 
 - Fereastra Setări are acum un câmp de căutare și o listă de categorii: săgețile schimbă categoria, Tab intră în opțiunile ei, iar în căutare săgeata în jos merge la rezultate, unde Enter sau Spațiu deschide opțiunea găsită, chiar dacă este în fereastra unui buton. Mai multe categorii au fost reunite: Audio (dispozitive, audio lipit cu Ctrl+V, mesaje vocale și amuțire la înregistrare), Sunete de evenimente (evenimente sonore și tonuri de alertă) și Stocare (cu dosarul de salvare). Conținut vorbit, Redare audio, Copie de siguranță a profilului, Comenzi rapide, Reacții, Notificări, Mesaje, Conversații, Conversații blocate și Confirmări au devenit butoane care deschid fereastra fiecărui subiect. „Interfață utilizator” se numește acum „Interfață”, iar Conexiune a trecut la sfârșitul listei.
 
@@ -193,6 +200,15 @@ NOUTĂȚI
 - Mesajele video (videoclipurile rotunde trimise în loc de un mesaj vocal) sunt acum afișate ca videoclipuri, în loc de „Mesaj incompatibil”, și se numesc „mesaj video” în listă, cu aceeași durată, redare și Salvează ca ca orice videoclip.
 
 - Anularea ecoului în apelurile vocale și video a fost refăcută cu același motor pe care îl folosesc Google Meet și WhatsApp însuși (anulatorul de ecou WebRTC): vorbitul prin difuzorul laptopului sau cu reluarea (loopback) mixerului activată nu mai face ca cealaltă persoană să își audă propria voce. Opțiunea este acum activată, inclusiv pentru cei care foloseau deja WinZapp; pentru a o dezactiva, debifează "Activează anularea ecoului" în "Setări audio pentru apeluri". Reducerea zgomotului microfonului în apel folosește acum și ea acest motor.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4557alpha/WinZapp-macOS-arm64.zip" length="315600533" type="application/octet-stream" sparkle:edSignature="xuGoOwFSmv9Uu2sMgWFSlnIiUdCIRbG/YprDM21bshu5EkiT3jQYS5l9LmaQTXE/TqBVwfJn0TBCQahRL/eFBg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4552alpha</title>
+      <pubDate>Mon, 19 Oct 2026 12:31:38 +0000</pubDate>
+      <sparkle:version>3.0.0.45521</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4552alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4552alpha/WinZapp-macOS-arm64.zip" length="315549545" type="application/octet-stream" sparkle:edSignature="MoW2Ajb2CRS1awxoDORPNElQtmBoGmolURW0/ydByXFXCYAuUKqUmyL9DWOTVk4QEe80lVT2bydcUAtPdWADAg=="></enclosure>
     </item>
     <item>
@@ -222,17 +238,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4536alpha/WinZapp-macOS-arm64.zip" length="305753688" type="application/octet-stream" sparkle:edSignature="rnE6g/x8+CKBHuS/X5yJpOIML94BBrooI4/ZFG2eN9TnBlBYxW0UzjPEGJTyESFY0skcrrP2E3+u9F4YZXIZAw=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4515alpha</title>
-      <pubDate>Mon, 19 Oct 2026 00:04:21 +0000</pubDate>
-      <sparkle:version>3.0.0.45151</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4515alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4515alpha/WinZapp-macOS-arm64.zip" length="305744234" type="application/octet-stream" sparkle:edSignature="+M7Ez+nQM510oUUzyZE5tfHgcQo/fPEpBKFqkX/8XZuI/CRxT90VpZoUl8oDUgPBtPTqB/7In5HrW/1wNLvlCw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: HQO/XFaNtrcmdwW1MUjZnAgfXq6uezDkfxfIH9hmcF9DtBscXkbHM71/TFjS7jZhkRrnU7s/7yechRR3be27Cw==
-length: 36644
+edSignature: o3D6tisp+9C+KTHVMy978qlPHi25oMSOUnnesqPOp4XggtuFC86e5gelatXfJWQ4q9EYBi4RPRWocLtqmqLHBA==
+length: 38091
 -->
