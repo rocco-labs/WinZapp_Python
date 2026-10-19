@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4557alpha</title>
-      <pubDate>Mon, 19 Oct 2026 13:08:53 +0000</pubDate>
-      <sparkle:version>3.0.0.45571</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4557alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4561alpha</title>
+      <pubDate>Mon, 19 Oct 2026 22:21:50 +0000</pubDate>
+      <sparkle:version>3.0.0.45611</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4561alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="en" sparkle:format="plain-text">- Update Polish translation (#561)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -38,7 +38,7 @@ WHAT'S NEW
 - Video messages (the round videos sent instead of a voice message) are now shown as videos, instead of "Incompatible message", and are named "video message" in the list, with the same duration, playback and Save as as any video.
 
 - Echo cancellation in voice and video calls was rebuilt on the same engine Google Meet and WhatsApp itself use (WebRTC's echo canceller): talking through a laptop speaker or with a mixer's loopback turned on no longer makes the other person hear their own voice. The option is now on, also for people who already used WinZapp; to turn it off, uncheck "Enable echo cancellation" in "Call audio settings". Microphone noise reduction during calls now uses this engine too.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Update Polish translation (#561)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -65,7 +65,7 @@ NOVIDADES
 - As mensagens de vídeo (os vídeos redondos enviados no lugar de uma mensagem de voz) agora aparecem como vídeos, em vez de "Mensagem incompatível", e se chamam "mensagem de vídeo" na lista, com a mesma duração, reprodução e Salvar como de qualquer vídeo.
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo alto-falante do notebook ou com o retorno (loopback) da mesa de som ligado não faz mais a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para desligar, desmarque "Ativar cancelamento de eco" em "Configurações de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar esse motor.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Update Polish translation (#561)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -92,7 +92,7 @@ NOVIDADES
 - As mensagens de vídeo (os vídeos redondos enviados em vez de uma mensagem de voz) passam a aparecer como vídeos, em vez de "Mensagem incompatível", e chamam-se "mensagem de vídeo" na lista, com a mesma duração, reprodução e Guardar como de qualquer vídeo.
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo altifalante do portátil ou com o retorno (loopback) da mesa de som ligado já não faz a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para a desligar, desmarque "Ativar cancelamento de eco" em "Definições de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar este motor.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="es" sparkle:format="plain-text">- Update Polish translation (#561)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -119,7 +119,7 @@ NOVEDADES
 - Los mensajes de video (los videos redondos que se envían en lugar de un mensaje de voz) ahora se muestran como videos, en lugar de "Mensaje incompatible", y se llaman "mensaje de vídeo" en la lista, con la misma duración, reproducción y Guardar como que cualquier vídeo.
 
 - La cancelación de eco en las llamadas de voz y vídeo se rehízo con el mismo motor que usan Google Meet y el propio WhatsApp (el cancelador de eco de WebRTC): hablar por el altavoz del portátil o con el retorno (loopback) de la mesa de mezclas activado ya no hace que la otra persona oiga su propia voz. La opción ahora viene activada, también para quien ya usaba WinZapp; para desactivarla, desmarca "Activar cancelación de eco" en "Configuración de audio de la llamada". La reducción de ruido del micrófono en la llamada también usa ahora este motor.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="pl" sparkle:format="plain-text">- Update Polish translation (#561)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -146,7 +146,7 @@ NOWOŚCI
 - Wiadomości wideo (okrągłe filmy wysyłane zamiast wiadomości głosowej) są teraz wyświetlane jako filmy, zamiast „Niezgodna wiadomość”, i są nazwane „wiadomość wideo” na liście, z tym samym czasem trwania, odtwarzaniem i opcją Zapisz jako co każdy film.
 
 - Eliminacja echa w połączeniach głosowych i wideo została przebudowana na tym samym silniku, którego używają Google Meet i sam WhatsApp (eliminator echa WebRTC): rozmowa przez głośnik laptopa lub z włączonym odsłuchem (loopback) miksera nie sprawia już, że druga osoba słyszy własny głos. Opcja jest teraz włączona, także dla osób, które już używały WinZapp; aby ją wyłączyć, odznacz "Włącz eliminację echa" w "Ustawienia dźwięku połączenia". Redukcja szumów mikrofonu podczas połączenia również korzysta teraz z tego silnika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="tr" sparkle:format="plain-text">- Update Polish translation (#561)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -173,7 +173,7 @@ YENİLİKLER
 - Video mesajlar (sesli mesaj yerine gönderilen yuvarlak videolar) artık "Uyumsuz mesaj" yerine video olarak gösteriliyor, listede "video mesaj" adıyla görünüyor ve her videoyla aynı süre, oynatma ve Farklı kaydet seçeneklerine sahip.
 
 - Sesli ve görüntülü aramalardaki yankı önleme, Google Meet'in ve WhatsApp'ın kendisinin kullandığı motorla (WebRTC yankı gidericisi) yeniden yapıldı: dizüstü bilgisayarın hoparlöründen ya da mikserin geri dönüşü (loopback) açıkken konuşmak artık karşıdaki kişinin kendi sesini duymasına yol açmıyor. Seçenek artık açık geliyor, WinZapp'ı zaten kullananlar için de; kapatmak için "Arama ses ayarları" içinde "Yankı önlemeyi etkinleştir" kutusunun işaretini kaldırın. Aramadaki mikrofon gürültü azaltma da artık bu motoru kullanıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Preserve voice-call audio when device sample rates differ (rebased #557) (#559)
+      <description xml:lang="ro" sparkle:format="plain-text">- Update Polish translation (#561)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -200,6 +200,15 @@ NOUTĂȚI
 - Mesajele video (videoclipurile rotunde trimise în loc de un mesaj vocal) sunt acum afișate ca videoclipuri, în loc de „Mesaj incompatibil”, și se numesc „mesaj video” în listă, cu aceeași durată, redare și Salvează ca ca orice videoclip.
 
 - Anularea ecoului în apelurile vocale și video a fost refăcută cu același motor pe care îl folosesc Google Meet și WhatsApp însuși (anulatorul de ecou WebRTC): vorbitul prin difuzorul laptopului sau cu reluarea (loopback) mixerului activată nu mai face ca cealaltă persoană să își audă propria voce. Opțiunea este acum activată, inclusiv pentru cei care foloseau deja WinZapp; pentru a o dezactiva, debifează "Activează anularea ecoului" în "Setări audio pentru apeluri". Reducerea zgomotului microfonului în apel folosește acum și ea acest motor.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4561alpha/WinZapp-macOS-arm64.zip" length="315180246" type="application/octet-stream" sparkle:edSignature="XDo7upFLfKp7I58qOmvL+MaVfqZuf0u4eZnai0jbBmwsvHFLs+iiliuWYPCvf0b9XW8vEUXgBkhfRg+nU42dAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4557alpha</title>
+      <pubDate>Mon, 19 Oct 2026 13:08:53 +0000</pubDate>
+      <sparkle:version>3.0.0.45571</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4557alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4557alpha/WinZapp-macOS-arm64.zip" length="315600533" type="application/octet-stream" sparkle:edSignature="xuGoOwFSmv9Uu2sMgWFSlnIiUdCIRbG/YprDM21bshu5EkiT3jQYS5l9LmaQTXE/TqBVwfJn0TBCQahRL/eFBg=="></enclosure>
     </item>
     <item>
@@ -229,17 +238,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4541alpha/WinZapp-macOS-arm64.zip" length="305856467" type="application/octet-stream" sparkle:edSignature="cDyp19VYkFZphMe0OFJdRvxctDssgsuVxo9Ez1EVNKiY3I8iscN1PDqMjnaFzNK3yiAOac/v7NS+ksumI0+KBA=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4536alpha</title>
-      <pubDate>Mon, 19 Oct 2026 01:18:32 +0000</pubDate>
-      <sparkle:version>3.0.0.45361</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4536alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4536alpha/WinZapp-macOS-arm64.zip" length="305753688" type="application/octet-stream" sparkle:edSignature="rnE6g/x8+CKBHuS/X5yJpOIML94BBrooI4/ZFG2eN9TnBlBYxW0UzjPEGJTyESFY0skcrrP2E3+u9F4YZXIZAw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: o3D6tisp+9C+KTHVMy978qlPHi25oMSOUnnesqPOp4XggtuFC86e5gelatXfJWQ4q9EYBi4RPRWocLtqmqLHBA==
-length: 38091
+edSignature: Jx0Np7BDSQN8SXmPkhlhItjeMA+KKc/i8J93d66JIijtYqJ4g6PaMp0rFCxrETxDzN/OZHS6lKNnuWYGBwqPCg==
+length: 37762
 -->
