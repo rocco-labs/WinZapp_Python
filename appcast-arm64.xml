@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4573alpha</title>
-      <pubDate>Tue, 20 Oct 2026 01:08:25 +0000</pubDate>
-      <sparkle:version>3.0.0.45731</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4573alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4577alpha</title>
+      <pubDate>Tue, 20 Oct 2026 12:21:15 +0000</pubDate>
+      <sparkle:version>3.0.0.45771</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4577alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="en" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- macOS updates explain whether verification failed because of a connection, certificate, server or GitHub request-limit problem, and whether the verification file or the official release tag could not be checked. Temporary connection and server failures get one retry; request limits show a wait time and do not trigger repeated requests during that wait.
 
 - Updates: installation keeps ownership after WinZapp closes, and a downloaded package waiting to install is kept. Only a complete copy counts as success; a successful update clears an earlier failure warning. Automatic reopening waits for the installer to finish and does not proceed when its wait limit is reached. After an incomplete or unconfirmed copy, WinZapp stays closed and opens recovery instructions in Notepad.
 
@@ -42,11 +44,13 @@ WHAT'S NEW
 - The call log (log.log) now shows, every 5 seconds, how much of the speaker's sound reaches the microphone before echo cancellation and how much is still left in what is sent, with that echo's delay. If someone still hears their own voice, the log tells whether the echo went through the canceller or arrived by another path.
 
 - Answering calls from any window: while a one-to-one call is ringing, Ctrl+Alt+Shift+Enter answers it, brings the call window in front of any program and puts the focus in it, and Ctrl+Alt+Shift+Backspace rejects it, as it does a ringing group call; with no call ringing, Ctrl+Alt+Shift+Backspace hangs up the call in progress. With several accounts open, a call ringing in any of them is rejected first. A video call is answered with the camera on, like its Answer button. Both keys can be changed in the Keyboard shortcuts of Settings, and belong to WinZapp only while they can act, so other programs keep them the rest of the time.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- As atualizações do macOS explicam se a verificação falhou por um problema de conexão, certificado, servidor ou limite de solicitações do GitHub, e se não foi possível verificar o arquivo de verificação ou a tag da versão oficial. Falhas temporárias de conexão e servidor são repetidas uma vez; limites de solicitações mostram um tempo de espera e não geram novas solicitações durante esse período.
 
 - Atualizações: a instalação mantém a exclusividade depois que o WinZapp fecha, e o pacote baixado que aguarda instalação é preservado. Só uma cópia completa conta como sucesso; uma atualização bem-sucedida remove o aviso de falha anterior. A reabertura automática espera o instalador terminar e não ocorre quando o limite de espera é atingido. Depois de uma cópia incompleta ou não confirmada, o WinZapp permanece fechado e abre instruções de recuperação no Bloco de Notas.
 
@@ -73,11 +77,13 @@ NOVIDADES
 - O registro das chamadas (log.log) agora mostra, a cada 5 segundos, quanto do som do alto-falante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o log diz se o eco passou pelo cancelador ou chegou por outro caminho.
 
 - Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, assim como uma chamada em grupo que esteja tocando; sem nenhuma chamada tocando, Ctrl+Alt+Shift+Backspace encerra a chamada em andamento. Com várias contas abertas, uma chamada tocando em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmera ligada, como pelo botão de atender. As duas teclas podem ser trocadas nos Atalhos de teclado das Configurações e só pertencem ao WinZapp enquanto podem agir, então os outros programas ficam com elas o resto do tempo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- As atualizações do macOS explicam se a verificação falhou devido a um problema de ligação, certificado, servidor ou limite de pedidos do GitHub, e se não foi possível verificar o ficheiro de verificação ou a etiqueta da versão oficial. As falhas temporárias de ligação e servidor são repetidas uma vez; os limites de pedidos mostram um tempo de espera e não geram novos pedidos durante esse período.
 
 - Atualizações: a instalação mantém a exclusividade depois de o WinZapp fechar, e o pacote descarregado que aguarda instalação é preservado. Só uma cópia completa conta como sucesso; uma atualização bem-sucedida remove o aviso de falha anterior. A reabertura automática espera que o instalador termine e não ocorre quando o limite de espera é atingido. Após uma cópia incompleta ou não confirmada, o WinZapp permanece fechado e abre instruções de recuperação no Bloco de Notas.
 
@@ -104,11 +110,13 @@ NOVIDADES
 - O registo das chamadas (log.log) passa a mostrar, a cada 5 segundos, quanto do som do altifalante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o registo diz se o eco passou pelo cancelador ou chegou por outro caminho.
 
 - Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, tal como uma chamada de grupo a tocar; sem nenhuma chamada a tocar, Ctrl+Alt+Shift+Backspace termina a chamada em curso. Com várias contas abertas, uma chamada a tocar em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmara ligada, como pelo botão de atender. As duas teclas podem ser alteradas nos Atalhos de teclado das Definições e só pertencem ao WinZapp enquanto podem atuar, pelo que os outros programas ficam com elas o resto do tempo.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="es" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Las actualizaciones de macOS explican si la verificación ha fallado por un problema de conexión, certificado, servidor o límite de solicitudes de GitHub, y si no se ha podido comprobar el archivo de verificación o la etiqueta de la versión oficial. Los fallos temporales de conexión y servidor se reintentan una vez; los límites de solicitudes muestran un tiempo de espera y no generan nuevas solicitudes durante ese período.
 
 - Actualizaciones: la instalación mantiene la exclusividad después de que WinZapp se cierre y conserva el paquete descargado que espera para instalarse. Solo una copia completa cuenta como éxito; una actualización correcta elimina el aviso de un fallo anterior. La reapertura automática espera a que termine el instalador y no se produce al alcanzar el límite de espera. Tras una copia incompleta o no confirmada, WinZapp permanece cerrado y abre instrucciones de recuperación en el Bloc de notas.
 
@@ -135,11 +143,13 @@ NOVEDADES
 - El registro de las llamadas (log.log) ahora muestra, cada 5 segundos, cuánto del sonido del altavoz llega al micrófono antes de la cancelación de eco y cuánto queda todavía en lo que se envía, con el retraso de ese eco. Si alguien sigue oyendo su propia voz, el registro dice si el eco pasó por el cancelador o llegó por otro camino.
 
 - Contestar llamadas desde cualquier ventana: mientras suena una llamada individual, Ctrl+Alt+Shift+Enter la contesta, trae la ventana de la llamada al frente de cualquier programa y le da el foco, y Ctrl+Alt+Shift+Retroceso la rechaza, igual que una llamada grupal que suena; sin ninguna llamada sonando, Ctrl+Alt+Shift+Retroceso cuelga la llamada en curso. Con varias cuentas abiertas, primero se rechaza la llamada que suene en cualquiera de ellas. Una videollamada se contesta con la cámara encendida, como con su botón de contestar. Las dos teclas se pueden cambiar en los Atajos de teclado de Ajustes y son de WinZapp solo mientras pueden actuar, así que los demás programas las conservan el resto del tiempo.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="pl" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Aktualizacje macOS wyjaśniają, czy weryfikacja nie powiodła się z powodu połączenia, certyfikatu, serwera lub limitu żądań GitHub oraz czy nie można sprawdzić pliku weryfikacji czy oficjalnego tagu wydania. Tymczasowe błędy połączenia i serwera powodują jedną ponowną próbę; limity żądań pokazują czas oczekiwania i nie powodują kolejnych żądań w tym czasie.
 
 - Aktualizacje: instalacja zachowuje wyłączność po zamknięciu WinZapp, a pobrany pakiet oczekujący na instalację jest zachowywany. Tylko pełna kopia oznacza sukces; udana aktualizacja usuwa ostrzeżenie o wcześniejszym błędzie. Automatyczne ponowne otwarcie czeka na zakończenie instalatora i nie następuje po przekroczeniu limitu oczekiwania. Po niepełnym lub niepotwierdzonym kopiowaniu WinZapp pozostaje zamknięty i otwiera instrukcje naprawy w Notatniku.
 
@@ -166,11 +176,13 @@ NOWOŚCI
 - Dziennik połączeń (log.log) pokazuje teraz co 5 sekund, ile dźwięku z głośnika trafia do mikrofonu przed eliminacją echa i ile jeszcze zostaje w tym, co jest wysyłane, wraz z opóźnieniem tego echa. Jeśli ktoś nadal słyszy własny głos, dziennik mówi, czy echo przeszło przez eliminator, czy dotarło inną drogą.
 
 - Odbieranie połączeń z dowolnego okna: gdy dzwoni połączenie indywidualne, Ctrl+Alt+Shift+Enter je odbiera, przenosi okno połączenia przed każdy program i ustawia w nim fokus, a Ctrl+Alt+Shift+Backspace je odrzuca, tak samo jak dzwoniące połączenie grupowe; gdy nic nie dzwoni, Ctrl+Alt+Shift+Backspace rozłącza trwające połączenie. Przy kilku otwartych kontach najpierw odrzucane jest połączenie dzwoniące na którymkolwiek z nich. Połączenie wideo jest odbierane z włączoną kamerą, tak jak jego przyciskiem odbierania. Oba klawisze można zmienić w Skrótach klawiszowych w Ustawieniach i należą do WinZapp tylko wtedy, gdy mogą działać, więc inne programy mają je przez resztę czasu.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="tr" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- macOS güncellemelerinde doğrulamanın bağlantı, sertifika, sunucu veya GitHub istek sınırı nedeniyle mi başarısız olduğu ve doğrulama dosyasının mı, resmî sürüm etiketinin mi kontrol edilemediği açıklanır. Geçici bağlantı ve sunucu hatalarında bir kez yeniden denenir; istek sınırında bekleme süresi gösterilir ve bu süre boyunca tekrar istek gönderilmez.
 
 - Güncellemeler: WinZapp kapandıktan sonra da kurulum sahipliği korunur ve kurulmayı bekleyen indirilmiş paket saklanır. Yalnızca tamamlanan kopyalama başarılı sayılır; başarılı güncelleme önceki hata uyarısını kaldırır. Otomatik yeniden açılış kurucunun bitmesini bekler ve bekleme sınırına ulaşıldığında gerçekleşmez. Eksik veya tamamlandığı doğrulanamayan kopyalamadan sonra WinZapp kapalı kalır ve onarım yönergelerini Not Defteri'nde açar.
 
@@ -197,11 +209,13 @@ YENİLİKLER
 - Arama günlüğü (log.log) artık her 5 saniyede bir, hoparlör sesinin ne kadarının yankı önlemeden önce mikrofona ulaştığını ve gönderilen seste ne kadarının kaldığını, bu yankının gecikmesiyle birlikte gösteriyor. Biri hâlâ kendi sesini duyuyorsa günlük, yankının önleyiciden geçip geçmediğini ya da başka bir yoldan gelip gelmediğini söyler.
 
 - Aramaları herhangi bir pencereden yanıtlama: tek kişilik bir arama çalarken Ctrl+Alt+Shift+Enter onu yanıtlar, arama penceresini her programın önüne getirir ve odağı ona verir; Ctrl+Alt+Shift+Geri sil ise onu ve çalan bir grup aramasını reddeder. Hiçbir arama çalmıyorken Ctrl+Alt+Shift+Geri sil sürmekte olan aramayı kapatır. Birden fazla hesap açıksa önce herhangi birinde çalan arama reddedilir. Görüntülü arama, yanıtlama düğmesinde olduğu gibi kamera açık yanıtlanır. İki tuş Ayarlar'daki Kısayollar bölümünden değiştirilebilir ve yalnızca işe yarayabildikleri sürece WinZapp'a aittir; geri kalan zamanda diğer programlarda kalır.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
+      <description xml:lang="ro" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Actualizările macOS explică dacă verificarea a eșuat din cauza conexiunii, certificatului, serverului sau limitei de solicitări GitHub și dacă nu a putut fi verificat fișierul de verificare sau eticheta versiunii oficiale. Erorile temporare de conexiune și server sunt reîncercate o singură dată; limitele de solicitări afișează un timp de așteptare și nu generează solicitări repetate în acel interval.
 
 - Actualizări: instalarea păstrează exclusivitatea după închiderea WinZapp, iar pachetul descărcat care așteaptă instalarea este păstrat. Doar o copiere completă înseamnă succes; o actualizare reușită elimină avertizarea despre un eșec anterior. Redeschiderea automată așteaptă terminarea programului de instalare și nu are loc la atingerea limitei de așteptare. După o copiere incompletă sau neconfirmată, WinZapp rămâne închis și deschide instrucțiuni de reparare în Notepad.
 
@@ -228,6 +242,15 @@ NOUTĂȚI
 - Jurnalul apelurilor (log.log) arată acum, la fiecare 5 secunde, cât din sunetul difuzorului ajunge la microfon înainte de anularea ecoului și cât mai rămâne în ce se trimite, cu întârzierea acelui ecou. Dacă cineva încă își aude propria voce, jurnalul spune dacă ecoul a trecut prin anulator sau a sosit pe altă cale.
 
 - Răspunsul la apeluri din orice fereastră: cât timp sună un apel individual, Ctrl+Alt+Shift+Enter răspunde la el, aduce fereastra apelului în fața oricărui program și îi dă focalizarea, iar Ctrl+Alt+Shift+Backspace îl respinge, la fel ca pe un apel de grup care sună; când nu sună niciun apel, Ctrl+Alt+Shift+Backspace încheie apelul în curs. Cu mai multe conturi deschise, mai întâi este respins un apel care sună în oricare dintre ele. La un apel video se răspunde cu camera pornită, ca prin butonul de răspuns. Ambele taste pot fi schimbate în Comenzi rapide din Setări și aparțin WinZapp doar cât timp pot acționa, deci celelalte programe le păstrează restul timpului.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4577alpha/WinZapp-macOS-arm64.zip" length="315041115" type="application/octet-stream" sparkle:edSignature="rIRfdAp9do3EBn+JBlUEjSMlKYKIMOtqdASk4ScA33oTwjIQNNHS50SsSvLG2ufDvjbRHnur14olJ4MWn39qBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4573alpha</title>
+      <pubDate>Tue, 20 Oct 2026 01:08:25 +0000</pubDate>
+      <sparkle:version>3.0.0.45731</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4573alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4573alpha/WinZapp-macOS-arm64.zip" length="315196510" type="application/octet-stream" sparkle:edSignature="eeG9hTo4IqNbMTWZyEec+p98i3xn/sCkRm9TgdaGwk6PP4D4MGaKv/KrqmY+oNinSJAssiU6Zs5R5jvbHX2HDQ=="></enclosure>
     </item>
     <item>
@@ -257,17 +280,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4557alpha/WinZapp-macOS-arm64.zip" length="315600533" type="application/octet-stream" sparkle:edSignature="xuGoOwFSmv9Uu2sMgWFSlnIiUdCIRbG/YprDM21bshu5EkiT3jQYS5l9LmaQTXE/TqBVwfJn0TBCQahRL/eFBg=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4552alpha</title>
-      <pubDate>Mon, 19 Oct 2026 12:31:38 +0000</pubDate>
-      <sparkle:version>3.0.0.45521</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4552alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4552alpha/WinZapp-macOS-arm64.zip" length="315549545" type="application/octet-stream" sparkle:edSignature="MoW2Ajb2CRS1awxoDORPNElQtmBoGmolURW0/ydByXFXCYAuUKqUmyL9DWOTVk4QEe80lVT2bydcUAtPdWADAg=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: EWQHKZX1T4mS/DYkjbDAByxoJf5o25DU5Wh/ZcRmOTZy1Anbqnv5MIYz1NwzLpnD2z88gV0R/A5FBuQWvGQ4Aw==
-length: 45445
+edSignature: ZoFQ60X640ZUoG0ft58wnUnWo1ZSvdKPeuk08aqcetaCie3HH/Mx+9wNxyUHHZ2LcgpCHTZKzS7kjTTS89ABBg==
+length: 48235
 -->
