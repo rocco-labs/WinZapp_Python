@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4577alpha</title>
-      <pubDate>Tue, 20 Oct 2026 12:21:15 +0000</pubDate>
-      <sparkle:version>3.0.0.45771</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4577alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4583alpha</title>
+      <pubDate>Tue, 20 Oct 2026 13:39:01 +0000</pubDate>
+      <sparkle:version>3.0.0.45831</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4583alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+      <description xml:lang="en" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -43,8 +43,10 @@ WHAT'S NEW
 
 - The call log (log.log) now shows, every 5 seconds, how much of the speaker's sound reaches the microphone before echo cancellation and how much is still left in what is sent, with that echo's delay. If someone still hears their own voice, the log tells whether the echo went through the canceller or arrived by another path.
 
-- Answering calls from any window: while a one-to-one call is ringing, Ctrl+Alt+Shift+Enter answers it, brings the call window in front of any program and puts the focus in it, and Ctrl+Alt+Shift+Backspace rejects it, as it does a ringing group call; with no call ringing, Ctrl+Alt+Shift+Backspace hangs up the call in progress. With several accounts open, a call ringing in any of them is rejected first. A video call is answered with the camera on, like its Answer button. Both keys can be changed in the Keyboard shortcuts of Settings, and belong to WinZapp only while they can act, so other programs keep them the rest of the time.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Answering calls from any window: while a one-to-one call is ringing, Ctrl+Alt+Shift+Enter answers it, brings the call window in front of any program and puts the focus in it, and Ctrl+Alt+Shift+Backspace rejects it, as it does a ringing group call; with no call ringing, Ctrl+Alt+Shift+Backspace hangs up the call in progress. With several accounts open, a call ringing in any of them is rejected first. A video call is answered with the camera on, like its Answer button. Both keys can be changed in the Keyboard shortcuts of Settings, and belong to WinZapp only while they can act, so other programs keep them the rest of the time.
+
+- Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -76,8 +78,10 @@ NOVIDADES
 
 - O registro das chamadas (log.log) agora mostra, a cada 5 segundos, quanto do som do alto-falante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o log diz se o eco passou pelo cancelador ou chegou por outro caminho.
 
-- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, assim como uma chamada em grupo que esteja tocando; sem nenhuma chamada tocando, Ctrl+Alt+Shift+Backspace encerra a chamada em andamento. Com várias contas abertas, uma chamada tocando em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmera ligada, como pelo botão de atender. As duas teclas podem ser trocadas nos Atalhos de teclado das Configurações e só pertencem ao WinZapp enquanto podem agir, então os outros programas ficam com elas o resto do tempo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, assim como uma chamada em grupo que esteja tocando; sem nenhuma chamada tocando, Ctrl+Alt+Shift+Backspace encerra a chamada em andamento. Com várias contas abertas, uma chamada tocando em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmera ligada, como pelo botão de atender. As duas teclas podem ser trocadas nos Atalhos de teclado das Configurações e só pertencem ao WinZapp enquanto podem agir, então os outros programas ficam com elas o resto do tempo.
+
+- O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -109,8 +113,10 @@ NOVIDADES
 
 - O registo das chamadas (log.log) passa a mostrar, a cada 5 segundos, quanto do som do altifalante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o registo diz se o eco passou pelo cancelador ou chegou por outro caminho.
 
-- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, tal como uma chamada de grupo a tocar; sem nenhuma chamada a tocar, Ctrl+Alt+Shift+Backspace termina a chamada em curso. Com várias contas abertas, uma chamada a tocar em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmara ligada, como pelo botão de atender. As duas teclas podem ser alteradas nos Atalhos de teclado das Definições e só pertencem ao WinZapp enquanto podem atuar, pelo que os outros programas ficam com elas o resto do tempo.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, tal como uma chamada de grupo a tocar; sem nenhuma chamada a tocar, Ctrl+Alt+Shift+Backspace termina a chamada em curso. Com várias contas abertas, uma chamada a tocar em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmara ligada, como pelo botão de atender. As duas teclas podem ser alteradas nos Atalhos de teclado das Definições e só pertencem ao WinZapp enquanto podem atuar, pelo que os outros programas ficam com elas o resto do tempo.
+
+- O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -142,8 +148,10 @@ NOVEDADES
 
 - El registro de las llamadas (log.log) ahora muestra, cada 5 segundos, cuánto del sonido del altavoz llega al micrófono antes de la cancelación de eco y cuánto queda todavía en lo que se envía, con el retraso de ese eco. Si alguien sigue oyendo su propia voz, el registro dice si el eco pasó por el cancelador o llegó por otro camino.
 
-- Contestar llamadas desde cualquier ventana: mientras suena una llamada individual, Ctrl+Alt+Shift+Enter la contesta, trae la ventana de la llamada al frente de cualquier programa y le da el foco, y Ctrl+Alt+Shift+Retroceso la rechaza, igual que una llamada grupal que suena; sin ninguna llamada sonando, Ctrl+Alt+Shift+Retroceso cuelga la llamada en curso. Con varias cuentas abiertas, primero se rechaza la llamada que suene en cualquiera de ellas. Una videollamada se contesta con la cámara encendida, como con su botón de contestar. Las dos teclas se pueden cambiar en los Atajos de teclado de Ajustes y son de WinZapp solo mientras pueden actuar, así que los demás programas las conservan el resto del tiempo.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Contestar llamadas desde cualquier ventana: mientras suena una llamada individual, Ctrl+Alt+Shift+Enter la contesta, trae la ventana de la llamada al frente de cualquier programa y le da el foco, y Ctrl+Alt+Shift+Retroceso la rechaza, igual que una llamada grupal que suena; sin ninguna llamada sonando, Ctrl+Alt+Shift+Retroceso cuelga la llamada en curso. Con varias cuentas abiertas, primero se rechaza la llamada que suene en cualquiera de ellas. Una videollamada se contesta con la cámara encendida, como con su botón de contestar. Las dos teclas se pueden cambiar en los Atajos de teclado de Ajustes y son de WinZapp solo mientras pueden actuar, así que los demás programas las conservan el resto del tiempo.
+
+- La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -175,8 +183,10 @@ NOWOŚCI
 
 - Dziennik połączeń (log.log) pokazuje teraz co 5 sekund, ile dźwięku z głośnika trafia do mikrofonu przed eliminacją echa i ile jeszcze zostaje w tym, co jest wysyłane, wraz z opóźnieniem tego echa. Jeśli ktoś nadal słyszy własny głos, dziennik mówi, czy echo przeszło przez eliminator, czy dotarło inną drogą.
 
-- Odbieranie połączeń z dowolnego okna: gdy dzwoni połączenie indywidualne, Ctrl+Alt+Shift+Enter je odbiera, przenosi okno połączenia przed każdy program i ustawia w nim fokus, a Ctrl+Alt+Shift+Backspace je odrzuca, tak samo jak dzwoniące połączenie grupowe; gdy nic nie dzwoni, Ctrl+Alt+Shift+Backspace rozłącza trwające połączenie. Przy kilku otwartych kontach najpierw odrzucane jest połączenie dzwoniące na którymkolwiek z nich. Połączenie wideo jest odbierane z włączoną kamerą, tak jak jego przyciskiem odbierania. Oba klawisze można zmienić w Skrótach klawiszowych w Ustawieniach i należą do WinZapp tylko wtedy, gdy mogą działać, więc inne programy mają je przez resztę czasu.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Odbieranie połączeń z dowolnego okna: gdy dzwoni połączenie indywidualne, Ctrl+Alt+Shift+Enter je odbiera, przenosi okno połączenia przed każdy program i ustawia w nim fokus, a Ctrl+Alt+Shift+Backspace je odrzuca, tak samo jak dzwoniące połączenie grupowe; gdy nic nie dzwoni, Ctrl+Alt+Shift+Backspace rozłącza trwające połączenie. Przy kilku otwartych kontach najpierw odrzucane jest połączenie dzwoniące na którymkolwiek z nich. Połączenie wideo jest odbierane z włączoną kamerą, tak jak jego przyciskiem odbierania. Oba klawisze można zmienić w Skrótach klawiszowych w Ustawieniach i należą do WinZapp tylko wtedy, gdy mogą działać, więc inne programy mają je przez resztę czasu.
+
+- Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -208,8 +218,10 @@ YENİLİKLER
 
 - Arama günlüğü (log.log) artık her 5 saniyede bir, hoparlör sesinin ne kadarının yankı önlemeden önce mikrofona ulaştığını ve gönderilen seste ne kadarının kaldığını, bu yankının gecikmesiyle birlikte gösteriyor. Biri hâlâ kendi sesini duyuyorsa günlük, yankının önleyiciden geçip geçmediğini ya da başka bir yoldan gelip gelmediğini söyler.
 
-- Aramaları herhangi bir pencereden yanıtlama: tek kişilik bir arama çalarken Ctrl+Alt+Shift+Enter onu yanıtlar, arama penceresini her programın önüne getirir ve odağı ona verir; Ctrl+Alt+Shift+Geri sil ise onu ve çalan bir grup aramasını reddeder. Hiçbir arama çalmıyorken Ctrl+Alt+Shift+Geri sil sürmekte olan aramayı kapatır. Birden fazla hesap açıksa önce herhangi birinde çalan arama reddedilir. Görüntülü arama, yanıtlama düğmesinde olduğu gibi kamera açık yanıtlanır. İki tuş Ayarlar'daki Kısayollar bölümünden değiştirilebilir ve yalnızca işe yarayabildikleri sürece WinZapp'a aittir; geri kalan zamanda diğer programlarda kalır.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- macOS: explain update verification failures and respect GitHub rate limits (#565)
+- Aramaları herhangi bir pencereden yanıtlama: tek kişilik bir arama çalarken Ctrl+Alt+Shift+Enter onu yanıtlar, arama penceresini her programın önüne getirir ve odağı ona verir; Ctrl+Alt+Shift+Geri sil ise onu ve çalan bir grup aramasını reddeder. Hiçbir arama çalmıyorken Ctrl+Alt+Shift+Geri sil sürmekte olan aramayı kapatır. Birden fazla hesap açıksa önce herhangi birinde çalan arama reddedilir. Görüntülü arama, yanıtlama düğmesinde olduğu gibi kamera açık yanıtlanır. İki tuş Ayarlar'daki Kısayollar bölümünden değiştirilebilir ve yalnızca işe yarayabildikleri sürece WinZapp'a aittir; geri kalan zamanda diğer programlarda kalır.
+
+- Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Calls: cancel echo from loopbacks that return too late for AEC3 (#563)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -241,7 +253,18 @@ NOUTĂȚI
 
 - Jurnalul apelurilor (log.log) arată acum, la fiecare 5 secunde, cât din sunetul difuzorului ajunge la microfon înainte de anularea ecoului și cât mai rămâne în ce se trimite, cu întârzierea acelui ecou. Dacă cineva încă își aude propria voce, jurnalul spune dacă ecoul a trecut prin anulator sau a sosit pe altă cale.
 
-- Răspunsul la apeluri din orice fereastră: cât timp sună un apel individual, Ctrl+Alt+Shift+Enter răspunde la el, aduce fereastra apelului în fața oricărui program și îi dă focalizarea, iar Ctrl+Alt+Shift+Backspace îl respinge, la fel ca pe un apel de grup care sună; când nu sună niciun apel, Ctrl+Alt+Shift+Backspace încheie apelul în curs. Cu mai multe conturi deschise, mai întâi este respins un apel care sună în oricare dintre ele. La un apel video se răspunde cu camera pornită, ca prin butonul de răspuns. Ambele taste pot fi schimbate în Comenzi rapide din Setări și aparțin WinZapp doar cât timp pot acționa, deci celelalte programe le păstrează restul timpului.</description>
+- Răspunsul la apeluri din orice fereastră: cât timp sună un apel individual, Ctrl+Alt+Shift+Enter răspunde la el, aduce fereastra apelului în fața oricărui program și îi dă focalizarea, iar Ctrl+Alt+Shift+Backspace îl respinge, la fel ca pe un apel de grup care sună; când nu sună niciun apel, Ctrl+Alt+Shift+Backspace încheie apelul în curs. Cu mai multe conturi deschise, mai întâi este respins un apel care sună în oricare dintre ele. La un apel video se răspunde cu camera pornită, ca prin butonul de răspuns. Ambele taste pot fi schimbate în Comenzi rapide din Setări și aparțin WinZapp doar cât timp pot acționa, deci celelalte programe le păstrează restul timpului.
+
+- Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4583alpha/WinZapp-macOS-arm64.zip" length="315042373" type="application/octet-stream" sparkle:edSignature="HIe/WjH343s9OjV/ZxwJ2IUjNuTd7IPGhU9uKQ4RK7UZvNj6Nn61KtksV3CjMjGwCZ3rhp5nnwo4AXiSxKRYAw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4577alpha</title>
+      <pubDate>Tue, 20 Oct 2026 12:21:15 +0000</pubDate>
+      <sparkle:version>3.0.0.45771</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4577alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4577alpha/WinZapp-macOS-arm64.zip" length="315041115" type="application/octet-stream" sparkle:edSignature="rIRfdAp9do3EBn+JBlUEjSMlKYKIMOtqdASk4ScA33oTwjIQNNHS50SsSvLG2ufDvjbRHnur14olJ4MWn39qBw=="></enclosure>
     </item>
     <item>
@@ -271,17 +294,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4561alpha/WinZapp-macOS-arm64.zip" length="315180246" type="application/octet-stream" sparkle:edSignature="XDo7upFLfKp7I58qOmvL+MaVfqZuf0u4eZnai0jbBmwsvHFLs+iiliuWYPCvf0b9XW8vEUXgBkhfRg+nU42dAQ=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4557alpha</title>
-      <pubDate>Mon, 19 Oct 2026 13:08:53 +0000</pubDate>
-      <sparkle:version>3.0.0.45571</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4557alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4557alpha/WinZapp-macOS-arm64.zip" length="315600533" type="application/octet-stream" sparkle:edSignature="xuGoOwFSmv9Uu2sMgWFSlnIiUdCIRbG/YprDM21bshu5EkiT3jQYS5l9LmaQTXE/TqBVwfJn0TBCQahRL/eFBg=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ZoFQ60X640ZUoG0ft58wnUnWo1ZSvdKPeuk08aqcetaCie3HH/Mx+9wNxyUHHZ2LcgpCHTZKzS7kjTTS89ABBg==
-length: 48235
+edSignature: fftu/tGeZepu/roG+nG0X+5ujKODnPTmaN8FayS4Ba+As7UjHfRDlooINCaz5YxGr61pkHS1JtTLOis1odHRBA==
+length: 50726
 -->
