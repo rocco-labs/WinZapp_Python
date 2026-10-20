@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4564alpha</title>
-      <pubDate>Tue, 20 Oct 2026 00:13:29 +0000</pubDate>
-      <sparkle:version>3.0.0.45641</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4564alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4573alpha</title>
+      <pubDate>Tue, 20 Oct 2026 01:08:25 +0000</pubDate>
+      <sparkle:version>3.0.0.45731</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4573alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+      <description xml:lang="en" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -39,8 +39,10 @@ WHAT'S NEW
 
 - Echo cancellation in voice and video calls was rebuilt on the same engine Google Meet and WhatsApp itself use (WebRTC's echo canceller): talking through a laptop speaker or with a mixer's loopback turned on no longer makes the other person hear their own voice. The option is now on, also for people who already used WinZapp; to turn it off, uncheck "Enable echo cancellation" in "Call audio settings". Microphone noise reduction during calls now uses this engine too.
 
-- The call log (log.log) now shows, every 5 seconds, how much of the speaker's sound reaches the microphone before echo cancellation and how much is still left in what is sent, with that echo's delay. If someone still hears their own voice, the log tells whether the echo went through the canceller or arrived by another path.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- The call log (log.log) now shows, every 5 seconds, how much of the speaker's sound reaches the microphone before echo cancellation and how much is still left in what is sent, with that echo's delay. If someone still hears their own voice, the log tells whether the echo went through the canceller or arrived by another path.
+
+- Answering calls from any window: while a one-to-one call is ringing, Ctrl+Alt+Shift+Enter answers it, brings the call window in front of any program and puts the focus in it, and Ctrl+Alt+Shift+Backspace rejects it, as it does a ringing group call; with no call ringing, Ctrl+Alt+Shift+Backspace hangs up the call in progress. With several accounts open, a call ringing in any of them is rejected first. A video call is answered with the camera on, like its Answer button. Both keys can be changed in the Keyboard shortcuts of Settings, and belong to WinZapp only while they can act, so other programs keep them the rest of the time.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -68,8 +70,10 @@ NOVIDADES
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo alto-falante do notebook ou com o retorno (loopback) da mesa de som ligado não faz mais a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para desligar, desmarque "Ativar cancelamento de eco" em "Configurações de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar esse motor.
 
-- O registro das chamadas (log.log) agora mostra, a cada 5 segundos, quanto do som do alto-falante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o log diz se o eco passou pelo cancelador ou chegou por outro caminho.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- O registro das chamadas (log.log) agora mostra, a cada 5 segundos, quanto do som do alto-falante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o log diz se o eco passou pelo cancelador ou chegou por outro caminho.
+
+- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, assim como uma chamada em grupo que esteja tocando; sem nenhuma chamada tocando, Ctrl+Alt+Shift+Backspace encerra a chamada em andamento. Com várias contas abertas, uma chamada tocando em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmera ligada, como pelo botão de atender. As duas teclas podem ser trocadas nos Atalhos de teclado das Configurações e só pertencem ao WinZapp enquanto podem agir, então os outros programas ficam com elas o resto do tempo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -97,8 +101,10 @@ NOVIDADES
 
 - O cancelamento de eco nas chamadas de voz e vídeo foi refeito com o mesmo motor usado pelo Google Meet e pelo próprio WhatsApp (o cancelador de eco do WebRTC): quem fala pelo altifalante do portátil ou com o retorno (loopback) da mesa de som ligado já não faz a outra pessoa ouvir a própria voz. A opção agora vem ativada, inclusive para quem já usava o WinZapp; para a desligar, desmarque "Ativar cancelamento de eco" em "Definições de áudio da chamada". A redução de ruído do microfone na chamada também passou a usar este motor.
 
-- O registo das chamadas (log.log) passa a mostrar, a cada 5 segundos, quanto do som do altifalante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o registo diz se o eco passou pelo cancelador ou chegou por outro caminho.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- O registo das chamadas (log.log) passa a mostrar, a cada 5 segundos, quanto do som do altifalante chega ao microfone antes do cancelamento de eco e quanto ainda sobra no que é enviado, com o atraso desse eco. Se alguém ainda ouvir a própria voz, o registo diz se o eco passou pelo cancelador ou chegou por outro caminho.
+
+- Atender chamadas em qualquer janela: enquanto uma chamada individual toca, Ctrl+Alt+Shift+Enter atende, traz a janela da chamada para a frente de qualquer programa e coloca o foco nela, e Ctrl+Alt+Shift+Backspace recusa, tal como uma chamada de grupo a tocar; sem nenhuma chamada a tocar, Ctrl+Alt+Shift+Backspace termina a chamada em curso. Com várias contas abertas, uma chamada a tocar em qualquer uma delas é recusada primeiro. Uma chamada de vídeo é atendida com a câmara ligada, como pelo botão de atender. As duas teclas podem ser alteradas nos Atalhos de teclado das Definições e só pertencem ao WinZapp enquanto podem atuar, pelo que os outros programas ficam com elas o resto do tempo.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -126,8 +132,10 @@ NOVEDADES
 
 - La cancelación de eco en las llamadas de voz y vídeo se rehízo con el mismo motor que usan Google Meet y el propio WhatsApp (el cancelador de eco de WebRTC): hablar por el altavoz del portátil o con el retorno (loopback) de la mesa de mezclas activado ya no hace que la otra persona oiga su propia voz. La opción ahora viene activada, también para quien ya usaba WinZapp; para desactivarla, desmarca "Activar cancelación de eco" en "Configuración de audio de la llamada". La reducción de ruido del micrófono en la llamada también usa ahora este motor.
 
-- El registro de las llamadas (log.log) ahora muestra, cada 5 segundos, cuánto del sonido del altavoz llega al micrófono antes de la cancelación de eco y cuánto queda todavía en lo que se envía, con el retraso de ese eco. Si alguien sigue oyendo su propia voz, el registro dice si el eco pasó por el cancelador o llegó por otro camino.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- El registro de las llamadas (log.log) ahora muestra, cada 5 segundos, cuánto del sonido del altavoz llega al micrófono antes de la cancelación de eco y cuánto queda todavía en lo que se envía, con el retraso de ese eco. Si alguien sigue oyendo su propia voz, el registro dice si el eco pasó por el cancelador o llegó por otro camino.
+
+- Contestar llamadas desde cualquier ventana: mientras suena una llamada individual, Ctrl+Alt+Shift+Enter la contesta, trae la ventana de la llamada al frente de cualquier programa y le da el foco, y Ctrl+Alt+Shift+Retroceso la rechaza, igual que una llamada grupal que suena; sin ninguna llamada sonando, Ctrl+Alt+Shift+Retroceso cuelga la llamada en curso. Con varias cuentas abiertas, primero se rechaza la llamada que suene en cualquiera de ellas. Una videollamada se contesta con la cámara encendida, como con su botón de contestar. Las dos teclas se pueden cambiar en los Atajos de teclado de Ajustes y son de WinZapp solo mientras pueden actuar, así que los demás programas las conservan el resto del tiempo.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -155,8 +163,10 @@ NOWOŚCI
 
 - Eliminacja echa w połączeniach głosowych i wideo została przebudowana na tym samym silniku, którego używają Google Meet i sam WhatsApp (eliminator echa WebRTC): rozmowa przez głośnik laptopa lub z włączonym odsłuchem (loopback) miksera nie sprawia już, że druga osoba słyszy własny głos. Opcja jest teraz włączona, także dla osób, które już używały WinZapp; aby ją wyłączyć, odznacz "Włącz eliminację echa" w "Ustawienia dźwięku połączenia". Redukcja szumów mikrofonu podczas połączenia również korzysta teraz z tego silnika.
 
-- Dziennik połączeń (log.log) pokazuje teraz co 5 sekund, ile dźwięku z głośnika trafia do mikrofonu przed eliminacją echa i ile jeszcze zostaje w tym, co jest wysyłane, wraz z opóźnieniem tego echa. Jeśli ktoś nadal słyszy własny głos, dziennik mówi, czy echo przeszło przez eliminator, czy dotarło inną drogą.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- Dziennik połączeń (log.log) pokazuje teraz co 5 sekund, ile dźwięku z głośnika trafia do mikrofonu przed eliminacją echa i ile jeszcze zostaje w tym, co jest wysyłane, wraz z opóźnieniem tego echa. Jeśli ktoś nadal słyszy własny głos, dziennik mówi, czy echo przeszło przez eliminator, czy dotarło inną drogą.
+
+- Odbieranie połączeń z dowolnego okna: gdy dzwoni połączenie indywidualne, Ctrl+Alt+Shift+Enter je odbiera, przenosi okno połączenia przed każdy program i ustawia w nim fokus, a Ctrl+Alt+Shift+Backspace je odrzuca, tak samo jak dzwoniące połączenie grupowe; gdy nic nie dzwoni, Ctrl+Alt+Shift+Backspace rozłącza trwające połączenie. Przy kilku otwartych kontach najpierw odrzucane jest połączenie dzwoniące na którymkolwiek z nich. Połączenie wideo jest odbierane z włączoną kamerą, tak jak jego przyciskiem odbierania. Oba klawisze można zmienić w Skrótach klawiszowych w Ustawieniach i należą do WinZapp tylko wtedy, gdy mogą działać, więc inne programy mają je przez resztę czasu.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -184,8 +194,10 @@ YENİLİKLER
 
 - Sesli ve görüntülü aramalardaki yankı önleme, Google Meet'in ve WhatsApp'ın kendisinin kullandığı motorla (WebRTC yankı gidericisi) yeniden yapıldı: dizüstü bilgisayarın hoparlöründen ya da mikserin geri dönüşü (loopback) açıkken konuşmak artık karşıdaki kişinin kendi sesini duymasına yol açmıyor. Seçenek artık açık geliyor, WinZapp'ı zaten kullananlar için de; kapatmak için "Arama ses ayarları" içinde "Yankı önlemeyi etkinleştir" kutusunun işaretini kaldırın. Aramadaki mikrofon gürültü azaltma da artık bu motoru kullanıyor.
 
-- Arama günlüğü (log.log) artık her 5 saniyede bir, hoparlör sesinin ne kadarının yankı önlemeden önce mikrofona ulaştığını ve gönderilen seste ne kadarının kaldığını, bu yankının gecikmesiyle birlikte gösteriyor. Biri hâlâ kendi sesini duyuyorsa günlük, yankının önleyiciden geçip geçmediğini ya da başka bir yoldan gelip gelmediğini söyler.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Calls: log the echo measured before and after the canceller (#562)
+- Arama günlüğü (log.log) artık her 5 saniyede bir, hoparlör sesinin ne kadarının yankı önlemeden önce mikrofona ulaştığını ve gönderilen seste ne kadarının kaldığını, bu yankının gecikmesiyle birlikte gösteriyor. Biri hâlâ kendi sesini duyuyorsa günlük, yankının önleyiciden geçip geçmediğini ya da başka bir yoldan gelip gelmediğini söyler.
+
+- Aramaları herhangi bir pencereden yanıtlama: tek kişilik bir arama çalarken Ctrl+Alt+Shift+Enter onu yanıtlar, arama penceresini her programın önüne getirir ve odağı ona verir; Ctrl+Alt+Shift+Geri sil ise onu ve çalan bir grup aramasını reddeder. Hiçbir arama çalmıyorken Ctrl+Alt+Shift+Geri sil sürmekte olan aramayı kapatır. Birden fazla hesap açıksa önce herhangi birinde çalan arama reddedilir. Görüntülü arama, yanıtlama düğmesinde olduğu gibi kamera açık yanıtlanır. İki tuş Ayarlar'daki Kısayollar bölümünden değiştirilebilir ve yalnızca işe yarayabildikleri sürece WinZapp'a aittir; geri kalan zamanda diğer programlarda kalır.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Calls: answer, reject and hang up from any window with configurable global hotkeys (#560)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -213,7 +225,18 @@ NOUTĂȚI
 
 - Anularea ecoului în apelurile vocale și video a fost refăcută cu același motor pe care îl folosesc Google Meet și WhatsApp însuși (anulatorul de ecou WebRTC): vorbitul prin difuzorul laptopului sau cu reluarea (loopback) mixerului activată nu mai face ca cealaltă persoană să își audă propria voce. Opțiunea este acum activată, inclusiv pentru cei care foloseau deja WinZapp; pentru a o dezactiva, debifează "Activează anularea ecoului" în "Setări audio pentru apeluri". Reducerea zgomotului microfonului în apel folosește acum și ea acest motor.
 
-- Jurnalul apelurilor (log.log) arată acum, la fiecare 5 secunde, cât din sunetul difuzorului ajunge la microfon înainte de anularea ecoului și cât mai rămâne în ce se trimite, cu întârzierea acelui ecou. Dacă cineva încă își aude propria voce, jurnalul spune dacă ecoul a trecut prin anulator sau a sosit pe altă cale.</description>
+- Jurnalul apelurilor (log.log) arată acum, la fiecare 5 secunde, cât din sunetul difuzorului ajunge la microfon înainte de anularea ecoului și cât mai rămâne în ce se trimite, cu întârzierea acelui ecou. Dacă cineva încă își aude propria voce, jurnalul spune dacă ecoul a trecut prin anulator sau a sosit pe altă cale.
+
+- Răspunsul la apeluri din orice fereastră: cât timp sună un apel individual, Ctrl+Alt+Shift+Enter răspunde la el, aduce fereastra apelului în fața oricărui program și îi dă focalizarea, iar Ctrl+Alt+Shift+Backspace îl respinge, la fel ca pe un apel de grup care sună; când nu sună niciun apel, Ctrl+Alt+Shift+Backspace încheie apelul în curs. Cu mai multe conturi deschise, mai întâi este respins un apel care sună în oricare dintre ele. La un apel video se răspunde cu camera pornită, ca prin butonul de răspuns. Ambele taste pot fi schimbate în Comenzi rapide din Setări și aparțin WinZapp doar cât timp pot acționa, deci celelalte programe le păstrează restul timpului.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4573alpha/WinZapp-macOS-arm64.zip" length="315196510" type="application/octet-stream" sparkle:edSignature="eeG9hTo4IqNbMTWZyEec+p98i3xn/sCkRm9TgdaGwk6PP4D4MGaKv/KrqmY+oNinSJAssiU6Zs5R5jvbHX2HDQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4564alpha</title>
+      <pubDate>Tue, 20 Oct 2026 00:13:29 +0000</pubDate>
+      <sparkle:version>3.0.0.45641</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4564alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4564alpha/WinZapp-macOS-arm64.zip" length="315181934" type="application/octet-stream" sparkle:edSignature="WpE4UxtV5eJzJannujRvy5p5uVydvfX2GpENvYolT0sUmY36cgyoTF8CHZBrbwWrpXTaoWh85/VTQJG5gI+VBQ=="></enclosure>
     </item>
     <item>
@@ -243,17 +266,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4552alpha/WinZapp-macOS-arm64.zip" length="315549545" type="application/octet-stream" sparkle:edSignature="MoW2Ajb2CRS1awxoDORPNElQtmBoGmolURW0/ydByXFXCYAuUKqUmyL9DWOTVk4QEe80lVT2bydcUAtPdWADAg=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4546alpha</title>
-      <pubDate>Mon, 19 Oct 2026 05:13:44 +0000</pubDate>
-      <sparkle:version>3.0.0.45461</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4546alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4546alpha/WinZapp-macOS-arm64.zip" length="305771052" type="application/octet-stream" sparkle:edSignature="gvnImVLrRFdgtgN6GcI7ohbooK+TCbYRCOC5VrmyM/az+1HDgH5ZKZRlTDRj3BgEY6m0ehvltn1lb3DlH0pkDA=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: G4gZaYKxdItf1e82NIB5Uh30OcJNcVLAUqvtkdaoQbddQiwCaDTPkGqyJixKAXp/sUow7HFAzLjbVNC5NyVbAg==
-length: 40377
+edSignature: EWQHKZX1T4mS/DYkjbDAByxoJf5o25DU5Wh/ZcRmOTZy1Anbqnv5MIYz1NwzLpnD2z88gV0R/A5FBuQWvGQ4Aw==
+length: 45445
 -->
