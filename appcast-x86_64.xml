@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4670alpha</title>
-      <pubDate>Wed, 21 Oct 2026 15:26:20 +0000</pubDate>
-      <sparkle:version>3.0.0.46701</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4670alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4674alpha</title>
+      <pubDate>Wed, 21 Oct 2026 16:02:59 +0000</pubDate>
+      <sparkle:version>3.0.0.46741</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4674alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="en" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Group calls: a group with more than 32 participants cannot be called on WhatsApp, so the call buttons are replaced by a "Calling is not possible" button whose note says the group has more than 32 participants, and the call shortcuts say the same instead of starting a call.
 
 - Group calls: the voice and video call buttons now appear in a group conversation and start a call to the group, and an incoming group call rings, is announced by the group's name and can be answered, with the same Answer button and global answer key as a one-to-one call. Turning the camera on during a voice call works as it does in a one-to-one call, and call events from each participant stay with the group, so the call window keeps the group's name from the first ring to the end.
 
@@ -100,11 +102,13 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas em grupo: o WhatsApp não permite ligar para grupos com mais de 32 participantes, então os botões de ligação são trocados por um botão "Não é possível ligar" cuja nota diz que o grupo possui mais de 32 participantes, e os atalhos de ligação dizem o mesmo em vez de iniciar a ligação.
 
 - Chamadas em grupo: os botões de chamada de voz e de vídeo agora aparecem na conversa do grupo e iniciam uma chamada para o grupo, e uma chamada em grupo recebida toca, é anunciada pelo nome do grupo e pode ser atendida, com o mesmo botão de atender e o mesmo atalho global de atender de uma chamada individual. Ligar a câmera durante uma chamada de voz funciona como numa chamada individual, e os eventos de chamada de cada participante ficam com o grupo, então a janela da chamada mantém o nome do grupo do primeiro toque até o fim.
 
@@ -189,11 +193,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas de grupo: o WhatsApp não permite ligar para grupos com mais de 32 membros, pelo que os botões de chamada são substituídos por um botão "Não é possível ligar" cuja nota diz que o grupo tem mais de 32 membros, e os atalhos de chamada dizem o mesmo em vez de iniciar a chamada.
 
 - Chamadas de grupo: os botões de chamada de voz e de vídeo aparecem agora na conversa do grupo e iniciam uma chamada para o grupo, e uma chamada de grupo recebida toca, é anunciada pelo nome do grupo e pode ser atendida, com o mesmo botão de atender e o mesmo atalho global de atender de uma chamada individual. Ligar a câmara durante uma chamada de voz funciona como numa chamada individual, e os eventos de chamada de cada participante ficam com o grupo, pelo que a janela da chamada mantém o nome do grupo desde o primeiro toque até ao fim.
 
@@ -278,11 +284,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="es" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Llamadas de grupo: WhatsApp no permite llamar a grupos con más de 32 participantes, así que los botones de llamada se sustituyen por un botón "No es posible llamar" cuya nota dice que el grupo tiene más de 32 participantes, y los atajos de llamada dicen lo mismo en lugar de iniciar la llamada.
 
 - Llamadas grupales: los botones de llamada de voz y de vídeo aparecen ahora en la conversación del grupo e inician una llamada al grupo, y una llamada grupal entrante suena, se anuncia con el nombre del grupo y se puede contestar, con el mismo botón de contestar y el mismo atajo global de contestar que una llamada individual. Activar la cámara durante una llamada de voz funciona como en una llamada individual, y los eventos de llamada de cada participante quedan con el grupo, así que la ventana de la llamada mantiene el nombre del grupo desde el primer tono hasta el final.
 
@@ -367,11 +375,13 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="pl" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Połączenia grupowe: WhatsApp nie pozwala dzwonić do grup liczących więcej niż 32 członków, więc przyciski połączeń zastępuje przycisk "Nie można zadzwonić", którego opis mówi, że grupa ma więcej niż 32 członków, a skróty połączeń mówią to samo zamiast rozpoczynać połączenie.
 
 - Połączenia grupowe: przyciski połączenia głosowego i wideo pojawiają się teraz w rozmowie grupowej i rozpoczynają połączenie z grupą, a przychodzące połączenie grupowe dzwoni, jest zapowiadane nazwą grupy i można je odebrać tym samym przyciskiem odbierania i tym samym globalnym skrótem odbierania co połączenie indywidualne. Włączenie kamery podczas połączenia głosowego działa jak w połączeniu indywidualnym, a zdarzenia połączenia od każdego uczestnika pozostają przy grupie, więc okno połączenia zachowuje nazwę grupy od pierwszego dzwonka do końca.
 
@@ -456,11 +466,13 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="tr" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Grup aramaları: WhatsApp 32'den fazla katılımcısı olan gruplarda arama yapılmasına izin vermez; bu yüzden arama düğmelerinin yerine notu grubun 32'den fazla katılımcısı olduğunu söyleyen bir "Arama yapılamıyor" düğmesi gelir ve arama kısayolları aramayı başlatmak yerine aynı şeyi söyler.
 
 - Grup aramaları: sesli ve görüntülü arama düğmeleri artık grup sohbetinde görünür ve gruba arama başlatır; gelen bir grup araması çalar, grubun adıyla duyurulur ve tek kişilik aramadaki aynı Yanıtla düğmesi ve genel yanıtlama kısayoluyla yanıtlanabilir. Sesli arama sırasında kamerayı açmak tek kişilik aramadaki gibi çalışır ve her katılımcıdan gelen arama olayları grupta kalır, böylece arama penceresi ilk çalmadan sona kadar grubun adını korur.
 
@@ -545,11 +557,13 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
+      <description xml:lang="ro" sparkle:format="plain-text">- Limita chamadas em grupo a 32 participantes (#573)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Apeluri de grup: WhatsApp nu permite apeluri către grupuri cu mai mult de 32 de participanți, așa că butoanele de apel sunt înlocuite cu un buton "Nu se poate apela" a cărui notă spune că grupul are mai mult de 32 de participanți, iar comenzile rapide de apel spun același lucru în loc să pornească apelul.
 
 - Apeluri de grup: butoanele de apel vocal și video apar acum în conversația de grup și pornesc un apel către grup, iar un apel de grup primit sună, este anunțat cu numele grupului și poate fi răspuns, cu același buton de răspuns și aceeași comandă rapidă globală de răspuns ca un apel individual. Pornirea camerei în timpul unui apel vocal funcționează ca într-un apel individual, iar evenimentele de apel de la fiecare participant rămân la grup, așa că fereastra apelului păstrează numele grupului de la primul sunet până la final.
 
@@ -634,6 +648,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4674alpha/WinZapp-macOS-x86_64.zip" length="350095156" type="application/octet-stream" sparkle:edSignature="QY4Nfg4blauKk0YAf+WAoq3CVR7MyZld/p16N4WOGzvjkcxDRSj0UbRQOfuNKwu33RZcD4vi2dbhuooj9EGwAg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4670alpha</title>
+      <pubDate>Wed, 21 Oct 2026 15:26:20 +0000</pubDate>
+      <sparkle:version>3.0.0.46701</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4670alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4670alpha/WinZapp-macOS-x86_64.zip" length="350089744" type="application/octet-stream" sparkle:edSignature="20M2peijpqWnJJUZ/BZRYhAjE5ugKtGeCalGGbPs5SkOcEvxqOyugIGwVwt/pJoJ5/N+lFALsVj52zxcNNF/AA=="></enclosure>
     </item>
     <item>
@@ -663,17 +686,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4654alpha/WinZapp-macOS-x86_64.zip" length="350352279" type="application/octet-stream" sparkle:edSignature="NWTmD3MEPLcRaGhS9HZx4vTOJjTcmyWuTwZb5igXkFYM1TUgHHLUI/6voqOJ2Vw9PV2o+vM0pF1uN8rNly/RBQ=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4583alpha</title>
-      <pubDate>Tue, 20 Oct 2026 13:39:02 +0000</pubDate>
-      <sparkle:version>3.0.0.45831</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4583alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4583alpha/WinZapp-macOS-x86_64.zip" length="350097141" type="application/octet-stream" sparkle:edSignature="7e9J8b93X+BaRiNFml1Qsaw8pnhdCMFDzskXus2/Aa4L363KyV4xhZWv7/CUqh8UAun7NLXkYkhwWAdJyRHoBw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: GdpBBPZTexVXzQmZ/ZtyPLIkqrf07DSw5LvypbAzzobeeXXvp6OHPn4QbQZWGWfasd7QnZMgce68i9OF6LcGAw==
-length: 103459
+edSignature: /RDFIhH/vlyuM4TNRo1uPtaLSP9Zh09kdXfUx0XXwN7wXVMPuV8wGPP+xEzqDQta6Rg4nuBNYgt435u7s80VCA==
+length: 105657
 -->
