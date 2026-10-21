@@ -5,17 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4654alpha</title>
-      <pubDate>Tue, 20 Oct 2026 14:29:50 +0000</pubDate>
-      <sparkle:version>3.0.0.46541</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4654alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4660alpha</title>
+      <pubDate>Wed, 21 Oct 2026 13:47:51 +0000</pubDate>
+      <sparkle:version>3.0.0.46601</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4660alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="en" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect Server 2.10.61 is now offered as an update without waiting for a new WinZapp version. It only updates dependencies, and WinZapp's changes to the server are not affected.
 
 - macOS updates explain whether verification failed because of a connection, certificate, server or GitHub request-limit problem, and whether the verification file or the official release tag could not be checked. Temporary connection and server failures get one retry; request limits show a wait time and do not trigger repeated requests during that wait.
 
@@ -92,11 +95,14 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server 2.10.61 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
 
 - As atualizações do macOS explicam se a verificação falhou por um problema de conexão, certificado, servidor ou limite de solicitações do GitHub, e se não foi possível verificar o arquivo de verificação ou a tag da versão oficial. Falhas temporárias de conexão e servidor são repetidas uma vez; limites de solicitações mostram um tempo de espera e não geram novas solicitações durante esse período.
 
@@ -173,11 +179,14 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server 2.10.61 passa a ser oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
 
 - As atualizações do macOS explicam se a verificação falhou devido a um problema de ligação, certificado, servidor ou limite de pedidos do GitHub, e se não foi possível verificar o ficheiro de verificação ou a etiqueta da versão oficial. As falhas temporárias de ligação e servidor são repetidas uma vez; os limites de pedidos mostram um tempo de espera e não geram novos pedidos durante esse período.
 
@@ -254,11 +263,14 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="es" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- WPPConnect Server 2.10.61 ya se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza dependencias y no afecta a los cambios que WinZapp hace en el servidor.
 
 - Las actualizaciones de macOS explican si la verificación ha fallado por un problema de conexión, certificado, servidor o límite de solicitudes de GitHub, y si no se ha podido comprobar el archivo de verificación o la etiqueta de la versión oficial. Los fallos temporales de conexión y servidor se reintentan una vez; los límites de solicitudes muestran un tiempo de espera y no generan nuevas solicitudes durante ese período.
 
@@ -335,11 +347,14 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="pl" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- WPPConnect Server 2.10.61 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
 - Aktualizacje macOS wyjaśniają, czy weryfikacja nie powiodła się z powodu połączenia, certyfikatu, serwera lub limitu żądań GitHub oraz czy nie można sprawdzić pliku weryfikacji czy oficjalnego tagu wydania. Tymczasowe błędy połączenia i serwera powodują jedną ponowną próbę; limity żądań pokazują czas oczekiwania i nie powodują kolejnych żądań w tym czasie.
 
@@ -416,11 +431,14 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="tr" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WPPConnect Server 2.10.61 artık yeni bir WinZapp sürümü beklenmeden güncelleme olarak sunuluyor. Yalnızca bağımlılıkları günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
 
 - macOS güncellemelerinde doğrulamanın bağlantı, sertifika, sunucu veya GitHub istek sınırı nedeniyle mi başarısız olduğu ve doğrulama dosyasının mı, resmî sürüm etiketinin mi kontrol edilemediği açıklanır. Geçici bağlantı ve sunucu hatalarında bir kez yeniden denenir; istek sınırında bekleme süresi gösterilir ve bu süre boyunca tekrar istek gönderilmez.
 
@@ -497,11 +515,14 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Correções e melhorias: Configurações Avançadas, rascunho por conversa, fila de transcrição, comunidades, pedidos e mais (#567)
+      <description xml:lang="ro" sparkle:format="plain-text">- Document reviewed Polish translation terminology (#566)
+- Aprova o WPPConnect Server 2.10.61 para quem está na 2.10.58 (#568)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- WPPConnect Server 2.10.61 este acum oferit ca actualizare, fără a aștepta o nouă versiune WinZapp. Actualizează doar dependențe și nu afectează modificările pe care WinZapp le face în server.
 
 - Actualizările macOS explică dacă verificarea a eșuat din cauza conexiunii, certificatului, serverului sau limitei de solicitări GitHub și dacă nu a putut fi verificat fișierul de verificare sau eticheta versiunii oficiale. Erorile temporare de conexiune și server sunt reîncercate o singură dată; limitele de solicitări afișează un timp de așteptare și nu generează solicitări repetate în acel interval.
 
@@ -578,6 +599,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4660alpha/WinZapp-macOS-arm64.zip" length="314992918" type="application/octet-stream" sparkle:edSignature="aV//t5boty2fcbcMSX+iMrjNB5YPSXpKlgh+65Nwe4l+Lf1TDzjeE1iLwg5RINNccvRUmmQ3XWl4eoWqSn0YBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4654alpha</title>
+      <pubDate>Tue, 20 Oct 2026 14:29:50 +0000</pubDate>
+      <sparkle:version>3.0.0.46541</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4654alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4654alpha/WinZapp-macOS-arm64.zip" length="315300677" type="application/octet-stream" sparkle:edSignature="zar+PnIHzt61s1EWdMLh5NZOriAPTjiDUsNwx8I26QdQUMYd1rjf2+RgRlfOrgHS55t1BYiPpZfe5Gl6AY+ZBw=="></enclosure>
     </item>
     <item>
@@ -607,17 +637,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4573alpha/WinZapp-macOS-arm64.zip" length="315196510" type="application/octet-stream" sparkle:edSignature="eeG9hTo4IqNbMTWZyEec+p98i3xn/sCkRm9TgdaGwk6PP4D4MGaKv/KrqmY+oNinSJAssiU6Zs5R5jvbHX2HDQ=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4564alpha</title>
-      <pubDate>Tue, 20 Oct 2026 00:13:29 +0000</pubDate>
-      <sparkle:version>3.0.0.45641</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4564alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4564alpha/WinZapp-macOS-arm64.zip" length="315181934" type="application/octet-stream" sparkle:edSignature="WpE4UxtV5eJzJannujRvy5p5uVydvfX2GpENvYolT0sUmY36cgyoTF8CHZBrbwWrpXTaoWh85/VTQJG5gI+VBQ=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: DcWg3eHHEHae0Anjqf7p9kcmiGUZVs5pt3HaojcdI2iop6a3lISd5rf4ZmKHg90m77zgaWCdMLZINiDUpggmBw==
-length: 93618
+edSignature: THG2000tKznuRlJLPxj4n/775O1wswsHApVl3RA0FNnbBRpjfuM8EBVSp4T4Pk8H/iu1fXSAeFe3CjmRMWQtCQ==
+length: 94970
 -->
