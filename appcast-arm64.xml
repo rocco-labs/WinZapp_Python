@@ -5,17 +5,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4665alpha</title>
-      <pubDate>Wed, 21 Oct 2026 14:13:15 +0000</pubDate>
-      <sparkle:version>3.0.0.46651</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4665alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4670alpha</title>
+      <pubDate>Wed, 21 Oct 2026 15:26:19 +0000</pubDate>
+      <sparkle:version>3.0.0.46701</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4670alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="en" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Group calls: the voice and video call buttons now appear in a group conversation and start a call to the group, and an incoming group call rings, is announced by the group's name and can be answered, with the same Answer button and global answer key as a one-to-one call. Turning the camera on during a voice call works as it does in a one-to-one call, and call events from each participant stay with the group, so the call window keeps the group's name from the first ring to the end.
+
+- Video calls: WinZapp now finds the camera with the FFmpeg build it ships, which lists DirectShow devices without the "DirectShow video devices" heading. That build returned no camera at all, so a video call went out receive-only, with "No camera found" in the log.
 
 - Buttons in business messages can be answered: a reply button sends the answer the way WhatsApp Web does (reply buttons of plain messages, quick replies of interactive messages, template buttons and the rows of lists), a link button opens the link, a copy button copies the code and a call button says the number. The buttons appear under the message list when the message is selected.
 
@@ -96,11 +100,15 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas em grupo: os botões de chamada de voz e de vídeo agora aparecem na conversa do grupo e iniciam uma chamada para o grupo, e uma chamada em grupo recebida toca, é anunciada pelo nome do grupo e pode ser atendida, com o mesmo botão de atender e o mesmo atalho global de atender de uma chamada individual. Ligar a câmera durante uma chamada de voz funciona como numa chamada individual, e os eventos de chamada de cada participante ficam com o grupo, então a janela da chamada mantém o nome do grupo do primeiro toque até o fim.
+
+- Chamadas de vídeo: o WinZapp agora encontra a câmera com o FFmpeg incluído no WinZapp, que lista os dispositivos DirectShow sem o cabeçalho "DirectShow video devices". Essa versão do FFmpeg não retornava câmera nenhuma, então a chamada de vídeo saía só recebendo, com "No camera found" no log.
 
 - Os botões das mensagens de empresas agora podem ser usados: um botão de resposta envia a resposta do mesmo jeito que o WhatsApp Web (botões de resposta de mensagens simples, respostas rápidas de mensagens interativas, botões de modelo e linhas de listas), um botão de link abre o link, um botão de copiar copia o código e um botão de ligar diz o número. Os botões aparecem abaixo da lista de mensagens quando a mensagem está selecionada.
 
@@ -181,11 +189,15 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas de grupo: os botões de chamada de voz e de vídeo aparecem agora na conversa do grupo e iniciam uma chamada para o grupo, e uma chamada de grupo recebida toca, é anunciada pelo nome do grupo e pode ser atendida, com o mesmo botão de atender e o mesmo atalho global de atender de uma chamada individual. Ligar a câmara durante uma chamada de voz funciona como numa chamada individual, e os eventos de chamada de cada participante ficam com o grupo, pelo que a janela da chamada mantém o nome do grupo desde o primeiro toque até ao fim.
+
+- Chamadas de vídeo: o WinZapp encontra agora a câmara com o FFmpeg incluído no WinZapp, que lista os dispositivos DirectShow sem o cabeçalho "DirectShow video devices". Essa versão do FFmpeg não devolvia câmara nenhuma, pelo que a chamada de vídeo seguia apenas a receber, com "No camera found" no registo.
 
 - Os botões das mensagens de empresas passam a poder ser usados: um botão de resposta envia a resposta da mesma forma que o WhatsApp Web (botões de resposta de mensagens simples, respostas rápidas de mensagens interativas, botões de modelo e linhas de listas), um botão de ligação abre a ligação, um botão de copiar copia o código e um botão de chamada diz o número. Os botões aparecem por baixo da lista de mensagens quando a mensagem está selecionada.
 
@@ -266,11 +278,15 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="es" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Llamadas grupales: los botones de llamada de voz y de vídeo aparecen ahora en la conversación del grupo e inician una llamada al grupo, y una llamada grupal entrante suena, se anuncia con el nombre del grupo y se puede contestar, con el mismo botón de contestar y el mismo atajo global de contestar que una llamada individual. Activar la cámara durante una llamada de voz funciona como en una llamada individual, y los eventos de llamada de cada participante quedan con el grupo, así que la ventana de la llamada mantiene el nombre del grupo desde el primer tono hasta el final.
+
+- Videollamadas: WinZapp ahora encuentra la cámara con el FFmpeg incluido en WinZapp, que enumera los dispositivos DirectShow sin el encabezado "DirectShow video devices". Esa versión de FFmpeg no devolvía ninguna cámara, así que la videollamada salía solo recibiendo, con "No camera found" en el registro.
 
 - Ya se pueden usar los botones de los mensajes de empresas: un botón de respuesta envía la respuesta igual que WhatsApp Web (botones de respuesta de mensajes simples, respuestas rápidas de mensajes interactivos, botones de plantilla y filas de listas), un botón de enlace abre el enlace, un botón de copiar copia el código y un botón de llamada dice el número. Los botones aparecen debajo de la lista de mensajes cuando el mensaje está seleccionado.
 
@@ -351,11 +367,15 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="pl" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Połączenia grupowe: przyciski połączenia głosowego i wideo pojawiają się teraz w rozmowie grupowej i rozpoczynają połączenie z grupą, a przychodzące połączenie grupowe dzwoni, jest zapowiadane nazwą grupy i można je odebrać tym samym przyciskiem odbierania i tym samym globalnym skrótem odbierania co połączenie indywidualne. Włączenie kamery podczas połączenia głosowego działa jak w połączeniu indywidualnym, a zdarzenia połączenia od każdego uczestnika pozostają przy grupie, więc okno połączenia zachowuje nazwę grupy od pierwszego dzwonka do końca.
+
+- Połączenia wideo: WinZapp znajduje teraz kamerę za pomocą dołączonego FFmpeg, który wyświetla urządzenia DirectShow bez nagłówka „DirectShow video devices”. Ta wersja FFmpeg nie zwracała żadnej kamery, więc połączenie wideo było tylko odbiorcze, z „No camera found” w logu.
 
 - Przyciski w wiadomościach firm można już używać: przycisk odpowiedzi wysyła odpowiedź tak samo jak WhatsApp Web (przyciski odpowiedzi zwykłych wiadomości, szybkie odpowiedzi wiadomości interaktywnych, przyciski szablonów i wiersze list), przycisk linku otwiera link, przycisk kopiowania kopiuje kod, a przycisk połączenia odczytuje numer. Przyciski pojawiają się pod listą wiadomości, gdy wiadomość jest zaznaczona.
 
@@ -436,11 +456,15 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="tr" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Grup aramaları: sesli ve görüntülü arama düğmeleri artık grup sohbetinde görünür ve gruba arama başlatır; gelen bir grup araması çalar, grubun adıyla duyurulur ve tek kişilik aramadaki aynı Yanıtla düğmesi ve genel yanıtlama kısayoluyla yanıtlanabilir. Sesli arama sırasında kamerayı açmak tek kişilik aramadaki gibi çalışır ve her katılımcıdan gelen arama olayları grupta kalır, böylece arama penceresi ilk çalmadan sona kadar grubun adını korur.
+
+- Görüntülü aramalar: WinZapp artık kamerayı, DirectShow aygıtlarını "DirectShow video devices" başlığı olmadan listeleyen ve WinZapp ile birlikte gelen FFmpeg ile bulur. Bu FFmpeg sürümü hiçbir kamera döndürmüyordu, bu yüzden görüntülü arama yalnızca alım modunda başlıyordu ve günlükte "No camera found" yazıyordu.
 
 - İşletme mesajlarındaki düğmeler artık kullanılabiliyor: bir yanıt düğmesi yanıtı WhatsApp Web ile aynı şekilde gönderir (düz mesajların yanıt düğmeleri, etkileşimli mesajların hızlı yanıtları, şablon düğmeleri ve listelerin satırları), bağlantı düğmesi bağlantıyı açar, kopyalama düğmesi kodu kopyalar, arama düğmesi numarayı söyler. Mesaj seçildiğinde düğmeler mesaj listesinin altında görünür.
 
@@ -521,11 +545,15 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Business messages: answerable buttons (reply, interactive quick reply, list rows, template) in the Tab order (#569)
+      <description xml:lang="ro" sparkle:format="plain-text">- Chamadas de voz e vídeo em grupos (#571)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Apeluri de grup: butoanele de apel vocal și video apar acum în conversația de grup și pornesc un apel către grup, iar un apel de grup primit sună, este anunțat cu numele grupului și poate fi răspuns, cu același buton de răspuns și aceeași comandă rapidă globală de răspuns ca un apel individual. Pornirea camerei în timpul unui apel vocal funcționează ca într-un apel individual, iar evenimentele de apel de la fiecare participant rămân la grup, așa că fereastra apelului păstrează numele grupului de la primul sunet până la final.
+
+- Apeluri video: WinZapp găsește acum camera cu FFmpeg-ul inclus în WinZapp, care listează dispozitivele DirectShow fără antetul „DirectShow video devices”. Acea versiune de FFmpeg nu returna nicio cameră, așa că apelul video ieșea doar cu recepție, cu „No camera found” în log.
 
 - Butoanele din mesajele firmelor pot fi acum folosite: un buton de răspuns trimite răspunsul la fel ca WhatsApp Web (butoanele de răspuns ale mesajelor simple, răspunsurile rapide ale mesajelor interactive, butoanele de șablon și rândurile listelor), un buton de link deschide linkul, un buton de copiere copiază codul, iar un buton de apel spune numărul. Butoanele apar sub lista de mesaje când mesajul este selectat.
 
@@ -606,6 +634,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4670alpha/WinZapp-macOS-arm64.zip" length="315038905" type="application/octet-stream" sparkle:edSignature="A4FmvuEk3l8H+yeA1oqWTExQ2YT16KhqNAaFD+5fSxj/EAZd9/5fO5nH8ntF1/bl/4QFgfZPh2g9UhYGUWEhAg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4665alpha</title>
+      <pubDate>Wed, 21 Oct 2026 14:13:15 +0000</pubDate>
+      <sparkle:version>3.0.0.46651</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4665alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4665alpha/WinZapp-macOS-arm64.zip" length="315032875" type="application/octet-stream" sparkle:edSignature="uC0dP9eRES4WXAH/RKqbgQ3cB8sAwSklY8sXBhoonR3rkuQF/zA0E1ongKTLFWsHuvRWKjnD6Lg8k4+aXL94BQ=="></enclosure>
     </item>
     <item>
@@ -635,17 +672,8 @@ NOUTĂȚI
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4583alpha/WinZapp-macOS-arm64.zip" length="315042373" type="application/octet-stream" sparkle:edSignature="HIe/WjH343s9OjV/ZxwJ2IUjNuTd7IPGhU9uKQ4RK7UZvNj6Nn61KtksV3CjMjGwCZ3rhp5nnwo4AXiSxKRYAw=="></enclosure>
     </item>
-    <item>
-      <title>WinZapp 3.0.0.4577alpha</title>
-      <pubDate>Tue, 20 Oct 2026 12:21:15 +0000</pubDate>
-      <sparkle:version>3.0.0.45771</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4577alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4577alpha/WinZapp-macOS-arm64.zip" length="315041115" type="application/octet-stream" sparkle:edSignature="rIRfdAp9do3EBn+JBlUEjSMlKYKIMOtqdASk4ScA33oTwjIQNNHS50SsSvLG2ufDvjbRHnur14olJ4MWn39qBw=="></enclosure>
-    </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8YspoLgTaVskmK3gOXXIdG2RI8aEa1xgPm7H6Datl+ZHapX6hrw1XhN90BunfVzPiV2iIVxI7b4ICb2hijthDQ==
-length: 97987
+edSignature: ifmbFvtWrHOQIxdzxMHNiY5nKiaMslg3wznYMvbAdZ1aXJeLt7LXuMGP2sfdlP0bXmVcBXj5X98jC63xv5meBQ==
+length: 103453
 -->
