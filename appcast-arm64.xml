@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4676alpha</title>
-      <pubDate>Wed, 21 Oct 2026 20:39:37 +0000</pubDate>
-      <sparkle:version>3.0.0.46761</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4676alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4677alpha</title>
+      <pubDate>Thu, 22 Oct 2026 04:55:11 +0000</pubDate>
+      <sparkle:version>3.0.0.46771</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4677alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="en" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Calls: reinstalling WPPConnect preserves a newer compatible WhatsApp Web catalogue and checks its freshness. A rebuilt catalogue is checked without the previous six-hour wait. A confirmed non-retryable VoIP contract mismatch stops repeated initialization.
 
 - Group calls: a group with more than 32 participants cannot be called on WhatsApp, so the call buttons are replaced by a "Calling is not possible" button whose note says the group has more than 32 participants, and the call shortcuts say the same instead of starting a call.
 
@@ -102,11 +104,13 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Ligações: reinstalar a WPPConnect preserva um catálogo mais recente e compatível do WhatsApp Web e verifica se está atualizado. O catálogo reinstalado é verificado sem a espera anterior de seis horas. Uma incompatibilidade confirmada do VoIP que não permite nova tentativa interrompe as inicializações repetidas.
 
 - Chamadas em grupo: o WhatsApp não permite ligar para grupos com mais de 32 participantes, então os botões de ligação são trocados por um botão "Não é possível ligar" cuja nota diz que o grupo possui mais de 32 participantes, e os atalhos de ligação dizem o mesmo em vez de iniciar a ligação.
 
@@ -193,11 +197,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas: reinstalar a WPPConnect preserva um catálogo mais recente e compatível do WhatsApp Web e verifica se está atualizado. O catálogo reinstalado é verificado sem a espera anterior de seis horas. Uma incompatibilidade confirmada do VoIP que não permite nova tentativa interrompe as inicializações repetidas.
 
 - Chamadas de grupo: o WhatsApp não permite ligar para grupos com mais de 32 membros, pelo que os botões de chamada são substituídos por um botão "Não é possível ligar" cuja nota diz que o grupo tem mais de 32 membros, e os atalhos de chamada dizem o mesmo em vez de iniciar a chamada.
 
@@ -284,11 +290,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="es" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Llamadas: reinstalar WPPConnect conserva un catálogo de WhatsApp Web más reciente y compatible y comprueba si está actualizado. El catálogo reinstalado se comprueba sin la espera anterior de seis horas. Una incompatibilidad confirmada de VoIP que no permite reintentos detiene las inicializaciones repetidas.
 
 - Llamadas de grupo: WhatsApp no permite llamar a grupos con más de 32 participantes, así que los botones de llamada se sustituyen por un botón "No es posible llamar" cuya nota dice que el grupo tiene más de 32 participantes, y los atajos de llamada dicen lo mismo en lugar de iniciar la llamada.
 
@@ -375,11 +383,13 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="pl" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Połączenia: ponowna instalacja WPPConnect zachowuje nowszy, zgodny katalog WhatsApp Web i sprawdza jego aktualność. Ponownie zainstalowany katalog jest sprawdzany bez wcześniejszego sześciogodzinnego oczekiwania. Potwierdzona niezgodność VoIP, której nie można ponowić, zatrzymuje powtarzanie inicjalizacji.
 
 - Połączenia grupowe: WhatsApp nie pozwala dzwonić do grup liczących więcej niż 32 członków, więc przyciski połączeń zastępuje przycisk "Nie można zadzwonić", którego opis mówi, że grupa ma więcej niż 32 członków, a skróty połączeń mówią to samo zamiast rozpoczynać połączenie.
 
@@ -466,11 +476,13 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="tr" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Aramalar: WPPConnect yeniden kurulurken daha yeni ve uyumlu WhatsApp Web kataloğu korunur ve güncelliği kontrol edilir. Yeniden kurulan katalog önceki altı saatlik beklemeye takılmaz. Yeniden denenemeyen doğrulanmış VoIP uyumsuzluğunda başlatma tekrarlanmaz.
 
 - Grup aramaları: WhatsApp 32'den fazla katılımcısı olan gruplarda arama yapılmasına izin vermez; bu yüzden arama düğmelerinin yerine notu grubun 32'den fazla katılımcısı olduğunu söyleyen bir "Arama yapılamıyor" düğmesi gelir ve arama kısayolları aramayı başlatmak yerine aynı şeyi söyler.
 
@@ -557,11 +569,13 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Review Polish user guide and localize shortcut ranges (#572)
+      <description xml:lang="ro" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Apeluri: reinstalarea WPPConnect păstrează un catalog WhatsApp Web mai nou și compatibil și verifică actualitatea acestuia. Catalogul reinstalat este verificat fără așteptarea anterioară de șase ore. O incompatibilitate VoIP confirmată care nu permite reîncercarea oprește inițializările repetate.
 
 - Apeluri de grup: WhatsApp nu permite apeluri către grupuri cu mai mult de 32 de participanți, așa că butoanele de apel sunt înlocuite cu un buton "Nu se poate apela" a cărui notă spune că grupul are mai mult de 32 de participanți, iar comenzile rapide de apel spun același lucru în loc să pornească apelul.
 
@@ -648,6 +662,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4677alpha/WinZapp-macOS-arm64.zip" length="315009553" type="application/octet-stream" sparkle:edSignature="gNcCsBFGxbvEvgAkN70mwNgeII2LfjdWms+Mf3pFHaN03l3WmxyEnsnlRSSfU/2r4SIQE/TkklVEaDsGprxjBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4676alpha</title>
+      <pubDate>Wed, 21 Oct 2026 20:39:37 +0000</pubDate>
+      <sparkle:version>3.0.0.46761</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4676alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4676alpha/WinZapp-macOS-arm64.zip" length="315042461" type="application/octet-stream" sparkle:edSignature="gUfdWZyy8xBFTSmPXc1qI2zWHWATqyi9Ps0THd3CvW5fDddA4i6fTTEGLS1Uy/uJrkkClFXrKnxJd+E/oIAMCg=="></enclosure>
     </item>
     <item>
@@ -676,15 +699,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4665alpha/WinZapp-macOS-arm64.zip" length="315032875" type="application/octet-stream" sparkle:edSignature="uC0dP9eRES4WXAH/RKqbgQ3cB8sAwSklY8sXBhoonR3rkuQF/zA0E1ongKTLFWsHuvRWKjnD6Lg8k4+aXL94BQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4660alpha</title>
-      <pubDate>Wed, 21 Oct 2026 13:47:51 +0000</pubDate>
-      <sparkle:version>3.0.0.46601</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4660alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4660alpha/WinZapp-macOS-arm64.zip" length="314992918" type="application/octet-stream" sparkle:edSignature="aV//t5boty2fcbcMSX+iMrjNB5YPSXpKlgh+65Nwe4l+Lf1TDzjeE1iLwg5RINNccvRUmmQ3XWl4eoWqSn0YBQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2299,6 +2313,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 4zfVRAQ9EOPyg43MNadHA9ALhlVuZ7P6qrxmzgpxMLT7aLToAbKqaKyjnYyOMSRt4LIW6UoNdhLilNkei3ziDg==
-length: 473527
+edSignature: lonliw2Z3+DIUgpc3IPR0q0u/Yrc61aS+XuK/fzmj07gpCMT2R/tQ/JncCpJcef35AWl2C7cSTOROqlhc+yhDQ==
+length: 475824
 -->
