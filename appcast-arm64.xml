@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4677alpha</title>
-      <pubDate>Thu, 22 Oct 2026 04:55:11 +0000</pubDate>
-      <sparkle:version>3.0.0.46771</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4677alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4680alpha</title>
+      <pubDate>Fri, 23 Oct 2026 13:23:26 +0000</pubDate>
+      <sparkle:version>3.0.0.46801</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4680alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="en" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect Server updated to 2.10.62. Pairing a new account no longer loses the QR code when WhatsApp reports the phone as disconnected a moment after the session starts.
 
 - Calls: reinstalling WPPConnect preserves a newer compatible WhatsApp Web catalogue and checks its freshness. A rebuilt catalogue is checked without the previous six-hour wait. A confirmed non-retryable VoIP contract mismatch stops repeated initialization.
 
@@ -104,11 +106,13 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server foi atualizado para a 2.10.62. Ao vincular uma conta nova, o código QR não se perde mais quando o WhatsApp informa que o telefone foi desconectado logo depois de a sessão começar.
 
 - Ligações: reinstalar a WPPConnect preserva um catálogo mais recente e compatível do WhatsApp Web e verifica se está atualizado. O catálogo reinstalado é verificado sem a espera anterior de seis horas. Uma incompatibilidade confirmada do VoIP que não permite nova tentativa interrompe as inicializações repetidas.
 
@@ -197,11 +201,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server foi atualizado para a 2.10.62. Ao associar uma conta nova, o código QR já não se perde quando o WhatsApp indica que o telemóvel foi desligado logo a seguir ao início da sessão.
 
 - Chamadas: reinstalar a WPPConnect preserva um catálogo mais recente e compatível do WhatsApp Web e verifica se está atualizado. O catálogo reinstalado é verificado sem a espera anterior de seis horas. Uma incompatibilidade confirmada do VoIP que não permite nova tentativa interrompe as inicializações repetidas.
 
@@ -290,11 +296,13 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="es" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- WPPConnect Server actualizado a la 2.10.62. Al vincular una cuenta nueva ya no se pierde el código QR cuando WhatsApp informa de que el teléfono se ha desconectado poco después de iniciar la sesión.
 
 - Llamadas: reinstalar WPPConnect conserva un catálogo de WhatsApp Web más reciente y compatible y comprueba si está actualizado. El catálogo reinstalado se comprueba sin la espera anterior de seis horas. Una incompatibilidad confirmada de VoIP que no permite reintentos detiene las inicializaciones repetidas.
 
@@ -383,11 +391,13 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="pl" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- WPPConnect Server zaktualizowany do wersji 2.10.62. Podczas parowania nowego konta kod QR nie znika już, gdy WhatsApp zgłasza rozłączenie telefonu chwilę po rozpoczęciu sesji.
 
 - Połączenia: ponowna instalacja WPPConnect zachowuje nowszy, zgodny katalog WhatsApp Web i sprawdza jego aktualność. Ponownie zainstalowany katalog jest sprawdzany bez wcześniejszego sześciogodzinnego oczekiwania. Potwierdzona niezgodność VoIP, której nie można ponowić, zatrzymuje powtarzanie inicjalizacji.
 
@@ -476,11 +486,13 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="tr" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WPPConnect Server 2.10.62 sürümüne güncellendi. Yeni bir hesap eşleştirilirken, WhatsApp oturum başladıktan kısa süre sonra telefonun bağlantısının kesildiğini bildirse bile QR kodu artık kaybolmuyor.
 
 - Aramalar: WPPConnect yeniden kurulurken daha yeni ve uyumlu WhatsApp Web kataloğu korunur ve güncelliği kontrol edilir. Yeniden kurulan katalog önceki altı saatlik beklemeye takılmaz. Yeniden denenemeyen doğrulanmış VoIP uyumsuzluğunda başlatma tekrarlanmaz.
 
@@ -569,11 +581,13 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Preserve WA catalogue freshness across API reinstalls and bound VoIP retries (#575)
+      <description xml:lang="ro" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.62 e sobe o pin (#577)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- WPPConnect Server a fost actualizat la 2.10.62. La asocierea unui cont nou, codul QR nu se mai pierde atunci când WhatsApp raportează deconectarea telefonului la scurt timp după începerea sesiunii.
 
 - Apeluri: reinstalarea WPPConnect păstrează un catalog WhatsApp Web mai nou și compatibil și verifică actualitatea acestuia. Catalogul reinstalat este verificat fără așteptarea anterioară de șase ore. O incompatibilitate VoIP confirmată care nu permite reîncercarea oprește inițializările repetate.
 
@@ -662,6 +676,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4680alpha/WinZapp-macOS-arm64.zip" length="314172471" type="application/octet-stream" sparkle:edSignature="9TMT1ryYt6yg33bLA4pyzNRCkzKE5EyakjcAwTr9CljMujtayFK5EnmuvNcQqFbqzwpoT6JaAr7HsKQPb6FgCQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4677alpha</title>
+      <pubDate>Thu, 22 Oct 2026 04:55:11 +0000</pubDate>
+      <sparkle:version>3.0.0.46771</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4677alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4677alpha/WinZapp-macOS-arm64.zip" length="315009553" type="application/octet-stream" sparkle:edSignature="gNcCsBFGxbvEvgAkN70mwNgeII2LfjdWms+Mf3pFHaN03l3WmxyEnsnlRSSfU/2r4SIQE/TkklVEaDsGprxjBQ=="></enclosure>
     </item>
     <item>
@@ -690,15 +713,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4670alpha/WinZapp-macOS-arm64.zip" length="315038905" type="application/octet-stream" sparkle:edSignature="A4FmvuEk3l8H+yeA1oqWTExQ2YT16KhqNAaFD+5fSxj/EAZd9/5fO5nH8ntF1/bl/4QFgfZPh2g9UhYGUWEhAg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4665alpha</title>
-      <pubDate>Wed, 21 Oct 2026 14:13:15 +0000</pubDate>
-      <sparkle:version>3.0.0.46651</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4665alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4665alpha/WinZapp-macOS-arm64.zip" length="315032875" type="application/octet-stream" sparkle:edSignature="uC0dP9eRES4WXAH/RKqbgQ3cB8sAwSklY8sXBhoonR3rkuQF/zA0E1ongKTLFWsHuvRWKjnD6Lg8k4+aXL94BQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2313,6 +2327,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: lonliw2Z3+DIUgpc3IPR0q0u/Yrc61aS+XuK/fzmj07gpCMT2R/tQ/JncCpJcef35AWl2C7cSTOROqlhc+yhDQ==
-length: 475824
+edSignature: gOjy36nQi0+Nbejj/ekjY3mFYx9RCAGnePf2s0B+AbgZtcaEtg2K5u3N4wF79BpR7k+E2uvVtApvT4QyobChDQ==
+length: 477017
 -->
