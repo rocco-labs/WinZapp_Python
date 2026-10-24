@@ -5,23 +5,26 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4692alpha</title>
-      <pubDate>Sat, 24 Oct 2026 16:59:10 +0000</pubDate>
-      <sparkle:version>3.0.0.46921</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4692alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4694alpha</title>
+      <pubDate>Sat, 24 Oct 2026 20:50:29 +0000</pubDate>
+      <sparkle:version>3.0.0.46941</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4694alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="en" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Chat lists (conversations, archived and locked chats) now use the full width of the list, so chat names and message previews are cut off much less when the window is wide.
+
 - Updating WinZapp or WPPConnect no longer freezes the whole computer half-way through. The installation and build steps now run at lower priority, so the screen reader keeps speaking smoothly.
 
 - WPPConnect Server updated to 2.10.63, with WPPConnect 2.3.6 and WA-JS 4.7.2. The browser WinZapp drives is now released more completely when a session closes or fails to start, a restored session is recognised as logged in sooner, and a phone disconnection is reported only after a real unpair.
 
-- Typing and voice-recording indicators in private chats remain available when WhatsApp reports the contact as offline. Activity is shown separately from online visibility and expires when it stops being refreshed. Activity belongs to the conversation where it occurs: groups and private chats are tracked separately.
+- Typing and voice-recording indicators in private chats remain available when WhatsApp reports the contact as offline. Activity is shown separately from online visibility and expires when it stops being refreshed. Activity belongs to the conversation where it occurs: groups and private chats are tracked separately. Missed last-seen refreshes are retried, and visibility restrictions also clear previously displayed online and last-seen information. If status data keeps waiting to become ready in an open chat, WinZapp makes a limited number of recovery attempts; hidden information does not trigger them. When status data is not yet ready, the first read waits for the subscription to finish; last-seen and visibility changes also update independently of activity changes. A single stalled status request no longer blocks later refreshes; replacement reads remain limited. Missing last-seen information is refreshed when returning to the window, while reading the current contact's information, and when typing or recording ends without a final update. Contact information opens without waiting for last-seen requests; late profile presence replies cannot restore information from a previous connection. Group typing and recording indicators no longer stay tied to an old connection. Visibility restrictions discovered during a status refresh also clear old information in chats and contact details.
 
 - Pinned messages: opening the pinned messages of a group whose pins are older than what WhatsApp Web keeps in memory no longer fails with "Could not load pinned messages", and the count on the button shows the right number.
 
@@ -116,17 +119,20 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- As listas de conversas (conversas, arquivadas e bloqueadas) agora usam toda a largura da lista, e os nomes dos chats e as prévias das mensagens são cortados bem menos quando a janela é larga.
+
 - Atualizar o WinZapp ou a WPPConnect não congela mais o computador inteiro no meio do processo. As etapas de instalação e compilação agora rodam com prioridade menor, e o leitor de tela continua falando sem engasgos.
 
 - O WPPConnect Server foi atualizado para a 2.10.63, com o WPPConnect 2.3.6 e o WA-JS 4.7.2. O navegador que o WinZapp controla agora é liberado por completo quando uma sessão fecha ou não consegue iniciar, uma sessão restaurada é reconhecida como conectada mais cedo e a desconexão do telefone só é informada depois de um desvínculo real.
 
-- Os indicadores de digitação e gravação de áudio em conversas individuais continuam disponíveis quando o WhatsApp informa que o contato está offline. A atividade aparece separada da visibilidade online e expira quando deixa de ser atualizada. A atividade pertence à conversa em que ocorre: grupos e conversas privadas são acompanhados separadamente.
+- Os indicadores de digitação e gravação de áudio em conversas individuais continuam disponíveis quando o WhatsApp informa que o contato está offline. A atividade aparece separada da visibilidade online e expira quando deixa de ser atualizada. A atividade pertence à conversa em que ocorre: grupos e conversas privadas são acompanhados separadamente. As atualizações pendentes de visto por último são retomadas, e as restrições de visibilidade também removem as informações de online e visto por último já exibidas. Se os dados de estado continuarem sem ficar prontos em uma conversa aberta, o WinZapp faz um número limitado de tentativas de recuperação; informações ocultas não as iniciam. Quando os dados de estado ainda não estão prontos, a primeira leitura aguarda o fim da inscrição; as mudanças de visto por último e de visibilidade também são atualizadas sem mudanças de atividade. Uma única solicitação de estado travada não bloqueia mais as atualizações seguintes; as leituras de substituição continuam limitadas. As informações ausentes de visto por último são atualizadas ao voltar à janela, ao consultar os dados do contato atual e quando a digitação ou gravação termina sem uma atualização final. Os dados do contato abrem sem esperar as solicitações de visto por último; respostas de estado atrasadas do perfil não restauram informações de uma conexão anterior. Os indicadores de digitação e gravação nos grupos deixam de ficar presos a uma conexão anterior. As restrições de visibilidade detectadas durante uma atualização de estado também removem as informações antigas das conversas e dos dados do contato.
 
 - Mensagens fixadas: abrir as mensagens fixadas de um grupo cujas fixações são mais antigas do que o WhatsApp Web mantém na memória não falha mais com "Não foi possível carregar as mensagens fixadas", e o número no botão mostra a quantidade correta.
 
@@ -221,17 +227,20 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- As listas de conversas (conversas, arquivadas e bloqueadas) passam a usar toda a largura da lista, pelo que os nomes das conversas e as pré-visualizações das mensagens são cortados muito menos quando a janela é larga.
+
 - Atualizar o WinZapp ou a WPPConnect já não bloqueia o computador inteiro a meio do processo. Os passos de instalação e compilação correm agora com prioridade mais baixa, e o leitor de ecrã continua a falar sem falhas.
 
 - O WPPConnect Server foi atualizado para a 2.10.63, com o WPPConnect 2.3.6 e o WA-JS 4.7.2. O navegador que o WinZapp controla passa a ser libertado por completo quando uma sessão fecha ou não consegue iniciar, uma sessão restaurada é reconhecida como iniciada mais cedo e a desconexão do telemóvel só é comunicada depois de uma desassociação real.
 
-- Os indicadores de escrita e gravação de áudio em conversas individuais continuam disponíveis quando o WhatsApp informa que o contacto está offline. A atividade aparece separada da visibilidade online e expira quando deixa de ser atualizada. A atividade pertence à conversa em que ocorre: os grupos e as conversas privadas são acompanhados separadamente.
+- Os indicadores de escrita e gravação de áudio em conversas individuais continuam disponíveis quando o WhatsApp informa que o contacto está offline. A atividade aparece separada da visibilidade online e expira quando deixa de ser atualizada. A atividade pertence à conversa em que ocorre: os grupos e as conversas privadas são acompanhados separadamente. As atualizações pendentes de visto pela última vez são retomadas, e as restrições de visibilidade também removem as informações de online e visto pela última vez já apresentadas. Se os dados de estado continuarem sem ficar prontos numa conversa aberta, o WinZapp faz um número limitado de tentativas de recuperação; as informações ocultas não as iniciam. Quando os dados de estado ainda não estão prontos, a primeira leitura aguarda o fim da subscrição; as alterações de visto pela última vez e de visibilidade também são atualizadas sem alterações de atividade. Um único pedido de estado bloqueado deixa de impedir as atualizações seguintes; as leituras de substituição continuam limitadas. As informações em falta de visto pela última vez são atualizadas ao regressar à janela, ao consultar os dados do contacto atual e quando a escrita ou gravação termina sem uma atualização final. Os dados do contacto abrem sem esperar pelos pedidos de visto pela última vez; respostas de estado atrasadas do perfil não restauram informações de uma ligação anterior. Os indicadores de escrita e gravação nos grupos deixam de ficar presos a uma ligação anterior. As restrições de visibilidade detetadas durante uma atualização de estado também removem as informações antigas das conversas e dos dados do contacto.
 
 - Mensagens afixadas: abrir as mensagens afixadas de um grupo cujas afixações são mais antigas do que o WhatsApp Web mantém na memória já não falha com "Não foi possível carregar as mensagens afixadas", e o número no botão mostra a quantidade correta.
 
@@ -326,17 +335,20 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="es" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Las listas de chats (conversaciones, archivados y bloqueados) ahora usan todo el ancho de la lista, por lo que los nombres de los chats y las vistas previas de los mensajes se cortan mucho menos cuando la ventana es ancha.
+
 - Actualizar WinZapp o WPPConnect ya no congela todo el equipo a mitad del proceso. Los pasos de instalación y compilación se ejecutan ahora con menor prioridad, y el lector de pantalla sigue hablando con fluidez.
 
 - WPPConnect Server actualizado a la 2.10.63, con WPPConnect 2.3.6 y WA-JS 4.7.2. El navegador que maneja WinZapp se libera de forma más completa cuando una sesión se cierra o no llega a iniciarse, una sesión restaurada se reconoce antes como iniciada y la desconexión del teléfono solo se comunica tras una desvinculación real.
 
-- Los indicadores de escritura y grabación de audio en chats privados siguen disponibles cuando WhatsApp informa de que el contacto está desconectado. La actividad se muestra por separado de la visibilidad en línea y caduca si deja de actualizarse. La actividad pertenece a la conversación donde ocurre: los grupos y los chats privados se siguen por separado.
+- Los indicadores de escritura y grabación de audio en chats privados siguen disponibles cuando WhatsApp informa de que el contacto está desconectado. La actividad se muestra por separado de la visibilidad en línea y caduca si deja de actualizarse. La actividad pertenece a la conversación donde ocurre: los grupos y los chats privados se siguen por separado. Las actualizaciones pendientes de la última conexión se reintentan, y las restricciones de visibilidad también eliminan la información de conexión y última vez que ya se mostraba. Si los datos de estado siguen sin estar listos en un chat abierto, WinZapp realiza un número limitado de intentos de recuperación; la información oculta no los activa. Cuando los datos de estado aún no están listos, la primera lectura espera a que termine la suscripción; los cambios de última conexión y visibilidad también se actualizan sin cambios de actividad. Una sola solicitud de estado bloqueada ya no impide las actualizaciones posteriores; las lecturas de sustitución siguen estando limitadas. La información de última conexión que falta se actualiza al volver a la ventana, al consultar los datos del contacto actual y cuando la escritura o grabación termina sin una actualización final. Los datos del contacto se abren sin esperar las solicitudes de última conexión; las respuestas tardías del estado del perfil no restauran información de una conexión anterior. Los indicadores de escritura y grabación en grupos ya no quedan vinculados a una conexión anterior. Las restricciones de visibilidad detectadas al actualizar el estado también eliminan la información anterior de los chats y de los datos del contacto.
 
 - Mensajes fijados: abrir los mensajes fijados de un grupo cuyas fijaciones son más antiguas que lo que WhatsApp Web guarda en memoria ya no falla con «No se pudieron cargar los mensajes fijados», y el contador del botón muestra el número correcto.
 
@@ -431,17 +443,20 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="pl" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Listy czatów (rozmowy, zarchiwizowane i zablokowane) wykorzystują teraz całą szerokość listy, dzięki czemu nazwy czatów i podglądy wiadomości są znacznie rzadziej ucinane w szerokim oknie.
+
 - Aktualizacja WinZapp lub WPPConnect nie zawiesza już całego komputera w połowie procesu. Kroki instalacji i kompilacji działają teraz z niższym priorytetem, więc czytnik ekranu mówi płynnie.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.63, z WPPConnect 2.3.6 i WA-JS 4.7.2. Przeglądarka obsługiwana przez WinZapp jest pełniej zwalniana, gdy sesja się zamyka lub nie uruchamia, przywrócona sesja jest szybciej rozpoznawana jako zalogowana, a rozłączenie telefonu jest zgłaszane dopiero po rzeczywistym odparowaniu.
 
-- Wskaźniki pisania i nagrywania wiadomości głosowej w czatach prywatnych pozostają dostępne, gdy WhatsApp informuje, że kontakt jest offline. Aktywność jest pokazywana oddzielnie od widoczności online i wygasa, gdy nie jest odświeżana. Aktywność jest przypisana do czatu, w którym występuje: grupy i czaty prywatne są śledzone oddzielnie.
+- Wskaźniki pisania i nagrywania wiadomości głosowej w czatach prywatnych pozostają dostępne, gdy WhatsApp informuje, że kontakt jest offline. Aktywność jest pokazywana oddzielnie od widoczności online i wygasa, gdy nie jest odświeżana. Aktywność jest przypisana do czatu, w którym występuje: grupy i czaty prywatne są śledzone oddzielnie. Pominięte odświeżenia informacji „Widziano” są ponawiane. Ograniczenia widoczności usuwają także wcześniej wyświetlany stan online i informację „Widziano”. Jeśli dane stanu przez dłuższy czas nie są gotowe w otwartym czacie, WinZapp podejmuje ograniczoną liczbę prób ich odzyskania; ukryte informacje nie uruchamiają tych prób. Gdy dane stanu nie są jeszcze gotowe, pierwszy odczyt czeka na zakończenie subskrypcji; informacje „Widziano” i widoczność są też aktualizowane niezależnie od zmian aktywności. Pojedyncze zawieszone żądanie stanu nie blokuje już kolejnych odświeżeń; liczba odczytów zastępczych pozostaje ograniczona. Brakujące informacje „Widziano” są odświeżane po powrocie do okna, podczas przeglądania danych bieżącego kontaktu i po zakończeniu pisania lub nagrywania bez końcowej aktualizacji. Dane kontaktu otwierają się bez czekania na żądania informacji „Widziano”; spóźnione odpowiedzi o stanie profilu nie przywracają informacji z poprzedniego połączenia. Wskaźniki pisania i nagrywania w czatach grupowych nie pozostają przypisane do starego połączenia. Ograniczenia widoczności wykryte podczas odświeżania stanu usuwają także wcześniejsze informacje z czatów i danych kontaktu.
 
 - Przypięte wiadomości: otwarcie przypiętych wiadomości w grupie, w której przypięcia są starsze niż to, co WhatsApp Web trzyma w pamięci, nie kończy się już błędem „Nie udało się wczytać przypiętych wiadomości”, a licznik na przycisku pokazuje właściwą liczbę.
 
@@ -536,17 +551,20 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="tr" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Sohbet listeleri (sohbetler, arşivlenenler ve kilitli sohbetler) artık listenin tüm genişliğini kullanıyor; böylece pencere genişken sohbet adları ve mesaj önizlemeleri çok daha az kesiliyor.
+
 - WinZapp veya WPPConnect güncellenirken bilgisayarın tamamı artık işlemin ortasında donmuyor. Kurulum ve derleme adımları artık daha düşük öncelikle çalışıyor, bu yüzden ekran okuyucu kesintisiz konuşmaya devam ediyor.
 
 - WPPConnect Server 2.10.63 sürümüne, WPPConnect 2.3.6 ve WA-JS 4.7.2 ile birlikte güncellendi. WinZapp'ın kullandığı tarayıcı, bir oturum kapandığında veya başlatılamadığında artık daha eksiksiz serbest bırakılıyor, geri yüklenen oturum daha erken oturum açmış sayılıyor ve telefonun bağlantısının kesilmesi yalnızca gerçek bir eşleşme kaldırmadan sonra bildiriliyor.
 
-- Özel sohbetlerde WhatsApp kişiyi çevrim dışı bildirse de yazıyor ve ses kaydediyor bilgileri korunur. Bu etkinlikler çevrim içi görünürlükten ayrı gösterilir; yenilenmediklerinde süreleri dolar. Etkinlik, gerçekleştiği sohbete aittir; grup ve özel sohbetler ayrı izlenir.
+- Özel sohbetlerde WhatsApp kişiyi çevrim dışı bildirse de yazıyor ve ses kaydediyor bilgileri korunur. Bu etkinlikler çevrim içi görünürlükten ayrı gösterilir; yenilenmediklerinde süreleri dolar. Etkinlik, gerçekleştiği sohbete aittir; grup ve özel sohbetler ayrı izlenir. Atlanan son görülme yenilemeleri yeniden yapılır; görünürlük kısıtlamaları, daha önce gösterilen çevrim içi ve son görülme bilgilerini de temizler. Açık sohbette durum verisi uzun süre hazırlanamazsa yeniden alınması sınırlı sayıda denenir; gizlenmiş bilgiler bu denemeleri başlatmaz. Durum verisi henüz hazır değilse ilk okuma aboneliğin bitmesini bekler; son görülme ve görünürlük değişimleri yazma etkinliğinden bağımsız güncellenir. Takılan tek bir durum isteği sonraki yenilemeleri kilitlemez; yedek okumalar sınırlı tutulur. Eksik son görülme bilgisi pencereye dönüldüğünde, açık sohbetin kişi bilgileri okunurken ve yazma ya da kaydetme etkinliği son güncelleme gelmeden bittiğinde yenilenir. Kişi bilgileri son görülme isteğini beklemeden açılır; geç profil durumu yanıtları önceki bağlantının bilgisini geri getiremez. Grup yazma ve kaydetme göstergeleri eski bağlantıya bağlı kalmaz. Durum yenilenirken öğrenilen görünürlük kısıtlamaları da sohbetlerdeki ve kişi bilgilerindeki eski durumu temizler.
 
 - Sabitlenmiş mesajlar: sabitlemeleri WhatsApp Web'in bellekte tuttuğundan eski olan bir grubun sabitlenmiş mesajlarını açmak artık "Sabitlenmiş mesajlar yüklenemedi" hatasıyla başarısız olmuyor ve düğmedeki sayı doğru değeri gösteriyor.
 
@@ -641,17 +659,20 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Evita o congelamento do sistema ao atualizar WinZapp e WPPConnect (#586)
+      <description xml:lang="ro" sparkle:format="plain-text">- Faz as listas de chats usarem toda a largura do controle (#589)
+- Refresh contact presence reliably across lifecycle changes (continua #587) (#588)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Listele de conversații (conversații, arhivate și blocate) folosesc acum toată lățimea listei, așa că numele conversațiilor și previzualizările mesajelor sunt tăiate mult mai puțin când fereastra este lată.
+
 - Actualizarea WinZapp sau a WPPConnect nu mai blochează întregul computer la jumătatea procesului. Pașii de instalare și compilare rulează acum cu prioritate mai mică, iar cititorul de ecran continuă să vorbească fluent.
 
 - WPPConnect Server a fost actualizat la 2.10.63, cu WPPConnect 2.3.6 și WA-JS 4.7.2. Browserul controlat de WinZapp este eliberat mai complet când o sesiune se închide sau nu reușește să pornească, o sesiune restaurată este recunoscută mai repede ca autentificată, iar deconectarea telefonului este raportată doar după o disociere reală.
 
-- Indicatorii de scriere și de înregistrare audio din conversațiile private rămân disponibili când WhatsApp raportează contactul ca deconectat. Activitatea este afișată separat de vizibilitatea online și expiră când nu mai este actualizată. Activitatea aparține conversației în care are loc: grupurile și conversațiile private sunt urmărite separat.
+- Indicatorii de scriere și de înregistrare audio din conversațiile private rămân disponibili când WhatsApp raportează contactul ca deconectat. Activitatea este afișată separat de vizibilitatea online și expiră când nu mai este actualizată. Activitatea aparține conversației în care are loc: grupurile și conversațiile private sunt urmărite separat. Actualizările în așteptare ale informației despre ultima accesare sunt reluate, iar restricțiile de vizibilitate șterg și informațiile online și despre ultima accesare afișate anterior. Dacă datele de stare continuă să nu fie pregătite într-o conversație deschisă, WinZapp face un număr limitat de încercări de recuperare; informațiile ascunse nu le declanșează. Când datele de stare nu sunt încă pregătite, prima citire așteaptă încheierea abonării; ultima accesare și vizibilitatea se actualizează și fără schimbări ale activității. O singură cerere de stare blocată nu mai împiedică actualizările ulterioare; citirile de înlocuire rămân limitate. Informațiile lipsă despre ultima accesare sunt actualizate la revenirea în fereastră, în timpul consultării datelor contactului curent și când scrierea sau înregistrarea se încheie fără o actualizare finală. Datele contactului se deschid fără a aștepta cererile despre ultima accesare; răspunsurile întârziate despre starea profilului nu readuc informații dintr-o conexiune anterioară. Indicatorii de scriere și înregistrare din grupuri nu mai rămân legați de o conexiune veche. Restricțiile de vizibilitate detectate la actualizarea stării șterg și informațiile vechi din conversații și din datele contactului.
 
 - Mesaje fixate: deschiderea mesajelor fixate ale unui grup ale cărui fixări sunt mai vechi decât ce păstrează WhatsApp Web în memorie nu mai eșuează cu „Nu s-au putut încărca mesajele fixate”, iar numărul de pe buton arată cifra corectă.
 
@@ -746,6 +767,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4694alpha/WinZapp-macOS-arm64.zip" length="313607837" type="application/octet-stream" sparkle:edSignature="n3d0jRMJY7KuuEwhkxQvUNJewgNcLQopQMPN9x6ETR0bFFRS0lUDyi88ZSfLzqe/GevGkKT0u4/8Mg5MY0UbBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4692alpha</title>
+      <pubDate>Sat, 24 Oct 2026 16:59:10 +0000</pubDate>
+      <sparkle:version>3.0.0.46921</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4692alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4692alpha/WinZapp-macOS-arm64.zip" length="313542375" type="application/octet-stream" sparkle:edSignature="ghPohe1T42u5yrG5WB/rKy1rRP3D/jdfDDz397fq6MF5egnoMqpZBDa3dtiTUwxPcmUohzx6odiozzBIXXJECw=="></enclosure>
     </item>
     <item>
@@ -774,15 +804,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4689alpha/WinZapp-macOS-arm64.zip" length="314190601" type="application/octet-stream" sparkle:edSignature="lJRN17kUGit5NUB8WZDPSfXvKZiVJEF+6tkTRSGIIJDnExep+NJjpqqzVfoC620TidINIrbuxaqs8wSqWLEIAA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4683alpha</title>
-      <pubDate>Fri, 23 Oct 2026 14:40:13 +0000</pubDate>
-      <sparkle:version>3.0.0.46831</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4683alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4683alpha/WinZapp-macOS-arm64.zip" length="314174636" type="application/octet-stream" sparkle:edSignature="D3KsopflT84RhO90M/n2iznsVtors68Ibuy4+TKj9la+nlhp5wS2pH2Wrt2CTihxc5ZVho1y/iLirqJuRcWEAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2397,6 +2418,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: KWnywy/wmobt/BlAwK+1izfioghgv8MIRLQejqfFbaWuu/FUUC5bKUjaikjVszsITEdXIkKQ/usaXhMZNFcJAA==
-length: 486777
+edSignature: 7IWe1p+Sybaq50CcEvvVPILSdiDV58Q6Phg7lyAe3J1lG6yegi4QRexKbQ5sjMzgTAEmoPcaSHVPGTLAjqygCw==
+length: 497610
 -->
