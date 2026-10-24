@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4689alpha</title>
-      <pubDate>Fri, 23 Oct 2026 15:04:43 +0000</pubDate>
-      <sparkle:version>3.0.0.46891</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4689alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4690alpha</title>
+      <pubDate>Sat, 24 Oct 2026 15:08:53 +0000</pubDate>
+      <sparkle:version>3.0.0.46901</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4690alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="en" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -34,6 +34,8 @@ WHAT'S NEW
 - Buttons in business messages can be answered: a reply button sends the answer the way WhatsApp Web does (reply buttons of plain messages, quick replies of interactive messages, template buttons and the rows of lists), a link button opens the link, a copy button copies the code and a call button says the number. The buttons appear under the message list when the message is selected.
 
 - WPPConnect Server 2.10.61 is now offered as an update without waiting for a new WinZapp version. It only updates dependencies, and WinZapp's changes to the server are not affected.
+
+- WPPConnect Server 2.10.63 is now offered as an update without waiting for a new WinZapp version. It only updates dependencies, and WinZapp's changes to the server are not affected.
 
 - macOS updates explain whether verification failed because of a connection, certificate, server or GitHub request-limit problem, and whether the verification file or the official release tag could not be checked. Temporary connection and server failures get one retry; request limits show a wait time and do not trigger repeated requests during that wait.
 
@@ -110,7 +112,7 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -133,6 +135,8 @@ NOVIDADES
 - Os botões das mensagens de empresas agora podem ser usados: um botão de resposta envia a resposta do mesmo jeito que o WhatsApp Web (botões de resposta de mensagens simples, respostas rápidas de mensagens interativas, botões de modelo e linhas de listas), um botão de link abre o link, um botão de copiar copia o código e um botão de ligar diz o número. Os botões aparecem abaixo da lista de mensagens quando a mensagem está selecionada.
 
 - O WPPConnect Server 2.10.61 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
+
+- O WPPConnect Server 2.10.63 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
 
 - As atualizações do macOS explicam se a verificação falhou por um problema de conexão, certificado, servidor ou limite de solicitações do GitHub, e se não foi possível verificar o arquivo de verificação ou a tag da versão oficial. Falhas temporárias de conexão e servidor são repetidas uma vez; limites de solicitações mostram um tempo de espera e não geram novas solicitações durante esse período.
 
@@ -209,7 +213,7 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -232,6 +236,8 @@ NOVIDADES
 - Os botões das mensagens de empresas passam a poder ser usados: um botão de resposta envia a resposta da mesma forma que o WhatsApp Web (botões de resposta de mensagens simples, respostas rápidas de mensagens interativas, botões de modelo e linhas de listas), um botão de ligação abre a ligação, um botão de copiar copia o código e um botão de chamada diz o número. Os botões aparecem por baixo da lista de mensagens quando a mensagem está selecionada.
 
 - O WPPConnect Server 2.10.61 passa a ser oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
+
+- O WPPConnect Server 2.10.63 passa a ser oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza dependências e não afeta as alterações que o WinZapp faz no servidor.
 
 - As atualizações do macOS explicam se a verificação falhou devido a um problema de ligação, certificado, servidor ou limite de pedidos do GitHub, e se não foi possível verificar o ficheiro de verificação ou a etiqueta da versão oficial. As falhas temporárias de ligação e servidor são repetidas uma vez; os limites de pedidos mostram um tempo de espera e não geram novos pedidos durante esse período.
 
@@ -308,7 +314,7 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="es" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -331,6 +337,8 @@ NOVEDADES
 - Ya se pueden usar los botones de los mensajes de empresas: un botón de respuesta envía la respuesta igual que WhatsApp Web (botones de respuesta de mensajes simples, respuestas rápidas de mensajes interactivos, botones de plantilla y filas de listas), un botón de enlace abre el enlace, un botón de copiar copia el código y un botón de llamada dice el número. Los botones aparecen debajo de la lista de mensajes cuando el mensaje está seleccionado.
 
 - WPPConnect Server 2.10.61 ya se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza dependencias y no afecta a los cambios que WinZapp hace en el servidor.
+
+- WPPConnect Server 2.10.63 ya se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza dependencias y no afecta a los cambios que WinZapp hace en el servidor.
 
 - Las actualizaciones de macOS explican si la verificación ha fallado por un problema de conexión, certificado, servidor o límite de solicitudes de GitHub, y si no se ha podido comprobar el archivo de verificación o la etiqueta de la versión oficial. Los fallos temporales de conexión y servidor se reintentan una vez; los límites de solicitudes muestran un tiempo de espera y no generan nuevas solicitudes durante ese período.
 
@@ -407,7 +415,7 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="pl" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -430,6 +438,8 @@ NOWOŚCI
 - Przyciski w wiadomościach firm można już używać: przycisk odpowiedzi wysyła odpowiedź tak samo jak WhatsApp Web (przyciski odpowiedzi zwykłych wiadomości, szybkie odpowiedzi wiadomości interaktywnych, przyciski szablonów i wiersze list), przycisk linku otwiera link, przycisk kopiowania kopiuje kod, a przycisk połączenia odczytuje numer. Przyciski pojawiają się pod listą wiadomości, gdy wiadomość jest zaznaczona.
 
 - WPPConnect Server 2.10.61 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
+
+- WPPConnect Server 2.10.63 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
 - Aktualizacje macOS wyjaśniają, czy weryfikacja nie powiodła się z powodu połączenia, certyfikatu, serwera lub limitu żądań GitHub oraz czy nie można sprawdzić pliku weryfikacji czy oficjalnego tagu wydania. Tymczasowe błędy połączenia i serwera powodują jedną ponowną próbę; limity żądań pokazują czas oczekiwania i nie powodują kolejnych żądań w tym czasie.
 
@@ -506,7 +516,7 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="tr" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -529,6 +539,8 @@ YENİLİKLER
 - İşletme mesajlarındaki düğmeler artık kullanılabiliyor: bir yanıt düğmesi yanıtı WhatsApp Web ile aynı şekilde gönderir (düz mesajların yanıt düğmeleri, etkileşimli mesajların hızlı yanıtları, şablon düğmeleri ve listelerin satırları), bağlantı düğmesi bağlantıyı açar, kopyalama düğmesi kodu kopyalar, arama düğmesi numarayı söyler. Mesaj seçildiğinde düğmeler mesaj listesinin altında görünür.
 
 - WPPConnect Server 2.10.61 artık yeni bir WinZapp sürümü beklenmeden güncelleme olarak sunuluyor. Yalnızca bağımlılıkları günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
+
+- WPPConnect Server 2.10.63 artık yeni bir WinZapp sürümü beklenmeden güncelleme olarak sunuluyor. Yalnızca bağımlılıkları günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
 
 - macOS güncellemelerinde doğrulamanın bağlantı, sertifika, sunucu veya GitHub istek sınırı nedeniyle mi başarısız olduğu ve doğrulama dosyasının mı, resmî sürüm etiketinin mi kontrol edilemediği açıklanır. Geçici bağlantı ve sunucu hatalarında bir kez yeniden denenir; istek sınırında bekleme süresi gösterilir ve bu süre boyunca tekrar istek gönderilmez.
 
@@ -605,7 +617,7 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Preserve chat activity visibility and add bounded presence diagnostics (#579)
+      <description xml:lang="ro" sparkle:format="plain-text">- Aprova o WPPConnect Server 2.10.63 para quem está na 2.10.62 (#582)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -628,6 +640,8 @@ NOUTĂȚI
 - Butoanele din mesajele firmelor pot fi acum folosite: un buton de răspuns trimite răspunsul la fel ca WhatsApp Web (butoanele de răspuns ale mesajelor simple, răspunsurile rapide ale mesajelor interactive, butoanele de șablon și rândurile listelor), un buton de link deschide linkul, un buton de copiere copiază codul, iar un buton de apel spune numărul. Butoanele apar sub lista de mesaje când mesajul este selectat.
 
 - WPPConnect Server 2.10.61 este acum oferit ca actualizare, fără a aștepta o nouă versiune WinZapp. Actualizează doar dependențe și nu afectează modificările pe care WinZapp le face în server.
+
+- WPPConnect Server 2.10.63 este acum oferit ca actualizare, fără a aștepta o nouă versiune WinZapp. Actualizează doar dependențe și nu afectează modificările pe care WinZapp le face în server.
 
 - Actualizările macOS explică dacă verificarea a eșuat din cauza conexiunii, certificatului, serverului sau limitei de solicitări GitHub și dacă nu a putut fi verificat fișierul de verificare sau eticheta versiunii oficiale. Erorile temporare de conexiune și server sunt reîncercate o singură dată; limitele de solicitări afișează un timp de așteptare și nu generează solicitări repetate în acel interval.
 
@@ -704,6 +718,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4690alpha/WinZapp-macOS-x86_64.zip" length="348657743" type="application/octet-stream" sparkle:edSignature="j2u2dwElSw0BWwLaDKULsVaweEURBW/zFa3/CygTNdg89OYZ4q/efmbgkMyYILI6N87wGwPQE9ALEMI6fkwtCw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4689alpha</title>
+      <pubDate>Fri, 23 Oct 2026 15:04:43 +0000</pubDate>
+      <sparkle:version>3.0.0.46891</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4689alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4689alpha/WinZapp-macOS-x86_64.zip" length="349244007" type="application/octet-stream" sparkle:edSignature="FSg0gCUSYMl+K4VP+g+3DpOI4Djo5g40ausmaDiYyDChu/oXYAtyXHO/zGPVMQyeyWPhad/hz1jKujRp2VpxBQ=="></enclosure>
     </item>
     <item>
@@ -732,15 +755,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4677alpha/WinZapp-macOS-x86_64.zip" length="350061403" type="application/octet-stream" sparkle:edSignature="aX4fajn4MdNNWm8eaOu7vRGvag27KXlxUP8pcz64NGGqCfjyWMUDGIqQfs4SfBPsGnVa/37jA3RwXt+mSqC4DQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4676alpha</title>
-      <pubDate>Wed, 21 Oct 2026 20:39:37 +0000</pubDate>
-      <sparkle:version>3.0.0.46761</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4676alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4676alpha/WinZapp-macOS-x86_64.zip" length="350094319" type="application/octet-stream" sparkle:edSignature="IExaSdz5lqnP8HjlnCTL4YfEGsWQSVzS4dvJadWAs4JP4XYeyDYjRVckkmguZY274OlxMISD/yCraM1MIgImBg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2355,6 +2369,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: dBxzuIctXmf0W50wyl7c66sNLYredKSidxKSeQP7eHRNQhU0dmbAt+XS+KMPqj1HHrjDNKlOZ1YRNU/FNlS9Ag==
-length: 481436
+edSignature: T/duHWnKK6ZrdFYcJb35KEyUw1FnxOmsLx1TtX9qG11TwzXD6ad+JMBw75Rf2sV6Uht7nDfSFlTU+4+atT4xBg==
+length: 482774
 -->
