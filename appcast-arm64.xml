@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4696alpha</title>
-      <pubDate>Tue, 27 Oct 2026 00:56:21 +0000</pubDate>
-      <sparkle:version>3.0.0.46961</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4696alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4697alpha</title>
+      <pubDate>Tue, 27 Oct 2026 22:51:07 +0000</pubDate>
+      <sparkle:version>3.0.0.46971</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4697alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="en" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -123,7 +123,7 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -235,7 +235,7 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -347,7 +347,7 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="es" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -459,38 +459,38 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="pl" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
 - Wiele kolejnych aktualizacji obecności kontaktów (pisanie, online) nie zawiesza już WinZapp na kilka sekund ani nie spowalnia całego komputera na kontach z wieloma czatami.
-- Obecność kontaktów: przy zapamiętywaniu nowych nazw kontaktów interfejs nie czeka już na zapis do bazy danych. Oczekujące aktualizacje zachowują najnowszy pełny zestaw nazw, z zachowaniem kolejności przy zamykaniu i czyszczeniu danych lokalnych.
+- Nazwy kontaktów są zapisywane w tle, bez blokowania interfejsu. Oczekujące zapisy uwzględniają najnowszy kompletny zestaw nazw, z zachowaniem właściwej kolejności także podczas zamykania programu i czyszczenia danych lokalnych.
 
-- Obecność kontaktów: ograniczono powtarzaną pracę interfejsu przy wielu aktualizacjach dostępności lub pisania. Niezmieniony tytuł okna i etykieta zarchiwizowanych czatów nie są ponownie ustawiane, a komunikaty o pisaniu zachowują dotychczasowy czas ogłaszania.
+- Obecność kontaktów: ograniczono zbędne operacje interfejsu przy częstych aktualizacjach informacji o dostępności i pisaniu. Tytuł okna i etykieta zarchiwizowanych czatów nie są ponownie ustawiane, jeśli ich treść się nie zmieniła, a komunikaty o pisaniu nie są przez to opóźniane.
 
-- Listy czatów (rozmowy, zarchiwizowane i zablokowane) wykorzystują teraz całą szerokość listy, dzięki czemu nazwy czatów i podglądy wiadomości są znacznie rzadziej ucinane w szerokim oknie.
+- Główna lista czatów oraz listy czatów zarchiwizowanych i zabezpieczonych wykorzystują teraz całą dostępną szerokość, dzięki czemu nazwy czatów i podglądy wiadomości są znacznie rzadziej ucinane w szerokim oknie.
 
 - Aktualizacja WinZapp lub WPPConnect nie zawiesza już całego komputera w połowie procesu. Kroki instalacji i kompilacji działają teraz z niższym priorytetem, więc czytnik ekranu mówi płynnie.
 
-- WPPConnect Server zaktualizowany do wersji 2.10.63, z WPPConnect 2.3.6 i WA-JS 4.7.2. Przeglądarka obsługiwana przez WinZapp jest pełniej zwalniana, gdy sesja się zamyka lub nie uruchamia, przywrócona sesja jest szybciej rozpoznawana jako zalogowana, a rozłączenie telefonu jest zgłaszane dopiero po rzeczywistym odparowaniu.
+- WPPConnect Server zaktualizowany do wersji 2.10.63, z WPPConnect 2.3.6 i WA-JS 4.7.2. WinZapp dokładniej zwalnia zasoby przeglądarki po zamknięciu sesji lub nieudanej próbie jej uruchomienia, przywrócona sesja jest szybciej rozpoznawana jako zalogowana, a rozłączenie telefonu jest zgłaszane dopiero po faktycznym usunięciu powiązania z telefonem.
 
-- Wskaźniki pisania i nagrywania wiadomości głosowej w czatach prywatnych pozostają dostępne, gdy WhatsApp informuje, że kontakt jest offline. Aktywność jest pokazywana oddzielnie od widoczności online i wygasa, gdy nie jest odświeżana. Aktywność jest przypisana do czatu, w którym występuje: grupy i czaty prywatne są śledzone oddzielnie. Pominięte odświeżenia informacji „Widziano” są ponawiane. Ograniczenia widoczności usuwają także wcześniej wyświetlany stan online i informację „Widziano”. Jeśli dane stanu przez dłuższy czas nie są gotowe w otwartym czacie, WinZapp podejmuje ograniczoną liczbę prób ich odzyskania; ukryte informacje nie uruchamiają tych prób. Gdy dane stanu nie są jeszcze gotowe, pierwszy odczyt czeka na zakończenie subskrypcji; informacje „Widziano” i widoczność są też aktualizowane niezależnie od zmian aktywności. Pojedyncze zawieszone żądanie stanu nie blokuje już kolejnych odświeżeń; liczba odczytów zastępczych pozostaje ograniczona. Brakujące informacje „Widziano” są odświeżane po powrocie do okna, podczas przeglądania danych bieżącego kontaktu i po zakończeniu pisania lub nagrywania bez końcowej aktualizacji. Dane kontaktu otwierają się bez czekania na żądania informacji „Widziano”; spóźnione odpowiedzi o stanie profilu nie przywracają informacji z poprzedniego połączenia. Wskaźniki pisania i nagrywania w czatach grupowych nie pozostają przypisane do starego połączenia. Ograniczenia widoczności wykryte podczas odświeżania stanu usuwają także wcześniejsze informacje z czatów i danych kontaktu.
+- Wskaźniki pisania i nagrywania wiadomości głosowej w czatach prywatnych pozostają dostępne, gdy WhatsApp informuje, że kontakt jest offline. Są niezależne od widoczności online i znikają, gdy przestają być odświeżane. Aktywność jest przypisana do czatu, w którym występuje; grupy i czaty prywatne są śledzone oddzielnie. Pominięte odświeżenia informacji „Widziano” są ponawiane. Informacje „Widziano” i ustawienia widoczności są aktualizowane także wtedy, gdy kontakt nie zmienia swojej aktywności. Jeśli dane nie są jeszcze dostępne, pierwszy odczyt czeka na rozpoczęcie ich odbierania. Gdy oczekiwanie w otwartym czacie się przedłuża, WinZapp podejmuje ograniczoną liczbę prób odzyskania danych. Nie ponawia ich w celu uzyskania informacji ukrytych przez ustawienia prywatności. Pojedyncze żądanie, na które nie nadeszła odpowiedź, nie blokuje kolejnych odświeżeń, a liczba dodatkowych prób odczytu pozostaje ograniczona. Brakujące informacje „Widziano” są odświeżane po powrocie do okna, podczas przeglądania danych bieżącego kontaktu oraz gdy pisanie lub nagrywanie zakończy się bez końcowej aktualizacji. Okno danych kontaktu otwiera się bez oczekiwania na te informacje. Spóźnione odpowiedzi nie przywracają stanu z poprzedniego połączenia, a wskaźniki pisania i nagrywania w grupach nie pozostają przypisane do starego połączenia. Po wykryciu ograniczeń widoczności WinZapp usuwa nieaktualne informacje o stanie online i „Widziano” zarówno z czatów, jak i z danych kontaktu.
 
 - Przypięte wiadomości: otwarcie przypiętych wiadomości w grupie, w której przypięcia są starsze niż to, co WhatsApp Web trzyma w pamięci, nie kończy się już błędem „Nie udało się wczytać przypiętych wiadomości”, a licznik na przycisku pokazuje właściwą liczbę.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.62. Podczas parowania nowego konta kod QR nie znika już, gdy WhatsApp zgłasza rozłączenie telefonu chwilę po rozpoczęciu sesji.
 
-- Połączenia: ponowna instalacja WPPConnect zachowuje nowszy, zgodny katalog WhatsApp Web i sprawdza jego aktualność. Ponownie zainstalowany katalog jest sprawdzany bez wcześniejszego sześciogodzinnego oczekiwania. Potwierdzona niezgodność VoIP, której nie można ponowić, zatrzymuje powtarzanie inicjalizacji.
+- Połączenia: ponowna instalacja WPPConnect zachowuje nowszy, zgodny katalog WhatsApp Web i sprawdza jego aktualność. Ponownie zainstalowany katalog jest sprawdzany bez wcześniejszego sześciogodzinnego oczekiwania. Jeśli wykryta niezgodność z mechanizmem połączeń WhatsApp Web nie pozwala na skuteczne ponowienie próby, WinZapp zgłasza ją i przestaje ponawiać inicjalizację.
 
-- Połączenia grupowe: WhatsApp nie pozwala dzwonić do grup liczących więcej niż 32 członków, więc przyciski połączeń zastępuje przycisk "Nie można zadzwonić", którego opis mówi, że grupa ma więcej niż 32 członków, a skróty połączeń mówią to samo zamiast rozpoczynać połączenie.
+- Połączenia grupowe: WhatsApp nie pozwala dzwonić do grup liczących więcej niż 32 członków, więc przyciski połączeń zastępuje przycisk „Nie można zadzwonić”, którego opis mówi, że grupa ma więcej niż 32 członków, a skróty połączeń mówią to samo zamiast rozpoczynać połączenie.
 
-- Połączenia grupowe: przyciski połączenia głosowego i wideo pojawiają się teraz w rozmowie grupowej i rozpoczynają połączenie z grupą, a przychodzące połączenie grupowe dzwoni, jest zapowiadane nazwą grupy i można je odebrać tym samym przyciskiem odbierania i tym samym globalnym skrótem odbierania co połączenie indywidualne. Włączenie kamery podczas połączenia głosowego działa jak w połączeniu indywidualnym, a zdarzenia połączenia od każdego uczestnika pozostają przy grupie, więc okno połączenia zachowuje nazwę grupy od pierwszego dzwonka do końca.
+- Połączenia grupowe: przyciski połączenia głosowego i wideo pojawiają się teraz w czacie grupowym i rozpoczynają połączenie z grupą, a przychodzące połączenie grupowe dzwoni, jest zapowiadane nazwą grupy i można je odebrać tym samym przyciskiem odbierania i tym samym globalnym skrótem odbierania co połączenie indywidualne. Włączenie kamery podczas połączenia głosowego działa jak w połączeniu indywidualnym, a zdarzenia połączenia od każdego uczestnika pozostają przy grupie, więc okno połączenia zachowuje nazwę grupy od pierwszego dzwonka do końca.
 
-- Połączenia wideo: WinZapp znajduje teraz kamerę za pomocą dołączonego FFmpeg, który wyświetla urządzenia DirectShow bez nagłówka „DirectShow video devices”. Ta wersja FFmpeg nie zwracała żadnej kamery, więc połączenie wideo było tylko odbiorcze, z „No camera found” w logu.
+- Połączenia wideo: WinZapp poprawnie rozpoznaje kamery na liście zwracanej przez dołączoną wersję FFmpeg, także gdy nie zawiera ona nagłówka „DirectShow video devices”. Wcześniej WinZapp nie rozpoznawał tego formatu listy i zapisywał w dzienniku błąd „No camera found”. Przez to podczas połączenia można było odbierać obraz, ale nie przesyłać obrazu z własnej kamery.
 
-- Przyciski w wiadomościach firm można już używać: przycisk odpowiedzi wysyła odpowiedź tak samo jak WhatsApp Web (przyciski odpowiedzi zwykłych wiadomości, szybkie odpowiedzi wiadomości interaktywnych, przyciski szablonów i wiersze list), przycisk linku otwiera link, przycisk kopiowania kopiuje kod, a przycisk połączenia odczytuje numer. Przyciski pojawiają się pod listą wiadomości, gdy wiadomość jest zaznaczona.
+- Można już korzystać z przycisków w wiadomościach od firm: przycisk odpowiedzi wysyła odpowiedź tak samo jak WhatsApp Web (przyciski odpowiedzi zwykłych wiadomości, szybkie odpowiedzi wiadomości interaktywnych, przyciski szablonów i wiersze list), przycisk linku otwiera link, przycisk kopiowania kopiuje kod, a przycisk połączenia odczytuje numer. Przyciski pojawiają się pod listą wiadomości, gdy wiadomość jest zaznaczona.
 
 - WPPConnect Server 2.10.61 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
@@ -498,27 +498,27 @@ NOWOŚCI
 
 - Aktualizacje macOS wyjaśniają, czy weryfikacja nie powiodła się z powodu połączenia, certyfikatu, serwera lub limitu żądań GitHub oraz czy nie można sprawdzić pliku weryfikacji czy oficjalnego tagu wydania. Tymczasowe błędy połączenia i serwera powodują jedną ponowną próbę; limity żądań pokazują czas oczekiwania i nie powodują kolejnych żądań w tym czasie.
 
-- Aktualizacje: instalacja zachowuje wyłączność po zamknięciu WinZapp, a pobrany pakiet oczekujący na instalację jest zachowywany. Tylko pełna kopia oznacza sukces; udana aktualizacja usuwa ostrzeżenie o wcześniejszym błędzie. Automatyczne ponowne otwarcie czeka na zakończenie instalatora i nie następuje po przekroczeniu limitu oczekiwania. Po niepełnym lub niepotwierdzonym kopiowaniu WinZapp pozostaje zamknięty i otwiera instrukcje naprawy w Notatniku.
+- Aktualizacje: po zamknięciu WinZappa instalator nadal zapobiega równoczesnemu uruchomieniu kolejnej instalacji, a pobrany pakiet oczekujący na instalację jest zachowywany. Tylko pełna kopia oznacza sukces; udana aktualizacja usuwa ostrzeżenie o wcześniejszym błędzie. Automatyczne ponowne otwarcie czeka na zakończenie instalatora i nie następuje po przekroczeniu limitu oczekiwania. Po niepełnym lub niepotwierdzonym kopiowaniu WinZapp pozostaje zamknięty i otwiera instrukcje naprawy w Notatniku.
 
-- Połączenia głosowe zachowują ciągłość czasową między pakietami audio i używają konwersji z ograniczeniem pasma, gdy mikrofon lub głośnik wymaga innej częstotliwości próbkowania. Dźwięk o częstotliwości używanej w połączeniu nadal trafia bezpośrednio do dalszego przetwarzania.
+- Połączenia głosowe zachowują ciągłość czasową między pakietami audio i używają konwersji z ograniczeniem pasma, gdy mikrofon lub głośnik wymaga innej częstotliwości próbkowania. Dźwięk, którego częstotliwość próbkowania odpowiada częstotliwości używanej w połączeniu, jest przekazywany dalej bez ponownego próbkowania.
 
-- Okno Ustawienia ma teraz pole wyszukiwania i listę kategorii: strzałki zmieniają kategorię, Tab przechodzi do jej opcji, a w wyszukiwaniu strzałka w dół prowadzi do wyników, gdzie Enter lub Spacja otwiera znalezioną opcję, nawet gdy jest w oknie przycisku. Kilka kategorii połączono: Dźwięk (urządzenia, audio wklejone Ctrl+V, wiadomości głosowe i wyciszanie podczas nagrywania), Dźwięki zdarzeń (zdarzenia dźwiękowe i dźwięki powiadomień) i Pamięć (z folderem zapisu). Zawartość mówiona, Odtwarzanie audio, Kopia zapasowa, Skróty klawiszowe, Reakcje, Powiadomienia, Wiadomości, Rozmowy, Zabezpieczone czaty i Potwierdzenia stały się przyciskami, które otwierają okno każdego tematu. „Interfejs użytkownika” nazywa się teraz „Interfejs”, a Połączenie przeniesiono na koniec listy.
+- Okno Ustawienia ma teraz pole wyszukiwania i listę kategorii: strzałki zmieniają kategorię, Tab przechodzi do jej opcji, a w wyszukiwaniu strzałka w dół prowadzi do wyników, gdzie Enter lub Spacja otwiera znalezioną opcję, także wtedy, gdy znajduje się w dodatkowym oknie otwieranym przyciskiem. Kilka kategorii połączono: Dźwięk (urządzenia, audio wklejone Ctrl+V, wiadomości głosowe i wyciszanie podczas nagrywania), Dźwięki zdarzeń (zdarzenia dźwiękowe i dźwięki powiadomień) i Pamięć (z folderem zapisu). Zawartość mówiona, Odtwarzanie audio, Kopia zapasowa, Skróty klawiszowe, Reakcje, Powiadomienia, Wiadomości, Czaty, Zabezpieczone czaty i Potwierdzenia stały się przyciskami otwierającymi dodatkowe okna z odpowiednimi opcjami. „Interfejs użytkownika” nazywa się teraz „Interfejs”, a Połączenie przeniesiono na koniec listy.
 
-- Ustawienia WhatsApp (menu Plik) otwiera teraz ustawienia od razu w kategorii Ustawienia WhatsApp, z przyciskami Prywatność i Profil; osobne okno zniknęło. WinZapp pyta WhatsApp dopiero po otwarciu każdego przycisku, a Ctrl+Shift+, nadal otwiera tę kategorię.
+- Polecenie „Ustawienia WhatsApp” w menu Plik otwiera teraz ustawienia od razu w kategorii Ustawienia WhatsApp, z przyciskami Prywatność i Profil; osobne okno zniknęło. WinZapp pyta WhatsApp dopiero po otwarciu ustawień prywatności lub profilu, a Ctrl+Shift+, nadal otwiera tę kategorię.
 
 - Społeczności: okno „Nowy czat” ma nowy przycisk „Społeczności”, który otwiera listę społeczności, do których należysz. Po wybraniu społeczności widać jej opis, administratorów i te jej grupy, do których dołączono, z oznaczoną grupą ogłoszeń i grupą ogólną; Enter lub „Otwórz grupę” przechodzi do wybranej grupy. Jeśli jesteś administratorem społeczności, okno oferuje też „Dodaj grupy”, „Usuń grupę ze społeczności”, „Nadaj uprawnienia administratora społeczności”, „Odbierz uprawnienia administratora społeczności” i „Dezaktywuj społeczność”, a „Nowa społeczność” tworzy społeczność z nazwą, opisem i wybranymi grupami. Po każdym działaniu WinZapp ponownie odczytuje społeczności i mówi, że gotowe, dopiero gdy WhatsApp pokazuje zmianę; w przeciwnym razie informuje, że żądanie zostało wysłane, ale nie jest jeszcze potwierdzone, albo że zostało odrzucone.
 
-- Odpowiedzi na ogłoszenia społeczności: otwórz menu wiadomości i wybierz "Odpowiedzi na ogłoszenie społeczności", aby czytać i wysyłać odpowiedzi. Odpowiedzi odświeżają się same, gdy okno jest otwarte, pole odpowiedzi nie jest już tylko do odczytu, a tekst zostaje zachowany, gdy wysłanie nie zostanie potwierdzone. Na liście czatów podgląd grupy pokazuje „X odpowiedział(a) na ogłoszenie”, gdy to jest najnowsze zdarzenie. Ogłoszenia podają znaną liczbę odpowiedzi. Autorzy mają zapisane nazwy lub nazwy profilu, a własne odpowiedzi uwzględniają ustawienie sposobu odnoszenia się do użytkownika.
+- Odpowiedzi na ogłoszenia społeczności: otwórz menu wiadomości i wybierz „Odpowiedzi na ogłoszenie społeczności”, aby czytać i wysyłać odpowiedzi. Odpowiedzi odświeżają się same, gdy okno jest otwarte, pole odpowiedzi nie jest już tylko do odczytu, a tekst zostaje zachowany, gdy wysłanie nie zostanie potwierdzone. Na liście czatów podgląd grupy pokazuje „X odpowiedział(a) na ogłoszenie”, gdy to jest najnowsze zdarzenie. Ogłoszenia podają znaną liczbę odpowiedzi. Autorzy mają zapisane nazwy lub nazwy profilu, a własne odpowiedzi uwzględniają ustawienie sposobu odnoszenia się do użytkownika.
 
 - Społeczności są teraz pozycją listy nawigacji, po Połączeniach, ze skrótem Alt+8 w nazwie pozycji; można do nich dojść strzałkami po liście, a nie tylko skrótem Alt+8.
 
 - Blokowanie numeru, którego nie ma w zapisanych kontaktach, nie kończy się już błędem „Nie można zablokować tego kontaktu”: WinZapp otwiera teraz czat, którego WhatsApp wymaga przed zablokowaniem.
 
-- Nowa rozmowa rozpoczęta z brazylijskim numerem wpisanym z dodatkową dziewiątką nie pojawia się już dwa razy na liście rozmów po wysłaniu pierwszej wiadomości: WinZapp zachowuje rozmowę pod numerem, którego używa sam WhatsApp.
+- Nowy czat rozpoczęty z brazylijskim numerem wpisanym z dodatkową dziewiątką nie pojawia się już dwa razy na liście czatów po wysłaniu pierwszej wiadomości: WinZapp zachowuje czat pod numerem, którego używa sam WhatsApp.
 
 - Wiadomości wideo (okrągłe filmy wysyłane zamiast wiadomości głosowej) są teraz wyświetlane jako filmy, zamiast „Niezgodna wiadomość”, i są nazwane „wiadomość wideo” na liście, z tym samym czasem trwania, odtwarzaniem i opcją Zapisz jako co każdy film.
 
-- Eliminacja echa w połączeniach głosowych i wideo została przebudowana na tym samym silniku, którego używają Google Meet i sam WhatsApp (eliminator echa WebRTC): rozmowa przez głośnik laptopa lub z włączonym odsłuchem (loopback) miksera nie sprawia już, że druga osoba słyszy własny głos. Opcja jest teraz włączona, także dla osób, które już używały WinZapp; aby ją wyłączyć, odznacz "Włącz eliminację echa" w "Ustawienia dźwięku połączenia". Redukcja szumów mikrofonu podczas połączenia również korzysta teraz z tego silnika.
+- Eliminacja echa w połączeniach głosowych i wideo została przebudowana na tym samym silniku, którego używają Google Meet i sam WhatsApp (eliminator echa WebRTC): ogranicza powrót głosu rozmówcy do jego urządzenia, gdy dźwięk z głośników laptopa lub odsłuchu (loopback) miksera trafia z powrotem do połączenia. Opcja jest teraz włączona, także dla osób, które już używały WinZapp; aby ją wyłączyć, odznacz „Włącz eliminację echa” w „Ustawienia dźwięku połączenia”. Redukcja szumów mikrofonu podczas połączenia również korzysta teraz z tego silnika.
 
 - Dziennik połączeń (log.log) pokazuje teraz co 5 sekund, ile dźwięku z głośnika trafia do mikrofonu przed eliminacją echa i ile jeszcze zostaje w tym, co jest wysyłane, wraz z opóźnieniem tego echa. Jeśli ktoś nadal słyszy własny głos, dziennik mówi, czy echo przeszło przez eliminator, czy dotarło inną drogą.
 
@@ -542,11 +542,11 @@ NOWOŚCI
 
 - Lokalna transkrypcja: przy „transkrybuj bez okna postępu” poproszenie o transkrypcję w wierszu innej wiadomości, gdy jedna trwa, dodaje nową do kolejki zamiast odmowy; ponowne naciśnięcie skrótu na oczekującej wiadomości usuwa ją z kolejki.
 
-- Lokalna transkrypcja: tryb automatyczny nie mówi już „Żaden model transkrypcji nie jest gotowy” komuś, kto ma pobrany model: na małej karcie graficznej, na której zainstalowany model się nie mieści, jest on używany na procesorze zamiast prosić o kolejne pobieranie; a automatyczny silnik kieruje się modelami, które już są na komputerze.
+- Lokalna transkrypcja: tryb automatyczny nie mówi już „Żaden model transkrypcji nie jest gotowy” komuś, kto ma pobrany model: gdy karta graficzna ma zbyt mało pamięci na pobrany model, WinZapp uruchamia go na procesorze zamiast prosić o kolejne pobieranie; a automatyczny silnik kieruje się modelami, które już są na komputerze.
 
-- Enter i spacja, które transkrybują, działają teraz także dla audio i wideo wysłanych jako plik, a karta Multimedia w danych czatu stosuje tę opcję do filmów.
+- Enter i spacja, które transkrybują, działają teraz także dla audio i wideo wysłanych jako plik, a karta Media w danych czatu stosuje tę opcję do filmów.
 
-- Dane czatu: automatyczna transkrypcja to teraz dwa pola, lokalna (Whisper) i online, każde pokazuje, co czat robi teraz, i może ją włączyć lub wyłączyć tylko dla tego czatu.
+- Dane czatu: automatyczna transkrypcja to teraz dwa pola, lokalna (Whisper) i online, każde pole pokazuje bieżące ustawienie automatycznej transkrypcji i pozwala zmienić je tylko dla danego czatu.
 
 - Spróbuj wysłać ponownie: w menu Twojej wiadomości, której wysłanie się nie powiodło lub nie zostało potwierdzone, tekstu lub załącznika, oraz dla statusów, które nie zostały wysłane — zostają one teraz na karcie Status zaraz po Mój status; skrót Ctrl+Shift+Y. Nic nie jest wysyłane ponownie samo.
 
@@ -560,18 +560,18 @@ NOWOŚCI
 
 - Ustawienia WhatsApp: w Prywatności opcje statusu „Moje kontakty oprócz” i „Udostępniaj tylko” proponują tylko kontakty zapisane w telefonie, jedyne, którym WhatsApp pozwala zobaczyć status; w Profilu przycisk Wybierz zdjęcie mówi, czy jest bieżące zdjęcie i który plik wybrano, bez nawigacji po obiektach.
 
-- Listy czatów: przy włączonej opcji „Esc odznacza” klawisz Esc odznacza zaznaczone czaty na liście głównej, w archiwum i w zablokowanych czatach.
+- Listy czatów: przy włączonej opcji „Esc odznacza” klawisz Esc odznacza zaznaczone czaty na liście głównej, w archiwum i w zabezpieczonych czatach.
 
 - Aktualizacja przy kilku otwartych kontach: instalator czeka, aż wszystkie konta zostaną zamknięte, zanim zacznie kopiować, a WinZapp nie kończy już działania bez słowa przy starcie, gdy konto jest już otwarte lub aktualizacja wygląda na zawieszoną: wyjaśnia powód i zapisuje go w logu. Podczas aktualizacji, która wciąż trwa, tylko zapisuje to w logu i kończy działanie, bez okna komunikatu, bo instalator po zakończeniu sam go ponownie otwiera.
 
 - Synchronizacja dużych kont: po dużych partiach wiadomości WinZapp prosi WhatsApp Web o zwolnienie pamięci, której już nie używa, co zmniejsza zużycie podczas synchronizacji.
 
-- Karta Multimedia w danych czatu: po Zapisz jako czytnik ekranu nie ogłasza już okna jako niedostępnego.
+- Karta Media w danych czatu: po Zapisz jako czytnik ekranu nie ogłasza już okna jako niedostępnego.
 
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="tr" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -683,7 +683,7 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
+      <description xml:lang="ro" sparkle:format="plain-text">- Revisão da terminologia polonesa: changelog, guia do usuário e menu (continua #608) (#611)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -795,6 +795,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4697alpha/WinZapp-macOS-arm64.zip" length="313078048" type="application/octet-stream" sparkle:edSignature="RnSOOZOK7WcLlh1LcbMBn6S2PKajAX9y4ziUNG2dLrk8I+9ZMmOS+p7KgOfsl6h1BULSxwQKbS2iR+BYmZTgDQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4696alpha</title>
+      <pubDate>Tue, 27 Oct 2026 00:56:21 +0000</pubDate>
+      <sparkle:version>3.0.0.46961</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4696alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4696alpha/WinZapp-macOS-arm64.zip" length="312829342" type="application/octet-stream" sparkle:edSignature="9ZzxPCa8TXFj7CCJgItzgutIGhvgHQVRC7JBroyUdvgjAzwnDF4M160K4vgihxNwHMO/tl+pOe34WrKTd8+OAg=="></enclosure>
     </item>
     <item>
@@ -823,15 +832,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4692alpha/WinZapp-macOS-arm64.zip" length="313542375" type="application/octet-stream" sparkle:edSignature="ghPohe1T42u5yrG5WB/rKy1rRP3D/jdfDDz397fq6MF5egnoMqpZBDa3dtiTUwxPcmUohzx6odiozzBIXXJECw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4691alpha</title>
-      <pubDate>Sat, 24 Oct 2026 15:36:37 +0000</pubDate>
-      <sparkle:version>3.0.0.46911</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4691alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4691alpha/WinZapp-macOS-arm64.zip" length="313625210" type="application/octet-stream" sparkle:edSignature="yALXp4/Zquw8V2+LTpmtSSv8DQ3yc7ER550AiIY/XngY3z9OeyJnk32zd/zyess/oe1OIqdmSU81IL92DdJ2Bg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2446,6 +2446,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: coTFx4yowY4+poBDhUdnb5szfzLcuO4y7u6Ys9w7dAFMLd/FDSNoM09nsIlQijSqUaRRD+MSyeMEvwE/zt2uDg==
-length: 502132
+edSignature: pKGc3LVlm5Xh1z4axbQfiGmq155RPvmwNOWnGhxBB5ycIET12pNPiwIew/beYjG2QbcDeS+afvQKXqLoyPNqAQ==
+length: 502385
 -->
