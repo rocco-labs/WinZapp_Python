@@ -5,19 +5,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4695alpha</title>
-      <pubDate>Mon, 26 Oct 2026 23:51:29 +0000</pubDate>
-      <sparkle:version>3.0.0.46951</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4695alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4696alpha</title>
+      <pubDate>Tue, 27 Oct 2026 00:56:21 +0000</pubDate>
+      <sparkle:version>3.0.0.46961</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4696alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="en" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
 - Many contact presence updates in a row (typing, online) no longer freeze WinZapp for seconds or slow the whole computer down on accounts with many chats.
+- Contact presence: learning new contact names no longer waits for a database write in the interface. Pending name updates keep the latest full snapshot, with ordered handling during shutdown and local data clearing.
+
+- Contact presence: reduced repeated interface work when many online or typing updates arrive. Unchanged window titles and archived-chat labels are no longer rewritten, while typing announcements keep their existing timing.
 
 - Chat lists (conversations, archived and locked chats) now use the full width of the list, so chat names and message previews are cut off much less when the window is wide.
 
@@ -120,13 +123,16 @@ WHAT'S NEW
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
 - Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
 - Muitas atualizações de presença de contatos seguidas (digitando, online) não congelam mais o WinZapp por segundos nem deixam o computador lento em contas com muitos chats.
+- Presença dos contatos: ao aprender novos nomes, a interface não espera mais pela gravação no banco de dados. As atualizações pendentes mantêm a cópia completa mais recente, respeitando a ordem ao fechar ou limpar os dados locais.
+
+- Presença dos contatos: menos trabalho repetido na interface quando chegam muitas atualizações de online ou digitando. O título da janela e o rótulo das conversas arquivadas não são reescritos quando permanecem iguais, sem atrasar os anúncios de digitação.
 
 - As listas de conversas (conversas, arquivadas e bloqueadas) agora usam toda a largura da lista, e os nomes dos chats e as prévias das mensagens são cortados bem menos quando a janela é larga.
 
@@ -229,13 +235,16 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
 - O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
 - Muitas atualizações de presença de contactos seguidas (a escrever, online) já não congelam o WinZapp durante segundos nem deixam o computador lento em contas com muitas conversas.
+- Presença dos contactos: ao aprender novos nomes, a interface deixa de esperar pela gravação na base de dados. As atualizações pendentes mantêm a cópia completa mais recente, respeitando a ordem ao fechar ou limpar os dados locais.
+
+- Presença dos contactos: menos trabalho repetido na interface quando chegam muitas atualizações de online ou a escrever. O título da janela e o texto das conversas arquivadas não são reescritos quando permanecem iguais, sem atrasar os anúncios de escrita.
 
 - As listas de conversas (conversas, arquivadas e bloqueadas) passam a usar toda a largura da lista, pelo que os nomes das conversas e as pré-visualizações das mensagens são cortados muito menos quando a janela é larga.
 
@@ -338,13 +347,16 @@ NOVIDADES
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
 - O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="es" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
 - Muchas actualizaciones de presencia de contactos seguidas (escribiendo, en línea) ya no congelan WinZapp durante segundos ni ralentizan todo el ordenador en cuentas con muchos chats.
+- Presencia de contactos: al aprender nuevos nombres, la interfaz ya no espera a que se escriban en la base de datos. Las actualizaciones pendientes conservan la última copia completa y respetan el orden al cerrar o borrar los datos locales.
+
+- Presencia de los contactos: se reduce el trabajo repetido de la interfaz al recibir muchas actualizaciones de conexión o escritura. El título de la ventana y la etiqueta de los chats archivados ya no se reescriben si no cambian, sin retrasar los avisos de escritura.
 
 - Las listas de chats (conversaciones, archivados y bloqueados) ahora usan todo el ancho de la lista, por lo que los nombres de los chats y las vistas previas de los mensajes se cortan mucho menos cuando la ventana es ancha.
 
@@ -447,13 +459,16 @@ NOVEDADES
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
 - La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="pl" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
 - Wiele kolejnych aktualizacji obecności kontaktów (pisanie, online) nie zawiesza już WinZapp na kilka sekund ani nie spowalnia całego komputera na kontach z wieloma czatami.
+- Obecność kontaktów: przy zapamiętywaniu nowych nazw kontaktów interfejs nie czeka już na zapis do bazy danych. Oczekujące aktualizacje zachowują najnowszy pełny zestaw nazw, z zachowaniem kolejności przy zamykaniu i czyszczeniu danych lokalnych.
+
+- Obecność kontaktów: ograniczono powtarzaną pracę interfejsu przy wielu aktualizacjach dostępności lub pisania. Niezmieniony tytuł okna i etykieta zarchiwizowanych czatów nie są ponownie ustawiane, a komunikaty o pisaniu zachowują dotychczasowy czas ogłaszania.
 
 - Listy czatów (rozmowy, zarchiwizowane i zablokowane) wykorzystują teraz całą szerokość listy, dzięki czemu nazwy czatów i podglądy wiadomości są znacznie rzadziej ucinane w szerokim oknie.
 
@@ -556,13 +571,16 @@ NOWOŚCI
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
 - Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="tr" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
 - Art arda gelen çok sayıda kişi durumu güncellemesi (yazıyor, çevrimiçi) artık WinZapp'i saniyelerce dondurmuyor ve çok sohbetli hesaplarda bilgisayarın tamamını yavaşlatmıyor.
+- Kişi durumu: yeni kişi adları öğrenilirken arayüz artık veritabanı kaydını beklemiyor. Bekleyen ad güncellemeleri son tam kopyada birleştiriliyor; kapanış ve yerel veri temizleme sırasında kayıt sırası korunuyor.
+
+- Kişi durumu: çok sayıda çevrimiçi veya yazıyor güncellemesi geldiğinde arayüzde yinelenen işler azaltıldı. Değişmeyen pencere başlığı ve arşivli sohbet etiketi yeniden yazılmıyor; yazıyor bildirimlerinin zamanlaması korunuyor.
 
 - Sohbet listeleri (sohbetler, arşivlenenler ve kilitli sohbetler) artık listenin tüm genişliğini kullanıyor; böylece pencere genişken sohbet adları ve mesaj önizlemeleri çok daha az kesiliyor.
 
@@ -665,13 +683,16 @@ YENİLİKLER
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
 - Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Evita o congelamento da interface por atualizações de presença em sequência (#602)
+      <description xml:lang="ro" sparkle:format="plain-text">- Reduz o trabalho de interface por presença e grava o cache de nomes em segundo plano (continua #601) (#603)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
 - Multe actualizări de prezență ale contactelor la rând (scrie, online) nu mai blochează WinZapp câteva secunde și nu mai încetinesc întregul calculator pe conturile cu multe conversații.
+- Prezența contactelor: la memorarea unor nume noi, interfața nu mai așteaptă scrierea în baza de date. Actualizările în așteptare păstrează cea mai recentă copie completă și respectă ordinea la închidere și la ștergerea datelor locale.
+
+- Prezența contactelor: s-a redus munca repetată a interfeței la primirea multor actualizări de conectare sau tastare. Titlul ferestrei și eticheta conversațiilor arhivate nu mai sunt rescrise dacă nu se schimbă, fără a întârzia anunțurile de tastare.
 
 - Listele de conversații (conversații, arhivate și blocate) folosesc acum toată lățimea listei, așa că numele conversațiilor și previzualizările mesajelor sunt tăiate mult mai puțin când fereastra este lată.
 
@@ -774,6 +795,15 @@ NOUTĂȚI
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
 - Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4696alpha/WinZapp-macOS-x86_64.zip" length="347879674" type="application/octet-stream" sparkle:edSignature="qtnkdmTc5YHwL8dUF1VpJKeUZkIhyxWUBWLY3tamDliBesIreDm8lIcKErDnCFaiNdJ4qRrcFOQchScpfOPLAg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4695alpha</title>
+      <pubDate>Mon, 26 Oct 2026 23:51:29 +0000</pubDate>
+      <sparkle:version>3.0.0.46951</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4695alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4695alpha/WinZapp-macOS-x86_64.zip" length="347871234" type="application/octet-stream" sparkle:edSignature="oWdI/W61wfaJGS+2b8Uj1+Mh8kqFo4A9RukKQ3/LoCIqtv0TgrnDg6hmKuMu/uWKzNzubwrYq21w14JT5os0Dg=="></enclosure>
     </item>
     <item>
@@ -802,15 +832,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4691alpha/WinZapp-macOS-x86_64.zip" length="348676979" type="application/octet-stream" sparkle:edSignature="V91iNQtsUcfaRA19gMsTpJXe6qPX5FWbPX4sRF4/l+SM/YvzUe980nkRdIP5+BlqZf5DnonqP7+5ZQqyUZPlCA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4690alpha</title>
-      <pubDate>Sat, 24 Oct 2026 15:08:53 +0000</pubDate>
-      <sparkle:version>3.0.0.46901</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4690alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4690alpha/WinZapp-macOS-x86_64.zip" length="348657743" type="application/octet-stream" sparkle:edSignature="j2u2dwElSw0BWwLaDKULsVaweEURBW/zFa3/CygTNdg89OYZ4q/efmbgkMyYILI6N87wGwPQE9ALEMI6fkwtCw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2425,6 +2446,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: t04PNpbTnJJQRTMrmXE1kaXbGa8J73TtXKsoMO4O0//sodukj+hhUasWNfGfp/JXiA36ivGPjZcm3mcK0sjNAA==
-length: 498473
+edSignature: O8DaJQjkaedJWs2o+DdYmTk8PYkehNfJeNj7H+TcSuqnClk2QJx9xouPKwadAC3Q2NqrA1WjmOpPnuiFQBe8Dg==
+length: 502139
 -->
