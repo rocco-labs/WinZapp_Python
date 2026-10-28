@@ -5,17 +5,40 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4703alpha</title>
-      <pubDate>Wed, 28 Oct 2026 04:21:03 +0000</pubDate>
-      <sparkle:version>3.0.0.47031</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4703alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4985alpha</title>
+      <pubDate>Wed, 28 Oct 2026 22:24:06 +0000</pubDate>
+      <sparkle:version>3.0.0.49851</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4985alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+      <description xml:lang="en" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- A group call that rang and was not answered is now recorded in its group, and its ring names the group: it no longer appears as a private call from whoever started it.
+
+- New connection engine, experimental: Neonize connects to WhatsApp without a browser, through a local bridge. Choose it in Settings, Connection (or in the question on the first launch) and restart WinZapp; WPPConnect remains the default. Compiled builds already include the bridge and keep WPPConnect installed alongside it; from a repository checkout, set the bridge up with neonize_bridge/prepare.py (see the README in that folder). On the first launch after updating, an install still on WPPConnect gets a one-time notice offering the switch; each engine keeps its own connection, so switching and coming back does not lose either. With Neonize, custom chat lists, joining a community's groups (or asking to) and cancelling that request, deactivating a community, editing and deleting your channels, choosing who sees your status and removing a contact also work. Catalogs, carts and orders also work with Neonize (viewing a business's catalog, filling and sending a cart, and, on a Business account, answering orders and managing your own catalog), as do buttons, lists and Pix keys in messages. Forwarding locations and contact cards works with Neonize too. Video calls, turning a voice call into a video call and group calls also work with Neonize. A community also lists, with Neonize, the groups you are not in. Ongoing group calls can also be found and joined with Neonize, with the list of who is in them.
 
 - Use the Call participants button in the call window, or on a selected ongoing call in Calls, to see the connected people by name.
 
@@ -128,12 +151,59 @@ WHAT'S NEW
 
 - New chat: the button to join a group by link now has an Alt shortcut letter.
 
-- Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- Echo cancellation now also works when the echo comes back very late, as with the loopback of some mixers, which could take more than half a second and reached the other person in full. WinZapp measures how long the other person's voice takes to come back through your microphone and adjusts the canceller to that delay, up to 1.5 seconds.
+
+- Neonize: the name of a saved contact is no longer replaced, once a minute, by the profile name the person chose in their own WhatsApp (or by the name the phone gave the conversation). The name you gave the contact stays; the profile name only shows for people you have not saved.
+
+- Neonize calls: WinZapp now plays the tones that WhatsApp Web used to play for you. While the other phone rings you hear the ringback with the pitch and rhythm of the country you called, and short beeps play while the call connects or reconnects. WinZapp makes them itself; with the WPPConnect engine nothing changes.
+
+- Neonize calls: when a call that was answered ends, WinZapp plays the call-ended sound of WhatsApp. It is a new Sound Event, "Call ended", so it follows the sound pack and can be turned off or replaced in the sound events. With the WPPConnect engine WhatsApp Web keeps playing its own.
+
+- Voice messages and audios that did not play: when the sound card was not available at the moment WinZapp opened the audio output (for example when the PC woke up), no voice message played until WinZapp was restarted, and nothing said why. WinZapp now tries to restore the audio output when a playback fails, and if it still cannot play, it says so through the screen reader.
+
+- Neonize: conversations that seemed to disappear. WhatsApp gives no activity date to most old conversations, and WinZapp took them for empty chats and did not keep them when the local data was cleared (F5 to resync, for example): an account with more than 160 conversations came back with 37. The bridge now dates each conversation by its newest message, so they all return.
+
+- Neonize: a community and its announcement group show the community's total member count, as WhatsApp does, not only the group's own participants.
+
+- Neonize: a saved contact who writes in a group shows with their address-book name, without the "~" of an unsaved contact. Channels no longer appear in the chat list as chats without a name. A group member whose number is hidden shows with their profile name, no longer as "+55∙∙∙∙∙∙∙∙76".
+
+- Channels in the chat list: a new option, "Show channels in the chat list", in Settings, Interface, Chats, off by default, keeps channels out of the conversation list. Turn it on to see them there again.
+
+- Switching between WPPConnect and Neonize: both engines use port 6300, and the program mistook the engine you had just left, still closing, for the one you chose. Choosing WPPConnect then gave "no pairing code was received", and switching to Neonize showed connecting and then offline until the next restart. WinZapp now makes room first (it stops the Neonize bridge, or waits for the WPPConnect server to close), and a second WinZapp folder no longer joins the first one's bridge.
+
+- The pairing window now has a "Connection engine" list before the country, so someone who has not paired yet can choose between WPPConnect and Neonize without reaching Settings. Choosing one asks for confirmation and restarts WinZapp on it.
+
+- The program no longer ships with Node.js, since Neonize does not need it. If you choose WPPConnect (on first start, in the pairing window or in Settings), WinZapp downloads a checksum-verified Node.js and sets up WPPConnect before connecting. The download is smaller.
+
+- Neonize: if the bridge goes away while WinZapp is open (for example, a previous run that was still closing stops it right after this one accepted it, which happened when switching to Neonize from the startup notice), WinZapp now starts it again by itself instead of staying on "connecting" and then offline until the next restart.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Uma chamada em grupo que tocou e não foi atendida agora fica registrada no grupo, e o aviso da chamada mostra o grupo: ela não aparece mais como uma ligação particular de quem a iniciou.
+
+- Novo motor de conexão, experimental: o Neonize conecta ao WhatsApp sem navegador, por uma ponte local. Escolha em Configurações, Conexão (ou na pergunta da primeira abertura) e reinicie o WinZapp; o WPPConnect continua sendo o padrão. As versões compiladas já incluem a ponte e mantêm o WPPConnect instalado ao lado dela; a partir de um clone do repositório, prepare a ponte com neonize_bridge/prepare.py (veja o README da pasta). Na primeira abertura após a atualização, quem ainda usa o WPPConnect vê um aviso único oferecendo a troca; cada motor mantém a própria conexão, então alternar e voltar não perde nenhuma. Com o Neonize também funcionam as listas de conversas personalizadas, entrar em grupos de uma comunidade (ou pedir para entrar) e cancelar esse pedido, desativar uma comunidade, editar e apagar seus canais, escolher quem vê seu status e remover um contato. Também funcionam com o Neonize os catálogos, carrinhos e pedidos (ver o catálogo de uma empresa, montar e enviar um carrinho e, numa conta Business, responder pedidos e cuidar do próprio catálogo), além de botões, listas e chaves Pix nas mensagens. Encaminhar localizações e cartões de contato também funciona com o Neonize. Também funcionam com o Neonize as ligações de vídeo, passar uma ligação de voz para vídeo e as chamadas em grupo. Com o Neonize, a comunidade também lista os grupos dos quais você não participa. Com o Neonize também dá para encontrar as chamadas em grupo em andamento, entrar nelas e ver quem está na chamada.
 
 - Use o botão Participantes da ligação na janela da ligação ou em uma ligação em andamento selecionada em Ligações para ver os nomes das pessoas conectadas.
 
@@ -246,12 +316,59 @@ NOVIDADES
 
 - Nova conversa: o botão de entrar num grupo por link ganhou uma letra de atalho com Alt.
 
-- O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- O cancelamento de eco agora também funciona quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa leva para voltar pelo seu microfone e ajusta o cancelador para esse atraso, até 1,5 segundo.
+
+- Neonize: o nome de um contato salvo não é mais trocado, a cada minuto, pelo nome de perfil que a pessoa escolheu no próprio WhatsApp (nem pelo nome que o telefone deu à conversa). O nome que você deu ao contato permanece; o nome de perfil só aparece para quem você não salvou.
+
+- Chamadas na Neonize: o WinZapp agora toca os sons que o WhatsApp Web tocava por você. Enquanto o outro telefone chama, você ouve o toque de chamada com o tom e o ritmo do país para onde ligou, e bipes curtos tocam enquanto a chamada conecta ou reconecta. Quem gera os sons é o próprio WinZapp; com o motor WPPConnect nada muda.
+
+- Chamadas na Neonize: quando uma ligação atendida termina, o WinZapp toca o som de ligação encerrada do WhatsApp. É um novo evento de som, "Ligação encerrada", que acompanha o pacote de sons e pode ser desligado ou trocado nos eventos de som. Com o motor WPPConnect o WhatsApp Web continua tocando o dele.
+
+- Mensagens de voz e áudios que não tocavam: quando a placa de som não estava disponível no momento em que o WinZapp abriu a saída de áudio (por exemplo ao acordar o computador), nenhuma mensagem de voz tocava até reiniciar o WinZapp, e nada avisava o motivo. Agora o WinZapp tenta restaurar a saída de áudio quando uma reprodução falha e, se ainda assim não conseguir tocar, avisa pelo leitor de tela.
+
+- Neonize: conversas que pareciam sumir. O WhatsApp não informa a data de atividade da maioria das conversas antigas, e o WinZapp as tomava por conversas vazias e não as mantinha quando os dados locais eram apagados (o F5 para ressincronizar, por exemplo): uma conta com mais de 160 conversas voltava com 37. Agora a ponte data cada conversa pela mensagem mais recente, e todas voltam.
+
+- Neonize: uma comunidade e o grupo de avisos dela mostram o total de membros da comunidade, como no WhatsApp, e não só os participantes do próprio grupo.
+
+- Neonize: um contato salvo que escreve num grupo aparece com o nome da agenda, sem o "~" de contato não salvo. Os canais não aparecem mais na lista de conversas como conversas sem nome. Um membro de grupo com o número oculto aparece pelo nome do perfil, e não mais como "+55∙∙∙∙∙∙∙∙76".
+
+- Canais na lista de conversas: uma nova opção, "Mostrar canais na lista de conversas", em Configurações, Interface, Conversas, desmarcada por padrão, mantém os canais fora da lista de conversas. Marque para vê-los de novo ali.
+
+- Alternância entre WPPConnect e Neonize: os dois motores usam a porta 6300, e o programa confundia o motor que você acabara de deixar, ainda fechando, com o que você escolheu. Escolher a WPPConnect dava "nenhum código de pareamento foi recebido", e alternar para a Neonize mostrava conectando e depois offline até reiniciar. Agora o WinZapp abre espaço antes (para a ponte da Neonize, ou espera o servidor da WPPConnect fechar), e uma segunda pasta do WinZapp não se junta mais à ponte da primeira.
+
+- A janela de pareamento agora tem uma lista "Motor de conexão" antes do país, para quem ainda não pareou poder escolher entre WPPConnect e Neonize sem chegar às Configurações. Ao escolher, o WinZapp pede confirmação e reinicia com o motor escolhido.
+
+- O programa não vem mais com o Node.js, já que a Neonize não precisa dele. Se você escolher a WPPConnect (na primeira execução, na janela de pareamento ou nas Configurações), o WinZapp baixa um Node.js com checksum verificado e prepara a WPPConnect antes de conectar. O download ficou menor.
+
+- Neonize: se a ponte some enquanto o WinZapp está aberto (por exemplo, uma execução anterior que ainda estava fechando a encerra logo depois de esta a ter aceitado, o que acontecia ao alternar para a Neonize pelo aviso da abertura), o WinZapp agora a inicia de novo sozinho, em vez de ficar em "conectando" e depois offline até o próximo reinício.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Uma chamada de grupo que tocou e não foi atendida fica agora registada no grupo, e o aviso da chamada mostra o grupo: já não aparece como uma chamada particular de quem a iniciou.
+
+- Novo motor de ligação, experimental: o Neonize liga ao WhatsApp sem navegador, através de uma ponte local. Escolha em Definições, Ligação (ou na pergunta da primeira abertura) e reinicie o WinZapp; o WPPConnect continua a ser o predefinido. As versões compiladas já incluem a ponte e mantêm o WPPConnect instalado ao lado dela; a partir de um clone do repositório, prepare a ponte com neonize_bridge/prepare.py (consulte o README da pasta). Na primeira abertura após a atualização, quem ainda usa o WPPConnect vê um aviso único a oferecer a mudança; cada motor mantém a sua própria ligação, por isso mudar e voltar não perde nenhuma. Com o Neonize também funcionam as listas de conversas personalizadas, entrar em grupos de uma comunidade (ou pedir para entrar) e cancelar esse pedido, desativar uma comunidade, editar e eliminar os seus canais, escolher quem vê o seu estado e remover um contacto. Também funcionam com o Neonize os catálogos, carrinhos e encomendas (ver o catálogo de uma empresa, montar e enviar um carrinho e, numa conta Business, responder a encomendas e gerir o próprio catálogo), além de botões, listas e chaves Pix nas mensagens. Reencaminhar localizações e cartões de contacto também funciona com o Neonize. Também funcionam com o Neonize as chamadas de vídeo, passar uma chamada de voz para vídeo e as chamadas de grupo. Com o Neonize, a comunidade também lista os grupos em que não participa. Com o Neonize também é possível encontrar as chamadas de grupo em curso, entrar nelas e ver quem está na chamada.
 
 - Utilize o botão Participantes da chamada na janela da chamada ou numa chamada em curso selecionada em Chamadas para ver os nomes das pessoas ligadas.
 
@@ -364,12 +481,59 @@ NOVIDADES
 
 - Nova conversa: o botão de entrar num grupo por ligação tem agora uma letra de atalho com Alt.
 
-- O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- O cancelamento de eco passa a funcionar também quando o eco volta com muito atraso, como no retorno (loopback) de algumas mesas de som, que podia levar mais de meio segundo e passava inteiro para a outra pessoa. O WinZapp mede quanto tempo a voz da outra pessoa demora a voltar pelo seu microfone e ajusta o cancelador a esse atraso, até 1,5 segundos.
+
+- Neonize: o nome de um contacto guardado deixa de ser trocado, a cada minuto, pelo nome de perfil que a pessoa escolheu no próprio WhatsApp (ou pelo nome que o telemóvel deu à conversa). O nome que deu ao contacto mantém-se; o nome de perfil só aparece para quem não guardou.
+
+- Chamadas na Neonize: o WinZapp passa a tocar os sons que o WhatsApp Web tocava por si. Enquanto o outro telemóvel toca, ouve o sinal de chamada com o tom e o ritmo do país para onde ligou, e tocam bipes curtos enquanto a chamada liga ou volta a ligar. Os sons são gerados pelo próprio WinZapp; com o motor WPPConnect nada muda.
+
+- Chamadas na Neonize: quando uma chamada atendida termina, o WinZapp toca o som de chamada terminada do WhatsApp. É um novo evento de som, "Chamada terminada", que acompanha o pacote de sons e pode ser desligado ou substituído nos eventos de som. Com o motor WPPConnect o WhatsApp Web continua a tocar o seu.
+
+- Mensagens de voz e áudios que não reproduziam: quando a placa de som não estava disponível no momento em que o WinZapp abriu a saída de áudio (por exemplo ao acordar o computador), nenhuma mensagem de voz era reproduzida até reiniciar o WinZapp, e nada avisava o motivo. Agora o WinZapp tenta restaurar a saída de áudio quando uma reprodução falha e, se mesmo assim não conseguir reproduzir, avisa através do leitor de ecrã.
+
+- Neonize: conversas que pareciam desaparecer. O WhatsApp não indica a data de atividade da maioria das conversas antigas, e o WinZapp tomava-as por conversas vazias e não as mantinha quando os dados locais eram apagados (o F5 para voltar a sincronizar, por exemplo): uma conta com mais de 160 conversas voltava com 37. Agora a ponte data cada conversa pela mensagem mais recente, e todas voltam.
+
+- Neonize: uma comunidade e o grupo de avisos dela mostram o total de membros da comunidade, como no WhatsApp, e não apenas os participantes do próprio grupo.
+
+- Neonize: um contacto guardado que escreve num grupo aparece com o nome da agenda, sem o "~" de contacto não guardado. Os canais deixam de aparecer na lista de conversas como conversas sem nome. Um membro de grupo com o número oculto aparece pelo nome do perfil, e já não como "+55∙∙∙∙∙∙∙∙76".
+
+- Canais na lista de conversas: uma nova opção, "Mostrar canais na lista de conversas", em Definições, Interface, Conversas, desmarcada por predefinição, mantém os canais fora da lista de conversas. Marque-a para os voltar a ver ali.
+
+- Alternância entre WPPConnect e Neonize: os dois motores usam a porta 6300, e o programa confundia o motor que acabou de deixar, ainda a fechar, com o que escolheu. Escolher a WPPConnect dava "não foi recebido nenhum código de emparelhamento", e alternar para a Neonize mostrava a ligar e depois offline até reiniciar. Agora o WinZapp abre espaço primeiro (pára a ponte da Neonize, ou espera que o servidor da WPPConnect feche), e uma segunda pasta do WinZapp deixa de se juntar à ponte da primeira.
+
+- A janela de emparelhamento passa a ter uma lista "Motor de ligação" antes do país, para quem ainda não emparelhou poder escolher entre WPPConnect e Neonize sem chegar às Definições. Ao escolher, o WinZapp pede confirmação e reinicia com o motor escolhido.
+
+- O programa já não inclui o Node.js, pois a Neonize não precisa dele. Se escolher a WPPConnect (no primeiro arranque, na janela de emparelhamento ou nas Definições), o WinZapp descarrega um Node.js com checksum verificado e prepara a WPPConnect antes de ligar. A transferência ficou mais pequena.
+
+- Neonize: se a ponte desaparecer enquanto o WinZapp está aberto (por exemplo, uma execução anterior que ainda estava a fechar encerra-a logo depois de esta a ter aceitado, o que acontecia ao alternar para a Neonize pelo aviso do arranque), o WinZapp passa a iniciá-la de novo sozinho, em vez de ficar em "a ligar" e depois offline até ao próximo reinício.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Una llamada grupal que sonó y no se atendió ahora queda registrada en su grupo, y el aviso de llamada muestra el grupo: ya no aparece como una llamada privada de quien la inició.
+
+- Nuevo motor de conexión, experimental: Neonize se conecta a WhatsApp sin navegador, mediante un puente local. Elígelo en Configuración, Conexión (o en la pregunta del primer inicio) y reinicia WinZapp; WPPConnect sigue siendo el predeterminado. Las compilaciones ya incluyen el puente y mantienen WPPConnect instalado a su lado; desde un clon del repositorio, prepara el puente con neonize_bridge/prepare.py (consulta el README de esa carpeta). En el primer inicio tras actualizar, quien sigue con WPPConnect ve un aviso único que ofrece el cambio; cada motor conserva su propia conexión, así que cambiar y volver no pierde ninguna. Con Neonize también funcionan las listas de chats personalizadas, unirse a los grupos de una comunidad (o pedir unirse) y cancelar esa solicitud, desactivar una comunidad, editar y eliminar tus canales, elegir quién ve tu estado y eliminar un contacto. Con Neonize también funcionan los catálogos, carritos y pedidos (ver el catálogo de una empresa, llenar y enviar un carrito y, en una cuenta Business, responder pedidos y gestionar el propio catálogo), además de botones, listas y claves Pix en los mensajes. Reenviar ubicaciones y tarjetas de contacto también funciona con Neonize. Con Neonize también funcionan las videollamadas, convertir una llamada de voz en videollamada y las llamadas grupales. Con Neonize, una comunidad también muestra los grupos en los que no estás. Con Neonize también se pueden encontrar las llamadas grupales en curso, unirse a ellas y ver quién está en la llamada.
 
 - Usa el botón Participantes de la llamada en la ventana de llamada o en una llamada en curso seleccionada en Llamadas para ver los nombres de las personas conectadas.
 
@@ -482,12 +646,59 @@ NOVEDADES
 
 - Nueva conversación: el botón para unirse a un grupo por enlace tiene ahora una letra de atajo con Alt.
 
-- La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- La cancelación de eco ahora también funciona cuando el eco vuelve con mucho retraso, como en el retorno (loopback) de algunas mesas de mezclas, que podía tardar más de medio segundo y llegaba entero a la otra persona. WinZapp mide cuánto tarda la voz de la otra persona en volver por tu micrófono y ajusta el cancelador a ese retraso, hasta 1,5 segundos.
+
+- Neonize: el nombre de un contacto guardado ya no se sustituye, cada minuto, por el nombre de perfil que la persona eligió en su propio WhatsApp (ni por el nombre que el teléfono dio al chat). El nombre que diste al contacto se mantiene; el nombre de perfil solo aparece para quien no has guardado.
+
+- Llamadas en Neonize: WinZapp ahora reproduce los sonidos que WhatsApp Web reproducía por ti. Mientras suena el otro teléfono oyes el tono de llamada con el tono y el ritmo del país al que llamaste, y suenan pitidos cortos mientras la llamada se conecta o se reconecta. Los genera el propio WinZapp; con el motor WPPConnect no cambia nada.
+
+- Llamadas en Neonize: cuando termina una llamada contestada, WinZapp reproduce el sonido de llamada finalizada de WhatsApp. Es un nuevo evento de sonido, "Llamada finalizada", que sigue al paquete de sonidos y se puede desactivar o sustituir en los eventos de sonido. Con el motor WPPConnect, WhatsApp Web sigue reproduciendo el suyo.
+
+- Mensajes de voz y audios que no se reproducían: cuando la tarjeta de sonido no estaba disponible en el momento en que WinZapp abrió la salida de audio (por ejemplo al despertar el equipo), ningún mensaje de voz se reproducía hasta reiniciar WinZapp, y nada explicaba el motivo. Ahora WinZapp intenta restaurar la salida de audio cuando falla una reproducción y, si aun así no puede reproducir, lo anuncia con el lector de pantalla.
+
+- Neonize: chats que parecían desaparecer. WhatsApp no da fecha de actividad a la mayoría de los chats antiguos, y WinZapp los tomaba por chats vacíos y no los conservaba al borrar los datos locales (F5 para resincronizar, por ejemplo): una cuenta con más de 160 chats volvía con 37. Ahora el puente fecha cada chat con su mensaje más reciente y vuelven todos.
+
+- Neonize: una comunidad y su grupo de avisos muestran el total de miembros de la comunidad, como en WhatsApp, y no solo los participantes del propio grupo.
+
+- Neonize: un contacto guardado que escribe en un grupo aparece con el nombre de la agenda, sin la "~" de contacto no guardado. Los canales ya no aparecen en la lista de chats como chats sin nombre. Un miembro de grupo con el número oculto aparece con el nombre de su perfil, y ya no como "+55∙∙∙∙∙∙∙∙76".
+
+- Canales en la lista de chats: una nueva opción, "Mostrar canales en la lista de chats", en Configuración, Interfaz, Conversaciones, desactivada por defecto, mantiene los canales fuera de la lista de chats. Actívala para volver a verlos ahí.
+
+- Cambio entre WPPConnect y Neonize: los dos motores usan el puerto 6300, y el programa confundía el motor que acababas de dejar, aún cerrándose, con el que elegiste. Elegir WPPConnect daba "no se recibió ningún código de vinculación", y cambiar a Neonize mostraba conectando y luego sin conexión hasta reiniciar. Ahora WinZapp hace sitio primero (detiene el puente de Neonize o espera a que se cierre el servidor de WPPConnect), y una segunda carpeta de WinZapp ya no se une al puente de la primera.
+
+- La ventana de vinculación ahora tiene una lista "Motor de conexión" antes del país, para que quien aún no ha vinculado pueda elegir entre WPPConnect y Neonize sin llegar a Configuración. Al elegir, WinZapp pide confirmación y se reinicia con el motor elegido.
+
+- El programa ya no incluye Node.js, porque Neonize no lo necesita. Si eliges WPPConnect (en el primer inicio, en la ventana de vinculación o en Configuración), WinZapp descarga un Node.js con checksum verificado y prepara WPPConnect antes de conectar. La descarga es más pequeña.
+
+- Neonize: si el puente desaparece mientras WinZapp está abierto (por ejemplo, una ejecución anterior que aún se estaba cerrando lo detiene justo después de que esta lo aceptara, lo que ocurría al cambiar a Neonize desde el aviso de inicio), WinZapp ahora lo inicia de nuevo por sí mismo, en lugar de quedarse en "conectando" y luego sin conexión hasta el siguiente reinicio.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Połączenie grupowe, które zadzwoniło i nie zostało odebrane, jest teraz zapisywane w swojej grupie, a powiadomienie o połączeniu podaje grupę: nie pojawia się już jako prywatne połączenie od osoby, która je rozpoczęła.
+
+- Nowy silnik połączenia, eksperymentalny: Neonize łączy się z WhatsApp bez przeglądarki, przez lokalny most. Wybierz go w Ustawieniach, Połączenie (lub w pytaniu przy pierwszym uruchomieniu) i uruchom WinZapp ponownie; WPPConnect nadal jest domyślny. Skompilowane wersje zawierają już most i zachowują obok niego zainstalowany WPPConnect; z klonu repozytorium przygotuj most poleceniem neonize_bridge/prepare.py (zobacz README w tym folderze). Przy pierwszym uruchomieniu po aktualizacji osoba, która nadal używa WPPConnect, zobaczy jednorazowe powiadomienie z propozycją zmiany; każdy silnik zachowuje własne połączenie, więc przełączenie i powrót nie tracą żadnego. Z Neonize działają też własne listy czatów, dołączanie do grup społeczności (lub prośba o dołączenie) i anulowanie tej prośby, dezaktywacja społeczności, edytowanie i usuwanie własnych kanałów, wybór, kto widzi Twój status, oraz usuwanie kontaktu. Z Neonize działają też katalogi, koszyki i zamówienia (przeglądanie katalogu firmy, kompletowanie i wysyłanie koszyka oraz, na koncie Business, odpowiadanie na zamówienia i zarządzanie własnym katalogiem), a także przyciski, listy i klucze Pix w wiadomościach. Z Neonize działa też przekazywanie lokalizacji i wizytówek kontaktów. Z Neonize działają też połączenia wideo, przełączanie połączenia głosowego na wideo oraz połączenia grupowe. Z Neonize społeczność pokazuje też grupy, do których nie należysz. Z Neonize można też znaleźć trwające połączenia grupowe, dołączyć do nich i zobaczyć, kto w nich jest.
 
 - Użyj przycisku Uczestnicy połączenia w oknie połączenia lub przy zaznaczonym trwającym połączeniu w sekcji Połączenia, aby zobaczyć nazwy połączonych osób.
 
@@ -600,12 +811,59 @@ NOWOŚCI
 
 - Nowy czat: przycisk dołączania do grupy przez link ma teraz literę skrótu z Alt.
 
-- Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- Eliminacja echa działa teraz także wtedy, gdy echo wraca z dużym opóźnieniem, jak w odsłuchu (loopback) niektórych mikserów, który potrafił trwać ponad pół sekundy i w całości docierał do drugiej osoby. WinZapp mierzy, ile czasu głos drugiej osoby potrzebuje, by wrócić przez twój mikrofon, i dostosowuje eliminator do tego opóźnienia, do 1,5 sekundy.
+
+- Neonize: nazwa zapisanego kontaktu nie jest już co minutę zastępowana nazwą profilu, którą ta osoba ustawiła w swoim WhatsAppie (ani nazwą, jaką telefon nadał czatowi). Nazwa nadana kontaktowi zostaje; nazwa profilu pojawia się tylko przy osobach, które nie są zapisane w kontaktach.
+
+- Połączenia w Neonize: WinZapp odtwarza teraz dźwięki, które wcześniej odtwarzał za Ciebie WhatsApp Web. Gdy drugi telefon dzwoni, słychać sygnał połączenia o wysokości i rytmie kraju, do którego dzwonisz, a podczas łączenia i ponownego łączenia rozbrzmiewają krótkie sygnały. Dźwięki tworzy sam WinZapp; z silnikiem WPPConnect nic się nie zmienia.
+
+- Połączenia w Neonize: gdy odebrane połączenie się kończy, WinZapp odtwarza dźwięk zakończenia połączenia z WhatsAppa. To nowe zdarzenie dźwiękowe, "Połączenie zakończone", które podąża za pakietem dźwięków i można je wyłączyć lub zastąpić w zdarzeniach dźwiękowych. Z silnikiem WPPConnect WhatsApp Web nadal odtwarza własny dźwięk.
+
+- Wiadomości głosowe i nagrania audio, które się nie odtwarzały: gdy karta dźwiękowa była niedostępna w chwili otwarcia wyjścia audio przez WinZapp (na przykład po wybudzeniu komputera), żadna wiadomość głosowa nie była odtwarzana do ponownego uruchomienia WinZapp i nic nie mówiło dlaczego. Teraz WinZapp próbuje przywrócić wyjście audio, gdy odtwarzanie się nie powiedzie, a jeśli nadal nie może odtworzyć, informuje o tym czytnikiem ekranu.
+
+- Neonize: czaty, które zdawały się znikać. WhatsApp nie podaje daty aktywności większości starych czatów, a WinZapp brał je za puste i nie zachowywał ich po wyczyszczeniu danych lokalnych (na przykład po F5 do ponownej synchronizacji): konto z ponad 160 czatami wracało z 37. Teraz most datuje każdy czat według jego najnowszej wiadomości i wracają wszystkie.
+
+- Neonize: społeczność i jej grupa ogłoszeń pokazują łączną liczbę członków społeczności, tak jak WhatsApp, a nie tylko uczestników samej grupy.
+
+- Neonize: zapisany kontakt, który pisze w grupie, jest pokazywany z nazwą z książki adresowej, bez znaku "~" niezapisanego kontaktu. Kanały nie pojawiają się już na liście czatów jako czaty bez nazwy. Członek grupy z ukrytym numerem jest pokazywany z nazwą profilu, a nie jako "+55∙∙∙∙∙∙∙∙76".
+
+- Kanały na liście czatów: nowa opcja "Pokaż kanały na liście czatów" w Ustawieniach, Interfejs, Czaty, domyślnie wyłączona, trzyma kanały poza listą czatów. Włącz ją, aby znów je tam widzieć.
+
+- Przełączanie między WPPConnect a Neonize: oba silniki używają portu 6300, a program brał silnik, który właśnie przestał być używany i jeszcze się zamykał, za wybrany. Wybór WPPConnect kończył się komunikatem "nie otrzymano kodu parowania", a przełączenie na Neonize pokazywało łączenie i tryb offline do ponownego uruchomienia. Teraz WinZapp najpierw robi miejsce (zatrzymuje most Neonize albo czeka na zamknięcie serwera WPPConnect), a druga kopia WinZapp w innym folderze nie dołącza już do mostu pierwszej.
+
+- Okno parowania ma teraz listę „Silnik połączenia” przed krajem, aby osoba, która jeszcze nie sparowała konta, mogła wybrać WPPConnect lub Neonize bez wchodzenia do Ustawień. Po wyborze WinZapp prosi o potwierdzenie i uruchamia się ponownie z wybranym silnikiem.
+
+- Program nie zawiera już Node.js, bo Neonize go nie potrzebuje. Jeśli wybierzesz WPPConnect (przy pierwszym uruchomieniu, w oknie parowania lub w Ustawieniach), WinZapp pobierze Node.js ze zweryfikowaną sumą kontrolną i przygotuje WPPConnect przed połączeniem. Pobierany plik jest mniejszy.
+
+- Neonize: jeśli most zniknie, gdy WinZapp jest otwarty (na przykład poprzednie uruchomienie, które jeszcze się zamykało, zatrzymuje go zaraz po tym, jak to uruchomienie go przyjęło, co zdarzało się przy przełączaniu na Neonize z powiadomienia przy starcie), WinZapp sam uruchamia go ponownie, zamiast pozostawać w stanie „łączenie” i potem offline do następnego restartu.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Çalan ve yanıtlanmayan bir grup araması artık kendi grubuna kaydediliyor ve arama bildirimi grubu gösteriyor: aramayı başlatan kişiden gelen özel bir arama gibi görünmüyor.
+
+- Yeni bağlantı motoru, deneysel: Neonize, WhatsApp'a tarayıcı olmadan, yerel bir köprü üzerinden bağlanır. Ayarlar, Bağlantı bölümünden (veya ilk açılıştaki soruda) seçin ve WinZapp'ı yeniden başlatın; WPPConnect varsayılan olarak kalır. Derlenmiş sürümler köprüyü zaten içerir ve WPPConnect'i yanında kurulu tutar; bir depo kopyasından köprüyü neonize_bridge/prepare.py ile hazırlayın (o klasördeki README'ye bakın). Güncellemeden sonraki ilk açılışta WPPConnect kullanan kişiye geçişi öneren tek seferlik bir bildirim gösterilir; her motor kendi bağlantısını korur, bu yüzden geçip geri dönmek hiçbirini kaybettirmez. Neonize ile özel sohbet listeleri, bir topluluğun gruplarına katılma (veya katılma isteği gönderme) ve bu isteği iptal etme, bir topluluğu devre dışı bırakma, kanallarınızı düzenleme ve silme, durumunuzu kimlerin göreceğini seçme ve bir kişiyi kaldırma da çalışır. Neonize ile kataloglar, sepetler ve siparişler de çalışır (bir işletmenin kataloğunu görme, sepet doldurup gönderme ve Business hesabında siparişleri yanıtlama ile kendi kataloğunu yönetme); mesajlardaki düğmeler, listeler ve Pix anahtarları da öyle. Konumları ve kişi kartlarını iletmek de Neonize ile çalışır. Görüntülü aramalar, sesli bir aramayı görüntülü aramaya çevirme ve grup aramaları da Neonize ile çalışır. Neonize ile bir topluluk, üyesi olmadığınız grupları da listeler. Neonize ile devam eden grup aramaları da bulunabilir, bunlara katılınabilir ve aramada kimlerin olduğu görülebilir.
 
 - Bağlı kişileri adlarıyla görmek için arama penceresindeki veya Aramalar bölümünde seçili devam eden aramadaki Arama katılımcıları düğmesini kullanın.
 
@@ -718,12 +976,59 @@ YENİLİKLER
 
 - Yeni sohbet: bağlantıyla gruba katılma düğmesinin artık bir Alt kısayol harfi var.
 
-- Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Add accessible ongoing calls and Mistral media support (#609)
+- Yankı önleme artık yankı çok gecikmeli döndüğünde de çalışıyor; bazı mikserlerin geri dönüşünde (loopback) olduğu gibi yarım saniyeyi aşabilen ve karşıdaki kişiye olduğu gibi ulaşan yankılar dahil. WinZapp karşıdaki kişinin sesinin mikrofonunuzdan geri dönmesinin ne kadar sürdüğünü ölçer ve önleyiciyi bu gecikmeye göre, 1,5 saniyeye kadar ayarlar.
+
+- Neonize: kayıtlı bir kişinin adı artık her dakika, kişinin kendi WhatsApp'ında seçtiği profil adıyla (veya telefonun sohbete verdiği adla) değiştirilmiyor. Kişiye verdiğiniz ad kalır; profil adı yalnızca kaydetmediğiniz kişilerde görünür.
+
+- Neonize aramaları: WinZapp artık WhatsApp Web'in sizin yerinize çaldığı sesleri kendisi çalıyor. Karşıdaki telefon çalarken, aradığınız ülkenin ses yüksekliği ve ritmiyle çalma sesini duyarsınız; arama bağlanırken veya yeniden bağlanırken kısa bip sesleri çalar. Sesleri WinZapp kendisi üretir; WPPConnect motorunda hiçbir şey değişmez.
+
+- Neonize aramaları: yanıtlanan bir arama bittiğinde WinZapp, WhatsApp'ın arama sona erdi sesini çalar. Bu, ses paketini izleyen ve ses olaylarında kapatılabilen veya değiştirilebilen yeni bir ses olayıdır: "Arama sona erdi". WPPConnect motorunda WhatsApp Web kendi sesini çalmaya devam eder.
+
+- Çalınmayan sesli mesajlar ve ses kayıtları: WinZapp ses çıkışını açtığı anda ses kartı kullanılamıyorsa (örneğin bilgisayar uykudan uyandığında), WinZapp yeniden başlatılana kadar hiçbir sesli mesaj çalınmıyor ve nedenini söyleyen bir şey olmuyordu. WinZapp artık bir oynatma başarısız olduğunda ses çıkışını geri yüklemeyi dener ve yine de çalamazsa bunu ekran okuyucuyla bildirir.
+
+- Neonize: kaybolmuş gibi görünen sohbetler. WhatsApp eski sohbetlerin çoğuna etkinlik tarihi vermiyor ve WinZapp bunları boş sohbet sanıp yerel veriler silindiğinde (örneğin yeniden eşitlemek için F5) saklamıyordu: 160'tan fazla sohbeti olan bir hesap 37 sohbetle geri geliyordu. Köprü artık her sohbeti en yeni iletisinin tarihiyle tarihliyor ve hepsi geri geliyor.
+
+- Neonize: bir topluluk ve duyuru grubu, WhatsApp'ta olduğu gibi yalnızca grubun kendi katılımcılarını değil, topluluğun toplam üye sayısını gösterir.
+
+- Neonize: bir grupta yazan kayıtlı bir kişi, kayıtsız kişiyi gösteren "~" olmadan rehberdeki adıyla görünür. Kanallar artık sohbet listesinde adsız sohbetler olarak görünmüyor. Numarası gizli bir grup üyesi artık "+55∙∙∙∙∙∙∙∙76" olarak değil, profil adıyla görünür.
+
+- Sohbet listesinde kanallar: Ayarlar, Arayüz, Sohbetler altındaki yeni "Kanalları sohbet listesinde göster" seçeneği varsayılan olarak kapalıdır ve kanalları sohbet listesinin dışında tutar. Kanalları orada yeniden görmek için işaretleyin.
+
+- WPPConnect ve Neonize arasında geçiş: iki motor da 6300 numaralı bağlantı noktasını kullanır ve program, az önce bıraktığınız, hâlâ kapanmakta olan motoru seçtiğiniz motor sanıyordu. WPPConnect seçmek "eşleştirme kodu alınmadı" sonucunu veriyor, Neonize'a geçmek yeniden başlatmaya kadar bağlanıyor, sonra çevrimdışı gösteriyordu. WinZapp artık önce yer açıyor (Neonize köprüsünü durduruyor ya da WPPConnect sunucusunun kapanmasını bekliyor) ve ikinci bir WinZapp klasörü artık birincinin köprüsüne katılmıyor.
+
+- Eşleştirme penceresinde artık ülkeden önce bir "Bağlantı motoru" listesi var; böylece henüz eşleştirmemiş biri Ayarlar'a ulaşmadan WPPConnect ile Neonize arasında seçim yapabilir. Seçim yapınca WinZapp onay ister ve seçilen motorla yeniden başlar.
+
+- Program artık Node.js ile gelmiyor, çünkü Neonize'a gerekmiyor. WPPConnect'i seçerseniz (ilk açılışta, eşleştirme penceresinde veya Ayarlar'da), WinZapp sağlama toplamı doğrulanmış bir Node.js indirir ve bağlanmadan önce WPPConnect'i hazırlar. İndirme daha küçük.
+
+- Neonize: WinZapp açıkken köprü kaybolursa (örneğin hâlâ kapanmakta olan önceki bir çalıştırma, bu çalıştırma köprüyü kabul ettikten hemen sonra onu durdurur; başlangıç bildiriminden Neonize'a geçerken böyle oluyordu), WinZapp artık "bağlanıyor" ve ardından çevrimdışı durumunda sonraki yeniden başlatmaya kadar kalmak yerine köprüyü kendisi yeniden başlatıyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Keep each connection engine's session apart when switching engines (#593)
+- Put the Neonize bridge in English and migrate old data (#594)
+- Offer the Neonize engine once to WPPConnect installs (#595)
+- Show the Neonize notice in a background start too (#596)
+- Ship the Neonize bridge in compiled builds (#597)
+- Neonize bridge: no AI badge on sent messages; answer the quick reply of native interactive messages (#598)
+- Neonize bridge: QR like TeleZapp and a pairing repair that never wipes a paired session (replaces #599) (#600)
+- Neonize: um contato salvo mantém o nome quando a lista de conversas traz um apelido (#604)
+- Neonize: o WinZapp toca os sons de chamada que o WhatsApp Web tocava (#605)
+- Neonize: toca o som de ligação encerrada ao fim de uma chamada atendida (#607)
+- Neonize: a nossa chamada toca o toque de chamada durante o CONNECTING (#606)
+- Áudio: recuperar a saída de som quando o stream não abre e avisar quando nada toca (#610)
+- Neonize: conversa sem data no histórico ganha a data da mensagem mais recente (#614)
+- Neonize: comunidades mostram o total de membros (#615)
+- Neonize: contatos salvos mantêm o nome nos grupos; canais fora da lista por padrão (continua o #612) (#616)
+- Alternância de motor: não tomar o processo do outro motor pelo escolhido (porta 6300) (#617)
+- Lista de motor de conexão na janela de pareamento (#618)
+- Node.js não é mais empacotado; README com o motor Neonize (#619)
+- Religa a ponte da Neonize quando ela some com o WinZapp aberto (#620)
+- Neonize connection engine (experimental) (#592)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Un apel de grup care a sunat și nu a fost preluat este acum înregistrat în grupul său, iar notificarea apelului arată grupul: nu mai apare ca un apel privat de la cel care l-a început.
+
+- Motor de conectare nou, experimental: Neonize se conectează la WhatsApp fără browser, printr-o punte locală. Alege-l în Setări, Conexiune (sau la întrebarea de la prima pornire) și repornește WinZapp; WPPConnect rămâne cel implicit. Versiunile compilate includ deja puntea și păstrează WPPConnect instalat alături; dintr-un clon al depozitului, pregătește puntea cu neonize_bridge/prepare.py (vezi README-ul din acel folder). La prima pornire după actualizare, cine folosește încă WPPConnect vede o notificare unică ce propune schimbarea; fiecare motor își păstrează propria conexiune, deci trecerea și întoarcerea nu pierd niciuna. Cu Neonize funcționează și listele de conversații personalizate, alăturarea la grupurile unei comunități (sau cererea de alăturare) și anularea acestei cereri, dezactivarea unei comunități, editarea și ștergerea canalelor tale, alegerea celor care îți văd starea și eliminarea unui contact. Cu Neonize funcționează și cataloagele, coșurile și comenzile (vizualizarea catalogului unei firme, completarea și trimiterea unui coș și, pe un cont Business, răspunsul la comenzi și gestionarea propriului catalog), precum și butoanele, listele și cheile Pix din mesaje. Redirecționarea locațiilor și a fișelor de contact funcționează și cu Neonize. Cu Neonize funcționează și apelurile video, trecerea unui apel vocal la apel video și apelurile de grup. Cu Neonize, o comunitate arată și grupurile din care nu faci parte. Cu Neonize se pot găsi și apelurile de grup în desfășurare, te poți alătura lor și poți vedea cine participă.
 
 - Folosiți butonul Participanții la apel din fereastra apelului sau pentru un apel în desfășurare selectat în Apeluri pentru a vedea numele persoanelor conectate.
 
@@ -836,7 +1141,40 @@ NOUTĂȚI
 
 - Conversație nouă: butonul de intrare într-un grup prin link are acum o literă de scurtătură cu Alt.
 
-- Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.</description>
+- Anularea ecoului funcționează acum și când ecoul revine cu mare întârziere, ca la reluarea (loopback) unor mixere, care putea dura peste o jumătate de secundă și ajungea întreg la cealaltă persoană. WinZapp măsoară cât îi ia vocii celeilalte persoane să revină prin microfonul tău și ajustează anulatorul la această întârziere, până la 1,5 secunde.
+
+- Neonize: numele unui contact salvat nu mai este înlocuit, în fiecare minut, cu numele de profil ales de persoană în propriul WhatsApp (sau cu numele pe care telefonul l-a dat conversației). Numele pe care l-ai dat contactului rămâne; numele de profil apare doar pentru persoanele pe care nu le-ai salvat.
+
+- Apeluri în Neonize: WinZapp redă acum sunetele pe care le reda WhatsApp Web în locul tău. Cât timp sună celălalt telefon auzi tonul de apel cu înălțimea și ritmul țării pe care ai sunat-o, iar bipuri scurte se aud cât timp apelul se conectează sau se reconectează. Sunetele sunt create chiar de WinZapp; cu motorul WPPConnect nu se schimbă nimic.
+
+- Apeluri în Neonize: când se termină un apel la care s-a răspuns, WinZapp redă sunetul de apel încheiat al WhatsApp. Este un nou eveniment sonor, "Apel încheiat", care urmează pachetul de sunete și poate fi dezactivat sau înlocuit în evenimentele sonore. Cu motorul WPPConnect, WhatsApp Web continuă să îl redea pe al lui.
+
+- Mesaje vocale și audio care nu se redau: când placa de sunet nu era disponibilă în momentul în care WinZapp a deschis ieșirea audio (de exemplu la trezirea calculatorului), niciun mesaj vocal nu se reda până la repornirea WinZapp, iar nimic nu spunea motivul. Acum WinZapp încearcă să restabilească ieșirea audio când o redare eșuează și, dacă tot nu poate reda, anunță prin cititorul de ecran.
+
+- Neonize: conversații care păreau să dispară. WhatsApp nu dă data de activitate pentru majoritatea conversațiilor vechi, iar WinZapp le lua drept conversații goale și nu le păstra când datele locale erau șterse (F5 pentru resincronizare, de exemplu): un cont cu peste 160 de conversații revenea cu 37. Acum puntea datează fiecare conversație după cel mai recent mesaj și revin toate.
+
+- Neonize: o comunitate și grupul ei de anunțuri arată numărul total de membri ai comunității, ca în WhatsApp, nu doar participanții grupului.
+
+- Neonize: un contact salvat care scrie într-un grup apare cu numele din agendă, fără "~" de contact nesalvat. Canalele nu mai apar în lista de conversații ca conversații fără nume. Un membru de grup cu numărul ascuns apare cu numele de profil, nu mai apare ca "+55∙∙∙∙∙∙∙∙76".
+
+- Canale în lista de conversații: o opțiune nouă, "Afișează canalele în lista de conversații", în Setări, Interfață, Conversații, dezactivată implicit, ține canalele în afara listei de conversații. Bifeaz-o ca să le vezi din nou acolo.
+
+- Trecerea între WPPConnect și Neonize: ambele motoare folosesc portul 6300, iar programul confunda motorul pe care tocmai îl părăsiseși, încă în curs de închidere, cu cel ales. Alegerea WPPConnect dădea "nu s-a primit niciun cod de asociere", iar trecerea la Neonize arăta conectare, apoi offline, până la repornire. Acum WinZapp face loc mai întâi (oprește puntea Neonize sau așteaptă închiderea serverului WPPConnect), iar un al doilea dosar WinZapp nu se mai alătură punții primului.
+
+- Fereastra de asociere are acum o listă „Motor de conectare” înainte de țară, ca cine nu a asociat încă contul să poată alege între WPPConnect și Neonize fără să ajungă în Setări. După alegere, WinZapp cere confirmarea și repornește cu motorul ales.
+
+- Programul nu mai vine cu Node.js, deoarece Neonize nu îl folosește. Dacă alegeți WPPConnect (la prima pornire, în fereastra de asociere sau în Setări), WinZapp descarcă un Node.js cu sumă de control verificată și pregătește WPPConnect înainte de conectare. Descărcarea este mai mică.
+
+- Neonize: dacă puntea dispare cât timp WinZapp este deschis (de exemplu, o rulare anterioară care încă se închidea o oprește imediat după ce aceasta a acceptat-o, ceea ce se întâmpla la trecerea la Neonize din notificarea de la pornire), WinZapp o pornește din nou singur, în loc să rămână pe „se conectează” și apoi offline până la următoarea repornire.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4985alpha/WinZapp-macOS-x86_64.zip" length="348561428" type="application/octet-stream" sparkle:edSignature="aaJpo70JVOcMLZLvsh5QpQfIo03VVeH24A/QwZNZv9dx0K7IWWYKsS2CWUqb6709i2MepiQjQ7y2Yvam24yjBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4703alpha</title>
+      <pubDate>Wed, 28 Oct 2026 04:21:03 +0000</pubDate>
+      <sparkle:version>3.0.0.47031</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4703alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4703alpha/WinZapp-macOS-x86_64.zip" length="348430183" type="application/octet-stream" sparkle:edSignature="3zZQsgz13VXZKgcCPXyNV2CBsiswHp7jbSnZ+N5lLYvHRRt8FQm2VmUx4D7CdlVaneVkBabJ2/Z+XECJcRAvCw=="></enclosure>
     </item>
     <item>
@@ -865,15 +1203,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4695alpha/WinZapp-macOS-x86_64.zip" length="347871234" type="application/octet-stream" sparkle:edSignature="oWdI/W61wfaJGS+2b8Uj1+Mh8kqFo4A9RukKQ3/LoCIqtv0TgrnDg6hmKuMu/uWKzNzubwrYq21w14JT5os0Dg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4694alpha</title>
-      <pubDate>Sat, 24 Oct 2026 20:50:29 +0000</pubDate>
-      <sparkle:version>3.0.0.46941</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4694alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4694alpha/WinZapp-macOS-x86_64.zip" length="348661251" type="application/octet-stream" sparkle:edSignature="FL32DxsFyfg6h5y+gXtJH/It3TtwnaO94LU5ufVsqQafMWMgMlo1exoa3x35H6NLkvAzk7umYokCwpjVItOUAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2488,6 +2817,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: LGhRKwFCSSxuMCzlXSYA3fyWLB+sKsY3jk5G7DUuLA7otg0kTk3ysqE/+cKBiF/Qp0rZq1mNhHVtHFr3wgKpBA==
-length: 510134
+edSignature: HacZVttjwvCB0GoEo3nzmblNqaYW3rVU3/gd+trbW6BauBzMhN88vQK20i6lLFPEwG19rhMiPckqGYYACCl4DQ==
+length: 560593
 -->
