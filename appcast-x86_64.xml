@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.4988alpha</title>
-      <pubDate>Wed, 28 Oct 2026 22:55:30 +0000</pubDate>
-      <sparkle:version>3.0.0.49881</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4988alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.4991alpha</title>
+      <pubDate>Thu, 29 Oct 2026 01:03:31 +0000</pubDate>
+      <sparkle:version>3.0.0.49911</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4991alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -158,8 +158,10 @@ WHAT'S NEW
 
 - Neonize: if the bridge goes away while WinZapp is open (for example, a previous run that was still closing stops it right after this one accepted it, which happened when switching to Neonize from the startup notice), WinZapp now starts it again by itself instead of staying on "connecting" and then offline until the next restart.
 
-- Neonize: when the last WinZapp leaves, the bridge is now asked to close its WhatsApp connections and databases and exit on its own; it is only forced to stop if it does not do so within 10 seconds. Before, it was always killed on the spot, which could cut off a write.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: when the last WinZapp leaves, the bridge is now asked to close its WhatsApp connections and databases and exit on its own; it is only forced to stop if it does not do so within 10 seconds. Before, it was always killed on the spot, which could cut off a write.
+
+- Neonize: the pairing QR code is no longer cut off in the connection window. It is now shown whole, at a size the phone camera can read.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -306,8 +308,10 @@ NOVIDADES
 
 - Neonize: se a ponte some enquanto o WinZapp está aberto (por exemplo, uma execução anterior que ainda estava fechando a encerra logo depois de esta a ter aceitado, o que acontecia ao alternar para a Neonize pelo aviso da abertura), o WinZapp agora a inicia de novo sozinho, em vez de ficar em "conectando" e depois offline até o próximo reinício.
 
-- Neonize: quando o último WinZapp sai, a ponte agora é convidada a fechar suas conexões e bancos de dados com o WhatsApp e a encerrar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, ela era sempre encerrada à força na hora, o que podia interromper uma gravação.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: quando o último WinZapp sai, a ponte agora é convidada a fechar suas conexões e bancos de dados com o WhatsApp e a encerrar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, ela era sempre encerrada à força na hora, o que podia interromper uma gravação.
+
+- Neonize: o QR code de pareamento não aparece mais cortado na janela de conexão. Ele passa a ser mostrado inteiro, num tamanho que a câmera do celular consegue ler.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -454,8 +458,10 @@ NOVIDADES
 
 - Neonize: se a ponte desaparecer enquanto o WinZapp está aberto (por exemplo, uma execução anterior que ainda estava a fechar encerra-a logo depois de esta a ter aceitado, o que acontecia ao alternar para a Neonize pelo aviso do arranque), o WinZapp passa a iniciá-la de novo sozinho, em vez de ficar em "a ligar" e depois offline até ao próximo reinício.
 
-- Neonize: quando o último WinZapp sai, a ponte passa a ser convidada a fechar as suas ligações e bases de dados com o WhatsApp e a terminar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, era sempre terminada à força de imediato, o que podia interromper uma gravação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: quando o último WinZapp sai, a ponte passa a ser convidada a fechar as suas ligações e bases de dados com o WhatsApp e a terminar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, era sempre terminada à força de imediato, o que podia interromper uma gravação.
+
+- Neonize: o código QR de emparelhamento já não aparece cortado na janela de ligação. Passa a ser mostrado por inteiro, num tamanho que a câmara do telemóvel consegue ler.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -602,8 +608,10 @@ NOVEDADES
 
 - Neonize: si el puente desaparece mientras WinZapp está abierto (por ejemplo, una ejecución anterior que aún se estaba cerrando lo detiene justo después de que esta lo aceptara, lo que ocurría al cambiar a Neonize desde el aviso de inicio), WinZapp ahora lo inicia de nuevo por sí mismo, en lugar de quedarse en "conectando" y luego sin conexión hasta el siguiente reinicio.
 
-- Neonize: cuando el último WinZapp se va, ahora se le pide al puente que cierre sus conexiones y bases de datos con WhatsApp y termine por sí mismo; solo se fuerza su cierre si no lo hace en 10 segundos. Antes se terminaba siempre a la fuerza en el acto, lo que podía cortar una escritura.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: cuando el último WinZapp se va, ahora se le pide al puente que cierre sus conexiones y bases de datos con WhatsApp y termine por sí mismo; solo se fuerza su cierre si no lo hace en 10 segundos. Antes se terminaba siempre a la fuerza en el acto, lo que podía cortar una escritura.
+
+- Neonize: el código QR de vinculación ya no aparece cortado en la ventana de conexión. Ahora se muestra completo, con un tamaño que la cámara del móvil puede leer.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -750,8 +758,10 @@ NOWOŚCI
 
 - Neonize: jeśli most zniknie, gdy WinZapp jest otwarty (na przykład poprzednie uruchomienie, które jeszcze się zamykało, zatrzymuje go zaraz po tym, jak to uruchomienie go przyjęło, co zdarzało się przy przełączaniu na Neonize z powiadomienia przy starcie), WinZapp sam uruchamia go ponownie, zamiast pozostawać w stanie „łączenie” i potem offline do następnego restartu.
 
-- Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.
+
+- Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -898,8 +908,10 @@ YENİLİKLER
 
 - Neonize: WinZapp açıkken köprü kaybolursa (örneğin hâlâ kapanmakta olan önceki bir çalıştırma, bu çalıştırma köprüyü kabul ettikten hemen sonra onu durdurur; başlangıç bildiriminden Neonize'a geçerken böyle oluyordu), WinZapp artık "bağlanıyor" ve ardından çevrimdışı durumunda sonraki yeniden başlatmaya kadar kalmak yerine köprüyü kendisi yeniden başlatıyor.
 
-- Neonize: son WinZapp kapanırken köprüden artık WhatsApp bağlantılarını ve veritabanlarını kapatıp kendi kendine çıkması isteniyor; 10 saniye içinde çıkmazsa zorla durduruluyor. Önceden her zaman anında zorla sonlandırılıyordu ve bu bir yazma işlemini yarıda kesebilirdi.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: a ponte encerra sozinha antes de qualquer kill (#621)
+- Neonize: son WinZapp kapanırken köprüden artık WhatsApp bağlantılarını ve veritabanlarını kapatıp kendi kendine çıkması isteniyor; 10 saniye içinde çıkmazsa zorla durduruluyor. Önceden her zaman anında zorla sonlandırılıyordu ve bu bir yazma işlemini yarıda kesebilirdi.
+
+- Neonize: eşleştirme QR kodu bağlantı penceresinde artık kesik görünmüyor. Artık tamamı, telefon kamerasının okuyabileceği bir boyutta gösteriliyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: o QR de pareamento cabe na janela e o celular consegue ler (#622)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1046,7 +1058,18 @@ NOUTĂȚI
 
 - Neonize: dacă puntea dispare cât timp WinZapp este deschis (de exemplu, o rulare anterioară care încă se închidea o oprește imediat după ce aceasta a acceptat-o, ceea ce se întâmpla la trecerea la Neonize din notificarea de la pornire), WinZapp o pornește din nou singur, în loc să rămână pe „se conectează” și apoi offline până la următoarea repornire.
 
-- Neonize: când pleacă ultimul WinZapp, puntea este acum rugată să-și închidă conexiunile și bazele de date WhatsApp și să se oprească singură; este oprită forțat doar dacă nu o face în 10 secunde. Înainte era oprită întotdeauna forțat, pe loc, ceea ce putea întrerupe o scriere.</description>
+- Neonize: când pleacă ultimul WinZapp, puntea este acum rugată să-și închidă conexiunile și bazele de date WhatsApp și să se oprească singură; este oprită forțat doar dacă nu o face în 10 secunde. Înainte era oprită întotdeauna forțat, pe loc, ceea ce putea întrerupe o scriere.
+
+- Neonize: codul QR de asociere nu mai apare tăiat în fereastra de conectare. Acum este afișat întreg, la o dimensiune pe care camera telefonului o poate citi.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4991alpha/WinZapp-macOS-x86_64.zip" length="348679468" type="application/octet-stream" sparkle:edSignature="YTai1MqXtreDyN+3tFXdus3trWaZZe2UQV2lkyWhr2gKiZNA3A0Ns1UdistPdHx8DQOVUdXps3kLjkhZjsrCBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.4988alpha</title>
+      <pubDate>Wed, 28 Oct 2026 22:55:30 +0000</pubDate>
+      <sparkle:version>3.0.0.49881</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.4988alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4988alpha/WinZapp-macOS-x86_64.zip" length="348565185" type="application/octet-stream" sparkle:edSignature="g/WEGRgED2vcNPW80BltadFh7fp2yUl4WeMhu5HNGaIBH088ZAeOpRkIxw+GvAHcQkwnXya/Xow1EFdYCB3QAA=="></enclosure>
     </item>
     <item>
@@ -1075,15 +1098,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4697alpha/WinZapp-macOS-x86_64.zip" length="348128270" type="application/octet-stream" sparkle:edSignature="Jahlx/rHQV/QOTUA3YSReM/UcqaqbecvV2g0t8jNUZKQmvuZ6Wqdp9UrxLpsdRWO+qeo/dgeesBVy/GpYxqUBw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4696alpha</title>
-      <pubDate>Tue, 27 Oct 2026 00:56:21 +0000</pubDate>
-      <sparkle:version>3.0.0.46961</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4696alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4696alpha/WinZapp-macOS-x86_64.zip" length="347879674" type="application/octet-stream" sparkle:edSignature="qtnkdmTc5YHwL8dUF1VpJKeUZkIhyxWUBWLY3tamDliBesIreDm8lIcKErDnCFaiNdJ4qRrcFOQchScpfOPLAg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2698,6 +2712,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: j0PL+KvJ40MTL+m0EFFEzmatkuun749p829ZRMrLaIWaKL0pwBWyFZeec+PYnMmxHvbSBLC4w3utivIdW65KBA==
-length: 552119
+edSignature: bmzHGtScmTOR5J0giygFLtroFbmXigeVlzMfACvV9WktR16ewfJ286zGYHs5eS66Y1LahJFI0UyKTPoy36NLCw==
+length: 553357
 -->
