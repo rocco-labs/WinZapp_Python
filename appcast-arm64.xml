@@ -5,15 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5018alpha</title>
-      <pubDate>Fri, 30 Oct 2026 13:53:45 +0000</pubDate>
-      <sparkle:version>3.0.0.50181</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5018alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5045alpha</title>
+      <pubDate>Fri, 30 Oct 2026 14:17:15 +0000</pubDate>
+      <sparkle:version>3.0.0.50451</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5045alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+      <description xml:lang="en" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -172,10 +170,26 @@ WHAT'S NEW
 
 - Neonize: when the last WinZapp leaves, the bridge is now asked to close its WhatsApp connections and databases and exit on its own; it is only forced to stop if it does not do so within 10 seconds. Before, it was always killed on the spot, which could cut off a write.
 
-- Neonize: the pairing QR code is no longer cut off in the connection window. It is now shown whole, at a size the phone camera can read.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: the pairing QR code is no longer cut off in the connection window. It is now shown whole, at a size the phone camera can read.
+
+- Settings &gt; Advanced has a new "Export this account's logs..." button. It saves a .zip with the current account's logs (and the Neonize bridge's) in the background, announcing the result.
+
+- Settings &gt; Shortcuts: a new field captures the keys you press and instantly lists the matching commands in every category, announcing how many were found, with a button to clear the search. The shortcut tree no longer announces unwanted selections while you type, it is built only once when Settings opens, Esc closes the window without errors and, after applying changes, focus goes to the OK button.
+
+- Automatic transcription of a chat is now a single choice in the chat or group data window: None, Online with AI or Local with Whisper. The same message is never transcribed twice and inconsistent settings are rejected.
+
+- WinZapp starts and opens Settings faster: only contacts that really changed are rewritten to the database, the database's per-query debug log (hundreds of MB) is silenced and incomplete Chrome folders left by interrupted downloads are cleaned up.
+
+- F5 no longer duplicates conversations in the list for a while: the link between the @lid address and the phone number is kept during the reload of the same account.
+
+- Reactions received through the @lid address now reach the conversation stored under the phone number (and the other way around), so they show correctly in the preview, in the list and in live notifications.
+
+- "Replies to the community announcement" now appears only in community announcement groups, not in ordinary groups.
+
+- WPPConnect: starring a message and liking a status work again.
+
+- Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -334,10 +348,26 @@ NOVIDADES
 
 - Neonize: quando o último WinZapp sai, a ponte agora é convidada a fechar suas conexões e bancos de dados com o WhatsApp e a encerrar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, ela era sempre encerrada à força na hora, o que podia interromper uma gravação.
 
-- Neonize: o QR code de pareamento não aparece mais cortado na janela de conexão. Ele passa a ser mostrado inteiro, num tamanho que a câmera do celular consegue ler.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: o QR code de pareamento não aparece mais cortado na janela de conexão. Ele passa a ser mostrado inteiro, num tamanho que a câmera do celular consegue ler.
+
+- Em Configurações &gt; Avançado há o novo botão "Exportar os logs desta conta...". Ele salva em segundo plano um .zip com os logs da conta atual (e os da bridge Neonize) e anuncia o resultado.
+
+- Configurações &gt; Atalhos: um novo campo captura as teclas pressionadas e lista na hora os comandos correspondentes em todas as categorias, anunciando quantos foram encontrados, com um botão para limpar a busca. A árvore de atalhos não anuncia mais seleções indevidas durante a digitação, é montada uma única vez ao abrir as Configurações, a tecla Esc fecha a janela sem erros e, ao aplicar as alterações, o foco vai para o botão OK.
+
+- A transcrição automática de uma conversa agora é uma escolha única na janela de dados da conversa ou do grupo: Nenhuma, Online com IA ou Local com Whisper. A mesma mensagem nunca é transcrita duas vezes e configurações inconsistentes são recusadas.
+
+- O WinZapp inicia e abre as Configurações mais rápido: só os contatos que realmente mudaram são regravados no banco, o log de depuração de cada consulta do banco (centenas de MB) foi silenciado e as pastas incompletas do Chrome deixadas por downloads interrompidos são limpas.
+
+- O F5 não duplica mais as conversas na lista por um tempo: a ligação entre o endereço @lid e o número de telefone é mantida durante o recarregamento da mesma conta.
+
+- Reações recebidas pelo endereço @lid agora chegam à conversa guardada sob o número de telefone (e vice-versa), aparecendo corretamente na prévia, na lista e nas notificações ao vivo.
+
+- "Respostas ao aviso da comunidade" agora aparece apenas nos grupos de avisos de comunidade, e não nos grupos comuns.
+
+- WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
+
+- Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -496,10 +526,26 @@ NOVIDADES
 
 - Neonize: quando o último WinZapp sai, a ponte passa a ser convidada a fechar as suas ligações e bases de dados com o WhatsApp e a terminar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, era sempre terminada à força de imediato, o que podia interromper uma gravação.
 
-- Neonize: o código QR de emparelhamento já não aparece cortado na janela de ligação. Passa a ser mostrado por inteiro, num tamanho que a câmara do telemóvel consegue ler.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: o código QR de emparelhamento já não aparece cortado na janela de ligação. Passa a ser mostrado por inteiro, num tamanho que a câmara do telemóvel consegue ler.
+
+- Em Definições &gt; Avançado há o novo botão "Exportar os registos desta conta...". Guarda em segundo plano um .zip com os registos da conta atual (e os da bridge Neonize) e anuncia o resultado.
+
+- Definições &gt; Atalhos: um novo campo captura as teclas premidas e lista logo os comandos correspondentes em todas as categorias, anunciando quantos foram encontrados, com um botão para limpar a pesquisa. A árvore de atalhos já não anuncia seleções indevidas durante a escrita, é construída uma só vez ao abrir as Definições, a tecla Esc fecha a janela sem erros e, ao aplicar as alterações, o foco vai para o botão OK.
+
+- A transcrição automática de uma conversa passa a ser uma escolha única na janela de dados da conversa ou do grupo: Nenhuma, Online com IA ou Local com Whisper. A mesma mensagem nunca é transcrita duas vezes e as definições inconsistentes são recusadas.
+
+- O WinZapp inicia e abre as Definições mais depressa: só os contactos que realmente mudaram são regravados na base de dados, o registo de depuração de cada consulta à base de dados (centenas de MB) foi silenciado e as pastas incompletas do Chrome deixadas por transferências interrompidas são limpas.
+
+- O F5 já não duplica durante algum tempo as conversas na lista: a ligação entre o endereço @lid e o número de telefone é mantida durante o recarregamento da mesma conta.
+
+- As reações recebidas pelo endereço @lid chegam agora à conversa guardada sob o número de telefone (e vice-versa), aparecendo corretamente na pré-visualização, na lista e nas notificações em direto.
+
+- "Respostas ao aviso da comunidade" aparece agora apenas nos grupos de avisos de comunidade, e não nos grupos comuns.
+
+- WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
+
+- Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -658,10 +704,26 @@ NOVEDADES
 
 - Neonize: cuando el último WinZapp se va, ahora se le pide al puente que cierre sus conexiones y bases de datos con WhatsApp y termine por sí mismo; solo se fuerza su cierre si no lo hace en 10 segundos. Antes se terminaba siempre a la fuerza en el acto, lo que podía cortar una escritura.
 
-- Neonize: el código QR de vinculación ya no aparece cortado en la ventana de conexión. Ahora se muestra completo, con un tamaño que la cámara del móvil puede leer.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: el código QR de vinculación ya no aparece cortado en la ventana de conexión. Ahora se muestra completo, con un tamaño que la cámara del móvil puede leer.
+
+- En Configuración &gt; Avanzado hay un nuevo botón "Exportar los registros de esta cuenta...". Guarda en segundo plano un .zip con los registros de la cuenta actual (y los del puente Neonize) y anuncia el resultado.
+
+- Configuración &gt; Atajos: un nuevo campo captura las teclas pulsadas y lista al instante los comandos correspondientes en todas las categorías, anunciando cuántos se encontraron, con un botón para borrar la búsqueda. El árbol de atajos ya no anuncia selecciones indebidas mientras escribes, se construye una sola vez al abrir Configuración, la tecla Esc cierra la ventana sin errores y, al aplicar los cambios, el foco pasa al botón Aceptar.
+
+- La transcripción automática de una conversación es ahora una elección única en la ventana de datos de la conversación o del grupo: Ninguna, En línea con IA o Local con Whisper. Un mismo mensaje nunca se transcribe dos veces y se rechazan los ajustes incoherentes.
+
+- WinZapp arranca y abre Configuración más rápido: solo se regraban en la base de datos los contactos que realmente cambiaron, se silenció el registro de depuración de cada consulta de la base de datos (cientos de MB) y se limpian las carpetas incompletas de Chrome que dejan las descargas interrumpidas.
+
+- F5 ya no duplica durante un tiempo las conversaciones en la lista: el vínculo entre la dirección @lid y el número de teléfono se mantiene durante la recarga de la misma cuenta.
+
+- Las reacciones recibidas por la dirección @lid ahora llegan a la conversación guardada bajo el número de teléfono (y viceversa), y se muestran correctamente en la vista previa, en la lista y en las notificaciones en directo.
+
+- "Respuestas al aviso de la comunidad" ahora aparece solo en los grupos de avisos de comunidad, y no en los grupos normales.
+
+- WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
+
+- Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -820,10 +882,26 @@ NOWOŚCI
 
 - Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.
 
-- Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.
+
+- W Ustawieniach &gt; Zaawansowane jest nowy przycisk "Eksportuj logi tego konta...". Zapisuje w tle plik .zip z logami bieżącego konta (i mostu Neonize) i ogłasza wynik.
+
+- Ustawienia &gt; Skróty: nowe pole przechwytuje naciskane klawisze i od razu wyświetla pasujące polecenia we wszystkich kategoriach, ogłaszając ich liczbę, z przyciskiem czyszczącym wyszukiwanie. Drzewo skrótów nie ogłasza już niepożądanych zaznaczeń podczas pisania, jest budowane tylko raz po otwarciu Ustawień, klawisz Esc zamyka okno bez błędów, a po zastosowaniu zmian fokus przechodzi na przycisk OK.
+
+- Automatyczna transkrypcja rozmowy jest teraz pojedynczym wyborem w oknie danych rozmowy lub grupy: Brak, Online z AI albo Lokalnie z Whisper. Ta sama wiadomość nigdy nie jest transkrybowana dwa razy, a niespójne ustawienia są odrzucane.
+
+- WinZapp uruchamia się i otwiera Ustawienia szybciej: do bazy danych zapisywane są tylko kontakty, które naprawdę się zmieniły, wyciszono dziennik debugowania każdego zapytania do bazy (setki MB), a niekompletne foldery Chrome pozostawione przez przerwane pobierania są czyszczone.
+
+- F5 nie duplikuje już na jakiś czas rozmów na liście: powiązanie adresu @lid z numerem telefonu jest zachowywane podczas ponownego wczytywania tego samego konta.
+
+- Reakcje odebrane przez adres @lid trafiają teraz do rozmowy zapisanej pod numerem telefonu (i odwrotnie), dzięki czemu są poprawnie widoczne w podglądzie, na liście i w powiadomieniach na żywo.
+
+- "Odpowiedzi na ogłoszenie społeczności" pojawia się teraz tylko w grupach ogłoszeń społeczności, a nie w zwykłych grupach.
+
+- WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
+
+- Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -982,10 +1060,26 @@ YENİLİKLER
 
 - Neonize: son WinZapp kapanırken köprüden artık WhatsApp bağlantılarını ve veritabanlarını kapatıp kendi kendine çıkması isteniyor; 10 saniye içinde çıkmazsa zorla durduruluyor. Önceden her zaman anında zorla sonlandırılıyordu ve bu bir yazma işlemini yarıda kesebilirdi.
 
-- Neonize: eşleştirme QR kodu bağlantı penceresinde artık kesik görünmüyor. Artık tamamı, telefon kamerasının okuyabileceği bir boyutta gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: eşleştirme QR kodu bağlantı penceresinde artık kesik görünmüyor. Artık tamamı, telefon kamerasının okuyabileceği bir boyutta gösteriliyor.
+
+- Ayarlar &gt; Gelişmiş bölümünde yeni bir "Bu hesabın günlüklerini dışa aktar..." düğmesi var. Geçerli hesabın (ve Neonize köprüsünün) günlüklerini içeren bir .zip dosyasını arka planda kaydeder ve sonucu duyurur.
+
+- Ayarlar &gt; Kısayollar: yeni bir alan bastığınız tuşları yakalar ve eşleşen komutları tüm kategorilerde anında listeler, kaç tane bulunduğunu duyurur; aramayı temizleyen bir düğme de vardır. Kısayol ağacı yazarken artık istenmeyen seçimleri duyurmaz, Ayarlar açılırken yalnızca bir kez oluşturulur, Esc tuşu pencereyi hatasız kapatır ve değişiklikler uygulandıktan sonra odak Tamam düğmesine gider.
+
+- Bir sohbetin otomatik yazıya dökümü artık sohbet veya grup verileri penceresinde tek bir seçimdir: Yok, Yapay zekâ ile çevrimiçi veya Whisper ile yerel. Aynı mesaj asla iki kez yazıya dökülmez ve tutarsız ayarlar reddedilir.
+
+- WinZapp daha hızlı başlar ve Ayarlar daha hızlı açılır: veritabanına yalnızca gerçekten değişen kişiler yeniden yazılır, veritabanındaki her sorgunun hata ayıklama günlüğü (yüzlerce MB) susturuldu ve yarım kalan indirmelerden artakalan eksik Chrome klasörleri temizlenir.
+
+- F5 artık bir süre sohbetleri listede çoğaltmaz: @lid adresi ile telefon numarası arasındaki bağlantı aynı hesabın yeniden yüklenmesi sırasında korunur.
+
+- @lid adresiyle alınan tepkiler artık telefon numarası altında kayıtlı sohbete ulaşır (ve tersi), böylece önizlemede, listede ve canlı bildirimlerde doğru görünür.
+
+- "Topluluk duyurusuna yanıtlar" artık yalnızca topluluk duyuru gruplarında görünür, sıradan gruplarda görünmez.
+
+- WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
+
+- Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1144,10 +1238,26 @@ NOUTĂȚI
 
 - Neonize: când pleacă ultimul WinZapp, puntea este acum rugată să-și închidă conexiunile și bazele de date WhatsApp și să se oprească singură; este oprită forțat doar dacă nu o face în 10 secunde. Înainte era oprită întotdeauna forțat, pe loc, ceea ce putea întrerupe o scriere.
 
-- Neonize: codul QR de asociere nu mai apare tăiat în fereastra de conectare. Acum este afișat întreg, la o dimensiune pe care camera telefonului o poate citi.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
-- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
-- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+- Neonize: codul QR de asociere nu mai apare tăiat în fereastra de conectare. Acum este afișat întreg, la o dimensiune pe care camera telefonului o poate citi.
+
+- În Setări &gt; Avansat există un buton nou "Exportă jurnalele acestui cont...". Salvează în fundal un .zip cu jurnalele contului curent (și ale punții Neonize) și anunță rezultatul.
+
+- Setări &gt; Scurtături: un câmp nou captează tastele apăsate și listează imediat comenzile potrivite din toate categoriile, anunțând câte au fost găsite, cu un buton pentru ștergerea căutării. Arborele de scurtături nu mai anunță selecții nedorite în timp ce scrieți, este construit o singură dată la deschiderea Setărilor, tasta Esc închide fereastra fără erori, iar după aplicarea modificărilor focalizarea trece pe butonul OK.
+
+- Transcrierea automată a unei conversații este acum o alegere unică în fereastra cu datele conversației sau ale grupului: Niciuna, Online cu AI sau Local cu Whisper. Același mesaj nu mai este transcris de două ori, iar setările incoerente sunt respinse.
+
+- WinZapp pornește și deschide Setările mai repede: în baza de date sunt rescriși doar contactele care s-au schimbat cu adevărat, jurnalul de depanare al fiecărei interogări din baza de date (sute de MB) a fost redus la tăcere, iar folderele Chrome incomplete rămase de la descărcări întrerupte sunt curățate.
+
+- F5 nu mai duplică pentru o vreme conversațiile din listă: legătura dintre adresa @lid și numărul de telefon este păstrată la reîncărcarea aceluiași cont.
+
+- Reacțiile primite prin adresa @lid ajung acum în conversația salvată sub numărul de telefon (și invers), apărând corect în previzualizare, în listă și în notificările în timp real.
+
+- "Răspunsuri la anunțul comunității" apare acum doar în grupurile de anunțuri ale comunității, nu și în grupurile obișnuite.
+
+- WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
+
+- Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Novos recursos, otimizações de desempenho e correções diversas (#632)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1307,7 +1417,34 @@ NOUTĂȚI
 
 - Neonize: عندما يغادر آخر WinZapp، يُطلب من الجسر الآن أن يغلق اتصالاته بواتساب وقواعد بياناته ويخرج بنفسه؛ ولا يُفرض إيقافه إلا إذا لم يفعل خلال 10 ثوانٍ. وكان يُقتل سابقًا فورًا، مما قد يقطع كتابة.
 
-- Neonize: لم يعد رمز QR للاقتران يُقتطع في نافذة الاتصال. يظهر الآن كاملًا، بحجم تستطيع كاميرا الهاتف قراءته.</description>
+- Neonize: لم يعد رمز QR للاقتران يُقتطع في نافذة الاتصال. يظهر الآن كاملًا، بحجم تستطيع كاميرا الهاتف قراءته.
+
+- في الإعدادات &gt; متقدم زر جديد "تصدير سجلات هذا الحساب...". يحفظ في الخلفية ملف .zip يحوي سجلات الحساب الحالي (وسجلات جسر Neonize) ويعلن النتيجة.
+
+- الإعدادات &gt; الاختصارات: حقل جديد يلتقط المفاتيح التي تضغطها ويعرض فورًا الأوامر المطابقة في جميع الفئات مع إعلان عددها، وفيه زر لمسح البحث. لم تعد شجرة الاختصارات تعلن تحديدات غير مرغوبة أثناء الكتابة، وتُبنى مرة واحدة فقط عند فتح الإعدادات، ويغلق مفتاح Esc النافذة دون أخطاء، وبعد تطبيق التغييرات ينتقل التركيز إلى زر موافق.
+
+- أصبح النسخ التلقائي لمحادثة ما خيارًا واحدًا في نافذة بيانات المحادثة أو المجموعة: بلا، أو عبر الإنترنت بالذكاء الاصطناعي، أو محليًا بـ Whisper. لا تُنسخ الرسالة نفسها مرتين أبدًا وتُرفض الإعدادات المتعارضة.
+
+- يبدأ WinZapp وتُفتح الإعدادات بسرعة أكبر: لا تُعاد كتابة سوى جهات الاتصال التي تغيرت فعلًا في قاعدة البيانات، وأُسكت سجل تصحيح كل استعلام لقاعدة البيانات (مئات الميغابايت)، وتُنظَّف مجلدات Chrome غير المكتملة التي تتركها التنزيلات المقطوعة.
+
+- لم يعد F5 يكرر المحادثات في القائمة لبعض الوقت: يُحتفظ بالربط بين عنوان @lid ورقم الهاتف أثناء إعادة تحميل الحساب نفسه.
+
+- التفاعلات المستلمة عبر عنوان @lid تصل الآن إلى المحادثة المحفوظة تحت رقم الهاتف (والعكس)، فتظهر بشكل صحيح في المعاينة وفي القائمة وفي الإشعارات المباشرة.
+
+- "الردود على إعلان المجتمع" يظهر الآن فقط في مجموعات إعلانات المجتمع، لا في المجموعات العادية.
+
+- WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
+
+- Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5045alpha/WinZapp-macOS-arm64.zip" length="314877959" type="application/octet-stream" sparkle:edSignature="ce4pHXDVu6uRb1xDp7vEBDMo/eqS+U/my7Q6PdmlBw2HNKj6BHzch1Uido68M11n7ugKNsp2KcbkgBqA5sdEDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5018alpha</title>
+      <pubDate>Fri, 30 Oct 2026 13:53:45 +0000</pubDate>
+      <sparkle:version>3.0.0.50181</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5018alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5018alpha/WinZapp-macOS-arm64.zip" length="314850203" type="application/octet-stream" sparkle:edSignature="06CnnZAACwUDldAxnL+UmqkDp9/C7PBqiv6lyU4Gk/bTuDGnmNJ+/RC1rYMRZxfopEpOUS5sBSOa2f65waFPCg=="></enclosure>
     </item>
     <item>
@@ -1336,15 +1473,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4996alpha/WinZapp-macOS-arm64.zip" length="313758073" type="application/octet-stream" sparkle:edSignature="GVon9G17TMDS9L3nEw901wRoIOGwMHuNtEVZtRLcdsiDSweRivyMIW8Tvl0xUp56N3yp7co2BGmdwBnZiuH7AA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4991alpha</title>
-      <pubDate>Thu, 29 Oct 2026 01:03:31 +0000</pubDate>
-      <sparkle:version>3.0.0.49911</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4991alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4991alpha/WinZapp-macOS-arm64.zip" length="313629332" type="application/octet-stream" sparkle:edSignature="RUeGDQ3CYVFfhEM0f5O6ZXgy1Z+ABiIWMVBxj56047vaELqLnYI5gXVCVn6+RLdsyPRcI2ZPAHswKcp/MxPIDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2959,6 +3087,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: +4fohzL8Dk72TpF0Eso/AU4nRWGgawLfOAODSBz7hT4D8V1+M5OvIZaIuvwv/Ai2QbGIK5Ac5nhdHXNNqCSkCw==
-length: 603513
+edSignature: DYNymAXe026ibrcTOj6bg6xhn93enPqwW4wU1FgAgYo3T+RXlgOkQHlZi/yj7CxPBzW1WG1bbcxgADwnO2B4DA==
+length: 621273
 -->
