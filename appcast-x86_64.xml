@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5053alpha</title>
-      <pubDate>Fri, 30 Oct 2026 18:01:58 +0000</pubDate>
-      <sparkle:version>3.0.0.50531</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5053alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5057alpha</title>
+      <pubDate>Fri, 30 Oct 2026 20:02:11 +0000</pubDate>
+      <sparkle:version>3.0.0.50571</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5057alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="en" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- The README now starts with direct download links for Windows and Mac, so you no longer have to search the Releases page for the right file.
 
 - Arabic: voice message and audio transcription now uses "تفريغ" (transcription) instead of "تسجيل" (recording) in menus, settings and messages, so it no longer sounds like recording your voice.
 
@@ -193,11 +195,13 @@ WHAT'S NEW
 - WPPConnect: starring a message and liking a status work again.
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O README agora começa com links diretos de download para Windows e Mac, sem precisar procurar o arquivo certo na página de Releases.
 
 - Árabe: a transcrição de mensagens de voz e áudios agora usa «تفريغ» (transcrição) em vez de «تسجيل» (gravação) nos menus, nas configurações e nas mensagens, para não parecer que você está gravando sua voz.
 
@@ -375,11 +379,13 @@ NOVIDADES
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O README passa a começar com ligações diretas de transferência para Windows e Mac, sem ser preciso procurar o ficheiro certo na página de Releases.
 
 - Árabe: a transcrição de mensagens de voz e áudios passa a usar «تفريغ» (transcrição) em vez de «تسجيل» (gravação) nos menus, nas definições e nas mensagens, para não parecer que está a gravar a sua voz.
 
@@ -557,11 +563,13 @@ NOVIDADES
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="es" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- El README ahora empieza con enlaces de descarga directa para Windows y Mac, para no tener que buscar el archivo correcto en la página de Releases.
 
 - Árabe: la transcripción de mensajes de voz y audio usa ahora «تفريغ» (transcripción) en lugar de «تسجيل» (grabación) en menús, ajustes y mensajes, para que no suene a grabar tu voz.
 
@@ -739,11 +747,13 @@ NOVEDADES
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="pl" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- README zaczyna się teraz od bezpośrednich linków do pobrania dla Windows i Mac, więc nie trzeba szukać właściwego pliku na stronie Releases.
 
 - Arabski: transkrypcja wiadomości głosowych i dźwięku używa teraz w menu, ustawieniach i komunikatach słowa „تفريغ” (transkrypcja) zamiast „تسجيل” (nagrywanie), aby nie brzmiało to jak nagrywanie głosu.
 
@@ -921,11 +931,13 @@ NOWOŚCI
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="tr" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- README artık Windows ve Mac için doğrudan indirme bağlantılarıyla başlıyor; doğru dosyayı Releases sayfasında aramanız gerekmiyor.
 
 - Arapça: sesli mesajların ve seslerin yazıya dökülmesi artık menülerde, ayarlarda ve iletilerde «تسجيل» (kayıt) yerine «تفريغ» (yazıya dökme) sözcüğünü kullanıyor; böylece sesinizi kaydediyormuş gibi görünmüyor.
 
@@ -1103,11 +1115,13 @@ YENİLİKLER
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="ro" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- README începe acum cu linkuri directe de descărcare pentru Windows și Mac, fără să mai cauți fișierul potrivit pe pagina Releases.
 
 - Araba: transcrierea mesajelor vocale și a sunetului folosește acum «تفريغ» (transcriere) în loc de «تسجيل» (înregistrare) în meniuri, setări și mesaje, ca să nu sune ca și cum ți-ai înregistra vocea.
 
@@ -1285,11 +1299,13 @@ NOUTĂȚI
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
+      <description xml:lang="ar" sparkle:format="plain-text">- README: direct download links at the top, Mac included (#642)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- يبدأ ملف README الآن بروابط تنزيل مباشرة لنظامي Windows وMac، فلا حاجة للبحث عن الملف الصحيح في صفحة Releases.
 
 - العربية: يستخدم تفريغ الرسائل الصوتية والصوت الآن كلمة «تفريغ» بدلاً من «تسجيل» في القوائم والإعدادات والرسائل، حتى لا يبدو الأمر كأنه تسجيل لصوتك.
 
@@ -1468,6 +1484,15 @@ NOUTĂȚI
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5057alpha/WinZapp-macOS-x86_64.zip" length="348968094" type="application/octet-stream" sparkle:edSignature="VvMFVao4XWcGd9JGhx0squXYzTgdsEucUdi/jbsvjAPx3AAffsuomUwy6rnHvK81DzXWMzUB0x96Mr8W6nj7Cg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5053alpha</title>
+      <pubDate>Fri, 30 Oct 2026 18:01:58 +0000</pubDate>
+      <sparkle:version>3.0.0.50531</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5053alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5053alpha/WinZapp-macOS-x86_64.zip" length="348643214" type="application/octet-stream" sparkle:edSignature="CCp66xardM1XBlQtjgvvPAK/BsjZqw3ilDZ9rLGvagBPPU9Zt5LsoNQiOP7rILgjNBEBxxH5r0iFstf8jQ3BDA=="></enclosure>
     </item>
     <item>
@@ -1496,15 +1521,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5018alpha/WinZapp-macOS-x86_64.zip" length="348921879" type="application/octet-stream" sparkle:edSignature="fTPZkBpnzOvYLgIcEozSvsIsZotIgrJLExbR+pxCZe7fJE6g7QeG88KylSqWVBgWkjqE6UkLBuvsUVACz/W/BQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5004alpha</title>
-      <pubDate>Fri, 30 Oct 2026 01:48:00 +0000</pubDate>
-      <sparkle:version>3.0.0.50041</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5004alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5004alpha/WinZapp-macOS-x86_64.zip" length="348640699" type="application/octet-stream" sparkle:edSignature="sgjxDjRRe31mb7OyHQW8UHoTZWPwhguiyTlcaYFy+3wkTEwbxHzuQ299Qcy9XyCjdqe6xrfSoA0INtrNdvZ+Cg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3119,6 +3135,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Gq3eRk173m1xqwgCe9vvwSXtLtlVY7pQv+sqtoyTqrekPPGuoYPze7Z4HgijnSgShzbwLZ58XyNOVwliPXNzAQ==
-length: 624993
+edSignature: M3kNAHAFVzBxneK1iDtK86PN83eDTlU9ZQ1fnw7w2hkzydx5ivmY41rufgUF/M2oQAAB1iS2bdyNEA1VSLL0BA==
+length: 626049
 -->
