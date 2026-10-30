@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5001alpha</title>
-      <pubDate>Thu, 29 Oct 2026 19:22:39 +0000</pubDate>
-      <sparkle:version>3.0.0.50011</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5001alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5004alpha</title>
+      <pubDate>Fri, 30 Oct 2026 01:48:00 +0000</pubDate>
+      <sparkle:version>3.0.0.50041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5004alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="en" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Quick chats: Ctrl+Alt+Shift+F1–F10 assigns a chat, and Ctrl+Shift+the same function key opens it from anywhere in the window (F10 is slot 0). Assignments are per account, shortcuts can be changed in Settings, and existing bookmark shortcuts remain available.
 
 - WPPConnect Server updated to 2.10.70, which tightens its admin routes (listing and backing up sessions now need the secret key in a header instead of the address), the session folders it deletes on logout and the way contact lists are split. The existing session cleanup on shutdown with a custom API was adjusted to match.
 
@@ -163,11 +165,13 @@ WHAT'S NEW
 - Neonize: when the last WinZapp leaves, the bridge is now asked to close its WhatsApp connections and databases and exit on its own; it is only forced to stop if it does not do so within 10 seconds. Before, it was always killed on the spot, which could cut off a write.
 
 - Neonize: the pairing QR code is no longer cut off in the connection window. It is now shown whole, at a size the phone camera can read.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chats de acesso rápido: Ctrl+Alt+Shift+F1–F10 atribui um chat e Ctrl+Shift+a mesma tecla de função o abre de qualquer lugar da janela (F10 é a posição 0). As atribuições são separadas por conta, os atalhos podem ser alterados nas Configurações e os atalhos dos marcadores são mantidos.
 
 - O WPPConnect Server foi atualizado para a 2.10.70, que reforça as rotas de administração (listar e fazer backup das sessões agora exigem a chave secreta em um cabeçalho, e não no endereço), as pastas de sessão que ele apaga ao sair da conta e a forma de separar listas de contatos. A limpeza de sessões ao fechar com uma API personalizada foi adaptada a essa mudança.
 
@@ -315,11 +319,13 @@ NOVIDADES
 - Neonize: quando o último WinZapp sai, a ponte agora é convidada a fechar suas conexões e bancos de dados com o WhatsApp e a encerrar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, ela era sempre encerrada à força na hora, o que podia interromper uma gravação.
 
 - Neonize: o QR code de pareamento não aparece mais cortado na janela de conexão. Ele passa a ser mostrado inteiro, num tamanho que a câmera do celular consegue ler.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chats de acesso rápido: Ctrl+Alt+Shift+F1–F10 atribui um chat e Ctrl+Shift+a mesma tecla de função abre-o de qualquer lugar da janela (F10 é a posição 0). As atribuições são separadas por conta, os atalhos podem ser alterados nas Definições e os atalhos dos marcadores são mantidos.
 
 - O WPPConnect Server foi atualizado para a 2.10.70, que reforça as rotas de administração (listar e fazer cópia de segurança das sessões passam a exigir a chave secreta num cabeçalho, e não no endereço), as pastas de sessão que apaga ao terminar sessão e a forma de separar listas de contactos. A limpeza de sessões ao fechar com uma API personalizada foi adaptada a esta alteração.
 
@@ -467,11 +473,13 @@ NOVIDADES
 - Neonize: quando o último WinZapp sai, a ponte passa a ser convidada a fechar as suas ligações e bases de dados com o WhatsApp e a terminar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, era sempre terminada à força de imediato, o que podia interromper uma gravação.
 
 - Neonize: o código QR de emparelhamento já não aparece cortado na janela de ligação. Passa a ser mostrado por inteiro, num tamanho que a câmara do telemóvel consegue ler.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="es" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Chats de acceso rápido: Ctrl+Alt+Shift+F1–F10 asigna un chat y Ctrl+Shift+la misma tecla de función lo abre desde cualquier lugar de la ventana (F10 es la posición 0). Las asignaciones son independientes para cada cuenta, los atajos se pueden cambiar en Configuración y los atajos de marcadores se conservan.
 
 - WPPConnect Server actualizado a la 2.10.70, que refuerza sus rutas de administración (listar y respaldar sesiones ahora exigen la clave secreta en una cabecera en lugar de la dirección), las carpetas de sesión que borra al cerrar sesión y la forma de separar listas de contactos. La limpieza de sesiones al cerrar con una API personalizada se adaptó a este cambio.
 
@@ -619,11 +627,13 @@ NOVEDADES
 - Neonize: cuando el último WinZapp se va, ahora se le pide al puente que cierre sus conexiones y bases de datos con WhatsApp y termine por sí mismo; solo se fuerza su cierre si no lo hace en 10 segundos. Antes se terminaba siempre a la fuerza en el acto, lo que podía cortar una escritura.
 
 - Neonize: el código QR de vinculación ya no aparece cortado en la ventana de conexión. Ahora se muestra completo, con un tamaño que la cámara del móvil puede leer.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="pl" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Szybkie czaty: Ctrl+Alt+Shift+F1–F10 przypisuje czat, a Ctrl+Shift+ten sam klawisz funkcyjny otwiera go z dowolnego miejsca w oknie (F10 to numer 0). Przypisania są osobne dla konta, skróty można zmieniać w ustawieniach, a dotychczasowe skróty zakładek pozostają dostępne.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.70, która zaostrza swoje trasy administracyjne (wyświetlanie i kopia zapasowa sesji wymagają teraz tajnego klucza w nagłówku, a nie w adresie), foldery sesji usuwane przy wylogowaniu oraz sposób dzielenia list kontaktów. Czyszczenie sesji przy zamykaniu z własnym API zostało dostosowane do tej zmiany.
 
@@ -771,11 +781,13 @@ NOWOŚCI
 - Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.
 
 - Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="tr" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Hızlı sohbetler: Ctrl+Alt+Shift+F1–F10 bir sohbet atar, Ctrl+Shift+aynı işlev tuşu ise pencerenin herhangi bir yerinden açar (F10, 0 numaralı konumdur). Atamalar her hesap için ayrıdır, kısayollar Ayarlar'dan değiştirilebilir ve yer işareti kısayolları korunur.
 
 - WPPConnect Server 2.10.70 sürümüne güncellendi; yönetim rotaları (oturumları listelemek ve yedeklemek artık gizli anahtarı adreste değil bir başlıkta istiyor), oturumdan çıkarken sildiği oturum klasörleri ve kişi listelerinin ayrıştırılma biçimi sıkılaştırıldı. Özel API ile kapanırken yapılan oturum temizliği bu değişikliğe uyarlandı.
 
@@ -923,11 +935,13 @@ YENİLİKLER
 - Neonize: son WinZapp kapanırken köprüden artık WhatsApp bağlantılarını ve veritabanlarını kapatıp kendi kendine çıkması isteniyor; 10 saniye içinde çıkmazsa zorla durduruluyor. Önceden her zaman anında zorla sonlandırılıyordu ve bu bir yazma işlemini yarıda kesebilirdi.
 
 - Neonize: eşleştirme QR kodu bağlantı penceresinde artık kesik görünmüyor. Artık tamamı, telefon kamerasının okuyabileceği bir boyutta gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Porta o WPPConnect Server 2.10.70 e sobe o pin (#624)
+      <description xml:lang="ro" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Chaturi rapide: Ctrl+Alt+Shift+F1–F10 atribuie un chat, iar Ctrl+Shift+aceeași tastă funcțională îl deschide de oriunde din fereastră (F10 este poziția 0). Atribuirile sunt separate pentru fiecare cont, scurtăturile pot fi schimbate în Setări, iar scurtăturile marcajelor rămân disponibile.
 
 - WPPConnect Server a fost actualizat la 2.10.70, care întărește rutele de administrare (listarea și copia de rezervă a sesiunilor cer acum cheia secretă într-un antet, nu în adresă), folderele de sesiune pe care le șterge la deconectare și modul de separare a listelor de contacte. Curățarea sesiunilor la închidere cu un API personalizat a fost adaptată acestei schimbări.
 
@@ -1075,6 +1089,15 @@ NOUTĂȚI
 - Neonize: când pleacă ultimul WinZapp, puntea este acum rugată să-și închidă conexiunile și bazele de date WhatsApp și să se oprească singură; este oprită forțat doar dacă nu o face în 10 secunde. Înainte era oprită întotdeauna forțat, pe loc, ceea ce putea întrerupe o scriere.
 
 - Neonize: codul QR de asociere nu mai apare tăiat în fereastra de conectare. Acum este afișat întreg, la o dimensiune pe care camera telefonului o poate citi.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5004alpha/WinZapp-macOS-arm64.zip" length="313588330" type="application/octet-stream" sparkle:edSignature="AkOzOyzShMe8KAC3XM0Y99PVJT+fsc2CDtW8JJu753V0Esc/jlt1DKyipGR7FOnjTQzyrU/knSiiArpuV2jfBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5001alpha</title>
+      <pubDate>Thu, 29 Oct 2026 19:22:39 +0000</pubDate>
+      <sparkle:version>3.0.0.50011</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5001alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5001alpha/WinZapp-macOS-arm64.zip" length="313842567" type="application/octet-stream" sparkle:edSignature="wV0CvyUhNjEkF3Y48Sp5g/qsvkEhXrhHsUZtajfcAHGQMlrrIQzkHxtfmV3Rlp2ngG5qdY6CNRr1h7Govpd4Aw=="></enclosure>
     </item>
     <item>
@@ -1103,15 +1126,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4988alpha/WinZapp-macOS-arm64.zip" length="313512269" type="application/octet-stream" sparkle:edSignature="8nzULHakH7llccvdr+GYscRQvSfdgctwfK7iuJSvaU/xqk/SNzkyhvklT99k033jYub/tgDZIB5dvVLnOVs+DQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4985alpha</title>
-      <pubDate>Wed, 28 Oct 2026 22:24:06 +0000</pubDate>
-      <sparkle:version>3.0.0.49851</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4985alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4985alpha/WinZapp-macOS-arm64.zip" length="313510158" type="application/octet-stream" sparkle:edSignature="/EpBTWzvnOxM9UXkc6Np6IBvC1+gTToXFjqWSCWPUiyUEEGHdaYLDNaR7SzJFJyY+6QQRjGAWmu79sVBnN82Dw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2726,6 +2740,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: LYDgsitydlLq3T7zmzPri5aXz08U+yTYfHkF4qt+sslKIpUHXlKESahTmoPfN3AszbWVsLqm8+CQNVjeeSgvAA==
-length: 558760
+edSignature: jwRTGH5IJEfENAif06xl1NBJlQ1MwzounIWAMDG6IW8c6tyCJDqPpZhqM8zCIPlv+ySIcnXI6y4g0lPx3frwBQ==
+length: 560816
 -->
