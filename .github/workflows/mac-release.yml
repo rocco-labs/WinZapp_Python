@@ -391,7 +391,10 @@ jobs:
   appcast:
     needs: appcast-plan
     if: ${{ !cancelled() && needs.appcast-plan.outputs.tags != '' && needs.appcast-plan.outputs.tags != '[]' }}
-    runs-on: macos-15
+    # Intel, not macos-15: arm64 runners are often unavailable (a job gets none
+    # for 15 minutes and is cancelled), which would leave a published release
+    # out of the feed. sign_update is universal.
+    runs-on: macos-15-intel
     permissions:
       contents: write     # the appcast branch (the feed's state)
       pages: write        # actions/deploy-pages
