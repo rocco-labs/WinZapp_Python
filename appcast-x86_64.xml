@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5049alpha</title>
-      <pubDate>Fri, 30 Oct 2026 16:03:55 +0000</pubDate>
-      <sparkle:version>3.0.0.50491</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5049alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5053alpha</title>
+      <pubDate>Fri, 30 Oct 2026 18:01:58 +0000</pubDate>
+      <sparkle:version>3.0.0.50531</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5053alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="en" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Arabic: voice message and audio transcription now uses "تفريغ" (transcription) instead of "تسجيل" (recording) in menus, settings and messages, so it no longer sounds like recording your voice.
 
 - When you accept an update, WinZapp now checks again which version is the latest before downloading, so it no longer installs an alpha older than the newest when alphas are published in quick succession.
 
@@ -191,11 +193,13 @@ WHAT'S NEW
 - WPPConnect: starring a message and liking a status work again.
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Árabe: a transcrição de mensagens de voz e áudios agora usa «تفريغ» (transcrição) em vez de «تسجيل» (gravação) nos menus, nas configurações e nas mensagens, para não parecer que você está gravando sua voz.
 
 - Ao aceitar uma atualização, o WinZapp agora confirma de novo qual é a versão mais recente antes de baixar, e deixa de instalar uma alpha anterior à última quando várias alphas são publicadas em sequência.
 
@@ -371,11 +375,13 @@ NOVIDADES
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Árabe: a transcrição de mensagens de voz e áudios passa a usar «تفريغ» (transcrição) em vez de «تسجيل» (gravação) nos menus, nas definições e nas mensagens, para não parecer que está a gravar a sua voz.
 
 - Ao aceitar uma atualização, o WinZapp passa a confirmar de novo qual é a versão mais recente antes de transferir, e deixa de instalar uma alpha anterior à última quando várias alphas são publicadas em sequência.
 
@@ -551,11 +557,13 @@ NOVIDADES
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="es" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Árabe: la transcripción de mensajes de voz y audio usa ahora «تفريغ» (transcripción) en lugar de «تسجيل» (grabación) en menús, ajustes y mensajes, para que no suene a grabar tu voz.
 
 - Al aceptar una actualización, WinZapp ahora vuelve a comprobar cuál es la versión más reciente antes de descargar, de modo que ya no instala una alfa anterior a la última cuando se publican alfas seguidas.
 
@@ -731,11 +739,13 @@ NOVEDADES
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="pl" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Arabski: transkrypcja wiadomości głosowych i dźwięku używa teraz w menu, ustawieniach i komunikatach słowa „تفريغ” (transkrypcja) zamiast „تسجيل” (nagrywanie), aby nie brzmiało to jak nagrywanie głosu.
 
 - Po zaakceptowaniu aktualizacji WinZapp ponownie sprawdza, która wersja jest najnowsza, zanim zacznie pobierać, więc nie instaluje już alfy starszej niż najnowsza, gdy alfy są publikowane jedna po drugiej.
 
@@ -911,11 +921,13 @@ NOWOŚCI
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="tr" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Arapça: sesli mesajların ve seslerin yazıya dökülmesi artık menülerde, ayarlarda ve iletilerde «تسجيل» (kayıt) yerine «تفريغ» (yazıya dökme) sözcüğünü kullanıyor; böylece sesinizi kaydediyormuş gibi görünmüyor.
 
 - Bir güncellemeyi kabul ettiğinizde WinZapp, indirmeden önce en son sürümün hangisi olduğunu yeniden denetler; böylece alfa sürümleri art arda yayımlandığında en yeniden daha eski bir alfa kurulmaz.
 
@@ -1091,11 +1103,13 @@ YENİLİKLER
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="ro" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Araba: transcrierea mesajelor vocale și a sunetului folosește acum «تفريغ» (transcriere) în loc de «تسجيل» (înregistrare) în meniuri, setări și mesaje, ca să nu sune ca și cum ți-ai înregistra vocea.
 
 - Când accepți o actualizare, WinZapp verifică din nou care este cea mai recentă versiune înainte de descărcare, așa că nu mai instalează o versiune alfa mai veche decât ultima atunci când alfele sunt publicate una după alta.
 
@@ -1271,11 +1285,13 @@ NOUTĂȚI
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Atualizador: confirmar a versão mais recente depois do Sim, antes de baixar (#636)
+      <description xml:lang="ar" sparkle:format="plain-text">- Clarify Arabic copy: transcription (تفريغ) vs recording (تسجيل) (#638)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- العربية: يستخدم تفريغ الرسائل الصوتية والصوت الآن كلمة «تفريغ» بدلاً من «تسجيل» في القوائم والإعدادات والرسائل، حتى لا يبدو الأمر كأنه تسجيل لصوتك.
 
 - عند الموافقة على التحديث، يتحقق WinZapp مرة أخرى من أحدث إصدار قبل التنزيل، فلا يُثبَّت إصدار ألفا أقدم من الأحدث عندما تُنشر إصدارات متتالية بسرعة.
 
@@ -1452,6 +1468,15 @@ NOUTĂȚI
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5053alpha/WinZapp-macOS-x86_64.zip" length="348643214" type="application/octet-stream" sparkle:edSignature="CCp66xardM1XBlQtjgvvPAK/BsjZqw3ilDZ9rLGvagBPPU9Zt5LsoNQiOP7rILgjNBEBxxH5r0iFstf8jQ3BDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5049alpha</title>
+      <pubDate>Fri, 30 Oct 2026 16:03:55 +0000</pubDate>
+      <sparkle:version>3.0.0.50491</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5049alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5049alpha/WinZapp-macOS-x86_64.zip" length="348968333" type="application/octet-stream" sparkle:edSignature="42nez/LszyfsGcmyEhfyrzJgIR/ndfIyb/jDLa9L97sj19gSUgIQJZ0GMneRtNoTCB/+WV9T9NKE3YigTqDZBA=="></enclosure>
     </item>
     <item>
@@ -1480,15 +1505,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5004alpha/WinZapp-macOS-x86_64.zip" length="348640699" type="application/octet-stream" sparkle:edSignature="sgjxDjRRe31mb7OyHQW8UHoTZWPwhguiyTlcaYFy+3wkTEwbxHzuQ299Qcy9XyCjdqe6xrfSoA0INtrNdvZ+Cg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5001alpha</title>
-      <pubDate>Thu, 29 Oct 2026 19:22:39 +0000</pubDate>
-      <sparkle:version>3.0.0.50011</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5001alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5001alpha/WinZapp-macOS-x86_64.zip" length="348896332" type="application/octet-stream" sparkle:edSignature="wVJkbl69rp6OWEn7ZbnDvcjM/TSR+h+Z6jWQj/XMIV81cuSs3tgkflXtPITg0NkuEmJsJ50bayB2F0Tl2At6Ag=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3103,6 +3119,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: yhJwaNyIpkGzk6qayC9FJvtgOCtXJR2auZ6ycgtkg1RL+Jf8rfaGWT+/NtKevpkpzPphAbUGgIlPtsO8TRgPCg==
-length: 623157
+edSignature: Gq3eRk173m1xqwgCe9vvwSXtLtlVY7pQv+sqtoyTqrekPPGuoYPze7Z4HgijnSgShzbwLZ58XyNOVwliPXNzAQ==
+length: 624993
 -->
