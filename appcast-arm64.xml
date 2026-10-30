@@ -5,19 +5,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5004alpha</title>
-      <pubDate>Fri, 30 Oct 2026 01:48:00 +0000</pubDate>
-      <sparkle:version>3.0.0.50041</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5004alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5018alpha</title>
+      <pubDate>Fri, 30 Oct 2026 13:53:45 +0000</pubDate>
+      <sparkle:version>3.0.0.50181</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5018alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="en" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Neonize calls: fixed a race that could leave an answered incoming call silent, preserved multi-frame received audio and reduced microphone aliasing. The negotiated codec is now used for audio, with bounded packet reordering and loss handling.
+
+- WPPConnect Server updated to 2.10.71, which adds a fix for a vulnerability in a library the browser layer uses (deepmerge) and loads it when the server starts.
+
 - Quick chats: Ctrl+Alt+Shift+F1–F10 assigns a chat, and Ctrl+Shift+the same function key opens it from anywhere in the window (F10 is slot 0). Assignments are per account, shortcuts can be changed in Settings, and existing bookmark shortcuts remain available.
+
+- Arabic is now available in Settings &gt; General &gt; Language, with Arabic text in the Windows installer and uninstaller.
 
 - WPPConnect Server updated to 2.10.70, which tightens its admin routes (listing and backing up sessions now need the secret key in a header instead of the address), the session folders it deletes on logout and the way contact lists are split. The existing session cleanup on shutdown with a custom API was adjusted to match.
 
@@ -165,13 +173,21 @@ WHAT'S NEW
 - Neonize: when the last WinZapp leaves, the bridge is now asked to close its WhatsApp connections and databases and exit on its own; it is only forced to stop if it does not do so within 10 seconds. Before, it was always killed on the spot, which could cut off a write.
 
 - Neonize: the pairing QR code is no longer cut off in the connection window. It is now shown whole, at a size the phone camera can read.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Ligações pelo Neonize: corrigida uma condição de corrida que podia deixar uma chamada recebida sem áudio após atender, preservados os vários quadros de áudio recebidos e reduzido o aliasing na conversão do microfone. O áudio passa a usar o codec negociado, com reordenação limitada de pacotes e tratamento de perdas.
+
+- O WPPConnect Server foi atualizado para a 2.10.71, que traz uma correção para uma vulnerabilidade em uma biblioteca usada pela camada do navegador (deepmerge) e a carrega quando o servidor inicia.
+
 - Chats de acesso rápido: Ctrl+Alt+Shift+F1–F10 atribui um chat e Ctrl+Shift+a mesma tecla de função o abre de qualquer lugar da janela (F10 é a posição 0). As atribuições são separadas por conta, os atalhos podem ser alterados nas Configurações e os atalhos dos marcadores são mantidos.
+
+- O árabe agora está disponível em Configurações &gt; Geral &gt; Idioma, com textos em árabe no instalador e no desinstalador do Windows.
 
 - O WPPConnect Server foi atualizado para a 2.10.70, que reforça as rotas de administração (listar e fazer backup das sessões agora exigem a chave secreta em um cabeçalho, e não no endereço), as pastas de sessão que ele apaga ao sair da conta e a forma de separar listas de contatos. A limpeza de sessões ao fechar com uma API personalizada foi adaptada a essa mudança.
 
@@ -319,13 +335,21 @@ NOVIDADES
 - Neonize: quando o último WinZapp sai, a ponte agora é convidada a fechar suas conexões e bancos de dados com o WhatsApp e a encerrar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, ela era sempre encerrada à força na hora, o que podia interromper uma gravação.
 
 - Neonize: o QR code de pareamento não aparece mais cortado na janela de conexão. Ele passa a ser mostrado inteiro, num tamanho que a câmera do celular consegue ler.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Chamadas pelo Neonize: corrigida uma condição de corrida que podia deixar uma chamada recebida sem áudio após atender, preservados os vários fotogramas de áudio recebidos e reduzido o aliasing na conversão do microfone. O áudio passa a usar o codec negociado, com reordenação limitada de pacotes e tratamento de perdas.
+
+- O WPPConnect Server foi atualizado para a 2.10.71, que traz uma correção para uma vulnerabilidade numa biblioteca usada pela camada do navegador (deepmerge) e a carrega quando o servidor arranca.
+
 - Chats de acesso rápido: Ctrl+Alt+Shift+F1–F10 atribui um chat e Ctrl+Shift+a mesma tecla de função abre-o de qualquer lugar da janela (F10 é a posição 0). As atribuições são separadas por conta, os atalhos podem ser alterados nas Definições e os atalhos dos marcadores são mantidos.
+
+- O árabe está agora disponível em Definições &gt; Geral &gt; Idioma, com textos em árabe no instalador e no desinstalador do Windows.
 
 - O WPPConnect Server foi atualizado para a 2.10.70, que reforça as rotas de administração (listar e fazer cópia de segurança das sessões passam a exigir a chave secreta num cabeçalho, e não no endereço), as pastas de sessão que apaga ao terminar sessão e a forma de separar listas de contactos. A limpeza de sessões ao fechar com uma API personalizada foi adaptada a esta alteração.
 
@@ -473,13 +497,21 @@ NOVIDADES
 - Neonize: quando o último WinZapp sai, a ponte passa a ser convidada a fechar as suas ligações e bases de dados com o WhatsApp e a terminar sozinha; só é forçada a parar se não o fizer em 10 segundos. Antes, era sempre terminada à força de imediato, o que podia interromper uma gravação.
 
 - Neonize: o código QR de emparelhamento já não aparece cortado na janela de ligação. Passa a ser mostrado por inteiro, num tamanho que a câmara do telemóvel consegue ler.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="es" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Llamadas con Neonize: corregida una condición de carrera que podía dejar sin audio una llamada entrante al responder, conservadas las tramas múltiples recibidas y reducido el aliasing al convertir el micrófono. El audio utiliza ahora el códec negociado, con reordenación limitada de paquetes y gestión de pérdidas.
+
+- WPPConnect Server actualizado a la 2.10.71, que añade una corrección para una vulnerabilidad en una biblioteca que usa la capa del navegador (deepmerge) y la carga al iniciar el servidor.
+
 - Chats de acceso rápido: Ctrl+Alt+Shift+F1–F10 asigna un chat y Ctrl+Shift+la misma tecla de función lo abre desde cualquier lugar de la ventana (F10 es la posición 0). Las asignaciones son independientes para cada cuenta, los atajos se pueden cambiar en Configuración y los atajos de marcadores se conservan.
+
+- El árabe ya está disponible en Ajustes &gt; General &gt; Idioma, con textos en árabe en el instalador y desinstalador de Windows.
 
 - WPPConnect Server actualizado a la 2.10.70, que refuerza sus rutas de administración (listar y respaldar sesiones ahora exigen la clave secreta en una cabecera en lugar de la dirección), las carpetas de sesión que borra al cerrar sesión y la forma de separar listas de contactos. La limpieza de sesiones al cerrar con una API personalizada se adaptó a este cambio.
 
@@ -627,13 +659,21 @@ NOVEDADES
 - Neonize: cuando el último WinZapp se va, ahora se le pide al puente que cierre sus conexiones y bases de datos con WhatsApp y termine por sí mismo; solo se fuerza su cierre si no lo hace en 10 segundos. Antes se terminaba siempre a la fuerza en el acto, lo que podía cortar una escritura.
 
 - Neonize: el código QR de vinculación ya no aparece cortado en la ventana de conexión. Ahora se muestra completo, con un tamaño que la cámara del móvil puede leer.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="pl" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Połączenia przez Neonize: naprawiono wyścig, przez który odebrane połączenie przychodzące mogło pozostać bez dźwięku, zachowano wieloramkowy odbierany dźwięk i ograniczono aliasing przy konwersji sygnału mikrofonu. Dźwięk korzysta teraz z wynegocjowanego kodeka, z ograniczonym buforem zmiany kolejności pakietów i obsługą strat.
+
+- WPPConnect Server zaktualizowany do wersji 2.10.71, która dodaje poprawkę luki w bibliotece używanej przez warstwę przeglądarki (deepmerge) i ładuje ją przy uruchomieniu serwera.
+
 - Szybkie czaty: Ctrl+Alt+Shift+F1–F10 przypisuje czat, a Ctrl+Shift+ten sam klawisz funkcyjny otwiera go z dowolnego miejsca w oknie (F10 to numer 0). Przypisania są osobne dla konta, skróty można zmieniać w ustawieniach, a dotychczasowe skróty zakładek pozostają dostępne.
+
+- Język arabski jest teraz dostępny w ustawieniach języka programu oraz w instalatorze i deinstalatorze systemu Windows.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.70, która zaostrza swoje trasy administracyjne (wyświetlanie i kopia zapasowa sesji wymagają teraz tajnego klucza w nagłówku, a nie w adresie), foldery sesji usuwane przy wylogowaniu oraz sposób dzielenia list kontaktów. Czyszczenie sesji przy zamykaniu z własnym API zostało dostosowane do tej zmiany.
 
@@ -781,13 +821,21 @@ NOWOŚCI
 - Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.
 
 - Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="tr" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Neonize aramaları: yanıtlanan gelen aramanın sessiz kalmasına yol açabilen bir yarış düzeltildi, alınan çoklu ses kareleri korundu ve mikrofon dönüşümündeki aliasing azaltıldı. Ses artık müzakere edilen codec’i kullanıyor; paket sıralama ve kayıp işleme sınırlı tutuluyor.
+
+- WPPConnect Server 2.10.71 sürümüne güncellendi; tarayıcı katmanının kullandığı bir kütüphanedeki (deepmerge) güvenlik açığı için düzeltme ekliyor ve sunucu başlarken bunu yüklüyor.
+
 - Hızlı sohbetler: Ctrl+Alt+Shift+F1–F10 bir sohbet atar, Ctrl+Shift+aynı işlev tuşu ise pencerenin herhangi bir yerinden açar (F10, 0 numaralı konumdur). Atamalar her hesap için ayrıdır, kısayollar Ayarlar'dan değiştirilebilir ve yer işareti kısayolları korunur.
+
+- Arapça artık Ayarlar &gt; Genel &gt; Dil bölümünde ve Windows yükleyicisi ile kaldırma programında kullanılabilir.
 
 - WPPConnect Server 2.10.70 sürümüne güncellendi; yönetim rotaları (oturumları listelemek ve yedeklemek artık gizli anahtarı adreste değil bir başlıkta istiyor), oturumdan çıkarken sildiği oturum klasörleri ve kişi listelerinin ayrıştırılma biçimi sıkılaştırıldı. Özel API ile kapanırken yapılan oturum temizliği bu değişikliğe uyarlandı.
 
@@ -935,13 +983,21 @@ YENİLİKLER
 - Neonize: son WinZapp kapanırken köprüden artık WhatsApp bağlantılarını ve veritabanlarını kapatıp kendi kendine çıkması isteniyor; 10 saniye içinde çıkmazsa zorla durduruluyor. Önceden her zaman anında zorla sonlandırılıyordu ve bu bir yazma işlemini yarıda kesebilirdi.
 
 - Neonize: eşleştirme QR kodu bağlantı penceresinde artık kesik görünmüyor. Artık tamamı, telefon kamerasının okuyabileceği bir boyutta gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Add configurable per-account quick chat slots (#631)
+      <description xml:lang="ro" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Apeluri prin Neonize: a fost corectată o condiție de concurență care putea lăsa fără sunet un apel primit după răspuns, au fost păstrate cadrele audio multiple primite și a fost redus aliasingul la conversia microfonului. Sunetul folosește acum codecul negociat, cu reordonare limitată a pachetelor și tratarea pierderilor.
+
+- WPPConnect Server a fost actualizat la 2.10.71, care aduce o remediere pentru o vulnerabilitate dintr-o bibliotecă folosită de stratul browserului (deepmerge) și o încarcă la pornirea serverului.
+
 - Chaturi rapide: Ctrl+Alt+Shift+F1–F10 atribuie un chat, iar Ctrl+Shift+aceeași tastă funcțională îl deschide de oriunde din fereastră (F10 este poziția 0). Atribuirile sunt separate pentru fiecare cont, scurtăturile pot fi schimbate în Setări, iar scurtăturile marcajelor rămân disponibile.
+
+- Limba arabă este acum disponibilă în Setări &gt; General &gt; Limbă, cu texte în arabă în programul de instalare și dezinstalare pentru Windows.
 
 - WPPConnect Server a fost actualizat la 2.10.70, care întărește rutele de administrare (listarea și copia de rezervă a sesiunilor cer acum cheia secretă într-un antet, nu în adresă), folderele de sesiune pe care le șterge la deconectare și modul de separare a listelor de contacte. Curățarea sesiunilor la închidere cu un API personalizat a fost adaptată acestei schimbări.
 
@@ -1089,6 +1145,178 @@ NOUTĂȚI
 - Neonize: când pleacă ultimul WinZapp, puntea este acum rugată să-și închidă conexiunile și bazele de date WhatsApp și să se oprească singură; este oprită forțat doar dacă nu o face în 10 secunde. Înainte era oprită întotdeauna forțat, pe loc, ceea ce putea întrerupe o scriere.
 
 - Neonize: codul QR de asociere nu mai apare tăiat în fereastra de conectare. Acum este afișat întreg, la o dimensiune pe care camera telefonului o poate citi.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Add initial AI-assisted Arabic localization (#628)
+- Porta o WPPConnect Server 2.10.71 e sobe o pin (#634)
+- Fix Neonize call audio startup, PCM continuity and negotiated codecs (#635)
+
+يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
+
+الجديد
+
+- مكالمات Neonize: أُصلحت حالة تسابق قد تترك المكالمة الواردة بلا صوت بعد الرد، وحُفظت الإطارات الصوتية المتعددة المستلمة، وخُفّض التشوه عند تحويل صوت الميكروفون. يستخدم الصوت الآن الترميز المتفق عليه، مع إعادة ترتيب محدودة للحزم ومعالجة فقدانها.
+
+- تم تحديث WPPConnect Server إلى 2.10.71، وهو يضيف إصلاحًا لثغرة في مكتبة تستخدمها طبقة المتصفح (deepmerge) ويحمّلها عند بدء تشغيل الخادم.
+
+- أصبحت العربية متاحة في الإعدادات &gt; عام &gt; اللغة، مع نصوص عربية في مثبّت Windows وبرنامج إزالة التثبيت. هذه ترجمة أولية بمساعدة الذكاء الاصطناعي، راجعها المستخدم مبدئيًا، ونرحب بتصحيحات الصياغة وإمكانية الوصول.
+
+- الدردشات السريعة: يعيّن Ctrl+Alt+Shift+F1–F10 دردشة، ويفتحها Ctrl+Shift+مفتاح الوظيفة نفسه من أي مكان في النافذة (F10 هو الخانة 0). التعيينات خاصة بكل حساب، ويمكن تغيير الاختصارات في الإعدادات، وتبقى اختصارات الإشارات المرجعية الحالية متاحة.
+
+- تم تحديث WPPConnect Server إلى 2.10.70، وهو يشدّد مسارات الإدارة فيه (يتطلب سرد الجلسات ونسخها احتياطيًا الآن المفتاح السري في ترويسة بدل العنوان) ومجلدات الجلسات التي يحذفها عند تسجيل الخروج وطريقة تقسيم قوائم جهات الاتصال. وعُدّل تنظيف الجلسات الحالي عند الإغلاق مع واجهة برمجة مخصصة ليتوافق مع ذلك.
+
+- تُسجَّل الآن مكالمة المجموعة التي رنّت ولم يُرد عليها في مجموعتها، ويذكر رنينها المجموعة: ولم تعد تظهر مكالمة خاصة ممن بدأها.
+
+- محرك اتصال جديد، تجريبي: يتصل Neonize بواتساب بلا متصفح، عبر جسر محلي. اخترْه في الإعدادات &gt; الاتصال (أو في السؤال عند التشغيل الأول) وأعد تشغيل WinZapp؛ ويبقى WPPConnect الافتراضي. تتضمن النسخ المبنية الجسر وتُبقي WPPConnect مثبتًا إلى جانبه؛ ومن نسخة المستودع أعدّ الجسر بـ neonize_bridge/prepare.py (انظر README في ذلك المجلد). عند أول تشغيل بعد التحديث يتلقى التثبيت الذي ما زال على WPPConnect إشعارًا لمرة واحدة يعرض التبديل؛ ولكل محرك اتصاله الخاص، فلا يضيع أي منهما بالتبديل والعودة. ومع Neonize تعمل أيضًا قوائم الدردشات المخصصة، والانضمام إلى مجموعات مجتمع (أو طلب الانضمام) وإلغاء هذا الطلب، وتعطيل مجتمع، وتعديل قنواتك وحذفها، واختيار من يرى حالتك، وإزالة جهة اتصال. وتعمل الكتالوجات والسلال والطلبات أيضًا مع Neonize (عرض كتالوج نشاط تجاري، وملء سلة وإرسالها، وعلى حساب أعمال الرد على الطلبات وإدارة كتالوجك)، وكذلك الأزرار والقوائم ومفاتيح Pix في الرسائل. كما تعمل إعادة توجيه المواقع وبطاقات جهات الاتصال مع Neonize. وتعمل مكالمات الفيديو وتحويل المكالمة الصوتية إلى مرئية والمكالمات الجماعية أيضًا مع Neonize. ويسرد المجتمع مع Neonize أيضًا المجموعات التي لست فيها. ويمكن العثور على المكالمات الجماعية الجارية والانضمام إليها مع Neonize، مع قائمة بمن فيها. وتتبع أزرار المكالمات في الدردشات، ومنها الانضمام إلى مكالمة جماعية جارية، الدعم الذي يبلّغ عنه Neonize وتتحدث تلقائيًا عند وصول رده، دون سحب التركيز من نافذة أخرى أو دردشة مخفية. وتُستخدم أيضًا أسماء الملفات الشخصية العامة المستلمة أثناء مزامنة جهات الاتصال لمشاركي المجموعات الذين لا دردشة خاصة معهم، بينما تبقى لأسماء دفتر العناوين المحفوظة الأولوية.
+
+- استخدم زر مشاركي المكالمة في نافذة المكالمة، أو على مكالمة جارية محددة في المكالمات، لرؤية المتصلين بأسمائهم.
+
+- Mistral متاح للتسجيل النصي عبر الإنترنت ووصف الصور واستخراج نص ملفات PDF. يستخدم الصوت نموذج الرسائل الصوتية المختار في نافذة المزوّد (Voxtral Mini Transcribe 3 افتراضيًا، أو Voxtral Small Transcribe 3؛ وكلاهما معاينة)؛ وتستخدم الصور والملصقات وإطارات الفيديو نموذج الرؤية المختار (Ministral 3 3B افتراضيًا)؛ وتستخدم ملفات PDF خاصية Mistral OCR. ويسرد «الحصول على النماذج» نماذج الرؤية المتوافقة فقط. وقبل إرسال الوسائط إلى Mistral يحذّرك WinZapp من أن خطته المجانية قد تستخدم الطلبات في التدريب.
+
+- عندما تكون مكالمة متاحة، تعرض الدردشات الجماعية «الانضمام إلى المكالمة الصوتية الجارية» أو «الانضمام إلى مكالمة الفيديو الجارية (الكاميرا متوقفة)» بدل أزرار بدء المكالمة. وتسرد المكالمات الجارية في «الكل» و«الجارية»، بما فيها المكالمات متعددة الأطراف خارج الدردشات الجماعية. ويبدأ الانضمام بالفيديو والكاميرا متوقفة.
+
+- لم يعد توالي كثير من تحديثات حضور جهات الاتصال (الكتابة، متصل) يجمّد WinZapp لثوانٍ أو يبطئ الحاسوب كله في الحسابات ذات الدردشات الكثيرة.
+
+- حضور جهات الاتصال: لم يعد تعلّم أسماء جهات الاتصال الجديدة ينتظر كتابة في قاعدة البيانات داخل الواجهة. وتحتفظ تحديثات الأسماء المعلقة بأحدث لقطة كاملة، مع معالجة مرتبة عند الإغلاق ومسح البيانات المحلية.
+
+- حضور جهات الاتصال: قلّ تكرار عمل الواجهة عند وصول كثير من تحديثات «متصل» أو «يكتب». ولم تعد عناوين النوافذ غير المتغيرة وتسميات الدردشات المؤرشفة تُكتب من جديد، بينما تحتفظ إعلانات الكتابة بتوقيتها الحالي.
+
+- تستخدم قوائم الدردشات (المحادثات والمؤرشفة والمقفلة) الآن عرض القائمة كاملًا، فلا تُقتطع أسماء الدردشات ومعاينات الرسائل إلا قليلًا عندما تكون النافذة عريضة.
+
+- لم يعد تحديث WinZapp أو WPPConnect يجمّد الحاسوب كله في منتصفه. تعمل خطوات التثبيت والبناء الآن بأولوية أقل، فيواصل قارئ الشاشة النطق بسلاسة.
+
+- تم تحديث WPPConnect Server إلى 2.10.63، مع WPPConnect 2.3.6 وWA-JS 4.7.2. يُحرَّر المتصفح الذي يقوده WinZapp الآن بصورة أكمل عند إغلاق الجلسة أو فشل بدئها، وتُعرف الجلسة المستعادة كمسجّلة الدخول أبكر، ولا يُبلَّغ عن انقطاع الهاتف إلا بعد إلغاء اقتران فعلي.
+
+- تبقى مؤشرات الكتابة والتسجيل الصوتي في الدردشات الخاصة متاحة عندما يبلّغ واتساب أن جهة الاتصال غير متصلة. يُعرض النشاط منفصلًا عن ظهور الاتصال وينتهي عندما يتوقف تحديثه. وينتمي النشاط إلى المحادثة التي يحدث فيها: تُتتبَّع المجموعات والدردشات الخاصة كلٌّ على حدة. وتُعاد محاولة تحديثات آخر ظهور الفائتة، كما تمسح قيود الظهور معلومات الاتصال وآخر ظهور المعروضة سابقًا. وإذا ظلت بيانات الحالة تنتظر الاستعداد في دردشة مفتوحة، فيجري WinZapp عددًا محدودًا من محاولات الاسترداد؛ ولا تطلقها المعلومات المخفية. وعندما لا تكون بيانات الحالة جاهزة بعد، تنتظر القراءة الأولى انتهاء الاشتراك؛ وتتحدث تغييرات آخر ظهور والظهور مستقلةً عن تغييرات النشاط. ولم يعد طلب حالة واحد عالق يمنع التحديثات اللاحقة؛ وتبقى القراءات البديلة محدودة. ويُحدَّث آخر ظهور الناقص عند العودة إلى النافذة، وعند قراءة معلومات جهة الاتصال الحالية، وعند انتهاء الكتابة أو التسجيل دون تحديث أخير. وتُفتح معلومات جهة الاتصال دون انتظار طلبات آخر ظهور؛ ولا يمكن لردود حضور الملف الشخصي المتأخرة استعادة معلومات من اتصال سابق. ولم تعد مؤشرات الكتابة والتسجيل في المجموعات مرتبطة باتصال قديم. وتمسح قيود الظهور المكتشفة أثناء تحديث الحالة المعلومات القديمة في الدردشات وتفاصيل جهة الاتصال أيضًا.
+
+- الرسائل المثبّتة: لم يعد فتح الرسائل المثبّتة في مجموعة تثبيتاتها أقدم مما يحتفظ به واتساب ويب في الذاكرة يفشل برسالة «تعذّر تحميل الرسائل المثبّتة»، ويعرض العدد على الزر الرقم الصحيح.
+
+- تم تحديث WPPConnect Server إلى 2.10.62. لم يعد اقتران حساب جديد يفقد رمز QR عندما يبلّغ واتساب أن الهاتف غير متصل بعد لحظة من بدء الجلسة.
+
+- المكالمات: تحافظ إعادة تثبيت WPPConnect على فهرس واتساب ويب الأحدث المتوافق وتتحقق من حداثته. ويُفحص الفهرس المعاد بناؤه دون انتظار الساعات الست السابقة. وعدم تطابق عقد VoIP المؤكد وغير القابل لإعادة المحاولة يوقف التهيئة المتكررة.
+
+- مكالمات المجموعات: لا يمكن الاتصال بمجموعة فيها أكثر من 32 مشاركًا في واتساب، فتُستبدل أزرار المكالمة بزر «الاتصال غير ممكن» تذكر ملاحظته أن المجموعة فيها أكثر من 32 مشاركًا، وتقول اختصارات المكالمة الشيء نفسه بدل بدء مكالمة.
+
+- مكالمات المجموعات: تظهر الآن أزرار المكالمة الصوتية والمرئية في محادثة المجموعة وتبدأ مكالمة إلى المجموعة، وترنّ المكالمة الجماعية الواردة ويُعلن عنها باسم المجموعة ويمكن الرد عليها، بزر الرد نفسه ومفتاح الرد العام نفسه كالمكالمة الفردية. ويعمل تشغيل الكاميرا أثناء مكالمة صوتية كما في المكالمة الفردية، وتبقى أحداث المكالمة من كل مشارك مع المجموعة، فتحتفظ نافذة المكالمة باسم المجموعة من أول رنين حتى النهاية.
+
+- مكالمات الفيديو: يجد WinZapp الآن الكاميرا بإصدار FFmpeg الذي يشحنه، والذي يسرد أجهزة DirectShow دون عنوان «DirectShow video devices». كان ذلك الإصدار لا يُرجع أي كاميرا، فكانت مكالمة الفيديو تخرج للاستقبال فقط، مع «No camera found» في السجل.
+
+- يمكن الرد على الأزرار في الرسائل التجارية: يرسل زر الرد الإجابة كما يفعل واتساب ويب (أزرار الرد في الرسائل العادية، والردود السريعة في الرسائل التفاعلية، وأزرار القوالب، وصفوف القوائم)، ويفتح زر الرابط الرابط، وينسخ زر النسخ الرمز، ويذكر زر الاتصال الرقم. وتظهر الأزرار تحت قائمة الرسائل عند تحديد الرسالة.
+
+- يُعرض WPPConnect Server 2.10.61 الآن كتحديث دون انتظار إصدار جديد من WinZapp. وهو يحدّث الاعتماديات فقط، ولا تتأثر تعديلات WinZapp على الخادم.
+
+- يُعرض WPPConnect Server 2.10.63 الآن كتحديث دون انتظار إصدار جديد من WinZapp. وهو يحدّث الاعتماديات فقط، ولا تتأثر تعديلات WinZapp على الخادم.
+
+- تشرح تحديثات macOS ما إذا كان فشل التحقق ناتجًا عن مشكلة في الاتصال أو الشهادة أو الخادم أو حد الطلبات في GitHub، وما إذا تعذّر فحص ملف التحقق أو وسم الإصدار الرسمي. تُعاد المحاولة مرة واحدة عند أعطال الاتصال والخادم المؤقتة؛ وتعرض حدود الطلبات مدة انتظار ولا تُرسل طلبات متكررة خلال هذه المدة.
+
+- التحديثات: يحتفظ التثبيت بالملكية بعد إغلاق WinZapp، وتُحفظ الحزمة المنزّلة التي تنتظر التثبيت. لا يُعدّ نجاحًا إلا النسخ الكامل؛ ويزيل التحديث الناجح تحذير الفشل السابق. تنتظر إعادة الفتح التلقائية انتهاء المثبّت ولا تتم عند بلوغ حد الانتظار. بعد نسخ غير مكتمل أو غير مؤكد يبقى WinZapp مغلقًا ويفتح تعليمات الاسترداد في المفكرة.
+
+- تحافظ المكالمات الصوتية على التوقيت بين حزم الصوت وتستخدم تحويلًا محدود النطاق عندما يحتاج الميكروفون أو مكبّر الصوت إلى معدل عيّنات مختلف. أما الصوت الذي بمعدل المكالمة أصلًا فيبقى على المسار المباشر.
+
+- أصبح في نافذة الإعدادات حقل بحث وقائمة فئات: تغيّر مفاتيح الأسهم الفئة، ويدخل Tab إلى خياراتها، وفي البحث ينتقل السهم لأسفل إلى النتائج حيث يفتح Enter أو المسافة الخيار الذي وُجد، حتى لو كان في نافذة زر. دُمجت عدة فئات: الصوت (الأجهزة والصوت الملصق بـ Ctrl+V والرسائل الصوتية وكتم الصوت أثناء التسجيل) وأصوات الأحداث (أحداث الصوت ونغمات التنبيه) والتخزين (مع مجلد الحفظ). وأصبحت المحتويات المنطوقة وتشغيل الصوت والنسخ الاحتياطي للملف الشخصي واختصارات لوحة المفاتيح والتفاعلات والإشعارات والرسائل والدردشات والدردشات المقفلة والتأكيدات أزرارًا تفتح نافذة كل موضوع. وأصبحت «واجهة المستخدم» تسمى «الواجهة»، وانتقل الاتصال إلى نهاية القائمة.
+
+- تفتح إعدادات واتساب (قائمة ملف) الآن الإعدادات على فئة إعدادات واتساب مباشرة، مع زري الخصوصية والملف الشخصي؛ واختفت النافذة المنفصلة. لا يسأل WinZapp واتساب إلا عند فتح كل زر، ولا يزال Ctrl+Shift+, يفتح تلك الفئة.
+
+- المجتمعات: في نافذة «دردشة جديدة» زر «المجتمعات» الجديد الذي يفتح قائمة المجتمعات التي أنت فيها. يعرض اختيار مجتمع وصفه ومسؤوليه والمجموعات التي انضممت إليها منه، مع تحديد مجموعة الإعلانات والمجموعة العامة؛ ويذهب Enter أو «فتح المجموعة» إلى المجموعة المحددة. وإذا كنت مسؤولًا في المجتمع تعرض النافذة أيضًا «إضافة مجموعات» و«إزالة مجموعة من المجتمع» و«ترقية إلى مسؤول مجتمع» و«إلغاء صلاحية مسؤول المجتمع» و«تعطيل المجتمع»، ويُنشئ «مجتمع جديد» مجتمعًا باسم ووصف والمجموعات التي تختارها. بعد كل إجراء يقرأ WinZapp المجتمعات من جديد ولا يقول إنه تم إلا عندما يُظهر واتساب التغيير؛ وإلا فيقول إن الطلب أُرسل ولم يتأكد بعد، أو إنه رُفض.
+
+- ردود إعلانات المجتمع: افتح قائمة الرسالة واختر «ردود إعلانات المجتمع» لقراءة الردود وإرسالها. تتحدث الردود تلقائيًا ما دامت النافذة مفتوحة، ولم يعد حقل الرد للقراءة فقط، ويُحفظ نصك عندما لا يتأكد الإرسال. وفي قائمة الدردشات تقول معاينة المجموعة «فلان ردّ على إعلان» عندما يكون ذلك آخر نشاط. تذكر الإعلانات عدد الردود المعروف. ويستخدم المؤلفون الأسماء المحفوظة أو أسماء الملفات الشخصية، وتراعي ردودك إعداد الإشارة إلى نفسك.
+
+- أصبحت المجتمعات صفًا في قائمة التنقل، بعد المكالمات، مع اختصارها Alt+8 في اسم الصف، فيمكن الوصول إليها بالتنقل بالأسهم في القائمة كما بالاختصار Alt+8.
+
+- لم يعد حظر رقم غير محفوظ في جهات اتصالك يفشل برسالة «تعذّر حظر جهة الاتصال هذه»: يفتح WinZapp الآن الدردشة التي يشترطها واتساب قبل الحظر.
+
+- لم تعد المحادثة الجديدة التي تبدأ برقم برازيلي مكتوب بالرقم 9 الإضافي تظهر مرتين في قائمة المحادثات بعد إرسال أول رسالة: يحتفظ WinZapp بالمحادثة تحت الرقم الذي يستخدمه واتساب نفسه.
+
+- تُعرض رسائل الفيديو (الفيديوهات المستديرة التي تُرسل بدل الرسالة الصوتية) الآن كفيديوهات بدل «رسالة غير متوافقة»، وتسمى «رسالة فيديو» في القائمة، بالمدة والتشغيل و«حفظ باسم» نفسها كأي فيديو.
+
+- أُعيد بناء إلغاء الصدى في المكالمات الصوتية والمرئية على المحرك نفسه الذي يستخدمه Google Meet وواتساب (مُلغي الصدى في WebRTC): لم يعد التحدث عبر مكبّر صوت الحاسوب المحمول أو مع تفعيل الحلقة الراجعة في المازج يجعل الطرف الآخر يسمع صوته. الخيار الآن مفعّل، حتى لمن استخدم WinZapp سابقًا؛ ولإيقافه ألغِ تحديد «تفعيل إلغاء الصدى» في «إعدادات صوت المكالمة». ويستخدم تقليل ضوضاء الميكروفون أثناء المكالمات هذا المحرك أيضًا.
+
+- يعرض سجل المكالمات (log.log) الآن كل 5 ثوانٍ مقدار صوت مكبّر الصوت الذي يصل إلى الميكروفون قبل إلغاء الصدى ومقدار ما يبقى منه فيما يُرسل، مع تأخر ذلك الصدى. وإذا ظل أحد يسمع صوته فيبيّن السجل هل مرّ الصدى عبر مُلغي الصدى أم وصل بمسار آخر.
+
+- الرد على المكالمات من أي نافذة: عندما تكون مكالمة فردية ترنّ، يرد Ctrl+Alt+Shift+Enter عليها ويُحضر نافذة المكالمة أمام أي برنامج وينقل التركيز إليها، ويرفضها Ctrl+Alt+Shift+Backspace كما يرفض مكالمة المجموعة الراننة؛ وعندما لا تكون هناك مكالمة ترنّ ينهي Ctrl+Alt+Shift+Backspace المكالمة الجارية. مع فتح عدة حسابات تُرفض أولًا المكالمة الراننة في أي منها. وتُجاب مكالمة الفيديو بالكاميرا مفتوحة، مثل زر الرد. يمكن تغيير المفتاحين في اختصارات لوحة المفاتيح في الإعدادات، ولا يخصّان WinZapp إلا عندما يمكنهما العمل، فتحتفظ بهما البرامج الأخرى بقية الوقت.
+
+- الإعدادات: فئة جديدة هي «متقدم»، فيها مستوى log.log (تصحيح، معلومات، تحذيرات، أو أخطاء فقط، ويُطبّق فورًا) ومنفذ ثابت للواجهة المحلية، لتشغيل نسختين من WinZapp أو عندما يستخدم برنامج آخر المنفذ 6300 (يُطبّق عند التشغيل التالي لـ WinZapp)، وخيار «إظهار كل تحديثات WPPConnect Server» المعطّل افتراضيًا، والذي يعرض أيضًا إصدارات لم يفحصها القائمون على المشروع بعد، مع تحذير. وفي فئة الاتصال لا يُفعَّل حقل المنفذ إلا مع الواجهة المخصصة.
+
+- الإعدادات: لكل عنصر تحكم في الإعدادات وفي النوافذ التي تفتحها حرف اختصار مع Alt، لا يتكرر داخل النافذة الواحدة، في كل اللغات. ولكي تتسع الأحرف قُسّم التسجيل النصي المحلي إلى نوافذ (الخيارات المتقدمة والتسجيلات المحفوظة والحالات والمجلدات ومكتبات CUDA وwhisper.cpp)، وانتقلت الخيارات التلقائية للذكاء الاصطناعي عبر الإنترنت إلى نافذة «التسجيل النصي والوصف التلقائيان…».
+
+- اختصارات لوحة المفاتيح: أصبحت القائمة شجرة حسب الفئة (يفتح السهم الأيمن فئة، ولا تُنطق إلا مرة واحدة) وفيها حقل بحث؛ وفي البحث ينتقل السهم لأسفل إلى النتائج. أُصلح الخطأ الذي منع تغيير اختصار.
+
+- مسودة لكل محادثة، مثل واتساب ويب: يبقى النص المكتوب وغير المرسل مع المحادثة التي كُتب فيها، بما في ذلك الإشارات، ويعود عند فتحها من جديد؛ وكان يتبعك إلى المحادثة التالية. تتيح الواجهة &gt; المحادثات اختيار إبقائه في الحقل للمحادثة التالية (كما كان)، أو حفظه مسودة لتلك المحادثة (الافتراضي)، أو تجاهله.
+
+- عند تبديل المحادثات لم يعد زرا «التفاعلات» و«قراءة المزيد» للرسالة التي كنت عليها يظهران بـ Tab في المحادثة الجديدة.
+
+- حذف آخر رسالة في محادثة للجميع يحدّث معاينتها في قائمة الدردشات فورًا إلى «تم حذف الرسالة».
+
+- لم يعد Alt+A يفتح قائمة الإرفاق؛ واختصارها لا يزال Ctrl+Shift+A.
+
+- قائمة الرسائل: ثلاثة خيارات جديدة، معطّلة افتراضيًا، تُخرج زر الذكاء الاصطناعي عبر الإنترنت (التسجيل النصي أو الوصف؛ وتظل قائمة الرسالة تعرضه) وشريط المدة وزر السرعة من ترتيب Tab أثناء التشغيل. وتبقى اختصارات السرعة والتقديم تعمل.
+
+- التسجيل النصي المحلي: مع «التسجيل النصي بدون نافذة التقدم»، يؤدي طلب التسجيل النصي المضمّن لرسالة أخرى أثناء تشغيل واحد إلى وضع الجديد في قائمة الانتظار بدل رفضه؛ وضغط الاختصار مرة أخرى على رسالة منتظِرة يُخرجها من قائمة الانتظار.
+
+- التسجيل النصي المحلي: لم يعد الوضع التلقائي يقول «لا يوجد نموذج تسجيل نصي جاهز» لمن نزّل نموذجًا: في بطاقة رسومات صغيرة لا تتسع للنموذج المثبّت يعمل على المعالج بدل طلب تنزيل آخر؛ ويتبع المحرك التلقائي النماذج الموجودة على الحاسوب.
+
+- أصبح Enter والمسافة المضبوطان على التسجيل النصي يعملان أيضًا على الصوت والفيديو المرسلين كملف، وتتبع علامة تبويب الوسائط في تفاصيل المحادثة هذا الخيار للفيديوهات.
+
+- تفاصيل المحادثة: أصبح التسجيل النصي التلقائي مربعين، محلي (Whisper) وعبر الإنترنت، يعرض كل منهما ما تفعله المحادثة الآن ويمكنه تفعيله أو تعطيله لتلك المحادثة وحدها.
+
+- إعادة محاولة الإرسال: في قائمة رسالة منك فشلت أو لم تتأكد، نصًا أو مرفقًا، وللحالات التي لم تخرج، والتي تبقى الآن في علامة تبويب الحالة بعد حالتي مباشرة؛ الاختصار Ctrl+Shift+Y. لا يُعاد إرسال شيء من تلقاء نفسه.
+
+- نشر حالة: منشور واحد في كل مرة (الضغط على نشر مرة أخرى لا يكرر الحالة)، ولم يعد الفيديو الكبير يُبلَّغ عنه فاشلًا وهو لا يزال يُرفع؛ والمنشور الذي لم يتأكد يطلب منك فحص حالتي قبل النشر مجددًا.
+
+- حالتي: احذف حالة للجميع بمفتاح Delete أو بزر «حذف الحالة»، مع تأكيد واتساب نفسه.
+
+- المجتمعات: يذهب Enter في القائمة إلى مجموعات المجتمع، ويفتح زر المجموعة الأحدث نشاطًا؛ ويعرض مرشح كل المجموعات أو التي أنت فيها أو التي لست فيها؛ ويمكنك الانضمام إلى مجموعة وطلب الانضمام وإلغاء الطلب، مثل واتساب ويب.
+
+- الطلبات: يفتح Enter تفاصيل طلب أنشأه لك بائع، مع العناصر والمجموع الفرعي؛ ويمكن للمشتري تأكيد طلب دُفع خارج التطبيق، مثل واتساب ويب؛ وتذكر النافذة أي ردود للمشتري لا يقدمها WinZapp بعد.
+
+- إعدادات واتساب: في الخصوصية، يعرض خيارا الحالة «جهات اتصالي باستثناء» و«المشاركة مع فقط» جهات الاتصال المحفوظة في الهاتف وحدها، وهي الوحيدة التي يسمح واتساب لها برؤية حالة؛ وفي الملف الشخصي، يذكر زر اختيار الصورة هل توجد صورة حالية وأي ملف اختير، دون التنقل بين الكائنات.
+
+- قوائم الدردشات: مع تفعيل خيار «Esc يمسح التحديد»، يلغي Esc تحديد الدردشات المحددة في القائمة الرئيسية وفي المؤرشفة وفي الدردشات المقفلة.
+
+- التحديث مع فتح عدة حسابات: ينتظر المثبّت إغلاق كل حساب قبل النسخ، ولم يعد WinZapp يخرج بصمت عند التشغيل حين يكون الحساب مفتوحًا أصلًا أو يبدو تحديث عالقًا: يقول السبب ويكتبه في السجل. وأثناء تحديث لا يزال جاريًا يكتب في السجل فقط ويخرج، دون مربع، لأن المثبّت يفتحه من جديد عند الانتهاء.
+
+- مزامنة الحسابات الكبيرة: بعد دفعات كبيرة من الرسائل يطلب WinZapp من واتساب ويب تحرير الذاكرة التي لم يعد يستخدمها، مما يخفض الذاكرة المستخدمة أثناء المزامنة.
+
+- علامة تبويب الوسائط في تفاصيل المحادثة: بعد «حفظ باسم» لم يعد قارئ الشاشة يعلن أن النافذة غير متاحة.
+
+- دردشة جديدة: صار لزر الانضمام إلى مجموعة بالرابط حرف اختصار مع Alt.
+
+- أصبح إلغاء الصدى يعمل أيضًا عندما يعود الصدى متأخرًا جدًا، كما في الحلقة الراجعة لبعض المازجات، والتي قد تستغرق أكثر من نصف ثانية وكانت تصل إلى الطرف الآخر كاملة. يقيس WinZapp المدة التي يستغرقها صوت الطرف الآخر ليعود عبر الميكروفون ويضبط المُلغي على ذلك التأخر، حتى 1.5 ثانية.
+
+- Neonize: لم يعد اسم جهة اتصال محفوظة يُستبدل، كل دقيقة، باسم الملف الشخصي الذي اختاره الشخص في واتساب الخاص به (أو بالاسم الذي أعطاه الهاتف للمحادثة). يبقى الاسم الذي أعطيته لجهة الاتصال؛ ويظهر اسم الملف الشخصي فقط لمن لم تحفظهم.
+
+- مكالمات Neonize: يشغّل WinZapp الآن النغمات التي كان واتساب ويب يشغّلها لك. أثناء رنين الهاتف الآخر تسمع نغمة الرنين بطبقة صوت وإيقاع البلد الذي اتصلت به، وتُسمع نغمات قصيرة أثناء اتصال المكالمة أو إعادة اتصالها. ينتجها WinZapp بنفسه؛ ومع محرك WPPConnect لا يتغير شيء.
+
+- مكالمات Neonize: عندما تنتهي مكالمة تم الرد عليها، يشغّل WinZapp صوت انتهاء المكالمة من واتساب. وهو حدث صوتي جديد، «انتهاء المكالمة»، فيتبع حزمة الأصوات ويمكن إيقافه أو استبداله في أحداث الصوت. ومع محرك WPPConnect يواصل واتساب ويب تشغيل صوته.
+
+- الرسائل الصوتية والمقاطع الصوتية التي لم تُشغَّل: عندما لم تكن بطاقة الصوت متاحة لحظة فتح WinZapp مخرج الصوت (مثلًا عند استيقاظ الحاسوب)، لم تكن أي رسالة صوتية تُشغَّل حتى إعادة تشغيل WinZapp، ولا شيء يقول السبب. يحاول WinZapp الآن استعادة مخرج الصوت عند فشل التشغيل، وإذا ظل عاجزًا عن التشغيل فيقول ذلك عبر قارئ الشاشة.
+
+- Neonize: محادثات بدت كأنها اختفت. لا يعطي واتساب تاريخ نشاط لمعظم المحادثات القديمة، فكان WinZapp يحسبها دردشات فارغة ولا يحتفظ بها عند مسح البيانات المحلية (F5 لإعادة المزامنة مثلًا): فعاد حساب فيه أكثر من 160 محادثة بـ 37 فقط. يؤرّخ الجسر الآن كل محادثة بأحدث رسالة فيها، فتعود كلها.
+
+- Neonize: يعرض المجتمع ومجموعة إعلاناته العدد الإجمالي لأعضاء المجتمع، كما يفعل واتساب، لا مشاركي المجموعة وحدهم.
+
+- Neonize: تظهر جهة اتصال محفوظة تكتب في مجموعة باسمها في دفتر العناوين، دون «~» جهة الاتصال غير المحفوظة. ولم تعد القنوات تظهر في قائمة الدردشات كدردشات بلا اسم. ويظهر عضو المجموعة الذي رقمه مخفي باسم ملفه الشخصي، لا «+55∙∙∙∙∙∙∙∙76» بعد الآن.
+
+- القنوات في قائمة الدردشات: خيار جديد، «إظهار القنوات في قائمة الدردشات»، في الإعدادات &gt; الواجهة &gt; الدردشات، معطّل افتراضيًا، يُبقي القنوات خارج قائمة المحادثات. فعّله لرؤيتها هناك من جديد.
+
+- التبديل بين WPPConnect وNeonize: يستخدم المحركان المنفذ 6300، وكان البرنامج يخلط بين المحرك الذي غادرته للتو، وهو لا يزال يُغلق، والمحرك الذي اخترته. فكان اختيار WPPConnect يعطي «لم يُستلم رمز الاقتران»، والتبديل إلى Neonize يظهر «جارٍ الاتصال» ثم «غير متصل» حتى إعادة التشغيل التالية. يُخلي WinZapp الآن المكان أولًا (يوقف جسر Neonize، أو ينتظر إغلاق خادم WPPConnect)، ولم يعد مجلد WinZapp ثانٍ ينضم إلى جسر الأول.
+
+- لنافذة الاقتران الآن قائمة «محرك الاتصال» قبل الدولة، فيمكن لمن لم يقترن بعد الاختيار بين WPPConnect وNeonize دون الوصول إلى الإعدادات. ويطلب الاختيار تأكيدًا ثم يعيد تشغيل WinZapp عليه.
+
+- لم يعد البرنامج يُشحن مع Node.js، لأن Neonize لا يحتاجه. وإذا اخترت WPPConnect (عند أول تشغيل، أو في نافذة الاقتران، أو في الإعدادات)، ينزّل WinZapp Node.js بعد التحقق من المجموع الاختباري ويُعدّ WPPConnect قبل الاتصال. والتنزيل أصغر.
+
+- Neonize: إذا اختفى الجسر أثناء فتح WinZapp (مثلًا تشغيل سابق كان لا يزال يُغلق يوقفه بعد أن قبله هذا التشغيل مباشرة، وهو ما كان يحدث عند التبديل إلى Neonize من إشعار بدء التشغيل)، يعيد WinZapp الآن تشغيله بنفسه بدل البقاء على «جارٍ الاتصال» ثم «غير متصل» حتى إعادة التشغيل التالية.
+
+- Neonize: عندما يغادر آخر WinZapp، يُطلب من الجسر الآن أن يغلق اتصالاته بواتساب وقواعد بياناته ويخرج بنفسه؛ ولا يُفرض إيقافه إلا إذا لم يفعل خلال 10 ثوانٍ. وكان يُقتل سابقًا فورًا، مما قد يقطع كتابة.
+
+- Neonize: لم يعد رمز QR للاقتران يُقتطع في نافذة الاتصال. يظهر الآن كاملًا، بحجم تستطيع كاميرا الهاتف قراءته.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5018alpha/WinZapp-macOS-arm64.zip" length="314850203" type="application/octet-stream" sparkle:edSignature="06CnnZAACwUDldAxnL+UmqkDp9/C7PBqiv6lyU4Gk/bTuDGnmNJ+/RC1rYMRZxfopEpOUS5sBSOa2f65waFPCg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5004alpha</title>
+      <pubDate>Fri, 30 Oct 2026 01:48:00 +0000</pubDate>
+      <sparkle:version>3.0.0.50041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5004alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5004alpha/WinZapp-macOS-arm64.zip" length="313588330" type="application/octet-stream" sparkle:edSignature="AkOzOyzShMe8KAC3XM0Y99PVJT+fsc2CDtW8JJu753V0Esc/jlt1DKyipGR7FOnjTQzyrU/knSiiArpuV2jfBQ=="></enclosure>
     </item>
     <item>
@@ -1117,15 +1345,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4991alpha/WinZapp-macOS-arm64.zip" length="313629332" type="application/octet-stream" sparkle:edSignature="RUeGDQ3CYVFfhEM0f5O6ZXgy1Z+ABiIWMVBxj56047vaELqLnYI5gXVCVn6+RLdsyPRcI2ZPAHswKcp/MxPIDg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.4988alpha</title>
-      <pubDate>Wed, 28 Oct 2026 22:55:30 +0000</pubDate>
-      <sparkle:version>3.0.0.49881</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.4988alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.4988alpha/WinZapp-macOS-arm64.zip" length="313512269" type="application/octet-stream" sparkle:edSignature="8nzULHakH7llccvdr+GYscRQvSfdgctwfK7iuJSvaU/xqk/SNzkyhvklT99k033jYub/tgDZIB5dvVLnOVs+DQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -2740,6 +2959,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: jwRTGH5IJEfENAif06xl1NBJlQ1MwzounIWAMDG6IW8c6tyCJDqPpZhqM8zCIPlv+ySIcnXI6y4g0lPx3frwBQ==
-length: 560816
+edSignature: +4fohzL8Dk72TpF0Eso/AU4nRWGgawLfOAODSBz7hT4D8V1+M5OvIZaIuvwv/Ai2QbGIK5Ac5nhdHXNNqCSkCw==
+length: 603513
 -->
