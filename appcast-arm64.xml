@@ -5,19 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5069alpha</title>
-      <pubDate>Fri, 30 Oct 2026 23:07:09 +0000</pubDate>
-      <sparkle:version>3.0.0.50691</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5069alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5073alpha</title>
+      <pubDate>Fri, 30 Oct 2026 23:58:32 +0000</pubDate>
+      <sparkle:version>3.0.0.50731</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5073alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Attached contacts: a received contact no longer arrives empty and without a phone number. The contact card is now kept by both WPPConnect and Neonize, so you can see and copy the number and chat with the person.
 
 - Pairing: fixed the app staying on the pairing screen after a successful link, while the phone already listed it as connected.
 
@@ -203,13 +203,13 @@ WHAT'S NEW
 - WPPConnect: starring a message and liking a status work again.
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Contatos anexados: um contato recebido não chega mais vazio e sem número. O cartão do contato agora é mantido pelo WPPConnect e pelo Neonize, então dá para ver e copiar o número e conversar com a pessoa.
 
 - Pareamento: corrigido o aplicativo que ficava na tela de pareamento depois de vincular com sucesso, enquanto o celular já o mostrava como conectado.
 
@@ -395,13 +395,13 @@ NOVIDADES
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Contactos anexados: um contacto recebido já não chega vazio e sem número. O cartão do contacto passa a ser mantido pelo WPPConnect e pelo Neonize, pelo que é possível ver e copiar o número e conversar com a pessoa.
 
 - Emparelhamento: corrigida a aplicação que ficava no ecrã de emparelhamento depois de associar com sucesso, enquanto o telemóvel já a mostrava como ligada.
 
@@ -587,13 +587,13 @@ NOVIDADES
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Contactos adjuntos: un contacto recibido ya no llega vacío y sin número. La tarjeta del contacto ahora se conserva tanto con WPPConnect como con Neonize, así que puedes ver y copiar el número y chatear con la persona.
 
 - Vinculación: corregido el problema por el que la aplicación se quedaba en la pantalla de vinculación tras vincularse correctamente, mientras el teléfono ya la mostraba como conectada.
 
@@ -779,13 +779,13 @@ NOVEDADES
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Załączone kontakty: odebrany kontakt nie przychodzi już pusty i bez numeru telefonu. Wizytówka kontaktu jest teraz zachowywana zarówno w WPPConnect, jak i w Neonize, więc można zobaczyć i skopiować numer oraz napisać do tej osoby.
 
 - Parowanie: naprawiono błąd, przez który aplikacja pozostawała na ekranie parowania po udanym połączeniu, choć telefon pokazywał ją już jako połączoną.
 
@@ -971,13 +971,13 @@ NOWOŚCI
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Eklenen kişiler: alınan bir kişi artık boş ve telefon numarasız gelmiyor. Kişi kartı artık hem WPPConnect hem de Neonize tarafından korunuyor; böylece numarayı görebilir, kopyalayabilir ve kişiyle sohbet edebilirsiniz.
 
 - Eşleştirme: başarılı bir bağlantıdan sonra telefon uygulamayı bağlı olarak gösterirken uygulamanın eşleştirme ekranında kalması düzeltildi.
 
@@ -1163,13 +1163,13 @@ YENİLİKLER
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Contacte atașate: un contact primit nu mai ajunge gol și fără număr de telefon. Cartea de vizită a contactului este acum păstrată atât de WPPConnect, cât și de Neonize, așa că poți vedea și copia numărul și poți vorbi cu persoana.
 
 - Asociere: s-a corectat situația în care aplicația rămânea la ecranul de asociere după o conectare reușită, deși telefonul o afișa deja ca fiind conectată.
 
@@ -1355,13 +1355,13 @@ NOUTĂȚI
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Keep history across a no-wipe re-pair; Mac wake recovery, one error box, spoken confirmations (#643)
-- Add opt-in PCM48 audio for negotiated Opus calls (#647)
-- Finish pairing when the link beats the state listener (#646)
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix received attached contact arriving empty without a number (#648)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- جهات الاتصال المرفقة: لم تعد جهة الاتصال المستلمة تصل فارغة وبدون رقم هاتف. أصبحت بطاقة جهة الاتصال محفوظة الآن في WPPConnect وNeonize، فيمكنك رؤية الرقم ونسخه ومحادثة الشخص.
 
 - الاقتران: إصلاح مشكلة بقاء التطبيق على شاشة الاقتران بعد نجاح الربط، بينما كان الهاتف يعرضه متصلًا بالفعل.
 
@@ -1548,6 +1548,15 @@ NOUTĂȚI
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5073alpha/WinZapp-macOS-arm64.zip" length="314830733" type="application/octet-stream" sparkle:edSignature="CQebRRn3EvvKy9u06FzZHGgHc7Rc8Emi6WUIIef5zVCCV3RX/0C0RoN3p9ghEhTzp1uXcdaagBKRdmqpjDjeDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5069alpha</title>
+      <pubDate>Fri, 30 Oct 2026 23:07:09 +0000</pubDate>
+      <sparkle:version>3.0.0.50691</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5069alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5069alpha/WinZapp-macOS-arm64.zip" length="314829498" type="application/octet-stream" sparkle:edSignature="NdiTLiM1f6giJ3OaIoUZPvdPK2TW+42i9v2IuDXsxiUZAJCzmyeUgNtd8IkymV/80MOGcbDk8ZL+MGqeqCkiDg=="></enclosure>
     </item>
     <item>
@@ -1576,15 +1585,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5049alpha/WinZapp-macOS-arm64.zip" length="314900722" type="application/octet-stream" sparkle:edSignature="GGmIOGcV83+bAu+SuhlaciNwKa2eDGKxMxCL+WPkUOFSjKd8BV9+0iYsjAGa80wE+996vIFtTYXMbeMrz/8NCA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5045alpha</title>
-      <pubDate>Fri, 30 Oct 2026 14:17:15 +0000</pubDate>
-      <sparkle:version>3.0.0.50451</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5045alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5045alpha/WinZapp-macOS-arm64.zip" length="314877959" type="application/octet-stream" sparkle:edSignature="ce4pHXDVu6uRb1xDp7vEBDMo/eqS+U/my7Q6PdmlBw2HNKj6BHzch1Uido68M11n7ugKNsp2KcbkgBqA5sdEDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3199,6 +3199,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: HtWDqVyhouRv5uD/AXhxah2DO1lECNbF+RTNB0cO9AKss6gFhRnDmLwdzLOSiwExKn/DNVvg3ObjRtUnUaEnCw==
-length: 634255
+edSignature: 3KrjmTviKQtp2SrrnZuObx1wDbQIpUDfCuqDE1su7/swOfcDdgemYGk8hdgBkDTOkn99Mfzktco57qNeo/zeAg==
+length: 634947
 -->
