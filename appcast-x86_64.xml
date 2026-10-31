@@ -5,21 +5,35 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5075alpha</title>
-      <pubDate>Sat, 31 Oct 2026 02:15:39 +0000</pubDate>
-      <sparkle:version>3.0.0.50751</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5075alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5092alpha</title>
+      <pubDate>Sat, 31 Oct 2026 15:01:33 +0000</pubDate>
+      <sparkle:version>3.0.0.50921</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5092alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="en" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Groups: when someone is typing, WinZapp now announces their name instead of just their phone number when you have seen a message from them, even if they are not in your contacts.
+
+- Mac: you can now record the microphone together with computer audio (Command+Shift+H) on macOS 14.4 and later. The first time, macOS asks for permission to record system audio.
+
+- Groups: WinZapp now recognizes you in groups that list you by your linked ID (@lid), so an admin no longer finds Add Member dimmed.
+
 - Neonize calls: a call you place that nobody answers now ends by itself after a minute, with the "not answered" outcome, instead of ringing in the call window for minutes after WhatsApp stopped ringing the other phone.
+- Mac: WinZapp now says when macOS is waiting for microphone permission or when it was denied, instead of the record button seeming to do nothing.
+
+- Voice messages: there is now a single record button. WinZapp records in stereo when the input device offers two channels and in mono otherwise, so the second record button, Ctrl+Shift+G and the stereo option are gone. A stereo recording is now a real voice message that plays on iPhone, and quality is up to 256 kbps. An attached stereo Opus file is now converted so it plays on iPhone too.
 
 - Attached contacts: a received contact no longer arrives empty and without a phone number. The contact card is now kept by both WPPConnect and Neonize, so you can see and copy the number and chat with the person.
+
+- Neonize: posts from channels you follow (ids starting with 120363) no longer show up as chats and messages; they were never meant to appear outside the channels area.
 
 - Pairing: fixed the app staying on the pairing screen after a successful link, while the phone already listed it as connected.
 
@@ -205,15 +219,29 @@ WHAT'S NEW
 - WPPConnect: starring a message and liking a status work again.
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Grupos: quando alguém está digitando, o WinZapp agora anuncia o nome da pessoa em vez de só o número de telefone quando você já viu uma mensagem dela, mesmo que ela não esteja nos seus contatos.
+
+- Mac: agora dá para gravar o microfone junto com o áudio do computador (Command+Shift+H) a partir do macOS 14.4. Na primeira vez, o macOS pede permissão para gravar o áudio do sistema.
+
+- Grupos: o WinZapp agora reconhece você em grupos que o listam pelo identificador vinculado (@lid), então um administrador não encontra mais "Adicionar participante" desativado.
+
 - Ligações pelo Neonize: uma ligação que você faz e ninguém atende agora termina sozinha depois de um minuto, com o resultado "não atendida", em vez de ficar tocando na janela de chamada por minutos depois que o WhatsApp parou de tocar o outro celular.
+- Mac: o WinZapp agora avisa quando o macOS está esperando a permissão do microfone ou quando ela foi negada, em vez de parecer que o botão de gravar não faz nada.
+
+- Mensagens de voz: agora há um só botão de gravar. O WinZapp grava em estéreo quando o dispositivo de entrada oferece dois canais e em mono nos outros casos, por isso o segundo botão, o Ctrl+Shift+G e a opção de estéreo saíram. A gravação em estéreo agora é uma mensagem de voz de verdade, que toca no iPhone, e a qualidade subiu para 256 kbps. Um arquivo Opus estéreo anexado agora é convertido para tocar também no iPhone.
 
 - Contatos anexados: um contato recebido não chega mais vazio e sem número. O cartão do contato agora é mantido pelo WPPConnect e pelo Neonize, então dá para ver e copiar o número e conversar com a pessoa.
+
+- Neonize: publicações de canais que você segue (ids começando com 120363) não aparecem mais como conversas e mensagens.
 
 - Pareamento: corrigido o aplicativo que ficava na tela de pareamento depois de vincular com sucesso, enquanto o celular já o mostrava como conectado.
 
@@ -399,15 +427,29 @@ NOVIDADES
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Grupos: quando alguém está a escrever, o WinZapp passa a anunciar o nome da pessoa em vez de apenas o número de telefone quando já viu uma mensagem dela, mesmo que não esteja nos seus contactos.
+
+- Mac: passa a ser possível gravar o microfone com o áudio do computador (Command+Shift+H) a partir do macOS 14.4. Da primeira vez, o macOS pede permissão para gravar o áudio do sistema.
+
+- Grupos: o WinZapp passa a reconhecê-lo em grupos que o listam pelo identificador associado (@lid), pelo que um administrador já não encontra "Adicionar participante" desativado.
+
 - Chamadas pelo Neonize: uma chamada que faz e ninguém atende passa a terminar sozinha ao fim de um minuto, com o resultado "não atendida", em vez de ficar a tocar na janela de chamada durante minutos depois de o WhatsApp deixar de tocar no outro telemóvel.
+- Mac: o WinZapp passa a avisar quando o macOS está à espera da permissão do microfone ou quando foi negada, em vez de parecer que o botão de gravar não faz nada.
+
+- Mensagens de voz: agora há um só botão de gravar. O WinZapp grava em estéreo quando o dispositivo de entrada oferece dois canais e em mono nos outros casos, pelo que o segundo botão, o Ctrl+Shift+G e a opção de estéreo saíram. A gravação em estéreo passa a ser uma mensagem de voz a sério, que toca no iPhone, e a qualidade subiu para 256 kbps. Um ficheiro Opus estéreo anexado passa a ser convertido para tocar também no iPhone.
 
 - Contactos anexados: um contacto recebido já não chega vazio e sem número. O cartão do contacto passa a ser mantido pelo WPPConnect e pelo Neonize, pelo que é possível ver e copiar o número e conversar com a pessoa.
+
+- Neonize: as publicações de canais que segue (ids que começam por 120363) já não aparecem como conversas e mensagens.
 
 - Emparelhamento: corrigida a aplicação que ficava no ecrã de emparelhamento depois de associar com sucesso, enquanto o telemóvel já a mostrava como ligada.
 
@@ -593,15 +635,29 @@ NOVIDADES
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="es" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Grupos: cuando alguien está escribiendo, WinZapp ahora anuncia su nombre en lugar de solo su número de teléfono si ya has visto un mensaje suyo, aunque no esté en tus contactos.
+
+- Mac: ahora puedes grabar el micrófono junto con el audio del ordenador (Command+Shift+H) desde macOS 14.4. La primera vez, macOS pide permiso para grabar el audio del sistema.
+
+- Grupos: WinZapp ahora te reconoce en los grupos que te listan por tu identificador vinculado (@lid), así que un administrador ya no encuentra Añadir participante desactivado.
+
 - Llamadas de Neonize: una llamada que haces y nadie contesta ahora termina sola al cabo de un minuto, con el resultado "sin respuesta", en lugar de seguir sonando en la ventana de llamada durante minutos después de que WhatsApp dejó de hacer sonar el otro teléfono.
+- Mac: WinZapp ahora avisa cuando macOS espera el permiso del micrófono o cuando se ha denegado, en lugar de parecer que el botón de grabar no hace nada.
+
+- Mensajes de voz: ahora hay un solo botón de grabar. WinZapp graba en estéreo cuando el dispositivo de entrada ofrece dos canales y en mono en los demás casos, así que el segundo botón, Ctrl+Shift+G y la opción de estéreo desaparecen. Una grabación en estéreo ahora es un mensaje de voz de verdad, que suena en iPhone, y la calidad sube a 256 kbps. Un archivo Opus estéreo adjunto ahora se convierte para que suene también en iPhone.
 
 - Contactos adjuntos: un contacto recibido ya no llega vacío y sin número. La tarjeta del contacto ahora se conserva tanto con WPPConnect como con Neonize, así que puedes ver y copiar el número y chatear con la persona.
+
+- Neonize: las publicaciones de los canales que sigues (ids que empiezan por 120363) ya no aparecen como chats ni mensajes.
 
 - Vinculación: corregido el problema por el que la aplicación se quedaba en la pantalla de vinculación tras vincularse correctamente, mientras el teléfono ya la mostraba como conectada.
 
@@ -787,15 +843,29 @@ NOVEDADES
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="pl" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Grupy: gdy ktoś pisze, WinZapp ogłasza teraz jego imię zamiast samego numeru telefonu, jeśli widziałeś wcześniej wiadomość od tej osoby, nawet gdy nie ma jej w kontaktach.
+
+- Mac: można teraz nagrywać mikrofon razem z dźwiękiem komputera (Command+Shift+H) w macOS 14.4 i nowszym. Za pierwszym razem macOS prosi o zgodę na nagrywanie dźwięku systemowego.
+
+- Grupy: WinZapp rozpoznaje Cię teraz w grupach, które podają Cię przez powiązany identyfikator (@lid), więc administrator nie widzi już wyszarzonej opcji dodawania członka.
+
 - Połączenia Neonize: połączenie, które wykonujesz, a nikt nie odbiera, kończy się teraz samo po minucie z wynikiem „nieodebrane”, zamiast dzwonić w oknie połączenia przez kilka minut po tym, jak WhatsApp przestał dzwonić na drugim telefonie.
+- Mac: WinZapp informuje teraz, gdy macOS czeka na zgodę na mikrofon lub gdy jej odmówiono, zamiast sprawiać wrażenie, że przycisk nagrywania nie działa.
+
+- Wiadomości głosowe: jest teraz jeden przycisk nagrywania. WinZapp nagrywa w stereo, gdy urządzenie wejściowe oferuje dwa kanały, a w pozostałych przypadkach w mono, więc drugi przycisk, Ctrl+Shift+G i opcja stereo zniknęły. Nagranie stereo jest teraz prawdziwą wiadomością głosową, która odtwarza się na iPhonie, a jakość wzrosła do 256 kb/s. Załączony plik Opus stereo jest teraz konwertowany, aby odtwarzał się także na iPhonie.
 
 - Załączone kontakty: odebrany kontakt nie przychodzi już pusty i bez numeru telefonu. Wizytówka kontaktu jest teraz zachowywana zarówno w WPPConnect, jak i w Neonize, więc można zobaczyć i skopiować numer oraz napisać do tej osoby.
+
+- Neonize: wpisy z kanałów, które obserwujesz (identyfikatory zaczynające się od 120363), nie pojawiają się już jako czaty i wiadomości.
 
 - Parowanie: naprawiono błąd, przez który aplikacja pozostawała na ekranie parowania po udanym połączeniu, choć telefon pokazywał ją już jako połączoną.
 
@@ -981,15 +1051,29 @@ NOWOŚCI
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="tr" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Gruplar: biri yazarken WinZapp artık, kişiden daha önce bir mesaj gördüysen, kişi rehberinde olmasa bile yalnızca telefon numarasını değil adını söylüyor.
+
+- Mac: macOS 14.4 ve sonrasında artık mikrofonu bilgisayar sesiyle birlikte kaydedebilirsiniz (Command+Shift+H). İlk seferde macOS sistem sesini kaydetmek için izin ister.
+
+- Gruplar: WinZapp artık sizi bağlantılı kimliğinizle (@lid) listeleyen gruplarda tanıyor; böylece yöneticiler Üye ekle seçeneğini devre dışı görmüyor.
+
 - Neonize aramaları: yaptığınız ve kimsenin açmadığı bir arama, WhatsApp diğer telefonu çaldırmayı bıraktıktan sonra dakikalarca arama penceresinde çalmaya devam etmek yerine, artık bir dakika sonra "cevapsız" sonucuyla kendiliğinden sona eriyor.
+- Mac: WinZapp artık macOS mikrofon iznini beklerken veya izin reddedildiğinde bunu söylüyor; kayıt düğmesi hiçbir şey yapmıyormuş gibi görünmüyor.
+
+- Sesli mesajlar: artık tek bir kayıt düğmesi var. WinZapp, giriş aygıtı iki kanal sunduğunda stereo, diğer durumlarda mono kaydeder; bu nedenle ikinci düğme, Ctrl+Shift+G ve stereo seçeneği kaldırıldı. Stereo kayıt artık iPhone'da çalan gerçek bir sesli mesajdır ve kalite 256 kbps'ye yükseldi. Eklenen stereo Opus dosyası artık iPhone'da da çalması için dönüştürülüyor.
 
 - Eklenen kişiler: alınan bir kişi artık boş ve telefon numarasız gelmiyor. Kişi kartı artık hem WPPConnect hem de Neonize tarafından korunuyor; böylece numarayı görebilir, kopyalayabilir ve kişiyle sohbet edebilirsiniz.
+
+- Neonize: takip ettiğiniz kanalların gönderileri (120363 ile başlayan kimlikler) artık sohbet ve mesaj olarak görünmüyor.
 
 - Eşleştirme: başarılı bir bağlantıdan sonra telefon uygulamayı bağlı olarak gösterirken uygulamanın eşleştirme ekranında kalması düzeltildi.
 
@@ -1175,15 +1259,29 @@ YENİLİKLER
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="ro" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Grupuri: când cineva scrie, WinZapp anunță acum numele persoanei, nu doar numărul de telefon, dacă ai văzut deja un mesaj de la ea, chiar dacă nu este în contacte.
+
+- Mac: acum poți înregistra microfonul împreună cu sunetul computerului (Command+Shift+H) pe macOS 14.4 și versiunile ulterioare. Prima dată, macOS cere permisiunea de a înregistra sunetul sistemului.
+
+- Grupuri: WinZapp te recunoaște acum în grupurile care te listează prin identificatorul asociat (@lid), așa că un administrator nu mai găsește dezactivată opțiunea de adăugare a unui membru.
+
 - Apeluri Neonize: un apel pe care îl faci și la care nu răspunde nimeni se încheie acum singur după un minut, cu rezultatul „fără răspuns”, în loc să sune minute în șir în fereastra de apel după ce WhatsApp a încetat să sune celălalt telefon.
+- Mac: WinZapp spune acum când macOS așteaptă permisiunea pentru microfon sau când a fost refuzată, în loc să pară că butonul de înregistrare nu face nimic.
+
+- Mesaje vocale: acum există un singur buton de înregistrare. WinZapp înregistrează în stereo când dispozitivul de intrare oferă două canale și în mono în celelalte cazuri, așa că al doilea buton, Ctrl+Shift+G și opțiunea stereo au dispărut. O înregistrare stereo este acum un mesaj vocal adevărat, care se aude pe iPhone, iar calitatea a crescut la 256 kbps. Un fișier Opus stereo atașat este acum convertit, ca să se audă și pe iPhone.
 
 - Contacte atașate: un contact primit nu mai ajunge gol și fără număr de telefon. Cartea de vizită a contactului este acum păstrată atât de WPPConnect, cât și de Neonize, așa că poți vedea și copia numărul și poți vorbi cu persoana.
+
+- Neonize: postările de pe canalele pe care le urmărești (id-uri care încep cu 120363) nu mai apar ca discuții și mesaje.
 
 - Asociere: s-a corectat situația în care aplicația rămânea la ecranul de asociere după o conectare reușită, deși telefonul o afișa deja ca fiind conectată.
 
@@ -1369,15 +1467,29 @@ NOUTĂȚI
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: ligação de saída sem resposta termina sozinha após 1 minuto (#649)
+      <description xml:lang="ar" sparkle:format="plain-text">- One record button with stereo voice messages, own @lid fix, faster test suite (#650)
+- macOS: record the microphone with computer audio, with a VoiceOver slider (#653)
+- Neonize: stop channel posts from appearing as chats (#655)
+- Typing announcement: use the group pushName instead of the bare phone (#657)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- المجموعات: عندما يكتب شخص ما، يعلن WinZapp الآن اسمه بدلاً من رقم هاتفه فقط إذا كنت قد رأيت رسالة منه، حتى لو لم يكن في جهات اتصالك.
+
+- Mac: يمكنك الآن تسجيل الميكروفون مع صوت الكمبيوتر (Command+Shift+H) على macOS 14.4 والإصدارات الأحدث. في المرة الأولى، يطلب macOS إذن تسجيل صوت النظام.
+
+- المجموعات: يتعرّف WinZapp الآن عليك في المجموعات التي تدرجك بمعرّفك المرتبط (@lid)، فلم يعد خيار إضافة عضو معطلًا لدى المشرف.
+
 - مكالمات Neonize: المكالمة التي تجريها ولا يرد عليها أحد تنتهي الآن من تلقاء نفسها بعد دقيقة بنتيجة «لم يتم الرد»، بدلًا من أن تظل ترن في نافذة المكالمة لدقائق بعد أن توقف واتساب عن إرسال الرنين إلى الهاتف الآخر.
+- Mac: يخبرك WinZapp الآن عندما ينتظر macOS إذن الميكروفون أو عند رفضه، بدل أن يبدو زر التسجيل بلا استجابة.
+
+- الرسائل الصوتية: أصبح هناك زر تسجيل واحد. يسجّل WinZapp بصوت ستيريو عندما يوفر جهاز الإدخال قناتين، وبصوت أحادي في غير ذلك، لذا أُزيل الزر الثاني والاختصار Ctrl+Shift+G وخيار الستيريو. أصبح تسجيل الستيريو رسالة صوتية حقيقية تعمل على iPhone، وارتفعت الجودة إلى 256 كيلوبت في الثانية. يُحوَّل الآن ملف Opus ستيريو المرفق ليعمل على iPhone أيضًا.
 
 - جهات الاتصال المرفقة: لم تعد جهة الاتصال المستلمة تصل فارغة وبدون رقم هاتف. أصبحت بطاقة جهة الاتصال محفوظة الآن في WPPConnect وNeonize، فيمكنك رؤية الرقم ونسخه ومحادثة الشخص.
+
+- Neonize: لم تعد منشورات القنوات التي تتابعها (المعرّفات التي تبدأ بـ 120363) تظهر كمحادثات ورسائل.
 
 - الاقتران: إصلاح مشكلة بقاء التطبيق على شاشة الاقتران بعد نجاح الربط، بينما كان الهاتف يعرضه متصلًا بالفعل.
 
@@ -1564,6 +1676,15 @@ NOUTĂȚI
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5092alpha/WinZapp-macOS-x86_64.zip" length="349205620" type="application/octet-stream" sparkle:edSignature="1Tv6/OJzoqNvCQ3apaQqHs5C61f4QdSdrQywhj9bqPxeIwMLEsGwK5O6mfUIsbKmbJXVUbfwlfRh8VSA70FxCw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5075alpha</title>
+      <pubDate>Sat, 31 Oct 2026 02:15:39 +0000</pubDate>
+      <sparkle:version>3.0.0.50751</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5075alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5075alpha/WinZapp-macOS-x86_64.zip" length="348918254" type="application/octet-stream" sparkle:edSignature="Pb5A6w92hNo55ZZZBJxRBc/X7lV7AQpn8rT6Pl5ZnicjWdX8kZ7D6yMRlJdOSHF3X4+6AuYcqdwebVoSbRtACw=="></enclosure>
     </item>
     <item>
@@ -1592,15 +1713,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5057alpha/WinZapp-macOS-x86_64.zip" length="348968094" type="application/octet-stream" sparkle:edSignature="VvMFVao4XWcGd9JGhx0squXYzTgdsEucUdi/jbsvjAPx3AAffsuomUwy6rnHvK81DzXWMzUB0x96Mr8W6nj7Cg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5053alpha</title>
-      <pubDate>Fri, 30 Oct 2026 18:01:58 +0000</pubDate>
-      <sparkle:version>3.0.0.50531</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5053alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5053alpha/WinZapp-macOS-x86_64.zip" length="348643214" type="application/octet-stream" sparkle:edSignature="CCp66xardM1XBlQtjgvvPAK/BsjZqw3ilDZ9rLGvagBPPU9Zt5LsoNQiOP7rILgjNBEBxxH5r0iFstf8jQ3BDA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3215,6 +3327,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: oPYMvRqXAa1NgZRXR1WNlR2Ph4xz74UcJN/JIEypdGufXYPtOfHoOkbwUdiyZ1Xmg3fKPz4CMmZLLw9XxKnMAw==
-length: 637229
+edSignature: tLhRvCwb3scf1QVNw2/TV23uERS9kvdFyNua+W0MkBlsLdZJo52MqY9jsuYEF6k4IhBlaaMVkXbD7/+GKCmvAw==
+length: 649693
 -->
