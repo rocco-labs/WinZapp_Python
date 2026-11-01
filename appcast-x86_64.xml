@@ -5,19 +5,24 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5095alpha</title>
-      <pubDate>Sun, 01 Nov 2026 05:35:47 +0000</pubDate>
-      <sparkle:version>3.0.0.50951</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5095alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5098alpha</title>
+      <pubDate>Sun, 01 Nov 2026 16:14:49 +0000</pubDate>
+      <sparkle:version>3.0.0.50981</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5098alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="en" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- WPPConnect Server 2.10.74 is now offered as an update without waiting for a new WinZapp version. It only updates documentation and a security dependency, and WinZapp's changes to the server are not affected.
+
 - Neonize: a file or message you forward now appears in the destination conversation right away, without having to refresh it manually.
+
+- Mac: checking for updates no longer fails with a secure connection error on Macs without python.org Python. Versions already installed need one manual install to get this fix.
 
 - Groups: when someone is typing, WinZapp now announces their name instead of just their phone number when you have seen a message from them, even if they are not in your contacts.
 
@@ -218,13 +223,18 @@ WHAT'S NEW
 - WPPConnect: starring a message and liking a status work again.
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- O WPPConnect Server 2.10.74 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza a documentação e uma dependência de segurança, e não afeta as alterações que o WinZapp faz no servidor.
+
 - Neonize: um arquivo ou mensagem que você encaminha agora aparece na hora na conversa de destino, sem precisar atualizar a conversa manualmente.
+
+- Mac: a verificação de atualizações não falha mais com erro de conexão segura em Macs sem o Python do python.org. Versões já instaladas precisam de uma instalação manual para receber esta correção.
 
 - Grupos: quando alguém está digitando, o WinZapp agora anuncia o nome da pessoa em vez de só o número de telefone quando você já viu uma mensagem dela, mesmo que ela não esteja nos seus contatos.
 
@@ -425,13 +435,18 @@ NOVIDADES
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- O WPPConnect Server 2.10.74 passa a ser oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza a documentação e uma dependência de segurança e não afeta as alterações que o WinZapp faz no servidor.
+
 - Neonize: um ficheiro ou mensagem que reencaminha passa a aparecer logo na conversa de destino, sem ser preciso atualizar a conversa manualmente.
+
+- Mac: a verificação de atualizações já não falha com erro de ligação segura em Macs sem o Python do python.org. As versões já instaladas precisam de uma instalação manual para receber esta correção.
 
 - Grupos: quando alguém está a escrever, o WinZapp passa a anunciar o nome da pessoa em vez de apenas o número de telefone quando já viu uma mensagem dela, mesmo que não esteja nos seus contactos.
 
@@ -632,13 +647,18 @@ NOVIDADES
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="es" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- WPPConnect Server 2.10.74 ya se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza documentación y una dependencia de seguridad, y no afecta a los cambios que WinZapp hace en el servidor.
+
 - Neonize: un archivo o mensaje que reenvías ahora aparece enseguida en la conversación de destino, sin tener que actualizarla manualmente.
+
+- Mac: la comprobación de actualizaciones ya no falla con un error de conexión segura en Macs sin el Python de python.org. Las versiones ya instaladas necesitan una instalación manual para recibir esta corrección.
 
 - Grupos: cuando alguien está escribiendo, WinZapp ahora anuncia su nombre en lugar de solo su número de teléfono si ya has visto un mensaje suyo, aunque no esté en tus contactos.
 
@@ -839,13 +859,18 @@ NOVEDADES
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="pl" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- WPPConnect Server 2.10.74 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko dokumentację i zależność związaną z bezpieczeństwem i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
+
 - Neonize: przekazany plik lub wiadomość pojawia się teraz od razu w rozmowie docelowej, bez ręcznego odświeżania rozmowy.
+
+- Mac: sprawdzanie aktualizacji nie kończy się już błędem bezpiecznego połączenia na komputerach Mac bez Pythona z python.org. Już zainstalowane wersje wymagają jednorazowej ręcznej instalacji, aby otrzymać tę poprawkę.
 
 - Grupy: gdy ktoś pisze, WinZapp ogłasza teraz jego imię zamiast samego numeru telefonu, jeśli widziałeś wcześniej wiadomość od tej osoby, nawet gdy nie ma jej w kontaktach.
 
@@ -1046,13 +1071,18 @@ NOWOŚCI
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="tr" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- WPPConnect Server 2.10.74 artık yeni bir WinZapp sürümü beklenmeden güncelleme olarak sunuluyor. Yalnızca belgeleri ve bir güvenlik bağımlılığını günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
+
 - Neonize: ilettiğin bir dosya veya mesaj artık hedef sohbette hemen görünüyor; sohbeti elle yenilemen gerekmiyor.
+
+- Mac: güncelleme denetimi, python.org Python'u olmayan Mac'lerde artık güvenli bağlantı hatasıyla başarısız olmuyor. Zaten kurulu sürümlerin bu düzeltmeyi alması için bir kez elle kurulum gerekir.
 
 - Gruplar: biri yazarken WinZapp artık, kişiden daha önce bir mesaj gördüysen, kişi rehberinde olmasa bile yalnızca telefon numarasını değil adını söylüyor.
 
@@ -1253,13 +1283,18 @@ YENİLİKLER
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="ro" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- WPPConnect Server 2.10.74 este acum oferit ca actualizare, fără a aștepta o nouă versiune WinZapp. Actualizează doar documentația și o dependență de securitate și nu afectează modificările pe care WinZapp le face în server.
+
 - Neonize: un fișier sau un mesaj pe care îl redirecționezi apare acum imediat în conversația de destinație, fără să mai fie nevoie să reîmprospătezi manual conversația.
+
+- Mac: verificarea actualizărilor nu mai eșuează cu o eroare de conexiune securizată pe Mac-urile fără Python de la python.org. Versiunile deja instalate necesită o instalare manuală pentru a primi această corecție.
 
 - Grupuri: când cineva scrie, WinZapp anunță acum numele persoanei, nu doar numărul de telefon, dacă ai văzut deja un mesaj de la ea, chiar dacă nu este în contacte.
 
@@ -1460,13 +1495,18 @@ NOUTĂȚI
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- macOS updater: verify TLS with the bundled certifi, on every Mac (#660)
+      <description xml:lang="ar" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
+- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- يُعرض WPPConnect Server 2.10.74 الآن كتحديث دون انتظار إصدار جديد من WinZapp. يحدّث التوثيق وتبعية أمان فقط، ولا يؤثر في التعديلات التي يجريها WinZapp على الخادم.
+
 - Neonize: الملف أو الرسالة التي تعيد توجيهها تظهر الآن فورًا في المحادثة الوجهة، دون الحاجة إلى تحديث المحادثة يدويًا.
+
+- Mac: لم يعد التحقق من التحديثات يفشل بخطأ الاتصال الآمن على أجهزة Mac التي لا تحتوي على Python من python.org. تحتاج الإصدارات المثبتة بالفعل إلى تثبيت يدوي واحد للحصول على هذا الإصلاح.
 
 - المجموعات: عندما يكتب شخص ما، يعلن WinZapp الآن اسمه بدلاً من رقم هاتفه فقط إذا كنت قد رأيت رسالة منه، حتى لو لم يكن في جهات اتصالك.
 
@@ -1668,6 +1708,15 @@ NOUTĂȚI
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5098alpha/WinZapp-macOS-x86_64.zip" length="349222409" type="application/octet-stream" sparkle:edSignature="RTZpJfTcDGCMR8BYhistL8QGrq2CZVpAvr2gwVcqqbGj4ue/kpoNFakV5zt0LhNo6E8HobCqH/TeQ1+P6sTXDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5095alpha</title>
+      <pubDate>Sun, 01 Nov 2026 05:35:47 +0000</pubDate>
+      <sparkle:version>3.0.0.50951</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5095alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5095alpha/WinZapp-macOS-x86_64.zip" length="349302213" type="application/octet-stream" sparkle:edSignature="7j/F6l1ZrnjW/YkyYfb0WaOYju7txn5NoVT6qHSYdR1JjKXmQ10h+mJkedaMuWSt95qK8AZFQnNt9is9cWeWDw=="></enclosure>
     </item>
     <item>
@@ -1696,15 +1745,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5075alpha/WinZapp-macOS-x86_64.zip" length="348918254" type="application/octet-stream" sparkle:edSignature="Pb5A6w92hNo55ZZZBJxRBc/X7lV7AQpn8rT6Pl5ZnicjWdX8kZ7D6yMRlJdOSHF3X4+6AuYcqdwebVoSbRtACw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5073alpha</title>
-      <pubDate>Fri, 30 Oct 2026 23:58:33 +0000</pubDate>
-      <sparkle:version>3.0.0.50731</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5073alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5073alpha/WinZapp-macOS-x86_64.zip" length="348898045" type="application/octet-stream" sparkle:edSignature="qwPUXxOuW+/9wYmMaPvqMZUTFHEIlbZdZEsFRw+5sF2BW3l0BVmSe/5iClXhOMQYRhc/she6Py7a51S5DhpiBg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3319,6 +3359,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: wOyf9G3Qq5iTRDuF6qSp77EhW8bwOPwM23tYYnTmGiF1ncjr9e13W78RrCI5G0MqfodicgxGkrgXuN+SqJcHAg==
-length: 649027
+edSignature: b6mHyqISwYQNQDBagz+4ZQqLcbqxGUbe5qzLlNSP6Wi8MGOllI019nxCp2TznH6JygKxcVn2Im8BOQIvg8vgAA==
+length: 653262
 -->
