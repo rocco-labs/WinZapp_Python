@@ -5,18 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5101alpha</title>
-      <pubDate>Sun, 01 Nov 2026 22:40:29 +0000</pubDate>
-      <sparkle:version>3.0.0.51011</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5101alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5103alpha</title>
+      <pubDate>Sun, 01 Nov 2026 23:17:36 +0000</pubDate>
+      <sparkle:version>3.0.0.51031</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5103alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Neonize: if the internet drops in the middle of a call, you can still hang up; before, the button failed with a "Disconnected" error.
 
 - WPPConnect Server 2.10.74 is now offered as an update without waiting for a new WinZapp version. It only updates documentation and a security dependency, and WinZapp's changes to the server are not affected.
 
@@ -224,13 +225,16 @@ WHAT'S NEW
 
 - Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.
 
-- Neonize: voice messages are now delivered to contacts on Android; before, they stayed on a single grey tick because the message lacked the waveform that WhatsApp expects.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: voice messages are now delivered to contacts on Android; before, they stayed on a single grey tick because the message lacked the waveform that WhatsApp expects.
+
+- Neonize: voice messages, photos and documents are no longer lost when the computer's file-type library (libmagic) fails to load; the type is now recognized from the file itself.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: se a internet cai no meio de uma ligação, você ainda consegue desligar; antes o botão falhava com o erro "Disconnected".
 
 - O WPPConnect Server 2.10.74 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza a documentação e uma dependência de segurança, e não afeta as alterações que o WinZapp faz no servidor.
 
@@ -438,13 +442,16 @@ NOVIDADES
 
 - Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.
 
-- Neonize: as mensagens de voz agora são entregues a contatos no Android; antes ficavam só com um tique cinza porque a mensagem não levava a forma de onda que o WhatsApp espera.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: as mensagens de voz agora são entregues a contatos no Android; antes ficavam só com um tique cinza porque a mensagem não levava a forma de onda que o WhatsApp espera.
+
+- Neonize: mensagens de voz, fotos e documentos não se perdem mais quando a biblioteca de tipos de arquivo do computador (libmagic) não carrega; o tipo agora é reconhecido pelo próprio arquivo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: se a internet cair a meio de uma chamada, ainda consegue desligar; antes o botão falhava com o erro "Disconnected".
 
 - O WPPConnect Server 2.10.74 passa a ser oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza a documentação e uma dependência de segurança e não afeta as alterações que o WinZapp faz no servidor.
 
@@ -652,13 +659,16 @@ NOVIDADES
 
 - Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.
 
-- Neonize: as mensagens de voz passam a ser entregues a contactos no Android; antes ficavam só com um visto cinzento porque a mensagem não levava a forma de onda que o WhatsApp espera.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: as mensagens de voz passam a ser entregues a contactos no Android; antes ficavam só com um visto cinzento porque a mensagem não levava a forma de onda que o WhatsApp espera.
+
+- Neonize: as mensagens de voz, fotografias e documentos já não se perdem quando a biblioteca de tipos de ficheiro do computador (libmagic) não carrega; o tipo passa a ser reconhecido pelo próprio ficheiro.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Neonize: si se corta internet en mitad de una llamada, aún puedes colgar; antes el botón fallaba con el error "Disconnected".
 
 - WPPConnect Server 2.10.74 ya se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza documentación y una dependencia de seguridad, y no afecta a los cambios que WinZapp hace en el servidor.
 
@@ -866,13 +876,16 @@ NOVEDADES
 
 - Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.
 
-- Neonize: los mensajes de voz ahora se entregan a los contactos de Android; antes se quedaban con una sola marca gris porque el mensaje no llevaba la forma de onda que WhatsApp espera.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: los mensajes de voz ahora se entregan a los contactos de Android; antes se quedaban con una sola marca gris porque el mensaje no llevaba la forma de onda que WhatsApp espera.
+
+- Neonize: los mensajes de voz, las fotos y los documentos ya no se pierden cuando la biblioteca de tipos de archivo del equipo (libmagic) no carga; el tipo ahora se reconoce por el propio archivo.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Neonize: jeśli internet zniknie w trakcie rozmowy, nadal możesz się rozłączyć; wcześniej przycisk kończył się błędem "Disconnected".
 
 - WPPConnect Server 2.10.74 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko dokumentację i zależność związaną z bezpieczeństwem i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
@@ -1080,13 +1093,16 @@ NOWOŚCI
 
 - Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.
 
-- Neonize: wiadomości głosowe są teraz dostarczane kontaktom na Androidzie; wcześniej zostawały z jednym szarym znaczkiem, bo wiadomość nie zawierała przebiegu fali, którego oczekuje WhatsApp.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: wiadomości głosowe są teraz dostarczane kontaktom na Androidzie; wcześniej zostawały z jednym szarym znaczkiem, bo wiadomość nie zawierała przebiegu fali, którego oczekuje WhatsApp.
+
+- Neonize: wiadomości głosowe, zdjęcia i dokumenty nie przepadają już, gdy biblioteka typów plików komputera (libmagic) się nie wczytuje; typ jest teraz rozpoznawany na podstawie samego pliku.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Neonize: bir görüşme sırasında internet kesilirse yine de görüşmeyi kapatabilirsiniz; önceden düğme "Disconnected" hatasıyla başarısız oluyordu.
 
 - WPPConnect Server 2.10.74 artık yeni bir WinZapp sürümü beklenmeden güncelleme olarak sunuluyor. Yalnızca belgeleri ve bir güvenlik bağımlılığını günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
 
@@ -1294,13 +1310,16 @@ YENİLİKLER
 
 - Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.
 
-- Neonize: sesli mesajlar artık Android kullanan kişilere teslim ediliyor; daha önce mesajda WhatsApp'ın beklediği ses dalgası bulunmadığı için tek gri tikte kalıyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: sesli mesajlar artık Android kullanan kişilere teslim ediliyor; daha önce mesajda WhatsApp'ın beklediği ses dalgası bulunmadığı için tek gri tikte kalıyordu.
+
+- Neonize: bilgisayarın dosya türü kitaplığı (libmagic) yüklenemediğinde sesli mesajlar, fotoğraflar ve belgeler artık kaybolmuyor; tür artık dosyanın kendisinden tanınıyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Neonize: dacă internetul cade în mijlocul unui apel, poți totuși închide; înainte butonul eșua cu eroarea "Disconnected".
 
 - WPPConnect Server 2.10.74 este acum oferit ca actualizare, fără a aștepta o nouă versiune WinZapp. Actualizează doar documentația și o dependență de securitate și nu afectează modificările pe care WinZapp le face în server.
 
@@ -1508,13 +1527,16 @@ NOUTĂȚI
 
 - Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.
 
-- Neonize: mesajele vocale sunt acum livrate contactelor de pe Android; înainte rămâneau cu o singură bifă gri, pentru că mesajul nu avea forma de undă pe care o așteaptă WhatsApp.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
-- Neonize: send waveform with voice notes so Android delivers them (#666)
+- Neonize: mesajele vocale sunt acum livrate contactelor de pe Android; înainte rămâneau cu o singură bifă gri, pentru că mesajul nu avea forma de undă pe care o așteaptă WhatsApp.
+
+- Neonize: mesajele vocale, fotografiile și documentele nu se mai pierd când biblioteca de tipuri de fișiere a computerului (libmagic) nu se încarcă; tipul este recunoscut acum chiar din fișier.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- Neonize: إذا انقطع الإنترنت أثناء مكالمة، لا يزال بإمكانك إنهاؤها؛ كان الزر سابقًا يفشل بخطأ "Disconnected".
 
 - يُعرض WPPConnect Server 2.10.74 الآن كتحديث دون انتظار إصدار جديد من WinZapp. يحدّث التوثيق وتبعية أمان فقط، ولا يؤثر في التعديلات التي يجريها WinZapp على الخادم.
 
@@ -1723,7 +1745,18 @@ NOUTĂȚI
 
 - Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.
 
-- Neonize: أصبحت الرسائل الصوتية تُسلَّم الآن إلى جهات الاتصال على أندرويد؛ كانت تبقى سابقًا بعلامة رمادية واحدة لأن الرسالة لم تكن تحمل شكل الموجة الذي يتوقعه واتساب.</description>
+- Neonize: أصبحت الرسائل الصوتية تُسلَّم الآن إلى جهات الاتصال على أندرويد؛ كانت تبقى سابقًا بعلامة رمادية واحدة لأن الرسالة لم تكن تحمل شكل الموجة الذي يتوقعه واتساب.
+
+- Neonize: لم تعد الرسائل الصوتية والصور والمستندات تضيع عندما تفشل مكتبة أنواع الملفات في الكمبيوتر (libmagic) في التحميل؛ يتم الآن التعرف على النوع من الملف نفسه.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5103alpha/WinZapp-macOS-arm64.zip" length="314987300" type="application/octet-stream" sparkle:edSignature="cqyobamRIo1AcTAawV+hHF9Gem2UloDhd3r42E6O7hSObk00QU878hS3WbIE49GBP93vwQ6nTjT8oDiUWBwhAw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5101alpha</title>
+      <pubDate>Sun, 01 Nov 2026 22:40:29 +0000</pubDate>
+      <sparkle:version>3.0.0.51011</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5101alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5101alpha/WinZapp-macOS-arm64.zip" length="314985668" type="application/octet-stream" sparkle:edSignature="be4mQgJT2kgAl6/Xlps45jxZQyEYkotJJMurb9mDH+W0ctxjv49EhpbwZH2+xha/MW2cKzp8kvk4WsuQivljAQ=="></enclosure>
     </item>
     <item>
@@ -1752,15 +1785,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5094alpha/WinZapp-macOS-arm64.zip" length="315116572" type="application/octet-stream" sparkle:edSignature="0jyhyptV94HY61XD596qOoTP13znyv8jzJITTyLyznrIkIslJArNeTlOsGkjG0zOSLxTQWk0U/NEy6QHjNviCQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5092alpha</title>
-      <pubDate>Sat, 31 Oct 2026 15:01:33 +0000</pubDate>
-      <sparkle:version>3.0.0.50921</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5092alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5092alpha/WinZapp-macOS-arm64.zip" length="315136547" type="application/octet-stream" sparkle:edSignature="PqTzZ2WxtgA6d5Itk23AJlR1ydqlNZOF9uwYrDX65zthKggtNxE3CeX7F38nxbXagapIa3+NwI87jCdQ9qu2Bg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3375,6 +3399,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: DIWkv8bTJ4Ihl8Lxv7paQ9C/dSvfGt6EZPZYa5l+v0n0897qbT7dhbfvW8I0Ul5tP5sboe0A1fpB/dJiLpaaBQ==
-length: 654780
+edSignature: ayvgHRXhvgwb6ZGErowlWiE87n8iNqc8l7EwyH7XFoStem1SPx0qeqHHzqqN07stXD3gx3XIMdSIr1hZqHtZDA==
+length: 657088
 -->
