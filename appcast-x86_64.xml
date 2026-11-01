@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5103alpha</title>
-      <pubDate>Sun, 01 Nov 2026 23:17:36 +0000</pubDate>
-      <sparkle:version>3.0.0.51031</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5103alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5131alpha</title>
+      <pubDate>Sun, 01 Nov 2026 23:40:06 +0000</pubDate>
+      <sparkle:version>3.0.0.51311</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5131alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+      <description xml:lang="en" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -227,8 +227,10 @@ WHAT'S NEW
 
 - Neonize: voice messages are now delivered to contacts on Android; before, they stayed on a single grey tick because the message lacked the waveform that WhatsApp expects.
 
-- Neonize: voice messages, photos and documents are no longer lost when the computer's file-type library (libmagic) fails to load; the type is now recognized from the file itself.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: voice messages, photos and documents are no longer lost when the computer's file-type library (libmagic) fails to load; the type is now recognized from the file itself.
+
+- The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -444,8 +446,10 @@ NOVIDADES
 
 - Neonize: as mensagens de voz agora são entregues a contatos no Android; antes ficavam só com um tique cinza porque a mensagem não levava a forma de onda que o WhatsApp espera.
 
-- Neonize: mensagens de voz, fotos e documentos não se perdem mais quando a biblioteca de tipos de arquivo do computador (libmagic) não carrega; o tipo agora é reconhecido pelo próprio arquivo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: mensagens de voz, fotos e documentos não se perdem mais quando a biblioteca de tipos de arquivo do computador (libmagic) não carrega; o tipo agora é reconhecido pelo próprio arquivo.
+
+- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -661,8 +665,10 @@ NOVIDADES
 
 - Neonize: as mensagens de voz passam a ser entregues a contactos no Android; antes ficavam só com um visto cinzento porque a mensagem não levava a forma de onda que o WhatsApp espera.
 
-- Neonize: as mensagens de voz, fotografias e documentos já não se perdem quando a biblioteca de tipos de ficheiro do computador (libmagic) não carrega; o tipo passa a ser reconhecido pelo próprio ficheiro.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: as mensagens de voz, fotografias e documentos já não se perdem quando a biblioteca de tipos de ficheiro do computador (libmagic) não carrega; o tipo passa a ser reconhecido pelo próprio ficheiro.
+
+- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -878,8 +884,10 @@ NOVEDADES
 
 - Neonize: los mensajes de voz ahora se entregan a los contactos de Android; antes se quedaban con una sola marca gris porque el mensaje no llevaba la forma de onda que WhatsApp espera.
 
-- Neonize: los mensajes de voz, las fotos y los documentos ya no se pierden cuando la biblioteca de tipos de archivo del equipo (libmagic) no carga; el tipo ahora se reconoce por el propio archivo.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: los mensajes de voz, las fotos y los documentos ya no se pierden cuando la biblioteca de tipos de archivo del equipo (libmagic) no carga; el tipo ahora se reconoce por el propio archivo.
+
+- La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1095,8 +1103,10 @@ NOWOŚCI
 
 - Neonize: wiadomości głosowe są teraz dostarczane kontaktom na Androidzie; wcześniej zostawały z jednym szarym znaczkiem, bo wiadomość nie zawierała przebiegu fali, którego oczekuje WhatsApp.
 
-- Neonize: wiadomości głosowe, zdjęcia i dokumenty nie przepadają już, gdy biblioteka typów plików komputera (libmagic) się nie wczytuje; typ jest teraz rozpoznawany na podstawie samego pliku.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: wiadomości głosowe, zdjęcia i dokumenty nie przepadają już, gdy biblioteka typów plików komputera (libmagic) się nie wczytuje; typ jest teraz rozpoznawany na podstawie samego pliku.
+
+- Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1312,8 +1322,10 @@ YENİLİKLER
 
 - Neonize: sesli mesajlar artık Android kullanan kişilere teslim ediliyor; daha önce mesajda WhatsApp'ın beklediği ses dalgası bulunmadığı için tek gri tikte kalıyordu.
 
-- Neonize: bilgisayarın dosya türü kitaplığı (libmagic) yüklenemediğinde sesli mesajlar, fotoğraflar ve belgeler artık kaybolmuyor; tür artık dosyanın kendisinden tanınıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: bilgisayarın dosya türü kitaplığı (libmagic) yüklenemediğinde sesli mesajlar, fotoğraflar ve belgeler artık kaybolmuyor; tür artık dosyanın kendisinden tanınıyor.
+
+- Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1529,8 +1541,10 @@ NOUTĂȚI
 
 - Neonize: mesajele vocale sunt acum livrate contactelor de pe Android; înainte rămâneau cu o singură bifă gri, pentru că mesajul nu avea forma de undă pe care o așteaptă WhatsApp.
 
-- Neonize: mesajele vocale, fotografiile și documentele nu se mai pierd când biblioteca de tipuri de fișiere a computerului (libmagic) nu se încarcă; tipul este recunoscut acum chiar din fișier.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: ending a call works while the socket is down (#668)
+- Neonize: mesajele vocale, fotografiile și documentele nu se mai pierd când biblioteca de tipuri de fișiere a computerului (libmagic) nu se încarcă; tipul este recunoscut acum chiar din fișier.
+
+- Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Voice notes: optional neural noise reduction (DPDFNet 48 kHz) for mono and stereo (#669)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1747,7 +1761,18 @@ NOUTĂȚI
 
 - Neonize: أصبحت الرسائل الصوتية تُسلَّم الآن إلى جهات الاتصال على أندرويد؛ كانت تبقى سابقًا بعلامة رمادية واحدة لأن الرسالة لم تكن تحمل شكل الموجة الذي يتوقعه واتساب.
 
-- Neonize: لم تعد الرسائل الصوتية والصور والمستندات تضيع عندما تفشل مكتبة أنواع الملفات في الكمبيوتر (libmagic) في التحميل؛ يتم الآن التعرف على النوع من الملف نفسه.</description>
+- Neonize: لم تعد الرسائل الصوتية والصور والمستندات تضيع عندما تفشل مكتبة أنواع الملفات في الكمبيوتر (libmagic) في التحميل؛ يتم الآن التعرف على النوع من الملف نفسه.
+
+- يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5131alpha/WinZapp-macOS-x86_64.zip" length="349076418" type="application/octet-stream" sparkle:edSignature="aUW7KYOJexmMYJmr21bD7AZFMtkBmR5GuZaDX0gFkphrfW+aRLaT96GlN46MCbk9f2QcfCnNSj/Veg9zYyv2CA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5103alpha</title>
+      <pubDate>Sun, 01 Nov 2026 23:17:36 +0000</pubDate>
+      <sparkle:version>3.0.0.51031</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5103alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5103alpha/WinZapp-macOS-x86_64.zip" length="349054936" type="application/octet-stream" sparkle:edSignature="9hLv9NlkzTlYcznCFqGscB+ENReocaX4fvfzdzN7xKtZQjsujeHdHOG9seQ4xkvkOWgyY3bsgrF/DTNgDJdPAA=="></enclosure>
     </item>
     <item>
@@ -1776,15 +1801,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5095alpha/WinZapp-macOS-x86_64.zip" length="349302213" type="application/octet-stream" sparkle:edSignature="7j/F6l1ZrnjW/YkyYfb0WaOYju7txn5NoVT6qHSYdR1JjKXmQ10h+mJkedaMuWSt95qK8AZFQnNt9is9cWeWDw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5094alpha</title>
-      <pubDate>Sun, 01 Nov 2026 02:16:15 +0000</pubDate>
-      <sparkle:version>3.0.0.50941</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5094alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5094alpha/WinZapp-macOS-x86_64.zip" length="349187969" type="application/octet-stream" sparkle:edSignature="VYLfurE7r/wXCq6JAS0CEVAjqGJzQhz7UEzRYkg0SvCOQ2DIEddtfnPSoAo5IEViQ3B8lrkmBql0xhBozi+rDA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3399,6 +3415,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: G8lrPyPXuH/tquqQJ+rv53RHiRx2eE5Ds06BQffT4pbzq7GQqSe0FwvI9Pk1gEaWexnsxZrhF0YYI53jrLBSCw==
-length: 657095
+edSignature: UmqJ4S5cNuznyzHAyCgb/nxCP0TISrsQH69tYog8c9VcQO0wzd88Af65vbFcEaVrxCl7M2kIULCiLjIIOfUgAQ==
+length: 662088
 -->
