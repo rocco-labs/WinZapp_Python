@@ -5,14 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5098alpha</title>
-      <pubDate>Sun, 01 Nov 2026 16:14:48 +0000</pubDate>
-      <sparkle:version>3.0.0.50981</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5098alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5101alpha</title>
+      <pubDate>Sun, 01 Nov 2026 22:40:29 +0000</pubDate>
+      <sparkle:version>3.0.0.51011</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5101alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+      <description xml:lang="en" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -222,9 +222,11 @@ WHAT'S NEW
 
 - WPPConnect: starring a message and liking a status work again.
 
-- Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: app state sync no longer causes conflicts that corrupted the chat read state; marking a chat as read no longer holds up sending messages; messages sent to a disappearing chat carry its timer; read receipts respect WhatsApp's privacy option (silent receipts when turned off); and pairing by phone number in Brazil tries the number with and without the 9th digit.
+
+- Neonize: voice messages are now delivered to contacts on Android; before, they stayed on a single grey tick because the message lacked the waveform that WhatsApp expects.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -434,9 +436,11 @@ NOVIDADES
 
 - WPPConnect: favoritar uma mensagem e curtir um status voltam a funcionar.
 
-- Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: a sincronização do estado do app não causa mais conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida não segura mais o envio de mensagens; mensagens enviadas a uma conversa temporária levam o timer dela; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o pareamento por número no Brasil tenta o número com e sem o 9º dígito.
+
+- Neonize: as mensagens de voz agora são entregues a contatos no Android; antes ficavam só com um tique cinza porque a mensagem não levava a forma de onda que o WhatsApp espera.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -646,9 +650,11 @@ NOVIDADES
 
 - WPPConnect: marcar uma mensagem como favorita e gostar de um estado voltam a funcionar.
 
-- Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: a sincronização do estado da aplicação já não causa conflitos que corrompiam o estado de leitura das conversas; marcar uma conversa como lida já não atrasa o envio de mensagens; as mensagens enviadas a uma conversa temporária levam o respetivo temporizador; as confirmações de leitura respeitam a opção de privacidade do WhatsApp (recibos silenciosos quando desativada); e o emparelhamento por número no Brasil tenta o número com e sem o 9.º dígito.
+
+- Neonize: as mensagens de voz passam a ser entregues a contactos no Android; antes ficavam só com um visto cinzento porque a mensagem não levava a forma de onda que o WhatsApp espera.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -858,9 +864,11 @@ NOVEDADES
 
 - WPPConnect: marcar un mensaje como favorito y dar me gusta a un estado vuelven a funcionar.
 
-- Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: la sincronización del estado de la aplicación ya no causa conflictos que corrompían el estado de lectura de las conversaciones; marcar una conversación como leída ya no retiene el envío de mensajes; los mensajes enviados a una conversación temporal llevan su temporizador; las confirmaciones de lectura respetan la opción de privacidad de WhatsApp (recibos silenciosos si está desactivada); y la vinculación por número en Brasil prueba el número con y sin el 9.º dígito.
+
+- Neonize: los mensajes de voz ahora se entregan a los contactos de Android; antes se quedaban con una sola marca gris porque el mensaje no llevaba la forma de onda que WhatsApp espera.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1070,9 +1078,11 @@ NOWOŚCI
 
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
-- Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.
+
+- Neonize: wiadomości głosowe są teraz dostarczane kontaktom na Androidzie; wcześniej zostawały z jednym szarym znaczkiem, bo wiadomość nie zawierała przebiegu fali, którego oczekuje WhatsApp.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1282,9 +1292,11 @@ YENİLİKLER
 
 - WPPConnect: bir mesajı yıldızlama ve bir durumu beğenme yeniden çalışıyor.
 
-- Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: uygulama durumu eşitlemesi artık sohbetlerin okundu durumunu bozan çakışmalara yol açmaz; bir sohbeti okundu işaretlemek artık mesaj göndermeyi bekletmez; süreli sohbetlere gönderilen mesajlar sohbetin zamanlayıcısını taşır; okundu bilgileri WhatsApp gizlilik seçeneğine uyar (kapalıyken sessiz bildirimler); ve Brezilya'da numarayla eşleştirme numarayı 9. rakamlı ve rakamsız dener.
+
+- Neonize: sesli mesajlar artık Android kullanan kişilere teslim ediliyor; daha önce mesajda WhatsApp'ın beklediği ses dalgası bulunmadığı için tek gri tikte kalıyordu.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1494,9 +1506,11 @@ NOUTĂȚI
 
 - WPPConnect: marcarea unui mesaj cu stea și aprecierea unui status funcționează din nou.
 
-- Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Changelog: correção do TLS do atualizador no Mac (#660) (#661)
-- Aprova o WPPConnect Server 2.10.74 para quem está na 2.10.71 (#662)
+- Neonize: sincronizarea stării aplicației nu mai provoacă conflicte care corupeau starea de citire a conversațiilor; marcarea unei conversații ca citită nu mai întârzie trimiterea mesajelor; mesajele trimise într-o conversație temporară poartă temporizatorul ei; confirmările de citire respectă opțiunea de confidențialitate WhatsApp (confirmări silențioase când este dezactivată); iar asocierea prin număr în Brazilia încearcă numărul cu și fără a 9-a cifră.
+
+- Neonize: mesajele vocale sunt acum livrate contactelor de pe Android; înainte rămâneau cu o singură bifă gri, pentru că mesajul nu avea forma de undă pe care o așteaptă WhatsApp.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Bump the github-actions group with 4 updates (#665)
+- Neonize: send waveform with voice notes so Android delivers them (#666)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1707,7 +1721,18 @@ NOUTĂȚI
 
 - WPPConnect: عاد تمييز الرسالة بنجمة والإعجاب بالحالة يعملان.
 
-- Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.</description>
+- Neonize: لم تعد مزامنة حالة التطبيق تسبب تعارضات كانت تفسد حالة قراءة المحادثات؛ ولم يعد تعليم محادثة كمقروءة يؤخر إرسال الرسائل؛ والرسائل المرسلة إلى محادثة مؤقتة تحمل مؤقتها؛ وإشعارات القراءة تحترم خيار خصوصية WhatsApp (إيصالات صامتة عند تعطيله)؛ والاقتران بالرقم في البرازيل يجرب الرقم بالرقم التاسع وبدونه.
+
+- Neonize: أصبحت الرسائل الصوتية تُسلَّم الآن إلى جهات الاتصال على أندرويد؛ كانت تبقى سابقًا بعلامة رمادية واحدة لأن الرسالة لم تكن تحمل شكل الموجة الذي يتوقعه واتساب.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5101alpha/WinZapp-macOS-arm64.zip" length="314985668" type="application/octet-stream" sparkle:edSignature="be4mQgJT2kgAl6/Xlps45jxZQyEYkotJJMurb9mDH+W0ctxjv49EhpbwZH2+xha/MW2cKzp8kvk4WsuQivljAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5098alpha</title>
+      <pubDate>Sun, 01 Nov 2026 16:14:48 +0000</pubDate>
+      <sparkle:version>3.0.0.50981</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5098alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5098alpha/WinZapp-macOS-arm64.zip" length="315152889" type="application/octet-stream" sparkle:edSignature="SfNj3HkLPyuv+dHe+VEzD87sO2wOp+a93Rt3bJOWgbCZGoAUpNMvVHwUf7hCg+U2dqn5H/TPJZpHdXKWP05+Cg=="></enclosure>
     </item>
     <item>
@@ -1736,15 +1761,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5092alpha/WinZapp-macOS-arm64.zip" length="315136547" type="application/octet-stream" sparkle:edSignature="PqTzZ2WxtgA6d5Itk23AJlR1ydqlNZOF9uwYrDX65zthKggtNxE3CeX7F38nxbXagapIa3+NwI87jCdQ9qu2Bg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5075alpha</title>
-      <pubDate>Sat, 31 Oct 2026 02:15:38 +0000</pubDate>
-      <sparkle:version>3.0.0.50751</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5075alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5075alpha/WinZapp-macOS-arm64.zip" length="314850939" type="application/octet-stream" sparkle:edSignature="X7C+Yfb1kOP/WXrSAMJooU+fpnglwbbJFW3skDu8+Ih861lUamIonySVjl6+vtWtKcoCtYlzmLEjoQcCldcnAg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3359,6 +3375,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Yk3Wjj5U9H0j4qm/g1e8LbwWrZwuHwfZuYLj0G04h0C0FcTSUlT3ijXbJ7M6dd7tUNY2yM0h1/o0k4H63l4/Aw==
-length: 653255
+edSignature: DIWkv8bTJ4Ihl8Lxv7paQ9C/dSvfGt6EZPZYa5l+v0n0897qbT7dhbfvW8I0Ul5tP5sboe0A1fpB/dJiLpaaBQ==
+length: 654780
 -->
