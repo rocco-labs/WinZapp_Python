@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5137alpha</title>
-      <pubDate>Mon, 02 Nov 2026 21:34:59 +0000</pubDate>
-      <sparkle:version>3.0.0.51371</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5137alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5149alpha</title>
+      <pubDate>Mon, 02 Nov 2026 22:12:57 +0000</pubDate>
+      <sparkle:version>3.0.0.51491</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5149alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+      <description xml:lang="en" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -237,8 +237,10 @@ WHAT'S NEW
 
 - The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.
 
-- Spanish: the label for a played voice message now reads "Reproducido" instead of "Reproducida", matching "Enviado", "Entregado" and "Leído".</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Spanish: the label for a played voice message now reads "Reproducido" instead of "Reproducida", matching "Enviado", "Entregado" and "Leído".
+
+- Spanish: the translation now says "chat/chats" consistently instead of mixing it with "conversación/conversaciones", and the gender and number agreement is fixed in the related texts, including the user guide.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -464,8 +466,10 @@ NOVIDADES
 
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.
 
-- Espanhol: o rótulo de uma mensagem de voz reproduzida agora diz "Reproducido" em vez de "Reproducida", como "Enviado", "Entregado" e "Leído".</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Espanhol: o rótulo de uma mensagem de voz reproduzida agora diz "Reproducido" em vez de "Reproducida", como "Enviado", "Entregado" e "Leído".
+
+- Espanhol: a tradução agora usa "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de gênero e número foi corrigida nos textos relacionados, inclusive no guia do usuário.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -691,8 +695,10 @@ NOVIDADES
 
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.
 
-- Espanhol: a etiqueta de uma mensagem de voz reproduzida passa a dizer "Reproducido" em vez de "Reproducida", tal como "Enviado", "Entregado" e "Leído".</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Espanhol: a etiqueta de uma mensagem de voz reproduzida passa a dizer "Reproducido" em vez de "Reproducida", tal como "Enviado", "Entregado" e "Leído".
+
+- Espanhol: a tradução passa a usar "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de género e número foi corrigida nos textos relacionados, incluindo o guia do utilizador.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -918,8 +924,10 @@ NOVEDADES
 
 - La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.
 
-- Español: la etiqueta de un mensaje de voz reproducido ahora dice «Reproducido» en lugar de «Reproducida», igual que «Enviado», «Entregado» y «Leído».</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Español: la etiqueta de un mensaje de voz reproducido ahora dice «Reproducido» en lugar de «Reproducida», igual que «Enviado», «Entregado» y «Leído».
+
+- Español: la traducción ahora usa «chat/chats» de forma coherente, en lugar de mezclarlo con «conversación/conversaciones», y se corrige la concordancia de género y número en los textos relacionados, incluida la guía del usuario.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1145,8 +1153,10 @@ NOWOŚCI
 
 - Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.
 
-- Hiszpański: etykieta odtworzonej wiadomości głosowej brzmi teraz „Reproducido” zamiast „Reproducida”, tak jak „Enviado”, „Entregado” i „Leído”.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Hiszpański: etykieta odtworzonej wiadomości głosowej brzmi teraz „Reproducido” zamiast „Reproducida”, tak jak „Enviado”, „Entregado” i „Leído”.
+
+- Hiszpański: tłumaczenie używa teraz konsekwentnie „chat/chats” zamiast mieszać to z „conversación/conversaciones”, a w powiązanych tekstach, także w podręczniku użytkownika, poprawiono zgodność rodzaju i liczby.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1372,8 +1382,10 @@ YENİLİKLER
 
 - Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.
 
-- İspanyolca: dinlenen bir sesli mesajın etiketi artık "Reproducida" yerine "Reproducido" yazıyor; "Enviado", "Entregado" ve "Leído" ile uyumlu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- İspanyolca: dinlenen bir sesli mesajın etiketi artık "Reproducida" yerine "Reproducido" yazıyor; "Enviado", "Entregado" ve "Leído" ile uyumlu.
+
+- İspanyolca: çeviri artık "conversación/conversaciones" ile karıştırmak yerine "chat/chats" sözcüğünü tutarlı biçimde kullanıyor; ilgili metinlerde, kullanıcı rehberi dahil, cinsiyet ve sayı uyumu da düzeltildi.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1599,8 +1611,10 @@ NOUTĂȚI
 
 - Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.
 
-- Spaniolă: eticheta unui mesaj vocal redat este acum „Reproducido”, nu „Reproducida”, ca „Enviado”, „Entregado” și „Leído”.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
+- Spaniolă: eticheta unui mesaj vocal redat este acum „Reproducido”, nu „Reproducida”, ca „Enviado”, „Entregado” și „Leído”.
+
+- Spaniolă: traducerea folosește acum în mod consecvent „chat/chats”, în loc să îl amestece cu „conversación/conversaciones”, iar acordul în gen și număr a fost corectat în textele asociate, inclusiv în ghidul utilizatorului.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1827,7 +1841,18 @@ NOUTĂȚI
 
 - يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.
 
-- الإسبانية: أصبحت تسمية الرسالة الصوتية التي تم تشغيلها «Reproducido» بدلاً من «Reproducida»، بما يتوافق مع «Enviado» و«Entregado» و«Leído».</description>
+- الإسبانية: أصبحت تسمية الرسالة الصوتية التي تم تشغيلها «Reproducido» بدلاً من «Reproducida»، بما يتوافق مع «Enviado» و«Entregado» و«Leído».
+
+- الإسبانية: تستخدم الترجمة الآن «chat/chats» بشكل متسق بدلاً من خلطها مع «conversación/conversaciones»، وتم تصحيح التوافق في الجنس والعدد في النصوص ذات الصلة، بما في ذلك دليل المستخدم.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5149alpha/WinZapp-macOS-x86_64.zip" length="349055594" type="application/octet-stream" sparkle:edSignature="K+wILijoq1mmb6JJlsDhEauzy499N8kh/AEvVjL0em3b/gMUhhA14uYdpDyS4jAIfhOUymMW9dci1/fToYf8Cw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5137alpha</title>
+      <pubDate>Mon, 02 Nov 2026 21:34:59 +0000</pubDate>
+      <sparkle:version>3.0.0.51371</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5137alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5137alpha/WinZapp-macOS-x86_64.zip" length="349053773" type="application/octet-stream" sparkle:edSignature="mUsYm87xR/NGQGrXmHyUcFm+v/ApsVLWMf9UBTjSGffzzPtNzAvssNN5Bz0DrViY+LpDHTgCP8nixT7RA+dzBQ=="></enclosure>
     </item>
     <item>
@@ -1856,15 +1881,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5132alpha/WinZapp-macOS-x86_64.zip" length="349079323" type="application/octet-stream" sparkle:edSignature="O4gjHD2y/Ysb435xYYB9dcQVBozNKQGoUjvMNPLopWRYPzf0ltiFmPA9d3gJXEqvdAWEdsYyQoIbbZKGm8LZAg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5131alpha</title>
-      <pubDate>Sun, 01 Nov 2026 23:40:06 +0000</pubDate>
-      <sparkle:version>3.0.0.51311</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5131alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5131alpha/WinZapp-macOS-x86_64.zip" length="349076418" type="application/octet-stream" sparkle:edSignature="aUW7KYOJexmMYJmr21bD7AZFMtkBmR5GuZaDX0gFkphrfW+aRLaT96GlN46MCbk9f2QcfCnNSj/Veg9zYyv2CA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3479,6 +3495,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 26irt0ffFmf8z4ThRK6Ysw/CpJuA7B21kiQfO/h/uT1V14Bv2swMHWpa9qCfQxmpLhoEZUi53ocAVsYKutjZAg==
-length: 668605
+edSignature: RruaXmsmLe3ripdGl+/6K1ZhV0s9fJiDqZQuFrQ/7vHIsEDK9OhuuubYOP88xnaXh8j34wvs8hdkrZL7UwJiAw==
+length: 670659
 -->
