@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5132alpha</title>
-      <pubDate>Mon, 02 Nov 2026 00:07:40 +0000</pubDate>
-      <sparkle:version>3.0.0.51321</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5132alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5133alpha</title>
+      <pubDate>Mon, 02 Nov 2026 02:08:13 +0000</pubDate>
+      <sparkle:version>3.0.0.51331</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5133alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -229,10 +229,12 @@ WHAT'S NEW
 
 - Neonize: voice messages, photos and documents are no longer lost when the computer's file-type library (libmagic) fails to load; the type is now recognized from the file itself.
 
-- Voice messages: mono recordings are sent at 64 kbps again, as before the single record button; stereo recordings keep up to 256 kbps. Neonize also writes one line per media message sent and the ids of the delivery receipts in the log, to find out why some voice messages are not delivered.
+- Voice messages: mono and stereo recordings are sent at up to 256 kbps. Neonize also writes one line per media message sent and the ids of the delivery receipts in the log, to find out why some voice messages are not delivered.
+
+- Neonize: stereo voice messages now go out labelled audio/mp4, the type WhatsApp expects, so they are delivered to contacts on Android.
 
 - The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -450,10 +452,12 @@ NOVIDADES
 
 - Neonize: mensagens de voz, fotos e documentos não se perdem mais quando a biblioteca de tipos de arquivo do computador (libmagic) não carrega; o tipo agora é reconhecido pelo próprio arquivo.
 
-- Mensagens de voz: as gravações em mono voltam a ser enviadas a 64 kbps, como antes do botão único de gravar; as gravações em estéreo mantêm até 256 kbps. O Neonize também registra no log uma linha por mídia enviada e os ids dos recibos de entrega, para descobrir por que algumas mensagens de voz não são entregues.
+- Mensagens de voz: as gravações em mono e em estéreo são enviadas a até 256 kbps. O Neonize também registra no log uma linha por mídia enviada e os ids dos recibos de entrega, para descobrir por que algumas mensagens de voz não são entregues.
+
+- Neonize: as mensagens de voz em estéreo agora saem com o tipo audio/mp4, o que o WhatsApp espera, para serem entregues a contatos no Android.
 
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -671,10 +675,12 @@ NOVIDADES
 
 - Neonize: as mensagens de voz, fotografias e documentos já não se perdem quando a biblioteca de tipos de ficheiro do computador (libmagic) não carrega; o tipo passa a ser reconhecido pelo próprio ficheiro.
 
-- Mensagens de voz: as gravações em mono voltam a ser enviadas a 64 kbps, como antes do botão único de gravar; as gravações em estéreo mantêm até 256 kbps. O Neonize também regista no registo uma linha por multimédia enviada e os ids dos recibos de entrega, para descobrir porque algumas mensagens de voz não são entregues.
+- Mensagens de voz: as gravações em mono e em estéreo são enviadas a até 256 kbps. O Neonize também regista no registo uma linha por multimédia enviada e os ids dos recibos de entrega, para descobrir porque algumas mensagens de voz não são entregues.
+
+- Neonize: as mensagens de voz em estéreo agora saem com o tipo audio/mp4, o que o WhatsApp espera, para serem entregues a contactos no Android.
 
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -892,10 +898,12 @@ NOVEDADES
 
 - Neonize: los mensajes de voz, las fotos y los documentos ya no se pierden cuando la biblioteca de tipos de archivo del equipo (libmagic) no carga; el tipo ahora se reconoce por el propio archivo.
 
-- Mensajes de voz: las grabaciones en mono vuelven a enviarse a 64 kbps, como antes del botón único de grabar; las grabaciones en estéreo mantienen hasta 256 kbps. Neonize también registra una línea por cada archivo multimedia enviado y los ids de los acuses de entrega, para averiguar por qué algunos mensajes de voz no se entregan.
+- Mensajes de voz: las grabaciones en mono y en estéreo se envían hasta 256 kbps. Neonize también registra una línea por cada archivo multimedia enviado y los ids de los acuses de entrega, para averiguar por qué algunos mensajes de voz no se entregan.
+
+- Neonize: los mensajes de voz en estéreo ahora salen con el tipo audio/mp4, el que espera WhatsApp, para que se entreguen a contactos en Android.
 
 - La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1113,10 +1121,12 @@ NOWOŚCI
 
 - Neonize: wiadomości głosowe, zdjęcia i dokumenty nie przepadają już, gdy biblioteka typów plików komputera (libmagic) się nie wczytuje; typ jest teraz rozpoznawany na podstawie samego pliku.
 
-- Wiadomości głosowe: nagrania mono są znów wysyłane z 64 kb/s, tak jak przed jednym przyciskiem nagrywania; nagrania stereo zachowują do 256 kb/s. Neonize zapisuje też w dzienniku jedną linię na każdy wysłany plik multimedialny oraz identyfikatory potwierdzeń dostarczenia, aby ustalić, dlaczego niektóre wiadomości głosowe nie są dostarczane.
+- Wiadomości głosowe: nagrania mono i stereo są wysyłane z szybkością do 256 kb/s. Neonize zapisuje też w dzienniku jedną linię na każdy wysłany plik multimedialny oraz identyfikatory potwierdzeń dostarczenia, aby ustalić, dlaczego niektóre wiadomości głosowe nie są dostarczane.
+
+- Neonize: wiadomości głosowe stereo są teraz wysyłane z typem audio/mp4, którego oczekuje WhatsApp, dzięki czemu docierają do kontaktów na Androidzie.
 
 - Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1334,10 +1344,12 @@ YENİLİKLER
 
 - Neonize: bilgisayarın dosya türü kitaplığı (libmagic) yüklenemediğinde sesli mesajlar, fotoğraflar ve belgeler artık kaybolmuyor; tür artık dosyanın kendisinden tanınıyor.
 
-- Sesli mesajlar: mono kayıtlar, tek kayıt düğmesinden önceki gibi yeniden 64 kbps ile gönderilir; stereo kayıtlar 256 kbps'ye kadar korunur. Neonize ayrıca bazı sesli mesajların neden teslim edilmediğini bulmak için günlüğe gönderilen her medya için bir satır ve teslim bildirimlerinin kimliklerini yazar.
+- Sesli mesajlar: mono ve stereo kayıtlar 256 kbps'ye kadar gönderilir. Neonize ayrıca bazı sesli mesajların neden teslim edilmediğini bulmak için günlüğe gönderilen her medya için bir satır ve teslim bildirimlerinin kimliklerini yazar.
+
+- Neonize: stereo sesli mesajlar artık WhatsApp'ın beklediği audio/mp4 türüyle gönderilir, böylece Android'deki kişilere teslim edilir.
 
 - Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1555,10 +1567,12 @@ NOUTĂȚI
 
 - Neonize: mesajele vocale, fotografiile și documentele nu se mai pierd când biblioteca de tipuri de fișiere a computerului (libmagic) nu se încarcă; tipul este recunoscut acum chiar din fișier.
 
-- Mesaje vocale: înregistrările mono sunt din nou trimise la 64 kbps, ca înainte de butonul unic de înregistrare; înregistrările stereo păstrează până la 256 kbps. Neonize scrie acum în jurnal și o linie pentru fiecare fișier media trimis și id-urile confirmărilor de livrare, pentru a afla de ce unele mesaje vocale nu sunt livrate.
+- Mesaje vocale: înregistrările mono și stereo sunt trimise la până la 256 kbps. Neonize scrie acum în jurnal și o linie pentru fiecare fișier media trimis și id-urile confirmărilor de livrare, pentru a afla de ce unele mesaje vocale nu sunt livrate.
+
+- Neonize: mesajele vocale stereo sunt acum trimise cu tipul audio/mp4, cel așteptat de WhatsApp, pentru a ajunge la contactele de pe Android.
 
 - Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Voice: mono Opus back to 64 kbps and log each Neonize media send (#670)
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1777,9 +1791,20 @@ NOUTĂȚI
 
 - Neonize: لم تعد الرسائل الصوتية والصور والمستندات تضيع عندما تفشل مكتبة أنواع الملفات في الكمبيوتر (libmagic) في التحميل؛ يتم الآن التعرف على النوع من الملف نفسه.
 
-- الرسائل الصوتية: تُرسل التسجيلات أحادية القناة مجددًا بسرعة 64 كيلوبت/ث كما كان قبل زر التسجيل الواحد، وتحتفظ التسجيلات الستيريو بما يصل إلى 256 كيلوبت/ث. كما يكتب Neonize في السجل سطرًا لكل وسائط مرسلة ومعرّفات إيصالات التسليم لمعرفة سبب عدم تسليم بعض الرسائل الصوتية.
+- الرسائل الصوتية: تُرسل التسجيلات أحادية القناة والستيريو بما يصل إلى 256 كيلوبت/ث. كما يكتب Neonize في السجل سطرًا لكل وسائط مرسلة ومعرّفات إيصالات التسليم لمعرفة سبب عدم تسليم بعض الرسائل الصوتية.
+
+- Neonize: تُرسل الرسائل الصوتية الستيريو الآن بالنوع audio/mp4 الذي يتوقعه WhatsApp، لتصل إلى جهات الاتصال على Android.
 
 - يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5133alpha/WinZapp-macOS-arm64.zip" length="314924512" type="application/octet-stream" sparkle:edSignature="IkQT43GY9MMSmyu9MeMHCyhr73b5D3Y4slsFbyoZPTgXFJDB+5loFasuovXizgX5O83OZZZDJJ8BYs9vyMwCBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5132alpha</title>
+      <pubDate>Mon, 02 Nov 2026 00:07:40 +0000</pubDate>
+      <sparkle:version>3.0.0.51321</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5132alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5132alpha/WinZapp-macOS-arm64.zip" length="315007000" type="application/octet-stream" sparkle:edSignature="6b0fieZ19/kGtVxdrPZP6p62k7hEjl7/okS+X1/CJ88mDcXefgOM5m+X+q5u1a3R5BhNTaMoFQSKYbf8ajJQBA=="></enclosure>
     </item>
     <item>
@@ -1808,15 +1833,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5101alpha/WinZapp-macOS-arm64.zip" length="314985668" type="application/octet-stream" sparkle:edSignature="be4mQgJT2kgAl6/Xlps45jxZQyEYkotJJMurb9mDH+W0ctxjv49EhpbwZH2+xha/MW2cKzp8kvk4WsuQivljAQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5098alpha</title>
-      <pubDate>Sun, 01 Nov 2026 16:14:48 +0000</pubDate>
-      <sparkle:version>3.0.0.50981</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5098alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5098alpha/WinZapp-macOS-arm64.zip" length="315152889" type="application/octet-stream" sparkle:edSignature="SfNj3HkLPyuv+dHe+VEzD87sO2wOp+a93Rt3bJOWgbCZGoAUpNMvVHwUf7hCg+U2dqn5H/TPJZpHdXKWP05+Cg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3431,6 +3447,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: +OlNmkP5Xs0jnK/OJYRVpPt06MRdZ4nBjh3IERo1TFiR4Mf9nZvRgSjy2uIw29Q+ly0j4UVYDxds10ACIT4tAA==
-length: 664770
+edSignature: kW3uVHXNjqjf/oTsIUh+NkfJUuTXKBpH3yprW2vZpWej10Ovl5o109IVpcvBu9FoHZNmB2p1AzrBmi8A4VO2AA==
+length: 665415
 -->
