@@ -5,14 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5135alpha</title>
-      <pubDate>Mon, 02 Nov 2026 15:59:25 +0000</pubDate>
-      <sparkle:version>3.0.0.51351</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5135alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5137alpha</title>
+      <pubDate>Mon, 02 Nov 2026 21:34:59 +0000</pubDate>
+      <sparkle:version>3.0.0.51371</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5137alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="en" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -239,8 +238,7 @@ WHAT'S NEW
 - The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.
 
 - Spanish: the label for a played voice message now reads "Reproducido" instead of "Reproducida", matching "Enviado", "Entregado" and "Leído".</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -467,8 +465,7 @@ NOVIDADES
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.
 
 - Espanhol: o rótulo de uma mensagem de voz reproduzida agora diz "Reproducido" em vez de "Reproducida", como "Enviado", "Entregado" e "Leído".</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -695,8 +692,7 @@ NOVIDADES
 - A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.
 
 - Espanhol: a etiqueta de uma mensagem de voz reproduzida passa a dizer "Reproducido" em vez de "Reproducida", tal como "Enviado", "Entregado" e "Leído".</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="es" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -923,8 +919,7 @@ NOVEDADES
 - La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.
 
 - Español: la etiqueta de un mensaje de voz reproducido ahora dice «Reproducido» en lugar de «Reproducida», igual que «Enviado», «Entregado» y «Leído».</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="pl" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -936,11 +931,11 @@ NOWOŚCI
 
 - WPPConnect Server 2.10.74 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko dokumentację i zależność związaną z bezpieczeństwem i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
-- Neonize: przekazany plik lub wiadomość pojawia się teraz od razu w rozmowie docelowej, bez ręcznego odświeżania rozmowy.
+- Neonize: przekazany plik lub wiadomość pojawia się teraz od razu w czacie docelowym, bez ręcznego odświeżania czatu.
 
 - Mac: sprawdzanie aktualizacji nie kończy się już błędem bezpiecznego połączenia na komputerach Mac bez Pythona z python.org. Już zainstalowane wersje wymagają jednorazowej ręcznej instalacji, aby otrzymać tę poprawkę.
 
-- Grupy: gdy ktoś pisze, WinZapp ogłasza teraz jego imię zamiast samego numeru telefonu, jeśli widziałeś wcześniej wiadomość od tej osoby, nawet gdy nie ma jej w kontaktach.
+- Grupy: gdy ktoś pisze, WinZapp ogłasza teraz jego nazwę zamiast samego numeru telefonu, jeśli widziałeś wcześniej wiadomość od tej osoby, nawet gdy nie ma jej w kontaktach.
 
 - Mac: można teraz nagrywać mikrofon razem z dźwiękiem komputera (Command+Shift+H) w macOS 14.4 i nowszym. Za pierwszym razem macOS prosi o zgodę na nagrywanie dźwięku systemowego.
 
@@ -949,7 +944,7 @@ NOWOŚCI
 - Połączenia Neonize: połączenie, które wykonujesz, a nikt nie odbiera, kończy się teraz samo po minucie z wynikiem „nieodebrane”, zamiast dzwonić w oknie połączenia przez kilka minut po tym, jak WhatsApp przestał dzwonić na drugim telefonie.
 - Mac: WinZapp informuje teraz, gdy macOS czeka na zgodę na mikrofon lub gdy jej odmówiono, zamiast sprawiać wrażenie, że przycisk nagrywania nie działa.
 
-- Wiadomości głosowe: jest teraz jeden przycisk nagrywania. WinZapp nagrywa w stereo, gdy urządzenie wejściowe oferuje dwa kanały, a w pozostałych przypadkach w mono, więc drugi przycisk, Ctrl+Shift+G i opcja stereo zniknęły. Nagranie stereo jest teraz prawdziwą wiadomością głosową, która odtwarza się na iPhonie, a jakość wzrosła do 256 kb/s. Załączony plik Opus stereo jest teraz konwertowany, aby odtwarzał się także na iPhonie.
+- Wiadomości głosowe: jest teraz jeden przycisk nagrywania. WinZapp nagrywa w stereo, gdy urządzenie wejściowe oferuje dwa kanały, a w pozostałych przypadkach w mono, więc drugi przycisk, Ctrl+Shift+G i opcja stereo zniknęły. Nagranie stereo jest teraz prawdziwą wiadomością głosową, która odtwarza się na iPhonie, a przepływność nagrań zwiększono do 256 kb/s. Załączony plik Opus stereo jest teraz konwertowany, aby odtwarzał się także na iPhonie.
 
 - Załączone kontakty: odebrany kontakt nie przychodzi już pusty i bez numeru telefonu. Wizytówka kontaktu jest teraz zachowywana zarówno w WPPConnect, jak i w Neonize, więc można zobaczyć i skopiować numer oraz napisać do tej osoby.
 
@@ -967,7 +962,7 @@ NOWOŚCI
 
 - Po zaakceptowaniu aktualizacji WinZapp ponownie sprawdza, która wersja jest najnowsza, zanim zacznie pobierać, więc nie instaluje już alfy starszej niż najnowsza, gdy alfy są publikowane jedna po drugiej.
 
-- Połączenia przez Neonize: naprawiono wyścig, przez który odebrane połączenie przychodzące mogło pozostać bez dźwięku, zachowano wieloramkowy odbierany dźwięk i ograniczono aliasing przy konwersji sygnału mikrofonu. Dźwięk korzysta teraz z wynegocjowanego kodeka, z ograniczonym buforem zmiany kolejności pakietów i obsługą strat.
+- Połączenia przez Neonize: naprawiono błąd, przez który po odebraniu połączenia przychodzącego mogło nie być dźwięku. Poprawiono też odbiór pakietów zawierających wiele ramek dźwięku oraz ograniczono zniekształcenia związane z aliasingiem podczas konwersji sygnału mikrofonu. Dźwięk korzysta teraz z wynegocjowanego kodeka, z buforem o ograniczonym rozmiarze, który porządkuje odebrane pakiety, oraz obsługą utraty pakietów.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.71, która dodaje poprawkę luki w bibliotece używanej przez warstwę przeglądarki (deepmerge) i ładuje ją przy uruchomieniu serwera.
 
@@ -975,11 +970,11 @@ NOWOŚCI
 
 - Język arabski jest teraz dostępny w ustawieniach języka programu oraz w instalatorze i deinstalatorze systemu Windows.
 
-- WPPConnect Server zaktualizowany do wersji 2.10.70, która zaostrza swoje trasy administracyjne (wyświetlanie i kopia zapasowa sesji wymagają teraz tajnego klucza w nagłówku, a nie w adresie), foldery sesji usuwane przy wylogowaniu oraz sposób dzielenia list kontaktów. Czyszczenie sesji przy zamykaniu z własnym API zostało dostosowane do tej zmiany.
+- WPPConnect Server zaktualizowany do wersji 2.10.70, która dodatkowo zabezpiecza operacje administracyjne (wyświetlanie listy sesji i tworzenie ich kopii zapasowej wymagają teraz tajnego klucza w nagłówku, a nie w adresie), zmienia obsługę folderów sesji usuwanych przy wylogowaniu oraz sposób dzielenia list kontaktów. Czyszczenie sesji przy zamykaniu z własnym API zostało dostosowane do tej zmiany.
 
 - Połączenie grupowe, które zadzwoniło i nie zostało odebrane, jest teraz zapisywane w swojej grupie, a powiadomienie o połączeniu podaje grupę: nie pojawia się już jako prywatne połączenie od osoby, która je rozpoczęła.
 
-- Nowy silnik połączenia, eksperymentalny: Neonize łączy się z WhatsApp bez przeglądarki, przez lokalny most. Wybierz go w Ustawieniach, Połączenie (lub w pytaniu przy pierwszym uruchomieniu) i uruchom WinZapp ponownie; WPPConnect nadal jest domyślny. Skompilowane wersje zawierają już most i zachowują obok niego zainstalowany WPPConnect; z klonu repozytorium przygotuj most poleceniem neonize_bridge/prepare.py (zobacz README w tym folderze). Przy pierwszym uruchomieniu po aktualizacji osoba, która nadal używa WPPConnect, zobaczy jednorazowe powiadomienie z propozycją zmiany; każdy silnik zachowuje własne połączenie, więc przełączenie i powrót nie tracą żadnego. Z Neonize działają też własne listy czatów, dołączanie do grup społeczności (lub prośba o dołączenie) i anulowanie tej prośby, dezaktywacja społeczności, edytowanie i usuwanie własnych kanałów, wybór, kto widzi Twój status, oraz usuwanie kontaktu. Z Neonize działają też katalogi, koszyki i zamówienia (przeglądanie katalogu firmy, kompletowanie i wysyłanie koszyka oraz, na koncie Business, odpowiadanie na zamówienia i zarządzanie własnym katalogiem), a także przyciski, listy i klucze Pix w wiadomościach. Z Neonize działa też przekazywanie lokalizacji i wizytówek kontaktów. Z Neonize działają też połączenia wideo, przełączanie połączenia głosowego na wideo oraz połączenia grupowe. Z Neonize społeczność pokazuje też grupy, do których nie należysz. Z Neonize można też znaleźć trwające połączenia grupowe, dołączyć do nich i zobaczyć, kto w nich jest. Przyciski połączeń w czatach, w tym dołączania do trwającego połączenia grupowego, odpowiadają obsłudze zgłaszanej przez Neonize i aktualizują się po otrzymaniu odpowiedzi, bez przenoszenia fokusu z innego okna ani do ukrytego czatu. Nazwy profili otrzymane podczas synchronizacji kontaktów są też używane dla uczestników grup bez czatu prywatnego; nazwy zapisane w książce adresowej nadal mają pierwszeństwo.
+- Nowy silnik połączenia, eksperymentalny: Neonize łączy się z WhatsApp bez przeglądarki, przez lokalny most. Wybierz go w Ustawieniach, Połączenie (lub w pytaniu przy pierwszym uruchomieniu) i uruchom WinZapp ponownie; WPPConnect nadal jest domyślny. Skompilowane wersje zawierają już most i zachowują obok niego zainstalowany WPPConnect; z klonu repozytorium przygotuj most poleceniem neonize_bridge/prepare.py (zobacz README w tym folderze). Przy pierwszym uruchomieniu po aktualizacji osoba, która nadal używa WPPConnect, zobaczy jednorazowe powiadomienie z propozycją zmiany; każdy silnik zachowuje własną sesję połączenia, więc po powrocie do poprzedniego silnika można ją wznowić. Z Neonize działają też własne listy czatów, dołączanie do grup społeczności (lub prośba o dołączenie) i anulowanie tej prośby, dezaktywacja społeczności, edytowanie i usuwanie własnych kanałów, wybór, kto widzi Twój status, oraz usuwanie kontaktu. Z Neonize działają też katalogi, koszyki i zamówienia (przeglądanie katalogu firmy, kompletowanie i wysyłanie koszyka oraz, na koncie Business, odpowiadanie na zamówienia i zarządzanie własnym katalogiem), a także przyciski, listy i klucze Pix w wiadomościach. Z Neonize działa też przekazywanie lokalizacji i wizytówek kontaktów. Z Neonize działają też połączenia wideo, przełączanie połączenia głosowego na wideo oraz połączenia grupowe. Z Neonize społeczność pokazuje też grupy, do których nie należysz. Z Neonize można też znaleźć trwające połączenia grupowe, dołączyć do nich i zobaczyć, kto w nich jest. Przyciski połączeń w czatach, w tym dołączania do trwającego połączenia grupowego, odpowiadają obsłudze zgłaszanej przez Neonize i aktualizują się po otrzymaniu odpowiedzi, bez przenoszenia fokusu z innego okna ani do ukrytego czatu. Nazwy profili otrzymane podczas synchronizacji kontaktów są też używane dla uczestników grup bez czatu prywatnego; nazwy zapisane w książce adresowej nadal mają pierwszeństwo.
 
 - Użyj przycisku Uczestnicy połączenia w oknie połączenia lub przy zaznaczonym trwającym połączeniu w sekcji Połączenia, aby zobaczyć nazwy połączonych osób.
 
@@ -1096,11 +1091,11 @@ NOWOŚCI
 
 - Neonize: nazwa zapisanego kontaktu nie jest już co minutę zastępowana nazwą profilu, którą ta osoba ustawiła w swoim WhatsAppie (ani nazwą, jaką telefon nadał czatowi). Nazwa nadana kontaktowi zostaje; nazwa profilu pojawia się tylko przy osobach, które nie są zapisane w kontaktach.
 
-- Połączenia w Neonize: WinZapp odtwarza teraz dźwięki, które wcześniej odtwarzał za Ciebie WhatsApp Web. Gdy drugi telefon dzwoni, słychać sygnał połączenia o wysokości i rytmie kraju, do którego dzwonisz, a podczas łączenia i ponownego łączenia rozbrzmiewają krótkie sygnały. Dźwięki tworzy sam WinZapp; z silnikiem WPPConnect nic się nie zmienia.
+- Połączenia w Neonize: WinZapp odtwarza teraz dźwięki, które wcześniej odtwarzał za Ciebie WhatsApp Web. Gdy drugi telefon dzwoni, słychać sygnał oczekiwania na odebranie połączenia, o wysokości i rytmie właściwych dla kraju, do którego dzwonisz, a podczas łączenia i ponownego łączenia rozbrzmiewają krótkie sygnały. Dźwięki tworzy sam WinZapp; z silnikiem WPPConnect nic się nie zmienia.
 
-- Połączenia w Neonize: gdy odebrane połączenie się kończy, WinZapp odtwarza dźwięk zakończenia połączenia z WhatsAppa. To nowe zdarzenie dźwiękowe, "Połączenie zakończone", które podąża za pakietem dźwięków i można je wyłączyć lub zastąpić w zdarzeniach dźwiękowych. Z silnikiem WPPConnect WhatsApp Web nadal odtwarza własny dźwięk.
+- Połączenia w Neonize: gdy odebrane połączenie się kończy, WinZapp odtwarza dźwięk zakończenia połączenia z WhatsAppa. To nowe zdarzenie dźwiękowe, "Połączenie zakończone", które korzysta z wybranego pakietu dźwięków i można je wyłączyć lub zmienić w Ustawienia &gt; Dźwięki zdarzeń. Z silnikiem WPPConnect WhatsApp Web nadal odtwarza własny dźwięk.
 
-- Wiadomości głosowe i nagrania audio, które się nie odtwarzały: gdy karta dźwiękowa była niedostępna w chwili otwarcia wyjścia audio przez WinZapp (na przykład po wybudzeniu komputera), żadna wiadomość głosowa nie była odtwarzana do ponownego uruchomienia WinZapp i nic nie mówiło dlaczego. Teraz WinZapp próbuje przywrócić wyjście audio, gdy odtwarzanie się nie powiedzie, a jeśli nadal nie może odtworzyć, informuje o tym czytnikiem ekranu.
+- Wiadomości głosowe i nagrania audio, które się nie odtwarzały: gdy karta dźwiękowa była niedostępna w chwili otwarcia wyjścia audio przez WinZapp (na przykład po wybudzeniu komputera), nie można było odtwarzać wiadomości głosowych aż do ponownego uruchomienia WinZappa, a program nie informował o przyczynie. Teraz WinZapp próbuje przywrócić wyjście audio, gdy odtwarzanie się nie powiedzie, a jeśli nadal nie może odtworzyć, informuje o tym czytnikiem ekranu.
 
 - Neonize: czaty, które zdawały się znikać. WhatsApp nie podaje daty aktywności większości starych czatów, a WinZapp brał je za puste i nie zachowywał ich po wyczyszczeniu danych lokalnych (na przykład po F5 do ponownej synchronizacji): konto z ponad 160 czatami wracało z 37. Teraz most datuje każdy czat według jego najnowszej wiadomości i wracają wszystkie.
 
@@ -1110,7 +1105,7 @@ NOWOŚCI
 
 - Kanały na liście czatów: nowa opcja "Pokaż kanały na liście czatów" w Ustawieniach, Interfejs, Czaty, domyślnie wyłączona, trzyma kanały poza listą czatów. Włącz ją, aby znów je tam widzieć.
 
-- Przełączanie między WPPConnect a Neonize: oba silniki używają portu 6300, a program brał silnik, który właśnie przestał być używany i jeszcze się zamykał, za wybrany. Wybór WPPConnect kończył się komunikatem "nie otrzymano kodu parowania", a przełączenie na Neonize pokazywało łączenie i tryb offline do ponownego uruchomienia. Teraz WinZapp najpierw robi miejsce (zatrzymuje most Neonize albo czeka na zamknięcie serwera WPPConnect), a druga kopia WinZapp w innym folderze nie dołącza już do mostu pierwszej.
+- Przełączanie między WPPConnect a Neonize: oba silniki używają portu 6300, a program brał silnik, który właśnie przestał być używany i jeszcze się zamykał, za wybrany. Wybór WPPConnect kończył się komunikatem "nie otrzymano kodu parowania", a przełączenie na Neonize pokazywało łączenie i tryb offline do ponownego uruchomienia. Teraz WinZapp najpierw zwalnia port 6300 (zatrzymuje most Neonize albo czeka na zamknięcie serwera WPPConnect), a druga kopia WinZapp w innym folderze nie dołącza już do mostu pierwszej.
 
 - Okno parowania ma teraz listę „Silnik połączenia” przed krajem, aby osoba, która jeszcze nie sparowała konta, mogła wybrać WPPConnect lub Neonize bez wchodzenia do Ustawień. Po wyborze WinZapp prosi o potwierdzenie i uruchamia się ponownie z wybranym silnikiem.
 
@@ -1118,41 +1113,40 @@ NOWOŚCI
 
 - Neonize: jeśli most zniknie, gdy WinZapp jest otwarty (na przykład poprzednie uruchomienie, które jeszcze się zamykało, zatrzymuje go zaraz po tym, jak to uruchomienie go przyjęło, co zdarzało się przy przełączaniu na Neonize z powiadomienia przy starcie), WinZapp sam uruchamia go ponownie, zamiast pozostawać w stanie „łączenie” i potem offline do następnego restartu.
 
-- Neonize: gdy ostatni WinZapp się zamyka, most jest teraz proszony o zamknięcie połączeń i baz danych WhatsApp oraz o samodzielne zakończenie; zatrzymywany siłą jest dopiero wtedy, gdy nie zrobi tego w 10 sekund. Wcześniej był zawsze od razu zabijany, co mogło przerwać zapis.
+- Neonize: po zamknięciu ostatniej instancji WinZappa most otrzymuje polecenie zamknięcia połączeń i baz danych WhatsAppa oraz zakończenia pracy. Jest przymusowo zatrzymywany dopiero wtedy, gdy nie zakończy się w ciągu 10 sekund. Wcześniej zatrzymywano go od razu, co mogło przerwać zapis danych.
 
 - Neonize: kod QR parowania nie jest już ucięty w oknie połączenia. Jest teraz pokazywany w całości, w rozmiarze, który aparat telefonu potrafi odczytać.
 
 - W Ustawieniach &gt; Zaawansowane jest nowy przycisk "Eksportuj logi tego konta...". Zapisuje w tle plik .zip z logami bieżącego konta (i mostu Neonize) i ogłasza wynik.
 
-- Ustawienia &gt; Skróty: nowe pole przechwytuje naciskane klawisze i od razu wyświetla pasujące polecenia we wszystkich kategoriach, ogłaszając ich liczbę, z przyciskiem czyszczącym wyszukiwanie. Drzewo skrótów nie ogłasza już niepożądanych zaznaczeń podczas pisania, jest budowane tylko raz po otwarciu Ustawień, klawisz Esc zamyka okno bez błędów, a po zastosowaniu zmian fokus przechodzi na przycisk OK.
+- Ustawienia &gt; Interfejs &gt; Skróty klawiszowe: nowe pole przechwytuje naciskane klawisze i od razu wyświetla pasujące polecenia we wszystkich kategoriach, ogłaszając ich liczbę, z przyciskiem czyszczącym wyszukiwanie. Drzewo skrótów nie ogłasza już niepożądanych zaznaczeń podczas pisania, jest budowane tylko raz po otwarciu Ustawień, klawisz Esc zamyka okno bez błędów, a po zastosowaniu zmian fokus przechodzi na przycisk OK.
 
-- Automatyczna transkrypcja rozmowy jest teraz pojedynczym wyborem w oknie danych rozmowy lub grupy: Brak, Online z AI albo Lokalnie z Whisper. Ta sama wiadomość nigdy nie jest transkrybowana dwa razy, a niespójne ustawienia są odrzucane.
+- Automatyczna transkrypcja czatu jest teraz pojedynczym wyborem w oknie informacji o czacie lub grupie: „Brak”, „Online, za pomocą usług AI” albo „Lokalnie, za pomocą Whispera”. Ta sama wiadomość nigdy nie jest transkrybowana dwa razy, a niespójne ustawienia są odrzucane.
 
 - WinZapp uruchamia się i otwiera Ustawienia szybciej: do bazy danych zapisywane są tylko kontakty, które naprawdę się zmieniły, wyciszono dziennik debugowania każdego zapytania do bazy (setki MB), a niekompletne foldery Chrome pozostawione przez przerwane pobierania są czyszczone.
 
-- F5 nie duplikuje już na jakiś czas rozmów na liście: powiązanie adresu @lid z numerem telefonu jest zachowywane podczas ponownego wczytywania tego samego konta.
+- Po naciśnięciu F5 czaty nie pojawiają się już tymczasowo podwójnie na liście: powiązanie adresu @lid z numerem telefonu jest zachowywane podczas ponownego wczytywania tego samego konta.
 
-- Reakcje odebrane przez adres @lid trafiają teraz do rozmowy zapisanej pod numerem telefonu (i odwrotnie), dzięki czemu są poprawnie widoczne w podglądzie, na liście i w powiadomieniach na żywo.
+- Reakcje odebrane przez adres @lid trafiają teraz do czatu zapisanego pod numerem telefonu (i odwrotnie), dzięki czemu są poprawnie widoczne w podglądzie, na liście i w powiadomieniach na żywo.
 
 - "Odpowiedzi na ogłoszenie społeczności" pojawia się teraz tylko w grupach ogłoszeń społeczności, a nie w zwykłych grupach.
 
 - WPPConnect: oznaczanie wiadomości gwiazdką i polubienie statusu znów działają.
 
-- Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania rozmów; oznaczenie rozmowy jako przeczytanej nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do rozmowy z znikającymi wiadomościami niosą jej licznik; potwierdzenia odczytu respektują opcję prywatności WhatsApp (ciche potwierdzenia, gdy jest wyłączona); a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.
+- Neonize: synchronizacja stanu aplikacji nie powoduje już konfliktów, które psuły stan przeczytania czatów; oznaczenie czatu jako przeczytanego nie wstrzymuje już wysyłania wiadomości; wiadomości wysyłane do czatu ze znikającymi wiadomościami zachowują ustawiony w nim czas znikania; potwierdzenia odczytu w czatach prywatnych respektują ustawienia prywatności WhatsAppa — po ich wyłączeniu odczyt jest synchronizowany tylko między Twoimi urządzeniami; a parowanie przez numer w Brazylii próbuje numeru z dziewiątą cyfrą i bez niej.
 
 - Neonize: wiadomości głosowe są teraz dostarczane kontaktom na Androidzie; wcześniej zostawały z jednym szarym znaczkiem, bo wiadomość nie zawierała przebiegu fali, którego oczekuje WhatsApp.
 
 - Neonize: wiadomości głosowe, zdjęcia i dokumenty nie przepadają już, gdy biblioteka typów plików komputera (libmagic) się nie wczytuje; typ jest teraz rozpoznawany na podstawie samego pliku.
 
-- Wiadomości głosowe: nagrania mono i stereo są wysyłane z szybkością do 256 kb/s. Neonize zapisuje też w dzienniku jedną linię na każdy wysłany plik multimedialny oraz identyfikatory potwierdzeń dostarczenia, aby ustalić, dlaczego niektóre wiadomości głosowe nie są dostarczane.
+- Wiadomości głosowe: nagrania mono i stereo są kodowane z przepływnością do 256 kb/s. Neonize zapisuje też w dzienniku jedną linię na każdy wysłany plik multimedialny oraz identyfikatory potwierdzeń dostarczenia, aby ustalić, dlaczego niektóre wiadomości głosowe nie są dostarczane.
 
 - Neonize: wiadomości głosowe stereo są teraz wysyłane z typem audio/mp4, którego oczekuje WhatsApp, dzięki czemu docierają do kontaktów na Androidzie.
 
 - Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.
 
 - Hiszpański: etykieta odtworzonej wiadomości głosowej brzmi teraz „Reproducido” zamiast „Reproducida”, tak jak „Enviado”, „Entregado” i „Leído”.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="tr" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1379,8 +1373,7 @@ YENİLİKLER
 - Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.
 
 - İspanyolca: dinlenen bir sesli mesajın etiketi artık "Reproducida" yerine "Reproducido" yazıyor; "Enviado", "Entregado" ve "Leído" ile uyumlu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="ro" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1607,8 +1600,7 @@ NOUTĂȚI
 - Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.
 
 - Spaniolă: eticheta unui mesaj vocal redat este acum „Reproducido”, nu „Reproducida”, ca „Enviado”, „Entregado” și „Leído”.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
-- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
+      <description xml:lang="ar" sparkle:format="plain-text">- Review Polish UI, changelog and user guide wording (#676)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -1836,6 +1828,15 @@ NOUTĂȚI
 - يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.
 
 - الإسبانية: أصبحت تسمية الرسالة الصوتية التي تم تشغيلها «Reproducido» بدلاً من «Reproducida»، بما يتوافق مع «Enviado» و«Entregado» و«Leído».</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5137alpha/WinZapp-macOS-x86_64.zip" length="349053773" type="application/octet-stream" sparkle:edSignature="mUsYm87xR/NGQGrXmHyUcFm+v/ApsVLWMf9UBTjSGffzzPtNzAvssNN5Bz0DrViY+LpDHTgCP8nixT7RA+dzBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5135alpha</title>
+      <pubDate>Mon, 02 Nov 2026 15:59:25 +0000</pubDate>
+      <sparkle:version>3.0.0.51351</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5135alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5135alpha/WinZapp-macOS-x86_64.zip" length="349124306" type="application/octet-stream" sparkle:edSignature="eYUFK6AAaRe2plpVmbndQIA7bVxuUbYw06uNsy1dFRXHfMvpHM0R0ceAQqlYp+vUEo+DcH/G36Cf0983+5zGBQ=="></enclosure>
     </item>
     <item>
@@ -1864,15 +1865,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5131alpha/WinZapp-macOS-x86_64.zip" length="349076418" type="application/octet-stream" sparkle:edSignature="aUW7KYOJexmMYJmr21bD7AZFMtkBmR5GuZaDX0gFkphrfW+aRLaT96GlN46MCbk9f2QcfCnNSj/Veg9zYyv2CA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5103alpha</title>
-      <pubDate>Sun, 01 Nov 2026 23:17:36 +0000</pubDate>
-      <sparkle:version>3.0.0.51031</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5103alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5103alpha/WinZapp-macOS-x86_64.zip" length="349054936" type="application/octet-stream" sparkle:edSignature="9hLv9NlkzTlYcznCFqGscB+ENReocaX4fvfzdzN7xKtZQjsujeHdHOG9seQ4xkvkOWgyY3bsgrF/DTNgDJdPAA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3487,6 +3479,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: hueiIvTT4vw+n1Fz8mRtN5oiqW61jJG+SKy5iBFq6jKz4hz64V2pq+7MxiFXi/RKwPZSyH7YdH15J5px0BxUDw==
-length: 668695
+edSignature: 26irt0ffFmf8z4ThRK6Ysw/CpJuA7B21kiQfO/h/uT1V14Bv2swMHWpa9qCfQxmpLhoEZUi53ocAVsYKutjZAg==
+length: 668605
 -->
