@@ -5,17 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5133alpha</title>
-      <pubDate>Mon, 02 Nov 2026 02:08:13 +0000</pubDate>
-      <sparkle:version>3.0.0.51331</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5133alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5135alpha</title>
+      <pubDate>Mon, 02 Nov 2026 15:59:25 +0000</pubDate>
+      <sparkle:version>3.0.0.51351</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5135alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Fixed: the WPPConnect server no longer fails to start with "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") after an update or fresh install.
 
 - Neonize: if the internet drops in the middle of a call, you can still hang up; before, the button failed with a "Disconnected" error.
 
@@ -233,12 +236,17 @@ WHAT'S NEW
 
 - Neonize: stereo voice messages now go out labelled audio/mp4, the type WhatsApp expects, so they are delivered to contacts on Android.
 
-- The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- The microphone noise reduction for voice notes can now use a neural model: with "Enable microphone noise reduction" checked in Settings, Audio, the same page offers to download the model; the download happens once, over the internet, and recordings are still processed on this computer. Without the model, or if it cannot be used for a recording, WinZapp uses the basic noise gate as before and says so. If noise reduction cannot be applied at all, the message is sent unprocessed and WinZapp says so too.
+
+- Spanish: the label for a played voice message now reads "Reproducido" instead of "Reproducida", matching "Enviado", "Entregado" and "Leído".</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Corrigido: o servidor do WPPConnect não deixa mais de iniciar com "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") depois de uma atualização ou instalação nova.
 
 - Neonize: se a internet cai no meio de uma ligação, você ainda consegue desligar; antes o botão falhava com o erro "Disconnected".
 
@@ -456,12 +464,17 @@ NOVIDADES
 
 - Neonize: as mensagens de voz em estéreo agora saem com o tipo audio/mp4, o que o WhatsApp espera, para serem entregues a contatos no Android.
 
-- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neural: com "Ativar redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece baixar o modelo; o download é feito uma única vez, pela internet, e as gravações continuam sendo processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de forma alguma, a mensagem é enviada sem processamento e o WinZapp avisa também.
+
+- Espanhol: o rótulo de uma mensagem de voz reproduzida agora diz "Reproducido" em vez de "Reproducida", como "Enviado", "Entregado" e "Leído".</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Corrigido: o servidor do WPPConnect já não deixa de iniciar com "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") depois de uma atualização ou instalação nova.
 
 - Neonize: se a internet cair a meio de uma chamada, ainda consegue desligar; antes o botão falhava com o erro "Disconnected".
 
@@ -679,12 +692,17 @@ NOVIDADES
 
 - Neonize: as mensagens de voz em estéreo agora saem com o tipo audio/mp4, o que o WhatsApp espera, para serem entregues a contactos no Android.
 
-- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- A redução de ruído do microfone das mensagens de voz agora pode usar um modelo neuronal: com "Ativar a redução de ruído do microfone" marcada em Definições, Áudio, a mesma página oferece transferir o modelo; a transferência é feita uma única vez, pela internet, e as gravações continuam a ser processadas neste computador. Sem o modelo, ou se ele não puder ser usado numa gravação, o WinZapp usa o noise gate básico de antes e avisa. Se a redução de ruído não puder ser aplicada de todo, a mensagem é enviada sem processamento e o WinZapp avisa também.
+
+- Espanhol: a etiqueta de uma mensagem de voz reproduzida passa a dizer "Reproducido" em vez de "Reproducida", tal como "Enviado", "Entregado" e "Leído".</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Corregido: el servidor de WPPConnect ya no deja de iniciarse con "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") tras una actualización o una instalación nueva.
 
 - Neonize: si se corta internet en mitad de una llamada, aún puedes colgar; antes el botón fallaba con el error "Disconnected".
 
@@ -902,12 +920,17 @@ NOVEDADES
 
 - Neonize: los mensajes de voz en estéreo ahora salen con el tipo audio/mp4, el que espera WhatsApp, para que se entreguen a contactos en Android.
 
-- La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- La reducción de ruido del micrófono de los mensajes de voz ahora puede usar un modelo neuronal: con "Activar reducción de ruido del micrófono" marcada en Configuración, Audio, la misma página ofrece descargar el modelo; la descarga se hace una sola vez, por internet, y las grabaciones se siguen procesando en este equipo. Sin el modelo, o si no se puede usar en una grabación, WinZapp usa el gate de ruido básico de siempre y te avisa. Si la reducción de ruido no se puede aplicar en absoluto, el mensaje se envía sin procesar y también te avisa.
+
+- Español: la etiqueta de un mensaje de voz reproducido ahora dice «Reproducido» en lugar de «Reproducida», igual que «Enviado», «Entregado» y «Leído».</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Naprawiono: serwer WPPConnect nie przestaje już uruchamiać się z błędem "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") po aktualizacji lub świeżej instalacji.
 
 - Neonize: jeśli internet zniknie w trakcie rozmowy, nadal możesz się rozłączyć; wcześniej przycisk kończył się błędem "Disconnected".
 
@@ -1125,12 +1148,17 @@ NOWOŚCI
 
 - Neonize: wiadomości głosowe stereo są teraz wysyłane z typem audio/mp4, którego oczekuje WhatsApp, dzięki czemu docierają do kontaktów na Androidzie.
 
-- Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- Redukcja szumów mikrofonu w wiadomościach głosowych może teraz korzystać z modelu neuronowego: przy zaznaczonej opcji "Włącz redukcję szumów mikrofonu" w Ustawieniach, Dźwięk ta sama strona oferuje pobranie modelu; pobieranie odbywa się raz, przez internet, a nagrania nadal są przetwarzane na tym komputerze. Bez modelu, albo gdy nie można go użyć w nagraniu, WinZapp używa podstawowej bramki szumów jak dotychczas i o tym informuje. Jeśli redukcji szumów nie można zastosować wcale, wiadomość jest wysyłana bez przetwarzania i WinZapp również o tym informuje.
+
+- Hiszpański: etykieta odtworzonej wiadomości głosowej brzmi teraz „Reproducido” zamiast „Reproducida”, tak jak „Enviado”, „Entregado” i „Leído”.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Düzeltildi: WPPConnect sunucusu, bir güncelleme veya yeni kurulumdan sonra artık "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") hatasıyla başlatılamaz hale gelmiyor.
 
 - Neonize: bir görüşme sırasında internet kesilirse yine de görüşmeyi kapatabilirsiniz; önceden düğme "Disconnected" hatasıyla başarısız oluyordu.
 
@@ -1348,12 +1376,17 @@ YENİLİKLER
 
 - Neonize: stereo sesli mesajlar artık WhatsApp'ın beklediği audio/mp4 türüyle gönderilir, böylece Android'deki kişilere teslim edilir.
 
-- Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- Sesli mesajlar için mikrofon gürültü azaltma artık sinirsel bir model kullanabilir: Ayarlar, Ses bölümünde "Mikrofon gürültü azaltmayı etkinleştir" işaretliyken aynı sayfa modeli indirmeyi önerir; indirme internet üzerinden bir kez yapılır ve kayıtlar yine bu bilgisayarda işlenir. Model yoksa veya bir kayıtta kullanılamazsa WinZapp her zamanki temel gürültü geçidini kullanır ve bunu bildirir. Gürültü azaltma hiç uygulanamazsa mesaj işlenmeden gönderilir ve WinZapp bunu da bildirir.
+
+- İspanyolca: dinlenen bir sesli mesajın etiketi artık "Reproducida" yerine "Reproducido" yazıyor; "Enviado", "Entregado" ve "Leído" ile uyumlu.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Remediat: serverul WPPConnect nu mai eșuează la pornire cu "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") după o actualizare sau o instalare nouă.
 
 - Neonize: dacă internetul cade în mijlocul unui apel, poți totuși închide; înainte butonul eșua cu eroarea "Disconnected".
 
@@ -1571,12 +1604,17 @@ NOUTĂȚI
 
 - Neonize: mesajele vocale stereo sunt acum trimise cu tipul audio/mp4, cel așteptat de WhatsApp, pentru a ajunge la contactele de pe Android.
 
-- Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: label stereo voice messages audio/mp4; mono Opus back to 256 kbps (#671)
+- Reducerea zgomotului microfonului pentru mesajele vocale poate folosi acum un model neuronal: cu "Activați reducerea zgomotului microfonului" bifată în Setări, Audio, aceeași pagină oferă descărcarea modelului; descărcarea se face o singură dată, prin internet, iar înregistrările sunt procesate în continuare pe acest computer. Fără model, sau dacă nu poate fi folosit pentru o înregistrare, WinZapp folosește gate-ul de zgomot de bază ca până acum și vă anunță. Dacă reducerea zgomotului nu poate fi aplicată deloc, mesajul este trimis neprocesat și WinZapp vă anunță și în acest caz.
+
+- Spaniolă: eticheta unui mesaj vocal redat este acum „Reproducido”, nu „Reproducida”, ca „Enviado”, „Entregado” și „Leído”.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix API not starting: @babel/runtime pruned by --omit=dev (#675)
+- Fix Spanish played label: Reproducida -&gt; Reproducido (#674)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- تم الإصلاح: لم يعد خادم WPPConnect يفشل في البدء بالخطأ "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") بعد التحديث أو التثبيت الجديد.
 
 - Neonize: إذا انقطع الإنترنت أثناء مكالمة، لا يزال بإمكانك إنهاؤها؛ كان الزر سابقًا يفشل بخطأ "Disconnected".
 
@@ -1795,7 +1833,18 @@ NOUTĂȚI
 
 - Neonize: تُرسل الرسائل الصوتية الستيريو الآن بالنوع audio/mp4 الذي يتوقعه WhatsApp، لتصل إلى جهات الاتصال على Android.
 
-- يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.</description>
+- يمكن الآن أن يستخدم تقليل ضوضاء ميكروفون الرسائل الصوتية نموذجًا عصبيًا: مع تفعيل «تمكين تقليل ضوضاء الميكروفون» في الإعدادات &gt; الصوت، تعرض الصفحة نفسها تنزيل النموذج؛ يتم التنزيل مرة واحدة عبر الإنترنت، وتستمر معالجة التسجيلات على هذا الجهاز. بدون النموذج، أو إذا تعذّر استخدامه في تسجيل ما، يستخدم WinZapp بوابة الضوضاء الأساسية المعتادة ويُعلِمك بذلك. وإذا تعذّر تطبيق تقليل الضوضاء إطلاقًا، تُرسَل الرسالة دون معالجة مع إعلامك أيضًا.
+
+- الإسبانية: أصبحت تسمية الرسالة الصوتية التي تم تشغيلها «Reproducido» بدلاً من «Reproducida»، بما يتوافق مع «Enviado» و«Entregado» و«Leído».</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5135alpha/WinZapp-macOS-arm64.zip" length="314063534" type="application/octet-stream" sparkle:edSignature="TkpwolkTTlFa10rJ4hhSpD0AVNSOIpblo5sjwhkjZfxRv+i1QGy8t+MUOAVRkFezzzG/0Al5VRO9maVAqKgiAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5133alpha</title>
+      <pubDate>Mon, 02 Nov 2026 02:08:13 +0000</pubDate>
+      <sparkle:version>3.0.0.51331</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5133alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5133alpha/WinZapp-macOS-arm64.zip" length="314924512" type="application/octet-stream" sparkle:edSignature="IkQT43GY9MMSmyu9MeMHCyhr73b5D3Y4slsFbyoZPTgXFJDB+5loFasuovXizgX5O83OZZZDJJ8BYs9vyMwCBw=="></enclosure>
     </item>
     <item>
@@ -1824,15 +1873,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5103alpha/WinZapp-macOS-arm64.zip" length="314987300" type="application/octet-stream" sparkle:edSignature="cqyobamRIo1AcTAawV+hHF9Gem2UloDhd3r42E6O7hSObk00QU878hS3WbIE49GBP93vwQ6nTjT8oDiUWBwhAw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5101alpha</title>
-      <pubDate>Sun, 01 Nov 2026 22:40:29 +0000</pubDate>
-      <sparkle:version>3.0.0.51011</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5101alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5101alpha/WinZapp-macOS-arm64.zip" length="314985668" type="application/octet-stream" sparkle:edSignature="be4mQgJT2kgAl6/Xlps45jxZQyEYkotJJMurb9mDH+W0ctxjv49EhpbwZH2+xha/MW2cKzp8kvk4WsuQivljAQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3447,6 +3487,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: kW3uVHXNjqjf/oTsIUh+NkfJUuTXKBpH3yprW2vZpWej10Ovl5o109IVpcvBu9FoHZNmB2p1AzrBmi8A4VO2AA==
-length: 665415
+edSignature: YG8CNt9XFT3UDS90s8pXVL51TGhowkhPU+r0yAa3D5o0ydg40+/5FZoxKbvd0vAwmfnerF7kEISqKp/pJzdzAw==
+length: 668688
 -->
