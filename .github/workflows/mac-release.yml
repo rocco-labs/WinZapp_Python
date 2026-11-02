@@ -35,6 +35,11 @@ on:
         description: Upstream tag to build (default - newest stable and alpha not yet published)
         required: false
         type: string
+      arm_runner:
+        description: Runner for the arm64 build (the watchdog switches this when GitHub has no macos-15 machines)
+        required: false
+        type: string
+        default: macos-15
 
 permissions:
   contents: write
@@ -85,7 +90,7 @@ jobs:
       matrix:
         tag: ${{ fromJson(needs.plan.outputs.tags) }}
         target:
-          - { runner: macos-15, arch: arm64 }
+          - { runner: "${{ inputs.arm_runner || 'macos-15' }}", arch: arm64 }
           - { runner: macos-15-intel, arch: x86_64 }
     runs-on: ${{ matrix.target.runner }}
     timeout-minutes: 90
