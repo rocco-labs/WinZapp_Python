@@ -5,17 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5149alpha</title>
-      <pubDate>Mon, 02 Nov 2026 22:12:57 +0000</pubDate>
-      <sparkle:version>3.0.0.51491</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5149alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5161alpha</title>
+      <pubDate>Tue, 03 Nov 2026 13:28:47 +0000</pubDate>
+      <sparkle:version>3.0.0.51611</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5161alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="en" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Voice messages: Settings &gt; Audio now offers Automatic, Mono and Stereo recording. Mono mixes both microphone inputs so a microphone connected only on the left or right is heard from both sides. There is still one record button; the choice applies from the next recording.
 
 - Fixed: the WPPConnect server no longer fails to start with "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") after an update or fresh install.
 
@@ -239,12 +242,17 @@ WHAT'S NEW
 
 - Spanish: the label for a played voice message now reads "Reproducido" instead of "Reproducida", matching "Enviado", "Entregado" and "Leído".
 
+- Typing notifications: optionally repeat a sound while someone types, use only the screen reader, use both, or turn both off. Choose your own sound in Settings, Sound Events. Existing spoken-content choices are preserved and typing sounds are off by default in both connection engines. Typing sounds are muted during voice-message recording and calls by default. To allow them, clear the checkbox “Silence typing sounds during voice recording and calls” in Sound Events. This changes only typing sounds; screen reader speech and other sounds retain their existing settings.
+
 - Spanish: the translation now says "chat/chats" consistently instead of mixing it with "conversación/conversaciones", and the gender and number agreement is fixed in the related texts, including the user guide.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens de voz: Configurações &gt; Áudio agora oferece gravação Automática, Mono e Estéreo. Mono mistura as duas entradas do microfone para que um microfone ligado só à esquerda ou à direita seja ouvido dos dois lados. Continua havendo um só botão de gravar; a escolha vale a partir da próxima gravação.
 
 - Corrigido: o servidor do WPPConnect não deixa mais de iniciar com "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") depois de uma atualização ou instalação nova.
 
@@ -468,12 +476,17 @@ NOVIDADES
 
 - Espanhol: o rótulo de uma mensagem de voz reproduzida agora diz "Reproducido" em vez de "Reproducida", como "Enviado", "Entregado" e "Leído".
 
+- Notificações de digitação: escolha um som que se repete enquanto alguém digita, somente o leitor de tela, ambos ou nenhum. Escolha seu próprio som em Definições, Eventos Sonoros. A preferência atual de anúncio é preservada e o som de digitação vem desativado nos dois motores de conexão. Por padrão, o som de digitação fica mudo durante gravações de voz e chamadas. Para ouvi-lo também nesses momentos, desmarque “Silenciar sons de digitação durante gravações de voz e chamadas” em Eventos Sonoros. A opção afeta somente esse som; os anúncios do leitor de tela e os demais sons mantêm suas configurações.
+
 - Espanhol: a tradução agora usa "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de gênero e número foi corrigida nos textos relacionados, inclusive no guia do usuário.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens de voz: Definições &gt; Áudio permite escolher gravação Automática, Mono ou Estéreo. Mono mistura as duas entradas do microfone para que um microfone ligado apenas à esquerda ou à direita seja ouvido dos dois lados. Mantém-se um só botão de gravar; a escolha aplica-se a partir da próxima gravação.
 
 - Corrigido: o servidor do WPPConnect já não deixa de iniciar com "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") depois de uma atualização ou instalação nova.
 
@@ -697,12 +710,17 @@ NOVIDADES
 
 - Espanhol: a etiqueta de uma mensagem de voz reproduzida passa a dizer "Reproducido" em vez de "Reproducida", tal como "Enviado", "Entregado" e "Leído".
 
+- Notificações de escrita: escolha um som que se repete enquanto alguém escreve, apenas o leitor de ecrã, ambos ou nenhum. Escolha o seu próprio som em Definições, Eventos Sonoros. A preferência atual de anúncio é preservada e o som de escrita vem desativado nos dois motores de ligação. Por predefinição, o som de escrita fica silenciado durante gravações de voz e chamadas. Para o ouvir também nessas alturas, desmarque “Silenciar sons de escrita durante gravações de voz e chamadas” em Eventos Sonoros. A opção afeta apenas este som; os anúncios do leitor de ecrã e os restantes sons mantêm as suas definições.
+
 - Espanhol: a tradução passa a usar "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de género e número foi corrigida nos textos relacionados, incluindo o guia do utilizador.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="es" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Mensajes de voz: Ajustes &gt; Audio permite elegir grabación Automática, Mono o Estéreo. Mono mezcla las dos entradas del micrófono para que un micrófono conectado solo a la izquierda o a la derecha se oiga por ambos lados. Se mantiene un solo botón de grabación; la elección se aplica a partir de la siguiente grabación.
 
 - Corregido: el servidor de WPPConnect ya no deja de iniciarse con "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") tras una actualización o una instalación nueva.
 
@@ -926,12 +944,17 @@ NOVEDADES
 
 - Español: la etiqueta de un mensaje de voz reproducido ahora dice «Reproducido» en lugar de «Reproducida», igual que «Enviado», «Entregado» y «Leído».
 
+- Avisos de escritura: elige un sonido que se repite mientras alguien escribe, solo el lector de pantalla, ambos o ninguno. Puedes elegir tu propio sonido en Configuración, Eventos de sonido. Se conserva la preferencia actual de anuncio y el sonido de escritura está desactivado por defecto en ambos motores de conexión. Por defecto, el sonido de escritura se silencia durante las grabaciones de voz y las llamadas. Para escucharlo también en esos momentos, desmarca “Silenciar el sonido de escritura durante grabaciones de voz y llamadas” en Eventos de sonido. Esta opción afecta solo a ese sonido; los avisos del lector de pantalla y los demás sonidos conservan sus ajustes.
+
 - Español: la traducción ahora usa «chat/chats» de forma coherente, en lugar de mezclarlo con «conversación/conversaciones», y se corrige la concordancia de género y número en los textos relacionados, incluida la guía del usuario.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="pl" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Wiadomości głosowe: w Ustawieniach &gt; Dźwięk można wybrać nagrywanie automatyczne, mono lub stereo. Mono łączy obie ścieżki wejściowe mikrofonu, dzięki czemu mikrofon podłączony tylko do lewego lub prawego wejścia słychać z obu stron. Nadal jest jeden przycisk nagrywania; wybór obowiązuje od następnego nagrania.
 
 - Naprawiono: serwer WPPConnect nie przestaje już uruchamiać się z błędem "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") po aktualizacji lub świeżej instalacji.
 
@@ -1155,12 +1178,17 @@ NOWOŚCI
 
 - Hiszpański: etykieta odtworzonej wiadomości głosowej brzmi teraz „Reproducido” zamiast „Reproducida”, tak jak „Enviado”, „Entregado” i „Leído”.
 
+- Powiadomienia o pisaniu: wybierz powtarzany dźwięk podczas pisania, sam czytnik ekranu, oba sposoby lub wyłącz powiadomienia. W ustawieniach zdarzeń dźwiękowych możesz wskazać własny plik. Dotychczasowy wybór ogłaszania pisania jest zachowany, a nowy dźwięk jest domyślnie wyłączony w obu silnikach połączenia. Domyślnie dźwięk pisania jest wyciszony podczas nagrywania wiadomości głosowej i rozmów. Aby był wtedy odtwarzany, odznacz “Wycisz dźwięk pisania podczas nagrywania wiadomości głosowej i rozmów” w ustawieniach zdarzeń dźwiękowych. Opcja dotyczy tylko tego dźwięku; komunikaty czytnika ekranu i pozostałe dźwięki zachowują swoje ustawienia.
+
 - Hiszpański: tłumaczenie używa teraz konsekwentnie „chat/chats” zamiast mieszać to z „conversación/conversaciones”, a w powiązanych tekstach, także w podręczniku użytkownika, poprawiono zgodność rodzaju i liczby.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="tr" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Sesli mesajlar: Ayarlar &gt; Ses bölümüne Otomatik, Mono ve Stereo kayıt seçimi eklendi. Mono, iki mikrofon girişini birleştirir; yalnız sol veya sağ girişe bağlı mikrofonun sesi iki taraftan da duyulur. Tek kayıt düğmesi korunur; seçim sonraki kayıttan itibaren uygulanır.
 
 - Düzeltildi: WPPConnect sunucusu, bir güncelleme veya yeni kurulumdan sonra artık "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") hatasıyla başlatılamaz hale gelmiyor.
 
@@ -1384,12 +1412,17 @@ YENİLİKLER
 
 - İspanyolca: dinlenen bir sesli mesajın etiketi artık "Reproducida" yerine "Reproducido" yazıyor; "Enviado", "Entregado" ve "Leído" ile uyumlu.
 
+- Yazıyor bildiriminde isteğe bağlı olarak tekrarlayan ses, yalnız ekran okuyucu, ikisi birlikte veya kapalı seçilebilir. Ayarlar, Ses olayları bölümünde kendi ses dosyanızı seçebilirsiniz. İki bağlantı motorunda da mevcut yazıyor duyurusu tercihi korunur; yeni ses varsayılan olarak kapalıdır. Yazıyor sesi varsayılan olarak sesli mesaj kaydı ve arama sırasında susturulur. Bu sırada da çalmasını isterseniz Ses olayları sayfasındaki “Sesli mesaj kaydı ve arama sırasında yazıyor sesini sustur” seçeneğini kapatın. Bu ayar yalnız yazıyor sesini etkiler; ekran okuyucu duyuruları ve diğer sesler mevcut ayarlarını korur.
+
 - İspanyolca: çeviri artık "conversación/conversaciones" ile karıştırmak yerine "chat/chats" sözcüğünü tutarlı biçimde kullanıyor; ilgili metinlerde, kullanıcı rehberi dahil, cinsiyet ve sayı uyumu da düzeltildi.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="ro" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Mesaje vocale: în Setări &gt; Audio poți alege înregistrarea automată, mono sau stereo. Mono combină ambele intrări ale microfonului, astfel încât un microfon conectat doar la stânga sau la dreapta să se audă pe ambele părți. Rămâne un singur buton de înregistrare; alegerea se aplică de la următoarea înregistrare.
 
 - Remediat: serverul WPPConnect nu mai eșuează la pornire cu "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") după o actualizare sau o instalare nouă.
 
@@ -1613,12 +1646,17 @@ NOUTĂȚI
 
 - Spaniolă: eticheta unui mesaj vocal redat este acum „Reproducido”, nu „Reproducida”, ca „Enviado”, „Entregado” și „Leído”.
 
+- Notificări de tastare: alegeți un sunet repetat cât timp cineva scrie, doar cititorul de ecran, ambele sau niciunul. Puteți alege propriul sunet în Setări, Evenimente sonore. Preferința existentă pentru anunțuri este păstrată, iar noul sunet este dezactivat implicit în ambele motoare de conectare. Implicit, sunetul de tastare este oprit în timpul înregistrărilor vocale și apelurilor. Pentru a-l auzi și atunci, debifați “Opriți sunetul de tastare în timpul înregistrărilor vocale și apelurilor” în Evenimente sonore. Opțiunea afectează doar acest sunet; anunțurile cititorului de ecran și celelalte sunete își păstrează setările.
+
 - Spaniolă: traducerea folosește acum în mod consecvent „chat/chats”, în loc să îl amestece cu „conversación/conversaciones”, iar acordul în gen și număr a fost corectat în textele asociate, inclusiv în ghidul utilizatorului.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Unify "chat/chats" and fix agreement in the Spanish translation (#678)
+      <description xml:lang="ar" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
+- Add optional repeating typing sounds while preserving existing speech preferences (#680)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- الرسائل الصوتية: تتيح الإعدادات &gt; الصوت اختيار التسجيل التلقائي أو الأحادي أو الستيريو. يدمج الوضع الأحادي مدخلي الميكروفون لكي يُسمع الميكروفون المتصل بالمدخل الأيسر أو الأيمن فقط من الجانبين. يبقى زر تسجيل واحد؛ ويُطبَّق الاختيار بدءًا من التسجيل التالي.
 
 - تم الإصلاح: لم يعد خادم WPPConnect يفشل في البدء بالخطأ "Cannot find module '@babel/runtime'" ("WinZapp API failed to start in time") بعد التحديث أو التثبيت الجديد.
 
@@ -1843,7 +1881,19 @@ NOUTĂȚI
 
 - الإسبانية: أصبحت تسمية الرسالة الصوتية التي تم تشغيلها «Reproducido» بدلاً من «Reproducida»، بما يتوافق مع «Enviado» و«Entregado» و«Leído».
 
-- الإسبانية: تستخدم الترجمة الآن «chat/chats» بشكل متسق بدلاً من خلطها مع «conversación/conversaciones»، وتم تصحيح التوافق في الجنس والعدد في النصوص ذات الصلة، بما في ذلك دليل المستخدم.</description>
+- الإسبانية: تستخدم الترجمة الآن «chat/chats» بشكل متسق بدلاً من خلطها مع «conversación/conversaciones»، وتم تصحيح التوافق في الجنس والعدد في النصوص ذات الصلة، بما في ذلك دليل المستخدم.
+
+
+- إشعارات الكتابة: يمكنك اختيار صوت يتكرر أثناء الكتابة، أو قارئ الشاشة وحده، أو كليهما، أو إيقافهما. اختر ملفك الصوتي من الإعدادات، أحداث الأصوات. يُحفظ اختيار إعلان الكتابة الحالي، ويكون الصوت الجديد متوقفًا افتراضيًا في محركَي الاتصال. يُكتم صوت الكتابة افتراضيًا أثناء تسجيل الرسائل الصوتية والمكالمات. للسماح به أيضًا في هذه الأوقات، أزل تحديد “كتم صوت الكتابة أثناء تسجيل الرسائل الصوتية والمكالمات” في أحداث الأصوات. يؤثر هذا الخيار في صوت الكتابة فقط؛ وتبقى إعدادات إعلانات قارئ الشاشة والأصوات الأخرى كما هي.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5161alpha/WinZapp-macOS-x86_64.zip" length="348985703" type="application/octet-stream" sparkle:edSignature="xxxbudJcFU1bHvFENzsr/ExZ0crVCKY92TVTEpubG7mHA36PQAyCdyYalRvpLJQUwfWOYmVc9ImmVRN07WslBg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5149alpha</title>
+      <pubDate>Mon, 02 Nov 2026 22:12:57 +0000</pubDate>
+      <sparkle:version>3.0.0.51491</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5149alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5149alpha/WinZapp-macOS-x86_64.zip" length="349055594" type="application/octet-stream" sparkle:edSignature="K+wILijoq1mmb6JJlsDhEauzy499N8kh/AEvVjL0em3b/gMUhhA14uYdpDyS4jAIfhOUymMW9dci1/fToYf8Cw=="></enclosure>
     </item>
     <item>
@@ -1872,15 +1922,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5133alpha/WinZapp-macOS-x86_64.zip" length="348992240" type="application/octet-stream" sparkle:edSignature="lc2KclHkA+VwH48KR1jovdaegb76BUMNb/GEn/WkSAg/jd3VP3LKT5IUOMrIbdylZH1XV6K5e4cDSrBy6b61Dg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5132alpha</title>
-      <pubDate>Mon, 02 Nov 2026 00:07:40 +0000</pubDate>
-      <sparkle:version>3.0.0.51321</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5132alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5132alpha/WinZapp-macOS-x86_64.zip" length="349079323" type="application/octet-stream" sparkle:edSignature="O4gjHD2y/Ysb435xYYB9dcQVBozNKQGoUjvMNPLopWRYPzf0ltiFmPA9d3gJXEqvdAWEdsYyQoIbbZKGm8LZAg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3495,6 +3536,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: RruaXmsmLe3ripdGl+/6K1ZhV0s9fJiDqZQuFrQ/7vHIsEDK9OhuuubYOP88xnaXh8j34wvs8hdkrZL7UwJiAw==
-length: 670659
+edSignature: VJh/MNUDp2ohQ0rwxlO6sJbc47hLRXpVrGJ76CaPYSUkwswKXJaoTDhgfAFQbO9AHRcgvtBWMEV/5gPf7LPPDA==
+length: 679607
 -->
