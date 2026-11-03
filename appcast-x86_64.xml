@@ -5,18 +5,41 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5161alpha</title>
-      <pubDate>Tue, 03 Nov 2026 13:28:47 +0000</pubDate>
-      <sparkle:version>3.0.0.51611</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5161alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5202alpha</title>
+      <pubDate>Tue, 03 Nov 2026 21:11:34 +0000</pubDate>
+      <sparkle:version>3.0.0.52021</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5202alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+      <description xml:lang="en" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WhatsApp settings &gt; Privacy: new "Keep chats archived" option, WhatsApp's own, which decides whether an archived chat goes back to the list when a new message arrives. Works with WPPConnect and Neonize.
+
+- Neonize: with WhatsApp's "Keep chats archived" option off, an archived chat that gets a new message now goes back to the chat list, as on the phone; before, it stayed under Archived.
+
+- Voice messages: in Automatic, a recording whose left or right input is completely silent now goes out in mono, from the input with sound, so you are heard on both sides instead of only one. Mono and Stereo do exactly what they say.
+
+- Settings (Ctrl+,) now opens at once: only the General page is built when the window opens, and every other page or window is built the first time you go to it. Search works straight away: results keep arriving while the other pages load, you can keep typing, and the screen reader is not interrupted when the results list grows.
+
+- Neonize: reading a chat now marks it as read on the phone and on WhatsApp Web the way WhatsApp's own apps do. Before, after many chats read on Neonize, WhatsApp Web could keep showing messages you had already read as unread for several minutes.
+
+- Neonize: messages in private chats are no longer marked as read by themselves while the conversation is not open.
+
+- Neonize: channels in the chat list (when the option to show them is on) now show their name instead of a code.
+
+- Neonize: sending to large groups is faster: the group's encryption key now goes only to the devices that do not have it yet, instead of to every member's device with every message.
+
+- Neonize: messages to Meta AI work. WinZapp asks you to accept Meta AI's terms when the account has not accepted them yet, and Meta AI's replies are shown as text instead of an unknown message.
+
+- Neonize: video and voice statuses no longer fail with "server returned error 400" on some accounts.
+
+- Groups: in a group where only admins can send messages, the message field is now read-only for members on Neonize too; before, it stayed editable in most of these groups.
+
+- Keyboard shortcuts: the F1 list corrects action labels, removes repeated lines within a section, and separates mention suggestions while typing from mentions inside a message. In Spanish and European Portuguese, Alt+P focuses the message field, leaving Alt+E for editing messages.
 
 - Voice messages: Settings &gt; Audio now offers Automatic, Mono and Stereo recording. Mono mixes both microphone inputs so a microphone connected only on the left or right is heard from both sides. There is still one record button; the choice applies from the next recording.
 
@@ -244,13 +267,42 @@ WHAT'S NEW
 
 - Typing notifications: optionally repeat a sound while someone types, use only the screen reader, use both, or turn both off. Choose your own sound in Settings, Sound Events. Existing spoken-content choices are preserved and typing sounds are off by default in both connection engines. Typing sounds are muted during voice-message recording and calls by default. To allow them, clear the checkbox “Silence typing sounds during voice recording and calls” in Sound Events. This changes only typing sounds; screen reader speech and other sounds retain their existing settings.
 
-- Spanish: the translation now says "chat/chats" consistently instead of mixing it with "conversación/conversaciones", and the gender and number agreement is fixed in the related texts, including the user guide.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Spanish: the translation now says "chat/chats" consistently instead of mixing it with "conversación/conversaciones", and the gender and number agreement is fixed in the related texts, including the user guide.
+
+- WPPConnect: while WhatsApp Web is still syncing a long history, WinZapp now says "syncing with WhatsApp..." instead of showing the account as disconnected, and plays no disconnection sound.
+
+- WPPConnect: an incomplete WhatsApp Web version catalogue is repaired when the server starts, and a Node that stops at start-up is reported at once instead of after five minutes.
+
+- Arabic: the usage guide (Help &gt; Usage guide) is now complete in Arabic.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Configurações do WhatsApp &gt; Privacidade: nova opção "Manter conversas arquivadas", a mesma do WhatsApp, que decide se uma conversa arquivada volta para a lista quando chega mensagem nova. Funciona com a WPPConnect e com o Neonize.
+
+- Neonize: com a opção do WhatsApp "Manter conversas arquivadas" desligada, uma conversa arquivada que recebe mensagem nova agora volta para a lista de conversas, como no celular; antes, ela continuava em Arquivadas.
+
+- Mensagens de voz: no Automático, uma gravação em que a entrada esquerda ou direita está totalmente em silêncio agora sai em mono, a partir da entrada com som, e você é ouvido dos dois lados em vez de um só. Mono e Estéreo fazem exatamente o que dizem.
+
+- As Configurações (Ctrl+,) agora abrem na hora: só a página Geral é montada ao abrir a janela, e cada outra página ou janela é montada na primeira vez que você vai até ela. A busca funciona desde o início: os resultados continuam chegando enquanto as outras páginas carregam, você pode continuar digitando, e o leitor de tela não é interrompido quando a lista de resultados cresce.
+
+- Neonize: ler uma conversa agora a marca como lida no celular e no WhatsApp Web como os próprios aplicativos do WhatsApp fazem. Antes, depois de muitas conversas lidas no Neonize, o WhatsApp Web podia mostrar como não lidas, por vários minutos, mensagens que você já tinha lido.
+
+- Neonize: mensagens de conversas particulares não são mais marcadas como lidas sozinhas enquanto a conversa não está aberta.
+
+- Neonize: os canais na lista de conversas (com a opção de mostrá-los ativada) agora aparecem com o nome em vez de um código.
+
+- Neonize: o envio para grupos grandes ficou mais rápido: a chave de criptografia do grupo agora vai só para os dispositivos que ainda não a têm, em vez de para o dispositivo de cada membro a cada mensagem.
+
+- Neonize: as mensagens para a Meta AI funcionam. O WinZapp pede para aceitar os termos da Meta AI quando a conta ainda não os aceitou, e as respostas da Meta AI aparecem como texto em vez de uma mensagem desconhecida.
+
+- Neonize: status de vídeo e de voz não falham mais com "server returned error 400" em algumas contas.
+
+- Grupos: em um grupo em que só administradores podem enviar mensagens, o campo de mensagem agora fica somente leitura para os membros também no Neonize; antes, ele continuava editável na maioria desses grupos.
+
+- Atalhos de teclado: a lista F1 corrige os nomes das ações, remove linhas repetidas na mesma seção e separa as sugestões de menção ao digitar das menções dentro de uma mensagem. Em espanhol e português de Portugal, Alt+P leva ao campo de mensagem e Alt+E fica para editar mensagens.
 
 - Mensagens de voz: Configurações &gt; Áudio agora oferece gravação Automática, Mono e Estéreo. Mono mistura as duas entradas do microfone para que um microfone ligado só à esquerda ou à direita seja ouvido dos dois lados. Continua havendo um só botão de gravar; a escolha vale a partir da próxima gravação.
 
@@ -478,13 +530,42 @@ NOVIDADES
 
 - Notificações de digitação: escolha um som que se repete enquanto alguém digita, somente o leitor de tela, ambos ou nenhum. Escolha seu próprio som em Definições, Eventos Sonoros. A preferência atual de anúncio é preservada e o som de digitação vem desativado nos dois motores de conexão. Por padrão, o som de digitação fica mudo durante gravações de voz e chamadas. Para ouvi-lo também nesses momentos, desmarque “Silenciar sons de digitação durante gravações de voz e chamadas” em Eventos Sonoros. A opção afeta somente esse som; os anúncios do leitor de tela e os demais sons mantêm suas configurações.
 
-- Espanhol: a tradução agora usa "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de gênero e número foi corrigida nos textos relacionados, inclusive no guia do usuário.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Espanhol: a tradução agora usa "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de gênero e número foi corrigida nos textos relacionados, inclusive no guia do usuário.
+
+- WPPConnect: enquanto o WhatsApp Web ainda sincroniza um histórico longo, o WinZapp agora diz "sincronizando com o WhatsApp..." em vez de mostrar a conta como desconectada, e não toca o som de desconexão.
+
+- WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é avisado na hora, em vez de depois de cinco minutos.
+
+- Árabe: o guia de uso (Ajuda &gt; Guia de uso) agora está completo em árabe.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Definições do WhatsApp &gt; Privacidade: nova opção "Manter conversas arquivadas", a mesma do WhatsApp, que decide se uma conversa arquivada volta à lista quando chega uma mensagem nova. Funciona com o WPPConnect e com o Neonize.
+
+- Neonize: com a opção do WhatsApp "Manter conversas arquivadas" desligada, uma conversa arquivada que recebe uma mensagem nova passa a voltar à lista de conversas, como no telemóvel; antes, continuava em Arquivadas.
+
+- Mensagens de voz: no modo Automático, uma gravação em que a entrada esquerda ou direita está totalmente em silêncio passa a ser enviada em mono, a partir da entrada com som, e passa a ser ouvido dos dois lados em vez de um só. Mono e Estéreo fazem exatamente o que dizem.
+
+- As Definições (Ctrl+,) passam a abrir de imediato: só a página Geral é criada ao abrir a janela, e cada outra página ou janela é criada da primeira vez que lá vai. A pesquisa funciona desde o início: os resultados continuam a chegar enquanto as outras páginas carregam, pode continuar a escrever, e o leitor de ecrã não é interrompido quando a lista de resultados cresce.
+
+- Neonize: ler uma conversa passa a marcá-la como lida no telemóvel e no WhatsApp Web como fazem as próprias aplicações do WhatsApp. Antes, depois de muitas conversas lidas no Neonize, o WhatsApp Web podia mostrar como não lidas, durante vários minutos, mensagens que já tinha lido.
+
+- Neonize: as mensagens de conversas privadas deixam de ser marcadas como lidas sozinhas enquanto a conversa não está aberta.
+
+- Neonize: os canais na lista de conversas (com a opção de os mostrar ativada) passam a aparecer com o nome em vez de um código.
+
+- Neonize: o envio para grupos grandes ficou mais rápido: a chave de encriptação do grupo passa a ir só para os dispositivos que ainda não a têm, em vez de para o dispositivo de cada membro a cada mensagem.
+
+- Neonize: as mensagens para a Meta AI funcionam. O WinZapp pede para aceitar os termos da Meta AI quando a conta ainda não os aceitou, e as respostas da Meta AI aparecem como texto em vez de uma mensagem desconhecida.
+
+- Neonize: os estados de vídeo e de voz deixam de falhar com "server returned error 400" em algumas contas.
+
+- Grupos: num grupo em que só os administradores podem enviar mensagens, o campo de mensagem passa a ficar só de leitura para os membros também no Neonize; antes, continuava editável na maioria destes grupos.
+
+- Atalhos de teclado: a lista F1 corrige os nomes das ações, remove linhas repetidas na mesma secção e separa as sugestões de menção ao escrever das menções dentro de uma mensagem. Em espanhol e português de Portugal, Alt+P leva ao campo de mensagem e Alt+E fica para editar mensagens.
 
 - Mensagens de voz: Definições &gt; Áudio permite escolher gravação Automática, Mono ou Estéreo. Mono mistura as duas entradas do microfone para que um microfone ligado apenas à esquerda ou à direita seja ouvido dos dois lados. Mantém-se um só botão de gravar; a escolha aplica-se a partir da próxima gravação.
 
@@ -712,13 +793,42 @@ NOVIDADES
 
 - Notificações de escrita: escolha um som que se repete enquanto alguém escreve, apenas o leitor de ecrã, ambos ou nenhum. Escolha o seu próprio som em Definições, Eventos Sonoros. A preferência atual de anúncio é preservada e o som de escrita vem desativado nos dois motores de ligação. Por predefinição, o som de escrita fica silenciado durante gravações de voz e chamadas. Para o ouvir também nessas alturas, desmarque “Silenciar sons de escrita durante gravações de voz e chamadas” em Eventos Sonoros. A opção afeta apenas este som; os anúncios do leitor de ecrã e os restantes sons mantêm as suas definições.
 
-- Espanhol: a tradução passa a usar "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de género e número foi corrigida nos textos relacionados, incluindo o guia do utilizador.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Espanhol: a tradução passa a usar "chat/chats" de forma consistente, em vez de misturar com "conversación/conversaciones", e a concordância de género e número foi corrigida nos textos relacionados, incluindo o guia do utilizador.
+
+- WPPConnect: enquanto o WhatsApp Web ainda sincroniza um histórico longo, o WinZapp passa a dizer "a sincronizar com o WhatsApp..." em vez de mostrar a conta como desligada, e não toca o som de desligação.
+
+- WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é comunicado de imediato, em vez de passados cinco minutos.
+
+- Árabe: o guia de utilização (Ajuda &gt; Guia de utilização) está agora completo em árabe.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Configuración de WhatsApp &gt; Privacidad: nueva opción "Mantener chats archivados", la misma de WhatsApp, que decide si un chat archivado vuelve a la lista cuando llega un mensaje nuevo. Funciona con WPPConnect y con Neonize.
+
+- Neonize: con la opción de WhatsApp "Mantener chats archivados" desactivada, un chat archivado que recibe un mensaje nuevo ahora vuelve a la lista de chats, como en el teléfono; antes seguía en Archivados.
+
+- Mensajes de voz: en Automático, una grabación cuya entrada izquierda o derecha está totalmente en silencio ahora se envía en mono, a partir de la entrada con sonido, y se te oye por los dos lados en vez de por uno solo. Mono y Estéreo hacen exactamente lo que dicen.
+
+- Los Ajustes (Ctrl+,) ahora se abren al instante: al abrir la ventana solo se crea la página General, y cada una de las demás páginas o ventanas se crea la primera vez que vas a ella. La búsqueda funciona desde el principio: los resultados siguen llegando mientras se cargan las demás páginas, puedes seguir escribiendo y el lector de pantalla no se interrumpe cuando crece la lista de resultados.
+
+- Neonize: leer un chat ahora lo marca como leído en el teléfono y en WhatsApp Web como hacen las propias aplicaciones de WhatsApp. Antes, después de muchos chats leídos en Neonize, WhatsApp Web podía mostrar como no leídos, durante varios minutos, mensajes que ya habías leído.
+
+- Neonize: los mensajes de los chats privados ya no se marcan como leídos solos mientras el chat no está abierto.
+
+- Neonize: los canales de la lista de chats (con la opción de mostrarlos activada) ahora aparecen con su nombre en vez de un código.
+
+- Neonize: el envío a grupos grandes es más rápido: la clave de cifrado del grupo ahora va solo a los dispositivos que aún no la tienen, en vez de al dispositivo de cada miembro con cada mensaje.
+
+- Neonize: los mensajes a Meta AI funcionan. WinZapp pide aceptar los términos de Meta AI cuando la cuenta aún no los ha aceptado, y las respuestas de Meta AI se muestran como texto en vez de como un mensaje desconocido.
+
+- Neonize: los estados de vídeo y de voz ya no fallan con "server returned error 400" en algunas cuentas.
+
+- Grupos: en un grupo en el que solo los administradores pueden enviar mensajes, el campo de mensaje ahora es de solo lectura para los miembros también en Neonize; antes seguía editable en la mayoría de estos grupos.
+
+- Atajos de teclado: el listado F1 corrige etiquetas de acciones, evita líneas repetidas dentro de un mismo apartado y separa las sugerencias de mención al escribir de las menciones dentro de un mensaje. En español y portugués de Portugal, Alt+P lleva al campo de escritura y Alt+E queda para editar mensajes.
 
 - Mensajes de voz: Ajustes &gt; Audio permite elegir grabación Automática, Mono o Estéreo. Mono mezcla las dos entradas del micrófono para que un micrófono conectado solo a la izquierda o a la derecha se oiga por ambos lados. Se mantiene un solo botón de grabación; la elección se aplica a partir de la siguiente grabación.
 
@@ -946,13 +1056,42 @@ NOVEDADES
 
 - Avisos de escritura: elige un sonido que se repite mientras alguien escribe, solo el lector de pantalla, ambos o ninguno. Puedes elegir tu propio sonido en Configuración, Eventos de sonido. Se conserva la preferencia actual de anuncio y el sonido de escritura está desactivado por defecto en ambos motores de conexión. Por defecto, el sonido de escritura se silencia durante las grabaciones de voz y las llamadas. Para escucharlo también en esos momentos, desmarca “Silenciar el sonido de escritura durante grabaciones de voz y llamadas” en Eventos de sonido. Esta opción afecta solo a ese sonido; los avisos del lector de pantalla y los demás sonidos conservan sus ajustes.
 
-- Español: la traducción ahora usa «chat/chats» de forma coherente, en lugar de mezclarlo con «conversación/conversaciones», y se corrige la concordancia de género y número en los textos relacionados, incluida la guía del usuario.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Español: la traducción ahora usa «chat/chats» de forma coherente, en lugar de mezclarlo con «conversación/conversaciones», y se corrige la concordancia de género y número en los textos relacionados, incluida la guía del usuario.
+
+- WPPConnect: mientras WhatsApp Web aún sincroniza un historial largo, WinZapp ahora dice "sincronizando con WhatsApp..." en vez de mostrar la cuenta como desconectada, y no reproduce el sonido de desconexión.
+
+- WPPConnect: un catálogo incompleto de versiones de WhatsApp Web se repara al iniciar el servidor, y un Node que se detiene al arrancar se avisa al momento, en vez de tras cinco minutos.
+
+- Árabe: la guía de uso (Ayuda &gt; Guía de uso) ya está completa en árabe.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Ustawienia WhatsApp &gt; Prywatność: nowa opcja "Zachowaj czaty zarchiwizowane", ta sama co w WhatsApp, która decyduje, czy zarchiwizowany czat wraca na listę po nadejściu nowej wiadomości. Działa z WPPConnect i z Neonize.
+
+- Neonize: gdy opcja WhatsApp "Zachowaj czaty zarchiwizowane" jest wyłączona, zarchiwizowany czat, który dostaje nową wiadomość, wraca teraz na listę czatów, tak jak na telefonie; wcześniej zostawał w archiwum.
+
+- Wiadomości głosowe: w trybie automatycznym nagranie, w którym lewe lub prawe wejście jest całkowicie ciche, jest teraz wysyłane w mono, z wejścia, na którym jest dźwięk, więc słychać Cię z obu stron zamiast z jednej. Tryby mono i stereo działają dokładnie tak, jak się nazywają.
+
+- Ustawienia (Ctrl+,) otwierają się teraz od razu: przy otwarciu okna tworzona jest tylko strona Ogólne, a każda inna strona lub okno powstaje przy pierwszym przejściu do niej. Wyszukiwanie działa od początku: wyniki napływają, gdy pozostałe strony się wczytują, możesz pisać dalej, a czytnik ekranu nie jest przerywany, gdy lista wyników rośnie.
+
+- Neonize: przeczytanie czatu oznacza go teraz jako przeczytany na telefonie i w WhatsApp Web tak, jak robią to aplikacje WhatsApp. Wcześniej, po wielu czatach przeczytanych w Neonize, WhatsApp Web mógł przez kilka minut pokazywać już przeczytane wiadomości jako nieprzeczytane.
+
+- Neonize: wiadomości w czatach prywatnych nie są już same oznaczane jako przeczytane, gdy czat nie jest otwarty.
+
+- Neonize: kanały na liście czatów (gdy opcja ich pokazywania jest włączona) pokazują teraz swoją nazwę zamiast kodu.
+
+- Neonize: wysyłanie do dużych grup jest szybsze: klucz szyfrowania grupy trafia teraz tylko do urządzeń, które jeszcze go nie mają, zamiast do urządzenia każdego członka przy każdej wiadomości.
+
+- Neonize: wiadomości do Meta AI działają. WinZapp prosi o zaakceptowanie warunków Meta AI, gdy konto jeszcze ich nie zaakceptowało, a odpowiedzi Meta AI są pokazywane jako tekst zamiast nieznanej wiadomości.
+
+- Neonize: statusy wideo i głosowe nie kończą się już na niektórych kontach błędem "server returned error 400".
+
+- Grupy: w grupie, w której tylko administratorzy mogą wysyłać wiadomości, pole wiadomości jest teraz tylko do odczytu dla członków także w Neonize; wcześniej w większości takich grup pozostawało edytowalne.
+
+- Skróty klawiszowe: lista F1 poprawia nazwy działań, usuwa powtórzone wiersze w tej samej sekcji i oddziela sugestie wzmianek podczas pisania od wzmianek w wiadomości. W języku hiszpańskim i portugalskim z Portugalii Alt+P przenosi do pola wiadomości, a Alt+E służy do edycji wiadomości.
 
 - Wiadomości głosowe: w Ustawieniach &gt; Dźwięk można wybrać nagrywanie automatyczne, mono lub stereo. Mono łączy obie ścieżki wejściowe mikrofonu, dzięki czemu mikrofon podłączony tylko do lewego lub prawego wejścia słychać z obu stron. Nadal jest jeden przycisk nagrywania; wybór obowiązuje od następnego nagrania.
 
@@ -1180,13 +1319,42 @@ NOWOŚCI
 
 - Powiadomienia o pisaniu: wybierz powtarzany dźwięk podczas pisania, sam czytnik ekranu, oba sposoby lub wyłącz powiadomienia. W ustawieniach zdarzeń dźwiękowych możesz wskazać własny plik. Dotychczasowy wybór ogłaszania pisania jest zachowany, a nowy dźwięk jest domyślnie wyłączony w obu silnikach połączenia. Domyślnie dźwięk pisania jest wyciszony podczas nagrywania wiadomości głosowej i rozmów. Aby był wtedy odtwarzany, odznacz “Wycisz dźwięk pisania podczas nagrywania wiadomości głosowej i rozmów” w ustawieniach zdarzeń dźwiękowych. Opcja dotyczy tylko tego dźwięku; komunikaty czytnika ekranu i pozostałe dźwięki zachowują swoje ustawienia.
 
-- Hiszpański: tłumaczenie używa teraz konsekwentnie „chat/chats” zamiast mieszać to z „conversación/conversaciones”, a w powiązanych tekstach, także w podręczniku użytkownika, poprawiono zgodność rodzaju i liczby.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Hiszpański: tłumaczenie używa teraz konsekwentnie „chat/chats” zamiast mieszać to z „conversación/conversaciones”, a w powiązanych tekstach, także w podręczniku użytkownika, poprawiono zgodność rodzaju i liczby.
+
+- WPPConnect: gdy WhatsApp Web wciąż synchronizuje długą historię, WinZapp mówi teraz "synchronizowanie z WhatsApp..." zamiast pokazywać konto jako rozłączone i nie odtwarza dźwięku rozłączenia.
+
+- WPPConnect: niekompletny katalog wersji WhatsApp Web jest naprawiany przy starcie serwera, a Node, który zatrzymuje się przy uruchamianiu, jest zgłaszany od razu zamiast po pięciu minutach.
+
+- Arabski: przewodnik użytkowania (Pomoc &gt; Przewodnik użytkowania) jest teraz kompletny po arabsku.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WhatsApp ayarları &gt; Gizlilik: WhatsApp'ın kendi seçeneği olan yeni "Sohbetleri arşivde tut", yeni mesaj geldiğinde arşivlenmiş sohbetin listeye dönüp dönmeyeceğini belirler. WPPConnect ve Neonize ile çalışır.
+
+- Neonize: WhatsApp'ın "Sohbetleri arşivde tut" seçeneği kapalıyken yeni mesaj alan arşivlenmiş bir sohbet artık telefonda olduğu gibi sohbet listesine geri döner; önceden Arşivlenmiş bölümünde kalıyordu.
+
+- Sesli mesajlar: Otomatik modda, sol veya sağ girişi tamamen sessiz olan kayıt artık sesin olduğu girişten mono olarak gönderilir; böylece sesiniz tek taraftan değil iki taraftan duyulur. Mono ve Stereo tam olarak adlarının söylediğini yapar.
+
+- Ayarlar (Ctrl+,) artık hemen açılır: pencere açılırken yalnızca Genel sayfası oluşturulur, diğer her sayfa veya pencere ona ilk gittiğinizde oluşturulur. Arama baştan çalışır: diğer sayfalar yüklenirken sonuçlar gelmeye devam eder, yazmayı sürdürebilirsiniz ve sonuç listesi büyüdüğünde ekran okuyucu kesilmez.
+
+- Neonize: bir sohbeti okumak artık onu telefonda ve WhatsApp Web'de WhatsApp'ın kendi uygulamalarının yaptığı gibi okundu olarak işaretler. Önceden, Neonize'da okunan çok sayıda sohbetten sonra WhatsApp Web, zaten okuduğunuz mesajları birkaç dakika boyunca okunmamış gösterebiliyordu.
+
+- Neonize: özel sohbetlerdeki mesajlar, sohbet açık değilken artık kendiliğinden okundu olarak işaretlenmez.
+
+- Neonize: sohbet listesindeki kanallar (gösterme seçeneği açıkken) artık bir kod yerine adlarıyla görünür.
+
+- Neonize: büyük gruplara gönderim daha hızlı: grubun şifreleme anahtarı artık her mesajda her üyenin aygıtına değil, yalnızca onu henüz almamış aygıtlara gider.
+
+- Neonize: Meta AI'ya mesajlar çalışıyor. Hesap Meta AI koşullarını henüz kabul etmediyse WinZapp kabul etmenizi ister ve Meta AI'nın yanıtları bilinmeyen bir mesaj yerine metin olarak gösterilir.
+
+- Neonize: video ve sesli durumlar bazı hesaplarda artık "server returned error 400" hatasıyla başarısız olmuyor.
+
+- Gruplar: yalnızca yöneticilerin mesaj gönderebildiği bir grupta mesaj alanı artık Neonize'da da üyeler için salt okunurdur; önceden bu grupların çoğunda düzenlenebilir kalıyordu.
+
+- Klavye kısayolları: F1 listesinde eylem adları düzeltildi, aynı bölümde yinelenen satırlar kaldırıldı ve yazarken çıkan bahsetme önerileri mesaj içindeki bahsetmelerden ayrıldı. İspanyolca ve Portekiz Portekizcesinde Alt+P mesaj alanına odaklanır; Alt+E mesaj düzenlemek için kullanılır.
 
 - Sesli mesajlar: Ayarlar &gt; Ses bölümüne Otomatik, Mono ve Stereo kayıt seçimi eklendi. Mono, iki mikrofon girişini birleştirir; yalnız sol veya sağ girişe bağlı mikrofonun sesi iki taraftan da duyulur. Tek kayıt düğmesi korunur; seçim sonraki kayıttan itibaren uygulanır.
 
@@ -1414,13 +1582,42 @@ YENİLİKLER
 
 - Yazıyor bildiriminde isteğe bağlı olarak tekrarlayan ses, yalnız ekran okuyucu, ikisi birlikte veya kapalı seçilebilir. Ayarlar, Ses olayları bölümünde kendi ses dosyanızı seçebilirsiniz. İki bağlantı motorunda da mevcut yazıyor duyurusu tercihi korunur; yeni ses varsayılan olarak kapalıdır. Yazıyor sesi varsayılan olarak sesli mesaj kaydı ve arama sırasında susturulur. Bu sırada da çalmasını isterseniz Ses olayları sayfasındaki “Sesli mesaj kaydı ve arama sırasında yazıyor sesini sustur” seçeneğini kapatın. Bu ayar yalnız yazıyor sesini etkiler; ekran okuyucu duyuruları ve diğer sesler mevcut ayarlarını korur.
 
-- İspanyolca: çeviri artık "conversación/conversaciones" ile karıştırmak yerine "chat/chats" sözcüğünü tutarlı biçimde kullanıyor; ilgili metinlerde, kullanıcı rehberi dahil, cinsiyet ve sayı uyumu da düzeltildi.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- İspanyolca: çeviri artık "conversación/conversaciones" ile karıştırmak yerine "chat/chats" sözcüğünü tutarlı biçimde kullanıyor; ilgili metinlerde, kullanıcı rehberi dahil, cinsiyet ve sayı uyumu da düzeltildi.
+
+- WPPConnect: WhatsApp Web uzun bir geçmişi hâlâ eşitlerken WinZapp artık hesabı bağlantısı kesilmiş göstermek yerine "WhatsApp ile eşitleniyor..." der ve bağlantı kesilme sesini çalmaz.
+
+- WPPConnect: eksik bir WhatsApp Web sürüm kataloğu sunucu başlarken onarılır ve başlangıçta duran bir Node beş dakika sonra değil hemen bildirilir.
+
+- Arapça: kullanım kılavuzu (Yardım &gt; Kullanım kılavuzu) artık Arapça olarak tamamlandı.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Setări WhatsApp &gt; Confidențialitate: opțiune nouă "Păstrează conversațiile arhivate", aceeași ca în WhatsApp, care decide dacă o conversație arhivată revine în listă când sosește un mesaj nou. Funcționează cu WPPConnect și cu Neonize.
+
+- Neonize: cu opțiunea WhatsApp "Păstrează conversațiile arhivate" dezactivată, o conversație arhivată care primește un mesaj nou revine acum în lista de conversații, ca pe telefon; înainte rămânea la Arhivate.
+
+- Mesaje vocale: în modul Automat, o înregistrare în care intrarea stângă sau dreaptă este complet fără semnal este trimisă acum mono, din intrarea cu sunet, astfel încât ești auzit pe ambele părți, nu doar pe una. Mono și Stereo fac exact ce spun.
+
+- Setările (Ctrl+,) se deschid acum imediat: la deschiderea ferestrei se creează doar pagina Generale, iar fiecare altă pagină sau fereastră se creează prima dată când mergi la ea. Căutarea funcționează de la început: rezultatele continuă să sosească în timp ce celelalte pagini se încarcă, poți continua să scrii, iar cititorul de ecran nu este întrerupt când lista de rezultate crește.
+
+- Neonize: citirea unei conversații o marchează acum ca citită pe telefon și în WhatsApp Web așa cum o fac aplicațiile WhatsApp. Înainte, după multe conversații citite în Neonize, WhatsApp Web putea afișa ca necitite, timp de câteva minute, mesaje pe care le citiseși deja.
+
+- Neonize: mesajele din conversațiile private nu mai sunt marcate singure ca citite cât timp conversația nu este deschisă.
+
+- Neonize: canalele din lista de conversații (cu opțiunea de afișare activată) apar acum cu numele lor în loc de un cod.
+
+- Neonize: trimiterea către grupuri mari este mai rapidă: cheia de criptare a grupului merge acum doar la dispozitivele care nu o au încă, în loc să meargă la dispozitivul fiecărui membru la fiecare mesaj.
+
+- Neonize: mesajele către Meta AI funcționează. WinZapp cere acceptarea termenilor Meta AI când contul nu i-a acceptat încă, iar răspunsurile Meta AI apar ca text în loc de un mesaj necunoscut.
+
+- Neonize: statusurile video și vocale nu mai eșuează cu "server returned error 400" pe unele conturi.
+
+- Grupuri: într-un grup în care doar administratorii pot trimite mesaje, câmpul de mesaj este acum doar pentru citire pentru membri și în Neonize; înainte rămânea editabil în majoritatea acestor grupuri.
+
+- Comenzi rapide: lista F1 corectează denumirile acțiunilor, elimină liniile repetate din aceeași secțiune și separă sugestiile de menționare la tastare de mențiunile dintr-un mesaj. În spaniolă și portugheza din Portugalia, Alt+P mută focalizarea în câmpul mesajului, iar Alt+E rămâne pentru editarea mesajelor.
 
 - Mesaje vocale: în Setări &gt; Audio poți alege înregistrarea automată, mono sau stereo. Mono combină ambele intrări ale microfonului, astfel încât un microfon conectat doar la stânga sau la dreapta să se audă pe ambele părți. Rămâne un singur buton de înregistrare; alegerea se aplică de la următoarea înregistrare.
 
@@ -1648,13 +1845,42 @@ NOUTĂȚI
 
 - Notificări de tastare: alegeți un sunet repetat cât timp cineva scrie, doar cititorul de ecran, ambele sau niciunul. Puteți alege propriul sunet în Setări, Evenimente sonore. Preferința existentă pentru anunțuri este păstrată, iar noul sunet este dezactivat implicit în ambele motoare de conectare. Implicit, sunetul de tastare este oprit în timpul înregistrărilor vocale și apelurilor. Pentru a-l auzi și atunci, debifați “Opriți sunetul de tastare în timpul înregistrărilor vocale și apelurilor” în Evenimente sonore. Opțiunea afectează doar acest sunet; anunțurile cititorului de ecran și celelalte sunete își păstrează setările.
 
-- Spaniolă: traducerea folosește acum în mod consecvent „chat/chats”, în loc să îl amestece cu „conversación/conversaciones”, iar acordul în gen și număr a fost corectat în textele asociate, inclusiv în ghidul utilizatorului.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Restore manual mono and stereo voice recording preferences (#681)
-- Add optional repeating typing sounds while preserving existing speech preferences (#680)
+- Spaniolă: traducerea folosește acum în mod consecvent „chat/chats”, în loc să îl amestece cu „conversación/conversaciones”, iar acordul în gen și număr a fost corectat în textele asociate, inclusiv în ghidul utilizatorului.
+
+- WPPConnect: cât timp WhatsApp Web încă sincronizează un istoric lung, WinZapp spune acum "se sincronizează cu WhatsApp..." în loc să arate contul ca deconectat și nu redă sunetul de deconectare.
+
+- WPPConnect: un catalog incomplet de versiuni WhatsApp Web este reparat la pornirea serverului, iar un Node care se oprește la pornire este semnalat imediat, nu după cinci minute.
+
+- Arabă: ghidul de utilizare (Ajutor &gt; Ghid de utilizare) este acum complet în arabă.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- إعدادات واتساب &gt; الخصوصية: خيار جديد «إبقاء الدردشات مؤرشفة»، وهو خيار WhatsApp نفسه، يحدد ما إذا كانت الدردشة المؤرشفة تعود إلى القائمة عند وصول رسالة جديدة. يعمل مع WPPConnect ومع Neonize.
+
+- Neonize: عندما يكون خيار WhatsApp «إبقاء الدردشات مؤرشفة» متوقفًا، تعود الآن الدردشة المؤرشفة التي تصلها رسالة جديدة إلى قائمة الدردشات، كما على الهاتف؛ وكانت تبقى من قبل في المؤرشفة.
+
+- الرسائل الصوتية: في الوضع التلقائي، يُرسل الآن التسجيل الذي يكون مدخله الأيسر أو الأيمن صامتًا تمامًا بصوت أحادي من المدخل الذي فيه الصوت، فيُسمع صوتك من الجانبين بدلًا من جانب واحد. ويعمل الأحادي والستيريو كما يدل اسمهما تمامًا.
+
+- تُفتح الإعدادات (Ctrl+,) الآن فورًا: لا تُنشأ عند فتح النافذة إلا صفحة «عام»، وتُنشأ كل صفحة أو نافذة أخرى في أول مرة تنتقل إليها. ويعمل البحث من البداية: تستمر النتائج في الوصول أثناء تحميل الصفحات الأخرى، ويمكنك متابعة الكتابة، ولا يُقاطَع قارئ الشاشة عندما تطول قائمة النتائج.
+
+- Neonize: قراءة دردشة تجعلها الآن مقروءة على الهاتف وفي WhatsApp Web كما تفعل تطبيقات WhatsApp نفسها. في السابق، بعد قراءة دردشات كثيرة في Neonize، كان WhatsApp Web قد يعرض لعدة دقائق رسائل قرأتها بالفعل على أنها غير مقروءة.
+
+- Neonize: لم تعد رسائل الدردشات الخاصة تُعلَّم كمقروءة من تلقاء نفسها والدردشة غير مفتوحة.
+
+- Neonize: تظهر القنوات في قائمة الدردشات (عند تفعيل خيار عرضها) الآن باسمها بدلًا من رمز.
+
+- Neonize: أصبح الإرسال إلى المجموعات الكبيرة أسرع: يُرسل مفتاح تشفير المجموعة الآن فقط إلى الأجهزة التي لا تملكه بعد، بدلًا من إرساله إلى جهاز كل عضو مع كل رسالة.
+
+- Neonize: تعمل الرسائل إلى Meta AI. يطلب WinZapp قبول شروط Meta AI إذا لم يكن الحساب قد قبلها بعد، وتظهر ردود Meta AI نصًا بدلًا من رسالة غير معروفة.
+
+- Neonize: لم تعد حالات الفيديو والصوت تفشل في بعض الحسابات بالخطأ "server returned error 400".
+
+- المجموعات: في مجموعة لا يستطيع إرسال الرسائل فيها إلا المشرفون، أصبح حقل الرسالة الآن للقراءة فقط للأعضاء في Neonize أيضًا؛ وكان يبقى قابلًا للتحرير من قبل في معظم هذه المجموعات.
+
+- اختصارات لوحة المفاتيح: تصحح قائمة F1 أسماء الإجراءات، وتزيل الأسطر المكررة داخل القسم نفسه، وتفصل اقتراحات الإشارة أثناء الكتابة عن الإشارات داخل الرسالة. في الإسبانية والبرتغالية الأوروبية، ينقل Alt+P التركيز إلى حقل الرسالة، ويبقى Alt+E لتحرير الرسائل.
 
 - الرسائل الصوتية: تتيح الإعدادات &gt; الصوت اختيار التسجيل التلقائي أو الأحادي أو الستيريو. يدمج الوضع الأحادي مدخلي الميكروفون لكي يُسمع الميكروفون المتصل بالمدخل الأيسر أو الأيمن فقط من الجانبين. يبقى زر تسجيل واحد؛ ويُطبَّق الاختيار بدءًا من التسجيل التالي.
 
@@ -1884,7 +2110,22 @@ NOUTĂȚI
 - الإسبانية: تستخدم الترجمة الآن «chat/chats» بشكل متسق بدلاً من خلطها مع «conversación/conversaciones»، وتم تصحيح التوافق في الجنس والعدد في النصوص ذات الصلة، بما في ذلك دليل المستخدم.
 
 
-- إشعارات الكتابة: يمكنك اختيار صوت يتكرر أثناء الكتابة، أو قارئ الشاشة وحده، أو كليهما، أو إيقافهما. اختر ملفك الصوتي من الإعدادات، أحداث الأصوات. يُحفظ اختيار إعلان الكتابة الحالي، ويكون الصوت الجديد متوقفًا افتراضيًا في محركَي الاتصال. يُكتم صوت الكتابة افتراضيًا أثناء تسجيل الرسائل الصوتية والمكالمات. للسماح به أيضًا في هذه الأوقات، أزل تحديد “كتم صوت الكتابة أثناء تسجيل الرسائل الصوتية والمكالمات” في أحداث الأصوات. يؤثر هذا الخيار في صوت الكتابة فقط؛ وتبقى إعدادات إعلانات قارئ الشاشة والأصوات الأخرى كما هي.</description>
+- إشعارات الكتابة: يمكنك اختيار صوت يتكرر أثناء الكتابة، أو قارئ الشاشة وحده، أو كليهما، أو إيقافهما. اختر ملفك الصوتي من الإعدادات، أحداث الأصوات. يُحفظ اختيار إعلان الكتابة الحالي، ويكون الصوت الجديد متوقفًا افتراضيًا في محركَي الاتصال. يُكتم صوت الكتابة افتراضيًا أثناء تسجيل الرسائل الصوتية والمكالمات. للسماح به أيضًا في هذه الأوقات، أزل تحديد “كتم صوت الكتابة أثناء تسجيل الرسائل الصوتية والمكالمات” في أحداث الأصوات. يؤثر هذا الخيار في صوت الكتابة فقط؛ وتبقى إعدادات إعلانات قارئ الشاشة والأصوات الأخرى كما هي.
+
+- WPPConnect: أثناء استمرار WhatsApp Web في مزامنة سجل طويل، يقول WinZapp الآن «جاري المزامنة مع واتساب…» بدلًا من عرض الحساب على أنه غير متصل، ولا يشغّل صوت انقطاع الاتصال.
+
+- WPPConnect: يُصلَح كتالوج إصدارات WhatsApp Web غير المكتمل عند بدء الخادم، ويُبلَّغ فورًا عن Node يتوقف عند البدء بدلًا من الانتظار خمس دقائق.
+
+- العربية: اكتمل الآن دليل الاستخدام (المساعدة &gt; دليل الاستخدام) باللغة العربية.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5202alpha/WinZapp-macOS-x86_64.zip" length="349046178" type="application/octet-stream" sparkle:edSignature="uyyvm0FzBPHgprW0Re4y4Fv6xmPaPlGb40/+7XG2VIFwSU1xifvjFi1dPy2av9uw7AMkgFE7WDK5SSp649+rDQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5161alpha</title>
+      <pubDate>Tue, 03 Nov 2026 13:28:47 +0000</pubDate>
+      <sparkle:version>3.0.0.51611</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5161alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5161alpha/WinZapp-macOS-x86_64.zip" length="348985703" type="application/octet-stream" sparkle:edSignature="xxxbudJcFU1bHvFENzsr/ExZ0crVCKY92TVTEpubG7mHA36PQAyCdyYalRvpLJQUwfWOYmVc9ImmVRN07WslBg=="></enclosure>
     </item>
     <item>
@@ -1913,15 +2154,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5135alpha/WinZapp-macOS-x86_64.zip" length="349124306" type="application/octet-stream" sparkle:edSignature="eYUFK6AAaRe2plpVmbndQIA7bVxuUbYw06uNsy1dFRXHfMvpHM0R0ceAQqlYp+vUEo+DcH/G36Cf0983+5zGBQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5133alpha</title>
-      <pubDate>Mon, 02 Nov 2026 02:08:13 +0000</pubDate>
-      <sparkle:version>3.0.0.51331</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5133alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5133alpha/WinZapp-macOS-x86_64.zip" length="348992240" type="application/octet-stream" sparkle:edSignature="lc2KclHkA+VwH48KR1jovdaegb76BUMNb/GEn/WkSAg/jd3VP3LKT5IUOMrIbdylZH1XV6K5e4cDSrBy6b61Dg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3536,6 +3768,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VJh/MNUDp2ohQ0rwxlO6sJbc47hLRXpVrGJ76CaPYSUkwswKXJaoTDhgfAFQbO9AHRcgvtBWMEV/5gPf7LPPDA==
-length: 679607
+edSignature: ByCCu1I3A+Z4fEEZj3iSyonLJOkC67s+QfEShG4dg/Oqd2am8MUN4sDMCJja4d4cbv06LpQo90Rpx9LLpAaCAA==
+length: 705684
 -->
