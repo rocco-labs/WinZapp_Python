@@ -55,6 +55,10 @@ env:
 jobs:
   plan:
     runs-on: ubuntu-latest
+    # A failure here never fails the run (no email): GitHub often has no Mac
+    # machine for a job, and the watchdog retries on its own. The held-back
+    # job at the end fails the run only when a release is really stuck.
+    continue-on-error: true
     outputs:
       tags: ${{ steps.plan.outputs.tags }}
     steps:
@@ -84,7 +88,11 @@ jobs:
 
   build:
     needs: plan
-    if: needs.plan.outputs.tags != '[]'
+    if: needs.plan.result == 'success' && needs.plan.outputs.tags != '[]'
+    # A failure here never fails the run (no email): GitHub often has no Mac
+    # machine for a job, and the watchdog retries on its own. The held-back
+    # job at the end fails the run only when a release is really stuck.
+    continue-on-error: true
     strategy:
       fail-fast: false
       matrix:
@@ -286,8 +294,12 @@ jobs:
     # One tag failing to build must not hold back the others: a failed matrix
     # leg would otherwise skip this whole job. Each tag below publishes only
     # when both of its zips were built.
-    if: ${{ !cancelled() && needs.plan.outputs.tags != '[]' }}
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.tags != '[]' }}
     runs-on: ubuntu-latest
+    # A failure here never fails the run (no email): GitHub often has no Mac
+    # machine for a job, and the watchdog retries on its own. The held-back
+    # job at the end fails the run only when a release is really stuck.
+    continue-on-error: true
     permissions:
       contents: write
       actions: read   # earlier runs' artifacts
@@ -362,6 +374,10 @@ jobs:
     needs: publish
     if: ${{ !cancelled() && vars.SPARKLE_PUBLIC_ED_KEY != '' }}
     runs-on: ubuntu-latest
+    # A failure here never fails the run (no email): GitHub often has no Mac
+    # machine for a job, and the watchdog retries on its own. The held-back
+    # job at the end fails the run only when a release is really stuck.
+    continue-on-error: true
     outputs:
       tags: ${{ steps.plan.outputs.tags }}
     steps:
@@ -429,6 +445,10 @@ jobs:
     # for 15 minutes and is cancelled), which would leave a published release
     # out of the feed. sign_update is universal.
     runs-on: macos-15-intel
+    # A failure here never fails the run (no email): GitHub often has no Mac
+    # machine for a job, and the watchdog retries on its own. The held-back
+    # job at the end fails the run only when a release is really stuck.
+    continue-on-error: true
     permissions:
       contents: write     # the appcast branch (the feed's state)
       pages: write        # actions/deploy-pages
@@ -574,3 +594,76 @@ jobs:
             echo "::error::Not in the appcast (no Sparkle key in the build): $(tr '\n' ' ' < refused.txt)"
             exit 1
           fi
+
+  held-back:
+    # The only job that can fail this run, so the only one that emails: when
+    # upstream's newest release (alpha first, as the watchdog checks) is more
+    # than 3 hours old and still has no Mac release, or is not yet offered in
+    # the appcast. Before that, a failed job is just GitHub having no Mac
+    # free or Apple's servers hiccuping, and the watchdog retries it quietly
+    # (Rocco, 2026-11-04: no email unless a release is actually held back).
+    needs: [plan, build, publish, appcast-plan, appcast]
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          SPARKLE: ${{ vars.SPARKLE_PUBLIC_ED_KEY != '' }}
+          HOURS: "3"
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re, subprocess, sys
+          from datetime import datetime, timezone
+
+          REPO, UPSTREAM = os.environ["GITHUB_REPOSITORY"], os.environ["UPSTREAM"]
+          LIMIT = float(os.environ["HOURS"]) * 3600
+
+          def gh(*args, ok404=False):
+              r = subprocess.run(["gh", *args], capture_output=True, text=True)
+              if r.returncode:
+                  if ok404 and "404" in r.stderr:
+                      return None
+                  sys.exit(f"::error::gh {' '.join(args)}: {r.stderr.strip()}")
+              return r.stdout
+
+          def is_alpha(r):
+              return "alpha" in (r["tag_name"] + (r.get("name") or "")).lower()
+
+          def mac_era(tag):   # the macOS layer targets WinZapp 2.0 onwards
+              m = re.match(r"v?(\d+)", tag)
+              return bool(m) and int(m.group(1)) >= 2
+
+          rels = [r for r in json.loads(gh("api", f"repos/{UPSTREAM}/releases?per_page=30")) if not r["draft"]]
+          latest = json.loads(gh("api", f"repos/{UPSTREAM}/releases/latest", ok404=True) or "null")
+          wanted = [r for r in (next((r for r in rels if is_alpha(r)), None),
+                                latest if latest and not is_alpha(latest) else None)
+                    if r and mac_era(r["tag_name"])]
+          ours = {r["tag_name"] for r in json.loads(gh("api", f"repos/{REPO}/releases?per_page=100"))}
+          feed = None
+          if os.environ["SPARKLE"] == "true":
+              raw = gh("api", f"repos/{REPO}/contents/appcast-arm64.json?ref=appcast",
+                       "-H", "Accept: application/vnd.github.raw", ok404=True)
+              feed = {i["tag"] for i in json.loads(raw)} if raw else set()
+
+          now = datetime.now(timezone.utc)
+          stuck = []
+          for i, r in enumerate(wanted):
+              tag = r["tag_name"]
+              age = (now - datetime.fromisoformat(r["published_at"].replace("Z", "+00:00"))).total_seconds()
+              if tag not in ours:
+                  problem = "has no Mac release"
+              elif i == 0 and feed is not None and tag not in feed:
+                  problem = "is not offered in the Mac appcast"
+              else:
+                  print(f"{tag}: fine")
+                  continue
+              hours = f"{age / 3600:.1f} h after upstream released it"
+              if age > LIMIT:
+                  stuck.append(f"{tag} {problem}, {hours}")
+              else:
+                  print(f"{tag} {problem} yet, {hours}; the watchdog retries quietly")
+          for s in stuck:
+              print(f"::error::{s}")
+          sys.exit(1 if stuck else 0)
+          PY
