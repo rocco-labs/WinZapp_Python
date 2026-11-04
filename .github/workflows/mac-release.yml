@@ -288,6 +288,9 @@ jobs:
     # when both of its zips were built.
     if: ${{ !cancelled() && needs.plan.outputs.tags != '[]' }}
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read   # earlier runs' artifacts
     strategy:
       fail-fast: false
       matrix:
@@ -300,6 +303,32 @@ jobs:
           pattern: ${{ matrix.tag }}-*
           merge-multiple: true
           path: dist
+
+      - name: Take an architecture this run lacks from an earlier run
+        # GitHub often gives only one of the two Mac machines in a run (the
+        # other job dies at 15 minutes, "not acquired by Runner"), and on a
+        # bad day the arm64 and Intel legs succeed in alternate runs, so no
+        # single run ever has both (2026-11-04: 9 runs, 5204 never shipped
+        # though each half built three times). Each leg's artifact is a
+        # finished, signed, notarized build of the same official tag, so
+        # take the newest one an earlier run of this workflow left.
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ matrix.tag }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          for arch in arm64 x86_64; do
+            [ -f "dist/WinZapp-macOS-$arch.zip" ] && continue
+            run=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?name=$TAG-$arch&per_page=50" --jq \
+              "[.artifacts[] | select(.expired | not) | select(.workflow_run.head_branch == \"$GITHUB_REF_NAME\") | select(.workflow_run.id != $GITHUB_RUN_ID)] | sort_by(.created_at) | last | .workflow_run.id // empty")
+            if [ -z "$run" ]; then
+              echo "$TAG: no earlier $arch build"; continue
+            fi
+            [ "$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$run" --jq .path)" = ".github/workflows/mac-release.yml" ] || continue
+            gh run download "$run" --repo "$GITHUB_REPOSITORY" --name "$TAG-$arch" --dir dist
+            echo "::notice::$TAG: $arch taken from run $run"
+          done
 
       - name: Publish
         env:
