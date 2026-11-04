@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5202alpha</title>
-      <pubDate>Tue, 03 Nov 2026 21:11:34 +0000</pubDate>
-      <sparkle:version>3.0.0.52021</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5202alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5204alpha</title>
+      <pubDate>Wed, 04 Nov 2026 17:43:21 +0000</pubDate>
+      <sparkle:version>3.0.0.52041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5204alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="en" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect Server updated to 2.10.75, which fixes a Chatwoot webhook that accepted requests without authentication and patches a vulnerability in the glob and minimatch libraries.
 
 - WhatsApp settings &gt; Privacy: new "Keep chats archived" option, WhatsApp's own, which decides whether an archived chat goes back to the list when a new message arrives. Works with WPPConnect and Neonize.
 
@@ -274,11 +276,13 @@ WHAT'S NEW
 - WPPConnect: an incomplete WhatsApp Web version catalogue is repaired when the server starts, and a Node that stops at start-up is reported at once instead of after five minutes.
 
 - Arabic: the usage guide (Help &gt; Usage guide) is now complete in Arabic.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
 - Configurações do WhatsApp &gt; Privacidade: nova opção "Manter conversas arquivadas", a mesma do WhatsApp, que decide se uma conversa arquivada volta para a lista quando chega mensagem nova. Funciona com a WPPConnect e com o Neonize.
 
@@ -537,11 +541,13 @@ NOVIDADES
 - WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é avisado na hora, em vez de depois de cinco minutos.
 
 - Árabe: o guia de uso (Ajuda &gt; Guia de uso) agora está completo em árabe.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
 - Definições do WhatsApp &gt; Privacidade: nova opção "Manter conversas arquivadas", a mesma do WhatsApp, que decide se uma conversa arquivada volta à lista quando chega uma mensagem nova. Funciona com o WPPConnect e com o Neonize.
 
@@ -800,11 +806,13 @@ NOVIDADES
 - WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é comunicado de imediato, em vez de passados cinco minutos.
 
 - Árabe: o guia de utilização (Ajuda &gt; Guia de utilização) está agora completo em árabe.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="es" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- WPPConnect Server actualizado a la 2.10.75, que corrige un webhook de Chatwoot que aceptaba solicitudes sin autenticación y parchea una vulnerabilidad en las bibliotecas glob y minimatch.
 
 - Configuración de WhatsApp &gt; Privacidad: nueva opción "Mantener chats archivados", la misma de WhatsApp, que decide si un chat archivado vuelve a la lista cuando llega un mensaje nuevo. Funciona con WPPConnect y con Neonize.
 
@@ -1063,11 +1071,13 @@ NOVEDADES
 - WPPConnect: un catálogo incompleto de versiones de WhatsApp Web se repara al iniciar el servidor, y un Node que se detiene al arrancar se avisa al momento, en vez de tras cinco minutos.
 
 - Árabe: la guía de uso (Ayuda &gt; Guía de uso) ya está completa en árabe.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="pl" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- WPPConnect Server zaktualizowany do 2.10.75, która naprawia webhook Chatwoot przyjmujący żądania bez uwierzytelnienia i łata podatność w bibliotekach glob i minimatch.
 
 - Ustawienia WhatsApp &gt; Prywatność: nowa opcja "Zachowaj czaty zarchiwizowane", ta sama co w WhatsApp, która decyduje, czy zarchiwizowany czat wraca na listę po nadejściu nowej wiadomości. Działa z WPPConnect i z Neonize.
 
@@ -1326,11 +1336,13 @@ NOWOŚCI
 - WPPConnect: niekompletny katalog wersji WhatsApp Web jest naprawiany przy starcie serwera, a Node, który zatrzymuje się przy uruchamianiu, jest zgłaszany od razu zamiast po pięciu minutach.
 
 - Arabski: przewodnik użytkowania (Pomoc &gt; Przewodnik użytkowania) jest teraz kompletny po arabsku.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="tr" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WPPConnect Server 2.10.75 sürümüne güncellendi; kimlik doğrulaması olmadan istek kabul eden bir Chatwoot webhook'unu düzeltir ve glob ile minimatch kütüphanelerindeki bir güvenlik açığını yamalar.
 
 - WhatsApp ayarları &gt; Gizlilik: WhatsApp'ın kendi seçeneği olan yeni "Sohbetleri arşivde tut", yeni mesaj geldiğinde arşivlenmiş sohbetin listeye dönüp dönmeyeceğini belirler. WPPConnect ve Neonize ile çalışır.
 
@@ -1589,11 +1601,13 @@ YENİLİKLER
 - WPPConnect: eksik bir WhatsApp Web sürüm kataloğu sunucu başlarken onarılır ve başlangıçta duran bir Node beş dakika sonra değil hemen bildirilir.
 
 - Arapça: kullanım kılavuzu (Yardım &gt; Kullanım kılavuzu) artık Arapça olarak tamamlandı.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="ro" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- WPPConnect Server a fost actualizat la 2.10.75, care repară un webhook Chatwoot ce accepta cereri fără autentificare și remediază o vulnerabilitate din bibliotecile glob și minimatch.
 
 - Setări WhatsApp &gt; Confidențialitate: opțiune nouă "Păstrează conversațiile arhivate", aceeași ca în WhatsApp, care decide dacă o conversație arhivată revine în listă când sosește un mesaj nou. Funcționează cu WPPConnect și cu Neonize.
 
@@ -1852,11 +1866,13 @@ NOUTĂȚI
 - WPPConnect: un catalog incomplet de versiuni WhatsApp Web este reparat la pornirea serverului, iar un Node care se oprește la pornire este semnalat imediat, nu după cinci minute.
 
 - Arabă: ghidul de utilizare (Ajutor &gt; Ghid de utilizare) este acum complet în arabă.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Settings that open at once, Neonize reads, statuses, Meta AI and archived chats, Keep chats archived (#682)
+      <description xml:lang="ar" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- تم تحديث WPPConnect Server إلى 2.10.75، وهو يصلح خطافًا ويبًا لـ Chatwoot كان يقبل الطلبات دون مصادقة، ويرقّع ثغرة في مكتبتي glob وminimatch.
 
 - إعدادات واتساب &gt; الخصوصية: خيار جديد «إبقاء الدردشات مؤرشفة»، وهو خيار WhatsApp نفسه، يحدد ما إذا كانت الدردشة المؤرشفة تعود إلى القائمة عند وصول رسالة جديدة. يعمل مع WPPConnect ومع Neonize.
 
@@ -2117,6 +2133,15 @@ NOUTĂȚI
 - WPPConnect: يُصلَح كتالوج إصدارات WhatsApp Web غير المكتمل عند بدء الخادم، ويُبلَّغ فورًا عن Node يتوقف عند البدء بدلًا من الانتظار خمس دقائق.
 
 - العربية: اكتمل الآن دليل الاستخدام (المساعدة &gt; دليل الاستخدام) باللغة العربية.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5204alpha/WinZapp-macOS-x86_64.zip" length="349179588" type="application/octet-stream" sparkle:edSignature="ntv2y99/Xr38wWrlvIom5eYs2ZEMSE0FdZjeFEzrJ8x/mHZd7smpeKGV8Fb5yCXOfahBtCNHqTB2NvgvBfQzDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5202alpha</title>
+      <pubDate>Tue, 03 Nov 2026 21:11:34 +0000</pubDate>
+      <sparkle:version>3.0.0.52021</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5202alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5202alpha/WinZapp-macOS-x86_64.zip" length="349046178" type="application/octet-stream" sparkle:edSignature="uyyvm0FzBPHgprW0Re4y4Fv6xmPaPlGb40/+7XG2VIFwSU1xifvjFi1dPy2av9uw7AMkgFE7WDK5SSp649+rDQ=="></enclosure>
     </item>
     <item>
@@ -2145,15 +2170,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5137alpha/WinZapp-macOS-x86_64.zip" length="349053773" type="application/octet-stream" sparkle:edSignature="mUsYm87xR/NGQGrXmHyUcFm+v/ApsVLWMf9UBTjSGffzzPtNzAvssNN5Bz0DrViY+LpDHTgCP8nixT7RA+dzBQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5135alpha</title>
-      <pubDate>Mon, 02 Nov 2026 15:59:25 +0000</pubDate>
-      <sparkle:version>3.0.0.51351</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5135alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5135alpha/WinZapp-macOS-x86_64.zip" length="349124306" type="application/octet-stream" sparkle:edSignature="eYUFK6AAaRe2plpVmbndQIA7bVxuUbYw06uNsy1dFRXHfMvpHM0R0ceAQqlYp+vUEo+DcH/G36Cf0983+5zGBQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3768,6 +3784,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ByCCu1I3A+Z4fEEZj3iSyonLJOkC67s+QfEShG4dg/Oqd2am8MUN4sDMCJja4d4cbv06LpQo90Rpx9LLpAaCAA==
-length: 705684
+edSignature: VZQDoPMCjuM2TrJKoZ3kTpALTc1Z2v7hI5HtutneFRMqM4jZQKe5eSPxDKsNDpbLbyBCK37PoLQ6xwQjn7acDg==
+length: 707130
 -->
