@@ -5,17 +5,27 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5204alpha</title>
-      <pubDate>Wed, 04 Nov 2026 17:43:21 +0000</pubDate>
-      <sparkle:version>3.0.0.52041</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5204alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5240alpha</title>
+      <pubDate>Thu, 05 Nov 2026 02:06:50 +0000</pubDate>
+      <sparkle:version>3.0.0.52401</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5240alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="en" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Voice messages: the recording bitrate is back to 64 kbps, which sends quickly even past a minute (the change to 256 kbps had made sending slow). Settings &gt; Audio gains "Voice message bitrate (kbps)", to choose from 32 to 256 kbps.
+
+- Settings &gt; User Interface &gt; Chats: new option "Number of new messages in the chat list", so the screen reader says the number of new messages before the chat name instead of after it. It applies to the chat list, the archived chats and the locked chats. (suggested by Michal Suchý)
+
+- New Channels window (Alt+9, also in the navigation list): it shows the channels you follow or searches WhatsApp's channel directory (with no text, the recommended channels). For the chosen channel you can open it and read its updates, follow or unfollow it, mute or unmute its notifications, copy its link and, for your own channels, edit or delete it. You can also follow a channel from its link and create a channel. Showing channels in the conversation list is still a separate setting. Works with WPPConnect and Neonize.
+- Channels, as on WhatsApp Web: in "Find channels", Category (business, entertainment, lifestyle, news, organizations, people, sports) and View (recommended, trending, popular, new) narrow the directory. In the channels you administer, the message field opens to post text updates, an update can be pinned or unpinned from the message menu (Ctrl+Shift+P) and the pinned ones show in "Pinned messages"; the "Admins and followers..." button says how many admins the channel has and, for its owner, invites a contact to be an admin or cancels the invite. Works with WPPConnect and Neonize. That window lists the owner, the admins, the pending invites and the followers: the owner can make a follower an admin, cancel an invite, remove an admin or make an admin the owner, and an admin can stop being one.
+
+- Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
 
 - WPPConnect Server updated to 2.10.75, which fixes a Chatwoot webhook that accepted requests without authentication and patches a vulnerability in the glob and minimatch libraries.
 
@@ -37,7 +47,13 @@ WHAT'S NEW
 
 - Neonize: messages to Meta AI work. WinZapp asks you to accept Meta AI's terms when the account has not accepted them yet, and Meta AI's replies are shown as text instead of an unknown message.
 
-- Neonize: video and voice statuses no longer fail with "server returned error 400" on some accounts.
+- Neonize: posting a status (text, image, video or voice) no longer fails with "server returned error 400". It happened in disappearing-message chats and, on any account, after the phone synced a contact saved under WhatsApp's new identifier.
+
+- Neonize: WinZapp now asks the phone for a chat's older messages, as WhatsApp Web does when you click to see earlier messages. Before, a chat only had what came when the device was linked, and resyncing brought nothing more.
+
+- A message WinZapp already knows no longer turns into "Waiting for this message". After switching from Neonize to WPPConnect, a message you had just sent could show that way, even after F5 or reopening WinZapp.
+
+- Mentions: typing an emoji in the mention suggestion list no longer breaks the send. Before, the message could fail to go out with a server error.
 
 - Groups: in a group where only admins can send messages, the message field is now read-only for members on Neonize too; before, it stayed editable in most of these groups.
 
@@ -276,11 +292,21 @@ WHAT'S NEW
 - WPPConnect: an incomplete WhatsApp Web version catalogue is repaired when the server starts, and a Node that stops at start-up is reported at once instead of after five minutes.
 
 - Arabic: the usage guide (Help &gt; Usage guide) is now complete in Arabic.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens de voz: a taxa de bits das gravações voltou a 64 kbps, que envia rápido mesmo com mais de um minuto (a mudança para 256 kbps tinha deixado o envio lento). Configurações &gt; Áudio ganhou "Taxa de bits das mensagens de voz (kbps)", para escolher de 32 a 256 kbps.
+
+- Configurações &gt; Interface do usuário &gt; Conversas: nova opção "Número de mensagens novas na lista de conversas", para o leitor de tela falar o número de mensagens novas antes do nome da conversa em vez de depois. Vale para a lista de conversas, as arquivadas e as trancadas. (sugestão de Michal Suchý)
+
+- Nova janela de Canais (Alt+9, também na lista de navegação): mostra os canais que você segue ou procura no diretório de canais do WhatsApp (sem texto, aparecem os recomendados). Para o canal escolhido dá para abrir e ler as atualizações, seguir ou deixar de seguir, silenciar ou ativar as notificações, copiar o link e, nos seus canais, editar ou excluir. Também dá para seguir um canal a partir do link e criar um canal. Mostrar os canais na lista de conversas continua sendo uma opção à parte. Funciona com a WPPConnect e com o Neonize.
+- Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, esportes) e Lista (recomendados, em alta, populares, novos) filtram o diretório. Nos canais que você administra, o campo de mensagem fica liberado para postar atualizações de texto, uma atualização pode ser fixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as fixadas aparecem em "Mensagens fixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contato para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de sê-lo.
+
+- Chamadas: agora dá para adicionar pessoas à chamada em andamento, pelo botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada em grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contatos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado de novo. Funciona com a WPPConnect e com o Neonize.
 
 - O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
@@ -302,7 +328,13 @@ NOVIDADES
 
 - Neonize: as mensagens para a Meta AI funcionam. O WinZapp pede para aceitar os termos da Meta AI quando a conta ainda não os aceitou, e as respostas da Meta AI aparecem como texto em vez de uma mensagem desconhecida.
 
-- Neonize: status de vídeo e de voz não falham mais com "server returned error 400" em algumas contas.
+- Neonize: postar status (texto, imagem, vídeo ou voz) não falha mais com "server returned error 400". Acontecia em conversas temporárias e, em qualquer conta, depois que o celular sincronizava um contato salvo pelo novo identificador do WhatsApp.
+
+- Neonize: o WinZapp agora pede ao celular as mensagens mais antigas de uma conversa, como o WhatsApp Web faz ao clicar para ver mensagens anteriores. Antes, uma conversa tinha só o que veio ao conectar o aparelho, e ressincronizar não trazia mais nada.
+
+- Uma mensagem que o WinZapp já conhece não vira mais "Aguardando mensagem". Ao trocar do Neonize para a WPPConnect, uma mensagem que você acabou de enviar podia aparecer assim, mesmo depois de F5 ou de reabrir o WinZapp.
+
+- Menções: digitar um emoji na lista de sugestões de menção não quebra mais o envio. Antes, a mensagem podia não sair, com um erro do servidor.
 
 - Grupos: em um grupo em que só administradores podem enviar mensagens, o campo de mensagem agora fica somente leitura para os membros também no Neonize; antes, ele continuava editável na maioria desses grupos.
 
@@ -541,11 +573,21 @@ NOVIDADES
 - WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é avisado na hora, em vez de depois de cinco minutos.
 
 - Árabe: o guia de uso (Ajuda &gt; Guia de uso) agora está completo em árabe.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens de voz: a taxa de bits das gravações voltou a 64 kbps, que envia depressa mesmo com mais de um minuto (a mudança para 256 kbps tinha tornado o envio lento). Definições &gt; Áudio ganhou "Taxa de bits das mensagens de voz (kbps)", para escolher de 32 a 256 kbps.
+
+- Definições &gt; Interface do utilizador &gt; Conversas: nova opção "Número de mensagens novas na lista de conversas", para o leitor de ecrã dizer o número de mensagens novas antes do nome da conversa em vez de depois. Aplica-se à lista de conversas, às arquivadas e às trancadas. (sugestão de Michal Suchý)
+
+- Nova janela de Canais (Alt+9, também na lista de navegação): mostra os canais que segue ou procura no diretório de canais do WhatsApp (sem texto, aparecem os recomendados). Para o canal escolhido é possível abrir e ler as atualizações, seguir ou deixar de seguir, silenciar ou ativar as notificações, copiar a ligação e, nos seus canais, editar ou eliminar. Também é possível seguir um canal a partir da ligação e criar um canal. Mostrar os canais na lista de conversas continua a ser uma opção à parte. Funciona com a WPPConnect e com o Neonize.
+- Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, desporto) e Lista (recomendados, tendências, populares, novos) filtram o diretório. Nos canais que administra, o campo de mensagem fica disponível para publicar atualizações de texto, uma atualização pode ser afixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as afixadas aparecem em "Mensagens afixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contacto para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de o ser.
+
+- Chamadas: já é possível adicionar pessoas à chamada em curso, com o botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada de grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contactos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado outra vez. Funciona com a WPPConnect e com o Neonize.
 
 - O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
@@ -567,7 +609,13 @@ NOVIDADES
 
 - Neonize: as mensagens para a Meta AI funcionam. O WinZapp pede para aceitar os termos da Meta AI quando a conta ainda não os aceitou, e as respostas da Meta AI aparecem como texto em vez de uma mensagem desconhecida.
 
-- Neonize: os estados de vídeo e de voz deixam de falhar com "server returned error 400" em algumas contas.
+- Neonize: publicar estados (texto, imagem, vídeo ou voz) deixa de falhar com "server returned error 400". Acontecia em conversas temporárias e, em qualquer conta, depois de o telemóvel sincronizar um contacto guardado pelo novo identificador do WhatsApp.
+
+- Neonize: o WinZapp passa a pedir ao telemóvel as mensagens mais antigas de uma conversa, como o WhatsApp Web faz ao clicar para ver mensagens anteriores. Antes, uma conversa tinha apenas o que veio ao ligar o dispositivo, e voltar a sincronizar não trazia mais nada.
+
+- Uma mensagem que o WinZapp já conhece deixa de aparecer como "A aguardar mensagem". Ao mudar do Neonize para a WPPConnect, uma mensagem que acabou de enviar podia aparecer assim, mesmo depois de F5 ou de reabrir o WinZapp.
+
+- Menções: escrever um emoji na lista de sugestões de menção deixa de impedir o envio. Antes, a mensagem podia não ser enviada, com um erro do servidor.
 
 - Grupos: num grupo em que só os administradores podem enviar mensagens, o campo de mensagem passa a ficar só de leitura para os membros também no Neonize; antes, continuava editável na maioria destes grupos.
 
@@ -806,11 +854,21 @@ NOVIDADES
 - WPPConnect: um catálogo incompleto de versões do WhatsApp Web é reparado quando o servidor inicia, e um Node que para ao iniciar é comunicado de imediato, em vez de passados cinco minutos.
 
 - Árabe: o guia de utilização (Ajuda &gt; Guia de utilização) está agora completo em árabe.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="es" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Mensajes de voz: la tasa de bits de las grabaciones vuelve a 64 kbps, que se envía rápido incluso pasado un minuto (el cambio a 256 kbps había vuelto lento el envío). Configuración &gt; Audio incorpora "Tasa de bits de los mensajes de voz (kbps)", para elegir de 32 a 256 kbps.
+
+- Configuración &gt; Interfaz de usuario &gt; Chats: nueva opción "Número de mensajes nuevos en la lista de chats", para que el lector de pantalla diga el número de mensajes nuevos antes del nombre del chat en lugar de después. Vale para la lista de chats, los archivados y los bloqueados. (sugerencia de Michal Suchý)
+
+- Nueva ventana de Canales (Alt+9, también en la lista de navegación): muestra los canales que sigues o busca en el directorio de canales de WhatsApp (sin texto, aparecen los recomendados). Con el canal elegido puedes abrirlo y leer sus novedades, seguirlo o dejar de seguirlo, silenciar o activar sus notificaciones, copiar su enlace y, en tus canales, editarlo o eliminarlo. También puedes seguir un canal desde su enlace y crear un canal. Mostrar los canales en la lista de conversaciones sigue siendo una opción aparte. Funciona con WPPConnect y con Neonize.
+- Canales, como en WhatsApp Web: en "Buscar canales", Categoría (negocios, entretenimiento, estilo de vida, noticias, organizaciones, personas, deportes) y Lista (recomendados, tendencias, populares, nuevos) filtran el directorio. En los canales que administras, el campo de mensaje se habilita para publicar novedades de texto, una novedad se puede fijar o dejar de fijar desde el menú del mensaje (Ctrl+Shift+P) y las fijadas aparecen en "Mensajes fijados"; el botón "Administradores y seguidores..." dice cuántos administradores tiene el canal y, para su propietario, invita a un contacto a ser administrador o cancela la invitación. Funciona con WPPConnect y con Neonize. Esa ventana muestra al propietario, los administradores, las invitaciones pendientes y los seguidores: el propietario puede hacer administrador a un seguidor, cancelar una invitación, quitar a un administrador o hacer propietario a un administrador, y un administrador puede dejar de serlo.
+
+- Llamadas: ahora puedes añadir personas a la llamada en curso, con el botón "Añadir participantes" de la lista de participantes de la llamada. En una llamada de grupo aparecen los miembros del grupo que aún no están en ella; en una llamada privada, tus contactos, y la llamada pasa a tener varias personas, como en WhatsApp. A quien ya se llamó y aún no entró se le vuelve a llamar. Funciona con WPPConnect y con Neonize.
 
 - WPPConnect Server actualizado a la 2.10.75, que corrige un webhook de Chatwoot que aceptaba solicitudes sin autenticación y parchea una vulnerabilidad en las bibliotecas glob y minimatch.
 
@@ -832,7 +890,13 @@ NOVEDADES
 
 - Neonize: los mensajes a Meta AI funcionan. WinZapp pide aceptar los términos de Meta AI cuando la cuenta aún no los ha aceptado, y las respuestas de Meta AI se muestran como texto en vez de como un mensaje desconocido.
 
-- Neonize: los estados de vídeo y de voz ya no fallan con "server returned error 400" en algunas cuentas.
+- Neonize: publicar estados (texto, imagen, vídeo o voz) ya no falla con "server returned error 400". Ocurría en chats con mensajes temporales y, en cualquier cuenta, después de que el teléfono sincronizara un contacto guardado con el nuevo identificador de WhatsApp.
+
+- Neonize: WinZapp ahora pide al teléfono los mensajes más antiguos de un chat, como hace WhatsApp Web al pulsar para ver mensajes anteriores. Antes, un chat solo tenía lo que llegó al vincular el dispositivo, y volver a sincronizar no traía nada más.
+
+- Un mensaje que WinZapp ya conoce ya no se convierte en "Esperando este mensaje". Al cambiar de Neonize a WPPConnect, un mensaje que acababas de enviar podía aparecer así, incluso después de F5 o de volver a abrir WinZapp.
+
+- Menciones: escribir un emoji en la lista de sugerencias de mención ya no rompe el envío. Antes, el mensaje podía no enviarse, con un error del servidor.
 
 - Grupos: en un grupo en el que solo los administradores pueden enviar mensajes, el campo de mensaje ahora es de solo lectura para los miembros también en Neonize; antes seguía editable en la mayoría de estos grupos.
 
@@ -1071,11 +1135,21 @@ NOVEDADES
 - WPPConnect: un catálogo incompleto de versiones de WhatsApp Web se repara al iniciar el servidor, y un Node que se detiene al arrancar se avisa al momento, en vez de tras cinco minutos.
 
 - Árabe: la guía de uso (Ayuda &gt; Guía de uso) ya está completa en árabe.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="pl" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Wiadomości głosowe: przepływność nagrań wróciła do 64 kb/s, dzięki czemu wysyłanie jest szybkie nawet po minucie nagrania (zmiana na 256 kb/s spowolniła wysyłanie). W Ustawienia &gt; Dźwięk pojawiła się opcja "Przepływność wiadomości głosowych (kb/s)" do wyboru od 32 do 256 kb/s.
+
+- Ustawienia &gt; Interfejs użytkownika &gt; Czaty: nowa opcja "Liczba nowych wiadomości na liście czatów", dzięki której czytnik ekranu podaje liczbę nowych wiadomości przed nazwą czatu zamiast po niej. Dotyczy listy czatów, czatów zarchiwizowanych i zablokowanych. (sugestia Michala Suchego)
+
+- Nowe okno Kanały (Alt+9, także na liście nawigacji): pokazuje obserwowane kanały albo przeszukuje katalog kanałów WhatsAppa (bez tekstu widać polecane kanały). Wybrany kanał można otworzyć i czytać jego aktualizacje, obserwować go lub przestać obserwować, wyciszyć lub włączyć jego powiadomienia, skopiować link, a w swoich kanałach edytować go lub usunąć. Można też obserwować kanał z linku i utworzyć kanał. Pokazywanie kanałów na liście czatów pozostaje osobnym ustawieniem. Działa z WPPConnect i z Neonize.
+- Kanały jak w WhatsApp Web: w "Znajdź kanały" Kategoria (biznes, rozrywka, styl życia, informacje, organizacje, ludzie, sport) i Lista (polecane, na czasie, popularne, nowe) zawężają katalog. W kanałach, którymi administrujesz, pole wiadomości pozwala publikować aktualizacje tekstowe, aktualizację można przypiąć lub odpiąć z menu wiadomości (Ctrl+Shift+P), a przypięte pojawiają się w "Przypięte wiadomości"; przycisk "Administratorzy i obserwujący..." podaje liczbę administratorów kanału, a właścicielowi pozwala zaprosić kontakt do roli administratora lub anulować zaproszenie. Działa z WPPConnect i z Neonize. To okno pokazuje właściciela, administratorów, oczekujące zaproszenia i obserwujących: właściciel może uczynić obserwującego administratorem, anulować zaproszenie, usunąć administratora lub uczynić administratora właścicielem, a administrator może przestać nim być.
+
+- Połączenia: do trwającego połączenia można teraz dodawać osoby przyciskiem "Dodaj uczestników" na liście uczestników połączenia. W połączeniu grupowym widać członków grupy, których jeszcze w nim nie ma; w połączeniu prywatnym Twoje kontakty, a połączenie staje się połączeniem z kilkoma osobami, jak w WhatsAppie. Do osoby, która została już wezwana i nie dołączyła, dzwoni się ponownie. Działa z WPPConnect i z Neonize.
 
 - WPPConnect Server zaktualizowany do 2.10.75, która naprawia webhook Chatwoot przyjmujący żądania bez uwierzytelnienia i łata podatność w bibliotekach glob i minimatch.
 
@@ -1097,7 +1171,13 @@ NOWOŚCI
 
 - Neonize: wiadomości do Meta AI działają. WinZapp prosi o zaakceptowanie warunków Meta AI, gdy konto jeszcze ich nie zaakceptowało, a odpowiedzi Meta AI są pokazywane jako tekst zamiast nieznanej wiadomości.
 
-- Neonize: statusy wideo i głosowe nie kończą się już na niektórych kontach błędem "server returned error 400".
+- Neonize: publikowanie statusu (tekstu, zdjęcia, wideo lub głosu) nie kończy się już błędem "server returned error 400". Zdarzało się to w czatach ze znikającymi wiadomościami oraz, na każdym koncie, po zsynchronizowaniu przez telefon kontaktu zapisanego pod nowym identyfikatorem WhatsAppa.
+
+- Neonize: WinZapp prosi teraz telefon o starsze wiadomości czatu, tak jak WhatsApp Web po kliknięciu, aby zobaczyć wcześniejsze wiadomości. Wcześniej czat miał tylko to, co przyszło przy połączeniu urządzenia, a ponowna synchronizacja nie przynosiła nic więcej.
+
+- Wiadomość, którą WinZapp już zna, nie zmienia się już w "Oczekiwanie na tę wiadomość". Po przełączeniu z Neonize na WPPConnect właśnie wysłana wiadomość mogła tak wyglądać, nawet po F5 lub ponownym otwarciu WinZapp.
+
+- Wzmianki: wpisanie emoji na liście podpowiedzi wzmianek nie psuje już wysyłania. Wcześniej wiadomość mogła nie zostać wysłana z powodu błędu serwera.
 
 - Grupy: w grupie, w której tylko administratorzy mogą wysyłać wiadomości, pole wiadomości jest teraz tylko do odczytu dla członków także w Neonize; wcześniej w większości takich grup pozostawało edytowalne.
 
@@ -1336,11 +1416,21 @@ NOWOŚCI
 - WPPConnect: niekompletny katalog wersji WhatsApp Web jest naprawiany przy starcie serwera, a Node, który zatrzymuje się przy uruchamianiu, jest zgłaszany od razu zamiast po pięciu minutach.
 
 - Arabski: przewodnik użytkowania (Pomoc &gt; Przewodnik użytkowania) jest teraz kompletny po arabsku.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="tr" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Sesli mesajlar: kayıt bit hızı yeniden 64 kbps oldu; bir dakikadan uzun kayıtlar da hızlı gönderilir (256 kbps'ye geçiş gönderimi yavaşlatmıştı). Ayarlar &gt; Ses bölümüne 32 ile 256 kbps arasında seçim yapılan "Sesli mesaj bit hızı (kbps)" eklendi.
+
+- Ayarlar &gt; Kullanıcı Arayüzü &gt; Sohbetler: ekran okuyucunun yeni mesaj sayısını sohbet adından sonra değil önce söylemesi için yeni "Sohbet listesindeki yeni mesaj sayısı" seçeneği. Sohbet listesi, arşivlenmiş ve kilitli sohbetler için geçerlidir. (Michal Suchý'nin önerisi)
+
+- Yeni Kanallar penceresi (Alt+9, gezinti listesinde de var): takip ettiğiniz kanalları gösterir ya da WhatsApp kanal dizininde arama yapar (metin yazılmazsa önerilen kanallar görünür). Seçilen kanalı açıp güncellemelerini okuyabilir, takip edebilir ya da takibi bırakabilir, bildirimlerini sessize alabilir ya da açabilir, bağlantısını kopyalayabilir ve kendi kanallarınızda düzenleyebilir ya da silebilirsiniz. Bir kanalı bağlantısından takip edebilir ve kanal oluşturabilirsiniz. Kanalları sohbet listesinde göstermek ayrı bir ayar olarak kalır. WPPConnect ve Neonize ile çalışır.
+- WhatsApp Web'deki gibi kanallar: "Kanal bul" bölümünde Kategori (işletme, eğlence, yaşam tarzı, haberler, kuruluşlar, kişiler, spor) ve Görünüm (önerilenler, gündemdekiler, popüler, yeni) dizini daraltır. Yönettiğiniz kanallarda mesaj alanı metin güncellemeleri paylaşmak için açılır, bir güncelleme mesaj menüsünden (Ctrl+Shift+P) sabitlenebilir veya sabitlemesi kaldırılabilir ve sabitlenenler "Sabitlenen mesajlar" içinde görünür; "Yöneticiler ve takipçiler..." düğmesi kanalın kaç yöneticisi olduğunu söyler ve kanal sahibi için bir kişiyi yönetici olmaya davet eder veya daveti iptal eder. WPPConnect ve Neonize ile çalışır. Bu pencere sahibi, yöneticileri, bekleyen davetleri ve takipçileri listeler: sahip bir takipçiyi yönetici yapabilir, bir daveti iptal edebilir, bir yöneticiyi kaldırabilir veya bir yöneticiyi sahip yapabilir; bir yönetici de yöneticilikten ayrılabilir.
+
+- Aramalar: artık aramanın katılımcı listesindeki "Katılımcı ekle" düğmesiyle devam eden aramaya kişi ekleyebilirsiniz. Grup aramasında grubun henüz aramada olmayan üyeleri, özel aramada ise kişileriniz görünür ve arama, WhatsApp'ta olduğu gibi birkaç kişilik bir aramaya dönüşür. Daha önce aranıp henüz katılmamış kişi yeniden aranır. WPPConnect ve Neonize ile çalışır.
 
 - WPPConnect Server 2.10.75 sürümüne güncellendi; kimlik doğrulaması olmadan istek kabul eden bir Chatwoot webhook'unu düzeltir ve glob ile minimatch kütüphanelerindeki bir güvenlik açığını yamalar.
 
@@ -1362,7 +1452,13 @@ YENİLİKLER
 
 - Neonize: Meta AI'ya mesajlar çalışıyor. Hesap Meta AI koşullarını henüz kabul etmediyse WinZapp kabul etmenizi ister ve Meta AI'nın yanıtları bilinmeyen bir mesaj yerine metin olarak gösterilir.
 
-- Neonize: video ve sesli durumlar bazı hesaplarda artık "server returned error 400" hatasıyla başarısız olmuyor.
+- Neonize: durum paylaşmak (metin, resim, video veya ses) artık "server returned error 400" hatasıyla başarısız olmuyor. Bu, süreli mesaj içeren sohbetlerde ve herhangi bir hesapta telefon, WhatsApp'ın yeni kimliğiyle kaydedilmiş bir kişiyi eşitledikten sonra oluyordu.
+
+- Neonize: WinZapp artık bir sohbetin eski mesajlarını, WhatsApp Web'in önceki mesajları görmek için tıklandığında yaptığı gibi telefondan istiyor. Önceden bir sohbette yalnızca cihaz bağlandığında gelenler vardı ve yeniden eşitleme başka bir şey getirmiyordu.
+
+- WinZapp'ın zaten bildiği bir mesaj artık "Bu mesaj bekleniyor" durumuna dönmüyor. Neonize'den WPPConnect'e geçerken, yeni gönderdiğiniz bir mesaj F5'ten veya WinZapp'ı yeniden açtıktan sonra bile böyle görünebiliyordu.
+
+- Bahsetmeler: bahsetme öneri listesinde emoji yazmak artık gönderimi bozmuyor. Önceden mesaj bir sunucu hatasıyla gönderilemeyebiliyordu.
 
 - Gruplar: yalnızca yöneticilerin mesaj gönderebildiği bir grupta mesaj alanı artık Neonize'da da üyeler için salt okunurdur; önceden bu grupların çoğunda düzenlenebilir kalıyordu.
 
@@ -1601,11 +1697,21 @@ YENİLİKLER
 - WPPConnect: eksik bir WhatsApp Web sürüm kataloğu sunucu başlarken onarılır ve başlangıçta duran bir Node beş dakika sonra değil hemen bildirilir.
 
 - Arapça: kullanım kılavuzu (Yardım &gt; Kullanım kılavuzu) artık Arapça olarak tamamlandı.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="ro" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Mesaje vocale: rata de biți a înregistrărilor a revenit la 64 kbps, care se trimit rapid chiar și după un minut (trecerea la 256 kbps încetinise trimiterea). Setări &gt; Audio are acum "Rata de biți a mesajelor vocale (kbps)", cu valori între 32 și 256 kbps.
+
+- Setări &gt; Interfață utilizator &gt; Conversații: opțiune nouă "Numărul de mesaje noi în lista de conversații", pentru ca cititorul de ecran să spună numărul de mesaje noi înainte de numele conversației, nu după. Se aplică listei de conversații, celor arhivate și celor blocate. (sugestia lui Michal Suchý)
+
+- Fereastră nouă Canale (Alt+9, și în lista de navigare): arată canalele pe care le urmăriți sau caută în directorul de canale WhatsApp (fără text, apar canalele recomandate). Pentru canalul ales îl puteți deschide și citi actualizările, îl puteți urmări sau nu mai urmări, îi puteți dezactiva sau activa notificările, îi puteți copia linkul și, la canalele dvs., îl puteți edita sau șterge. Puteți urmări un canal din linkul lui și puteți crea un canal. Afișarea canalelor în lista de conversații rămâne o opțiune separată. Funcționează cu WPPConnect și cu Neonize.
+- Canale, ca în WhatsApp Web: în "Găsiți canale", Categorie (afaceri, divertisment, stil de viață, știri, organizații, persoane, sport) și Listă (recomandate, în tendințe, populare, noi) restrâng directorul. În canalele pe care le administrați, câmpul de mesaj se deschide pentru a publica actualizări text, o actualizare poate fi fixată sau anulată fixarea din meniul mesajului (Ctrl+Shift+P), iar cele fixate apar în "Mesaje fixate"; butonul "Administratori și urmăritori..." spune câți administratori are canalul și, pentru proprietar, invită un contact să fie administrator sau anulează invitația. Funcționează cu WPPConnect și cu Neonize. Fereastra arată proprietarul, administratorii, invitațiile în așteptare și urmăritorii: proprietarul poate face administrator un urmăritor, poate anula o invitație, poate elimina un administrator sau poate face proprietar un administrator, iar un administrator poate renunța la rol.
+
+- Apeluri: acum puteți adăuga persoane la apelul în curs, cu butonul "Adăugați participanți" din lista de participanți a apelului. Într-un apel de grup apar membrii grupului care nu sunt încă în apel; într-un apel privat, contactele dvs., iar apelul devine un apel cu mai multe persoane, ca în WhatsApp. Cine a fost deja apelat și nu a intrat este apelat din nou. Funcționează cu WPPConnect și cu Neonize.
 
 - WPPConnect Server a fost actualizat la 2.10.75, care repară un webhook Chatwoot ce accepta cereri fără autentificare și remediază o vulnerabilitate din bibliotecile glob și minimatch.
 
@@ -1627,7 +1733,13 @@ NOUTĂȚI
 
 - Neonize: mesajele către Meta AI funcționează. WinZapp cere acceptarea termenilor Meta AI când contul nu i-a acceptat încă, iar răspunsurile Meta AI apar ca text în loc de un mesaj necunoscut.
 
-- Neonize: statusurile video și vocale nu mai eșuează cu "server returned error 400" pe unele conturi.
+- Neonize: publicarea unui status (text, imagine, video sau voce) nu mai eșuează cu "server returned error 400". Se întâmpla în conversațiile cu mesaje temporare și, pe orice cont, după ce telefonul sincroniza un contact salvat sub noul identificator WhatsApp.
+
+- Neonize: WinZapp cere acum telefonului mesajele mai vechi ale unei conversații, așa cum face WhatsApp Web când dați clic pentru a vedea mesajele anterioare. Înainte, o conversație avea doar ce venise la conectarea dispozitivului, iar resincronizarea nu aducea nimic în plus.
+
+- Un mesaj pe care WinZapp îl cunoaște deja nu mai devine "Se așteaptă acest mesaj". La trecerea de la Neonize la WPPConnect, un mesaj abia trimis putea apărea așa, chiar și după F5 sau după redeschiderea WinZapp.
+
+- Mențiuni: tastarea unui emoji în lista de sugestii de mențiune nu mai strică trimiterea. Înainte, mesajul putea să nu plece, cu o eroare de server.
 
 - Grupuri: într-un grup în care doar administratorii pot trimite mesaje, câmpul de mesaj este acum doar pentru citire pentru membri și în Neonize; înainte rămânea editabil în majoritatea acestor grupuri.
 
@@ -1866,11 +1978,21 @@ NOUTĂȚI
 - WPPConnect: un catalog incomplet de versiuni WhatsApp Web este reparat la pornirea serverului, iar un Node care se oprește la pornire este semnalat imediat, nu după cinci minute.
 
 - Arabă: ghidul de utilizare (Ajutor &gt; Ghid de utilizare) este acum complet în arabă.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- WPPConnect Server 2.10.75: porta a autenticação do webhook do Chatwoot e sobe o pin (#686)
+      <description xml:lang="ar" sparkle:format="plain-text">- Sync and contact fixes, call invites, Channels window (Alt+9), unread count position (#687)
+- Mensagens de voz: bitrate padrão de 64 kbps e opção para configurá-lo (#688)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- الرسائل الصوتية: عاد معدل البت للتسجيلات إلى 64 كيلوبت/ث، فيُرسل بسرعة حتى بعد دقيقة (التغيير إلى 256 كيلوبت/ث أبطأ الإرسال). أضافت الإعدادات &gt; الصوت خيار "معدل البت للرسائل الصوتية (كيلوبت/ث)" للاختيار من 32 إلى 256 كيلوبت/ث.
+
+- الإعدادات &gt; الواجهة &gt; الدردشات: خيار جديد "عدد الرسائل الجديدة في قائمة المحادثات" ليقول قارئ الشاشة عدد الرسائل الجديدة قبل اسم المحادثة بدلًا من بعده. ويسري على قائمة المحادثات والمحادثات المؤرشفة والمقفلة. (اقتراح Michal Suchý)
+
+- نافذة القنوات الجديدة (Alt+9، وهي أيضًا في قائمة التنقل): تعرض القنوات التي تتابعها أو تبحث في دليل قنوات WhatsApp (من دون نص تظهر القنوات المقترحة). للقناة المختارة يمكنك فتحها وقراءة تحديثاتها، ومتابعتها أو إلغاء متابعتها، وكتم إشعاراتها أو إلغاء كتمها، ونسخ رابطها، وفي قنواتك تعديلها أو حذفها. ويمكنك أيضًا متابعة قناة من رابطها وإنشاء قناة. ويبقى عرض القنوات في قائمة المحادثات خيارًا منفصلًا. يعمل مع WPPConnect ومع Neonize.
+- القنوات كما في WhatsApp Web: في "البحث عن قنوات" تُضيّق الفئة (الأعمال، الترفيه، نمط الحياة، الأخبار، المؤسسات، الأشخاص، الرياضة) وطريقة العرض (المقترحة، الرائجة، الشائعة، الجديدة) الدليل. في القنوات التي تشرف عليها يُفتح حقل الرسالة لنشر تحديثات نصية، ويمكن تثبيت تحديث أو إلغاء تثبيته من قائمة الرسالة (Ctrl+Shift+P) وتظهر المثبّتة في "الرسائل المثبتة"؛ ويذكر زر "المشرفون والمتابعون..." عدد مشرفي القناة، ولمالكها يدعو جهة اتصال لتكون مشرفًا أو يلغي الدعوة. يعمل مع WPPConnect ومع Neonize. تعرض هذه النافذة المالك والمشرفين والدعوات المعلّقة والمتابعين: يمكن للمالك تعيين متابع مشرفًا أو إلغاء دعوة أو إزالة مشرف أو تعيين مشرف مالكًا، ويمكن للمشرف التوقف عن الإشراف.
+
+- المكالمات: يمكنك الآن إضافة أشخاص إلى المكالمة الجارية من زر "إضافة مشاركين" في قائمة المشاركين في المكالمة. في مكالمة المجموعة يظهر أعضاء المجموعة غير الموجودين فيها بعد، وفي المكالمة الخاصة تظهر جهات اتصالك، وتصبح المكالمة مكالمة مع عدة أشخاص كما في WhatsApp. ويُتصل مجددًا بمن سبق الاتصال به ولم ينضم. يعمل مع WPPConnect ومع Neonize.
 
 - تم تحديث WPPConnect Server إلى 2.10.75، وهو يصلح خطافًا ويبًا لـ Chatwoot كان يقبل الطلبات دون مصادقة، ويرقّع ثغرة في مكتبتي glob وminimatch.
 
@@ -1892,7 +2014,13 @@ NOUTĂȚI
 
 - Neonize: تعمل الرسائل إلى Meta AI. يطلب WinZapp قبول شروط Meta AI إذا لم يكن الحساب قد قبلها بعد، وتظهر ردود Meta AI نصًا بدلًا من رسالة غير معروفة.
 
-- Neonize: لم تعد حالات الفيديو والصوت تفشل في بعض الحسابات بالخطأ "server returned error 400".
+- Neonize: لم يعد نشر الحالة (نص أو صورة أو فيديو أو صوت) يفشل بالخطأ "server returned error 400". كان ذلك يحدث في المحادثات ذات الرسائل المؤقتة، وفي أي حساب بعد أن يزامن الهاتف جهة اتصال محفوظة بمعرّف WhatsApp الجديد.
+
+- Neonize: يطلب WinZapp الآن من الهاتف الرسائل الأقدم في المحادثة، كما يفعل WhatsApp Web عند النقر لعرض الرسائل السابقة. في السابق كانت المحادثة تضم فقط ما وصل عند ربط الجهاز، ولم تكن إعادة المزامنة تجلب شيئًا آخر.
+
+- لم تعد الرسالة التي يعرفها WinZapp مسبقًا تتحول إلى "في انتظار هذه الرسالة". عند التبديل من Neonize إلى WPPConnect كانت الرسالة التي أرسلتها للتو قد تظهر هكذا، حتى بعد F5 أو إعادة فتح WinZapp.
+
+- الإشارات: لم تعد كتابة رمز تعبيري في قائمة اقتراحات الإشارة تُفسد الإرسال. في السابق كان من الممكن ألا تُرسل الرسالة بسبب خطأ في الخادم.
 
 - المجموعات: في مجموعة لا يستطيع إرسال الرسائل فيها إلا المشرفون، أصبح حقل الرسالة الآن للقراءة فقط للأعضاء في Neonize أيضًا؛ وكان يبقى قابلًا للتحرير من قبل في معظم هذه المجموعات.
 
@@ -2133,6 +2261,15 @@ NOUTĂȚI
 - WPPConnect: يُصلَح كتالوج إصدارات WhatsApp Web غير المكتمل عند بدء الخادم، ويُبلَّغ فورًا عن Node يتوقف عند البدء بدلًا من الانتظار خمس دقائق.
 
 - العربية: اكتمل الآن دليل الاستخدام (المساعدة &gt; دليل الاستخدام) باللغة العربية.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5240alpha/WinZapp-macOS-x86_64.zip" length="349095824" type="application/octet-stream" sparkle:edSignature="jx8SmxVKKbkLPT0xxhgZbhDXZxF/IGQ6kiEVhELUQjdB2JWKWABdxi4ZcrW3tnKNZMBe5i1cERfcRkp+D6uVAA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5204alpha</title>
+      <pubDate>Wed, 04 Nov 2026 17:43:21 +0000</pubDate>
+      <sparkle:version>3.0.0.52041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5204alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5204alpha/WinZapp-macOS-x86_64.zip" length="349179588" type="application/octet-stream" sparkle:edSignature="ntv2y99/Xr38wWrlvIom5eYs2ZEMSE0FdZjeFEzrJ8x/mHZd7smpeKGV8Fb5yCXOfahBtCNHqTB2NvgvBfQzDA=="></enclosure>
     </item>
     <item>
@@ -2161,15 +2298,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5149alpha/WinZapp-macOS-x86_64.zip" length="349055594" type="application/octet-stream" sparkle:edSignature="K+wILijoq1mmb6JJlsDhEauzy499N8kh/AEvVjL0em3b/gMUhhA14uYdpDyS4jAIfhOUymMW9dci1/fToYf8Cw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5137alpha</title>
-      <pubDate>Mon, 02 Nov 2026 21:34:59 +0000</pubDate>
-      <sparkle:version>3.0.0.51371</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5137alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5137alpha/WinZapp-macOS-x86_64.zip" length="349053773" type="application/octet-stream" sparkle:edSignature="mUsYm87xR/NGQGrXmHyUcFm+v/ApsVLWMf9UBTjSGffzzPtNzAvssNN5Bz0DrViY+LpDHTgCP8nixT7RA+dzBQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3784,6 +3912,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VZQDoPMCjuM2TrJKoZ3kTpALTc1Z2v7hI5HtutneFRMqM4jZQKe5eSPxDKsNDpbLbyBCK37PoLQ6xwQjn7acDg==
-length: 707130
+edSignature: DKYXWMWblY8OwtKE9wShsxjTFQJnAr+AUJZ5HSnMqbyjSH1sM23iKYsp4xv0zP8USw9hyodZ4AW0IFW/FOrMBA==
+length: 735501
 -->
