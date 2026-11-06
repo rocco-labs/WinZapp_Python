@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5307alpha</title>
-      <pubDate>Fri, 06 Nov 2026 19:09:29 +0000</pubDate>
-      <sparkle:version>3.0.0.53071</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5307alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5310alpha</title>
+      <pubDate>Fri, 06 Nov 2026 20:12:52 +0000</pubDate>
+      <sparkle:version>3.0.0.53101</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5310alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="en" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Settings &gt; General &gt; Notifications gains "Order of group messages in toast notifications:", with "Participant name first" (the default, as before: "Gustavo in WinZapp | Developers and Testers") and "Group name first" (as in the official WhatsApp Desktop: "WinZapp | Developers and Testers, Gustavo"). The choice changes only the text of toast notifications; what the screen reader announces while the window is active stays the same.
 
 - Recording the computer's audio no longer stops with "audio device problem" when WinZapp stalls for a second or two (a busy or slow computer): the audio from that moment is skipped, the recording goes on, and the rest stays in sync.
 
@@ -314,11 +316,13 @@ WHAT'S NEW
 - Forwarding a message with a link now keeps its link preview. The forward dialog has a new "Keep link preview" box, ticked by default, shown when a selected message has a preview; Settings &gt; User interface &gt; Messages has "Keep link previews by default when forwarding messages" to choose how it starts. Works with WPPConnect and Neonize. Note: with WPPConnect a message forwarded with its preview is sent as a new message and does not carry the "Forwarded" label; with Neonize it does.
 
 - When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Configurações &gt; Geral &gt; Notificações ganha "Ordem das mensagens de grupo nas notificações toast:", com "Nome do participante primeiro" (padrão, como já era: "Gustavo em WinZapp | Desenvolvedores e Testers") e "Nome do grupo primeiro" (como no WhatsApp Desktop oficial: "WinZapp | Desenvolvedores e Testers, Gustavo"). A escolha muda só o texto das notificações toast; o que o leitor de tela anuncia com a janela ativa continua igual.
 
 - A gravação do áudio do computador não é mais interrompida com "problema com o dispositivo de áudio" quando o WinZapp trava por um ou dois segundos (computador lento ou ocupado): o áudio desse instante é pulado, a gravação continua e o resto permanece sincronizado.
 
@@ -617,11 +621,13 @@ NOVIDADES
 - Encaminhar uma mensagem com link agora preserva a prévia do link. A janela de encaminhar ganhou a caixa "Preservar prévia do link", marcada por padrão e exibida quando alguma mensagem selecionada tem prévia; em Configurações &gt; Interface do usuário &gt; Conversas, a opção "Preservar prévias de links por padrão ao encaminhar mensagens" define como ela começa. Funciona com a WPPConnect e com o Neonize. Observação: com a WPPConnect, a mensagem encaminhada com a prévia é enviada como uma nova mensagem e não leva o rótulo "Encaminhada"; com o Neonize, leva.
 
 - Ao escrever uma mensagem com link, o leitor de tela agora diz "Carregando prévia..." enquanto a prévia é buscada, "Prévia adicionada." quando ela é anexada, ou "Não foi possível carregar a prévia do link: motivo." quando falha. Em Configurações &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar adição e carregamento das prévias de links" liga ou desliga as três mensagens; vem marcada por padrão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Definições &gt; Geral &gt; Notificações passa a ter "Ordem das mensagens de grupo nas notificações toast:", com "Nome do participante primeiro" (predefinição, como já era: "Gustavo em WinZapp | Desenvolvedores e Testers") e "Nome do grupo primeiro" (como no WhatsApp Desktop oficial: "WinZapp | Desenvolvedores e Testers, Gustavo"). A escolha altera apenas o texto das notificações toast; o que o leitor de ecrã anuncia com a janela ativa continua igual.
 
 - A gravação do áudio do computador já não é interrompida com "problema com o dispositivo de áudio" quando o WinZapp bloqueia durante um ou dois segundos (computador lento ou ocupado): o áudio desse instante é ignorado, a gravação continua e o resto mantém-se sincronizado.
 
@@ -920,11 +926,13 @@ NOVIDADES
 - Reencaminhar uma mensagem com ligação passa a manter a pré-visualização da ligação. A janela de reencaminhar tem a nova caixa "Manter a pré-visualização da ligação", marcada por predefinição e apresentada quando alguma mensagem selecionada tem pré-visualização; em Definições &gt; Interface do utilizador &gt; Conversas, a opção "Manter por predefinição as pré-visualizações de links ao reencaminhar mensagens" define como ela começa. Funciona com o WPPConnect e com o Neonize. Nota: com o WPPConnect, a mensagem reencaminhada com a pré-visualização é enviada como uma nova mensagem e não leva a etiqueta "Reencaminhada"; com o Neonize, leva.
 
 - Ao escrever uma mensagem com ligação, o leitor de ecrã passa a dizer "A carregar a pré-visualização..." enquanto esta é obtida, "Pré-visualização adicionada." quando é anexada, ou "Não foi possível carregar a pré-visualização da ligação: motivo." quando falha. Em Definições &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar o carregamento e a adição das pré-visualizações de ligações" liga ou desliga as três mensagens; vem marcada por predefinição.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="es" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Configuración &gt; General &gt; Notificaciones incorpora "Orden de los mensajes de grupo en las notificaciones toast:", con "Primero el nombre del participante" (el valor predeterminado, como antes: "Gustavo en WinZapp | Desarrolladores y Testers") y "Primero el nombre del grupo" (como en el WhatsApp Desktop oficial: "WinZapp | Desarrolladores y Testers, Gustavo"). La elección cambia solo el texto de las notificaciones toast; lo que anuncia el lector de pantalla con la ventana activa sigue igual.
 
 - La grabación del audio del ordenador ya no se interrumpe con "problema con el dispositivo de audio" cuando WinZapp se bloquea uno o dos segundos (ordenador lento u ocupado): se omite el audio de ese instante, la grabación continúa y el resto sigue sincronizado.
 
@@ -1223,11 +1231,13 @@ NOVEDADES
 - Al reenviar un mensaje con un enlace, ahora se conserva la vista previa del enlace. El diálogo de reenvío tiene la nueva casilla "Mantener la vista previa del enlace", marcada por defecto y visible cuando algún mensaje seleccionado tiene vista previa; en Configuración &gt; Interfaz de usuario &gt; Conversaciones, la opción "Mantener las vistas previas de enlaces de forma predeterminada al reenviar mensajes" define cómo empieza. Funciona con WPPConnect y con Neonize. Nota: con WPPConnect, el mensaje reenviado con su vista previa se envía como un mensaje nuevo y no lleva la etiqueta "Reenviado"; con Neonize sí la lleva.
 
 - Al escribir un mensaje con un enlace, el lector de pantalla ahora dice "Cargando vista previa..." mientras se obtiene, "Vista previa añadida." cuando se adjunta, o "No se pudo cargar la vista previa del enlace: motivo." cuando falla. En Configuración &gt; Accesibilidad &gt; Contenido hablado, la nueva opción "Anunciar la carga y la adición de las vistas previas de enlaces" activa o desactiva los tres mensajes; viene marcada por defecto.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="pl" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Ustawienia &gt; Ogólne &gt; Powiadomienia zyskują opcję "Kolejność wiadomości grupowych w powiadomieniach toast:" z wyborem "Najpierw nazwa uczestnika" (domyślnie, jak dotąd: "Gustavo w WinZapp | Deweloperzy i Testerzy") oraz "Najpierw nazwa grupy" (jak w oficjalnym WhatsApp Desktop: "WinZapp | Deweloperzy i Testerzy, Gustavo"). Wybór zmienia tylko tekst powiadomień toast; to, co czytnik ekranu ogłasza przy aktywnym oknie, pozostaje bez zmian.
 
 - Nagrywanie dźwięku komputera nie przerywa się już z komunikatem o problemie z urządzeniem audio, gdy WinZapp zawiesza się na sekundę lub dwie (wolny lub obciążony komputer): dźwięk z tej chwili jest pomijany, nagrywanie trwa dalej, a reszta pozostaje zsynchronizowana.
 
@@ -1526,11 +1536,13 @@ NOWOŚCI
 - Przekazywanie wiadomości z linkiem zachowuje teraz podgląd linku. W oknie przekazywania jest nowe pole „Zachowaj podgląd linku”, domyślnie zaznaczone i widoczne, gdy któraś z zaznaczonych wiadomości ma podgląd; w Ustawienia &gt; Interfejs użytkownika &gt; Wiadomości opcja „Domyślnie zachowuj podglądy linków przy przekazywaniu wiadomości” określa, jak to pole się zaczyna. Działa z WPPConnect i z Neonize. Uwaga: z WPPConnect wiadomość przekazana z podglądem jest wysyłana jako nowa wiadomość i nie ma oznaczenia „Przekazano”; z Neonize je ma.
 
 - Podczas pisania wiadomości z linkiem czytnik ekranu mówi teraz „Ładowanie podglądu...” w trakcie pobierania podglądu, „Dodano podgląd.” po jego dołączeniu albo „Nie udało się załadować podglądu linku: przyczyna.” w razie błędu. W Ustawienia &gt; Dostępność &gt; Treść mówiona nowa opcja „Ogłaszaj ładowanie i dodawanie podglądów linków” włącza lub wyłącza te trzy komunikaty; jest domyślnie zaznaczona.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="tr" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Ayarlar &gt; Genel &gt; Bildirimler bölümüne "Toast bildirimlerinde grup iletilerinin sırası:" eklendi: "Önce katılımcı adı" (varsayılan, eskisi gibi: "Gustavo (WinZapp | Geliştiriciler ve Test Edenler)") ve "Önce grup adı" (resmî WhatsApp Desktop'taki gibi: "WinZapp | Geliştiriciler ve Test Edenler, Gustavo"). Seçim yalnızca toast bildirimlerinin metnini değiştirir; pencere etkinken ekran okuyucunun duyurduğu şey aynı kalır.
 
 - WinZapp bir iki saniye takıldığında (yavaş veya meşgul bilgisayar) bilgisayar sesinin kaydı artık "ses aygıtı sorunu" ile durmuyor: o andaki ses atlanıyor, kayıt devam ediyor ve geri kalanı senkron kalıyor.
 
@@ -1829,11 +1841,13 @@ YENİLİKLER
 - Bağlantı içeren bir mesajı iletirken bağlantı önizlemesi artık korunuyor. İletme penceresinde yeni "Bağlantı önizlemesini koru" kutusu var; varsayılan olarak işaretlidir ve seçilen bir mesajın önizlemesi varsa görünür; Ayarlar &gt; Kullanıcı arayüzü &gt; Mesajlar altındaki "Mesajları iletirken bağlantı önizlemelerini varsayılan olarak koru" seçeneği kutunun nasıl başlayacağını belirler. WPPConnect ve Neonize ile çalışır. Not: WPPConnect ile önizlemesiyle iletilen mesaj yeni bir mesaj olarak gönderilir ve "İletildi" etiketini taşımaz; Neonize ile taşır.
 
 - Bağlantı içeren bir mesaj yazarken ekran okuyucu artık önizleme alınırken "Önizleme yükleniyor...", eklendiğinde "Önizleme eklendi.", başarısız olduğunda "Bağlantı önizlemesi yüklenemedi: neden." der. Ayarlar &gt; Erişilebilirlik &gt; Seslendirilen içerik altındaki yeni "Bağlantı önizlemelerinin yüklenmesini ve eklenmesini duyur" seçeneği bu üç iletiyi açar veya kapatır; varsayılan olarak işaretlidir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="ro" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Setări &gt; General &gt; Notificări primește opțiunea "Ordinea mesajelor de grup în notificările toast:", cu "Mai întâi numele participantului" (implicit, ca până acum: "Gustavo în WinZapp | Dezvoltatori și Testeri") și "Mai întâi numele grupului" (ca în WhatsApp Desktop oficial: "WinZapp | Dezvoltatori și Testeri, Gustavo"). Alegerea schimbă doar textul notificărilor toast; ce anunță cititorul de ecran cât timp fereastra este activă rămâne neschimbat.
 
 - Înregistrarea sunetului computerului nu se mai oprește cu „problemă la dispozitivul audio” când WinZapp se blochează o secundă sau două (computer lent sau ocupat): sunetul din acel moment este omis, înregistrarea continuă, iar restul rămâne sincronizat.
 
@@ -2132,11 +2146,13 @@ NOUTĂȚI
 - Redirecționarea unui mesaj cu un link păstrează acum previzualizarea linkului. Fereastra de redirecționare are caseta nouă „Păstrează previzualizarea linkului”, bifată implicit și afișată când un mesaj selectat are previzualizare; în Setări &gt; Interfața utilizatorului &gt; Mesaje, opțiunea „Păstrează implicit previzualizările linkurilor la redirecționarea mesajelor” stabilește cum începe. Funcționează cu WPPConnect și cu Neonize. Notă: cu WPPConnect, mesajul redirecționat cu previzualizarea este trimis ca mesaj nou și nu poartă eticheta „Redirecționat”; cu Neonize o poartă.
 
 - Când scrii un mesaj cu un link, cititorul de ecran spune acum „Se încarcă previzualizarea...” cât timp aceasta este obținută, „Previzualizare adăugată.” când este atașată sau „Nu s-a putut încărca previzualizarea linkului: motiv.” când eșuează. În Setări &gt; Accesibilitate &gt; Conținut vorbit, noua opțiune „Anunțați încărcarea și adăugarea previzualizărilor linkurilor” activează sau dezactivează cele trei mesaje; este bifată implicit.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="ar" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- تتضمن الإعدادات &gt; عام &gt; الإشعارات الآن «ترتيب رسائل المجموعة في إشعارات Toast:» مع «اسم المشارك أولاً» (الافتراضي كما كان: «Gustavo في WinZapp | المطورون والمختبرون») و«اسم المجموعة أولاً» (كما في WhatsApp Desktop الرسمي: «WinZapp | المطورون والمختبرون، Gustavo»). يغيّر الاختيار نص إشعارات Toast فقط؛ وما يعلنه قارئ الشاشة والنافذة نشطة يبقى كما هو.
 
 - لم يعد تسجيل صوت الكمبيوتر يتوقف برسالة «مشكلة في جهاز الصوت» عندما يتجمّد WinZapp لثانية أو ثانيتين (كمبيوتر بطيء أو مشغول): يتم تخطي الصوت في تلك اللحظة ويستمر التسجيل ويبقى الباقي متزامنًا.
 
@@ -2437,11 +2453,13 @@ NOUTĂȚI
 - عند إعادة توجيه رسالة تحتوي على رابط، تبقى معاينة الرابط الآن. في نافذة إعادة التوجيه خانة جديدة "الإبقاء على معاينة الرابط"، محددة افتراضيًا وتظهر عندما تكون لإحدى الرسائل المحددة معاينة؛ وفي الإعدادات &gt; واجهة المستخدم &gt; الرسائل يحدد الخيار "الإبقاء على معاينات الروابط افتراضيًا عند إعادة توجيه الرسائل" كيف تبدأ الخانة. يعمل مع WPPConnect ومع Neonize. ملاحظة: مع WPPConnect تُرسل الرسالة المعاد توجيهها مع معاينتها كرسالة جديدة ولا تحمل علامة "معاد توجيهها"؛ ومع Neonize تحملها.
 
 - عند كتابة رسالة تحتوي على رابط، يقول قارئ الشاشة الآن «جارٍ تحميل المعاينة...» أثناء جلب المعاينة، و«تمت إضافة المعاينة.» عند إرفاقها، أو «تعذر تحميل معاينة الرابط: السبب.» عند الفشل. في الإعدادات &gt; إمكانية الوصول &gt; المحتوى المنطوق، يشغّل الخيار الجديد «الإعلان عن تحميل معاينات الروابط وإضافتها» هذه الرسائل الثلاث أو يوقفها؛ وهو مفعّل افتراضيًا.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Não interromper a gravação do áudio do computador quando o worker engasga (#705)
+      <description xml:lang="it" sparkle:format="plain-text">- Configurar a ordem do nome nos toasts de mensagens de grupo (#706)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Impostazioni &gt; Generale &gt; Notifiche aggiunge "Ordine dei messaggi di gruppo nelle notifiche toast:", con "Prima il nome del partecipante" (predefinito, come prima: "Gustavo in WinZapp | Sviluppatori e Tester") e "Prima il nome del gruppo" (come in WhatsApp Desktop ufficiale: "WinZapp | Sviluppatori e Tester, Gustavo"). La scelta cambia solo il testo delle notifiche toast; ciò che lo screen reader annuncia con la finestra attiva resta invariato.
 
 - La registrazione dell'audio del computer non si interrompe più con "problema con il dispositivo audio" quando WinZapp si blocca per un secondo o due (computer lento o occupato): l'audio di quell'istante viene saltato, la registrazione continua e il resto resta sincronizzato.
 
@@ -2740,6 +2758,15 @@ WHAT'S NEW
 - Forwarding a message with a link now keeps its link preview. The forward dialog has a new "Keep link preview" box, ticked by default, shown when a selected message has a preview; Settings &gt; User interface &gt; Messages has "Keep link previews by default when forwarding messages" to choose how it starts. Works with WPPConnect and Neonize. Note: with WPPConnect a message forwarded with its preview is sent as a new message and does not carry the "Forwarded" label; with Neonize it does.
 
 - When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5310alpha/WinZapp-macOS-arm64.zip" length="310811456" type="application/octet-stream" sparkle:edSignature="YP8dhZBzGvZHPX7UO0368scAwF4nEz2qrzgzxf6z7E+Hks3tdSWeMw+cDUre2llygg49es+hpFJxWTwc7we/BQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5307alpha</title>
+      <pubDate>Fri, 06 Nov 2026 19:09:29 +0000</pubDate>
+      <sparkle:version>3.0.0.53071</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5307alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5307alpha/WinZapp-macOS-arm64.zip" length="314804298" type="application/octet-stream" sparkle:edSignature="FM9GhiIOjkteRBkSHcw7yO3QXeOLNyeqzkFrhVrh9lb7ZIWIhhPA4b91RLbClLLds86kHaqT1FJvCu++Ko37Ag=="></enclosure>
     </item>
     <item>
@@ -2768,15 +2795,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5245alpha/WinZapp-macOS-arm64.zip" length="314621417" type="application/octet-stream" sparkle:edSignature="P8sY1oDw9gpIoZg+MQ7FROvDuh2hcs4MZnSqLu4V2oi1334tpPQsJgNkd5hNPl7/+sbFbZoi8LnVfsQWIJYwAA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5240alpha</title>
-      <pubDate>Thu, 05 Nov 2026 02:06:50 +0000</pubDate>
-      <sparkle:version>3.0.0.52401</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5240alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5240alpha/WinZapp-macOS-arm64.zip" length="315026473" type="application/octet-stream" sparkle:edSignature="KQCGWzO0su6dbGjMGw+H4mXMqgU8tOOO3rGe183f7mukkpw3lDEOPjq/fykpnessiMSeBY9BpCifvJtPN+zxBw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4391,6 +4409,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 23SHeh0cW6JiZ70aayPQ5V0kU/vnof2u50sJGkc+3kfbiAeCFKBUJkHGJBv66o4A0zKgYnXgZpZFDhaWH+W5Dg==
-length: 810497
+edSignature: DWes144DPFsgf32QkCp4HxUsgVPuMoq0YMc/ydxcq3wIfMDc1LybYgZVQvmQKss0jIWthzdwgxE/e8tFkzVtCg==
+length: 814663
 -->
