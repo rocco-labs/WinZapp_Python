@@ -5,18 +5,23 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5256alpha</title>
-      <pubDate>Fri, 06 Nov 2026 03:03:59 +0000</pubDate>
-      <sparkle:version>3.0.0.52561</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5256alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5272alpha</title>
+      <pubDate>Fri, 06 Nov 2026 13:42:10 +0000</pubDate>
+      <sparkle:version>3.0.0.52721</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5272alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="en" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- ClickBus: verified business names now show in the conversation list, trip texts and interactive buttons are shown in full, and the option chosen in a carousel is sent with the card index.
+
+- Settings &gt; Storage gains Storage manager: inspect logical sizes and coverage, choose media matching and protections, preview local-copy removal or recoverable holding, restore held files, and configure optional rules, notices and advisory targets. Automatic removal is restricted to verified regenerable compile cache; all scheduling starts off. Cleaned media can be requested individually without clearing automatic-download blocks.
 
 - Neonize calls: recover an answer or end that arrives before local call registration; group call failures now distinguish WhatsApp rate limiting and the supported member limits.
 
@@ -298,12 +303,17 @@ WHAT'S NEW
 - Arabic: the usage guide (Help &gt; Usage guide) is now complete in Arabic.
 
 - Neonize: a chat with a verified business now shows the business's verified name when it is not in your address book.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- ClickBus: nomes comerciais verificados aparecem na lista de conversas, os textos de viagens e os botões interativos são exibidos por completo, e a opção escolhida no carrossel é enviada com o índice do cartão.
+
+- Configurações &gt; Armazenamento ganha o Gerenciador de armazenamento: tamanhos lógicos e cobertura, associação de mídia, proteções, prévia da remoção de cópias locais ou retenção recuperável, restauração e regras, avisos e metas opcionais. A remoção automática é exclusiva do cache de compilação regenerável verificado; o agendamento começa desligado. É possível pedir uma mídia limpa individualmente sem liberar o download automático.
 
 - Chamadas do Neonize: preservado o atendimento ou encerramento recebido antes do registro local da chamada; falhas em chamadas em grupo agora distinguem o limite de solicitações do WhatsApp e os limites de membros suportados.
 
@@ -585,12 +595,17 @@ NOVIDADES
 - Árabe: o guia de uso (Ajuda &gt; Guia de uso) agora está completo em árabe.
 
 - Neonize: uma conversa com uma empresa verificada agora mostra o nome verificado da empresa quando ela não está na sua agenda.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- ClickBus: os nomes comerciais verificados aparecem na lista de conversas, os textos de viagens e os botões interativos são apresentados por completo, e a opção escolhida no carrossel é enviada com o índice do cartão.
+
+- Definições &gt; Armazenamento ganha o Gestor de armazenamento: tamanhos lógicos e cobertura, associação de multimédia, proteções, pré-visualização da remoção de cópias locais ou retenção recuperável, restauro e regras, avisos e metas opcionais. A remoção automática limita-se à cache de compilação regenerável verificada; o agendamento começa desligado. É possível pedir um ficheiro limpo individualmente sem permitir o descarregamento automático.
 
 - Chamadas do Neonize: preservado o atendimento ou encerramento recebido antes do registo local da chamada; falhas em chamadas em grupo agora distinguem o limite de pedidos do WhatsApp e os limites de membros suportados.
 
@@ -872,12 +887,17 @@ NOVIDADES
 - Árabe: o guia de utilização (Ajuda &gt; Guia de utilização) está agora completo em árabe.
 
 - Neonize: uma conversa com uma empresa verificada passa a mostrar o nome verificado da empresa quando não está na sua agenda.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="es" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- ClickBus: los nombres comerciales verificados aparecen en la lista de conversaciones, los textos de viajes y los botones interactivos se muestran completos y la opción elegida en un carrusel se envía con el índice de la tarjeta.
+
+- Ajustes &gt; Almacenamiento incorpora el Gestor de almacenamiento: tamaños lógicos y cobertura, asociación multimedia, protecciones, vista previa de eliminación de copias locales o retención recuperable, restauración y reglas, avisos y objetivos opcionales. La eliminación automática se limita a caché de compilación regenerable verificada; la programación comienza desactivada. Puede solicitar cada archivo limpiado sin quitar los bloqueos de descarga automática.
 
 - Llamadas de Neonize: se conserva la respuesta o finalización recibida antes de registrar la llamada localmente; los errores de grupo distinguen el límite de solicitudes de WhatsApp y los límites de miembros admitidos.
 
@@ -1159,12 +1179,17 @@ NOVEDADES
 - Árabe: la guía de uso (Ayuda &gt; Guía de uso) ya está completa en árabe.
 
 - Neonize: un chat con una empresa verificada ahora muestra el nombre verificado de la empresa cuando no está en tu agenda.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="pl" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- ClickBus: zweryfikowane nazwy firm są widoczne na liście rozmów, teksty podróży i przyciski interaktywne są pokazywane w całości, a opcja wybrana w karuzeli jest wysyłana z indeksem karty.
+
+- Ustawienia &gt; Pamięć otrzymują Menedżer miejsca na dysku: rozmiary logiczne i zakres, powiązanie multimediów, ochrona, podgląd usuwania kopii lokalnych lub przenoszenia do przechowalni, przywracanie oraz opcjonalne reguły, ostrzeżenia i cele. Automatyczne usuwanie dotyczy tylko zweryfikowanej, odtwarzalnej pamięci podręcznej kompilacji; harmonogram jest domyślnie wyłączony. Można osobno pobrać wyczyszczony plik bez znoszenia blokad automatycznego pobierania.
 
 - Rozmowy przez Neonize: zachowywana jest odpowiedź lub zakończenie otrzymane przed lokalną rejestracją połączenia; błędy rozmów grupowych rozróżniają limit żądań WhatsAppa i obsługiwane limity członków.
 
@@ -1446,12 +1471,17 @@ NOWOŚCI
 - Arabski: przewodnik użytkowania (Pomoc &gt; Przewodnik użytkowania) jest teraz kompletny po arabsku.
 
 - Neonize: czat ze zweryfikowaną firmą pokazuje teraz zweryfikowaną nazwę firmy, jeśli nie ma jej w Twojej książce adresowej.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="tr" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- ClickBus: doğrulanmış işletme adları sohbet listesinde görünür, yolculuk metinleri ve etkileşimli düğmeler tam gösterilir ve karusel içinde seçilen seçenek kart dizini ile gönderilir.
+
+- Ayarlar &gt; Depolama bölümüne Depolama yöneticisi eklendi: mantıksal boyutları ve kapsamı inceleyin, medya eşlemesini ve korumaları seçin, yerel kopya kaldırmayı veya geri alınabilir bekletmeyi önizleyin, bekletilen dosyaları geri alın; isteğe bağlı kuralları, bildirimleri ve kullanım hedeflerini yönetin. Otomatik kaldırma yalnız doğrulanmış, yeniden üretilebilir derleme önbelleğine açıktır; zamanlama varsayılan olarak kapalıdır. Temizlenmiş medya, otomatik indirme engelleri kaldırılmadan tek tek istenebilir.
 
 - Neonize aramaları: yerel çağrı kaydı oluşturulmadan gelen cevaplama ve bitiş durumları korunur; grup araması hataları WhatsApp hız sınırı ile desteklenen üye sınırlarını ayrı bildirir.
 
@@ -1733,12 +1763,17 @@ YENİLİKLER
 - Arapça: kullanım kılavuzu (Yardım &gt; Kullanım kılavuzu) artık Arapça olarak tamamlandı.
 
 - Neonize: doğrulanmış bir işletmeyle yapılan sohbet, işletme rehberinizde yoksa artık işletmenin doğrulanmış adını gösterir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="ro" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- ClickBus: numele comerciale verificate apar în lista de conversații, textele călătoriilor și butoanele interactive sunt afișate complet, iar opțiunea aleasă într-un carusel este trimisă cu indexul cardului.
+
+- Setări &gt; Stocare primește Managerul de stocare: dimensiuni logice și acoperire, asociere media, protecții, previzualizarea eliminării copiilor locale sau a păstrării recuperabile, restaurare și reguli, notificări și ținte opționale. Eliminarea automată se limitează la cache-ul de compilare verificat și regenerabil; programarea este inițial dezactivată. Fișierele curățate pot fi solicitate separat fără anularea blocărilor descărcării automate.
 
 - Apeluri Neonize: este păstrată acceptarea sau încheierea primită înainte de înregistrarea locală a apelului; erorile apelurilor de grup disting limitarea solicitărilor WhatsApp și limitele de membri acceptate.
 
@@ -2020,12 +2055,17 @@ NOUTĂȚI
 - Arabă: ghidul de utilizare (Ajutor &gt; Ghid de utilizare) este acum complet în arabă.
 
 - Neonize: o conversație cu o firmă verificată arată acum numele verificat al firmei când aceasta nu este în agenda ta.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- fix: verified business chat name (#693)
-- Fix Neonize call-state recovery and actionable group-call errors (#695)
+      <description xml:lang="ar" sparkle:format="plain-text">- Corrige nomes comerciais e respostas interativas da ClickBus (#697)
+- feat: add accessible, user-controlled storage management (#698)
+- Changelog da correção ClickBus (#697) (#699)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- ClickBus: تظهر الأسماء التجارية الموثّقة في قائمة المحادثات، وتُعرض نصوص الرحلات والأزرار التفاعلية كاملة، ويُرسل الخيار المختار في الدوّار مع رقم البطاقة.
+
+- تضيف الإعدادات &gt; التخزين إدارة التخزين: الأحجام المنطقية والتغطية، ومطابقة الوسائط، والحماية، ومعاينة إزالة النسخ المحلية أو الاحتفاظ القابل للاستعادة، والاستعادة، والقواعد والإشعارات والأهداف الاختيارية. تقتصر الإزالة التلقائية على ذاكرة الترجمة البرمجية المؤقتة القابلة لإعادة الإنشاء والمتحقق منها؛ تكون الجدولة معطلة افتراضيا. يمكن طلب ملف نُظف بصورة منفردة دون إلغاء منع التنزيل التلقائي.
 
 - مكالمات Neonize: تُحفظ الإجابة أو نهاية المكالمة الواردة قبل تسجيلها محليًا؛ وتُميّز أخطاء المكالمات الجماعية بين الحد المؤقت لطلبات واتساب وحدود عدد الأعضاء المدعومة.
 
@@ -2309,6 +2349,15 @@ NOUTĂȚI
 - العربية: اكتمل الآن دليل الاستخدام (المساعدة &gt; دليل الاستخدام) باللغة العربية.
 
 - Neonize: تعرض المحادثة مع نشاط تجاري موثّق الآن اسمه الموثّق عندما لا يكون في دفتر عناوينك.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5272alpha/WinZapp-macOS-x86_64.zip" length="348749849" type="application/octet-stream" sparkle:edSignature="fFMl9qKeRkN0UdRpSjCExA6vRhvFOTzAcEaqVeEdSKqnDFz7YkQtDn0j2mVVztrjEP1NmfGZNv+LRtVimzeHBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5256alpha</title>
+      <pubDate>Fri, 06 Nov 2026 03:03:59 +0000</pubDate>
+      <sparkle:version>3.0.0.52561</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5256alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5256alpha/WinZapp-macOS-x86_64.zip" length="348690764" type="application/octet-stream" sparkle:edSignature="UGRArBTU627LP9+i5g0ehAVk9xq/XWi9PxDwkw802Cp0VkcYWjvZertOXeBfxb9uwjES8YI5klQU8LB/fV4iCQ=="></enclosure>
     </item>
     <item>
@@ -2337,15 +2386,6 @@ NOUTĂȚI
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5204alpha/WinZapp-macOS-x86_64.zip" length="349179588" type="application/octet-stream" sparkle:edSignature="ntv2y99/Xr38wWrlvIom5eYs2ZEMSE0FdZjeFEzrJ8x/mHZd7smpeKGV8Fb5yCXOfahBtCNHqTB2NvgvBfQzDA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5202alpha</title>
-      <pubDate>Tue, 03 Nov 2026 21:11:34 +0000</pubDate>
-      <sparkle:version>3.0.0.52021</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5202alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5202alpha/WinZapp-macOS-x86_64.zip" length="349046178" type="application/octet-stream" sparkle:edSignature="uyyvm0FzBPHgprW0Re4y4Fv6xmPaPlGb40/+7XG2VIFwSU1xifvjFi1dPy2av9uw7AMkgFE7WDK5SSp649+rDQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -3960,6 +4000,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: To1B8xOc+qr+Q6RbLuTe1SWSkcEIElva2WJtNP6vyMjVxUkbSwOzGSN+rKQQ/s1d0d5AG+qXISPI2x7lKT5OAw==
-length: 741680
+edSignature: 8X3Y+bCukI+KesdM/JnRiYhAymP3I1DVryPwaF9/uIIg1yO+aIeNIPDfY3SK7YE6GSs47Yjz/fM2d5XEbhXbDw==
+length: 748136
 -->
