@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5312alpha</title>
-      <pubDate>Fri, 06 Nov 2026 23:22:05 +0000</pubDate>
-      <sparkle:version>3.0.0.53121</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5312alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5316alpha</title>
+      <pubDate>Fri, 06 Nov 2026 23:52:48 +0000</pubDate>
+      <sparkle:version>3.0.0.53161</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5316alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+      <description xml:lang="en" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -317,8 +317,12 @@ WHAT'S NEW
 
 - Forwarding a message with a link now keeps its link preview. The forward dialog has a new "Keep link preview" box, ticked by default, shown when a selected message has a preview; Settings &gt; User interface &gt; Messages has "Keep link previews by default when forwarding messages" to choose how it starts. Works with WPPConnect and Neonize. Note: with WPPConnect a message forwarded with its preview is sent as a new message and does not carry the "Forwarded" label; with Neonize it does.
 
-- When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.
+
+- Neonize: quoting a voice note now shows its duration (for example 0:15) in the quote bubble on the other person's WhatsApp, as with WPPConnect (issue #707).
+
+- Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -624,8 +628,12 @@ NOVIDADES
 
 - Encaminhar uma mensagem com link agora preserva a prévia do link. A janela de encaminhar ganhou a caixa "Preservar prévia do link", marcada por padrão e exibida quando alguma mensagem selecionada tem prévia; em Configurações &gt; Interface do usuário &gt; Conversas, a opção "Preservar prévias de links por padrão ao encaminhar mensagens" define como ela começa. Funciona com a WPPConnect e com o Neonize. Observação: com a WPPConnect, a mensagem encaminhada com a prévia é enviada como uma nova mensagem e não leva o rótulo "Encaminhada"; com o Neonize, leva.
 
-- Ao escrever uma mensagem com link, o leitor de tela agora diz "Carregando prévia..." enquanto a prévia é buscada, "Prévia adicionada." quando ela é anexada, ou "Não foi possível carregar a prévia do link: motivo." quando falha. Em Configurações &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar adição e carregamento das prévias de links" liga ou desliga as três mensagens; vem marcada por padrão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Ao escrever uma mensagem com link, o leitor de tela agora diz "Carregando prévia..." enquanto a prévia é buscada, "Prévia adicionada." quando ela é anexada, ou "Não foi possível carregar a prévia do link: motivo." quando falha. Em Configurações &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar adição e carregamento das prévias de links" liga ou desliga as três mensagens; vem marcada por padrão.
+
+- Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) agora aparece no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
+
+- Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -931,8 +939,12 @@ NOVIDADES
 
 - Reencaminhar uma mensagem com ligação passa a manter a pré-visualização da ligação. A janela de reencaminhar tem a nova caixa "Manter a pré-visualização da ligação", marcada por predefinição e apresentada quando alguma mensagem selecionada tem pré-visualização; em Definições &gt; Interface do utilizador &gt; Conversas, a opção "Manter por predefinição as pré-visualizações de links ao reencaminhar mensagens" define como ela começa. Funciona com o WPPConnect e com o Neonize. Nota: com o WPPConnect, a mensagem reencaminhada com a pré-visualização é enviada como uma nova mensagem e não leva a etiqueta "Reencaminhada"; com o Neonize, leva.
 
-- Ao escrever uma mensagem com ligação, o leitor de ecrã passa a dizer "A carregar a pré-visualização..." enquanto esta é obtida, "Pré-visualização adicionada." quando é anexada, ou "Não foi possível carregar a pré-visualização da ligação: motivo." quando falha. Em Definições &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar o carregamento e a adição das pré-visualizações de ligações" liga ou desliga as três mensagens; vem marcada por predefinição.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Ao escrever uma mensagem com ligação, o leitor de ecrã passa a dizer "A carregar a pré-visualização..." enquanto esta é obtida, "Pré-visualização adicionada." quando é anexada, ou "Não foi possível carregar a pré-visualização da ligação: motivo." quando falha. Em Definições &gt; Acessibilidade &gt; Conteúdo falado, a nova opção "Anunciar o carregamento e a adição das pré-visualizações de ligações" liga ou desliga as três mensagens; vem marcada por predefinição.
+
+- Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) passa a aparecer no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
+
+- Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1238,8 +1250,12 @@ NOVEDADES
 
 - Al reenviar un mensaje con un enlace, ahora se conserva la vista previa del enlace. El diálogo de reenvío tiene la nueva casilla "Mantener la vista previa del enlace", marcada por defecto y visible cuando algún mensaje seleccionado tiene vista previa; en Configuración &gt; Interfaz de usuario &gt; Conversaciones, la opción "Mantener las vistas previas de enlaces de forma predeterminada al reenviar mensajes" define cómo empieza. Funciona con WPPConnect y con Neonize. Nota: con WPPConnect, el mensaje reenviado con su vista previa se envía como un mensaje nuevo y no lleva la etiqueta "Reenviado"; con Neonize sí la lleva.
 
-- Al escribir un mensaje con un enlace, el lector de pantalla ahora dice "Cargando vista previa..." mientras se obtiene, "Vista previa añadida." cuando se adjunta, o "No se pudo cargar la vista previa del enlace: motivo." cuando falla. En Configuración &gt; Accesibilidad &gt; Contenido hablado, la nueva opción "Anunciar la carga y la adición de las vistas previas de enlaces" activa o desactiva los tres mensajes; viene marcada por defecto.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Al escribir un mensaje con un enlace, el lector de pantalla ahora dice "Cargando vista previa..." mientras se obtiene, "Vista previa añadida." cuando se adjunta, o "No se pudo cargar la vista previa del enlace: motivo." cuando falla. En Configuración &gt; Accesibilidad &gt; Contenido hablado, la nueva opción "Anunciar la carga y la adición de las vistas previas de enlaces" activa o desactiva los tres mensajes; viene marcada por defecto.
+
+- Neonize: al citar un mensaje de voz, ahora se muestra su duración (por ejemplo 0:15) en la burbuja de cita del WhatsApp de la otra persona, como en WPPConnect (incidencia #707).
+
+- Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1545,8 +1561,12 @@ NOWOŚCI
 
 - Przekazywanie wiadomości z linkiem zachowuje teraz podgląd linku. W oknie przekazywania jest nowe pole „Zachowaj podgląd linku”, domyślnie zaznaczone i widoczne, gdy któraś z zaznaczonych wiadomości ma podgląd; w Ustawienia &gt; Interfejs użytkownika &gt; Wiadomości opcja „Domyślnie zachowuj podglądy linków przy przekazywaniu wiadomości” określa, jak to pole się zaczyna. Działa z WPPConnect i z Neonize. Uwaga: z WPPConnect wiadomość przekazana z podglądem jest wysyłana jako nowa wiadomość i nie ma oznaczenia „Przekazano”; z Neonize je ma.
 
-- Podczas pisania wiadomości z linkiem czytnik ekranu mówi teraz „Ładowanie podglądu...” w trakcie pobierania podglądu, „Dodano podgląd.” po jego dołączeniu albo „Nie udało się załadować podglądu linku: przyczyna.” w razie błędu. W Ustawienia &gt; Dostępność &gt; Treść mówiona nowa opcja „Ogłaszaj ładowanie i dodawanie podglądów linków” włącza lub wyłącza te trzy komunikaty; jest domyślnie zaznaczona.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Podczas pisania wiadomości z linkiem czytnik ekranu mówi teraz „Ładowanie podglądu...” w trakcie pobierania podglądu, „Dodano podgląd.” po jego dołączeniu albo „Nie udało się załadować podglądu linku: przyczyna.” w razie błędu. W Ustawienia &gt; Dostępność &gt; Treść mówiona nowa opcja „Ogłaszaj ładowanie i dodawanie podglądów linków” włącza lub wyłącza te trzy komunikaty; jest domyślnie zaznaczona.
+
+- Neonize: cytowana wiadomość głosowa pokazuje teraz swój czas trwania (na przykład 0:15) w dymku cytatu w WhatsAppie drugiej osoby, tak jak w WPPConnect (zgłoszenie #707).
+
+- Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1852,8 +1872,12 @@ YENİLİKLER
 
 - Bağlantı içeren bir mesajı iletirken bağlantı önizlemesi artık korunuyor. İletme penceresinde yeni "Bağlantı önizlemesini koru" kutusu var; varsayılan olarak işaretlidir ve seçilen bir mesajın önizlemesi varsa görünür; Ayarlar &gt; Kullanıcı arayüzü &gt; Mesajlar altındaki "Mesajları iletirken bağlantı önizlemelerini varsayılan olarak koru" seçeneği kutunun nasıl başlayacağını belirler. WPPConnect ve Neonize ile çalışır. Not: WPPConnect ile önizlemesiyle iletilen mesaj yeni bir mesaj olarak gönderilir ve "İletildi" etiketini taşımaz; Neonize ile taşır.
 
-- Bağlantı içeren bir mesaj yazarken ekran okuyucu artık önizleme alınırken "Önizleme yükleniyor...", eklendiğinde "Önizleme eklendi.", başarısız olduğunda "Bağlantı önizlemesi yüklenemedi: neden." der. Ayarlar &gt; Erişilebilirlik &gt; Seslendirilen içerik altındaki yeni "Bağlantı önizlemelerinin yüklenmesini ve eklenmesini duyur" seçeneği bu üç iletiyi açar veya kapatır; varsayılan olarak işaretlidir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Bağlantı içeren bir mesaj yazarken ekran okuyucu artık önizleme alınırken "Önizleme yükleniyor...", eklendiğinde "Önizleme eklendi.", başarısız olduğunda "Bağlantı önizlemesi yüklenemedi: neden." der. Ayarlar &gt; Erişilebilirlik &gt; Seslendirilen içerik altındaki yeni "Bağlantı önizlemelerinin yüklenmesini ve eklenmesini duyur" seçeneği bu üç iletiyi açar veya kapatır; varsayılan olarak işaretlidir.
+
+- Neonize: bir sesli mesaj alıntılandığında, süresi (örneğin 0:15) artık karşı tarafın WhatsApp'ındaki alıntı balonunda görünüyor, tıpkı WPPConnect'teki gibi (sorun #707).
+
+- Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -2159,8 +2183,12 @@ NOUTĂȚI
 
 - Redirecționarea unui mesaj cu un link păstrează acum previzualizarea linkului. Fereastra de redirecționare are caseta nouă „Păstrează previzualizarea linkului”, bifată implicit și afișată când un mesaj selectat are previzualizare; în Setări &gt; Interfața utilizatorului &gt; Mesaje, opțiunea „Păstrează implicit previzualizările linkurilor la redirecționarea mesajelor” stabilește cum începe. Funcționează cu WPPConnect și cu Neonize. Notă: cu WPPConnect, mesajul redirecționat cu previzualizarea este trimis ca mesaj nou și nu poartă eticheta „Redirecționat”; cu Neonize o poartă.
 
-- Când scrii un mesaj cu un link, cititorul de ecran spune acum „Se încarcă previzualizarea...” cât timp aceasta este obținută, „Previzualizare adăugată.” când este atașată sau „Nu s-a putut încărca previzualizarea linkului: motiv.” când eșuează. În Setări &gt; Accesibilitate &gt; Conținut vorbit, noua opțiune „Anunțați încărcarea și adăugarea previzualizărilor linkurilor” activează sau dezactivează cele trei mesaje; este bifată implicit.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- Când scrii un mesaj cu un link, cititorul de ecran spune acum „Se încarcă previzualizarea...” cât timp aceasta este obținută, „Previzualizare adăugată.” când este atașată sau „Nu s-a putut încărca previzualizarea linkului: motiv.” când eșuează. În Setări &gt; Accesibilitate &gt; Conținut vorbit, noua opțiune „Anunțați încărcarea și adăugarea previzualizărilor linkurilor” activează sau dezactivează cele trei mesaje; este bifată implicit.
+
+- Neonize: când citezi un mesaj vocal, durata lui (de exemplu 0:15) apare acum în balonul de citat din WhatsApp-ul celeilalte persoane, ca în WPPConnect (problema #707).
+
+- Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -2468,8 +2496,12 @@ NOUTĂȚI
 
 - عند إعادة توجيه رسالة تحتوي على رابط، تبقى معاينة الرابط الآن. في نافذة إعادة التوجيه خانة جديدة "الإبقاء على معاينة الرابط"، محددة افتراضيًا وتظهر عندما تكون لإحدى الرسائل المحددة معاينة؛ وفي الإعدادات &gt; واجهة المستخدم &gt; الرسائل يحدد الخيار "الإبقاء على معاينات الروابط افتراضيًا عند إعادة توجيه الرسائل" كيف تبدأ الخانة. يعمل مع WPPConnect ومع Neonize. ملاحظة: مع WPPConnect تُرسل الرسالة المعاد توجيهها مع معاينتها كرسالة جديدة ولا تحمل علامة "معاد توجيهها"؛ ومع Neonize تحملها.
 
-- عند كتابة رسالة تحتوي على رابط، يقول قارئ الشاشة الآن «جارٍ تحميل المعاينة...» أثناء جلب المعاينة، و«تمت إضافة المعاينة.» عند إرفاقها، أو «تعذر تحميل معاينة الرابط: السبب.» عند الفشل. في الإعدادات &gt; إمكانية الوصول &gt; المحتوى المنطوق، يشغّل الخيار الجديد «الإعلان عن تحميل معاينات الروابط وإضافتها» هذه الرسائل الثلاث أو يوقفها؛ وهو مفعّل افتراضيًا.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize group calls: answer them when a member joins and keep their end in the group (#709)
+- عند كتابة رسالة تحتوي على رابط، يقول قارئ الشاشة الآن «جارٍ تحميل المعاينة...» أثناء جلب المعاينة، و«تمت إضافة المعاينة.» عند إرفاقها، أو «تعذر تحميل معاينة الرابط: السبب.» عند الفشل. في الإعدادات &gt; إمكانية الوصول &gt; المحتوى المنطوق، يشغّل الخيار الجديد «الإعلان عن تحميل معاينات الروابط وإضافتها» هذه الرسائل الثلاث أو يوقفها؛ وهو مفعّل افتراضيًا.
+
+- Neonize: عند الاقتباس من رسالة صوتية تظهر الآن مدتها (مثل 0:15) في فقاعة الاقتباس في واتساب لدى الشخص الآخر، كما في WPPConnect (المشكلة #707).
+
+- الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -2775,7 +2807,20 @@ WHAT'S NEW
 
 - Forwarding a message with a link now keeps its link preview. The forward dialog has a new "Keep link preview" box, ticked by default, shown when a selected message has a preview; Settings &gt; User interface &gt; Messages has "Keep link previews by default when forwarding messages" to choose how it starts. Works with WPPConnect and Neonize. Note: with WPPConnect a message forwarded with its preview is sent as a new message and does not carry the "Forwarded" label; with Neonize it does.
 
-- When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.</description>
+- When you write a message with a link, the screen reader now says "Loading link preview..." while the preview is fetched, "Link preview added." when it is attached, or "Could not load the link preview: reason." when it fails. In Settings &gt; Accessibility &gt; Spoken content, the new option "Announce link preview loading and adding" turns all three messages on or off; it is on by default.
+
+- Neonize: citando un messaggio vocale, ora la sua durata (ad esempio 0:15) compare nel fumetto della citazione sul WhatsApp dell'altra persona, come con WPPConnect (problema #707).
+
+- Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5316alpha/WinZapp-macOS-x86_64.zip" length="348806440" type="application/octet-stream" sparkle:edSignature="4m27XS1K1nqqqZk85BAmjxsGoz1lC9z1mn/3hC20wOK3+iLxy0SOoD2zPigtqbG5WxbQILeBFxTg9dYbVaaqCA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5312alpha</title>
+      <pubDate>Fri, 06 Nov 2026 23:22:05 +0000</pubDate>
+      <sparkle:version>3.0.0.53121</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5312alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5312alpha/WinZapp-macOS-x86_64.zip" length="348806370" type="application/octet-stream" sparkle:edSignature="Dg3qvMbPju+mQhJLnynuBW6aQ6EMxli/viiqJfoLWmy5/gK337SI9cbSBgj2ZBTkFiW7Gg4reV8sbfplDk8sBg=="></enclosure>
     </item>
     <item>
@@ -2804,15 +2849,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5272alpha/WinZapp-macOS-x86_64.zip" length="348749849" type="application/octet-stream" sparkle:edSignature="fFMl9qKeRkN0UdRpSjCExA6vRhvFOTzAcEaqVeEdSKqnDFz7YkQtDn0j2mVVztrjEP1NmfGZNv+LRtVimzeHBQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5256alpha</title>
-      <pubDate>Fri, 06 Nov 2026 03:03:59 +0000</pubDate>
-      <sparkle:version>3.0.0.52561</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5256alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5256alpha/WinZapp-macOS-x86_64.zip" length="348690764" type="application/octet-stream" sparkle:edSignature="UGRArBTU627LP9+i5g0ehAVk9xq/XWi9PxDwkw802Cp0VkcYWjvZertOXeBfxb9uwjES8YI5klQU8LB/fV4iCQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4427,6 +4463,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: fW+CAk0gVxt9pIpc/xeJkagYbIejehpfbnb3NDiStA87vwAdEJk8h7g8bpn+LYC3wU8LZHv8l6vElFf5ldm5Aw==
-length: 818193
+edSignature: Xs4362hZUZQmGnEYBnZxmOUFQDcRZa1Th9orr3nTpNdg0bggg+1NfaQP60BR54WD2emzX9Wxw+eQsSp121wbAg==
+length: 821517
 -->
