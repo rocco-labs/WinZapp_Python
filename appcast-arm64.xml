@@ -5,14 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5318alpha</title>
-      <pubDate>Sat, 07 Nov 2026 01:49:47 +0000</pubDate>
-      <sparkle:version>3.0.0.53181</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5318alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5324alpha</title>
+      <pubDate>Sat, 07 Nov 2026 02:30:56 +0000</pubDate>
+      <sparkle:version>3.0.0.53241</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5324alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -37,6 +37,10 @@ WHAT'S NEW
 - Neonize calls: the log now records the relay endpoints and the relay's answers, to find why an incoming call may carry no audio from the other person (issue #689). No change in behavior.
 
 - Neonize group calls: when a group member joins a group call you started, the call becomes active and the audio starts, instead of staying on "calling" with the microphone dropped. The end of the call is now recorded in the group and in your call history, not in a private chat with one of the members (issue #689).
+
+- Neonize group calls: when an invitation to a group call arrives without the group's name, the program asks the server which group it is, so the call in progress shows in the group's conversation for you to join (issue #689).
+
+- Neonize group calls: the log now records what the participant lists sent by the server hold (counts only, no names), to find why some people who join a call hear nobody (issue #689). No change in behavior.
 
 - Neonize: the first message to a new phone number typed in a new conversation (Ctrl+N) no longer ends as "not confirmed" when WhatsApp has the number registered in its other form (with or without the 9th digit of Brazilian mobiles): it is now sent to the address WhatsApp knows. A number typed in a new conversation now opens the chat under the address WhatsApp knows, so no duplicate chat is left behind.
 
@@ -327,8 +331,8 @@ WHAT'S NEW
 - Neonize: quoting a voice note now shows its duration (for example 0:15) in the quote bubble on the other person's WhatsApp, as with WPPConnect (issue #707).
 
 - Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -353,6 +357,10 @@ NOVIDADES
 - Chamadas do Neonize: o registro agora anota os endpoints do relay e as respostas dele, para descobrir por que uma chamada recebida pode vir sem o áudio da outra pessoa (problema #689). Nenhuma mudança de comportamento.
 
 - Chamadas em grupo do Neonize: quando um membro do grupo entra numa chamada em grupo que você iniciou, a chamada passa a ficar ativa e o áudio começa, em vez de ficar em "chamando" com o microfone descartado. O fim da chamada agora é registrado no grupo e no seu histórico de chamadas, não numa conversa privada com um dos membros (problema #689).
+
+- Chamadas em grupo do Neonize: quando o convite para uma chamada em grupo chega sem o nome do grupo, o programa pergunta ao servidor de qual grupo é, e a chamada em andamento passa a aparecer na conversa do grupo para você entrar (problema #689).
+
+- Chamadas em grupo do Neonize: o registro agora anota o que as listas de participantes enviadas pelo servidor contêm (só quantidades, sem nomes), para descobrir por que algumas pessoas que entram numa chamada não ouvem ninguém (problema #689). Nenhuma mudança de comportamento.
 
 - Neonize: a primeira mensagem para um número de telefone novo digitado numa nova conversa (Ctrl+N) não termina mais como "envio não confirmado" quando o WhatsApp tem o número registrado na outra forma (com ou sem o nono dígito dos celulares brasileiros): agora ela é enviada ao endereço que o WhatsApp conhece. Além disso, um número digitado numa nova conversa agora abre o chat com o endereço que o WhatsApp conhece, sem deixar uma conversa duplicada.
 
@@ -643,8 +651,8 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) agora aparece no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -669,6 +677,10 @@ NOVIDADES
 - Chamadas do Neonize: o registo passa a anotar os endpoints do relay e as respostas dele, para descobrir porque é que uma chamada recebida pode vir sem o áudio da outra pessoa (problema #689). Nenhuma alteração de comportamento.
 
 - Chamadas de grupo do Neonize: quando um membro do grupo entra numa chamada de grupo que iniciou, a chamada passa a ficar ativa e o áudio começa, em vez de ficar em "a chamar" com o microfone descartado. O fim da chamada passa a ser registado no grupo e no seu histórico de chamadas, e não numa conversa privada com um dos membros (problema #689).
+
+- Chamadas de grupo do Neonize: quando o convite para uma chamada de grupo chega sem o nome do grupo, o programa pergunta ao servidor de que grupo se trata, e a chamada em curso passa a aparecer na conversa do grupo para que possa entrar (problema #689).
+
+- Chamadas de grupo do Neonize: o registo passa a anotar o que contêm as listas de participantes enviadas pelo servidor (só quantidades, sem nomes), para descobrir por que algumas pessoas que entram numa chamada não ouvem ninguém (problema #689). Nenhuma alteração de comportamento.
 
 - Neonize: a primeira mensagem para um número de telefone novo escrito numa nova conversa (Ctrl+N) já não termina como "envio não confirmado" quando o WhatsApp tem o número registado na outra forma (com ou sem o nono dígito dos telemóveis brasileiros): agora é enviada para o endereço que o WhatsApp conhece. Além disso, um número escrito numa nova conversa abre agora o chat com o endereço que o WhatsApp conhece, sem deixar uma conversa duplicada.
 
@@ -959,8 +971,8 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) passa a aparecer no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -985,6 +997,10 @@ NOVEDADES
 - Llamadas de Neonize: el registro ahora anota los endpoints del relay y sus respuestas, para descubrir por qué una llamada entrante puede llegar sin el audio de la otra persona (problema #689). Sin cambios de comportamiento.
 
 - Llamadas grupales de Neonize: cuando un miembro del grupo entra en una llamada grupal que iniciaste, la llamada pasa a estar activa y el audio empieza, en vez de quedarse en "llamando" con el micrófono descartado. El final de la llamada ahora se registra en el grupo y en tu historial de llamadas, no en un chat privado con uno de los miembros (problema #689).
+
+- Llamadas grupales de Neonize: cuando llega una invitación a una llamada grupal sin el nombre del grupo, el programa pregunta al servidor de qué grupo es, y la llamada en curso aparece en la conversación del grupo para que te unas (problema #689).
+
+- Llamadas grupales de Neonize: el registro ahora anota qué contienen las listas de participantes que envía el servidor (solo cantidades, sin nombres), para descubrir por qué algunas personas que entran en una llamada no oyen a nadie (problema #689). Ningún cambio de comportamiento.
 
 - Neonize: el primer mensaje a un número de teléfono nuevo escrito en una conversación nueva (Ctrl+N) ya no termina como «no confirmado» cuando WhatsApp tiene el número registrado en su otra forma (con o sin el 9.º dígito de los móviles brasileños): ahora se envía a la dirección que WhatsApp conoce. Además, un número escrito en una conversación nueva abre ahora el chat con la dirección que WhatsApp conoce, así no queda una conversación duplicada.
 
@@ -1275,8 +1291,8 @@ NOVEDADES
 - Neonize: al citar un mensaje de voz, ahora se muestra su duración (por ejemplo 0:15) en la burbuja de cita del WhatsApp de la otra persona, como en WPPConnect (incidencia #707).
 
 - Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1301,6 +1317,10 @@ NOWOŚCI
 - Rozmowy przez Neonize: dziennik zapisuje teraz punkty końcowe przekaźnika (relay) i jego odpowiedzi, aby ustalić, dlaczego rozmowa przychodząca może nie mieć dźwięku drugiej osoby (zgłoszenie #689). Zachowanie bez zmian.
 
 - Rozmowy grupowe przez Neonize: gdy członek grupy dołącza do rozpoczętej przez Ciebie rozmowy grupowej, rozmowa staje się aktywna i rusza dźwięk, zamiast pozostawać w stanie "dzwonienie" z odrzucanym mikrofonem. Koniec rozmowy jest teraz zapisywany w grupie i w historii połączeń, a nie w prywatnej rozmowie z jednym z członków (problem #689).
+
+- Rozmowy grupowe przez Neonize: gdy zaproszenie do rozmowy grupowej przychodzi bez nazwy grupy, program pyta serwer, o jaką grupę chodzi, dzięki czemu trwająca rozmowa pojawia się w konwersacji grupy i możesz do niej dołączyć (problem #689).
+
+- Rozmowy grupowe przez Neonize: dziennik zapisuje teraz, co zawierają listy uczestników wysyłane przez serwer (same liczby, bez nazw), aby ustalić, dlaczego niektórzy dołączający do rozmowy nikogo nie słyszą (problem #689). Bez zmiany zachowania.
 
 - Neonize: pierwsza wiadomość do nowego numeru telefonu wpisanego w nowej rozmowie (Ctrl+N) nie kończy się już jako „niepotwierdzona”, gdy WhatsApp ma ten numer zarejestrowany w innej postaci (z dziewiątą cyfrą lub bez niej w brazylijskich numerach komórkowych): jest teraz wysyłana na adres, który zna WhatsApp. Numer wpisany w nowej rozmowie otwiera teraz czat pod adresem, który zna WhatsApp, więc nie zostaje zdublowana rozmowa.
 
@@ -1591,8 +1611,8 @@ NOWOŚCI
 - Neonize: cytowana wiadomość głosowa pokazuje teraz swój czas trwania (na przykład 0:15) w dymku cytatu w WhatsAppie drugiej osoby, tak jak w WPPConnect (zgłoszenie #707).
 
 - Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1617,6 +1637,10 @@ YENİLİKLER
 - Neonize aramaları: günlük artık röle (relay) uç noktalarını ve rölenin yanıtlarını kaydediyor; gelen bir aramada karşı tarafın sesinin neden gelmeyebileceğini bulmak için (sorun #689). Davranış değişmedi.
 
 - Neonize grup aramaları: başlattığınız bir grup aramasına bir grup üyesi katıldığında arama etkin olur ve ses başlar; artık mikrofon yok sayılarak "aranıyor" durumunda kalmaz. Aramanın bitişi artık üyelerden biriyle özel bir sohbette değil, grupta ve arama geçmişinizde kaydedilir (sorun #689).
+
+- Neonize grup aramaları: bir grup aramasına davet grup adı olmadan geldiğinde program sunucuya hangi grup olduğunu sorar; böylece devam eden arama, katılabilmeniz için grubun sohbetinde görünür (sorun #689).
+
+- Neonize grup aramaları: günlük artık sunucunun gönderdiği katılımcı listelerinin içeriğini kaydediyor (yalnızca sayılar, isim yok); böylece bir aramaya katılan bazı kişilerin neden kimseyi duyamadığı anlaşılabilir (sorun #689). Davranış değişikliği yok.
 
 - Neonize: yeni bir konuşmada (Ctrl+N) yazılan yeni bir telefon numarasına giden ilk mesaj, WhatsApp numarayı diğer biçimiyle (Brezilya cep numaralarında 9. rakamlı ya da rakamsız) kayıtlı tuttuğunda artık "onaylanmadı" olarak bitmiyor: mesaj artık WhatsApp'ın bildiği adrese gönderiliyor. Ayrıca yeni bir konuşmada yazılan numara artık sohbeti WhatsApp'ın bildiği adresle açar; böylece yinelenen bir sohbet kalmaz.
 
@@ -1907,8 +1931,8 @@ YENİLİKLER
 - Neonize: bir sesli mesaj alıntılandığında, süresi (örneğin 0:15) artık karşı tarafın WhatsApp'ındaki alıntı balonunda görünüyor, tıpkı WPPConnect'teki gibi (sorun #707).
 
 - Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -1933,6 +1957,10 @@ NOUTĂȚI
 - Apeluri Neonize: jurnalul notează acum punctele finale ale releului (relay) și răspunsurile lui, pentru a afla de ce un apel primit poate veni fără sunetul celeilalte persoane (problema #689). Niciun comportament nu s-a schimbat.
 
 - Apeluri de grup prin Neonize: când un membru al grupului intră într-un apel de grup pornit de tine, apelul devine activ și sunetul începe, în loc să rămână pe „se apelează” cu microfonul ignorat. Sfârșitul apelului este acum înregistrat în grup și în istoricul apelurilor tale, nu într-o conversație privată cu unul dintre membri (problema #689).
+
+- Apeluri de grup prin Neonize: când invitația la un apel de grup ajunge fără numele grupului, programul întreabă serverul despre ce grup este vorba, iar apelul în desfășurare apare în conversația grupului ca să te poți alătura (problema #689).
+
+- Apeluri de grup prin Neonize: jurnalul notează acum ce conțin listele de participanți trimise de server (doar numere, fără nume), pentru a afla de ce unele persoane care intră într-un apel nu aud pe nimeni (problema #689). Nicio schimbare de comportament.
 
 - Neonize: primul mesaj către un număr de telefon nou scris într-o conversație nouă (Ctrl+N) nu se mai termină ca „neconfirmat” când WhatsApp are numărul înregistrat în cealaltă formă (cu sau fără a 9-a cifră a mobilelor braziliene): acum este trimis la adresa pe care o cunoaște WhatsApp. În plus, un număr scris într-o conversație nouă deschide acum chatul cu adresa pe care o cunoaște WhatsApp, fără a lăsa o conversație duplicată.
 
@@ -2223,8 +2251,8 @@ NOUTĂȚI
 - Neonize: când citezi un mesaj vocal, durata lui (de exemplu 0:15) apare acum în balonul de citat din WhatsApp-ul celeilalte persoane, ca în WPPConnect (problema #707).
 
 - Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -2249,6 +2277,10 @@ NOUTĂȚI
 - مكالمات Neonize: يسجّل السجل الآن نقاط نهاية المرحّل (relay) وردوده لمعرفة سبب عدم وصول صوت الشخص الآخر في المكالمة الواردة (المشكلة #689). لا تغيير في السلوك.
 
 - مكالمات Neonize الجماعية: عندما يردّ أحد أعضاء المجموعة على مكالمة جماعية بدأتَها، تصبح المكالمة نشطة ويبدأ الصوت بدل أن تبقى في حالة الاتصال مع إسقاط الميكروفون. وتُسجَّل نهاية المكالمة في المجموعة نفسها وفي سجل مكالماتك، لا في محادثة خاصة مع أحد الأعضاء (المشكلة #689).
+
+- مكالمات Neonize الجماعية: عندما تصل دعوة إلى مكالمة جماعية دون اسم المجموعة، يسأل البرنامج الخادم عن المجموعة، فتظهر المكالمة الجارية في محادثة المجموعة لتنضم إليها (المشكلة #689).
+
+- مكالمات Neonize الجماعية: يسجّل السجل الآن حالة قائمة المشاركين التي يرسلها الخادم (أعدادًا فقط، دون أسماء)، لمعرفة سبب عدم سماع بعض المنضمّين لأحد في المكالمة (المشكلة #689). لا تغيير في السلوك.
 
 - Neonize: الرسالة الأولى إلى رقم هاتف جديد كتبته في محادثة جديدة (Ctrl+N) لم تعد تفشل بعبارة «غير مؤكد» عندما يكون الرقم مسجلاً في واتساب بالصيغة الأخرى (مع الرقم 9 أو بدونه في الأرقام البرازيلية): يُرسل الآن إلى العنوان الذي يعرفه واتساب. كما أن الرقم المكتوب في محادثة جديدة يفتح الآن المحادثة بالعنوان الذي يعرفه واتساب، فلا تظهر محادثة مكررة.
 
@@ -2541,8 +2573,8 @@ NOUTĂȚI
 - Neonize: عند الاقتباس من رسالة صوتية تظهر الآن مدتها (مثل 0:15) في فقاعة الاقتباس في واتساب لدى الشخص الآخر، كما في WPPConnect (المشكلة #707).
 
 - الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
-- Corrige Ctrl+C em documentos na aba Mídia (#713)
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: find the group of a group-call invitation that came without one (#714)
+- Neonize: log how each group roster stands (meowcaller 0011) (#715)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -2567,6 +2599,10 @@ WHAT'S NEW
 - Chiamate Neonize: il registro delle chiamate ora annota gli endpoint del relay e le sue risposte, per scoprire perché una chiamata in arrivo può non portare l'audio dell'altra persona (problema #689). Nessuna modifica al comportamento.
 
 - Chiamate di gruppo Neonize: quando un membro del gruppo entra in una chiamata di gruppo che hai avviato, la chiamata diventa attiva e l'audio parte, invece di restare su "in chiamata" con il microfono scartato. La fine della chiamata viene ora registrata nel gruppo e nella cronologia delle chiamate, non in una chat privata con uno dei membri (problema #689).
+
+- Chiamate di gruppo Neonize: quando arriva un invito a una chiamata di gruppo senza il nome del gruppo, il programma chiede al server di quale gruppo si tratta, così la chiamata in corso compare nella conversazione del gruppo e puoi unirti (problema #689).
+
+- Chiamate di gruppo Neonize: il registro ora annota cosa contengono gli elenchi dei partecipanti inviati dal server (solo numeri, senza nomi), per scoprire perché alcune persone che entrano in una chiamata non sentono nessuno (problema #689). Nessun cambiamento di comportamento.
 
 - Neonize: the first message to a new phone number typed in a new conversation (Ctrl+N) no longer ends as "not confirmed" when WhatsApp has the number registered in its other form (with or without the 9th digit of Brazilian mobiles): it is now sent to the address WhatsApp knows. A number typed in a new conversation now opens the chat under the address WhatsApp knows, so no duplicate chat is left behind.
 
@@ -2857,6 +2893,15 @@ WHAT'S NEW
 - Neonize: citando un messaggio vocale, ora la sua durata (ad esempio 0:15) compare nel fumetto della citazione sul WhatsApp dell'altra persona, come con WPPConnect (problema #707).
 
 - Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5324alpha/WinZapp-macOS-arm64.zip" length="310672795" type="application/octet-stream" sparkle:edSignature="nHj/VWSE4oe+6mFmC5vYbctnrppkS3VziR0D9nNln7Hdy0TzWH8ZboLgVIFWE6xHL+nakZ6mOpZUAakIGgBoAg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5318alpha</title>
+      <pubDate>Sat, 07 Nov 2026 01:49:47 +0000</pubDate>
+      <sparkle:version>3.0.0.53181</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5318alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5318alpha/WinZapp-macOS-arm64.zip" length="310672841" type="application/octet-stream" sparkle:edSignature="nsJd4/UDJfetxfzM4Yni53yRTF+ABO3n+VtvORPQ58R2yAEDj3CoWvxXcLmfJGqagFrdeD64skvmsSFpPtKICw=="></enclosure>
     </item>
     <item>
@@ -2885,15 +2930,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5310alpha/WinZapp-macOS-arm64.zip" length="310811456" type="application/octet-stream" sparkle:edSignature="YP8dhZBzGvZHPX7UO0368scAwF4nEz2qrzgzxf6z7E+Hks3tdSWeMw+cDUre2llygg49es+hpFJxWTwc7we/BQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5307alpha</title>
-      <pubDate>Fri, 06 Nov 2026 19:09:29 +0000</pubDate>
-      <sparkle:version>3.0.0.53071</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5307alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5307alpha/WinZapp-macOS-arm64.zip" length="314804298" type="application/octet-stream" sparkle:edSignature="FM9GhiIOjkteRBkSHcw7yO3QXeOLNyeqzkFrhVrh9lb7ZIWIhhPA4b91RLbClLLds86kHaqT1FJvCu++Ko37Ag=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4508,6 +4544,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: pOhyjMyY75Wx+nYawVNbp6pQsqZh+OeWQytKb8oAGJw0xU2MHSXO4Q+Ou+3qx81Qu/qxvNTDb1nZ8j7af9hqAQ==
-length: 826201
+edSignature: 8zMcrV9C7IssmcYgOKK7kbWmuHNE+y6ap/nOVj4ebPEzj80xh6nuznzxv+VhKS15IYwqDSXW2lhnCRXI8DAUCw==
+length: 831251
 -->
