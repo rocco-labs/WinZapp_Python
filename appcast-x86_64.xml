@@ -5,14 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5344alpha</title>
-      <pubDate>Sat, 07 Nov 2026 20:58:41 +0000</pubDate>
-      <sparkle:version>3.0.0.53441</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5344alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5346alpha</title>
+      <pubDate>Sat, 07 Nov 2026 21:54:42 +0000</pubDate>
+      <sparkle:version>3.0.0.53461</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5346alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -344,9 +343,10 @@ WHAT'S NEW
 
 - Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.
 
-- Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
+
+- Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -678,9 +678,10 @@ NOVIDADES
 
 - Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.
 
-- Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
+
+- Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1012,9 +1013,10 @@ NOVIDADES
 
 - Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.
 
-- Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
+
+- Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1346,9 +1348,10 @@ NOVEDADES
 
 - Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.
 
-- Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
+
+- Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1680,9 +1683,10 @@ NOWOŚCI
 
 - Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.
 
-- Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
+
+- Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -2014,9 +2018,10 @@ YENİLİKLER
 
 - Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.
 
-- Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
+
+- Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -2348,9 +2353,10 @@ NOUTĂȚI
 
 - Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.
 
-- Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
+
+- Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -2684,9 +2690,10 @@ NOUTĂȚI
 
 - الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.
 
-- المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Tornar acessível o diálogo de adicionar participante da chamada (#722)
-- Neonize: registrar o tráfego do relay por tipo a cada 5 s (meowcaller 0013) (#723)
+- المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
+
+- Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -3018,7 +3025,18 @@ WHAT'S NEW
 
 - Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.
 
-- Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.</description>
+- Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
+
+- Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5346alpha/WinZapp-macOS-x86_64.zip" length="350084871" type="application/octet-stream" sparkle:edSignature="3BHR6XOJsGDOWO8DoZedR9Hc9dzmriEHktaLn70AUcvgEJvq1ZfSuqOnFQiyUzbMc8THtsu1ABjFxWutec6xBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5344alpha</title>
+      <pubDate>Sat, 07 Nov 2026 20:58:41 +0000</pubDate>
+      <sparkle:version>3.0.0.53441</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5344alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5344alpha/WinZapp-macOS-x86_64.zip" length="350085532" type="application/octet-stream" sparkle:edSignature="Cwqi6aT8Dbb6ybmq92YHX2Dqkri/ZTDUu09AWa5eIM5CYfRC9MpfHOS2Iem41IcjhuFuRjIgO+/NzycPSJxjAg=="></enclosure>
     </item>
     <item>
@@ -3047,15 +3065,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5332alpha/WinZapp-macOS-x86_64.zip" length="349926116" type="application/octet-stream" sparkle:edSignature="RmeyQo/1hZQEH2JvjLhzlqDfB2tx57+vm577sCt8pauUusBgY/qCQIu1M859tGB1bhgd3urLdRvi6L76PlgOBQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5326alpha</title>
-      <pubDate>Sat, 07 Nov 2026 04:00:01 +0000</pubDate>
-      <sparkle:version>3.0.0.53261</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5326alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5326alpha/WinZapp-macOS-x86_64.zip" length="348740535" type="application/octet-stream" sparkle:edSignature="k1j0M/YXHecH1kv2auXuMJkrwHCpetheFikiMbYPKoEHnoxX+olRRqiJbaATyypN9ii+vQWVJeNc/WK9gM27AA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4670,6 +4679,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: SZ4PGSNjYczxBUyRA/aSMOqrdQF2GZ+o4ejDOwt6js+8sNk8ii7zyEzHw+OW+jaFL8abDuGQYFHzik/iiLf/Dg==
-length: 852381
+edSignature: 2i2+TADuNUsR4ujnvAWTpW0xqm6xigBq5Y1pAGvMZJhgLOXVIqQuPGeZyD0IcjlPcmwgxR7lKUeNN259nM4WCw==
+length: 853497
 -->
