@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5335alpha</title>
-      <pubDate>Sat, 07 Nov 2026 17:18:25 +0000</pubDate>
-      <sparkle:version>3.0.0.53351</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5335alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5336alpha</title>
+      <pubDate>Sat, 07 Nov 2026 17:47:47 +0000</pubDate>
+      <sparkle:version>3.0.0.53361</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5336alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+      <description xml:lang="en" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -337,8 +337,10 @@ WHAT'S NEW
 
 - Neonize: quoting a voice note now shows its duration (for example 0:15) in the quote bubble on the other person's WhatsApp, as with WPPConnect (issue #707).
 
-- Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.
+
+- Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -664,8 +666,10 @@ NOVIDADES
 
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) agora aparece no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
-- Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.
+
+- Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -991,8 +995,10 @@ NOVIDADES
 
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) passa a aparecer no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
-- Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.
+
+- Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1318,8 +1324,10 @@ NOVEDADES
 
 - Neonize: al citar un mensaje de voz, ahora se muestra su duración (por ejemplo 0:15) en la burbuja de cita del WhatsApp de la otra persona, como en WPPConnect (incidencia #707).
 
-- Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.
+
+- Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -1645,8 +1653,10 @@ NOWOŚCI
 
 - Neonize: cytowana wiadomość głosowa pokazuje teraz swój czas trwania (na przykład 0:15) w dymku cytatu w WhatsAppie drugiej osoby, tak jak w WPPConnect (zgłoszenie #707).
 
-- Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.
+
+- Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -1972,8 +1982,10 @@ YENİLİKLER
 
 - Neonize: bir sesli mesaj alıntılandığında, süresi (örneğin 0:15) artık karşı tarafın WhatsApp'ındaki alıntı balonunda görünüyor, tıpkı WPPConnect'teki gibi (sorun #707).
 
-- Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.
+
+- Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -2299,8 +2311,10 @@ NOUTĂȚI
 
 - Neonize: când citezi un mesaj vocal, durata lui (de exemplu 0:15) apare acum în balonul de citat din WhatsApp-ul celeilalte persoane, ca în WPPConnect (problema #707).
 
-- Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.
+
+- Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -2628,8 +2642,10 @@ NOUTĂȚI
 
 - Neonize: عند الاقتباس من رسالة صوتية تظهر الآن مدتها (مثل 0:15) في فقاعة الاقتباس في واتساب لدى الشخص الآخر، كما في WPPConnect (المشكلة #707).
 
-- الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize: registrar no histórico as chamadas feitas e as atendidas e encerradas aqui (#720)
+- الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.
+
+- المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Atalho Ctrl+Shift+P para Participantes da ligação (#721)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -2955,7 +2971,18 @@ WHAT'S NEW
 
 - Neonize: citando un messaggio vocale, ora la sua durata (ad esempio 0:15) compare nel fumetto della citazione sul WhatsApp dell'altra persona, come con WPPConnect (problema #707).
 
-- Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.</description>
+- Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.
+
+- Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5336alpha/WinZapp-macOS-arm64.zip" length="311840452" type="application/octet-stream" sparkle:edSignature="ZFhP8zzbZJ71YhuWCArWjpsKp2CgZ4CLS4wisffAavtbN4NsdrFEokxohRHx5Wotb3D7+x6qKnmYNM7wIxVVDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5335alpha</title>
+      <pubDate>Sat, 07 Nov 2026 17:18:25 +0000</pubDate>
+      <sparkle:version>3.0.0.53351</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5335alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5335alpha/WinZapp-macOS-arm64.zip" length="311838578" type="application/octet-stream" sparkle:edSignature="5fjddvYxbMss19H9f9FBPN5j5gxheY/BWl4YTUOTWAUxnIj8NrkOZTODYIY4zb9xYEFqr+lUWlQb0SlutGjcCg=="></enclosure>
     </item>
     <item>
@@ -2984,15 +3011,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5324alpha/WinZapp-macOS-arm64.zip" length="310672795" type="application/octet-stream" sparkle:edSignature="nHj/VWSE4oe+6mFmC5vYbctnrppkS3VziR0D9nNln7Hdy0TzWH8ZboLgVIFWE6xHL+nakZ6mOpZUAakIGgBoAg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5318alpha</title>
-      <pubDate>Sat, 07 Nov 2026 01:49:47 +0000</pubDate>
-      <sparkle:version>3.0.0.53181</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5318alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5318alpha/WinZapp-macOS-arm64.zip" length="310672841" type="application/octet-stream" sparkle:edSignature="nsJd4/UDJfetxfzM4Yni53yRTF+ABO3n+VtvORPQ58R2yAEDj3CoWvxXcLmfJGqagFrdeD64skvmsSFpPtKICw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4607,6 +4625,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8YJlzrniG5ruSyYyF92VeN+5tMMukWaANzQ6Erpp2+86vcMrTvNJdrSOsCQPS9T3lwHSyYH9/qDmCltTet6iDw==
-length: 843185
+edSignature: 4BQ+fa1U3YcoqxiWDSXfJkQgaLrDl+tbowyg2T4b9eTNldSVV5nBrTVe7kRvLgJlXTUDQlKhhmQ+zb7d4WxuCA==
+length: 845460
 -->
