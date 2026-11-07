@@ -5,17 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5326alpha</title>
-      <pubDate>Sat, 07 Nov 2026 04:00:01 +0000</pubDate>
-      <sparkle:version>3.0.0.53261</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5326alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5332alpha</title>
+      <pubDate>Sat, 07 Nov 2026 14:52:53 +0000</pubDate>
+      <sparkle:version>3.0.0.53321</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5332alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="en" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Calls: delayed media and device/camera work stay with their original call and stream. Neonize processes media in bounded queues off the server loop and keeps its reader after a transient emission failure. Ambiguous WASAPI names no longer select the first matching device. Neonize call logs also include signal-level summaries without saving audio content, to help investigate silence. When call output is reopened, an old stream that fails to close cannot consume the new stream's audio; an echo-reference failure no longer silences rendered audio.
 
 - Media tab of chats and groups: Ctrl+C on a document, photo, video or audio now copies the file to the clipboard, as in the message list, instead of saying "Could not copy this message." The context menu item is now "Copy file" too.
 
@@ -54,6 +57,8 @@ WHAT'S NEW
 - Channels, as on WhatsApp Web: in "Find channels", Category (business, entertainment, lifestyle, news, organizations, people, sports) and View (recommended, trending, popular, new) narrow the directory. In the channels you administer, the message field opens to post text updates, an update can be pinned or unpinned from the message menu (Ctrl+Shift+P) and the pinned ones show in "Pinned messages"; the "Admins and followers..." button says how many admins the channel has and, for its owner, invites a contact to be an admin or cancels the invite. Works with WPPConnect and Neonize. That window lists the owner, the admins, the pending invites and the followers: the owner can make a follower an admin, cancel an invite, remove an admin or make an admin the owner, and an admin can stop being one.
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
+
+- WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
 - WPPConnect Server updated to 2.10.75, which fixes a Chatwoot webhook that accepted requests without authentication and patches a vulnerability in the glob and minimatch libraries.
 
@@ -332,11 +337,14 @@ WHAT'S NEW
 - Neonize: quoting a voice note now shows its duration (for example 0:15) in the quote bubble on the other person's WhatsApp, as with WPPConnect (issue #707).
 
 - Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas: áudio, vídeo e tarefas de dispositivos ou câmera atrasados permanecem vinculados à chamada e ao fluxo de origem. O Neonize processa a mídia em filas limitadas fora do loop do servidor e mantém o leitor após uma falha transitória de emissão. Nomes WASAPI ambíguos não escolhem mais o primeiro dispositivo correspondente. Os registros de chamadas do Neonize também incluem resumos do nível do sinal, sem salvar o conteúdo do áudio, para ajudar a investigar a ausência de som. Ao reabrir a saída de uma chamada, um fluxo antigo que não consegue fechar não pode consumir o áudio do novo fluxo; uma falha na referência de eco não silencia mais o áudio já preparado para reprodução.
 
 - Aba Mídia das conversas e grupos: Ctrl+C num documento, foto, vídeo ou áudio agora copia o arquivo para a área de transferência, como na lista de mensagens, em vez de dizer "Não foi possível copiar esta mensagem". O item do menu de contexto também passou a ser "Copiar arquivo".
 
@@ -375,6 +383,8 @@ NOVIDADES
 - Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, esportes) e Lista (recomendados, em alta, populares, novos) filtram o diretório. Nos canais que você administra, o campo de mensagem fica liberado para postar atualizações de texto, uma atualização pode ser fixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as fixadas aparecem em "Mensagens fixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contato para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de sê-lo.
 
 - Chamadas: agora dá para adicionar pessoas à chamada em andamento, pelo botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada em grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contatos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado de novo. Funciona com a WPPConnect e com o Neonize.
+
+- O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir o cache privado de mídia por HTTP.
 
 - O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
@@ -653,11 +663,14 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) agora aparece no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Chamadas: áudio, vídeo e tarefas de dispositivos ou câmara atrasados permanecem associados à chamada e ao fluxo de origem. O Neonize processa os dados em filas limitadas fora do ciclo do servidor e mantém o leitor após uma falha transitória de envio. Nomes WASAPI ambíguos deixam de selecionar o primeiro dispositivo correspondente. Os registos de chamadas do Neonize também incluem resumos do nível do sinal, sem guardar o conteúdo do áudio, para ajudar a investigar a ausência de som. Ao reabrir a saída de uma chamada, um fluxo antigo que não consegue fechar não pode consumir o áudio do novo fluxo; uma falha na referência de eco deixa de silenciar o áudio já preparado para reprodução.
 
 - Separador Multimédia das conversas e grupos: Ctrl+C num documento, foto, vídeo ou áudio passa a copiar o ficheiro para a área de transferência, como na lista de mensagens, em vez de dizer "Não foi possível copiar esta mensagem". O item do menu de contexto passou também a ser "Copiar ficheiro".
 
@@ -696,6 +709,8 @@ NOVIDADES
 - Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, desporto) e Lista (recomendados, tendências, populares, novos) filtram o diretório. Nos canais que administra, o campo de mensagem fica disponível para publicar atualizações de texto, uma atualização pode ser afixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as afixadas aparecem em "Mensagens afixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contacto para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de o ser.
 
 - Chamadas: já é possível adicionar pessoas à chamada em curso, com o botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada de grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contactos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado outra vez. Funciona com a WPPConnect e com o Neonize.
+
+- O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir a cache privada de multimédia por HTTP.
 
 - O WPPConnect Server foi atualizado para a 2.10.75, que corrige um webhook do Chatwoot que aceitava pedidos sem autenticação e corrige uma vulnerabilidade nas bibliotecas glob e minimatch.
 
@@ -974,11 +989,14 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) passa a aparecer no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="es" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Llamadas: los datos multimedia y las tareas de dispositivos o cámara que llegan tarde permanecen vinculados a su llamada y flujo originales. Neonize procesa los datos en colas limitadas fuera del bucle del servidor y conserva el lector tras un fallo transitorio de emisión. Los nombres WASAPI ambiguos ya no seleccionan el primer dispositivo coincidente. Los registros de llamadas de Neonize también incluyen resúmenes del nivel de la señal, sin guardar el contenido del audio, para ayudar a investigar la ausencia de sonido. Al reabrir la salida de una llamada, un flujo antiguo que no consigue cerrarse no puede consumir el audio del nuevo flujo; un fallo en la referencia de eco ya no silencia el audio preparado para reproducirse.
 
 - Pestaña Multimedia de chats y grupos: Ctrl+C sobre un documento, foto, vídeo o audio ahora copia el archivo al portapapeles, como en la lista de mensajes, en lugar de decir "No se pudo copiar este mensaje". El elemento del menú contextual también pasa a ser "Copiar archivo".
 
@@ -1017,6 +1035,8 @@ NOVEDADES
 - Canales, como en WhatsApp Web: en "Buscar canales", Categoría (negocios, entretenimiento, estilo de vida, noticias, organizaciones, personas, deportes) y Lista (recomendados, tendencias, populares, nuevos) filtran el directorio. En los canales que administras, el campo de mensaje se habilita para publicar novedades de texto, una novedad se puede fijar o dejar de fijar desde el menú del mensaje (Ctrl+Shift+P) y las fijadas aparecen en "Mensajes fijados"; el botón "Administradores y seguidores..." dice cuántos administradores tiene el canal y, para su propietario, invita a un contacto a ser administrador o cancela la invitación. Funciona con WPPConnect y con Neonize. Esa ventana muestra al propietario, los administradores, las invitaciones pendientes y los seguidores: el propietario puede hacer administrador a un seguidor, cancelar una invitación, quitar a un administrador o hacer propietario a un administrador, y un administrador puede dejar de serlo.
 
 - Llamadas: ahora puedes añadir personas a la llamada en curso, con el botón "Añadir participantes" de la lista de participantes de la llamada. En una llamada de grupo aparecen los miembros del grupo que aún no están en ella; en una llamada privada, tus contactos, y la llamada pasa a tener varias personas, como en WhatsApp. A quien ya se llamó y aún no entró se le vuelve a llamar. Funciona con WPPConnect y con Neonize.
+
+- WPPConnect Server actualizado a la 2.10.78, que deja de servir por HTTP la caché privada de multimedia.
 
 - WPPConnect Server actualizado a la 2.10.75, que corrige un webhook de Chatwoot que aceptaba solicitudes sin autenticación y parchea una vulnerabilidad en las bibliotecas glob y minimatch.
 
@@ -1295,11 +1315,14 @@ NOVEDADES
 - Neonize: al citar un mensaje de voz, ahora se muestra su duración (por ejemplo 0:15) en la burbuja de cita del WhatsApp de la otra persona, como en WPPConnect (incidencia #707).
 
 - Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="pl" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Połączenia: opóźnione dane multimedialne oraz zadania urządzeń i kamery pozostają przypisane do pierwotnego połączenia i strumienia. Neonize przetwarza dane w ograniczonych kolejkach poza pętlą serwera i nie zatrzymuje odczytu po przejściowym błędzie wysyłania danych do klienta. Przy niejednoznacznej nazwie WASAPI nie jest już wybierane pierwsze pasujące urządzenie odtwarzające. Dzienniki połączeń Neonize zawierają również podsumowania poziomu sygnału bez zapisywania treści dźwięku, co pomaga badać przyczyny braku dźwięku. Po ponownym otwarciu wyjścia audio połączenia stary strumień, którego nie udało się zamknąć, nie może pobierać dźwięku z nowego strumienia; błąd sygnału odniesienia dla usuwania echa nie wycisza już dźwięku przygotowanego do odtwarzania.
 
 - Karta Multimedia czatów i grup: Ctrl+C na dokumencie, zdjęciu, filmie lub nagraniu audio kopiuje teraz plik do schowka, tak jak na liście wiadomości, zamiast komunikatu o niemożności skopiowania wiadomości. Pozycja menu kontekstowego to teraz także „Kopiuj plik”.
 
@@ -1338,6 +1361,8 @@ NOWOŚCI
 - Kanały jak w WhatsApp Web: w "Znajdź kanały" Kategoria (biznes, rozrywka, styl życia, informacje, organizacje, ludzie, sport) i Lista (polecane, na czasie, popularne, nowe) zawężają katalog. W kanałach, którymi administrujesz, pole wiadomości pozwala publikować aktualizacje tekstowe, aktualizację można przypiąć lub odpiąć z menu wiadomości (Ctrl+Shift+P), a przypięte pojawiają się w "Przypięte wiadomości"; przycisk "Administratorzy i obserwujący..." podaje liczbę administratorów kanału, a właścicielowi pozwala zaprosić kontakt do roli administratora lub anulować zaproszenie. Działa z WPPConnect i z Neonize. To okno pokazuje właściciela, administratorów, oczekujące zaproszenia i obserwujących: właściciel może uczynić obserwującego administratorem, anulować zaproszenie, usunąć administratora lub uczynić administratora właścicielem, a administrator może przestać nim być.
 
 - Połączenia: do trwającego połączenia można teraz dodawać osoby przyciskiem "Dodaj uczestników" na liście uczestników połączenia. W połączeniu grupowym widać członków grupy, których jeszcze w nim nie ma; w połączeniu prywatnym Twoje kontakty, a połączenie staje się połączeniem z kilkoma osobami, jak w WhatsAppie. Do osoby, która została już wezwana i nie dołączyła, dzwoni się ponownie. Działa z WPPConnect i z Neonize.
+
+- WPPConnect Server zaktualizowany do 2.10.78, która przestaje udostępniać prywatną pamięć podręczną multimediów przez HTTP.
 
 - WPPConnect Server zaktualizowany do 2.10.75, która naprawia webhook Chatwoot przyjmujący żądania bez uwierzytelnienia i łata podatność w bibliotekach glob i minimatch.
 
@@ -1616,11 +1641,14 @@ NOWOŚCI
 - Neonize: cytowana wiadomość głosowa pokazuje teraz swój czas trwania (na przykład 0:15) w dymku cytatu w WhatsAppie drugiej osoby, tak jak w WPPConnect (zgłoszenie #707).
 
 - Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="tr" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Aramalar: geciken medya ile ses aygıtı ve kamera işleri, ait oldukları arama ve akışla sınırlanır. Neonize medyayı sunucunun olay döngüsü dışında sınırlı kuyruklarda işler; geçici bir iletim hatası ses okuyucusunu durdurmaz. Belirsiz WASAPI adlarında ilk eşleşen aygıt artık rastgele seçilmez. Neonize arama günlüklerine, sessizliğin nedenini araştırmaya yardımcı olan ve ses içeriğini saklamayan sinyal düzeyi özetleri de eklendi. Aramanın ses çıkışı yeniden açıldığında kapanamayan eski akış yeni akışın sesini tüketemez; yankı referansındaki hata da çalınmaya hazırlanan sesi susturmaz.
 
 - Sohbet ve grupların Medya sekmesi: Bir belge, fotoğraf, video veya sesin üzerinde Ctrl+C artık "Bu mesaj kopyalanamadı" demek yerine, mesaj listesindeki gibi dosyayı panoya kopyalıyor. Bağlam menüsü öğesi de artık "Dosyayı kopyala".
 
@@ -1659,6 +1687,8 @@ YENİLİKLER
 - WhatsApp Web'deki gibi kanallar: "Kanal bul" bölümünde Kategori (işletme, eğlence, yaşam tarzı, haberler, kuruluşlar, kişiler, spor) ve Görünüm (önerilenler, gündemdekiler, popüler, yeni) dizini daraltır. Yönettiğiniz kanallarda mesaj alanı metin güncellemeleri paylaşmak için açılır, bir güncelleme mesaj menüsünden (Ctrl+Shift+P) sabitlenebilir veya sabitlemesi kaldırılabilir ve sabitlenenler "Sabitlenen mesajlar" içinde görünür; "Yöneticiler ve takipçiler..." düğmesi kanalın kaç yöneticisi olduğunu söyler ve kanal sahibi için bir kişiyi yönetici olmaya davet eder veya daveti iptal eder. WPPConnect ve Neonize ile çalışır. Bu pencere sahibi, yöneticileri, bekleyen davetleri ve takipçileri listeler: sahip bir takipçiyi yönetici yapabilir, bir daveti iptal edebilir, bir yöneticiyi kaldırabilir veya bir yöneticiyi sahip yapabilir; bir yönetici de yöneticilikten ayrılabilir.
 
 - Aramalar: artık aramanın katılımcı listesindeki "Katılımcı ekle" düğmesiyle devam eden aramaya kişi ekleyebilirsiniz. Grup aramasında grubun henüz aramada olmayan üyeleri, özel aramada ise kişileriniz görünür ve arama, WhatsApp'ta olduğu gibi birkaç kişilik bir aramaya dönüşür. Daha önce aranıp henüz katılmamış kişi yeniden aranır. WPPConnect ve Neonize ile çalışır.
+
+- WPPConnect Server 2.10.78 sürümüne güncellendi; özel medya önbelleğini HTTP üzerinden sunmayı bırakır.
 
 - WPPConnect Server 2.10.75 sürümüne güncellendi; kimlik doğrulaması olmadan istek kabul eden bir Chatwoot webhook'unu düzeltir ve glob ile minimatch kütüphanelerindeki bir güvenlik açığını yamalar.
 
@@ -1937,11 +1967,14 @@ YENİLİKLER
 - Neonize: bir sesli mesaj alıntılandığında, süresi (örneğin 0:15) artık karşı tarafın WhatsApp'ındaki alıntı balonunda görünüyor, tıpkı WPPConnect'teki gibi (sorun #707).
 
 - Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="ro" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Apeluri: datele media și operațiile întârziate pentru dispozitive sau cameră rămân asociate apelului și fluxului de origine. Neonize procesează datele în cozi limitate, în afara buclei serverului, și păstrează cititorul după o eroare temporară de emitere. Numele WASAPI ambigue nu mai selectează primul dispozitiv găsit. Jurnalele apelurilor Neonize includ și rezumate ale nivelului semnalului, fără a salva conținutul audio, pentru a ajuta la investigarea lipsei sunetului. La redeschiderea ieșirii audio a unui apel, un flux vechi care nu se poate închide nu poate consuma sunetul noului flux; o eroare a referinței de ecou nu mai reduce la tăcere sunetul pregătit pentru redare.
 
 - Fila Media a conversațiilor și grupurilor: Ctrl+C pe un document, o fotografie, un video sau un fișier audio copiază acum fișierul în clipboard, ca în lista de mesaje, în loc să spună că mesajul nu a putut fi copiat. Elementul din meniul contextual este acum și „Copiază fișierul”.
 
@@ -1980,6 +2013,8 @@ NOUTĂȚI
 - Canale, ca în WhatsApp Web: în "Găsiți canale", Categorie (afaceri, divertisment, stil de viață, știri, organizații, persoane, sport) și Listă (recomandate, în tendințe, populare, noi) restrâng directorul. În canalele pe care le administrați, câmpul de mesaj se deschide pentru a publica actualizări text, o actualizare poate fi fixată sau anulată fixarea din meniul mesajului (Ctrl+Shift+P), iar cele fixate apar în "Mesaje fixate"; butonul "Administratori și urmăritori..." spune câți administratori are canalul și, pentru proprietar, invită un contact să fie administrator sau anulează invitația. Funcționează cu WPPConnect și cu Neonize. Fereastra arată proprietarul, administratorii, invitațiile în așteptare și urmăritorii: proprietarul poate face administrator un urmăritor, poate anula o invitație, poate elimina un administrator sau poate face proprietar un administrator, iar un administrator poate renunța la rol.
 
 - Apeluri: acum puteți adăuga persoane la apelul în curs, cu butonul "Adăugați participanți" din lista de participanți a apelului. Într-un apel de grup apar membrii grupului care nu sunt încă în apel; într-un apel privat, contactele dvs., iar apelul devine un apel cu mai multe persoane, ca în WhatsApp. Cine a fost deja apelat și nu a intrat este apelat din nou. Funcționează cu WPPConnect și cu Neonize.
+
+- WPPConnect Server a fost actualizat la 2.10.78, care nu mai servește prin HTTP memoria cache privată a fișierelor media.
 
 - WPPConnect Server a fost actualizat la 2.10.75, care repară un webhook Chatwoot ce accepta cereri fără autentificare și remediază o vulnerabilitate din bibliotecile glob și minimatch.
 
@@ -2258,11 +2293,14 @@ NOUTĂȚI
 - Neonize: când citezi un mesaj vocal, durata lui (de exemplu 0:15) apare acum în balonul de citat din WhatsApp-ul celeilalte persoane, ca în WPPConnect (problema #707).
 
 - Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="ar" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- المكالمات: تظل بيانات الصوت والفيديو ومهام أجهزة الصوت والكاميرا المتأخرة مرتبطة بالمكالمة والتدفق الأصليين. يعالج Neonize البيانات في طوابير محدودة خارج حلقة الخادم، ويستمر قارئ الصوت بعد خطأ مؤقت في الإرسال. لم تعد أسماء WASAPI الملتبسة تؤدي إلى اختيار أول جهاز مطابق. تتضمن سجلات مكالمات Neonize أيضًا ملخصات لمستوى الإشارة، دون حفظ محتوى الصوت، للمساعدة في البحث عن أسباب غياب الصوت. عند إعادة فتح خرج صوت المكالمة، لا يمكن لتدفق قديم تعذر إغلاقه استهلاك صوت التدفق الجديد؛ كما أن فشل إشارة مرجع الصدى لم يعد يكتم الصوت المُعد للتشغيل.
 
 - علامة تبويب الوسائط في المحادثات والمجموعات: Ctrl+C على مستند أو صورة أو فيديو أو ملف صوتي ينسخ الملف الآن إلى الحافظة كما في قائمة الرسائل، بدلًا من رسالة تعذر نسخ هذه الرسالة. وأصبح عنصر قائمة السياق أيضًا «نسخ الملف».
 
@@ -2301,6 +2339,8 @@ NOUTĂȚI
 - القنوات كما في WhatsApp Web: في "البحث عن قنوات" تُضيّق الفئة (الأعمال، الترفيه، نمط الحياة، الأخبار، المؤسسات، الأشخاص، الرياضة) وطريقة العرض (المقترحة، الرائجة، الشائعة، الجديدة) الدليل. في القنوات التي تشرف عليها يُفتح حقل الرسالة لنشر تحديثات نصية، ويمكن تثبيت تحديث أو إلغاء تثبيته من قائمة الرسالة (Ctrl+Shift+P) وتظهر المثبّتة في "الرسائل المثبتة"؛ ويذكر زر "المشرفون والمتابعون..." عدد مشرفي القناة، ولمالكها يدعو جهة اتصال لتكون مشرفًا أو يلغي الدعوة. يعمل مع WPPConnect ومع Neonize. تعرض هذه النافذة المالك والمشرفين والدعوات المعلّقة والمتابعين: يمكن للمالك تعيين متابع مشرفًا أو إلغاء دعوة أو إزالة مشرف أو تعيين مشرف مالكًا، ويمكن للمشرف التوقف عن الإشراف.
 
 - المكالمات: يمكنك الآن إضافة أشخاص إلى المكالمة الجارية من زر "إضافة مشاركين" في قائمة المشاركين في المكالمة. في مكالمة المجموعة يظهر أعضاء المجموعة غير الموجودين فيها بعد، وفي المكالمة الخاصة تظهر جهات اتصالك، وتصبح المكالمة مكالمة مع عدة أشخاص كما في WhatsApp. ويُتصل مجددًا بمن سبق الاتصال به ولم ينضم. يعمل مع WPPConnect ومع Neonize.
+
+- تم تحديث WPPConnect Server إلى 2.10.78، وهو يتوقف عن تقديم ذاكرة الوسائط الخاصة عبر HTTP.
 
 - تم تحديث WPPConnect Server إلى 2.10.75، وهو يصلح خطافًا ويبًا لـ Chatwoot كان يقبل الطلبات دون مصادقة، ويرقّع ثغرة في مكتبتي glob وminimatch.
 
@@ -2581,11 +2621,14 @@ NOUTĂȚI
 - Neonize: عند الاقتباس من رسالة صوتية تظهر الآن مدتها (مثل 0:15) في فقاعة الاقتباس في واتساب لدى الشخص الآخر، كما في WPPConnect (المشكلة #707).
 
 - الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize: manter o PID do aparelho em chamadas em grupo (meowcaller 0012) (#716)
+      <description xml:lang="it" sparkle:format="plain-text">- Portar o WPPConnect Server 2.10.78 (rota pública /files removida) (#719)
+- Fence stale call media and output stream callbacks (#718)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Chiamate: i dati multimediali e le operazioni ritardate di dispositivi o videocamera restano associati alla chiamata e al flusso originali. Neonize elabora i dati in code limitate fuori dal ciclo del server e mantiene il lettore dopo un errore temporaneo di invio. I nomi WASAPI ambigui non selezionano più il primo dispositivo corrispondente. I registri delle chiamate Neonize includono anche riepiloghi del livello del segnale, senza salvare il contenuto audio, per aiutare a indagare sull'assenza di suono. Quando si riapre l'uscita audio di una chiamata, un vecchio flusso che non riesce a chiudersi non può consumare l'audio del nuovo flusso; un errore nel riferimento dell'eco non silenzia più l'audio pronto per la riproduzione.
 
 - Scheda Media di chat e gruppi: Ctrl+C su un documento, una foto, un video o un audio ora copia il file negli appunti, come nell'elenco dei messaggi, invece di dire "Impossibile copiare questo messaggio". Anche la voce del menu contestuale è ora "Copia file".
 
@@ -2624,6 +2667,8 @@ WHAT'S NEW
 - Channels, as on WhatsApp Web: in "Find channels", Category (business, entertainment, lifestyle, news, organizations, people, sports) and View (recommended, trending, popular, new) narrow the directory. In the channels you administer, the message field opens to post text updates, an update can be pinned or unpinned from the message menu (Ctrl+Shift+P) and the pinned ones show in "Pinned messages"; the "Admins and followers..." button says how many admins the channel has and, for its owner, invites a contact to be an admin or cancels the invite. Works with WPPConnect and Neonize. That window lists the owner, the admins, the pending invites and the followers: the owner can make a follower an admin, cancel an invite, remove an admin or make an admin the owner, and an admin can stop being one.
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
+
+- WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
 - WPPConnect Server updated to 2.10.75, which fixes a Chatwoot webhook that accepted requests without authentication and patches a vulnerability in the glob and minimatch libraries.
 
@@ -2902,6 +2947,15 @@ WHAT'S NEW
 - Neonize: citando un messaggio vocale, ora la sua durata (ad esempio 0:15) compare nel fumetto della citazione sul WhatsApp dell'altra persona, come con WPPConnect (problema #707).
 
 - Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5332alpha/WinZapp-macOS-x86_64.zip" length="349926116" type="application/octet-stream" sparkle:edSignature="RmeyQo/1hZQEH2JvjLhzlqDfB2tx57+vm577sCt8pauUusBgY/qCQIu1M859tGB1bhgd3urLdRvi6L76PlgOBQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5326alpha</title>
+      <pubDate>Sat, 07 Nov 2026 04:00:01 +0000</pubDate>
+      <sparkle:version>3.0.0.53261</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5326alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5326alpha/WinZapp-macOS-x86_64.zip" length="348740535" type="application/octet-stream" sparkle:edSignature="k1j0M/YXHecH1kv2auXuMJkrwHCpetheFikiMbYPKoEHnoxX+olRRqiJbaATyypN9ii+vQWVJeNc/WK9gM27AA=="></enclosure>
     </item>
     <item>
@@ -2930,15 +2984,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5316alpha/WinZapp-macOS-x86_64.zip" length="348806440" type="application/octet-stream" sparkle:edSignature="4m27XS1K1nqqqZk85BAmjxsGoz1lC9z1mn/3hC20wOK3+iLxy0SOoD2zPigtqbG5WxbQILeBFxTg9dYbVaaqCA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5312alpha</title>
-      <pubDate>Fri, 06 Nov 2026 23:22:05 +0000</pubDate>
-      <sparkle:version>3.0.0.53121</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5312alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5312alpha/WinZapp-macOS-x86_64.zip" length="348806370" type="application/octet-stream" sparkle:edSignature="Dg3qvMbPju+mQhJLnynuBW6aQ6EMxli/viiqJfoLWmy5/gK337SI9cbSBgj2ZBTkFiW7Gg4reV8sbfplDk8sBg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4553,6 +4598,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 88dmdWlt27siGquvBG7izOvFgIdiMun06L0Y8WtoM8fWqRFk8umZv3tQhbOCgFz4yQQF+AIXc97ROVqU6ifkBQ==
-length: 833503
+edSignature: DMTTUEJTuyuie0ZZOc4vicx9zOuBne+YO4zYzoyRuXubZwxD3MtnDI3ncl9dg1ehQBPvgOM3F5PW03ph2BlkDA==
+length: 841657
 -->
