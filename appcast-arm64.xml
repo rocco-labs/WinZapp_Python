@@ -5,17 +5,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5316alpha</title>
-      <pubDate>Fri, 06 Nov 2026 23:52:48 +0000</pubDate>
-      <sparkle:version>3.0.0.53161</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5316alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5318alpha</title>
+      <pubDate>Sat, 07 Nov 2026 01:49:47 +0000</pubDate>
+      <sparkle:version>3.0.0.53181</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5318alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="en" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Media tab of chats and groups: Ctrl+C on a document, photo, video or audio now copies the file to the clipboard, as in the message list, instead of saying "Could not copy this message." The context menu item is now "Copy file" too.
+
+- The Open button now opens documents, photos, videos and other files in the external viewer under their real name, instead of a name like "tmpab12cd34", just as Save as already did.
 
 - Settings &gt; General &gt; Notifications gains "Order of group messages in toast notifications:", with "Participant name first" (the default, as before: "Gustavo in WinZapp | Developers and Testers") and "Group name first" (as in the official WhatsApp Desktop: "WinZapp | Developers and Testers, Gustavo"). The choice changes only the text of toast notifications; what the screen reader announces while the window is active stays the same.
 
@@ -322,11 +327,16 @@ WHAT'S NEW
 - Neonize: quoting a voice note now shows its duration (for example 0:15) in the quote bubble on the other person's WhatsApp, as with WPPConnect (issue #707).
 
 - Status: location, poll, contact-list and other types of contact statuses that showed as "Incompatible message" now appear with their proper label.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Aba Mídia das conversas e grupos: Ctrl+C num documento, foto, vídeo ou áudio agora copia o arquivo para a área de transferência, como na lista de mensagens, em vez de dizer "Não foi possível copiar esta mensagem". O item do menu de contexto também passou a ser "Copiar arquivo".
+
+- O botão Abrir agora abre documentos, fotos, vídeos e outros arquivos no visualizador externo com o nome real, em vez de um nome como "tmpab12cd34", como o Salvar como já fazia.
 
 - Configurações &gt; Geral &gt; Notificações ganha "Ordem das mensagens de grupo nas notificações toast:", com "Nome do participante primeiro" (padrão, como já era: "Gustavo em WinZapp | Desenvolvedores e Testers") e "Nome do grupo primeiro" (como no WhatsApp Desktop oficial: "WinZapp | Desenvolvedores e Testers, Gustavo"). A escolha muda só o texto das notificações toast; o que o leitor de tela anuncia com a janela ativa continua igual.
 
@@ -633,11 +643,16 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) agora aparece no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Status: localização, enquete, lista de contatos e outros tipos de status de contatos que apareciam como "Mensagem incompatível" agora são mostrados com o seu rótulo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Separador Multimédia das conversas e grupos: Ctrl+C num documento, foto, vídeo ou áudio passa a copiar o ficheiro para a área de transferência, como na lista de mensagens, em vez de dizer "Não foi possível copiar esta mensagem". O item do menu de contexto passou também a ser "Copiar ficheiro".
+
+- O botão Abrir passa a abrir documentos, fotografias, vídeos e outros ficheiros no visualizador externo com o nome real, em vez de um nome como "tmpab12cd34", como o Guardar como já fazia.
 
 - Definições &gt; Geral &gt; Notificações passa a ter "Ordem das mensagens de grupo nas notificações toast:", com "Nome do participante primeiro" (predefinição, como já era: "Gustavo em WinZapp | Desenvolvedores e Testers") e "Nome do grupo primeiro" (como no WhatsApp Desktop oficial: "WinZapp | Desenvolvedores e Testers, Gustavo"). A escolha altera apenas o texto das notificações toast; o que o leitor de ecrã anuncia com a janela ativa continua igual.
 
@@ -944,11 +959,16 @@ NOVIDADES
 - Neonize: ao citar uma mensagem de voz, a duração dela (por exemplo 0:15) passa a aparecer no balão de citação no WhatsApp da outra pessoa, como no WPPConnect (problema #707).
 
 - Estado: localização, sondagem, lista de contactos e outros tipos de estado de contactos que apareciam como "Mensagem incompatível" passam a ser mostrados com a sua etiqueta.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="es" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Pestaña Multimedia de chats y grupos: Ctrl+C sobre un documento, foto, vídeo o audio ahora copia el archivo al portapapeles, como en la lista de mensajes, en lugar de decir "No se pudo copiar este mensaje". El elemento del menú contextual también pasa a ser "Copiar archivo".
+
+- El botón Abrir ahora abre documentos, fotos, vídeos y otros archivos en el visor externo con su nombre real, en lugar de un nombre como "tmpab12cd34", como ya hacía Guardar como.
 
 - Configuración &gt; General &gt; Notificaciones incorpora "Orden de los mensajes de grupo en las notificaciones toast:", con "Primero el nombre del participante" (el valor predeterminado, como antes: "Gustavo en WinZapp | Desarrolladores y Testers") y "Primero el nombre del grupo" (como en el WhatsApp Desktop oficial: "WinZapp | Desarrolladores y Testers, Gustavo"). La elección cambia solo el texto de las notificaciones toast; lo que anuncia el lector de pantalla con la ventana activa sigue igual.
 
@@ -1255,11 +1275,16 @@ NOVEDADES
 - Neonize: al citar un mensaje de voz, ahora se muestra su duración (por ejemplo 0:15) en la burbuja de cita del WhatsApp de la otra persona, como en WPPConnect (incidencia #707).
 
 - Estados: ubicación, encuesta, lista de contactos y otros tipos de estados de contactos que aparecían como "Mensaje incompatible" ahora se muestran con su etiqueta.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="pl" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Karta Multimedia czatów i grup: Ctrl+C na dokumencie, zdjęciu, filmie lub nagraniu audio kopiuje teraz plik do schowka, tak jak na liście wiadomości, zamiast komunikatu o niemożności skopiowania wiadomości. Pozycja menu kontekstowego to teraz także „Kopiuj plik”.
+
+- Przycisk Otwórz otwiera teraz dokumenty, zdjęcia, filmy i inne pliki w zewnętrznej przeglądarce pod ich prawdziwą nazwą, a nie pod nazwą w rodzaju "tmpab12cd34", tak jak robiło to już Zapisz jako.
 
 - Ustawienia &gt; Ogólne &gt; Powiadomienia zyskują opcję "Kolejność wiadomości grupowych w powiadomieniach toast:" z wyborem "Najpierw nazwa uczestnika" (domyślnie, jak dotąd: "Gustavo w WinZapp | Deweloperzy i Testerzy") oraz "Najpierw nazwa grupy" (jak w oficjalnym WhatsApp Desktop: "WinZapp | Deweloperzy i Testerzy, Gustavo"). Wybór zmienia tylko tekst powiadomień toast; to, co czytnik ekranu ogłasza przy aktywnym oknie, pozostaje bez zmian.
 
@@ -1566,11 +1591,16 @@ NOWOŚCI
 - Neonize: cytowana wiadomość głosowa pokazuje teraz swój czas trwania (na przykład 0:15) w dymku cytatu w WhatsAppie drugiej osoby, tak jak w WPPConnect (zgłoszenie #707).
 
 - Statusy: lokalizacja, ankieta, lista kontaktów i inne typy statusów kontaktów, które pokazywały się jako „Niezgodna wiadomość”, mają teraz właściwą etykietę.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="tr" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Sohbet ve grupların Medya sekmesi: Bir belge, fotoğraf, video veya sesin üzerinde Ctrl+C artık "Bu mesaj kopyalanamadı" demek yerine, mesaj listesindeki gibi dosyayı panoya kopyalıyor. Bağlam menüsü öğesi de artık "Dosyayı kopyala".
+
+- Aç düğmesi artık belgeleri, fotoğrafları, videoları ve diğer dosyaları harici görüntüleyicide "tmpab12cd34" gibi bir ad yerine gerçek adıyla açıyor; Farklı kaydet zaten böyle yapıyordu.
 
 - Ayarlar &gt; Genel &gt; Bildirimler bölümüne "Toast bildirimlerinde grup iletilerinin sırası:" eklendi: "Önce katılımcı adı" (varsayılan, eskisi gibi: "Gustavo (WinZapp | Geliştiriciler ve Test Edenler)") ve "Önce grup adı" (resmî WhatsApp Desktop'taki gibi: "WinZapp | Geliştiriciler ve Test Edenler, Gustavo"). Seçim yalnızca toast bildirimlerinin metnini değiştirir; pencere etkinken ekran okuyucunun duyurduğu şey aynı kalır.
 
@@ -1877,11 +1907,16 @@ YENİLİKLER
 - Neonize: bir sesli mesaj alıntılandığında, süresi (örneğin 0:15) artık karşı tarafın WhatsApp'ındaki alıntı balonunda görünüyor, tıpkı WPPConnect'teki gibi (sorun #707).
 
 - Durumlar: konum, anket, kişi listesi ve "Uyumsuz mesaj" olarak görünen diğer kişi durumu türleri artık kendi etiketleriyle gösteriliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="ro" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Fila Media a conversațiilor și grupurilor: Ctrl+C pe un document, o fotografie, un video sau un fișier audio copiază acum fișierul în clipboard, ca în lista de mesaje, în loc să spună că mesajul nu a putut fi copiat. Elementul din meniul contextual este acum și „Copiază fișierul”.
+
+- Butonul Deschide deschide acum documente, fotografii, videoclipuri și alte fișiere în vizualizatorul extern sub numele lor real, în loc de un nume precum "tmpab12cd34", ca și Salvează ca până acum.
 
 - Setări &gt; General &gt; Notificări primește opțiunea "Ordinea mesajelor de grup în notificările toast:", cu "Mai întâi numele participantului" (implicit, ca până acum: "Gustavo în WinZapp | Dezvoltatori și Testeri") și "Mai întâi numele grupului" (ca în WhatsApp Desktop oficial: "WinZapp | Dezvoltatori și Testeri, Gustavo"). Alegerea schimbă doar textul notificărilor toast; ce anunță cititorul de ecran cât timp fereastra este activă rămâne neschimbat.
 
@@ -2188,11 +2223,16 @@ NOUTĂȚI
 - Neonize: când citezi un mesaj vocal, durata lui (de exemplu 0:15) apare acum în balonul de citat din WhatsApp-ul celeilalte persoane, ca în WPPConnect (problema #707).
 
 - Statusuri: locația, sondajul, lista de contacte și alte tipuri de statusuri ale contactelor care apăreau ca „Mesaj incompatibil” sunt acum afișate cu eticheta lor.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="ar" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- علامة تبويب الوسائط في المحادثات والمجموعات: Ctrl+C على مستند أو صورة أو فيديو أو ملف صوتي ينسخ الملف الآن إلى الحافظة كما في قائمة الرسائل، بدلًا من رسالة تعذر نسخ هذه الرسالة. وأصبح عنصر قائمة السياق أيضًا «نسخ الملف».
+
+- يفتح زر «فتح» الآن المستندات والصور ومقاطع الفيديو وغيرها من الملفات في العارض الخارجي باسمها الحقيقي بدلًا من اسم مثل «tmpab12cd34»، كما كان يفعل «حفظ باسم».
 
 - تتضمن الإعدادات &gt; عام &gt; الإشعارات الآن «ترتيب رسائل المجموعة في إشعارات Toast:» مع «اسم المشارك أولاً» (الافتراضي كما كان: «Gustavo في WinZapp | المطورون والمختبرون») و«اسم المجموعة أولاً» (كما في WhatsApp Desktop الرسمي: «WinZapp | المطورون والمختبرون، Gustavo»). يغيّر الاختيار نص إشعارات Toast فقط؛ وما يعلنه قارئ الشاشة والنافذة نشطة يبقى كما هو.
 
@@ -2501,11 +2541,16 @@ NOUTĂȚI
 - Neonize: عند الاقتباس من رسالة صوتية تظهر الآن مدتها (مثل 0:15) في فقاعة الاقتباس في واتساب لدى الشخص الآخر، كما في WPPConnect (المشكلة #707).
 
 - الحالات: الموقع والاستطلاع وقائمة جهات الاتصال وأنواع أخرى من حالات جهات الاتصال التي كانت تظهر كـ«رسالة غير متوافقة» تظهر الآن بتسميتها الصحيحة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Status: mostrar localização, enquete e outros tipos em vez de "Mensagem incompatível" (#711)
+      <description xml:lang="it" sparkle:format="plain-text">- Abrir mídia no visualizador externo com o nome real do arquivo (#712)
+- Corrige Ctrl+C em documentos na aba Mídia (#713)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Scheda Media di chat e gruppi: Ctrl+C su un documento, una foto, un video o un audio ora copia il file negli appunti, come nell'elenco dei messaggi, invece di dire "Impossibile copiare questo messaggio". Anche la voce del menu contestuale è ora "Copia file".
+
+- Il pulsante Apri ora apre documenti, foto, video e altri file nel visualizzatore esterno con il loro nome reale, invece di un nome come "tmpab12cd34", come già faceva Salva con nome.
 
 - Impostazioni &gt; Generale &gt; Notifiche aggiunge "Ordine dei messaggi di gruppo nelle notifiche toast:", con "Prima il nome del partecipante" (predefinito, come prima: "Gustavo in WinZapp | Sviluppatori e Tester") e "Prima il nome del gruppo" (come in WhatsApp Desktop ufficiale: "WinZapp | Sviluppatori e Tester, Gustavo"). La scelta cambia solo il testo delle notifiche toast; ciò che lo screen reader annuncia con la finestra attiva resta invariato.
 
@@ -2812,6 +2857,15 @@ WHAT'S NEW
 - Neonize: citando un messaggio vocale, ora la sua durata (ad esempio 0:15) compare nel fumetto della citazione sul WhatsApp dell'altra persona, come con WPPConnect (problema #707).
 
 - Stati: posizione, sondaggio, elenco di contatti e altri tipi di stati dei contatti che comparivano come "Messaggio incompatibile" ora sono mostrati con la loro etichetta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5318alpha/WinZapp-macOS-arm64.zip" length="310672841" type="application/octet-stream" sparkle:edSignature="nsJd4/UDJfetxfzM4Yni53yRTF+ABO3n+VtvORPQ58R2yAEDj3CoWvxXcLmfJGqagFrdeD64skvmsSFpPtKICw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5316alpha</title>
+      <pubDate>Fri, 06 Nov 2026 23:52:48 +0000</pubDate>
+      <sparkle:version>3.0.0.53161</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5316alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5316alpha/WinZapp-macOS-arm64.zip" length="310741894" type="application/octet-stream" sparkle:edSignature="3/zTc8i/WMRFfLNb1rDnGzXSLjB/0nUh+QwA8C94TAPLQ0zyb+52fkZM7Xb+Sh7ELX7bhu+hHneoqCWn7v9pAQ=="></enclosure>
     </item>
     <item>
@@ -2840,15 +2894,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5307alpha/WinZapp-macOS-arm64.zip" length="314804298" type="application/octet-stream" sparkle:edSignature="FM9GhiIOjkteRBkSHcw7yO3QXeOLNyeqzkFrhVrh9lb7ZIWIhhPA4b91RLbClLLds86kHaqT1FJvCu++Ko37Ag=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5272alpha</title>
-      <pubDate>Fri, 06 Nov 2026 13:42:09 +0000</pubDate>
-      <sparkle:version>3.0.0.52721</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5272alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5272alpha/WinZapp-macOS-arm64.zip" length="314681024" type="application/octet-stream" sparkle:edSignature="0jsdVUL8c34bf4i0lRVIeowwsDTC3D6udVXSbfLB6C1F3ocNCxrcnwLDA8zy+FkftIwTgZPEdYPYyArBCoJVAA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4463,6 +4508,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: X0Mh8jqYmCpmHi5Gx3ahTz02eizdlpw9ot2Je6jEjGhjqDF8LVLHr+Z+qAVKD0OwgUjBU6JxW21saZogaaxeBg==
-length: 821510
+edSignature: pOhyjMyY75Wx+nYawVNbp6pQsqZh+OeWQytKb8oAGJw0xU2MHSXO4Q+Ou+3qx81Qu/qxvNTDb1nZ8j7af9hqAQ==
+length: 826201
 -->
