@@ -5,19 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5353alpha</title>
-      <pubDate>Sun, 08 Nov 2026 16:01:43 +0000</pubDate>
-      <sparkle:version>3.0.0.53531</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5353alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5354alpha</title>
+      <pubDate>Sun, 08 Nov 2026 22:00:05 +0000</pubDate>
+      <sparkle:version>3.0.0.53541</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5354alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="en" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Messages: conflicting alternate identities no longer route messages sent to or received from another person into your self-chat. Invalid aliases are ignored; unresolved messages stay with their original chat until the identity is resolved.
 
 - Unread filter: after updating or restarting the program, some conversations with unread messages disappeared from the filter (for example, 12 became 9) until you resynced with F5. The count now looks at the conversation's newest messages instead of its oldest.
 
@@ -352,13 +352,13 @@ WHAT'S NEW
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens: identidades alternativas conflitantes não direcionam mais mensagens enviadas a outra pessoa ou recebidas dela para a conversa com você mesmo. Correspondências inválidas são ignoradas; as mensagens permanecem no chat original até a identidade ser resolvida.
 
 - Filtro de não lidas: depois de atualizar ou reiniciar o programa, algumas conversas com mensagens não lidas deixavam de aparecer no filtro (por exemplo, 12 viravam 9) até você ressincronizar com F5. A contagem agora olha as mensagens mais recentes da conversa, e não as mais antigas.
 
@@ -693,13 +693,13 @@ NOVIDADES
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Mensagens: identidades alternativas em conflito já não encaminham mensagens enviadas a outra pessoa ou recebidas dela para a conversa consigo mesmo. As correspondências inválidas são ignoradas; as mensagens permanecem no chat original até a identidade ser resolvida.
 
 - Filtro de não lidas: depois de atualizar ou reiniciar o programa, algumas conversas com mensagens não lidas deixavam de aparecer no filtro (por exemplo, 12 passavam a 9) até ressincronizar com F5. A contagem passa a olhar para as mensagens mais recentes da conversa, e não para as mais antigas.
 
@@ -1034,13 +1034,13 @@ NOVIDADES
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="es" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Mensajes: las identidades alternativas contradictorias ya no desvían los mensajes enviados a otra persona o recibidos de ella al chat contigo mismo. Se ignoran las correspondencias no válidas; los mensajes permanecen en el chat original hasta que se resuelva la identidad.
 
 - Filtro de no leídos: tras actualizar o reiniciar el programa, algunas conversaciones con mensajes no leídos desaparecían del filtro (por ejemplo, 12 pasaban a 9) hasta que resincronizabas con F5. Ahora el recuento mira los mensajes más recientes de la conversación y no los más antiguos.
 
@@ -1375,13 +1375,13 @@ NOVEDADES
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="pl" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Wiadomości: sprzeczne identyfikatory alternatywne nie kierują już wiadomości wysyłanych do innej osoby ani odbieranych od niej do czatu z samym sobą. Nieprawidłowe powiązania są pomijane, a wiadomości pozostają w pierwotnym czacie do czasu ustalenia tożsamości.
 
 - Filtr nieprzeczytanych: po aktualizacji lub ponownym uruchomieniu programu niektóre rozmowy z nieprzeczytanymi wiadomościami znikały z filtra (na przykład z 12 robiło się 9), dopóki nie zsynchronizowano ponownie klawiszem F5. Liczenie bierze teraz pod uwagę najnowsze wiadomości rozmowy, a nie najstarsze.
 
@@ -1716,13 +1716,13 @@ NOWOŚCI
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="tr" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Mesajlar: hatalı alternatif kimlik eşlemeleri, başka biriyle gönderip aldığınız mesajları artık kendinizle sohbetinize yönlendirmiyor. Geçersiz eşlemeler kullanılmıyor; kimliği henüz çözülemeyen mesajlar özgün sohbetinde tutuluyor.
 
 - Okunmamış filtresi: programı güncelledikten veya yeniden başlattıktan sonra okunmamış mesajı olan bazı sohbetler, F5 ile yeniden eşitleyene kadar filtreden kayboluyordu (örneğin 12 sohbet 9'a düşüyordu). Sayım artık sohbetin en eski mesajlarına değil, en yeni mesajlarına bakıyor.
 
@@ -2057,13 +2057,13 @@ YENİLİKLER
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="ro" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Mesaje: identitățile alternative contradictorii nu mai direcționează mesajele trimise altei persoane sau primite de la aceasta către conversația cu tine însuți. Asocierile nevalide sunt ignorate; mesajele rămân în conversația originală până la identificarea persoanei.
 
 - Filtrul pentru necitite: după actualizarea sau repornirea programului, unele conversații cu mesaje necitite dispăreau din filtru (de exemplu, din 12 rămâneau 9) până când resincronizai cu F5. Numărătoarea ia acum în calcul cele mai noi mesaje ale conversației, nu cele mai vechi.
 
@@ -2398,13 +2398,13 @@ NOUTĂȚI
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="ar" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- الرسائل: لم تعد تعارضات المعرّفات البديلة تنقل الرسائل المرسلة إلى شخص آخر أو الواردة منه إلى دردشتك مع نفسك. يتم تجاهل الروابط غير الصالحة، وتبقى الرسائل في دردشتها الأصلية حتى يتم تحديد الهوية.
 
 - مرشح غير المقروءة: بعد تحديث البرنامج أو إعادة تشغيله، كانت بعض المحادثات التي تحتوي على رسائل غير مقروءة تختفي من المرشح (مثلًا يصبح 12 محادثة 9) إلى أن تعيد المزامنة بالمفتاح F5. صار العدّ ينظر الآن إلى أحدث رسائل المحادثة بدلًا من أقدمها.
 
@@ -2741,13 +2741,13 @@ NOUTĂȚI
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
-- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
-- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
+      <description xml:lang="it" sparkle:format="plain-text">- Keep peer messages out of the self-chat when alternate identities conflict (#730)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Messaggi: le identità alternative in conflitto non spostano più i messaggi inviati a un'altra persona o ricevuti da essa nella chat con te stesso. Le associazioni non valide vengono ignorate; i messaggi rimangono nella chat originale finché l'identità non viene risolta.
 
 - Unread filter: after updating or restarting the program, some conversations with unread messages disappeared from the filter (for example, 12 became 9) until you resynced with F5. The count now looks at the conversation's newest messages instead of its oldest.
 
@@ -3082,6 +3082,15 @@ WHAT'S NEW
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5354alpha/WinZapp-macOS-arm64.zip" length="312047512" type="application/octet-stream" sparkle:edSignature="kt+Lp/qBMErIHZdSsls6727Rbwewa36P7Kf5QrANqJrLRNMKM1snBHzkAK8uNMhOmwzSp5sh7J/AHQEq1UmuCQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5353alpha</title>
+      <pubDate>Sun, 08 Nov 2026 16:01:43 +0000</pubDate>
+      <sparkle:version>3.0.0.53531</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5353alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5353alpha/WinZapp-macOS-arm64.zip" length="311973768" type="application/octet-stream" sparkle:edSignature="oEBpc3CeXpLOkxOuWbm7V191L/cCr0cZoesX57dbgpq0TQSr2OjbmMqiQo/LMj03H09BHbIlmLaVRDyY2AQeAA=="></enclosure>
     </item>
     <item>
@@ -3110,15 +3119,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5336alpha/WinZapp-macOS-arm64.zip" length="311840452" type="application/octet-stream" sparkle:edSignature="ZFhP8zzbZJ71YhuWCArWjpsKp2CgZ4CLS4wisffAavtbN4NsdrFEokxohRHx5Wotb3D7+x6qKnmYNM7wIxVVDA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5335alpha</title>
-      <pubDate>Sat, 07 Nov 2026 17:18:25 +0000</pubDate>
-      <sparkle:version>3.0.0.53351</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5335alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5335alpha/WinZapp-macOS-arm64.zip" length="311838578" type="application/octet-stream" sparkle:edSignature="5fjddvYxbMss19H9f9FBPN5j5gxheY/BWl4YTUOTWAUxnIj8NrkOZTODYIY4zb9xYEFqr+lUWlQb0SlutGjcCg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4733,6 +4733,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Le7rhwDBUTBQkqaonC7ZvP3SnMph81CHlVwWx2n3V+dd3A1vrnrOlNZvV+2GPiSEMcR3bPWFakSgBFCUsxFDAQ==
-length: 859794
+edSignature: uq47PHiDWIwtcTNLDQ4b1brCA4IfubR3z2b6HmA+hG7t+6VPj9YZ38Bf164nR3sA//aYQmz5XOr/bC9gVnwfAg==
+length: 861103
 -->
