@@ -5,17 +5,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5346alpha</title>
-      <pubDate>Sat, 07 Nov 2026 21:54:42 +0000</pubDate>
-      <sparkle:version>3.0.0.53461</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5346alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5353alpha</title>
+      <pubDate>Sun, 08 Nov 2026 16:01:43 +0000</pubDate>
+      <sparkle:version>3.0.0.53531</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5353alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Unread filter: after updating or restarting the program, some conversations with unread messages disappeared from the filter (for example, 12 became 9) until you resynced with F5. The count now looks at the conversation's newest messages instead of its oldest.
 
 - Calls: the "Add participants" window now works with a screen reader. People are marked with the same keys, sound and announcements as in the conversation and message lists (Ctrl+Space, Space while something is marked, Shift+arrows, Ctrl+Shift+Space, Esc), and the result is spoken: who was invited, who could not be added, or why the request failed.
 
@@ -62,6 +66,8 @@ WHAT'S NEW
 - Channels, as on WhatsApp Web: in "Find channels", Category (business, entertainment, lifestyle, news, organizations, people, sports) and View (recommended, trending, popular, new) narrow the directory. In the channels you administer, the message field opens to post text updates, an update can be pinned or unpinned from the message menu (Ctrl+Shift+P) and the pinned ones show in "Pinned messages"; the "Admins and followers..." button says how many admins the channel has and, for its owner, invites a contact to be an admin or cancels the invite. Works with WPPConnect and Neonize. That window lists the owner, the admins, the pending invites and the followers: the owner can make a follower an admin, cancel an invite, remove an admin or make an admin the owner, and an admin can stop being one.
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
+
+- The experimental Neonize engine was updated from 0.6.0 to 0.10.0. A chat deleted on the phone now disappears from WinZapp too, and marking a chat as read or unread on the phone updates the unread counter again.
 
 - WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
@@ -346,11 +352,15 @@ WHAT'S NEW
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Filtro de não lidas: depois de atualizar ou reiniciar o programa, algumas conversas com mensagens não lidas deixavam de aparecer no filtro (por exemplo, 12 viravam 9) até você ressincronizar com F5. A contagem agora olha as mensagens mais recentes da conversa, e não as mais antigas.
 
 - Chamadas: a janela "Adicionar participantes" agora funciona com leitor de tela. As pessoas são marcadas com as mesmas teclas, som e anúncios das listas de conversas e mensagens (Ctrl+Espaço, Espaço enquanto houver algo marcado, Shift+setas, Ctrl+Shift+Espaço, Esc), e o resultado é falado: quem foi convidado, quem não pôde ser adicionado ou por que o pedido falhou.
 
@@ -397,6 +407,8 @@ NOVIDADES
 - Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, esportes) e Lista (recomendados, em alta, populares, novos) filtram o diretório. Nos canais que você administra, o campo de mensagem fica liberado para postar atualizações de texto, uma atualização pode ser fixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as fixadas aparecem em "Mensagens fixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contato para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de sê-lo.
 
 - Chamadas: agora dá para adicionar pessoas à chamada em andamento, pelo botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada em grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contatos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado de novo. Funciona com a WPPConnect e com o Neonize.
+
+- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.10.0. Uma conversa apagada no celular agora também some do WinZapp, e marcar uma conversa como lida ou não lida no celular volta a atualizar o contador de não lidas.
 
 - O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir o cache privado de mídia por HTTP.
 
@@ -681,11 +693,15 @@ NOVIDADES
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Filtro de não lidas: depois de atualizar ou reiniciar o programa, algumas conversas com mensagens não lidas deixavam de aparecer no filtro (por exemplo, 12 passavam a 9) até ressincronizar com F5. A contagem passa a olhar para as mensagens mais recentes da conversa, e não para as mais antigas.
 
 - Chamadas: a janela "Adicionar participantes" passa a funcionar com leitor de ecrã. As pessoas são marcadas com as mesmas teclas, som e anúncios das listas de conversas e mensagens (Ctrl+Espaço, Espaço enquanto houver algo marcado, Shift+setas, Ctrl+Shift+Espaço, Esc), e o resultado é dito em voz alta: quem foi convidado, quem não pôde ser adicionado ou porque falhou o pedido.
 
@@ -732,6 +748,8 @@ NOVIDADES
 - Canais, como no WhatsApp Web: em "Encontrar canais", Categoria (negócios, entretenimento, estilo de vida, notícias, organizações, pessoas, desporto) e Lista (recomendados, tendências, populares, novos) filtram o diretório. Nos canais que administra, o campo de mensagem fica disponível para publicar atualizações de texto, uma atualização pode ser afixada ou desafixada pelo menu da mensagem (Ctrl+Shift+P) e as afixadas aparecem em "Mensagens afixadas"; o botão "Administradores e seguidores..." mostra quantos administradores o canal tem e, para o dono, convida um contacto para ser administrador ou cancela o convite. Funciona com a WPPConnect e com o Neonize. Essa janela lista o dono, os administradores, os convites pendentes e os seguidores: o dono pode tornar um seguidor administrador, cancelar um convite, remover um administrador ou tornar um administrador o dono, e um administrador pode deixar de o ser.
 
 - Chamadas: já é possível adicionar pessoas à chamada em curso, com o botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada de grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contactos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado outra vez. Funciona com a WPPConnect e com o Neonize.
+
+- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.10.0. Uma conversa apagada no telemóvel passa a desaparecer também do WinZapp, e marcar uma conversa como lida ou não lida no telemóvel volta a atualizar o contador de não lidas.
 
 - O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir a cache privada de multimédia por HTTP.
 
@@ -1016,11 +1034,15 @@ NOVIDADES
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Filtro de no leídos: tras actualizar o reiniciar el programa, algunas conversaciones con mensajes no leídos desaparecían del filtro (por ejemplo, 12 pasaban a 9) hasta que resincronizabas con F5. Ahora el recuento mira los mensajes más recientes de la conversación y no los más antiguos.
 
 - Llamadas: la ventana «Añadir participantes» ya funciona con lector de pantalla. Las personas se marcan con las mismas teclas, el mismo sonido y los mismos anuncios que en las listas de conversaciones y mensajes (Ctrl+Espacio, Espacio mientras haya algo marcado, Mayús+flechas, Ctrl+Mayús+Espacio, Esc), y se dice el resultado: quién fue invitado, a quién no se pudo añadir o por qué falló la solicitud.
 
@@ -1067,6 +1089,8 @@ NOVEDADES
 - Canales, como en WhatsApp Web: en "Buscar canales", Categoría (negocios, entretenimiento, estilo de vida, noticias, organizaciones, personas, deportes) y Lista (recomendados, tendencias, populares, nuevos) filtran el directorio. En los canales que administras, el campo de mensaje se habilita para publicar novedades de texto, una novedad se puede fijar o dejar de fijar desde el menú del mensaje (Ctrl+Shift+P) y las fijadas aparecen en "Mensajes fijados"; el botón "Administradores y seguidores..." dice cuántos administradores tiene el canal y, para su propietario, invita a un contacto a ser administrador o cancela la invitación. Funciona con WPPConnect y con Neonize. Esa ventana muestra al propietario, los administradores, las invitaciones pendientes y los seguidores: el propietario puede hacer administrador a un seguidor, cancelar una invitación, quitar a un administrador o hacer propietario a un administrador, y un administrador puede dejar de serlo.
 
 - Llamadas: ahora puedes añadir personas a la llamada en curso, con el botón "Añadir participantes" de la lista de participantes de la llamada. En una llamada de grupo aparecen los miembros del grupo que aún no están en ella; en una llamada privada, tus contactos, y la llamada pasa a tener varias personas, como en WhatsApp. A quien ya se llamó y aún no entró se le vuelve a llamar. Funciona con WPPConnect y con Neonize.
+
+- El motor experimental Neonize se actualizó de la versión 0.6.0 a la 0.10.0. Un chat eliminado en el teléfono ahora también desaparece de WinZapp, y marcar un chat como leído o no leído en el teléfono vuelve a actualizar el contador de no leídos.
 
 - WPPConnect Server actualizado a la 2.10.78, que deja de servir por HTTP la caché privada de multimedia.
 
@@ -1351,11 +1375,15 @@ NOVEDADES
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Filtr nieprzeczytanych: po aktualizacji lub ponownym uruchomieniu programu niektóre rozmowy z nieprzeczytanymi wiadomościami znikały z filtra (na przykład z 12 robiło się 9), dopóki nie zsynchronizowano ponownie klawiszem F5. Liczenie bierze teraz pod uwagę najnowsze wiadomości rozmowy, a nie najstarsze.
 
 - Połączenia: okno „Dodaj uczestników” działa teraz z czytnikiem ekranu. Osoby zaznacza się tymi samymi klawiszami, dźwiękiem i komunikatami co na listach czatów i wiadomości (Ctrl+Spacja, Spacja, gdy coś jest zaznaczone, Shift+strzałki, Ctrl+Shift+Spacja, Esc), a wynik jest odczytywany: kto został zaproszony, kogo nie udało się dodać lub dlaczego żądanie się nie powiodło.
 
@@ -1402,6 +1430,8 @@ NOWOŚCI
 - Kanały jak w WhatsApp Web: w "Znajdź kanały" Kategoria (biznes, rozrywka, styl życia, informacje, organizacje, ludzie, sport) i Lista (polecane, na czasie, popularne, nowe) zawężają katalog. W kanałach, którymi administrujesz, pole wiadomości pozwala publikować aktualizacje tekstowe, aktualizację można przypiąć lub odpiąć z menu wiadomości (Ctrl+Shift+P), a przypięte pojawiają się w "Przypięte wiadomości"; przycisk "Administratorzy i obserwujący..." podaje liczbę administratorów kanału, a właścicielowi pozwala zaprosić kontakt do roli administratora lub anulować zaproszenie. Działa z WPPConnect i z Neonize. To okno pokazuje właściciela, administratorów, oczekujące zaproszenia i obserwujących: właściciel może uczynić obserwującego administratorem, anulować zaproszenie, usunąć administratora lub uczynić administratora właścicielem, a administrator może przestać nim być.
 
 - Połączenia: do trwającego połączenia można teraz dodawać osoby przyciskiem "Dodaj uczestników" na liście uczestników połączenia. W połączeniu grupowym widać członków grupy, których jeszcze w nim nie ma; w połączeniu prywatnym Twoje kontakty, a połączenie staje się połączeniem z kilkoma osobami, jak w WhatsAppie. Do osoby, która została już wezwana i nie dołączyła, dzwoni się ponownie. Działa z WPPConnect i z Neonize.
+
+- Eksperymentalny silnik Neonize został zaktualizowany z wersji 0.6.0 do 0.10.0. Rozmowa usunięta na telefonie znika teraz także z WinZapp, a oznaczenie rozmowy jako przeczytanej lub nieprzeczytanej na telefonie znów aktualizuje licznik nieprzeczytanych.
 
 - WPPConnect Server zaktualizowany do 2.10.78, która przestaje udostępniać prywatną pamięć podręczną multimediów przez HTTP.
 
@@ -1686,11 +1716,15 @@ NOWOŚCI
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Okunmamış filtresi: programı güncelledikten veya yeniden başlattıktan sonra okunmamış mesajı olan bazı sohbetler, F5 ile yeniden eşitleyene kadar filtreden kayboluyordu (örneğin 12 sohbet 9'a düşüyordu). Sayım artık sohbetin en eski mesajlarına değil, en yeni mesajlarına bakıyor.
 
 - Aramalar: «Katılımcı ekle» penceresi artık ekran okuyucuyla çalışıyor. Kişiler, konuşma ve mesaj listelerindeki aynı tuşlar, ses ve duyurularla işaretlenir (Ctrl+Boşluk, bir şey işaretliyken Boşluk, Shift+oklar, Ctrl+Shift+Boşluk, Esc) ve sonuç sesli okunur: kimin davet edildiği, kimin eklenemediği veya isteğin neden başarısız olduğu.
 
@@ -1737,6 +1771,8 @@ YENİLİKLER
 - WhatsApp Web'deki gibi kanallar: "Kanal bul" bölümünde Kategori (işletme, eğlence, yaşam tarzı, haberler, kuruluşlar, kişiler, spor) ve Görünüm (önerilenler, gündemdekiler, popüler, yeni) dizini daraltır. Yönettiğiniz kanallarda mesaj alanı metin güncellemeleri paylaşmak için açılır, bir güncelleme mesaj menüsünden (Ctrl+Shift+P) sabitlenebilir veya sabitlemesi kaldırılabilir ve sabitlenenler "Sabitlenen mesajlar" içinde görünür; "Yöneticiler ve takipçiler..." düğmesi kanalın kaç yöneticisi olduğunu söyler ve kanal sahibi için bir kişiyi yönetici olmaya davet eder veya daveti iptal eder. WPPConnect ve Neonize ile çalışır. Bu pencere sahibi, yöneticileri, bekleyen davetleri ve takipçileri listeler: sahip bir takipçiyi yönetici yapabilir, bir daveti iptal edebilir, bir yöneticiyi kaldırabilir veya bir yöneticiyi sahip yapabilir; bir yönetici de yöneticilikten ayrılabilir.
 
 - Aramalar: artık aramanın katılımcı listesindeki "Katılımcı ekle" düğmesiyle devam eden aramaya kişi ekleyebilirsiniz. Grup aramasında grubun henüz aramada olmayan üyeleri, özel aramada ise kişileriniz görünür ve arama, WhatsApp'ta olduğu gibi birkaç kişilik bir aramaya dönüşür. Daha önce aranıp henüz katılmamış kişi yeniden aranır. WPPConnect ve Neonize ile çalışır.
+
+- Deneysel Neonize motoru 0.6.0 sürümünden 0.10.0 sürümüne güncellendi. Telefonda silinen bir sohbet artık WinZapp'ten de kaybolur ve telefonda bir sohbeti okundu ya da okunmadı olarak işaretlemek okunmamış sayacını yeniden günceller.
 
 - WPPConnect Server 2.10.78 sürümüne güncellendi; özel medya önbelleğini HTTP üzerinden sunmayı bırakır.
 
@@ -2021,11 +2057,15 @@ YENİLİKLER
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Filtrul pentru necitite: după actualizarea sau repornirea programului, unele conversații cu mesaje necitite dispăreau din filtru (de exemplu, din 12 rămâneau 9) până când resincronizai cu F5. Numărătoarea ia acum în calcul cele mai noi mesaje ale conversației, nu cele mai vechi.
 
 - Apeluri: fereastra „Adaugă participanți” funcționează acum cu cititorul de ecran. Persoanele se marchează cu aceleași taste, același sunet și aceleași anunțuri ca în listele de conversații și mesaje (Ctrl+Spațiu, Spațiu cât timp este ceva marcat, Shift+săgeți, Ctrl+Shift+Spațiu, Esc), iar rezultatul este rostit: cine a fost invitat, cine nu a putut fi adăugat sau de ce a eșuat cererea.
 
@@ -2072,6 +2112,8 @@ NOUTĂȚI
 - Canale, ca în WhatsApp Web: în "Găsiți canale", Categorie (afaceri, divertisment, stil de viață, știri, organizații, persoane, sport) și Listă (recomandate, în tendințe, populare, noi) restrâng directorul. În canalele pe care le administrați, câmpul de mesaj se deschide pentru a publica actualizări text, o actualizare poate fi fixată sau anulată fixarea din meniul mesajului (Ctrl+Shift+P), iar cele fixate apar în "Mesaje fixate"; butonul "Administratori și urmăritori..." spune câți administratori are canalul și, pentru proprietar, invită un contact să fie administrator sau anulează invitația. Funcționează cu WPPConnect și cu Neonize. Fereastra arată proprietarul, administratorii, invitațiile în așteptare și urmăritorii: proprietarul poate face administrator un urmăritor, poate anula o invitație, poate elimina un administrator sau poate face proprietar un administrator, iar un administrator poate renunța la rol.
 
 - Apeluri: acum puteți adăuga persoane la apelul în curs, cu butonul "Adăugați participanți" din lista de participanți a apelului. Într-un apel de grup apar membrii grupului care nu sunt încă în apel; într-un apel privat, contactele dvs., iar apelul devine un apel cu mai multe persoane, ca în WhatsApp. Cine a fost deja apelat și nu a intrat este apelat din nou. Funcționează cu WPPConnect și cu Neonize.
+
+- Motorul experimental Neonize a fost actualizat de la versiunea 0.6.0 la 0.10.0. O conversație ștearsă pe telefon dispare acum și din WinZapp, iar marcarea unei conversații ca citită sau necitită pe telefon actualizează din nou contorul de necitite.
 
 - WPPConnect Server a fost actualizat la 2.10.78, care nu mai servește prin HTTP memoria cache privată a fișierelor media.
 
@@ -2356,11 +2398,15 @@ NOUTĂȚI
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- مرشح غير المقروءة: بعد تحديث البرنامج أو إعادة تشغيله، كانت بعض المحادثات التي تحتوي على رسائل غير مقروءة تختفي من المرشح (مثلًا يصبح 12 محادثة 9) إلى أن تعيد المزامنة بالمفتاح F5. صار العدّ ينظر الآن إلى أحدث رسائل المحادثة بدلًا من أقدمها.
 
 - المكالمات: صارت نافذة «إضافة مشاركين» تعمل مع قارئ الشاشة. يتم تحديد الأشخاص بالمفاتيح والصوت والإعلانات نفسها المستخدمة في قوائم المحادثات والرسائل (Ctrl+مسافة، والمسافة ما دام هناك عنصر محدد، وShift+الأسهم، وCtrl+Shift+مسافة، وEsc)، ويُنطق الناتج: من تمت دعوته، ومن تعذّرت إضافته، أو سبب فشل الطلب.
 
@@ -2407,6 +2453,8 @@ NOUTĂȚI
 - القنوات كما في WhatsApp Web: في "البحث عن قنوات" تُضيّق الفئة (الأعمال، الترفيه، نمط الحياة، الأخبار، المؤسسات، الأشخاص، الرياضة) وطريقة العرض (المقترحة، الرائجة، الشائعة، الجديدة) الدليل. في القنوات التي تشرف عليها يُفتح حقل الرسالة لنشر تحديثات نصية، ويمكن تثبيت تحديث أو إلغاء تثبيته من قائمة الرسالة (Ctrl+Shift+P) وتظهر المثبّتة في "الرسائل المثبتة"؛ ويذكر زر "المشرفون والمتابعون..." عدد مشرفي القناة، ولمالكها يدعو جهة اتصال لتكون مشرفًا أو يلغي الدعوة. يعمل مع WPPConnect ومع Neonize. تعرض هذه النافذة المالك والمشرفين والدعوات المعلّقة والمتابعين: يمكن للمالك تعيين متابع مشرفًا أو إلغاء دعوة أو إزالة مشرف أو تعيين مشرف مالكًا، ويمكن للمشرف التوقف عن الإشراف.
 
 - المكالمات: يمكنك الآن إضافة أشخاص إلى المكالمة الجارية من زر "إضافة مشاركين" في قائمة المشاركين في المكالمة. في مكالمة المجموعة يظهر أعضاء المجموعة غير الموجودين فيها بعد، وفي المكالمة الخاصة تظهر جهات اتصالك، وتصبح المكالمة مكالمة مع عدة أشخاص كما في WhatsApp. ويُتصل مجددًا بمن سبق الاتصال به ولم ينضم. يعمل مع WPPConnect ومع Neonize.
+
+- تم تحديث محرك Neonize التجريبي من الإصدار 0.6.0 إلى 0.10.0. المحادثة التي تُحذف على الهاتف تختفي الآن من WinZapp أيضًا، وتعليم محادثة كمقروءة أو غير مقروءة على الهاتف يحدّث عدّاد غير المقروءة من جديد.
 
 - تم تحديث WPPConnect Server إلى 2.10.78، وهو يتوقف عن تقديم ذاكرة الوسائط الخاصة عبر HTTP.
 
@@ -2693,11 +2741,15 @@ NOUTĂȚI
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize: mostrar status "Adicione o seu", de pergunta e figurinha animada (#724)
+      <description xml:lang="it" sparkle:format="plain-text">- Fix unread chats vanishing from the unread filter after update (#725)
+- docs: regra para rodar agentes do projeto quando a sessão não os registra (#726)
+- Neonize 0.10.0: portar os patches e aprovar a versão (#727)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Unread filter: after updating or restarting the program, some conversations with unread messages disappeared from the filter (for example, 12 became 9) until you resynced with F5. The count now looks at the conversation's newest messages instead of its oldest.
 
 - Chiamate: la finestra «Aggiungi partecipanti» ora funziona con lo screen reader. Le persone si contrassegnano con gli stessi tasti, suoni e annunci degli elenchi di conversazioni e messaggi (Ctrl+Spazio, Spazio finché qualcosa è contrassegnato, Maiusc+frecce, Ctrl+Maiusc+Spazio, Esc) e il risultato viene letto: chi è stato invitato, chi non è stato possibile aggiungere o perché la richiesta è fallita.
 
@@ -2744,6 +2796,8 @@ WHAT'S NEW
 - Channels, as on WhatsApp Web: in "Find channels", Category (business, entertainment, lifestyle, news, organizations, people, sports) and View (recommended, trending, popular, new) narrow the directory. In the channels you administer, the message field opens to post text updates, an update can be pinned or unpinned from the message menu (Ctrl+Shift+P) and the pinned ones show in "Pinned messages"; the "Admins and followers..." button says how many admins the channel has and, for its owner, invites a contact to be an admin or cancels the invite. Works with WPPConnect and Neonize. That window lists the owner, the admins, the pending invites and the followers: the owner can make a follower an admin, cancel an invite, remove an admin or make an admin the owner, and an admin can stop being one.
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
+
+- The experimental Neonize engine was updated from 0.6.0 to 0.10.0. A chat deleted on the phone now disappears from WinZapp too, and marking a chat as read or unread on the phone updates the unread counter again.
 
 - WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
@@ -3028,6 +3082,15 @@ WHAT'S NEW
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5353alpha/WinZapp-macOS-x86_64.zip" length="350063377" type="application/octet-stream" sparkle:edSignature="kfeWR/BH9xnsMMGp9BUVmV9549e0fVrRUnhToC52zdqB4jX4VLrA2uiVZoTd1QgOj2LXR62xvjiZHwKnGTpiDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5346alpha</title>
+      <pubDate>Sat, 07 Nov 2026 21:54:42 +0000</pubDate>
+      <sparkle:version>3.0.0.53461</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5346alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5346alpha/WinZapp-macOS-x86_64.zip" length="350084871" type="application/octet-stream" sparkle:edSignature="3BHR6XOJsGDOWO8DoZedR9Hc9dzmriEHktaLn70AUcvgEJvq1ZfSuqOnFQiyUzbMc8THtsu1ABjFxWutec6xBA=="></enclosure>
     </item>
     <item>
@@ -3056,15 +3119,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5335alpha/WinZapp-macOS-x86_64.zip" length="349928227" type="application/octet-stream" sparkle:edSignature="3T0cdtAHThZQVX7/OumpUUxjfFfM3xnatodLz/vuVY9M+XYDCMTipZHzJtIgRajyHV7ZnDnP8+0x/WJZbgr3Dw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5332alpha</title>
-      <pubDate>Sat, 07 Nov 2026 14:52:53 +0000</pubDate>
-      <sparkle:version>3.0.0.53321</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5332alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5332alpha/WinZapp-macOS-x86_64.zip" length="349926116" type="application/octet-stream" sparkle:edSignature="RmeyQo/1hZQEH2JvjLhzlqDfB2tx57+vm577sCt8pauUusBgY/qCQIu1M859tGB1bhgd3urLdRvi6L76PlgOBQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4679,6 +4733,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 2i2+TADuNUsR4ujnvAWTpW0xqm6xigBq5Y1pAGvMZJhgLOXVIqQuPGeZyD0IcjlPcmwgxR7lKUeNN259nM4WCw==
-length: 853497
+edSignature: /Dt0vrITZeXjmTXgIkZcH0f0UC++GEAEzsUaDY1ply7WcHkeWKSsWn3EDODOEWP6dauwhx6lHdJ9zihKUoGlAw==
+length: 859801
 -->
