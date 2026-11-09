@@ -5,17 +5,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5355alpha</title>
-      <pubDate>Mon, 09 Nov 2026 00:15:38 +0000</pubDate>
-      <sparkle:version>3.0.0.53551</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5355alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5359alpha</title>
+      <pubDate>Mon, 09 Nov 2026 15:06:20 +0000</pubDate>
+      <sparkle:version>3.0.0.53591</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5359alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="en" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Sounds: two new options in Settings, Sounds let you choose which sound plays for a new message while WinZapp is in the foreground, one for the open conversation and one for the other conversations. Each can keep the dedicated foreground sound, as before, or use the same notification sound you chose for messages in the background.
+
+- WhatsApp links: WinZapp now opens chat links. A wa.me or api.whatsapp.com link (for example from an airline, a shop or a website) opens the chat with that number, even if it is not in your contacts, puts the message from the link in the message field and leaves the focus there, ready for you to review and send. Links with only a number work too. The installed version now registers itself for WhatsApp links on its first launch, so WinZapp appears under Default apps in Windows; the portable version keeps the option in Settings, General.
+
+- Account manager: new check box "Connect all accounts when WinZapp starts". When it is on, starting WinZapp also opens every other paired account in the background.
+
+- Backup: the profile backup (in Settings &gt; Storage and the storage manager) is no longer shown when WinZapp runs with the Neonize engine, which has no browser profile to back up.
 
 - Messages: conflicting alternate identities no longer route messages sent to or received from another person into your self-chat. Invalid aliases are ignored; unresolved messages stay with their original chat until the identity is resolved.
 
@@ -352,11 +360,19 @@ WHAT'S NEW
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Sons: duas novas opções em Configurações, Sons permitem escolher o som tocado numa nova mensagem com o WinZapp em primeiro plano, uma para a conversa aberta e outra para as demais conversas. Cada uma pode manter o som dedicado de primeiro plano, como antes, ou usar o mesmo som de notificação escolhido para as mensagens em segundo plano.
+
+- Links do WhatsApp: o WinZapp agora abre links de conversa. Um link wa.me ou api.whatsapp.com (por exemplo, de uma companhia aérea, de uma loja ou de um site) abre a conversa com aquele número, mesmo que ele não esteja nos seus contatos, coloca a mensagem do link no campo de mensagem e deixa o foco ali, pronta para você revisar e enviar. Links só com o número também funcionam. A versão instalada agora se registra para links do WhatsApp na primeira vez que abre, e por isso o WinZapp aparece em Aplicativos padrão do Windows; na versão portátil a opção continua em Configurações, Geral.
+
+- Gerenciar contas: nova caixa de verificação "Conectar todas as contas ao iniciar o WinZapp". Quando ativada, ao iniciar o WinZapp todas as outras contas pareadas também são abertas em segundo plano.
+
+- Cópia de segurança: a cópia de segurança do perfil (em Configurações &gt; Armazenamento e no gerenciador de armazenamento) não aparece mais quando o WinZapp roda com o motor Neonize, que não tem perfil de navegador para copiar.
 
 - Mensagens: identidades alternativas conflitantes não direcionam mais mensagens enviadas a outra pessoa ou recebidas dela para a conversa com você mesmo. Correspondências inválidas são ignoradas; as mensagens permanecem no chat original até a identidade ser resolvida.
 
@@ -693,11 +709,19 @@ NOVIDADES
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Sons: duas novas opções em Definições, Sons permitem escolher o som tocado numa nova mensagem com o WinZapp em primeiro plano, uma para a conversa aberta e outra para as restantes conversas. Cada uma pode manter o som dedicado de primeiro plano, como antes, ou usar o mesmo som de notificação escolhido para as mensagens em segundo plano.
+
+- Ligações do WhatsApp: o WinZapp passa a abrir ligações de conversa. Uma ligação wa.me ou api.whatsapp.com (por exemplo, de uma companhia aérea, de uma loja ou de um site) abre a conversa com esse número, mesmo que não esteja nos seus contactos, coloca a mensagem da ligação no campo de mensagem e deixa o foco aí, pronta para rever e enviar. Ligações só com o número também funcionam. A versão instalada passa a registar-se para ligações do WhatsApp na primeira vez que abre, pelo que o WinZapp aparece em Aplicações predefinidas do Windows; na versão portátil a opção continua em Definições, Geral.
+
+- Gerir contas: nova caixa de verificação "Ligar todas as contas ao iniciar o WinZapp". Quando ativada, ao iniciar o WinZapp todas as outras contas emparelhadas também são abertas em segundo plano.
+
+- Cópia de segurança: a cópia de segurança do perfil (em Definições &gt; Armazenamento e no gestor de armazenamento) deixa de aparecer quando o WinZapp corre com o motor Neonize, que não tem perfil de navegador para copiar.
 
 - Mensagens: identidades alternativas em conflito já não encaminham mensagens enviadas a outra pessoa ou recebidas dela para a conversa consigo mesmo. As correspondências inválidas são ignoradas; as mensagens permanecem no chat original até a identidade ser resolvida.
 
@@ -1034,11 +1058,19 @@ NOVIDADES
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="es" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Sonidos: dos nuevas opciones en Ajustes, Sonidos permiten elegir el sonido que suena con un mensaje nuevo mientras WinZapp está en primer plano, una para el chat abierto y otra para los demás chats. Cada una puede mantener el sonido dedicado de primer plano, como antes, o usar el mismo sonido de notificación elegido para los mensajes en segundo plano.
+
+- Enlaces de WhatsApp: WinZapp ahora abre enlaces de chat. Un enlace wa.me o api.whatsapp.com (por ejemplo, de una aerolínea, una tienda o un sitio web) abre el chat con ese número, aunque no esté en tus contactos, pone el mensaje del enlace en el campo de mensaje y deja el foco allí, listo para que lo revises y lo envíes. También funcionan los enlaces que solo llevan el número. La versión instalada ahora se registra para los enlaces de WhatsApp la primera vez que se abre, así que WinZapp aparece en Aplicaciones predeterminadas de Windows; en la versión portátil la opción sigue en Configuración, General.
+
+- Administrar cuentas: nueva casilla "Conectar todas las cuentas al iniciar WinZapp". Si está activada, al iniciar WinZapp también se abren en segundo plano todas las demás cuentas vinculadas.
+
+- Copia de seguridad: la copia de seguridad del perfil (en Ajustes &gt; Almacenamiento y en el administrador de almacenamiento) ya no aparece cuando WinZapp funciona con el motor Neonize, que no tiene perfil de navegador que copiar.
 
 - Mensajes: las identidades alternativas contradictorias ya no desvían los mensajes enviados a otra persona o recibidos de ella al chat contigo mismo. Se ignoran las correspondencias no válidas; los mensajes permanecen en el chat original hasta que se resuelva la identidad.
 
@@ -1375,11 +1407,19 @@ NOVEDADES
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="pl" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Dźwięki: dwie nowe opcje w Ustawienia, Dźwięki pozwalają wybrać dźwięk nowej wiadomości, gdy WinZapp jest na pierwszym planie, osobno dla otwartego czatu i dla pozostałych czatów. Każda może zachować dedykowany dźwięk pierwszego planu, jak dotąd, albo używać tego samego dźwięku powiadomienia, który wybrano dla wiadomości w tle.
+
+- Linki WhatsApp: WinZapp otwiera teraz linki do czatów. Link wa.me lub api.whatsapp.com (na przykład od linii lotniczej, ze sklepu lub ze strony internetowej) otwiera czat z danym numerem, nawet jeśli nie ma go w kontaktach, wstawia wiadomość z linku w pole wiadomości i zostawia tam fokus, gotową do sprawdzenia i wysłania. Działają też linki zawierające tylko numer. Wersja instalowana rejestruje się teraz dla linków WhatsApp przy pierwszym uruchomieniu, dzięki czemu WinZapp pojawia się w Aplikacjach domyślnych systemu Windows; w wersji przenośnej opcja pozostaje w Ustawieniach, Ogólne.
+
+- Zarządzanie kontami: nowe pole wyboru "Połącz wszystkie konta przy uruchomieniu WinZapp". Gdy jest włączone, uruchomienie WinZapp otwiera w tle także wszystkie pozostałe sparowane konta.
+
+- Kopia zapasowa: kopia zapasowa profilu (w Ustawieniach &gt; Pamięć i w menedżerze pamięci) nie jest już pokazywana, gdy WinZapp działa z silnikiem Neonize, który nie ma profilu przeglądarki do skopiowania.
 
 - Wiadomości: sprzeczne identyfikatory alternatywne nie kierują już wiadomości wysyłanych do innej osoby ani odbieranych od niej do czatu z samym sobą. Nieprawidłowe powiązania są pomijane, a wiadomości pozostają w pierwotnym czacie do czasu ustalenia tożsamości.
 
@@ -1716,11 +1756,19 @@ NOWOŚCI
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="tr" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Sesler: Ayarlar, Sesler bölümündeki iki yeni seçenek, WinZapp ön plandayken yeni bir mesajın hangi sesi çalacağını seçmenizi sağlar; biri açık sohbet, diğeri diğer sohbetler içindir. Her biri eskisi gibi ön plana özel sesi koruyabilir veya arka plandaki mesajlar için seçtiğiniz bildirim sesini kullanabilir.
+
+- WhatsApp bağlantıları: WinZapp artık sohbet bağlantılarını açıyor. Bir wa.me veya api.whatsapp.com bağlantısı (örneğin bir havayolu şirketinden, bir mağazadan ya da bir web sitesinden), rehberinizde olmasa bile o numarayla sohbeti açar, bağlantıdaki mesajı mesaj alanına yazar ve odağı orada bırakır; mesajı gözden geçirip gönderebilirsiniz. Yalnızca numara içeren bağlantılar da çalışır. Yüklü sürüm artık ilk açılışında WhatsApp bağlantıları için kendini kaydeder, bu yüzden WinZapp Windows'un Varsayılan uygulamalar bölümünde görünür; taşınabilir sürümde seçenek Ayarlar, Genel bölümünde kalır.
+
+- Hesap yöneticisi: yeni "WinZapp başladığında tüm hesaplara bağlan" onay kutusu. Açıkken WinZapp başlatıldığında eşleştirilmiş diğer tüm hesaplar da arka planda açılır.
+
+- Yedekleme: profil yedeği (Ayarlar &gt; Depolama ve depolama yöneticisinde), tarayıcı profili olmayan Neonize motoruyla çalışırken artık gösterilmez.
 
 - Mesajlar: hatalı alternatif kimlik eşlemeleri, başka biriyle gönderip aldığınız mesajları artık kendinizle sohbetinize yönlendirmiyor. Geçersiz eşlemeler kullanılmıyor; kimliği henüz çözülemeyen mesajlar özgün sohbetinde tutuluyor.
 
@@ -2057,11 +2105,19 @@ YENİLİKLER
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="ro" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Sunete: două opțiuni noi în Setări, Sunete permit alegerea sunetului unui mesaj nou cât timp WinZapp este în prim-plan, una pentru conversația deschisă și una pentru celelalte conversații. Fiecare poate păstra sunetul dedicat de prim-plan, ca înainte, sau poate folosi același sunet de notificare ales pentru mesajele din fundal.
+
+- Linkuri WhatsApp: WinZapp deschide acum linkurile de conversație. Un link wa.me sau api.whatsapp.com (de exemplu de la o companie aeriană, de la un magazin sau de pe un site) deschide conversația cu acel număr, chiar dacă nu este în contactele dvs., pune mesajul din link în câmpul de mesaj și lasă focalizarea acolo, gata pentru a fi verificat și trimis. Funcționează și linkurile cu numărul singur. Versiunea instalată se înregistrează acum pentru linkurile WhatsApp la prima pornire, astfel încât WinZapp apare în Aplicații implicite din Windows; în versiunea portabilă opțiunea rămâne în Setări, General.
+
+- Gestionarea conturilor: casetă nouă "Conectează toate conturile la pornirea WinZapp". Când este bifată, la pornirea WinZapp se deschid în fundal și toate celelalte conturi asociate.
+
+- Copie de rezervă: copia de rezervă a profilului (în Setări &gt; Stocare și în managerul de stocare) nu mai apare când WinZapp rulează cu motorul Neonize, care nu are un profil de browser de salvat.
 
 - Mesaje: identitățile alternative contradictorii nu mai direcționează mesajele trimise altei persoane sau primite de la aceasta către conversația cu tine însuți. Asocierile nevalide sunt ignorate; mesajele rămân în conversația originală până la identificarea persoanei.
 
@@ -2398,11 +2454,19 @@ NOUTĂȚI
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="ar" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- الأصوات: خياران جديدان في الإعدادات، الأصوات يتيحان اختيار الصوت الذي يُشغَّل عند وصول رسالة جديدة بينما WinZapp في المقدمة، أحدهما للدردشة المفتوحة والآخر للدردشات الأخرى. يمكن لكل منهما الإبقاء على صوت المقدمة المخصص كما كان، أو استخدام صوت الإشعار نفسه الذي اخترته للرسائل في الخلفية.
+
+- روابط واتساب: أصبح WinZapp يفتح روابط المحادثات. رابط wa.me أو api.whatsapp.com (مثلًا من شركة طيران أو متجر أو موقع) يفتح المحادثة مع ذلك الرقم حتى لو لم يكن في جهات اتصالك، ويضع رسالة الرابط في حقل الرسالة ويترك التركيز هناك لتراجعها وترسلها. تعمل أيضًا الروابط التي تحتوي على الرقم فقط. النسخة المثبتة تسجّل نفسها الآن لروابط واتساب عند أول تشغيل، فيظهر WinZapp في التطبيقات الافتراضية في ويندوز؛ وفي النسخة المحمولة يبقى الخيار في الإعدادات، عام.
+
+- إدارة الحسابات: مربع اختيار جديد "الاتصال بجميع الحسابات عند بدء تشغيل WinZapp". عند تفعيله، يؤدي بدء تشغيل WinZapp إلى فتح جميع الحسابات المقترنة الأخرى في الخلفية أيضًا.
+
+- النسخ الاحتياطي: لم يعد النسخ الاحتياطي للملف الشخصي (في الإعدادات &gt; التخزين ومدير التخزين) يظهر عند تشغيل WinZapp بمحرك Neonize، الذي لا يملك ملف متصفح لنسخه.
 
 - الرسائل: لم تعد تعارضات المعرّفات البديلة تنقل الرسائل المرسلة إلى شخص آخر أو الواردة منه إلى دردشتك مع نفسك. يتم تجاهل الروابط غير الصالحة، وتبقى الرسائل في دردشتها الأصلية حتى يتم تحديد الهوية.
 
@@ -2741,11 +2805,19 @@ NOUTĂȚI
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize: religar a camada de chamadas (chamadas indisponíveis na 0.10.0) (#732)
+      <description xml:lang="it" sparkle:format="plain-text">- Choose the sound for foreground messages (active and other chats) (#739)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Suoni: due nuove opzioni in Impostazioni, Suoni permettono di scegliere il suono di un nuovo messaggio mentre WinZapp è in primo piano, una per la chat aperta e una per le altre chat. Ciascuna può mantenere il suono dedicato in primo piano, come prima, oppure usare lo stesso suono di notifica scelto per i messaggi in background.
+
+- Link di WhatsApp: WinZapp ora apre i link delle chat. Un link wa.me o api.whatsapp.com (per esempio di una compagnia aerea, di un negozio o di un sito) apre la chat con quel numero, anche se non è nei tuoi contatti, inserisce il messaggio del link nel campo del messaggio e lascia lì il focus, pronto per essere rivisto e inviato. Funzionano anche i link con il solo numero. La versione installata ora si registra per i link di WhatsApp al primo avvio, quindi WinZapp compare in App predefinite di Windows; nella versione portatile l'opzione resta in Impostazioni, Generale.
+
+- Gestione account: nuova casella "Connetti tutti gli account all'avvio di WinZapp". Se attiva, all'avvio di WinZapp vengono aperti in background anche tutti gli altri account associati.
+
+- Backup: il backup del profilo (in Impostazioni &gt; Archiviazione e nella gestione dell'archiviazione) non viene più mostrato quando WinZapp usa il motore Neonize, che non ha un profilo del browser da salvare.
 
 - Messaggi: le identità alternative in conflitto non spostano più i messaggi inviati a un'altra persona o ricevuti da essa nella chat con te stesso. Le associazioni non valide vengono ignorate; i messaggi rimangono nella chat originale finché l'identità non viene risolta.
 
@@ -3082,6 +3154,15 @@ WHAT'S NEW
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5359alpha/WinZapp-macOS-arm64.zip" length="312029970" type="application/octet-stream" sparkle:edSignature="NBK5ZSsH5IXhFSHMMktr5li7vfH5v6WZC9f7TXXc1YZP2kVBi/mMQs2sg0gEUA2KbE/9owYRwNDKzWnjvc26Bg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5355alpha</title>
+      <pubDate>Mon, 09 Nov 2026 00:15:38 +0000</pubDate>
+      <sparkle:version>3.0.0.53551</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5355alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5355alpha/WinZapp-macOS-arm64.zip" length="312048898" type="application/octet-stream" sparkle:edSignature="QAUbPIZrmx0Sgw3kDmoQKGfWZHYSjB5aK3onqo7cSpmJZEa9Bu4UbF5Rz65Lo4xn0QEO5U0mDr5wKX/F6MIyCw=="></enclosure>
     </item>
     <item>
@@ -3110,15 +3191,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5346alpha/WinZapp-macOS-arm64.zip" length="311996293" type="application/octet-stream" sparkle:edSignature="JZyF3Crvsh7Ue5XRnPG5X+O99Kyg1sti4mbhqV4b/G44BX4fIWDJT3lpNq3AmwZXK6ongiu4YudMx99Aub9uCg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5344alpha</title>
-      <pubDate>Sat, 07 Nov 2026 20:58:41 +0000</pubDate>
-      <sparkle:version>3.0.0.53441</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5344alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5344alpha/WinZapp-macOS-arm64.zip" length="311994807" type="application/octet-stream" sparkle:edSignature="kE14q8O/DoNu4QwqOyE7todyULULCaxidKAO1cnZqL66bJlCoS3kduPThWzXNuhe+ycOlSE4+wczkclKrrepCQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4733,6 +4805,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: pKz4qntSV3GqDIQfYckzBH9dboUuyH3+pcisA7EtiZWnun2YwGtpKlGjb4oIBbbu1G6f6VhWj1DyM4vuxiTFBw==
-length: 861094
+edSignature: cKtF6sMw4OjqD7NdEAXYgAsdDAWzx/FhUp80n/P4uZW5Pl/uOnTmPi+SPyoM3n/dz1Tq9VIznf1+PTFHdfADAQ==
+length: 873826
 -->
