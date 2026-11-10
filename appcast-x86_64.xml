@@ -5,17 +5,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5360alpha</title>
-      <pubDate>Mon, 09 Nov 2026 22:39:40 +0000</pubDate>
-      <sparkle:version>3.0.0.53601</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5360alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5361alpha</title>
+      <pubDate>Tue, 10 Nov 2026 03:31:05 +0000</pubDate>
+      <sparkle:version>3.0.0.53611</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5361alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="en" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Settings &gt; User Interface &gt; Chats: new option "Automatically focused position in the messages list". With "Continue where you left off (last focused message)", going back to a chat (including switching from one chat to another) puts the messages list on the message you were on when you left, whether or not new unread messages arrived. The unread separator and other rows that are not messages never count as a position. The default is still "Unread separator or last message". The option only chooses the message in the list: whether focus goes to the list or to the message field is still decided by the existing option.
+
+- Bookmarks: two new checkboxes in Settings &gt; User Interface &gt; Chats, "Remove permanent bookmarks automatically after the first use" and "Remove temporary bookmarks automatically after the first use". When checked, jumping to a bookmark (Ctrl+0 to 9 for permanent ones, Alt+Shift+0 to 9 for temporary ones) removes it right away, so the same key sets a new bookmark next time, without removing it with Ctrl+Shift+number.
 
 - Sounds: two new options in Settings, Sounds let you choose which sound plays for a new message while WinZapp is in the foreground, one for the open conversation and one for the other conversations. Each can keep the dedicated foreground sound, as before, or use the same notification sound you chose for messages in the background.
 
@@ -360,11 +364,15 @@ WHAT'S NEW
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Configurações &gt; Interface do usuário &gt; Conversas: nova opção "Posição focada automaticamente na lista de mensagens". Com "Continuar de onde você parou (última mensagem focada)", ao voltar para uma conversa (inclusive trocando de uma conversa para outra), a lista de mensagens fica na mensagem em que você estava quando saiu, haja ou não mensagens novas não lidas. O separador de não lidas e outras linhas que não são mensagens não contam como posição. O padrão continua sendo "Separador de não lidas ou última mensagem". A opção escolhe só a mensagem da lista: se o foco vai para a lista ou para o campo de mensagem continua sendo decidido pela opção que já existia.
+
+- Marcadores: duas novas caixas de verificação em Configurações &gt; Interface do usuário &gt; Conversas, "Remover marcadores permanentes automaticamente após o primeiro uso" e "Remover marcadores temporários automaticamente após o primeiro uso". Marcadas, ir até um marcador (Ctrl+0 a 9 nos permanentes, Alt+Shift+0 a 9 nos temporários) já o remove, e a mesma tecla cria um marcador novo na próxima vez, sem precisar removê-lo com Ctrl+Shift+número.
 
 - Sons: duas novas opções em Configurações, Sons permitem escolher o som tocado numa nova mensagem com o WinZapp em primeiro plano, uma para a conversa aberta e outra para as demais conversas. Cada uma pode manter o som dedicado de primeiro plano, como antes, ou usar o mesmo som de notificação escolhido para as mensagens em segundo plano.
 
@@ -709,11 +717,15 @@ NOVIDADES
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Definições &gt; Interface do utilizador &gt; Conversas: nova opção "Posição focada automaticamente na lista de mensagens". Com "Continuar de onde parou (última mensagem focada)", ao voltar a uma conversa (incluindo ao trocar de uma conversa para outra), a lista de mensagens fica na mensagem em que estava quando saiu, haja ou não mensagens novas por ler. O separador de não lidas e outras linhas que não são mensagens não contam como posição. A predefinição continua a ser "Separador de não lidas ou última mensagem". A opção escolhe só a mensagem da lista: se o foco vai para a lista ou para o campo de mensagem continua a ser decidido pela opção que já existia.
+
+- Marcadores: duas novas caixas de verificação em Definições &gt; Interface do utilizador &gt; Conversas, "Remover marcadores permanentes automaticamente após a primeira utilização" e "Remover marcadores temporários automaticamente após a primeira utilização". Assinaladas, ir até um marcador (Ctrl+0 a 9 nos permanentes, Alt+Shift+0 a 9 nos temporários) remove-o logo, e a mesma tecla cria um marcador novo da próxima vez, sem ser preciso removê-lo com Ctrl+Shift+número.
 
 - Sons: duas novas opções em Definições, Sons permitem escolher o som tocado numa nova mensagem com o WinZapp em primeiro plano, uma para a conversa aberta e outra para as restantes conversas. Cada uma pode manter o som dedicado de primeiro plano, como antes, ou usar o mesmo som de notificação escolhido para as mensagens em segundo plano.
 
@@ -1058,11 +1070,15 @@ NOVIDADES
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="es" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Configuración &gt; Interfaz de usuario &gt; Chats: nueva opción "Posición enfocada automáticamente en la lista de mensajes". Con "Continuar donde lo dejaste (último mensaje enfocado)", al volver a un chat (también al cambiar de un chat a otro), la lista de mensajes queda en el mensaje en el que estabas al salir, haya o no mensajes nuevos sin leer. El separador de no leídos y otras filas que no son mensajes no cuentan como posición. Por defecto sigue siendo "Separador de no leídos o último mensaje". La opción solo elige el mensaje de la lista: si el foco va a la lista o al campo de mensaje lo sigue decidiendo la opción que ya existía.
+
+- Marcadores: dos nuevas casillas en Configuración &gt; Interfaz de usuario &gt; Chats, "Eliminar marcadores permanentes automáticamente tras el primer uso" y "Quitar marcadores temporales automáticamente tras el primer uso". Marcadas, ir a un marcador (Ctrl+0 a 9 los permanentes, Alt+Mayús+0 a 9 los temporales) lo elimina enseguida, y la misma tecla crea un marcador nuevo la próxima vez, sin tener que eliminarlo con Ctrl+Mayús+número.
 
 - Sonidos: dos nuevas opciones en Ajustes, Sonidos permiten elegir el sonido que suena con un mensaje nuevo mientras WinZapp está en primer plano, una para el chat abierto y otra para los demás chats. Cada una puede mantener el sonido dedicado de primer plano, como antes, o usar el mismo sonido de notificación elegido para los mensajes en segundo plano.
 
@@ -1407,11 +1423,15 @@ NOVEDADES
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="pl" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Ustawienia &gt; Interfejs użytkownika &gt; Czaty: nowa opcja "Automatycznie ustawiana pozycja na liście wiadomości". Z wyborem "Kontynuuj od miejsca, w którym przerwano (ostatnia wiadomość z fokusem)" po powrocie do czatu (także przy przechodzeniu z jednego czatu do innego) lista wiadomości ustawia się na wiadomości, na której byłeś przy wyjściu, niezależnie od tego, czy przyszły nowe nieprzeczytane wiadomości. Separator nieprzeczytanych i inne wiersze, które nie są wiadomościami, nie liczą się jako pozycja. Domyślnie nadal jest "Separator nieprzeczytanych lub ostatnia wiadomość". Opcja wybiera tylko wiadomość na liście: to, czy fokus trafia na listę, czy do pola wiadomości, nadal określa istniejąca opcja.
+
+- Zakładki: dwa nowe pola wyboru w Ustawienia &gt; Interfejs użytkownika &gt; Czaty, "Automatycznie usuwaj stałe zakładki po pierwszym użyciu" i "Automatycznie usuwaj tymczasowe zakładki po pierwszym użyciu". Gdy są zaznaczone, przejście do zakładki (Ctrl+0–9 dla stałych, Alt+Shift+0–9 dla tymczasowych) od razu ją usuwa, więc ten sam klawisz następnym razem ustawia nową zakładkę, bez usuwania jej skrótem Ctrl+Shift+cyfra.
 
 - Dźwięki: dwie nowe opcje w Ustawienia &gt; Dźwięki zdarzeń pozwalają wybrać dźwięk nowej wiadomości przy aktywnym oknie WinZappa, osobno dla otwartego czatu i pozostałych czatów. Możesz pozostawić dotychczasowy osobny dźwięk wiadomości albo wybrać ten sam dźwięk, który jest używany w powiadomieniach w tle.
 
@@ -1756,11 +1776,15 @@ NOWOŚCI
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="tr" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Ayarlar &gt; Kullanıcı Arayüzü &gt; Sohbetler: yeni "Mesaj listesinde otomatik odaklanan konum" seçeneği. "Kaldığınız yerden devam edin (son odaklanılan mesaj)" seçildiğinde, bir sohbete döndüğünüzde (bir sohbetten diğerine geçerken de) mesaj listesi, yeni okunmamış mesaj gelmiş olsun ya da olmasın, çıktığınızda bulunduğunuz mesajda olur. Okunmamış ayırıcısı ve mesaj olmayan diğer satırlar konum sayılmaz. Varsayılan yine "Okunmamış ayırıcısı veya son mesaj" seçeneğidir. Seçenek yalnızca listedeki mesajı belirler: odağın listeye mi yoksa mesaj alanına mı gideceğine hâlâ mevcut seçenek karar verir.
+
+- Yer işaretleri: Ayarlar &gt; Kullanıcı Arayüzü &gt; Sohbetler altında iki yeni onay kutusu, "Kalıcı yer işaretlerini ilk kullanımdan sonra otomatik olarak kaldır" ve "Geçici yer işaretlerini ilk kullanımdan sonra otomatik olarak kaldır". İşaretliyken bir yer işaretine gitmek (kalıcılar için Ctrl+0-9, geçiciler için Alt+Shift+0-9) onu hemen kaldırır; böylece aynı tuş bir dahaki sefere, Ctrl+Shift+rakam ile kaldırmaya gerek kalmadan yeni bir yer işareti oluşturur.
 
 - Sesler: Ayarlar, Sesler bölümündeki iki yeni seçenek, WinZapp ön plandayken yeni bir mesajın hangi sesi çalacağını seçmenizi sağlar; biri açık sohbet, diğeri diğer sohbetler içindir. Her biri eskisi gibi ön plana özel sesi koruyabilir veya arka plandaki mesajlar için seçtiğiniz bildirim sesini kullanabilir.
 
@@ -2105,11 +2129,15 @@ YENİLİKLER
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="ro" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Setări &gt; Interfață utilizator &gt; Conversații: opțiune nouă "Poziția focalizată automat în lista de mesaje". Cu "Continuă de unde ai rămas (ultimul mesaj focalizat)", la revenirea într-o conversație (inclusiv la trecerea de la o conversație la alta), lista de mesaje rămâne pe mesajul pe care erai când ai ieșit, fie că au sosit sau nu mesaje noi necitite. Separatorul de necitite și alte rânduri care nu sunt mesaje nu contează ca poziție. Implicit rămâne "Separatorul de necitite sau ultimul mesaj". Opțiunea alege doar mesajul din listă: dacă focusul merge în listă sau în câmpul de mesaj decide în continuare opțiunea existentă.
+
+- Marcaje: două casete noi în Setări &gt; Interfață utilizator &gt; Conversații, "Elimină automat marcajele permanente după prima utilizare" și "Elimină automat marcajele temporare după prima utilizare". Bifate, mutarea la un marcaj (Ctrl+0–9 pentru cele permanente, Alt+Shift+0–9 pentru cele temporare) îl elimină imediat, iar aceeași tastă creează un marcaj nou data următoare, fără să mai fie nevoie să-l elimini cu Ctrl+Shift+cifră.
 
 - Sunete: două opțiuni noi în Setări, Sunete permit alegerea sunetului unui mesaj nou cât timp WinZapp este în prim-plan, una pentru conversația deschisă și una pentru celelalte conversații. Fiecare poate păstra sunetul dedicat de prim-plan, ca înainte, sau poate folosi același sunet de notificare ales pentru mesajele din fundal.
 
@@ -2454,11 +2482,15 @@ NOUTĂȚI
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="ar" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- الإعدادات &gt; الواجهة &gt; الدردشات: خيار جديد "الموضع المحدد تلقائيًا في قائمة الرسائل". مع "المتابعة من حيث توقفت (آخر رسالة تم التركيز عليها)"، عند العودة إلى دردشة (بما في ذلك الانتقال من دردشة إلى أخرى) تبقى قائمة الرسائل على الرسالة التي كنت عليها عند الخروج، سواء وصلت رسائل جديدة غير مقروءة أم لا. لا يُحتسب فاصل الرسائل غير المقروءة ولا الصفوف الأخرى التي ليست رسائل موضعًا. يبقى الافتراضي "فاصل الرسائل غير المقروءة أو آخر رسالة". يختار الخيار الرسالة في القائمة فقط: أما انتقال التركيز إلى القائمة أو إلى حقل الرسالة فيبقى بيد الخيار الموجود سابقًا.
+
+- العلامات: خانتا اختيار جديدتان في الإعدادات &gt; الواجهة &gt; الدردشات، "إزالة العلامات الدائمة تلقائيًا بعد أول استخدام" و"إزالة الإشارات المؤقتة تلقائيًا بعد أول استخدام". عند تحديدهما، يؤدي الانتقال إلى علامة (Ctrl+0 إلى 9 للدائمة، Alt+Shift+0 إلى 9 للمؤقتة) إلى إزالتها فورًا، فيُنشئ المفتاح نفسه علامة جديدة في المرة التالية دون الحاجة إلى إزالتها بـ Ctrl+Shift+رقم.
 
 - الأصوات: خياران جديدان في الإعدادات، الأصوات يتيحان اختيار الصوت الذي يُشغَّل عند وصول رسالة جديدة بينما WinZapp في المقدمة، أحدهما للدردشة المفتوحة والآخر للدردشات الأخرى. يمكن لكل منهما الإبقاء على صوت المقدمة المخصص كما كان، أو استخدام صوت الإشعار نفسه الذي اخترته للرسائل في الخلفية.
 
@@ -2805,11 +2837,15 @@ NOUTĂȚI
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Update polish translation (#740)
+      <description xml:lang="it" sparkle:format="plain-text">- Continue reading where you left off, and bookmarks removed after first use (#741)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Impostazioni &gt; Interfaccia utente &gt; Chat: nuova opzione "Posizione evidenziata automaticamente nell'elenco dei messaggi". Con "Continua da dove eri rimasto (ultimo messaggio evidenziato)", tornando a una chat (anche passando da una chat all'altra) l'elenco dei messaggi resta sul messaggio in cui eri quando sei uscito, che siano arrivati o no nuovi messaggi non letti. Il separatore dei non letti e le altre righe che non sono messaggi non contano come posizione. L'impostazione predefinita resta "Separatore dei non letti o ultimo messaggio". L'opzione sceglie solo il messaggio dell'elenco: se lo stato attivo va all'elenco o al campo del messaggio lo decide ancora l'opzione già esistente.
+
+- Segnalibri: due nuove caselle in Impostazioni &gt; Interfaccia utente &gt; Chat, "Rimuovi automaticamente i segnalibri permanenti dopo il primo utilizzo" e "Rimuovi automaticamente i segnalibri temporanei dopo il primo utilizzo". Se attive, andare a un segnalibro (Ctrl+0-9 per quelli permanenti, Alt+Shift+0-9 per quelli temporanei) lo rimuove subito, così lo stesso tasto la volta successiva crea un nuovo segnalibro, senza doverlo rimuovere con Ctrl+Shift+numero.
 
 - Suoni: due nuove opzioni in Impostazioni, Suoni permettono di scegliere il suono di un nuovo messaggio mentre WinZapp è in primo piano, una per la chat aperta e una per le altre chat. Ciascuna può mantenere il suono dedicato in primo piano, come prima, oppure usare lo stesso suono di notifica scelto per i messaggi in background.
 
@@ -3154,6 +3190,15 @@ WHAT'S NEW
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5361alpha/WinZapp-macOS-x86_64.zip" length="349885419" type="application/octet-stream" sparkle:edSignature="YWbun6E0ti23/WoU4qOoLuxScKctIVKLKdUEUIP6p/eBDTw1nDuBYi0cbSscglNsanU3A1fQEz7YwS3sn1vWDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5360alpha</title>
+      <pubDate>Mon, 09 Nov 2026 22:39:40 +0000</pubDate>
+      <sparkle:version>3.0.0.53601</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5360alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5360alpha/WinZapp-macOS-x86_64.zip" length="350047657" type="application/octet-stream" sparkle:edSignature="Tyf3TkYx1Abd7t8JUT0mekJZX4ptAGjbXhzFBcfz7w3vVDzO+JN5J46hyi6GkHVpZBS79qOK9ZsybihXMEt3Ag=="></enclosure>
     </item>
     <item>
@@ -3182,15 +3227,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5354alpha/WinZapp-macOS-x86_64.zip" length="350136844" type="application/octet-stream" sparkle:edSignature="v8q5IygprNS4++nRDr1lN5y+vMFKek5S3x0jf0/w9fj2w5976tFlDcCokCOe05pkkrIgXkXSr3c3ge21wHkTBQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5353alpha</title>
-      <pubDate>Sun, 08 Nov 2026 16:01:43 +0000</pubDate>
-      <sparkle:version>3.0.0.53531</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5353alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5353alpha/WinZapp-macOS-x86_64.zip" length="350063377" type="application/octet-stream" sparkle:edSignature="kfeWR/BH9xnsMMGp9BUVmV9549e0fVrRUnhToC52zdqB4jX4VLrA2uiVZoTd1QgOj2LXR62xvjiZHwKnGTpiDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -4805,6 +4841,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: TXphl3+czDLR06L+VybfkhFKU6zLiC4nNatKzes34Iv91+IhMBo7ubDD3ftWsvwjH2b4vCvAxfV5/6NTBJ1UAw==
-length: 873958
+edSignature: L+9mx3KOZkWgkzJwbZlJ01BMPejy2kI9uIrM10wB/GV1TFaQ5Wo+BmADK6hcNnMNkrPIRyAF5CR/uUqEj2R/DA==
+length: 885251
 -->
