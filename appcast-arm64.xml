@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5363alpha</title>
-      <pubDate>Wed, 11 Nov 2026 02:34:54 +0000</pubDate>
-      <sparkle:version>3.0.0.53631</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5363alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5364alpha</title>
+      <pubDate>Wed, 11 Nov 2026 03:31:56 +0000</pubDate>
+      <sparkle:version>3.0.0.53641</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5364alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+      <description xml:lang="en" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -421,8 +421,10 @@ WHAT'S NEW
 
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
-- Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.
+
+- Typing: the typing indicator no longer reappears a few seconds after the person sent their message (issue #743).</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -832,8 +834,10 @@ NOVIDADES
 
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
-- Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.
+
+- Digitação: o aviso "digitando" não reaparece mais alguns segundos depois de a pessoa enviar a mensagem (problema #743).</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1243,8 +1247,10 @@ NOVIDADES
 
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
-- Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.
+
+- Escrita: o aviso "a escrever" já não reaparece alguns segundos depois de a pessoa enviar a mensagem (problema #743).</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1654,8 +1660,10 @@ NOVEDADES
 
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
-- Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.
+
+- Escritura: el aviso de "escribiendo" ya no reaparece unos segundos después de que la persona envíe su mensaje (problema #743).</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2065,8 +2073,10 @@ NOWOŚCI
 
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
-- Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.
+
+- Pisanie: wskaźnik pisania nie pojawia się już ponownie kilka sekund po wysłaniu wiadomości przez rozmówcę (problem #743).</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -2476,8 +2486,10 @@ YENİLİKLER
 
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
-- Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.
+
+- Yazma: karşı taraf mesajını gönderdikten birkaç saniye sonra "yazıyor" göstergesi artık yeniden görünmüyor (sorun #743).</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -2887,8 +2899,10 @@ NOUTĂȚI
 
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
-- Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.
+
+- Scriere: indicatorul de scriere nu mai reapare la câteva secunde după ce persoana și-a trimis mesajul (problema #743).</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -3300,8 +3314,10 @@ NOUTĂȚI
 
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
-- Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
+- Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.
+
+- الكتابة: لم يعد مؤشر "يكتب" يظهر من جديد بعد ثوانٍ من إرسال الشخص لرسالته (المشكلة #743).</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -3711,7 +3727,18 @@ WHAT'S NEW
 
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
-- Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+- Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.
+
+- Digitazione: l'indicatore "sta scrivendo" non riappare più alcuni secondi dopo che la persona ha inviato il messaggio (problema #743).</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5364alpha/WinZapp-macOS-arm64.zip" length="311852242" type="application/octet-stream" sparkle:edSignature="6RiHYygtCOQWYsVqq7d7/uqyV0wkG1YiiT13dtjz1s8D+Eq1KVnYlmAeKdpyXbMM1saNEJB5RGLQPpGSOEq8Cg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5363alpha</title>
+      <pubDate>Wed, 11 Nov 2026 02:34:54 +0000</pubDate>
+      <sparkle:version>3.0.0.53631</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5363alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5363alpha/WinZapp-macOS-arm64.zip" length="311852672" type="application/octet-stream" sparkle:edSignature="YHWPUHfF7MzDcmc9BXP6Cusnd0wG5OMtstUpn2IyCPw2vAxfQK1pItl4m4pkvNhvgdxAcotg/v+tSXwgkyrxAA=="></enclosure>
     </item>
     <item>
@@ -3740,15 +3767,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5360alpha/WinZapp-macOS-arm64.zip" length="311958054" type="application/octet-stream" sparkle:edSignature="pRmqH/NrUolXkvg1sSyHcBVq4sEEMiWe1rO/Aq222sLi00M3+h5XZnaGnIm6rEpPITYc07Ceo6e0p29800cUCg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5359alpha</title>
-      <pubDate>Mon, 09 Nov 2026 15:06:20 +0000</pubDate>
-      <sparkle:version>3.0.0.53591</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5359alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5359alpha/WinZapp-macOS-arm64.zip" length="312029970" type="application/octet-stream" sparkle:edSignature="NBK5ZSsH5IXhFSHMMktr5li7vfH5v6WZC9f7TXXc1YZP2kVBi/mMQs2sg0gEUA2KbE/9owYRwNDKzWnjvc26Bg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5363,6 +5381,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: MFcwUeMz3aBcKeDkgOd2z84pyTs284Izpi1NgptpDFk0cTDGTMelQ/sS5AiRko6bkWTWyktT0ABJYq4EY5FBAA==
-length: 966176
+edSignature: Mx9CQ7dwczFQzb433nFsoDOMUSoUfZ1VpXA2PfeHAZiWosEL1Bi3IlAdrOAZVHDeYZWj4K/E1NTksturyXXYDw==
+length: 967433
 -->
