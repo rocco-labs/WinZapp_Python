@@ -5,19 +5,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5364alpha</title>
-      <pubDate>Wed, 11 Nov 2026 03:31:57 +0000</pubDate>
-      <sparkle:version>3.0.0.53641</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5364alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5370alpha</title>
+      <pubDate>Wed, 11 Nov 2026 13:43:41 +0000</pubDate>
+      <sparkle:version>3.0.0.53701</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5370alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Neonize: history that the phone sends over several hours is no longer declared complete by a 45-second pause between blocks. While the reported progress is below 100%, WinZapp waits up to 10 minutes of silence, so chats are not treated as final too early.
+
+- Media that fails to download: the error message no longer mentions WPPConnect, which does not exist on the Neonize engine. It now says the link may have expired or the WhatsApp connection may be unavailable.
+
+- Business templates: preserve available text and supported buttons, keep button positions, and explain missing content or unsupported actions. Empty old records cannot be reconstructed.
+
 - WPPConnect Server 2.10.79 is now offered as an update without waiting for a new WinZapp version. It only updates security dependencies, and WinZapp's changes to the server are not affected.
+
+- Neonize: after pairing with "All the history", old chat history is now really imported. Before, hundreds of old, empty chats you never opened stalled the import, and most of the messages already downloaded never showed up. Old media whose link has expired is now recognised as expired instead of failing with an error and being retried several times.
 
 - Mentions: in a group message with @all, Tab no longer goes through one link per member right after the chat opens. Before, this happened until the group's members finished loading and the message lost focus.
 
@@ -124,6 +137,8 @@ WHAT'S NEW
 - Neonize calls: calls you place, and calls you answer and hang up yourself, now appear in the conversation history and in the Calls section. They were not recorded at all before (issue #689).
 
 - Neonize calls: the log now counts, every 5 seconds, the packets of each kind the relay delivers (no names), to find out why the caller's audio stops in some received calls (issue #689). No change in behavior.
+
+- Group calls (Neonize): after you hang up a group call and go back into it from the calls panel (or join one that is already going on), you stopped hearing everyone. WinZapp was ignoring everyone who was already in the call before you came back; now it hears them again. The call log also counts repeated messages per call, so the diagnostic lines no longer vanish from a call after a few calls (issue #689).
 
 - Neonize: the first message to a new phone number typed in a new conversation (Ctrl+N) no longer ends as "not confirmed" when WhatsApp has the number registered in its other form (with or without the 9th digit of Brazilian mobiles): it is now sent to the address WhatsApp knows. A number typed in a new conversation now opens the chat under the address WhatsApp knows, so no duplicate chat is left behind.
 
@@ -423,14 +438,29 @@ WHAT'S NEW
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.
 
-- Typing: the typing indicator no longer reappears a few seconds after the person sent their message (issue #743).</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Typing: the typing indicator no longer reappears a few seconds after the person sent their message (issue #743).
+
+- What's New window: the Esc key now closes it, both from Help &gt; What's New and from Help &gt; "What's New Since You Last Looked". Before, Esc did nothing and you had to go to the close button.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Neonize: o histórico que o celular envia durante várias horas não é mais dado como completo por uma pausa de 45 segundos entre blocos. Enquanto o progresso informado estiver abaixo de 100%, o WinZapp espera até 10 minutos de silêncio, para não tratar conversas como finais cedo demais.
+
+- Mídia que não baixa: a mensagem de erro não cita mais o WPPConnect, que não existe no motor Neonize. Ela agora fala em link expirado ou conexão com o WhatsApp indisponível.
+
+- Modelos comerciais: preserva o texto disponível e os botões compatíveis, mantém a posição dos botões e explica conteúdo ausente ou ações incompatíveis. Registros antigos vazios não podem ser reconstruídos.
+
 - O WPPConnect Server 2.10.79 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza dependências de segurança e não afeta as alterações que o WinZapp faz no servidor.
+
+- Neonize: depois de parear com "Todo o histórico", o histórico antigo das conversas agora é importado de verdade. Antes, centenas de conversas antigas e vazias que você nunca abriu travavam essa importação, e a maior parte das mensagens já baixadas não aparecia. Mídias antigas cujo link expirou agora são reconhecidas como expiradas, em vez de falhar com erro e tentar de novo várias vezes.
 
 - Menções: numa mensagem de grupo com @todos, o Tab não passa mais por um link para cada participante logo depois de abrir a conversa. Antes isso acontecia até os participantes do grupo terminarem de carregar e a mensagem perder o foco.
 
@@ -537,6 +567,8 @@ NOVIDADES
 - Chamadas do Neonize: as chamadas que você faz, e as que você atende e desliga, agora aparecem no histórico da conversa e na seção Chamadas. Antes elas não eram registradas (problema #689).
 
 - Chamadas do Neonize: o registro agora conta, a cada 5 segundos, os pacotes de cada tipo que o relay entrega (sem nomes), para descobrir por que o áudio de quem liga some em algumas chamadas recebidas (problema #689). Nenhuma mudança de comportamento.
+
+- Chamadas em grupo do Neonize: depois de desligar uma chamada em grupo e voltar para ela pelo painel de ligações (ou entrar numa que já está em andamento), você deixava de ouvir todo mundo. O WinZapp ignorava quem já estava na chamada antes de você voltar; agora ele ouve essas pessoas de novo. O registro de chamadas também conta as mensagens repetidas por chamada, para que as linhas de diagnóstico não sumam de uma chamada depois de algumas chamadas (problema #689).
 
 - Neonize: a primeira mensagem para um número de telefone novo digitado numa nova conversa (Ctrl+N) não termina mais como "envio não confirmado" quando o WhatsApp tem o número registrado na outra forma (com ou sem o nono dígito dos celulares brasileiros): agora ela é enviada ao endereço que o WhatsApp conhece. Além disso, um número digitado numa nova conversa agora abre o chat com o endereço que o WhatsApp conhece, sem deixar uma conversa duplicada.
 
@@ -836,14 +868,29 @@ NOVIDADES
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.
 
-- Digitação: o aviso "digitando" não reaparece mais alguns segundos depois de a pessoa enviar a mensagem (problema #743).</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Digitação: o aviso "digitando" não reaparece mais alguns segundos depois de a pessoa enviar a mensagem (problema #743).
+
+- Janela de novidades: a tecla Esc agora a fecha, tanto em Ajuda &gt; Novidades quanto em Ajuda &gt; "Novidades desde a última vez que você viu". Antes o Esc não fazia nada e era preciso ir até o botão de fechar.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Neonize: o histórico que o telemóvel envia ao longo de várias horas já não é dado como completo por uma pausa de 45 segundos entre blocos. Enquanto o progresso indicado estiver abaixo de 100%, o WinZapp espera até 10 minutos de silêncio, para não tratar conversas como finais cedo demais.
+
+- Multimédia que não descarrega: a mensagem de erro já não menciona o WPPConnect, que não existe no motor Neonize. Passa a falar de ligação expirada ou ligação ao WhatsApp indisponível.
+
+- Modelos de empresa: preserva o texto disponível e os botões suportados, mantém a posição dos botões e explica conteúdo em falta ou ações não suportadas. Registos antigos vazios não podem ser reconstruídos.
+
 - O WPPConnect Server 2.10.79 é agora oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza dependências de segurança e não afeta as alterações que o WinZapp faz no servidor.
+
+- Neonize: depois de emparelhar com "Todo o histórico", o histórico antigo das conversas passa a ser mesmo importado. Antes, centenas de conversas antigas e vazias que nunca abriu bloqueavam essa importação, e a maioria das mensagens já transferidas não aparecia. Os ficheiros multimédia antigos cuja ligação expirou passam a ser reconhecidos como expirados, em vez de falharem com erro e serem tentados várias vezes.
 
 - Menções: numa mensagem de grupo com @todos, o Tab já não passa por uma ligação para cada participante logo depois de abrir a conversa. Antes isso acontecia até os participantes do grupo terminarem de carregar e a mensagem perder o foco.
 
@@ -950,6 +997,8 @@ NOVIDADES
 - Chamadas do Neonize: as chamadas que faz, e as que atende e desliga, passam a aparecer no histórico da conversa e na secção Chamadas. Antes não eram registadas (problema #689).
 
 - Chamadas do Neonize: o registo passa a contar, a cada 5 segundos, os pacotes de cada tipo que o relay entrega (sem nomes), para descobrir porque o áudio de quem liga desaparece em algumas chamadas recebidas (problema #689). Nenhuma alteração de comportamento.
+
+- Chamadas em grupo do Neonize: depois de desligar uma chamada em grupo e voltar a ela pelo painel de chamadas (ou entrar numa que já está em curso), deixava de ouvir toda a gente. O WinZapp ignorava quem já estava na chamada antes de voltar; agora ouve essas pessoas outra vez. O registo de chamadas também conta as mensagens repetidas por chamada, para que as linhas de diagnóstico não desapareçam de uma chamada após algumas chamadas (problema #689).
 
 - Neonize: a primeira mensagem para um número de telefone novo escrito numa nova conversa (Ctrl+N) já não termina como "envio não confirmado" quando o WhatsApp tem o número registado na outra forma (com ou sem o nono dígito dos telemóveis brasileiros): agora é enviada para o endereço que o WhatsApp conhece. Além disso, um número escrito numa nova conversa abre agora o chat com o endereço que o WhatsApp conhece, sem deixar uma conversa duplicada.
 
@@ -1249,14 +1298,29 @@ NOVIDADES
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.
 
-- Escrita: o aviso "a escrever" já não reaparece alguns segundos depois de a pessoa enviar a mensagem (problema #743).</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Escrita: o aviso "a escrever" já não reaparece alguns segundos depois de a pessoa enviar a mensagem (problema #743).
+
+- Janela de novidades: a tecla Esc passa a fechá-la, tanto em Ajuda &gt; Novidades como em Ajuda &gt; "Novidades desde a última vez que viu". Antes o Esc não fazia nada e era preciso ir até ao botão de fechar.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Neonize: el historial que el teléfono envía durante varias horas ya no se da por completo por una pausa de 45 segundos entre bloques. Mientras el progreso informado sea inferior al 100 %, WinZapp espera hasta 10 minutos de silencio, para no tratar los chats como finales demasiado pronto.
+
+- Multimedia que no se descarga: el mensaje de error ya no menciona WPPConnect, que no existe en el motor Neonize. Ahora habla de enlace caducado o conexión con WhatsApp no disponible.
+
+- Plantillas de empresa: conserva el texto disponible y los botones compatibles, mantiene su posición y explica el contenido ausente o las acciones incompatibles. Los registros antiguos vacíos no pueden reconstruirse.
+
 - WPPConnect Server 2.10.79 ahora se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza dependencias de seguridad y no afecta a los cambios que WinZapp hace en el servidor.
+
+- Neonize: tras vincular con "Todo el historial", el historial antiguo de los chats ahora se importa de verdad. Antes, cientos de chats antiguos y vacíos que nunca abriste bloqueaban la importación, y la mayoría de los mensajes ya descargados no aparecían. Los archivos multimedia antiguos cuyo enlace caducó ahora se reconocen como caducados, en lugar de fallar con un error y reintentarse varias veces.
 
 - Menciones: en un mensaje de grupo con @todos, el Tabulador ya no recorre un enlace por cada participante justo después de abrir el chat. Antes ocurría hasta que los participantes del grupo terminaban de cargarse y el mensaje perdía el foco.
 
@@ -1363,6 +1427,8 @@ NOVEDADES
 - Llamadas de Neonize: las llamadas que haces, y las que contestas y cuelgas tú, ahora aparecen en el historial de la conversación y en la sección Llamadas. Antes no se registraban (problema #689).
 
 - Llamadas de Neonize: el registro ahora cuenta, cada 5 segundos, los paquetes de cada tipo que entrega el relay (sin nombres), para saber por qué el audio de quien llama se corta en algunas llamadas recibidas (problema #689). Sin cambios de comportamiento.
+
+- Llamadas en grupo (Neonize): si cuelgas una llamada en grupo y vuelves a entrar desde el panel de llamadas (o te unes a una que ya está en curso), ya no dejas de oír a todos. WinZapp ignoraba a quien ya estaba en la llamada antes de que volvieras; ahora vuelve a oírlos. El registro de llamadas también cuenta los mensajes repetidos por llamada, para que las líneas de diagnóstico no desaparezcan de una llamada tras unas cuantas llamadas (problema #689).
 
 - Neonize: el primer mensaje a un número de teléfono nuevo escrito en una conversación nueva (Ctrl+N) ya no termina como «no confirmado» cuando WhatsApp tiene el número registrado en su otra forma (con o sin el 9.º dígito de los móviles brasileños): ahora se envía a la dirección que WhatsApp conoce. Además, un número escrito en una conversación nueva abre ahora el chat con la dirección que WhatsApp conoce, así no queda una conversación duplicada.
 
@@ -1662,14 +1728,29 @@ NOVEDADES
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.
 
-- Escritura: el aviso de "escribiendo" ya no reaparece unos segundos después de que la persona envíe su mensaje (problema #743).</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Escritura: el aviso de "escribiendo" ya no reaparece unos segundos después de que la persona envíe su mensaje (problema #743).
+
+- Ventana de novedades: la tecla Esc ahora la cierra, tanto en Ayuda &gt; Novedades como en Ayuda &gt; "Novedades desde la última vez que miraste". Antes Esc no hacía nada y había que ir hasta el botón de cerrar.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Neonize: historia, którą telefon wysyła przez kilka godzin, nie jest już uznawana za kompletną po 45-sekundowej przerwie między blokami. Dopóki zgłaszany postęp jest poniżej 100%, WinZapp czeka do 10 minut ciszy, aby nie traktować czatów jako ostatecznych zbyt wcześnie.
+
+- Pliki multimedialne, które się nie pobierają: komunikat o błędzie nie wspomina już o WPPConnect, którego nie ma w silniku Neonize. Teraz mówi o wygasłym linku lub niedostępnym połączeniu z WhatsApp.
+
+- Szablony firmowe: zachowanie dostępnej treści i obsługiwanych przycisków, ich pozycji oraz wyjaśnienie brakującej treści i nieobsługiwanych działań. Starych pustych wpisów nie można odtworzyć.
+
 - WPPConnect Server 2.10.79 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności związane z bezpieczeństwem i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
+
+- Neonize: po sparowaniu z opcją „Cała historia” stara historia czatów jest teraz naprawdę importowana. Wcześniej setki starych, pustych czatów, których nigdy nie otworzyłeś, blokowały import, a większość pobranych już wiadomości się nie pojawiała. Stare pliki multimedialne z wygasłym linkiem są teraz rozpoznawane jako wygasłe, zamiast kończyć się błędem i być ponawiane kilka razy.
 
 - Wzmianki: w wiadomości grupowej z @wszyscy klawisz Tab nie przechodzi już przez osobny link dla każdego uczestnika zaraz po otwarciu czatu. Wcześniej działo się tak, dopóki uczestnicy grupy się nie wczytali, a wiadomość nie straciła fokusu.
 
@@ -1776,6 +1857,8 @@ NOWOŚCI
 - Rozmowy przez Neonize: rozmowy, które wykonujesz oraz te, które odbierasz i kończysz sam, pojawiają się teraz w historii czatu i w sekcji Połączenia. Wcześniej nie były zapisywane (problem #689).
 
 - Rozmowy przez Neonize: dziennik liczy teraz co 5 sekund pakiety każdego rodzaju dostarczane przez przekaźnik (bez nazw), aby ustalić, dlaczego w niektórych odebranych rozmowach dźwięk dzwoniącego się urywa (problem #689). Bez zmian w działaniu.
+
+- Rozmowy grupowe przez Neonize: po rozłączeniu się z rozmowy grupowej i powrocie do niej z panelu rozmów (albo dołączeniu do trwającej) nie słychać już nikogo. WinZapp pomijał osoby, które były w rozmowie, zanim wróciłeś; teraz znów je słychać. Dziennik rozmów liczy też powtarzające się komunikaty osobno dla każdej rozmowy, więc wiersze diagnostyczne nie znikają z rozmowy po kilku rozmowach (problem #689).
 
 - Neonize: pierwsza wiadomość do nowego numeru telefonu wpisanego w nowym czacie (Ctrl+N) nie kończy się już jako „niepotwierdzona”, gdy WhatsApp ma ten numer zarejestrowany w innej postaci (z dziewiątą cyfrą lub bez niej w brazylijskich numerach komórkowych): jest teraz wysyłana na adres, który zna WhatsApp. Numer wpisany w nowym czacie otwiera teraz czat pod adresem, który zna WhatsApp, więc nie zostaje drugi czat z tym samym kontaktem.
 
@@ -2075,14 +2158,29 @@ NOWOŚCI
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.
 
-- Pisanie: wskaźnik pisania nie pojawia się już ponownie kilka sekund po wysłaniu wiadomości przez rozmówcę (problem #743).</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Pisanie: wskaźnik pisania nie pojawia się już ponownie kilka sekund po wysłaniu wiadomości przez rozmówcę (problem #743).
+
+- Okno nowości: klawisz Esc zamyka je teraz zarówno z Pomoc &gt; „Co nowego?”, jak i z Pomoc &gt; „Co nowego od ostatniego przeglądu”. Wcześniej Esc nic nie robił i trzeba było przejść do przycisku zamykania.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Neonize: telefonun saatlerce gönderdiği geçmiş artık bloklar arasındaki 45 saniyelik bir duraklamayla tamamlanmış sayılmıyor. Bildirilen ilerleme %100'ün altındayken WinZapp 10 dakikaya kadar sessizlik bekliyor; böylece sohbetler çok erken kesin sayılmıyor.
+
+- İndirilemeyen medya: hata mesajı artık Neonize motorunda bulunmayan WPPConnect'ten söz etmiyor. Bunun yerine bağlantının süresinin dolmuş olabileceğini veya WhatsApp bağlantısının kullanılamıyor olabileceğini söylüyor.
+
+- İşletme şablonları: mevcut metin ve desteklenen düğmeler korunur, düğme sıraları değişmez; eksik içerik ve desteklenmeyen işlemler açıklanır. Boş eski kayıtlar yeniden oluşturulamaz.
+
 - WPPConnect Server 2.10.79 artık yeni bir WinZapp sürümünü beklemeden güncelleme olarak sunuluyor. Yalnızca güvenlik bağımlılıklarını günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
+
+- Neonize: "Tüm geçmiş" ile eşleştirdikten sonra eski sohbet geçmişi artık gerçekten içe aktarılıyor. Önceden hiç açmadığınız yüzlerce eski ve boş sohbet içe aktarmayı tıkıyor, indirilmiş mesajların çoğu görünmüyordu. Bağlantısı süresi dolmuş eski medya dosyaları artık hata verip birkaç kez yeniden denenmek yerine süresi dolmuş olarak tanınıyor.
 
 - Bahsetmeler: @tümü içeren bir grup mesajında Tab, sohbet açıldıktan hemen sonra artık her katılımcı için ayrı bir bağlantıdan geçmiyor. Önceden bu, grubun katılımcıları yüklenip mesaj odağı kaybedene kadar oluyordu.
 
@@ -2189,6 +2287,8 @@ YENİLİKLER
 - Neonize aramaları: yaptığınız aramalar ile yanıtlayıp kendinizin kapattığı aramalar artık konuşma geçmişinde ve Aramalar bölümünde görünüyor. Daha önce hiç kaydedilmiyorlardı (sorun #689).
 
 - Neonize aramaları: günlük artık her 5 saniyede röleden gelen paketleri türlerine göre sayıyor (isim yok); bazı gelen aramalarda arayanın sesinin neden kesildiğini anlamak için (sorun #689). Davranış değişmedi.
+
+- Neonize grup aramaları: bir grup aramasını kapatıp arama panelinden tekrar girdiğinizde (ya da süren bir aramaya katıldığınızda) artık kimseyi duymama sorunu giderildi. WinZapp, siz dönmeden önce aramada olan kişileri yok sayıyordu; şimdi onları yeniden duyuyor. Arama günlüğü ayrıca tekrarlanan mesajları arama başına sayıyor; böylece birkaç aramadan sonra tanı satırları bir aramadan kaybolmuyor (sorun #689).
 
 - Neonize: yeni bir konuşmada (Ctrl+N) yazılan yeni bir telefon numarasına giden ilk mesaj, WhatsApp numarayı diğer biçimiyle (Brezilya cep numaralarında 9. rakamlı ya da rakamsız) kayıtlı tuttuğunda artık "onaylanmadı" olarak bitmiyor: mesaj artık WhatsApp'ın bildiği adrese gönderiliyor. Ayrıca yeni bir konuşmada yazılan numara artık sohbeti WhatsApp'ın bildiği adresle açar; böylece yinelenen bir sohbet kalmaz.
 
@@ -2488,14 +2588,29 @@ YENİLİKLER
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.
 
-- Yazma: karşı taraf mesajını gönderdikten birkaç saniye sonra "yazıyor" göstergesi artık yeniden görünmüyor (sorun #743).</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Yazma: karşı taraf mesajını gönderdikten birkaç saniye sonra "yazıyor" göstergesi artık yeniden görünmüyor (sorun #743).
+
+- Yenilikler penceresi: Esc tuşu artık hem Yardım &gt; Yenilikler hem de Yardım &gt; "Son baktığınızdan beri yenilikler" ile açılan pencereyi kapatıyor. Önceden Esc hiçbir şey yapmıyordu ve kapat düğmesine gitmek gerekiyordu.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Neonize: istoricul pe care telefonul îl trimite de-a lungul mai multor ore nu mai este considerat complet după o pauză de 45 de secunde între blocuri. Cât timp progresul raportat este sub 100%, WinZapp așteaptă până la 10 minute de liniște, ca să nu trateze conversațiile drept finale prea devreme.
+
+- Fișiere media care nu se descarcă: mesajul de eroare nu mai menționează WPPConnect, care nu există în motorul Neonize. Acum vorbește despre un link expirat sau o conexiune la WhatsApp indisponibilă.
+
+- Șabloane comerciale: păstrează textul disponibil și butoanele acceptate, poziția acestora și explică lipsa conținutului sau acțiunile neacceptate. Înregistrările vechi goale nu pot fi reconstruite.
+
 - WPPConnect Server 2.10.79 este acum oferit ca actualizare fără a aștepta o nouă versiune WinZapp. Actualizează doar dependențe de securitate și nu afectează modificările pe care WinZapp le face serverului.
+
+- Neonize: după asocierea cu „Tot istoricul”, istoricul vechi al conversațiilor este acum importat cu adevărat. Înainte, sute de conversații vechi și goale, pe care nu le-ai deschis niciodată, blocau importul, iar majoritatea mesajelor deja descărcate nu apăreau. Fișierele media vechi cu linkul expirat sunt acum recunoscute ca expirate, în loc să eșueze cu o eroare și să fie reîncercate de mai multe ori.
 
 - Mențiuni: într-un mesaj de grup cu @toți, Tab nu mai trece printr-un link pentru fiecare participant imediat după deschiderea conversației. Înainte se întâmpla până când participanții grupului terminau de încărcat și mesajul pierdea focusul.
 
@@ -2602,6 +2717,8 @@ NOUTĂȚI
 - Apeluri prin Neonize: apelurile pe care le faci, și cele pe care le preiei și le închizi tu, apar acum în istoricul conversației și în secțiunea Apeluri. Înainte nu erau înregistrate (problema #689).
 
 - Apeluri prin Neonize: jurnalul numără acum, la fiecare 5 secunde, pachetele de fiecare tip livrate de releu (fără nume), pentru a afla de ce sunetul apelantului dispare în unele apeluri primite (problema #689). Nicio schimbare de comportament.
+
+- Apeluri de grup prin Neonize: după ce închizi un apel de grup și revii în el din panoul de apeluri (sau intri într-unul deja în desfășurare), nu mai auzeai pe nimeni. WinZapp ignora persoanele care erau deja în apel înainte să revii; acum le aude din nou. Jurnalul apelurilor numără acum mesajele repetate separat pentru fiecare apel, ca rândurile de diagnostic să nu dispară dintr-un apel după câteva apeluri (problema #689).
 
 - Neonize: primul mesaj către un număr de telefon nou scris într-o conversație nouă (Ctrl+N) nu se mai termină ca „neconfirmat” când WhatsApp are numărul înregistrat în cealaltă formă (cu sau fără a 9-a cifră a mobilelor braziliene): acum este trimis la adresa pe care o cunoaște WhatsApp. În plus, un număr scris într-o conversație nouă deschide acum chatul cu adresa pe care o cunoaște WhatsApp, fără a lăsa o conversație duplicată.
 
@@ -2901,14 +3018,29 @@ NOUTĂȚI
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.
 
-- Scriere: indicatorul de scriere nu mai reapare la câteva secunde după ce persoana și-a trimis mesajul (problema #743).</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- Scriere: indicatorul de scriere nu mai reapare la câteva secunde după ce persoana și-a trimis mesajul (problema #743).
+
+- Fereastra de noutăți: tasta Esc o închide acum, atât din Ajutor &gt; Ce este nou, cât și din Ajutor &gt; "Noutăți de la ultima vizualizare". Înainte, Esc nu făcea nimic și trebuia să ajungi la butonul de închidere.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- Neonize: السجل الذي يرسله الهاتف على مدى ساعات لم يعد يُعدّ مكتملًا بسبب توقف مدته 45 ثانية بين الكتل. ما دام التقدم المُبلَّغ عنه أقل من 100%، ينتظر WinZapp حتى 10 دقائق من الصمت حتى لا يعامل المحادثات على أنها نهائية مبكرًا.
+
+- ملفات الوسائط التي لا تُنزَّل: لم تعد رسالة الخطأ تذكر WPPConnect غير الموجود في محرك Neonize. أصبحت تشير إلى أن الرابط قد انتهت صلاحيته أو أن الاتصال بـ WhatsApp غير متاح.
+
+- قوالب الأنشطة التجارية: الاحتفاظ بالنص المتاح والأزرار المدعومة ومواضعها، وتوضيح المحتوى المفقود والإجراءات غير المدعومة. لا يمكن إعادة إنشاء السجلات القديمة الفارغة.
+
 - يُعرض WPPConnect Server 2.10.79 الآن كتحديث دون انتظار إصدار جديد من WinZapp. وهو يحدّث مكتبات تبعية أمنية فقط، ولا يؤثر في تعديلات WinZapp على الخادم.
+
+- Neonize: بعد الاقتران بخيار "كل السجل"، أصبح سجل المحادثات القديم يُستورد فعلًا. في السابق كانت مئات المحادثات القديمة الفارغة التي لم تفتحها تعطّل الاستيراد، فلا تظهر معظم الرسائل التي نُزّلت بالفعل. أصبحت ملفات الوسائط القديمة التي انتهت صلاحية رابطها تُعرف على أنها منتهية، بدل أن تفشل بخطأ وتُعاد المحاولة عدة مرات.
 
 - الإشارات: في رسالة جماعية فيها @الكل لم يعد Tab يمر برابط لكل مشارك فور فتح الدردشة. كان ذلك يحدث سابقًا إلى أن ينتهي تحميل مشاركي المجموعة ويغادر التركيز الرسالة.
 
@@ -3015,6 +3147,8 @@ NOUTĂȚI
 - مكالمات Neonize: صارت المكالمات التي تجريها أو تنهيها بنفسك بعد الرد عليها تظهر في سجل المحادثة وفي قسم المكالمات، بعد أن كانت لا تُسجَّل إطلاقًا (المشكلة #689).
 
 - مكالمات Neonize: يسجّل البرنامج الآن كل 5 ثوانٍ عدد الحزم التي يسلّمها الخادم الوسيط من كل نوع (بدون أي أسماء)، لمعرفة لماذا يتوقف صوت المتصل في بعض المكالمات الواردة (المشكلة #689). لا تغيير في السلوك.
+
+- مكالمات Neonize في المجموعات: بعد أن تخرج من مكالمة جماعية وتعود إليها من لوحة المكالمات (أو تنضم إلى مكالمة جارية)، لم تعد تسمع أحدًا. كان البرنامج يتجاهل كل من كانوا في المكالمة قبل عودتك. والآن يسمعهم من جديد. كما أن سجل المكالمات صار يعدّ الرسائل المتكررة لكل مكالمة على حدة، فلا تختفي أسطر التشخيص من مكالمة بعد بضع مكالمات (المشكلة #689).
 
 - Neonize: الرسالة الأولى إلى رقم هاتف جديد كتبته في محادثة جديدة (Ctrl+N) لم تعد تفشل بعبارة «غير مؤكد» عندما يكون الرقم مسجلاً في واتساب بالصيغة الأخرى (مع الرقم 9 أو بدونه في الأرقام البرازيلية): يُرسل الآن إلى العنوان الذي يعرفه واتساب. كما أن الرقم المكتوب في محادثة جديدة يفتح الآن المحادثة بالعنوان الذي يعرفه واتساب، فلا تظهر محادثة مكررة.
 
@@ -3316,14 +3450,29 @@ NOUTĂȚI
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.
 
-- الكتابة: لم يعد مؤشر "يكتب" يظهر من جديد بعد ثوانٍ من إرسال الشخص لرسالته (المشكلة #743).</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Corrige o aviso de digitação que reaparece depois da mensagem (#743) (#745)
+- الكتابة: لم يعد مؤشر "يكتب" يظهر من جديد بعد ثوانٍ من إرسال الشخص لرسالته (المشكلة #743).
+
+- نافذة الجديد: مفتاح Esc يغلقها الآن، سواء من مساعدة &gt; ما الجديد أو من مساعدة &gt; "ما الجديد منذ آخر نظرة". كان Esc سابقًا لا يفعل شيئًا، وكان لا بد من الانتقال إلى زر الإغلاق.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: ouvir todos de novo ao reentrar numa chamada em grupo (#746)
+- Fix: close dialog with esc. (#749)
+- Preserve business template text and accessible actions (#750)
+- Neonize: histórico profundo não trava atrás de chats vazios não abertos (#747) (#751)
+- Mídia: erro de download sem citar o WPPConnect (#747) (#752)
+- Neonize: sync inicial não termina cedo demais com progresso abaixo de 100% (#747) (#753)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Neonize: la cronologia che il telefono invia nell'arco di ore non viene più data per completa da una pausa di 45 secondi tra i blocchi. Finché l'avanzamento indicato è sotto il 100%, WinZapp attende fino a 10 minuti di silenzio, per non considerare le chat definitive troppo presto.
+
+- File multimediali che non si scaricano: il messaggio di errore non cita più WPPConnect, che non esiste nel motore Neonize. Ora parla di link scaduto o connessione a WhatsApp non disponibile.
+
+- Modelli aziendali: conserva il testo disponibile e i pulsanti supportati, mantiene le loro posizioni e spiega contenuti mancanti o azioni non supportate. I vecchi record vuoti non possono essere ricostruiti.
+
 - WPPConnect Server 2.10.79 viene ora offerto come aggiornamento senza dover attendere una nuova versione di WinZapp. Aggiorna solo dipendenze di sicurezza e non influisce sulle modifiche che WinZapp apporta al server.
+
+- Neonize: dopo l'abbinamento con "Tutta la cronologia", la cronologia vecchia delle chat viene ora davvero importata. Prima, centinaia di chat vecchie e vuote mai aperte bloccavano l'importazione e la maggior parte dei messaggi già scaricati non compariva. I file multimediali vecchi con il link scaduto vengono ora riconosciuti come scaduti, invece di fallire con un errore e riprovare più volte.
 
 - Menzioni: in un messaggio di gruppo con @tutti, Tab non passa più per un link per ogni membro subito dopo l'apertura della chat. Prima succedeva finché i membri del gruppo non finivano di caricarsi e il messaggio perdeva il focus.
 
@@ -3430,6 +3579,8 @@ WHAT'S NEW
 - Chiamate Neonize: le chiamate che effettui, e quelle a cui rispondi e che chiudi tu, ora compaiono nella cronologia della conversazione e nella sezione Chiamate. Prima non venivano registrate (problema #689).
 
 - Chiamate Neonize: il registro ora conta, ogni 5 secondi, i pacchetti di ogni tipo consegnati dal relay (senza nomi), per capire perché in alcune chiamate ricevute l'audio di chi chiama si interrompe (problema #689). Nessun cambiamento di comportamento.
+
+- Chiamate di gruppo (Neonize): se riattacchi una chiamata di gruppo e rientri dal pannello delle chiamate (o ti unisci a una già in corso), non senti più nessuno. WinZapp ignorava chi era già nella chiamata prima del tuo ritorno; ora li sente di nuovo. Il registro delle chiamate conta inoltre i messaggi ripetuti per chiamata, così le righe di diagnosi non spariscono da una chiamata dopo alcune chiamate (problema #689).
 
 - Neonize: the first message to a new phone number typed in a new conversation (Ctrl+N) no longer ends as "not confirmed" when WhatsApp has the number registered in its other form (with or without the 9th digit of Brazilian mobiles): it is now sent to the address WhatsApp knows. A number typed in a new conversation now opens the chat under the address WhatsApp knows, so no duplicate chat is left behind.
 
@@ -3729,7 +3880,18 @@ WHAT'S NEW
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.
 
-- Digitazione: l'indicatore "sta scrivendo" non riappare più alcuni secondi dopo che la persona ha inviato il messaggio (problema #743).</description>
+- Digitazione: l'indicatore "sta scrivendo" non riappare più alcuni secondi dopo che la persona ha inviato il messaggio (problema #743).
+
+- Finestra delle novità: il tasto Esc ora la chiude, sia da Guida &gt; Novità sia da Guida &gt; "Cosa c'è di nuovo dall'ultima volta che hai controllato". Prima Esc non faceva nulla e bisognava raggiungere il pulsante di chiusura.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5370alpha/WinZapp-macOS-x86_64.zip" length="349984700" type="application/octet-stream" sparkle:edSignature="nTvfQ+TrzndpXjH1P9BXtVOzPPADa1Lh+khqm8pIFIi9WV2wCxGxdawMVTCsm49v3FQPzpNuJvyV4U1Hy5qoDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5364alpha</title>
+      <pubDate>Wed, 11 Nov 2026 03:31:57 +0000</pubDate>
+      <sparkle:version>3.0.0.53641</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5364alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5364alpha/WinZapp-macOS-x86_64.zip" length="349945010" type="application/octet-stream" sparkle:edSignature="Xfhv6EEJnYV5HVzwFyMjbYlu5b/ly0Z9Us8V6fON4b8TWBdlCSg1TiCKpsbuVHhydxLoBhdiHt0BlMZqwdz/AA=="></enclosure>
     </item>
     <item>
@@ -3758,15 +3920,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5361alpha/WinZapp-macOS-x86_64.zip" length="349885419" type="application/octet-stream" sparkle:edSignature="YWbun6E0ti23/WoU4qOoLuxScKctIVKLKdUEUIP6p/eBDTw1nDuBYi0cbSscglNsanU3A1fQEz7YwS3sn1vWDA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5360alpha</title>
-      <pubDate>Mon, 09 Nov 2026 22:39:40 +0000</pubDate>
-      <sparkle:version>3.0.0.53601</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5360alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5360alpha/WinZapp-macOS-x86_64.zip" length="350047657" type="application/octet-stream" sparkle:edSignature="Tyf3TkYx1Abd7t8JUT0mekJZX4ptAGjbXhzFBcfz7w3vVDzO+JN5J46hyi6GkHVpZBS79qOK9ZsybihXMEt3Ag=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5381,6 +5534,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: dST+wXSNqoCAf4vuitYN3hlEl7AamdNaVqBD6Pg2ptlobtIOhkEUUxMY2JvCo1UReKtsGG0q1XEpmxKC149XAQ==
-length: 967440
+edSignature: 2DqrDtxyyR/NKhCHILdMTk8FpnLmagStzRFDRTDsDH4DAXsInLAKND37jQRZ5xs9dnvE8JfRLvgc2uoCAl8XDA==
+length: 987254
 -->
