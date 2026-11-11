@@ -5,18 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5382alpha</title>
-      <pubDate>Wed, 11 Nov 2026 20:02:45 +0000</pubDate>
-      <sparkle:version>3.0.0.53821</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5382alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5387alpha</title>
+      <pubDate>Wed, 11 Nov 2026 22:21:59 +0000</pubDate>
+      <sparkle:version>3.0.0.53871</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5387alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+      <description xml:lang="en" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Neonize: old media that the phone re-uploads after the request to send it again is now actually downloaded. Before, the re-uploaded file was refused because it did not match the check of the original file and the media still would not open.
 
 - Update on exit: a new option in Settings &gt; General downloads updates automatically, without asking, and installs them when you exit WinZapp. Closing the window to the tray does not count as exiting, and WinZapp does not open again after the installation: it stays closed and uses the new version the next time you open it.
 
@@ -444,13 +446,17 @@ WHAT'S NEW
 
 - Typing: the typing indicator no longer reappears a few seconds after the person sent their message (issue #743).
 
-- What's New window: the Esc key now closes it, both from Help &gt; What's New and from Help &gt; "What's New Since You Last Looked". Before, Esc did nothing and you had to go to the close button.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- What's New window: the Esc key now closes it, both from Help &gt; What's New and from Help &gt; "What's New Since You Last Looked". Before, Esc did nothing and you had to go to the close button.
+
+- Updating with several accounts open: WinZapp now waits for the other accounts to finish closing before it installs the update. Before, the install could fail with a warning that other accounts were open, and only went ahead after you answered Yes to try again.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: a mídia antiga que o celular reenvia depois do pedido de novo envio agora é baixada de verdade. Antes, o arquivo reenviado era recusado por não bater com a verificação do arquivo original e a mídia continuava sem abrir.
 
 - Atualizar ao sair: nova opção em Configurações &gt; Geral que baixa as atualizações automaticamente, sem perguntar, e as instala quando você sai do WinZapp. Fechar a janela para a bandeja não conta como sair, e o WinZapp não abre de novo depois da instalação: ele fica fechado e usa a versão nova na próxima vez que você abri-lo.
 
@@ -878,13 +884,17 @@ NOVIDADES
 
 - Digitação: o aviso "digitando" não reaparece mais alguns segundos depois de a pessoa enviar a mensagem (problema #743).
 
-- Janela de novidades: a tecla Esc agora a fecha, tanto em Ajuda &gt; Novidades quanto em Ajuda &gt; "Novidades desde a última vez que você viu". Antes o Esc não fazia nada e era preciso ir até o botão de fechar.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Janela de novidades: a tecla Esc agora a fecha, tanto em Ajuda &gt; Novidades quanto em Ajuda &gt; "Novidades desde a última vez que você viu". Antes o Esc não fazia nada e era preciso ir até o botão de fechar.
+
+- Atualização com várias contas abertas: o WinZapp agora espera as outras contas terminarem de fechar antes de instalar a atualização. Antes, a instalação podia falhar com o aviso de que outras contas estavam abertas e só seguia depois de você responder Sim para tentar de novo.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: o ficheiro multimédia antigo que o telemóvel reenvia depois do pedido de novo envio passa a ser mesmo transferido. Antes, o ficheiro reenviado era recusado por não coincidir com a verificação do original e o ficheiro continuava sem abrir.
 
 - Atualizar ao sair: nova opção em Definições &gt; Geral que descarrega as atualizações automaticamente, sem perguntar, e as instala quando sai do WinZapp. Fechar a janela para a bandeja não conta como sair, e o WinZapp não volta a abrir depois da instalação: fica fechado e usa a versão nova da próxima vez que o abrir.
 
@@ -1312,13 +1322,17 @@ NOVIDADES
 
 - Escrita: o aviso "a escrever" já não reaparece alguns segundos depois de a pessoa enviar a mensagem (problema #743).
 
-- Janela de novidades: a tecla Esc passa a fechá-la, tanto em Ajuda &gt; Novidades como em Ajuda &gt; "Novidades desde a última vez que viu". Antes o Esc não fazia nada e era preciso ir até ao botão de fechar.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Janela de novidades: a tecla Esc passa a fechá-la, tanto em Ajuda &gt; Novidades como em Ajuda &gt; "Novidades desde a última vez que viu". Antes o Esc não fazia nada e era preciso ir até ao botão de fechar.
+
+- Atualização com várias contas abertas: o WinZapp passa a esperar que as outras contas terminem de fechar antes de instalar a atualização. Antes, a instalação podia falhar com o aviso de que havia outras contas abertas e só avançava depois de responder Sim para tentar de novo.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Neonize: el archivo multimedia antiguo que el teléfono vuelve a subir tras la petición de reenvío ahora se descarga de verdad. Antes, el archivo reenviado se rechazaba por no coincidir con la verificación del original y el archivo seguía sin abrirse.
 
 - Actualizar al salir: nueva opción en Configuración &gt; General que descarga las actualizaciones automáticamente, sin preguntar, y las instala cuando sales de WinZapp. Cerrar la ventana a la bandeja no cuenta como salir, y WinZapp no se vuelve a abrir tras la instalación: queda cerrado y usa la versión nueva la próxima vez que lo abras.
 
@@ -1746,13 +1760,17 @@ NOVEDADES
 
 - Escritura: el aviso de "escribiendo" ya no reaparece unos segundos después de que la persona envíe su mensaje (problema #743).
 
-- Ventana de novedades: la tecla Esc ahora la cierra, tanto en Ayuda &gt; Novedades como en Ayuda &gt; "Novedades desde la última vez que miraste". Antes Esc no hacía nada y había que ir hasta el botón de cerrar.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Ventana de novedades: la tecla Esc ahora la cierra, tanto en Ayuda &gt; Novedades como en Ayuda &gt; "Novedades desde la última vez que miraste". Antes Esc no hacía nada y había que ir hasta el botón de cerrar.
+
+- Actualizar con varias cuentas abiertas: WinZapp ahora espera a que las demás cuentas terminen de cerrarse antes de instalar la actualización. Antes, la instalación podía fallar con el aviso de que había otras cuentas abiertas y solo seguía después de responder Sí para volver a intentarlo.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Neonize: stare multimedia, które telefon przesyła ponownie po prośbie o ponowne wysłanie, są teraz naprawdę pobierane. Wcześniej ponownie przesłany plik był odrzucany, bo nie zgadzał się z weryfikacją oryginału, i multimedia nadal się nie otwierały.
 
 - Aktualizacja przy zamykaniu: nowa opcja w Ustawieniach &gt; Ogólne pobiera aktualizacje automatycznie, bez pytania, i instaluje je po zakończeniu pracy z WinZapp. Zamknięcie okna do zasobnika nie jest zakończeniem pracy, a WinZapp nie uruchamia się ponownie po instalacji: pozostaje zamknięty i używa nowej wersji przy następnym uruchomieniu.
 
@@ -2180,13 +2198,17 @@ NOWOŚCI
 
 - Pisanie: wskaźnik pisania nie pojawia się już ponownie kilka sekund po wysłaniu wiadomości przez rozmówcę (problem #743).
 
-- Okno nowości: klawisz Esc zamyka je teraz zarówno z Pomoc &gt; „Co nowego?”, jak i z Pomoc &gt; „Co nowego od ostatniego przeglądu”. Wcześniej Esc nic nie robił i trzeba było przejść do przycisku zamykania.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Okno nowości: klawisz Esc zamyka je teraz zarówno z Pomoc &gt; „Co nowego?”, jak i z Pomoc &gt; „Co nowego od ostatniego przeglądu”. Wcześniej Esc nic nie robił i trzeba było przejść do przycisku zamykania.
+
+- Aktualizacja przy kilku otwartych kontach: WinZapp czeka teraz, aż pozostałe konta skończą się zamykać, zanim zainstaluje aktualizację. Wcześniej instalacja mogła się nie udać z ostrzeżeniem, że inne konta są otwarte, i szła dalej dopiero po odpowiedzi Tak, aby spróbować ponownie.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Neonize: telefonun yeniden gönderme isteğinden sonra tekrar yüklediği eski medya artık gerçekten indiriliyor. Daha önce yeniden yüklenen dosya, orijinal dosyanın doğrulamasıyla eşleşmediği için reddediliyor ve medya yine açılmıyordu.
 
 - Çıkışta güncelle: Ayarlar &gt; Genel bölümündeki yeni bir seçenek güncellemeleri sormadan otomatik indirir ve WinZapp'tan çıktığınızda yükler. Pencereyi tepsiye kapatmak çıkış sayılmaz ve WinZapp kurulumdan sonra yeniden açılmaz: kapalı kalır ve yeni sürümü bir sonraki açışınızda kullanır.
 
@@ -2614,13 +2636,17 @@ YENİLİKLER
 
 - Yazma: karşı taraf mesajını gönderdikten birkaç saniye sonra "yazıyor" göstergesi artık yeniden görünmüyor (sorun #743).
 
-- Yenilikler penceresi: Esc tuşu artık hem Yardım &gt; Yenilikler hem de Yardım &gt; "Son baktığınızdan beri yenilikler" ile açılan pencereyi kapatıyor. Önceden Esc hiçbir şey yapmıyordu ve kapat düğmesine gitmek gerekiyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Yenilikler penceresi: Esc tuşu artık hem Yardım &gt; Yenilikler hem de Yardım &gt; "Son baktığınızdan beri yenilikler" ile açılan pencereyi kapatıyor. Önceden Esc hiçbir şey yapmıyordu ve kapat düğmesine gitmek gerekiyordu.
+
+- Birden fazla hesap açıkken güncelleme: WinZapp artık güncellemeyi yüklemeden önce diğer hesapların kapanmasını bekliyor. Önceden kurulum, başka hesapların açık olduğu uyarısıyla başarısız olabiliyordu ve ancak yeniden denemek için Evet yanıtını verdikten sonra devam ediyordu.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Neonize: fișierul media vechi pe care telefonul îl încarcă din nou după cererea de retrimitere este acum descărcat cu adevărat. Înainte, fișierul retrimis era refuzat pentru că nu se potrivea cu verificarea originalului și fișierul tot nu se deschidea.
 
 - Actualizare la ieșire: o opțiune nouă în Setări &gt; General descarcă actualizările automat, fără întrebări, și le instalează când ieșiți din WinZapp. Închiderea ferestrei în bara de sistem nu contează ca ieșire, iar WinZapp nu se mai deschide după instalare: rămâne închis și folosește versiunea nouă data viitoare când îl deschideți.
 
@@ -3048,13 +3074,17 @@ NOUTĂȚI
 
 - Scriere: indicatorul de scriere nu mai reapare la câteva secunde după ce persoana și-a trimis mesajul (problema #743).
 
-- Fereastra de noutăți: tasta Esc o închide acum, atât din Ajutor &gt; Ce este nou, cât și din Ajutor &gt; "Noutăți de la ultima vizualizare". Înainte, Esc nu făcea nimic și trebuia să ajungi la butonul de închidere.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- Fereastra de noutăți: tasta Esc o închide acum, atât din Ajutor &gt; Ce este nou, cât și din Ajutor &gt; "Noutăți de la ultima vizualizare". Înainte, Esc nu făcea nimic și trebuia să ajungi la butonul de închidere.
+
+- Actualizare cu mai multe conturi deschise: WinZapp așteaptă acum ca celelalte conturi să termine de închis înainte de a instala actualizarea. Înainte, instalarea putea eșua cu avertismentul că alte conturi sunt deschise și continua abia după ce răspundeai Da pentru a încerca din nou.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- Neonize: الوسائط القديمة التي يعيد الهاتف رفعها بعد طلب إعادة الإرسال تُنزَّل الآن فعلًا. كان الملف المُعاد رفعه يُرفض سابقًا لأنه لا يطابق التحقق الخاص بالملف الأصلي، فتبقى الوسائط لا تُفتح.
 
 - التحديث عند الإنهاء: خيار جديد في الإعدادات &gt; عام ينزّل التحديثات تلقائيًا، بدون سؤال، ويثبّتها عند إنهاء WinZapp. إغلاق النافذة إلى منطقة الإشعارات لا يُعدّ إنهاءً، ولا يفتح WinZapp مرة أخرى بعد التثبيت: يبقى مغلقًا ويستخدم الإصدار الجديد في المرة التالية التي تفتحه فيها.
 
@@ -3484,13 +3514,17 @@ NOUTĂȚI
 
 - الكتابة: لم يعد مؤشر "يكتب" يظهر من جديد بعد ثوانٍ من إرسال الشخص لرسالته (المشكلة #743).
 
-- نافذة الجديد: مفتاح Esc يغلقها الآن، سواء من مساعدة &gt; ما الجديد أو من مساعدة &gt; "ما الجديد منذ آخر نظرة". كان Esc سابقًا لا يفعل شيئًا، وكان لا بد من الانتقال إلى زر الإغلاق.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
-- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
+- نافذة الجديد: مفتاح Esc يغلقها الآن، سواء من مساعدة &gt; ما الجديد أو من مساعدة &gt; "ما الجديد منذ آخر نظرة". كان Esc سابقًا لا يفعل شيئًا، وكان لا بد من الانتقال إلى زر الإغلاق.
+
+- التحديث مع فتح عدة حسابات: ينتظر WinZapp الآن حتى تنتهي الحسابات الأخرى من الإغلاق قبل تثبيت التحديث. كان التثبيت سابقًا قد يفشل مع تنبيه بأن حسابات أخرى مفتوحة، ولا يتابع إلا بعد أن تجيب بنعم لإعادة المحاولة.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
+- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Neonize: old media that the phone re-uploads after the request to send it again is now actually downloaded. Before, the re-uploaded file was refused because it did not match the check of the original file and the media still would not open.
 
 - Update on exit: a new option in Settings &gt; General downloads updates automatically, without asking, and installs them when you exit WinZapp. Closing the window to the tray does not count as exiting, and WinZapp does not open again after the installation: it stays closed and uses the new version the next time you open it.
 
@@ -3918,7 +3952,18 @@ WHAT'S NEW
 
 - Digitazione: l'indicatore "sta scrivendo" non riappare più alcuni secondi dopo che la persona ha inviato il messaggio (problema #743).
 
-- Finestra delle novità: il tasto Esc ora la chiude, sia da Guida &gt; Novità sia da Guida &gt; "Cosa c'è di nuovo dall'ultima volta che hai controllato". Prima Esc non faceva nulla e bisognava raggiungere il pulsante di chiusura.</description>
+- Finestra delle novità: il tasto Esc ora la chiude, sia da Guida &gt; Novità sia da Guida &gt; "Cosa c'è di nuovo dall'ultima volta che hai controllato". Prima Esc non faceva nulla e bisognava raggiungere il pulsante di chiusura.
+
+- Updating with several accounts open: WinZapp now waits for the other accounts to finish closing before it installs the update. Before, the install could fail with a warning that other accounts were open, and only went ahead after you answered Yes to try again.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5387alpha/WinZapp-macOS-arm64.zip" length="311830991" type="application/octet-stream" sparkle:edSignature="LHSRaHAS0v6fVSAKKgHc0lN+uxWpIa7H2P9ebWp0W59m8bzOtWs2DAQ69wM4MiKoLRFq4loVttMta4vbKgl1Dw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5382alpha</title>
+      <pubDate>Wed, 11 Nov 2026 20:02:45 +0000</pubDate>
+      <sparkle:version>3.0.0.53821</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5382alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5382alpha/WinZapp-macOS-arm64.zip" length="311828171" type="application/octet-stream" sparkle:edSignature="9fWpXZCZ8u98jkvR/2VqGcnNqAH2xJz+8vh6uBs7iighOvXy/zeyLKKR1Vdea2wy7yxFgESG6LDN1noV/1oCBg=="></enclosure>
     </item>
     <item>
@@ -3947,15 +3992,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5364alpha/WinZapp-macOS-arm64.zip" length="311852242" type="application/octet-stream" sparkle:edSignature="6RiHYygtCOQWYsVqq7d7/uqyV0wkG1YiiT13dtjz1s8D+Eq1KVnYlmAeKdpyXbMM1saNEJB5RGLQPpGSOEq8Cg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5363alpha</title>
-      <pubDate>Wed, 11 Nov 2026 02:34:54 +0000</pubDate>
-      <sparkle:version>3.0.0.53631</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5363alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5363alpha/WinZapp-macOS-arm64.zip" length="311852672" type="application/octet-stream" sparkle:edSignature="YHWPUHfF7MzDcmc9BXP6Cusnd0wG5OMtstUpn2IyCPw2vAxfQK1pItl4m4pkvNhvgdxAcotg/v+tSXwgkyrxAA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5570,6 +5606,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: JQe73i7cKkHRtgYRMzS8nkpdOeIDe9t/4dKte9knIzal26G+P+7knn6FWIgkjycETWN7I2QR6w3RWInavuEgCA==
-length: 996906
+edSignature: U14683lVzV2sscwHqhm2wl0doPC2Dwx+YJv1dXKzkjO6xWXATAgTpSsL3DS0najD59JoqcFpethUIgJghVPeDw==
+length: 1001984
 -->
