@@ -5,18 +5,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5374alpha</title>
-      <pubDate>Wed, 11 Nov 2026 16:43:28 +0000</pubDate>
-      <sparkle:version>3.0.0.53741</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5374alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5382alpha</title>
+      <pubDate>Wed, 11 Nov 2026 20:02:45 +0000</pubDate>
+      <sparkle:version>3.0.0.53821</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5382alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Update on exit: a new option in Settings &gt; General downloads updates automatically, without asking, and installs them when you exit WinZapp. Closing the window to the tray does not count as exiting, and WinZapp does not open again after the installation: it stays closed and uses the new version the next time you open it.
+
+- Neonize: old chat history is now really imported during the background sync; the previous fix was still undone at the end of each sweep. Old media that cannot be recovered even after asking the phone now shows as expired instead of a repeated connection error.
 
 - Neonize: media whose link expired is now requested again from the phone. When a download fails because the link expired, WinZapp asks the phone to upload the media again and downloads it from the new link; if the phone no longer has the file, the media stays marked as expired.
 
@@ -441,12 +445,16 @@ WHAT'S NEW
 - Typing: the typing indicator no longer reappears a few seconds after the person sent their message (issue #743).
 
 - What's New window: the Esc key now closes it, both from Help &gt; What's New and from Help &gt; "What's New Since You Last Looked". Before, Esc did nothing and you had to go to the close button.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Atualizar ao sair: nova opção em Configurações &gt; Geral que baixa as atualizações automaticamente, sem perguntar, e as instala quando você sai do WinZapp. Fechar a janela para a bandeja não conta como sair, e o WinZapp não abre de novo depois da instalação: ele fica fechado e usa a versão nova na próxima vez que você abri-lo.
+
+- Neonize: o histórico antigo das conversas agora é importado de fato durante a sincronização em segundo plano; a correção anterior ainda era anulada ao fim de cada varredura. Mídia antiga que não dá mais para recuperar, mesmo depois de pedir ao celular, agora aparece como expirada em vez de um erro de conexão repetido.
 
 - Neonize: mídia cujo link expirou agora é pedida de novo ao celular. Quando o download falha por link expirado, o WinZapp pede ao celular que envie a mídia outra vez e baixa pelo novo link; se o celular não tem mais o arquivo, a mídia continua marcada como expirada.
 
@@ -871,12 +879,16 @@ NOVIDADES
 - Digitação: o aviso "digitando" não reaparece mais alguns segundos depois de a pessoa enviar a mensagem (problema #743).
 
 - Janela de novidades: a tecla Esc agora a fecha, tanto em Ajuda &gt; Novidades quanto em Ajuda &gt; "Novidades desde a última vez que você viu". Antes o Esc não fazia nada e era preciso ir até o botão de fechar.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Atualizar ao sair: nova opção em Definições &gt; Geral que descarrega as atualizações automaticamente, sem perguntar, e as instala quando sai do WinZapp. Fechar a janela para a bandeja não conta como sair, e o WinZapp não volta a abrir depois da instalação: fica fechado e usa a versão nova da próxima vez que o abrir.
+
+- Neonize: o histórico antigo das conversas passa a ser mesmo importado durante a sincronização em segundo plano; a correção anterior ainda era anulada no fim de cada varrimento. Os ficheiros multimédia antigos que já não se conseguem recuperar, mesmo depois de pedir ao telemóvel, passam a aparecer como expirados em vez de um erro de ligação repetido.
 
 - Neonize: um ficheiro multimédia cuja ligação expirou passa a ser pedido de novo ao telemóvel. Quando a transferência falha por ligação expirada, o WinZapp pede ao telemóvel que envie o ficheiro outra vez e transfere-o pela nova ligação; se o telemóvel já não o tem, fica marcado como expirado.
 
@@ -1301,12 +1313,16 @@ NOVIDADES
 - Escrita: o aviso "a escrever" já não reaparece alguns segundos depois de a pessoa enviar a mensagem (problema #743).
 
 - Janela de novidades: a tecla Esc passa a fechá-la, tanto em Ajuda &gt; Novidades como em Ajuda &gt; "Novidades desde a última vez que viu". Antes o Esc não fazia nada e era preciso ir até ao botão de fechar.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Actualizar al salir: nueva opción en Configuración &gt; General que descarga las actualizaciones automáticamente, sin preguntar, y las instala cuando sales de WinZapp. Cerrar la ventana a la bandeja no cuenta como salir, y WinZapp no se vuelve a abrir tras la instalación: queda cerrado y usa la versión nueva la próxima vez que lo abras.
+
+- Neonize: el historial antiguo de los chats ahora se importa de verdad durante la sincronización en segundo plano; la corrección anterior aún se anulaba al final de cada barrido. Los archivos multimedia antiguos que no se pueden recuperar, ni siquiera tras pedirlo al teléfono, ahora aparecen como caducados en lugar de un error de conexión repetido.
 
 - Neonize: el archivo multimedia cuyo enlace caducó ahora se vuelve a pedir al teléfono. Cuando la descarga falla por enlace caducado, WinZapp pide al teléfono que suba el archivo otra vez y lo descarga con el enlace nuevo; si el teléfono ya no lo tiene, el archivo sigue marcado como caducado.
 
@@ -1731,12 +1747,16 @@ NOVEDADES
 - Escritura: el aviso de "escribiendo" ya no reaparece unos segundos después de que la persona envíe su mensaje (problema #743).
 
 - Ventana de novedades: la tecla Esc ahora la cierra, tanto en Ayuda &gt; Novedades como en Ayuda &gt; "Novedades desde la última vez que miraste". Antes Esc no hacía nada y había que ir hasta el botón de cerrar.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Aktualizacja przy zamykaniu: nowa opcja w Ustawieniach &gt; Ogólne pobiera aktualizacje automatycznie, bez pytania, i instaluje je po zakończeniu pracy z WinZapp. Zamknięcie okna do zasobnika nie jest zakończeniem pracy, a WinZapp nie uruchamia się ponownie po instalacji: pozostaje zamknięty i używa nowej wersji przy następnym uruchomieniu.
+
+- Neonize: stara historia czatów jest teraz naprawdę importowana podczas synchronizacji w tle; poprzednia poprawka była nadal unieważniana na końcu każdego przebiegu. Stare pliki multimedialne, których nie da się odzyskać nawet po zapytaniu telefonu, są teraz pokazywane jako wygasłe zamiast powtarzanego błędu połączenia.
 
 - Neonize: multimedia, których link wygasł, są teraz ponownie żądane od telefonu. Gdy pobieranie nie powiedzie się z powodu wygasłego linku, WinZapp prosi telefon o ponowne przesłanie pliku i pobiera go nowym linkiem; jeśli telefon nie ma już pliku, multimedia pozostają oznaczone jako wygasłe.
 
@@ -2161,12 +2181,16 @@ NOWOŚCI
 - Pisanie: wskaźnik pisania nie pojawia się już ponownie kilka sekund po wysłaniu wiadomości przez rozmówcę (problem #743).
 
 - Okno nowości: klawisz Esc zamyka je teraz zarówno z Pomoc &gt; „Co nowego?”, jak i z Pomoc &gt; „Co nowego od ostatniego przeglądu”. Wcześniej Esc nic nie robił i trzeba było przejść do przycisku zamykania.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Çıkışta güncelle: Ayarlar &gt; Genel bölümündeki yeni bir seçenek güncellemeleri sormadan otomatik indirir ve WinZapp'tan çıktığınızda yükler. Pencereyi tepsiye kapatmak çıkış sayılmaz ve WinZapp kurulumdan sonra yeniden açılmaz: kapalı kalır ve yeni sürümü bir sonraki açışınızda kullanır.
+
+- Neonize: eski sohbet geçmişi artık arka plan eşzamanlaması sırasında gerçekten içe aktarılıyor; önceki düzeltme her taramanın sonunda yine geçersiz kalıyordu. Telefona sorulduktan sonra bile kurtarılamayan eski medya dosyaları artık tekrarlanan bir bağlantı hatası yerine süresi dolmuş olarak görünüyor.
 
 - Neonize: bağlantısının süresi dolmuş medya artık telefondan yeniden isteniyor. Bağlantı süresi dolduğu için indirme başarısız olduğunda WinZapp telefondan medyayı yeniden yüklemesini ister ve yeni bağlantıdan indirir; telefonda dosya artık yoksa medya süresi dolmuş olarak işaretli kalır.
 
@@ -2591,12 +2615,16 @@ YENİLİKLER
 - Yazma: karşı taraf mesajını gönderdikten birkaç saniye sonra "yazıyor" göstergesi artık yeniden görünmüyor (sorun #743).
 
 - Yenilikler penceresi: Esc tuşu artık hem Yardım &gt; Yenilikler hem de Yardım &gt; "Son baktığınızdan beri yenilikler" ile açılan pencereyi kapatıyor. Önceden Esc hiçbir şey yapmıyordu ve kapat düğmesine gitmek gerekiyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Actualizare la ieșire: o opțiune nouă în Setări &gt; General descarcă actualizările automat, fără întrebări, și le instalează când ieșiți din WinZapp. Închiderea ferestrei în bara de sistem nu contează ca ieșire, iar WinZapp nu se mai deschide după instalare: rămâne închis și folosește versiunea nouă data viitoare când îl deschideți.
+
+- Neonize: istoricul vechi al conversațiilor este acum importat cu adevărat în timpul sincronizării în fundal; corecția anterioară era încă anulată la sfârșitul fiecărei parcurgeri. Fișierele media vechi care nu mai pot fi recuperate, chiar și după ce sunt cerute telefonului, apar acum ca expirate, în loc de o eroare de conexiune repetată.
 
 - Neonize: fișierul media al cărui link a expirat este acum cerut din nou de la telefon. Când descărcarea eșuează din cauza linkului expirat, WinZapp cere telefonului să încarce din nou fișierul și îl descarcă prin noul link; dacă telefonul nu-l mai are, fișierul rămâne marcat ca expirat.
 
@@ -3021,12 +3049,16 @@ NOUTĂȚI
 - Scriere: indicatorul de scriere nu mai reapare la câteva secunde după ce persoana și-a trimis mesajul (problema #743).
 
 - Fereastra de noutăți: tasta Esc o închide acum, atât din Ajutor &gt; Ce este nou, cât și din Ajutor &gt; "Noutăți de la ultima vizualizare". Înainte, Esc nu făcea nimic și trebuia să ajungi la butonul de închidere.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- التحديث عند الإنهاء: خيار جديد في الإعدادات &gt; عام ينزّل التحديثات تلقائيًا، بدون سؤال، ويثبّتها عند إنهاء WinZapp. إغلاق النافذة إلى منطقة الإشعارات لا يُعدّ إنهاءً، ولا يفتح WinZapp مرة أخرى بعد التثبيت: يبقى مغلقًا ويستخدم الإصدار الجديد في المرة التالية التي تفتحه فيها.
+
+- Neonize: أصبح سجل المحادثات القديم يُستورد فعلًا أثناء المزامنة في الخلفية؛ فقد كان الإصلاح السابق يُلغى عند نهاية كل مسح. أما ملفات الوسائط القديمة التي لا يمكن استرجاعها حتى بعد سؤال الهاتف فتظهر الآن على أنها منتهية بدل خطأ اتصال متكرر.
 
 - Neonize: الوسائط التي انتهت صلاحية رابطها تُطلب الآن من الهاتف مرة أخرى. عندما يفشل التنزيل بسبب انتهاء صلاحية الرابط، يطلب WinZapp من الهاتف رفع الوسائط من جديد ثم ينزّلها من الرابط الجديد؛ وإذا لم يعد الملف على الهاتف تبقى الوسائط معلَّمة بأنها منتهية الصلاحية.
 
@@ -3453,12 +3485,16 @@ NOUTĂȚI
 - الكتابة: لم يعد مؤشر "يكتب" يظهر من جديد بعد ثوانٍ من إرسال الشخص لرسالته (المشكلة #743).
 
 - نافذة الجديد: مفتاح Esc يغلقها الآن، سواء من مساعدة &gt; ما الجديد أو من مساعدة &gt; "ما الجديد منذ آخر نظرة". كان Esc سابقًا لا يفعل شيئًا، وكان لا بد من الانتقال إلى زر الإغلاق.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Resposta enviada nunca aparece acima da mensagem original com o relógio do PC atrasado (#754)
-- Neonize: mídia com link expirado é pedida de novo ao celular (#747) (#755)
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: deep backfill roda depois de uma varredura e mídia irrecuperável vira 410 (#756) (#758)
+- Atualizar ao sair do WinZapp (baixa sozinha, instala ao sair, sem reabrir) (#759)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Update on exit: a new option in Settings &gt; General downloads updates automatically, without asking, and installs them when you exit WinZapp. Closing the window to the tray does not count as exiting, and WinZapp does not open again after the installation: it stays closed and uses the new version the next time you open it.
+
+- Neonize: la cronologia vecchia delle chat viene ora davvero importata durante la sincronizzazione in background; la correzione precedente veniva ancora annullata alla fine di ogni scansione. I file multimediali vecchi che non si riescono a recuperare, nemmeno dopo averli chiesti al telefono, ora risultano scaduti invece di un errore di connessione ripetuto.
 
 - Neonize: media whose link expired is now requested again from the phone. When a download fails because the link expired, WinZapp asks the phone to upload the media again and downloads it from the new link; if the phone no longer has the file, the media stays marked as expired.
 
@@ -3883,6 +3919,15 @@ WHAT'S NEW
 - Digitazione: l'indicatore "sta scrivendo" non riappare più alcuni secondi dopo che la persona ha inviato il messaggio (problema #743).
 
 - Finestra delle novità: il tasto Esc ora la chiude, sia da Guida &gt; Novità sia da Guida &gt; "Cosa c'è di nuovo dall'ultima volta che hai controllato". Prima Esc non faceva nulla e bisognava raggiungere il pulsante di chiusura.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5382alpha/WinZapp-macOS-arm64.zip" length="311828171" type="application/octet-stream" sparkle:edSignature="9fWpXZCZ8u98jkvR/2VqGcnNqAH2xJz+8vh6uBs7iighOvXy/zeyLKKR1Vdea2wy7yxFgESG6LDN1noV/1oCBg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5374alpha</title>
+      <pubDate>Wed, 11 Nov 2026 16:43:28 +0000</pubDate>
+      <sparkle:version>3.0.0.53741</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5374alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5374alpha/WinZapp-macOS-arm64.zip" length="311898330" type="application/octet-stream" sparkle:edSignature="pNoLX5Pto90uRql/9YCYv0VCw5m0j2EM+S/rOrrXfpSvLa9yywfL+IpVQXCt+nY8W1wnr4BnSgMAQK384ChYCA=="></enclosure>
     </item>
     <item>
@@ -3911,15 +3956,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5363alpha/WinZapp-macOS-arm64.zip" length="311852672" type="application/octet-stream" sparkle:edSignature="YHWPUHfF7MzDcmc9BXP6Cusnd0wG5OMtstUpn2IyCPw2vAxfQK1pItl4m4pkvNhvgdxAcotg/v+tSXwgkyrxAA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5362alpha</title>
-      <pubDate>Tue, 10 Nov 2026 20:46:33 +0000</pubDate>
-      <sparkle:version>3.0.0.53621</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5362alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5362alpha/WinZapp-macOS-arm64.zip" length="311812376" type="application/octet-stream" sparkle:edSignature="OF6BrEL5Fh7vcdTmfND09dS5TypjiQierLN7up8EdpwOsZ2uh+ooWLaHoEJZsM+SmKN3IpNQCyj/sVXJM8MUCA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5534,6 +5570,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 7GeXkq0ih2+P26Bp+b1kHtbKr9GjF6QTFnr6fK0HzeLMskxrLbdrvegKRTHEKn4p4IzlhFRDcBFqjcez2IfQDA==
-length: 990445
+edSignature: JQe73i7cKkHRtgYRMzS8nkpdOeIDe9t/4dKte9knIzal26G+P+7knn6FWIgkjycETWN7I2QR6w3RWInavuEgCA==
+length: 996906
 -->
