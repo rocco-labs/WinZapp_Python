@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5362alpha</title>
-      <pubDate>Tue, 10 Nov 2026 20:46:33 +0000</pubDate>
-      <sparkle:version>3.0.0.53621</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5362alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5363alpha</title>
+      <pubDate>Wed, 11 Nov 2026 02:34:54 +0000</pubDate>
+      <sparkle:version>3.0.0.53631</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5363alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="en" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect Server 2.10.79 is now offered as an update without waiting for a new WinZapp version. It only updates security dependencies, and WinZapp's changes to the server are not affected.
 
 - Mentions: in a group message with @all, Tab no longer goes through one link per member right after the chat opens. Before, this happened until the group's members finished loading and the message lost focus.
 
@@ -420,11 +422,13 @@ WHAT'S NEW
 - Calls: the "Call participants" button in the call window now has the Ctrl+Shift+P shortcut (Ctrl+P is still the switch to video). The screen reader announces this shortcut key on the button, and it is listed with the call window shortcuts.
 
 - Neonize: "Add yours", question and animated sticker statuses no longer show as "Incompatible message"; the bridge log now records the type of messages it has no mapping for.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server 2.10.79 agora é oferecido como atualização sem esperar por uma nova versão do WinZapp. Ele só atualiza dependências de segurança e não afeta as alterações que o WinZapp faz no servidor.
 
 - Menções: numa mensagem de grupo com @todos, o Tab não passa mais por um link para cada participante logo depois de abrir a conversa. Antes isso acontecia até os participantes do grupo terminarem de carregar e a mensagem perder o foco.
 
@@ -829,11 +833,13 @@ NOVIDADES
 - Chamadas: o botão "Participantes da ligação" da janela da chamada agora tem o atalho Ctrl+Shift+P (o Ctrl+P continua sendo a promoção para vídeo). O leitor de tela anuncia essa tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: status "Adicione o seu", de pergunta e de figurinha animada deixam de aparecer como "Mensagem incompatível"; o registro do bridge agora anota o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O WPPConnect Server 2.10.79 é agora oferecido como atualização sem esperar por uma nova versão do WinZapp. Só atualiza dependências de segurança e não afeta as alterações que o WinZapp faz no servidor.
 
 - Menções: numa mensagem de grupo com @todos, o Tab já não passa por uma ligação para cada participante logo depois de abrir a conversa. Antes isso acontecia até os participantes do grupo terminarem de carregar e a mensagem perder o foco.
 
@@ -1238,11 +1244,13 @@ NOVIDADES
 - Chamadas: o botão "Participantes da chamada" da janela da chamada passa a ter o atalho Ctrl+Shift+P (o Ctrl+P continua a mudar para vídeo). O leitor de ecrã anuncia esta tecla de atalho no botão, e o atalho aparece na lista de atalhos da janela da chamada.
 
 - Neonize: os estados "Adiciona o teu", de pergunta e de autocolante animado deixam de aparecer como "Mensagem incompatível"; o registo da bridge passa a anotar o tipo das mensagens sem mapeamento.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="es" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- WPPConnect Server 2.10.79 ahora se ofrece como actualización sin esperar a una nueva versión de WinZapp. Solo actualiza dependencias de seguridad y no afecta a los cambios que WinZapp hace en el servidor.
 
 - Menciones: en un mensaje de grupo con @todos, el Tabulador ya no recorre un enlace por cada participante justo después de abrir el chat. Antes ocurría hasta que los participantes del grupo terminaban de cargarse y el mensaje perdía el foco.
 
@@ -1647,11 +1655,13 @@ NOVEDADES
 - Llamadas: el botón "Participantes de la llamada" de la ventana de la llamada ahora tiene el atajo Ctrl+Shift+P (Ctrl+P sigue siendo el cambio a vídeo). El lector de pantalla anuncia esa tecla de atajo en el botón, y el atajo aparece en la lista de atajos de la ventana de la llamada.
 
 - Neonize: los estados "Añade el tuyo", de pregunta y de sticker animado ya no aparecen como "Mensaje incompatible"; el registro del bridge ahora anota el tipo de los mensajes sin correspondencia.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="pl" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- WPPConnect Server 2.10.79 jest teraz oferowany jako aktualizacja bez czekania na nową wersję WinZapp. Aktualizuje tylko zależności związane z bezpieczeństwem i nie wpływa na zmiany, które WinZapp wprowadza w serwerze.
 
 - Wzmianki: w wiadomości grupowej z @wszyscy klawisz Tab nie przechodzi już przez osobny link dla każdego uczestnika zaraz po otwarciu czatu. Wcześniej działo się tak, dopóki uczestnicy grupy się nie wczytali, a wiadomość nie straciła fokusu.
 
@@ -2056,11 +2066,13 @@ NOWOŚCI
 - Połączenia: przycisk „Uczestnicy połączenia” w oknie połączenia ma teraz skrót Ctrl+Shift+P (Ctrl+P nadal przełącza na wideo). Czytnik ekranu zapowiada ten skrót na przycisku, a skrót jest na liście skrótów okna połączenia.
 
 - Neonize: statusy „Dodaj swój”, z pytaniem i z animowaną naklejką nie pokazują się już jako „Niezgodna wiadomość”; dziennik mostu zapisuje teraz typ wiadomości bez odpowiednika.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="tr" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WPPConnect Server 2.10.79 artık yeni bir WinZapp sürümünü beklemeden güncelleme olarak sunuluyor. Yalnızca güvenlik bağımlılıklarını günceller ve WinZapp'ın sunucuda yaptığı değişiklikleri etkilemez.
 
 - Bahsetmeler: @tümü içeren bir grup mesajında Tab, sohbet açıldıktan hemen sonra artık her katılımcı için ayrı bir bağlantıdan geçmiyor. Önceden bu, grubun katılımcıları yüklenip mesaj odağı kaybedene kadar oluyordu.
 
@@ -2465,11 +2477,13 @@ YENİLİKLER
 - Aramalar: arama penceresindeki "Arama katılımcıları" düğmesi artık Ctrl+Shift+P kısayoluna sahip (Ctrl+P görüntülüye geçiş olarak kalır). Ekran okuyucu bu kısayol tuşunu düğmede duyurur ve kısayol arama penceresi kısayolları listesinde yer alır.
 
 - Neonize: "Seninkini ekle", soru ve hareketli çıkartma durumları artık "Uyumsuz mesaj" olarak görünmüyor; köprü günlüğü artık eşleşmesi olmayan mesajların türünü kaydediyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="ro" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- WPPConnect Server 2.10.79 este acum oferit ca actualizare fără a aștepta o nouă versiune WinZapp. Actualizează doar dependențe de securitate și nu afectează modificările pe care WinZapp le face serverului.
 
 - Mențiuni: într-un mesaj de grup cu @toți, Tab nu mai trece printr-un link pentru fiecare participant imediat după deschiderea conversației. Înainte se întâmpla până când participanții grupului terminau de încărcat și mesajul pierdea focusul.
 
@@ -2874,11 +2888,13 @@ NOUTĂȚI
 - Apeluri: butonul „Participanții la apel” din fereastra apelului are acum scurtătura Ctrl+Shift+P (Ctrl+P rămâne trecerea la video). Cititorul de ecran anunță această tastă de scurtătură pe buton, iar scurtătura apare în lista de scurtături a ferestrei apelului.
 
 - Neonize: statusurile „Adaugă-l pe al tău”, cu întrebare și cu autocolant animat nu mai apar ca „Mesaj incompatibil”; jurnalul bridge-ului notează acum tipul mesajelor fără corespondent.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="ar" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- يُعرض WPPConnect Server 2.10.79 الآن كتحديث دون انتظار إصدار جديد من WinZapp. وهو يحدّث مكتبات تبعية أمنية فقط، ولا يؤثر في تعديلات WinZapp على الخادم.
 
 - الإشارات: في رسالة جماعية فيها @الكل لم يعد Tab يمر برابط لكل مشارك فور فتح الدردشة. كان ذلك يحدث سابقًا إلى أن ينتهي تحميل مشاركي المجموعة ويغادر التركيز الرسالة.
 
@@ -3285,11 +3301,13 @@ NOUTĂȚI
 - المكالمات: زر «المشاركون في المكالمة» في نافذة المكالمة له الآن الاختصار Ctrl+Shift+P (ويبقى Ctrl+P للتحويل إلى الفيديو). يعلن قارئ الشاشة مفتاح الاختصار هذا على الزر، ويظهر الاختصار في قائمة اختصارات نافذة المكالمة.
 
 - Neonize: حالات «أضف حالتك» والأسئلة والملصقات المتحركة لم تعد تظهر كـ«رسالة غير متوافقة»؛ وسجل الجسر يدوّن الآن نوع الرسائل التي لا مقابل لها.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Channels on both engines, starred messages, history, calls and transcription fixes (#742)
+      <description xml:lang="it" sparkle:format="plain-text">- Aprovar o WPPConnect Server 2.10.79 para quem está na 2.10.78 (#744)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect Server 2.10.79 viene ora offerto come aggiornamento senza dover attendere una nuova versione di WinZapp. Aggiorna solo dipendenze di sicurezza e non influisce sulle modifiche che WinZapp apporta al server.
 
 - Menzioni: in un messaggio di gruppo con @tutti, Tab non passa più per un link per ogni membro subito dopo l'apertura della chat. Prima succedeva finché i membri del gruppo non finivano di caricarsi e il messaggio perdeva il focus.
 
@@ -3694,6 +3712,15 @@ WHAT'S NEW
 - Chiamate: il pulsante "Partecipanti alla chiamata" della finestra della chiamata ora ha la scorciatoia Ctrl+Shift+P (Ctrl+P resta il passaggio al video). Il lettore di schermo annuncia questo tasto di scelta rapida sul pulsante, e la scorciatoia compare nell'elenco delle scorciatoie della finestra della chiamata.
 
 - Neonize: gli stati "Aggiungi il tuo", di domanda e di sticker animato non compaiono più come "Messaggio incompatibile"; il log del bridge ora annota il tipo dei messaggi senza corrispondenza.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5363alpha/WinZapp-macOS-arm64.zip" length="311852672" type="application/octet-stream" sparkle:edSignature="YHWPUHfF7MzDcmc9BXP6Cusnd0wG5OMtstUpn2IyCPw2vAxfQK1pItl4m4pkvNhvgdxAcotg/v+tSXwgkyrxAA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5362alpha</title>
+      <pubDate>Tue, 10 Nov 2026 20:46:33 +0000</pubDate>
+      <sparkle:version>3.0.0.53621</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5362alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5362alpha/WinZapp-macOS-arm64.zip" length="311812376" type="application/octet-stream" sparkle:edSignature="OF6BrEL5Fh7vcdTmfND09dS5TypjiQierLN7up8EdpwOsZ2uh+ooWLaHoEJZsM+SmKN3IpNQCyj/sVXJM8MUCA=="></enclosure>
     </item>
     <item>
@@ -3722,15 +3749,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5359alpha/WinZapp-macOS-arm64.zip" length="312029970" type="application/octet-stream" sparkle:edSignature="NBK5ZSsH5IXhFSHMMktr5li7vfH5v6WZC9f7TXXc1YZP2kVBi/mMQs2sg0gEUA2KbE/9owYRwNDKzWnjvc26Bg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5355alpha</title>
-      <pubDate>Mon, 09 Nov 2026 00:15:38 +0000</pubDate>
-      <sparkle:version>3.0.0.53551</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5355alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5355alpha/WinZapp-macOS-arm64.zip" length="312048898" type="application/octet-stream" sparkle:edSignature="QAUbPIZrmx0Sgw3kDmoQKGfWZHYSjB5aK3onqo7cSpmJZEa9Bu4UbF5Rz65Lo4xn0QEO5U0mDr5wKX/F6MIyCw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5345,6 +5363,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 0ps6DielfwMPBmtmNERH/foXRZtX/8xffW1TDz+g7bV4Z4XXBTrijAABi28LOLrht1CPTDuOh0xmZ1u1I6HoAQ==
-length: 964385
+edSignature: MFcwUeMz3aBcKeDkgOd2z84pyTs284Izpi1NgptpDFk0cTDGTMelQ/sS5AiRko6bkWTWyktT0ABJYq4EY5FBAA==
+length: 966176
 -->
