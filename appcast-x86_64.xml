@@ -5,18 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5387alpha</title>
-      <pubDate>Wed, 11 Nov 2026 22:21:59 +0000</pubDate>
-      <sparkle:version>3.0.0.53871</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5387alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5390alpha</title>
+      <pubDate>Thu, 12 Nov 2026 00:05:58 +0000</pubDate>
+      <sparkle:version>3.0.0.53901</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5390alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Neonize: a notice that a message was deleted, for a message or chat WinZapp does not have, no longer creates an "Unnamed group" in the chat list. Deleted messages in your existing chats are unchanged.
 
 - Neonize: old media that the phone re-uploads after the request to send it again is now actually downloaded. Before, the re-uploaded file was refused because it did not match the check of the original file and the media still would not open.
 
@@ -449,12 +450,13 @@ WHAT'S NEW
 - What's New window: the Esc key now closes it, both from Help &gt; What's New and from Help &gt; "What's New Since You Last Looked". Before, Esc did nothing and you had to go to the close button.
 
 - Updating with several accounts open: WinZapp now waits for the other accounts to finish closing before it installs the update. Before, the install could fail with a warning that other accounts were open, and only went ahead after you answered Yes to try again.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: o aviso de que uma mensagem foi apagada, quando o WinZapp não tem a mensagem nem a conversa, não cria mais um "Grupo sem nome" na lista de conversas. As mensagens apagadas nas suas conversas existentes continuam iguais.
 
 - Neonize: a mídia antiga que o celular reenvia depois do pedido de novo envio agora é baixada de verdade. Antes, o arquivo reenviado era recusado por não bater com a verificação do arquivo original e a mídia continuava sem abrir.
 
@@ -887,12 +889,13 @@ NOVIDADES
 - Janela de novidades: a tecla Esc agora a fecha, tanto em Ajuda &gt; Novidades quanto em Ajuda &gt; "Novidades desde a última vez que você viu". Antes o Esc não fazia nada e era preciso ir até o botão de fechar.
 
 - Atualização com várias contas abertas: o WinZapp agora espera as outras contas terminarem de fechar antes de instalar a atualização. Antes, a instalação podia falhar com o aviso de que outras contas estavam abertas e só seguia depois de você responder Sim para tentar de novo.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Neonize: o aviso de que uma mensagem foi apagada, quando o WinZapp não tem a mensagem nem a conversa, já não cria um "Grupo sem nome" na lista de conversas. As mensagens apagadas nas suas conversas existentes mantêm-se iguais.
 
 - Neonize: o ficheiro multimédia antigo que o telemóvel reenvia depois do pedido de novo envio passa a ser mesmo transferido. Antes, o ficheiro reenviado era recusado por não coincidir com a verificação do original e o ficheiro continuava sem abrir.
 
@@ -1325,12 +1328,13 @@ NOVIDADES
 - Janela de novidades: a tecla Esc passa a fechá-la, tanto em Ajuda &gt; Novidades como em Ajuda &gt; "Novidades desde a última vez que viu". Antes o Esc não fazia nada e era preciso ir até ao botão de fechar.
 
 - Atualização com várias contas abertas: o WinZapp passa a esperar que as outras contas terminem de fechar antes de instalar a atualização. Antes, a instalação podia falhar com o aviso de que havia outras contas abertas e só avançava depois de responder Sim para tentar de novo.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Neonize: el aviso de que se borró un mensaje, cuando WinZapp no tiene ni el mensaje ni el chat, ya no crea un "Grupo sin nombre" en la lista de chats. Los mensajes borrados en tus chats existentes no cambian.
 
 - Neonize: el archivo multimedia antiguo que el teléfono vuelve a subir tras la petición de reenvío ahora se descarga de verdad. Antes, el archivo reenviado se rechazaba por no coincidir con la verificación del original y el archivo seguía sin abrirse.
 
@@ -1763,12 +1767,13 @@ NOVEDADES
 - Ventana de novedades: la tecla Esc ahora la cierra, tanto en Ayuda &gt; Novedades como en Ayuda &gt; "Novedades desde la última vez que miraste". Antes Esc no hacía nada y había que ir hasta el botón de cerrar.
 
 - Actualizar con varias cuentas abiertas: WinZapp ahora espera a que las demás cuentas terminen de cerrarse antes de instalar la actualización. Antes, la instalación podía fallar con el aviso de que había otras cuentas abiertas y solo seguía después de responder Sí para volver a intentarlo.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Neonize: powiadomienie o usunięciu wiadomości, gdy WinZapp nie ma ani tej wiadomości, ani rozmowy, nie tworzy już "Grupy bez nazwy" na liście rozmów. Usunięte wiadomości w istniejących rozmowach pozostają bez zmian.
 
 - Neonize: stare multimedia, które telefon przesyła ponownie po prośbie o ponowne wysłanie, są teraz naprawdę pobierane. Wcześniej ponownie przesłany plik był odrzucany, bo nie zgadzał się z weryfikacją oryginału, i multimedia nadal się nie otwierały.
 
@@ -2201,12 +2206,13 @@ NOWOŚCI
 - Okno nowości: klawisz Esc zamyka je teraz zarówno z Pomoc &gt; „Co nowego?”, jak i z Pomoc &gt; „Co nowego od ostatniego przeglądu”. Wcześniej Esc nic nie robił i trzeba było przejść do przycisku zamykania.
 
 - Aktualizacja przy kilku otwartych kontach: WinZapp czeka teraz, aż pozostałe konta skończą się zamykać, zanim zainstaluje aktualizację. Wcześniej instalacja mogła się nie udać z ostrzeżeniem, że inne konta są otwarte, i szła dalej dopiero po odpowiedzi Tak, aby spróbować ponownie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Neonize: WinZapp'in ne mesajı ne de sohbeti bulunduğu bir mesajın silindiği bildirimi artık sohbet listesinde "Adsız grup" oluşturmuyor. Mevcut sohbetlerinizdeki silinmiş mesajlar değişmez.
 
 - Neonize: telefonun yeniden gönderme isteğinden sonra tekrar yüklediği eski medya artık gerçekten indiriliyor. Daha önce yeniden yüklenen dosya, orijinal dosyanın doğrulamasıyla eşleşmediği için reddediliyor ve medya yine açılmıyordu.
 
@@ -2639,12 +2645,13 @@ YENİLİKLER
 - Yenilikler penceresi: Esc tuşu artık hem Yardım &gt; Yenilikler hem de Yardım &gt; "Son baktığınızdan beri yenilikler" ile açılan pencereyi kapatıyor. Önceden Esc hiçbir şey yapmıyordu ve kapat düğmesine gitmek gerekiyordu.
 
 - Birden fazla hesap açıkken güncelleme: WinZapp artık güncellemeyi yüklemeden önce diğer hesapların kapanmasını bekliyor. Önceden kurulum, başka hesapların açık olduğu uyarısıyla başarısız olabiliyordu ve ancak yeniden denemek için Evet yanıtını verdikten sonra devam ediyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Neonize: notificarea că un mesaj a fost șters, când WinZapp nu are nici mesajul, nici conversația, nu mai creează un "Grup fără nume" în lista de conversații. Mesajele șterse din conversațiile existente rămân neschimbate.
 
 - Neonize: fișierul media vechi pe care telefonul îl încarcă din nou după cererea de retrimitere este acum descărcat cu adevărat. Înainte, fișierul retrimis era refuzat pentru că nu se potrivea cu verificarea originalului și fișierul tot nu se deschidea.
 
@@ -3077,12 +3084,13 @@ NOUTĂȚI
 - Fereastra de noutăți: tasta Esc o închide acum, atât din Ajutor &gt; Ce este nou, cât și din Ajutor &gt; "Noutăți de la ultima vizualizare". Înainte, Esc nu făcea nimic și trebuia să ajungi la butonul de închidere.
 
 - Actualizare cu mai multe conturi deschise: WinZapp așteaptă acum ca celelalte conturi să termine de închis înainte de a instala actualizarea. Înainte, instalarea putea eșua cu avertismentul că alte conturi sunt deschise și continua abia după ce răspundeai Da pentru a încerca din nou.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- Neonize: إشعار حذف رسالة، عندما لا يملك WinZapp الرسالة ولا المحادثة، لم يعد ينشئ "مجموعة بلا اسم" في قائمة المحادثات. الرسائل المحذوفة في محادثاتك الحالية تبقى كما هي.
 
 - Neonize: الوسائط القديمة التي يعيد الهاتف رفعها بعد طلب إعادة الإرسال تُنزَّل الآن فعلًا. كان الملف المُعاد رفعه يُرفض سابقًا لأنه لا يطابق التحقق الخاص بالملف الأصلي، فتبقى الوسائط لا تُفتح.
 
@@ -3517,12 +3525,13 @@ NOUTĂȚI
 - نافذة الجديد: مفتاح Esc يغلقها الآن، سواء من مساعدة &gt; ما الجديد أو من مساعدة &gt; "ما الجديد منذ آخر نظرة". كان Esc سابقًا لا يفعل شيئًا، وكان لا بد من الانتقال إلى زر الإغلاق.
 
 - التحديث مع فتح عدة حسابات: ينتظر WinZapp الآن حتى تنتهي الحسابات الأخرى من الإغلاق قبل تثبيت التحديث. كان التثبيت سابقًا قد يفشل مع تنبيه بأن حسابات أخرى مفتوحة، ولا يتابع إلا بعد أن تجيب بنعم لإعادة المحاولة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Updater: wait for the other accounts to exit before claiming the install slot (#760)
-- Neonize: mídia reenviada pelo celular é baixada pelo HMAC, não pelo hash antigo (#756) (#761)
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: aviso de mensagem apagada sem original não cria conversa (#763)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Neonize: l'avviso che un messaggio è stato eliminato, quando WinZapp non ha né il messaggio né la chat, non crea più un "Gruppo senza nome" nell'elenco delle chat. I messaggi eliminati nelle chat esistenti restano invariati.
 
 - Neonize: old media that the phone re-uploads after the request to send it again is now actually downloaded. Before, the re-uploaded file was refused because it did not match the check of the original file and the media still would not open.
 
@@ -3955,6 +3964,15 @@ WHAT'S NEW
 - Finestra delle novità: il tasto Esc ora la chiude, sia da Guida &gt; Novità sia da Guida &gt; "Cosa c'è di nuovo dall'ultima volta che hai controllato". Prima Esc non faceva nulla e bisognava raggiungere il pulsante di chiusura.
 
 - Updating with several accounts open: WinZapp now waits for the other accounts to finish closing before it installs the update. Before, the install could fail with a warning that other accounts were open, and only went ahead after you answered Yes to try again.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5390alpha/WinZapp-macOS-x86_64.zip" length="349922340" type="application/octet-stream" sparkle:edSignature="c7XK+XC8smUGDRuecjQfUqIwiaSxXqCGs8oiXM6kjhGEiLqDEfl6BQaqnX2oJvJk46HM0eyAmfaP2JG3A03ADw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5387alpha</title>
+      <pubDate>Wed, 11 Nov 2026 22:21:59 +0000</pubDate>
+      <sparkle:version>3.0.0.53871</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5387alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5387alpha/WinZapp-macOS-x86_64.zip" length="349921674" type="application/octet-stream" sparkle:edSignature="4WJaAAXVMzFQuR7Shwqt6VMDEm9k9YSrmOwWz9D09/JB9mHCrG4cjf1zufy27xOy9s865xDbUmCaX7UI45OsBA=="></enclosure>
     </item>
     <item>
@@ -3983,15 +4001,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5370alpha/WinZapp-macOS-x86_64.zip" length="349984700" type="application/octet-stream" sparkle:edSignature="nTvfQ+TrzndpXjH1P9BXtVOzPPADa1Lh+khqm8pIFIi9WV2wCxGxdawMVTCsm49v3FQPzpNuJvyV4U1Hy5qoDg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5364alpha</title>
-      <pubDate>Wed, 11 Nov 2026 03:31:57 +0000</pubDate>
-      <sparkle:version>3.0.0.53641</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5364alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5364alpha/WinZapp-macOS-x86_64.zip" length="349945010" type="application/octet-stream" sparkle:edSignature="Xfhv6EEJnYV5HVzwFyMjbYlu5b/ly0Z9Us8V6fON4b8TWBdlCSg1TiCKpsbuVHhydxLoBhdiHt0BlMZqwdz/AA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -5606,6 +5615,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: yJVFA82ahsQIBxZlh/YQXh6uyVT74LiFzw98C5/pCAYsK14mrd2KUF3MepOm2gjznCFmPm2biiWOs6TrLranBQ==
-length: 1001991
+edSignature: HRFS15QYj2CoTYbh4kgf7PKLsjD3zhfYfiDBtpnEyWrb4YAWwLf4mlbojT+ImCVdpPkEMaF7Od/rsYT8cJCRDw==
+length: 1003082
 -->
