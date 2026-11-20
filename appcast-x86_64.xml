@@ -5,13 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5839alpha</title>
-      <pubDate>Fri, 20 Nov 2026 18:27:19 +0000</pubDate>
-      <sparkle:version>3.0.0.58391</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5839alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5845alpha</title>
+      <pubDate>Fri, 20 Nov 2026 23:33:27 +0000</pubDate>
+      <sparkle:version>3.0.0.58451</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5845alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="en" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -21,7 +22,7 @@ WHAT'S NEW
 
 - Contacts: the navigation list gains "Contacts" after Channels, with no Alt+number shortcut. It shows the saved contacts, one row per person by name and number; a contact kept under two addresses (its number and its linked ID, or a Brazilian number with and without the 9th digit) is a single row. "Search contacts" filters by name or number. Buttons and the context menu (Applications key or Shift+F10) open the conversation, start a voice or video call, show "Contact details", delete the contact, or block or unblock it; "New contact" adds one. "Enter on a contact" chooses what Enter does: open the conversation, call, video call or show the details.
 
-- Conversation: next to "Pinned messages", the new "Starred messages in this chat" button opens the starred messages window (Alt+0) with only the messages of that chat, titled with its name; choosing one focuses it in the conversation already open, without reopening it.
+- Conversation: the Chat info and Group info windows get a new "Starred messages" tab after "Media", listing the starred messages of that chat with a search field; "Open in the conversation" (or Enter) focuses the message in the conversation, and "Remove star" (or Delete) removes its star.
 
 - Calls: a chat that is in an ongoing call, a group or a private chat whose call grew to several people, now shows "Join ongoing voice call" or "Join ongoing video call (camera off)" instead of the call buttons; while this device is in the call with that chat, the button reads "Return to call" and brings the call window back.
 
@@ -325,7 +326,8 @@ WHAT'S NEW
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
 
-- The experimental Neonize engine was updated from 0.6.0 to 0.10.0. A chat deleted on the phone now disappears from WinZapp too, and marking a chat as read or unread on the phone updates the unread counter again.
+- The experimental Neonize engine was updated from 0.6.0 to 0.12.4. A chat deleted on the phone now disappears from WinZapp too, and marking a chat as read or unread on the phone updates the unread counter again. A contact's about now updates as soon as they change it.
+- Neonize: reactions given in community announcement groups, which arrive encrypted, now show up, and yours are sent encrypted in those groups. Comments on announcements are now opened and sent by the engine itself, with the previous method as a fallback.
 
 - WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
@@ -632,7 +634,8 @@ WHAT'S NEW
 - Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.
 
 - Calls: placing a call from a WhatsApp Business account (WPPConnect) no longer hangs for 75 seconds without ringing. WinZapp now answers by itself the "About this call" notice that WhatsApp shows on the first call from such accounts.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -642,7 +645,7 @@ NOVIDADES
 
 - Contatos: a lista de navegação ganha "Contatos" depois de Canais, sem atalho Alt+número. Ela mostra os contatos salvos, uma linha por pessoa, com nome e número; um contato guardado com dois endereços (o número e o ID de dispositivo vinculado, ou um número brasileiro com e sem o 9º dígito) é uma linha só. "Pesquisar contatos" filtra por nome ou número. Os botões e o menu de contexto (tecla Aplicativos ou Shift+F10) abrem a conversa, fazem uma ligação de voz ou de vídeo, mostram os "Dados do contato", apagam o contato ou o bloqueiam e desbloqueiam; "Novo contato" adiciona um. "Enter em um contato" escolhe o que o Enter faz: abrir a conversa, ligar, ligar por vídeo ou mostrar os dados.
 
-- Conversa: ao lado de "Mensagens fixadas", o novo botão "Mensagens favoritas da conversa" abre a janela de mensagens favoritadas (Alt+0) só com as mensagens dessa conversa, com o nome dela no título; escolher uma foca a mensagem na conversa já aberta, sem reabri-la.
+- Conversa: as janelas "Dados da conversa" e "Dados do grupo" ganham a aba "Mensagens favoritas" depois de "Mídia", com as mensagens favoritadas dessa conversa e um campo de pesquisa; "Abrir na conversa" (ou Enter) foca a mensagem na conversa, e "Remover dos favoritos" (ou Delete) tira a estrela dela.
 
 - Ligações: uma conversa que está numa ligação em andamento, de grupo ou privada cuja ligação passou a ter várias pessoas, agora mostra "Entrar na ligação de voz em andamento" ou "Entrar na ligação de vídeo em andamento (câmera desligada)" no lugar dos botões de ligar; enquanto este dispositivo está na ligação com essa conversa, o botão diz "Voltar à ligação" e traz a janela da ligação de volta.
 
@@ -946,7 +949,8 @@ NOVIDADES
 
 - Chamadas: agora dá para adicionar pessoas à chamada em andamento, pelo botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada em grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contatos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado de novo. Funciona com a WPPConnect e com o Neonize.
 
-- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.10.0. Uma conversa apagada no celular agora também some do WinZapp, e marcar uma conversa como lida ou não lida no celular volta a atualizar o contador de não lidas.
+- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.12.4. Uma conversa apagada no celular agora também some do WinZapp, e marcar uma conversa como lida ou não lida no celular volta a atualizar o contador de não lidas. O recado (Sobre) de um contato agora é atualizado assim que a pessoa o troca.
+- Neonize: as reações dadas em grupos de avisos de comunidades, que chegam criptografadas, agora aparecem, e as suas saem criptografadas nesses grupos. Os comentários dos avisos passam a ser abertos e enviados pelo próprio motor, com o método anterior como reserva.
 
 - O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir o cache privado de mídia por HTTP.
 
@@ -1253,7 +1257,8 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.
 
 - Ligações: ligar a partir de uma conta do WhatsApp Business (WPPConnect) não fica mais travado por 75 segundos sem tocar. O WinZapp agora responde sozinho ao aviso "Sobre esta ligação" que o WhatsApp mostra na primeira ligação dessas contas.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1263,7 +1268,7 @@ NOVIDADES
 
 - Contactos: a lista de navegação ganha "Contactos" depois de Canais, sem atalho Alt+número. Mostra os contactos guardados, uma linha por pessoa, com nome e número; um contacto guardado com dois endereços (o número e o ID de dispositivo associado, ou um número brasileiro com e sem o 9.º dígito) é uma linha só. "Pesquisar contactos" filtra por nome ou número. Os botões e o menu de contexto (tecla Aplicações ou Shift+F10) abrem a conversa, fazem uma chamada de voz ou videochamada, mostram os "Dados do contacto", apagam o contacto ou bloqueiam-no e desbloqueiam-no; "Novo contacto" adiciona um. "Enter num contacto" escolhe o que o Enter faz: abrir a conversa, ligar, fazer videochamada ou mostrar os dados.
 
-- Conversa: ao lado de "Mensagens afixadas", o novo botão "Mensagens marcadas com estrela nesta conversa" abre a janela de mensagens com estrela (Alt+0) só com as mensagens dessa conversa, com o nome dela no título; escolher uma foca a mensagem na conversa já aberta, sem a reabrir.
+- Conversa: as janelas "Detalhes da conversa" e "Detalhes do grupo" ganham o separador "Mensagens marcadas com estrela" depois de "Ficheiros multimédia", com as mensagens marcadas com estrela dessa conversa e um campo de pesquisa; "Abrir na conversa" (ou Enter) foca a mensagem na conversa, e "Desmarcar estrela" (ou Delete) tira-lhe a estrela.
 
 - Chamadas: uma conversa que está numa chamada em curso, de grupo ou privada cuja chamada passou a ter várias pessoas, mostra agora "Entrar na chamada de voz em curso" ou "Entrar na chamada de vídeo em curso (câmara desligada)" no lugar dos botões de chamar; enquanto este dispositivo está na chamada com essa conversa, o botão diz "Voltar à chamada" e traz a janela da chamada de volta.
 
@@ -1567,7 +1572,8 @@ NOVIDADES
 
 - Chamadas: já é possível adicionar pessoas à chamada em curso, com o botão "Adicionar participantes" na lista de participantes da chamada. Numa chamada de grupo aparecem os membros do grupo que ainda não estão nela; numa chamada privada, os seus contactos, e a chamada passa a ter várias pessoas, como no WhatsApp. Quem já foi chamado e ainda não entrou é chamado outra vez. Funciona com a WPPConnect e com o Neonize.
 
-- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.10.0. Uma conversa apagada no telemóvel passa a desaparecer também do WinZapp, e marcar uma conversa como lida ou não lida no telemóvel volta a atualizar o contador de não lidas.
+- O motor experimental Neonize foi atualizado da versão 0.6.0 para a 0.12.4. Uma conversa apagada no telemóvel passa a desaparecer também do WinZapp, e marcar uma conversa como lida ou não lida no telemóvel volta a atualizar o contador de não lidas. O estado (Sobre) de um contacto passa a ser atualizado assim que a pessoa o altera.
+- Neonize: as reações dadas em grupos de avisos de comunidades, que chegam encriptadas, passam a aparecer, e as suas saem encriptadas nesses grupos. Os comentários dos avisos passam a ser abertos e enviados pelo próprio motor, com o método anterior como reserva.
 
 - O WPPConnect Server foi atualizado para a 2.10.78, que deixa de servir a cache privada de multimédia por HTTP.
 
@@ -1874,7 +1880,8 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.
 
 - Chamadas: ligar a partir de uma conta do WhatsApp Business (WPPConnect) já não fica bloqueado durante 75 segundos sem tocar. O WinZapp passa a responder sozinho ao aviso "Sobre esta chamada" que o WhatsApp mostra na primeira chamada dessas contas.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="es" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1884,7 +1891,7 @@ NOVEDADES
 
 - Contactos: la lista de navegación incorpora "Contactos" después de Canales, sin atajo Alt+número. Muestra los contactos guardados, una fila por persona con nombre y número; un contacto guardado con dos direcciones (su número y su ID de dispositivo vinculado, o un número brasileño con y sin el noveno dígito) es una sola fila. "Buscar contactos" filtra por nombre o número. Los botones y el menú contextual (tecla Aplicaciones o Shift+F10) abren el chat, hacen una llamada de voz o una videollamada, muestran los "Datos del contacto", eliminan el contacto o lo bloquean y desbloquean; "Nuevo contacto" añade uno. "Enter en un contacto" elige lo que hace Enter: abrir el chat, llamar, videollamada o mostrar los datos.
 
-- Chat: junto a "Mensajes fijados", el nuevo botón "Mensajes destacados de este chat" abre la ventana de mensajes destacados (Alt+0) solo con los mensajes de ese chat, con su nombre en el título; elegir uno enfoca el mensaje en el chat ya abierto, sin reabrirlo.
+- Chat: las ventanas "Datos del chat" y "Datos del grupo" tienen una nueva pestaña "Mensajes destacados" después de "Multimedia", con los mensajes destacados de ese chat y un campo de búsqueda; "Abrir en el chat" (o Enter) enfoca el mensaje en el chat, y "Quitar destacado" (o Supr) le quita la estrella.
 
 - Llamadas: un chat que está en una llamada en curso, de grupo o privado cuya llamada pasó a tener varias personas, muestra ahora "Unirse a la llamada de voz en curso" o "Unirse a la videollamada en curso (cámara apagada)" en lugar de los botones de llamar; mientras este dispositivo está en la llamada con ese chat, el botón dice "Volver a la llamada" y trae de vuelta la ventana de la llamada.
 
@@ -2188,7 +2195,8 @@ NOVEDADES
 
 - Llamadas: ahora puedes añadir personas a la llamada en curso, con el botón "Añadir participantes" de la lista de participantes de la llamada. En una llamada de grupo aparecen los miembros del grupo que aún no están en ella; en una llamada privada, tus contactos, y la llamada pasa a tener varias personas, como en WhatsApp. A quien ya se llamó y aún no entró se le vuelve a llamar. Funciona con WPPConnect y con Neonize.
 
-- El motor experimental Neonize se actualizó de la versión 0.6.0 a la 0.10.0. Un chat eliminado en el teléfono ahora también desaparece de WinZapp, y marcar un chat como leído o no leído en el teléfono vuelve a actualizar el contador de no leídos.
+- El motor experimental Neonize se actualizó de la versión 0.6.0 a la 0.12.4. Un chat eliminado en el teléfono ahora también desaparece de WinZapp, y marcar un chat como leído o no leído en el teléfono vuelve a actualizar el contador de no leídos. La información (estado) de un contacto ahora se actualiza en cuanto la persona la cambia.
+- Neonize: las reacciones en los grupos de avisos de comunidades, que llegan cifradas, ahora aparecen, y las tuyas se envían cifradas en esos grupos. Los comentarios de los avisos ahora los abre y los envía el propio motor, con el método anterior como respaldo.
 
 - WPPConnect Server actualizado a la 2.10.78, que deja de servir por HTTP la caché privada de multimedia.
 
@@ -2495,7 +2503,8 @@ NOVEDADES
 - Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.
 
 - Llamadas: llamar desde una cuenta de WhatsApp Business (WPPConnect) ya no se queda bloqueado 75 segundos sin sonar. WinZapp ahora responde por sí solo al aviso "Acerca de esta llamada" que WhatsApp muestra en la primera llamada de esas cuentas.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="pl" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2505,7 +2514,7 @@ NOWOŚCI
 
 - Kontakty: lista nawigacji zyskuje pozycję „Kontakty” po Kanałach, bez skrótu Alt+cyfra. Pokazuje zapisane kontakty, jeden wiersz na osobę, z nazwą i numerem; kontakt zapisany pod dwoma adresami (numerem i powiązanym identyfikatorem urządzenia albo brazylijskim numerem z dziewiątą cyfrą i bez niej) to jeden wiersz. „Szukaj kontaktów” filtruje według nazwy lub numeru. Przyciski i menu kontekstowe (klawisz Aplikacji lub Shift+F10) otwierają czat, rozpoczynają połączenie głosowe lub wideo, pokazują „Dane kontaktu”, usuwają kontakt albo go blokują i odblokowują; „Nowy kontakt” dodaje kontakt. „Enter na kontakcie” wybiera, co robi Enter: otwiera czat, dzwoni, dzwoni przez wideo albo pokazuje dane.
 
-- Czat: obok „Przypiętych wiadomości” nowy przycisk „Wiadomości oznaczone gwiazdką w tym czacie” otwiera okno wiadomości oznaczonych gwiazdką (Alt+0) tylko z wiadomościami tego czatu, z jego nazwą w tytule; wybranie jednej ustawia fokus na niej w już otwartym czacie, bez ponownego otwierania.
+- Czat: okna „Informacje o czacie” i „Informacje o grupie” mają nową kartę „Wiadomości oznaczone gwiazdką” po „Media”, z wiadomościami oznaczonymi gwiazdką w tym czacie i polem wyszukiwania; „Otwórz w czacie” (lub Enter) ustawia fokus na wiadomości w czacie, a „Usuń gwiazdkę” (lub Delete) zdejmuje jej gwiazdkę.
 
 - Połączenia: czat, który uczestniczy w trwającym połączeniu (grupowym lub prywatnym, w którym połączenie objęło kilka osób), pokazuje teraz „Dołącz do trwającego połączenia głosowego” albo „Dołącz do trwającego połączenia wideo (kamera wyłączona)” zamiast przycisków połączenia; gdy to urządzenie jest w połączeniu z tym czatem, przycisk brzmi „Powrót do połączenia” i przywraca okno połączenia.
 
@@ -2809,7 +2818,8 @@ NOWOŚCI
 
 - Połączenia: do trwającego połączenia można teraz dodawać osoby przyciskiem "Dodaj uczestników" na liście uczestników połączenia. W połączeniu grupowym widać członków grupy, których jeszcze w nim nie ma; w połączeniu indywidualnym — Twoje kontakty, a po dodaniu kolejnych osób połączenie staje się wieloosobowe, jak w WhatsAppie. Ponowne wybranie osoby, która była już zaproszona, ale jeszcze nie dołączyła, ponawia wywołanie połączenia. Działa z WPPConnect i z Neonize.
 
-- Eksperymentalny silnik Neonize został zaktualizowany z wersji 0.6.0 do 0.10.0. Czat usunięty na telefonie znika teraz także z WinZapp, a oznaczenie czatu jako przeczytanego lub nieprzeczytanego na telefonie znów aktualizuje licznik nieprzeczytanych.
+- Eksperymentalny silnik Neonize został zaktualizowany z wersji 0.6.0 do 0.12.4. Czat usunięty na telefonie znika teraz także z WinZapp, a oznaczenie czatu jako przeczytanego lub nieprzeczytanego na telefonie znów aktualizuje licznik nieprzeczytanych. Opis (Informacje) kontaktu aktualizuje się teraz od razu, gdy osoba go zmieni.
+- Neonize: reakcje w grupach ogłoszeń społeczności, które przychodzą zaszyfrowane, są teraz widoczne, a Twoje są w tych grupach wysyłane zaszyfrowane. Komentarze do ogłoszeń są teraz otwierane i wysyłane przez sam silnik, a poprzednia metoda służy jako zapas.
 
 - WPPConnect Server zaktualizowany do wersji 2.10.78, która przestaje udostępniać prywatną pamięć podręczną multimediów przez HTTP.
 
@@ -3116,7 +3126,8 @@ NOWOŚCI
 - Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.
 
 - Połączenia: nawiązanie połączenia z konta WhatsApp Business (WPPConnect) nie zawiesza się już na 75 sekund bez dzwonienia. WinZapp sam odpowiada teraz na komunikat „Informacje o tym połączeniu”, który WhatsApp pokazuje przy pierwszym połączeniu z takich kont.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="tr" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3126,7 +3137,7 @@ YENİLİKLER
 
 - Kişiler: gezinme listesine Kanallar'dan sonra "Kişiler" eklendi; Alt+rakam kısayolu yoktur. Kayıtlı kişileri, her kişi için ad ve numarayla tek satır olarak gösterir; iki adresle (numarası ve bağlı cihaz kimliği ya da 9. rakamlı ve rakamsız Brezilya numarası) tutulan kişi tek satırdır. "Kişilerde ara" ada veya numaraya göre süzer. Düğmeler ve bağlam menüsü (Uygulama tuşu veya Shift+F10) sohbeti açar, sesli veya görüntülü arama başlatır, "Kişi bilgileri"ni gösterir, kişiyi siler ya da engeller ve engelini kaldırır; "Yeni kişi" bir kişi ekler. "Bir kişide Enter" Enter'ın ne yapacağını seçer: sohbeti açmak, aramak, görüntülü aramak veya bilgileri göstermek.
 
-- Sohbet: "Sabitlenen mesajlar"ın yanındaki yeni "Bu sohbetteki yıldızlı mesajlar" düğmesi, yıldızlı mesajlar penceresini (Alt+0) yalnızca o sohbetin mesajlarıyla ve başlığında sohbetin adıyla açar; birini seçmek, sohbeti yeniden açmadan zaten açık olan sohbette mesaja odaklanır.
+- Sohbet: "Sohbet bilgisi" ve "Grup bilgisi" pencereleri, "Medya"dan sonra yeni bir "Yıldızlı mesajlar" sekmesi kazandı; sekmede o sohbetin yıldızlı mesajları ve bir arama alanı bulunur; "Sohbette aç" (veya Enter) mesaja sohbette odaklanır, "Yıldızı kaldır" (veya Delete) yıldızını kaldırır.
 
 - Aramalar: devam eden bir aramada olan sohbet (grup ya da araması birkaç kişiye ulaşmış özel sohbet), arama düğmeleri yerine artık "Devam eden sesli aramaya katıl" veya "Devam eden görüntülü aramaya katıl (kamera kapalı)" gösterir; bu cihaz o sohbetle aramadayken düğme "Aramaya dön" der ve arama penceresini geri getirir.
 
@@ -3430,7 +3441,8 @@ YENİLİKLER
 
 - Aramalar: artık aramanın katılımcı listesindeki "Katılımcı ekle" düğmesiyle devam eden aramaya kişi ekleyebilirsiniz. Grup aramasında grubun henüz aramada olmayan üyeleri, özel aramada ise kişileriniz görünür ve arama, WhatsApp'ta olduğu gibi birkaç kişilik bir aramaya dönüşür. Daha önce aranıp henüz katılmamış kişi yeniden aranır. WPPConnect ve Neonize ile çalışır.
 
-- Deneysel Neonize motoru 0.6.0 sürümünden 0.10.0 sürümüne güncellendi. Telefonda silinen bir sohbet artık WinZapp'ten de kaybolur ve telefonda bir sohbeti okundu ya da okunmadı olarak işaretlemek okunmamış sayacını yeniden günceller.
+- Deneysel Neonize motoru 0.6.0 sürümünden 0.12.4 sürümüne güncellendi. Telefonda silinen bir sohbet artık WinZapp'ten de kaybolur ve telefonda bir sohbeti okundu ya da okunmadı olarak işaretlemek okunmamış sayacını yeniden günceller. Bir kişinin Hakkında bilgisi artık kişi değiştirir değiştirmez güncellenir.
+- Neonize: topluluk duyuru gruplarında verilen ve şifreli gelen tepkiler artık görünüyor, sizinkiler de bu gruplarda şifreli gönderiliyor. Duyurulara yapılan yorumlar artık motorun kendisi tarafından açılıp gönderiliyor; önceki yöntem yedek olarak kalıyor.
 
 - WPPConnect Server 2.10.78 sürümüne güncellendi; özel medya önbelleğini HTTP üzerinden sunmayı bırakır.
 
@@ -3737,7 +3749,8 @@ YENİLİKLER
 - Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.
 
 - Aramalar: bir WhatsApp Business hesabından (WPPConnect) arama yapmak artık çalmadan 75 saniye takılı kalmıyor. WinZapp, WhatsApp'ın bu hesaplardan yapılan ilk aramada gösterdiği "Bu arama hakkında" bildirimini artık kendisi yanıtlıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="ro" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -3747,7 +3760,7 @@ NOUTĂȚI
 
 - Contacte: lista de navigare primește „Contacte” după Canale, fără comandă rapidă Alt+cifră. Arată contactele salvate, un rând pe persoană, cu nume și număr; un contact păstrat sub două adrese (numărul și ID-ul de dispozitiv asociat, sau un număr brazilian cu și fără a 9-a cifră) este un singur rând. „Căutați contacte” filtrează după nume sau număr. Butoanele și meniul contextual (tasta Aplicații sau Shift+F10) deschid conversația, fac un apel vocal sau video, arată „Detaliile contactului”, șterg contactul sau îl blochează și deblochează; „Contact nou” adaugă unul. „Enter pe un contact” alege ce face Enter: deschide conversația, apelează, apelează video sau arată detaliile.
 
-- Conversație: lângă „Mesaje fixate”, noul buton „Mesaje marcate cu stea din această conversație” deschide fereastra mesajelor marcate cu stea (Alt+0) doar cu mesajele acelei conversații, cu numele ei în titlu; alegerea unuia mută focalizarea pe mesaj în conversația deja deschisă, fără a o redeschide.
+- Conversație: ferestrele „Informații despre conversație” și „Informații despre grup” au o filă nouă „Mesaje marcate cu stea” după „Media”, cu mesajele marcate cu stea ale acelei conversații și un câmp de căutare; „Deschideți în conversație” (sau Enter) mută focalizarea pe mesaj în conversație, iar „Eliminați marcajul cu stea” (sau Delete) îi scoate steaua.
 
 - Apeluri: o conversație care se află într-un apel în desfășurare, de grup sau privată al cărei apel a ajuns să aibă mai multe persoane, arată acum „Alăturați-vă apelului vocal în desfășurare” sau „Alăturați-vă apelului video în desfășurare (camera oprită)” în locul butoanelor de apelare; cât timp acest dispozitiv este în apel cu acea conversație, butonul spune „Reveniți la apel” și readuce fereastra apelului.
 
@@ -4051,7 +4064,8 @@ NOUTĂȚI
 
 - Apeluri: acum puteți adăuga persoane la apelul în curs, cu butonul "Adăugați participanți" din lista de participanți a apelului. Într-un apel de grup apar membrii grupului care nu sunt încă în apel; într-un apel privat, contactele dvs., iar apelul devine un apel cu mai multe persoane, ca în WhatsApp. Cine a fost deja apelat și nu a intrat este apelat din nou. Funcționează cu WPPConnect și cu Neonize.
 
-- Motorul experimental Neonize a fost actualizat de la versiunea 0.6.0 la 0.10.0. O conversație ștearsă pe telefon dispare acum și din WinZapp, iar marcarea unei conversații ca citită sau necitită pe telefon actualizează din nou contorul de necitite.
+- Motorul experimental Neonize a fost actualizat de la versiunea 0.6.0 la 0.12.4. O conversație ștearsă pe telefon dispare acum și din WinZapp, iar marcarea unei conversații ca citită sau necitită pe telefon actualizează din nou contorul de necitite. Informațiile (starea) unui contact se actualizează acum imediat ce persoana le schimbă.
+- Neonize: reacțiile date în grupurile de anunțuri ale comunităților, care sosesc criptate, apar acum, iar ale tale sunt trimise criptate în acele grupuri. Comentariile la anunțuri sunt acum deschise și trimise chiar de motor, cu metoda anterioară ca rezervă.
 
 - WPPConnect Server a fost actualizat la 2.10.78, care nu mai servește prin HTTP memoria cache privată a fișierelor media.
 
@@ -4358,7 +4372,8 @@ NOUTĂȚI
 - Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.
 
 - Apeluri: inițierea unui apel dintr-un cont WhatsApp Business (WPPConnect) nu mai rămâne blocată 75 de secunde fără să sune. WinZapp răspunde acum singur la avizul „Despre acest apel” pe care WhatsApp îl afișează la primul apel din astfel de conturi.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="ar" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -4368,7 +4383,7 @@ NOUTĂȚI
 
 - جهات الاتصال: تضيف قائمة التنقل «جهات الاتصال» بعد القنوات، بلا اختصار Alt+رقم. تعرض جهات الاتصال المحفوظة، صفًّا لكل شخص بالاسم والرقم؛ وجهة الاتصال المحفوظة بعنوانين (رقمها ومعرّف الجهاز المرتبط، أو رقم برازيلي بالرقم التاسع وبدونه) صف واحد. يصفّي «البحث في جهات الاتصال» بالاسم أو الرقم. تفتح الأزرار وقائمة السياق (مفتاح التطبيقات أو Shift+F10) المحادثة، وتبدأ مكالمة صوتية أو مكالمة فيديو، وتعرض «بيانات جهة الاتصال»، وتحذف جهة الاتصال أو تحظرها وتلغي حظرها؛ و«جهة اتصال جديدة» تضيف واحدة. يحدد «Enter على جهة اتصال» ما يفعله Enter: فتح المحادثة أو الاتصال أو مكالمة الفيديو أو عرض البيانات.
 
-- المحادثة: بجانب «الرسائل المثبتة»، يفتح الزر الجديد «الرسائل المميزة في هذه الدردشة» نافذة الرسائل المميزة (Alt+0) برسائل هذه المحادثة وحدها، واسمها في العنوان؛ واختيار إحداها ينقل التركيز إليها في المحادثة المفتوحة أصلًا دون إعادة فتحها.
+- المحادثة: تحتوي نافذتا معلومات الدردشة ومعلومات المجموعة على علامة تبويب جديدة «الرسائل المميزة» بعد «الوسائط»، فيها رسائل هذه المحادثة المميزة بحقل بحث، و«فتح في المحادثة» (أو Enter) ينقل التركيز إلى الرسالة في المحادثة، و«إزالة النجمة» (أو Delete) تزيلها.
 
 - المكالمات: المحادثة التي تجري فيها مكالمة، جماعية أو خاصة صارت مكالمتها تضم عدة أشخاص، تعرض الآن «انضم إلى المكالمة الصوتية الجارية» أو «انضم إلى مكالمة الفيديو الجارية (الكاميرا مطفأة)» بدل أزرار الاتصال؛ وما دام هذا الجهاز في المكالمة مع تلك المحادثة يصبح الزر «العودة إلى المكالمة» ويعيد نافذة المكالمة.
 
@@ -4672,7 +4687,8 @@ NOUTĂȚI
 
 - المكالمات: يمكنك الآن إضافة أشخاص إلى المكالمة الجارية من زر "إضافة مشاركين" في قائمة المشاركين في المكالمة. في مكالمة المجموعة يظهر أعضاء المجموعة غير الموجودين فيها بعد، وفي المكالمة الخاصة تظهر جهات اتصالك، وتصبح المكالمة مكالمة مع عدة أشخاص كما في WhatsApp. ويُتصل مجددًا بمن سبق الاتصال به ولم ينضم. يعمل مع WPPConnect ومع Neonize.
 
-- تم تحديث محرك Neonize التجريبي من الإصدار 0.6.0 إلى 0.10.0. المحادثة التي تُحذف على الهاتف تختفي الآن من WinZapp أيضًا، وتعليم محادثة كمقروءة أو غير مقروءة على الهاتف يحدّث عدّاد غير المقروءة من جديد.
+- تم تحديث محرك Neonize التجريبي من الإصدار 0.6.0 إلى 0.12.4. المحادثة التي تُحذف على الهاتف تختفي الآن من WinZapp أيضًا، وتعليم محادثة كمقروءة أو غير مقروءة على الهاتف يحدّث عدّاد غير المقروءة من جديد. ويتم الآن تحديث نبذة جهة الاتصال (الحالة) فور أن يغيّرها صاحبها.
+- Neonize: التفاعلات في مجموعات إعلانات المجتمعات، التي تصل مشفرة، أصبحت تظهر الآن، وتفاعلاتك تُرسل مشفرة في تلك المجموعات. وأصبحت التعليقات على الإعلانات تُفتح وتُرسل بواسطة المحرك نفسه، مع بقاء الطريقة السابقة احتياطًا.
 
 - تم تحديث WPPConnect Server إلى 2.10.78، وهو يتوقف عن تقديم ذاكرة الوسائط الخاصة عبر HTTP.
 
@@ -4981,7 +4997,8 @@ NOUTĂȚI
 - الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.
 
 - المكالمات: لم يعد إجراء مكالمة من حساب WhatsApp Business (WPPConnect) يتعلّق 75 ثانية دون أن يرنّ. يردّ WinZapp الآن تلقائيًا على إشعار «حول هذه المكالمة» الذي يعرضه WhatsApp عند أول مكالمة من هذه الحسابات.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Calls: call links, group call fixes, roster deduplication, and navigation improvements (#835)
+      <description xml:lang="it" sparkle:format="plain-text">- Move the starred messages button into a tab of the data dialogs (#840)
+- Neonize 0.12.4 as the default engine (#839)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -4991,7 +5008,7 @@ WHAT'S NEW
 
 - Contatti: l'elenco di navigazione ottiene "Contatti" dopo Canali, senza scorciatoia Alt+numero. Mostra i contatti salvati, una riga per persona con nome e numero; un contatto conservato con due indirizzi (il numero e l'ID del dispositivo collegato, oppure un numero brasiliano con e senza la nona cifra) è una sola riga. "Cerca contatti" filtra per nome o numero. I pulsanti e il menu contestuale (tasto Applicazione o Shift+F10) aprono la conversazione, avviano una chiamata vocale o una videochiamata, mostrano i "Dettagli del contatto", eliminano il contatto o lo bloccano e sbloccano; "Nuovo contatto" ne aggiunge uno. "Invio su un contatto" sceglie cosa fa Invio: aprire la conversazione, chiamare, videochiamare o mostrare i dettagli.
 
-- Chat: accanto a "Messaggi fissati", il nuovo pulsante "Messaggi con stella in questa chat" apre la finestra dei messaggi con stella (Alt+0) solo con i messaggi di quella chat, con il suo nome nel titolo; sceglierne uno sposta il focus sul messaggio nella chat già aperta, senza riaprirla.
+- Chat: le finestre "Informazioni chat" e "Info sul gruppo" hanno una nuova scheda "Messaggi con stella" dopo "Media", con i messaggi con stella di quella chat e un campo di ricerca; "Apri nella chat" (o Invio) sposta il focus sul messaggio nella chat, e "Rimuovi stella" (o Canc) gli toglie la stella.
 
 - Chiamate: una chat che è in una chiamata in corso, di gruppo o privata la cui chiamata è arrivata ad avere più persone, mostra ora "Unisciti alla chiamata vocale in corso" o "Unisciti alla chiamata in corso, fotocamera disattiva." al posto dei pulsanti di chiamata; finché questo dispositivo è nella chiamata con quella chat, il pulsante dice "Ritorna alla chiamata" e riporta la finestra della chiamata.
 
@@ -5295,7 +5312,8 @@ WHAT'S NEW
 
 - Calls: you can now add people to the call in progress, with the "Add participants" button in the call's participant list. A group call offers the group's members who are not in it yet; a private call offers your contacts, and the call then has several people, as on WhatsApp. Someone already called who has not joined is rung again. Works with WPPConnect and Neonize.
 
-- The experimental Neonize engine was updated from 0.6.0 to 0.10.0. A chat deleted on the phone now disappears from WinZapp too, and marking a chat as read or unread on the phone updates the unread counter again.
+- Il motore sperimentale Neonize è stato aggiornato dalla versione 0.6.0 alla 0.12.4. Una chat eliminata sul telefono ora scompare anche da WinZapp, e segnare una chat come letta o non letta sul telefono aggiorna di nuovo il contatore dei non letti. Le informazioni (stato) di un contatto ora si aggiornano non appena la persona le modifica.
+- Neonize: le reazioni date nei gruppi di annunci delle community, che arrivano cifrate, ora compaiono, e le tue partono cifrate in quei gruppi. I commenti agli annunci ora vengono aperti e inviati dal motore stesso, con il metodo precedente come riserva.
 
 - WPPConnect Server updated to 2.10.78, which stops serving the private media cache over HTTP.
 
@@ -5602,6 +5620,15 @@ WHAT'S NEW
 - Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.
 
 - Chiamate: avviare una chiamata da un account WhatsApp Business (WPPConnect) non resta più bloccato per 75 secondi senza squillare. WinZapp ora risponde da solo all'avviso "Informazioni su questa chiamata" che WhatsApp mostra alla prima chiamata di questi account.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5845alpha/WinZapp-macOS-x86_64.zip" length="342648780" type="application/octet-stream" sparkle:edSignature="98OPwwwN9RyWNeby/mZupVWNsaUEHjNqM3A9fAnJ8vSkovMM2CvWiDYF2QtuB/7lwPS8KkoxcNh7lt0fP9E0AQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5839alpha</title>
+      <pubDate>Fri, 20 Nov 2026 18:27:19 +0000</pubDate>
+      <sparkle:version>3.0.0.58391</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5839alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5839alpha/WinZapp-macOS-x86_64.zip" length="342818865" type="application/octet-stream" sparkle:edSignature="SpvyB6oU91s23KPBW/pqBOyGmC/h/S79wFuviVE13tAr2bBnk4XYZ5I52pfcWDxwmW57DCCmhYyn0V6hpVxtAA=="></enclosure>
     </item>
     <item>
@@ -5630,15 +5657,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5678alpha/WinZapp-macOS-x86_64.zip" length="342515579" type="application/octet-stream" sparkle:edSignature="GoxbTAru+Xb5oz+1MGh5hUFKZD5D8zeFydPkZA9EOXbtpMnfsapSMJ8yIFiq9UTIW7KmA+IJ8thmHimoggbSDQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5390alpha</title>
-      <pubDate>Thu, 12 Nov 2026 00:05:58 +0000</pubDate>
-      <sparkle:version>3.0.0.53901</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5390alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5390alpha/WinZapp-macOS-x86_64.zip" length="349922340" type="application/octet-stream" sparkle:edSignature="c7XK+XC8smUGDRuecjQfUqIwiaSxXqCGs8oiXM6kjhGEiLqDEfl6BQaqnX2oJvJk46HM0eyAmfaP2JG3A03ADw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7253,6 +7271,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 4RkmlNT8y7FQzt1ZesBrwxU8AQHO5KCwgy7VHsYU+jWFdwftwHcWmoS1sNUoqJCyg65RQe5i0E7Iyj5cXNVIDQ==
-length: 1287144
+edSignature: 4RDRGC8BUFkUiWcaGIrxsxKtcbEwAuoJpCDAJ439UX5feFUfYNn/W4jc3mkb3QpZJd6s/aQO7CrBlT9Tp+sCAw==
+length: 1291019
 -->
