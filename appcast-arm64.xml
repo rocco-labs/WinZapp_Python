@@ -5,17 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5680alpha</title>
-      <pubDate>Fri, 20 Nov 2026 15:10:24 +0000</pubDate>
-      <sparkle:version>3.0.0.56801</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5680alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5726alpha</title>
+      <pubDate>Fri, 20 Nov 2026 16:17:58 +0000</pubDate>
+      <sparkle:version>3.0.0.57261</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5726alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+      <description xml:lang="en" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Voice messages can use neural noise reduction in the background while recording, instead of waiting until send time. The noise reducer settings window in Settings &gt; Audio lets you choose basic or neural reduction, processing while recording or when sending (the default), and what to do if neural reduction fails: send with basic reduction or keep the message pending for a manual retry. Recording-time processing uses the CPU or CoreML; selecting CUDA disables it and uses processing at send time. There is no CUDA processing while recording. The CoreML recording path has not been validated in real use.
 
 - A contact now has a single name: when someone changes their profile name, all their messages, old ones and group ones included, show the new name instead of switching between the old and the new. Applies to Neonize and WPPConnect.
 
@@ -573,12 +576,17 @@ WHAT'S NEW
 
 - Fixed: with neural voice noise cancellation on, voice messages are now sent in the order they were recorded, even when one finishes processing before another.
 
-- Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.
+
+- Calls: placing a call from a WhatsApp Business account (WPPConnect) no longer hangs for 75 seconds without ringing. WinZapp now answers by itself the "About this call" notice that WhatsApp shows on the first call from such accounts.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- As mensagens de voz podem usar redução de ruído neural em segundo plano durante a gravação, em vez de esperar pelo envio. A janela de configurações do redutor de ruído, em Configurações &gt; Áudio, permite escolher redução básica ou neural, processar durante a gravação ou ao enviar (padrão), e o que fazer se a redução neural falhar: enviar com redução básica ou deixar a mensagem pendente para uma nova tentativa manual. O processamento durante a gravação usa a CPU ou o CoreML; ao escolher CUDA, ele é desativado e o processamento ocorre ao enviar. Não há processamento CUDA durante a gravação. A via CoreML durante a gravação não foi validada em uso real.
 
 - O nome de um contato agora é único: quando alguém troca o nome do perfil, todas as mensagens dele, inclusive as antigas e as de grupos, passam a mostrar o nome novo em vez de alternar entre o antigo e o novo. Vale para Neonize e para WPPConnect.
 
@@ -1136,12 +1144,17 @@ NOVIDADES
 
 - Corrigido: com o cancelamento de ruído por voz neural ligado, as mensagens de voz agora são enviadas na ordem em que foram gravadas, mesmo quando o processamento de uma termina antes da outra.
 
-- Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.
+
+- Ligações: ligar a partir de uma conta do WhatsApp Business (WPPConnect) não fica mais travado por 75 segundos sem tocar. O WinZapp agora responde sozinho ao aviso "Sobre esta ligação" que o WhatsApp mostra na primeira ligação dessas contas.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- As mensagens de voz podem usar redução de ruído neuronal em segundo plano durante a gravação, em vez de esperar pelo envio. A janela de definições do redutor de ruído, em Definições &gt; Áudio, permite escolher redução básica ou neuronal, processar durante a gravação ou ao enviar (predefinição), e o que fazer se a redução neuronal falhar: enviar com redução básica ou deixar a mensagem pendente para uma nova tentativa manual. O processamento durante a gravação usa a CPU ou o CoreML; ao escolher CUDA, é desativado e o processamento ocorre ao enviar. Não há processamento CUDA durante a gravação. A via CoreML durante a gravação não foi validada em uso real.
 
 - O nome de um contacto passa a ser único: quando alguém muda o nome do perfil, todas as mensagens dessa pessoa, incluindo as antigas e as de grupos, mostram o nome novo em vez de alternar entre o antigo e o novo. Aplica-se ao Neonize e ao WPPConnect.
 
@@ -1699,12 +1712,17 @@ NOVIDADES
 
 - Corrigido: com o cancelamento de ruído de voz neural ligado, as mensagens de voz passam a ser enviadas pela ordem em que foram gravadas, mesmo quando o processamento de uma termina antes da outra.
 
-- Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.
+
+- Chamadas: ligar a partir de uma conta do WhatsApp Business (WPPConnect) já não fica bloqueado durante 75 segundos sem tocar. O WinZapp passa a responder sozinho ao aviso "Sobre esta chamada" que o WhatsApp mostra na primeira chamada dessas contas.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Los mensajes de voz pueden usar reducción neuronal de ruido mientras se graban, en segundo plano, en vez de esperar al envío. La ventana de configuración del reductor de ruido, en Configuración &gt; Audio, permite elegir reducción básica o neuronal, procesar al grabar o al enviar (predeterminado), y qué hacer si falla la neuronal: enviar con reducción básica o dejar la nota pendiente para reintentar manualmente. El procesamiento al grabar usa la CPU o CoreML; al elegir CUDA se desactiva y se procesa al enviar. No hay procesamiento CUDA mientras se graba. La ruta CoreML al grabar no está validada en uso real.
 
 - Un contacto ahora tiene un único nombre: cuando alguien cambia su nombre de perfil, todos sus mensajes, incluidos los antiguos y los de grupos, muestran el nombre nuevo en lugar de alternar entre el antiguo y el nuevo. Vale para Neonize y WPPConnect.
 
@@ -2262,12 +2280,17 @@ NOVEDADES
 
 - Corregido: con la cancelación de ruido de voz neuronal activada, los mensajes de voz ahora se envían en el orden en que se grabaron, aunque uno termine de procesarse antes que otro.
 
-- Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.
+
+- Llamadas: llamar desde una cuenta de WhatsApp Business (WPPConnect) ya no se queda bloqueado 75 segundos sin sonar. WinZapp ahora responde por sí solo al aviso "Acerca de esta llamada" que WhatsApp muestra en la primera llamada de esas cuentas.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Wiadomości głosowe mogą korzystać z neuronowej redukcji szumów w tle podczas nagrywania, zamiast czekać do wysłania. Okno ustawień reduktora szumów w Ustawienia &gt; Dźwięk pozwala wybrać redukcję podstawową lub neuronową, przetwarzanie podczas nagrywania lub przy wysyłaniu (domyślnie) oraz działanie po niepowodzeniu redukcji neuronowej: wysłanie z redukcją podstawową lub pozostawienie wiadomości jako oczekującej na ręczne ponowienie. Przetwarzanie podczas nagrywania korzysta z CPU lub CoreML; wybranie CUDA wyłącza tę opcję i przetwarzanie następuje przy wysyłaniu. CUDA nie jest używana podczas nagrywania. Ścieżka CoreML podczas nagrywania nie została sprawdzona w rzeczywistym użyciu.
 
 - Kontakt ma teraz jedną nazwę: gdy ktoś zmieni nazwę profilu, wszystkie jego wiadomości, także stare i grupowe, pokazują nową nazwę zamiast przełączać się między starą a nową. Dotyczy Neonize i WPPConnect.
 
@@ -2825,12 +2848,17 @@ NOWOŚCI
 
 - Naprawiono: przy włączonej neuronowej redukcji szumów głosu wiadomości głosowe są teraz wysyłane w kolejności nagrywania, nawet gdy przetwarzanie jednej kończy się przed drugą.
 
-- Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.
+
+- Połączenia: nawiązanie połączenia z konta WhatsApp Business (WPPConnect) nie zawiesza się już na 75 sekund bez dzwonienia. WinZapp sam odpowiada teraz na komunikat „Informacje o tym połączeniu”, który WhatsApp pokazuje przy pierwszym połączeniu z takich kont.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Sesli mesajlar, gönderilmeyi beklemek yerine kayıt sırasında arka planda sinirsel gürültü azaltmayı kullanabilir. Ayarlar &gt; Ses bölümündeki gürültü azaltıcı ayarları penceresinden temel veya sinirsel azaltma, kayıt sırasında veya gönderirken işleme (varsayılan) ve sinirsel azaltma başarısız olduğunda ne yapılacağı seçilebilir: temel azaltmayla gönderme veya elle yeniden denemek için mesajı beklemede tutma. Kayıt sırasında işleme, CPU veya CoreML kullanır; CUDA seçildiğinde bu seçenek devre dışı bırakılır ve işlem gönderirken yapılır. Kayıt sırasında CUDA işleme yoktur. Kayıt sırasındaki CoreML yolu gerçek kullanımda doğrulanmamıştır.
 
 - Bir kişinin artık tek bir adı var: biri profil adını değiştirdiğinde, eski mesajlar ve grup mesajları dahil tüm mesajları eski ve yeni ad arasında gidip gelmek yerine yeni adı gösterir. Neonize ve WPPConnect için geçerlidir.
 
@@ -3388,12 +3416,17 @@ YENİLİKLER
 
 - Düzeltildi: sinirsel ses gürültü engelleme açıkken sesli mesajlar, birinin işlenmesi diğerinden önce bitse bile artık kaydedildikleri sırayla gönderiliyor.
 
-- Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.
+
+- Aramalar: bir WhatsApp Business hesabından (WPPConnect) arama yapmak artık çalmadan 75 saniye takılı kalmıyor. WinZapp, WhatsApp'ın bu hesaplardan yapılan ilk aramada gösterdiği "Bu arama hakkında" bildirimini artık kendisi yanıtlıyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Mesajele vocale pot folosi reducerea neuronală a zgomotului în fundal în timpul înregistrării, fără a aștepta trimiterea. Fereastra de setări a reductorului de zgomot, din Setări &gt; Audio, permite alegerea reducerii de bază sau neuronale, procesarea în timpul înregistrării sau la trimitere (implicit) și acțiunea la eșecul reducerii neuronale: trimitere cu reducerea de bază sau păstrarea mesajului în așteptare pentru o reîncercare manuală. Procesarea în timpul înregistrării folosește CPU sau CoreML; selectarea CUDA o dezactivează și procesarea are loc la trimitere. Nu există procesare CUDA în timpul înregistrării. Calea CoreML în timpul înregistrării nu a fost validată în utilizare reală.
 
 - Un contact are acum un singur nume: când cineva schimbă numele profilului, toate mesajele sale, inclusiv cele vechi și cele din grupuri, arată numele nou în loc să alterneze între cel vechi și cel nou. Se aplică pentru Neonize și WPPConnect.
 
@@ -3951,12 +3984,17 @@ NOUTĂȚI
 
 - Remediat: cu anularea neuronală a zgomotului vocal activată, mesajele vocale sunt acum trimise în ordinea în care au fost înregistrate, chiar dacă procesarea uneia se termină înaintea alteia.
 
-- Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.
+
+- Apeluri: inițierea unui apel dintr-un cont WhatsApp Business (WPPConnect) nu mai rămâne blocată 75 de secunde fără să sune. WinZapp răspunde acum singur la avizul „Despre acest apel” pe care WhatsApp îl afișează la primul apel din astfel de conturi.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- يمكن للرسائل الصوتية استخدام تقليل الضوضاء العصبي في الخلفية أثناء التسجيل بدلاً من الانتظار حتى الإرسال. تتيح نافذة إعدادات مخفض الضوضاء في الإعدادات &gt; الصوت اختيار التقليل الأساسي أو العصبي، والمعالجة أثناء التسجيل أو عند الإرسال (الافتراضي)، وما يحدث عند فشل التقليل العصبي: الإرسال بالتقليل الأساسي أو إبقاء الرسالة معلقة لإعادة المحاولة يدويًا. تستخدم المعالجة أثناء التسجيل المعالج المركزي أو CoreML؛ ويؤدي اختيار CUDA إلى تعطيلها واستخدام المعالجة عند الإرسال. لا توجد معالجة CUDA أثناء التسجيل. لم يُتحقق من مسار CoreML أثناء التسجيل في الاستخدام الفعلي.
 
 - أصبح لكل جهة اتصال اسم واحد: عندما يغيّر شخص اسم ملفه الشخصي، تعرض جميع رسائله، بما فيها القديمة ورسائل المجموعات، الاسم الجديد بدلًا من التبديل بين القديم والجديد. ينطبق على Neonize وWPPConnect.
 
@@ -4516,12 +4554,17 @@ NOUTĂȚI
 
 - تم الإصلاح: عند تفعيل إلغاء ضوضاء الصوت العصبي، تُرسَل الرسائل الصوتية الآن بالترتيب الذي سُجّلت به، حتى لو انتهت معالجة إحداها قبل الأخرى.
 
-- الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
+- الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.
+
+- المكالمات: لم يعد إجراء مكالمة من حساب WhatsApp Business (WPPConnect) يتعلّق 75 ثانية دون أن يرنّ. يردّ WinZapp الآن تلقائيًا على إشعار «حول هذه المكالمة» الذي يعرضه WhatsApp عند أول مكالمة من هذه الحسابات.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Add the changelog entry for the Business account call notice fix (#837)
+- Process neural voice-message noise reduction while recording (#834 with reviewer fixes) (#836)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- I messaggi vocali possono usare la riduzione neurale del rumore in background durante la registrazione, anziché attendere l’invio. La finestra delle impostazioni del riduttore di rumore, in Impostazioni &gt; Audio, permette di scegliere la riduzione di base o neurale, elaborare durante la registrazione o all’invio (predefinito) e decidere cosa fare se la riduzione neurale non riesce: inviare con la riduzione di base o lasciare il messaggio in sospeso per riprovare manualmente. L’elaborazione durante la registrazione usa la CPU o CoreML; scegliendo CUDA viene disattivata e l’elaborazione avviene all’invio. Non è disponibile l’elaborazione CUDA durante la registrazione. Il percorso CoreML durante la registrazione non è stato verificato nell’uso reale.
 
 - Un contatto ora ha un solo nome: quando qualcuno cambia il nome del profilo, tutti i suoi messaggi, anche quelli vecchi e quelli dei gruppi, mostrano il nome nuovo invece di alternare tra il vecchio e il nuovo. Vale per Neonize e WPPConnect.
 
@@ -5079,7 +5122,18 @@ WHAT'S NEW
 
 - Corretto: con la cancellazione del rumore vocale neurale attiva, i messaggi vocali ora vengono inviati nell'ordine in cui sono stati registrati, anche quando uno finisce l'elaborazione prima di un altro.
 
-- Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.</description>
+- Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.
+
+- Chiamate: avviare una chiamata da un account WhatsApp Business (WPPConnect) non resta più bloccato per 75 secondi senza squillare. WinZapp ora risponde da solo all'avviso "Informazioni su questa chiamata" che WhatsApp mostra alla prima chiamata di questi account.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5726alpha/WinZapp-macOS-arm64.zip" length="304414971" type="application/octet-stream" sparkle:edSignature="b8BLOywfwSKv0xzB2K1TDZRndN1jka2t+ztmWwzQCRTLEf0Ns936zVs+cmN4ypcDOqGi4mNZk5NRom8QN/2SAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5680alpha</title>
+      <pubDate>Fri, 20 Nov 2026 15:10:24 +0000</pubDate>
+      <sparkle:version>3.0.0.56801</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5680alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5680alpha/WinZapp-macOS-arm64.zip" length="304354119" type="application/octet-stream" sparkle:edSignature="Hfx9XycY54G2AryX5FaHhCyzMHTvbyQ4IpWdWHt9XoKWrign7eJhVJTOm96GDln+tzvrSJayrTVRrafREUafCw=="></enclosure>
     </item>
     <item>
@@ -5108,15 +5162,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5387alpha/WinZapp-macOS-arm64.zip" length="311830991" type="application/octet-stream" sparkle:edSignature="LHSRaHAS0v6fVSAKKgHc0lN+uxWpIa7H2P9ebWp0W59m8bzOtWs2DAQ69wM4MiKoLRFq4loVttMta4vbKgl1Dw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5382alpha</title>
-      <pubDate>Wed, 11 Nov 2026 20:02:45 +0000</pubDate>
-      <sparkle:version>3.0.0.53821</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5382alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5382alpha/WinZapp-macOS-arm64.zip" length="311828171" type="application/octet-stream" sparkle:edSignature="9fWpXZCZ8u98jkvR/2VqGcnNqAH2xJz+8vh6uBs7iighOvXy/zeyLKKR1Vdea2wy7yxFgESG6LDN1noV/1oCBg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -6731,6 +6776,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: nvx69FXfBng7dAkrVeWuj2rK7hnTmjyz674GZ7Y3fM+ooXV9Q8gFHFWMiq872IvTHwcz6dhjZZMRt5xaSMZKBw==
-length: 1188799
+edSignature: otNd6Cw+EslOIbwkPQm30A2p3b71rfJNXQre3+DkwuuQJkm/bk5DqOBbLwyo8LvYTyEsmBfTAH8bO0MSXEXGDA==
+length: 1198537
 -->
