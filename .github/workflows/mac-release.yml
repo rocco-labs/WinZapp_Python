@@ -407,8 +407,11 @@ jobs:
 
           feeds = {}
           for arch in ("arm64", "x86_64"):
-              found, out = gh("api", f"repos/{REPO}/contents/appcast-{arch}.json?ref=appcast", ok=True)
-              items = json.loads(base64.b64decode(json.loads(out)["content"])) if found else []
+              # Raw media type: above 1 MB the contents API returns "content": ""
+              # (the appcast JSON passed 1.19 MB on 2026-11-20), raw works to 100 MB.
+              found, out = gh("api", f"repos/{REPO}/contents/appcast-{arch}.json?ref=appcast",
+                              "-H", "Accept: application/vnd.github.raw", ok=True)
+              items = json.loads(out) if found else []
               feeds[arch] = {i["tag"]: channel(i["tag"]) for i in items}
 
           def needed(tag, arch):
