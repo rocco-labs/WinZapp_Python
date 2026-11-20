@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5678alpha</title>
-      <pubDate>Fri, 20 Nov 2026 09:17:57 +0000</pubDate>
-      <sparkle:version>3.0.0.56781</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5678alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5680alpha</title>
+      <pubDate>Fri, 20 Nov 2026 15:10:24 +0000</pubDate>
+      <sparkle:version>3.0.0.56801</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5680alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="en" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -574,7 +574,7 @@ WHAT'S NEW
 - Fixed: with neural voice noise cancellation on, voice messages are now sent in the order they were recorded, even when one finishes processing before another.
 
 - Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1137,7 +1137,7 @@ NOVIDADES
 - Corrigido: com o cancelamento de ruído por voz neural ligado, as mensagens de voz agora são enviadas na ordem em que foram gravadas, mesmo quando o processamento de uma termina antes da outra.
 
 - Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1700,7 +1700,7 @@ NOVIDADES
 - Corrigido: com o cancelamento de ruído de voz neural ligado, as mensagens de voz passam a ser enviadas pela ordem em que foram gravadas, mesmo quando o processamento de uma termina antes da outra.
 
 - Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="es" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2263,7 +2263,7 @@ NOVEDADES
 - Corregido: con la cancelación de ruido de voz neuronal activada, los mensajes de voz ahora se envían en el orden en que se grabaron, aunque uno termine de procesarse antes que otro.
 
 - Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="pl" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2826,7 +2826,7 @@ NOWOŚCI
 - Naprawiono: przy włączonej neuronowej redukcji szumów głosu wiadomości głosowe są teraz wysyłane w kolejności nagrywania, nawet gdy przetwarzanie jednej kończy się przed drugą.
 
 - Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="tr" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3389,7 +3389,7 @@ YENİLİKLER
 - Düzeltildi: sinirsel ses gürültü engelleme açıkken sesli mesajlar, birinin işlenmesi diğerinden önce bitse bile artık kaydedildikleri sırayla gönderiliyor.
 
 - Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="ro" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -3952,7 +3952,7 @@ NOUTĂȚI
 - Remediat: cu anularea neuronală a zgomotului vocal activată, mesajele vocale sunt acum trimise în ordinea în care au fost înregistrate, chiar dacă procesarea uneia se termină înaintea alteia.
 
 - Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="ar" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -4517,7 +4517,7 @@ NOUTĂȚI
 - تم الإصلاح: عند تفعيل إلغاء ضوضاء الصوت العصبي، تُرسَل الرسائل الصوتية الآن بالترتيب الذي سُجّلت به، حتى لو انتهت معالجة إحداها قبل الأخرى.
 
 - الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Cap the messages-per-chat setting at 1,000 (#830)
+      <description xml:lang="it" sparkle:format="plain-text">- Answer the first-call notice shown when calling from a WhatsApp Business account (#833)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5080,6 +5080,15 @@ WHAT'S NEW
 - Corretto: con la cancellazione del rumore vocale neurale attiva, i messaggi vocali ora vengono inviati nell'ordine in cui sono stati registrati, anche quando uno finisce l'elaborazione prima di un altro.
 
 - Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5680alpha/WinZapp-macOS-arm64.zip" length="304354119" type="application/octet-stream" sparkle:edSignature="Hfx9XycY54G2AryX5FaHhCyzMHTvbyQ4IpWdWHt9XoKWrign7eJhVJTOm96GDln+tzvrSJayrTVRrafREUafCw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5678alpha</title>
+      <pubDate>Fri, 20 Nov 2026 09:17:57 +0000</pubDate>
+      <sparkle:version>3.0.0.56781</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5678alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5678alpha/WinZapp-macOS-arm64.zip" length="308437809" type="application/octet-stream" sparkle:edSignature="0QZHU8TKGikm1ljiqwgmtCS63YKaeI+VeTRORX1xXS89vGyPTdrfBHWW9iHiGedjk+64bzvi5fOn9Snvg/u0DQ=="></enclosure>
     </item>
     <item>
@@ -5108,15 +5117,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5382alpha/WinZapp-macOS-arm64.zip" length="311828171" type="application/octet-stream" sparkle:edSignature="9fWpXZCZ8u98jkvR/2VqGcnNqAH2xJz+8vh6uBs7iighOvXy/zeyLKKR1Vdea2wy7yxFgESG6LDN1noV/1oCBg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5374alpha</title>
-      <pubDate>Wed, 11 Nov 2026 16:43:28 +0000</pubDate>
-      <sparkle:version>3.0.0.53741</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5374alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5374alpha/WinZapp-macOS-arm64.zip" length="311898330" type="application/octet-stream" sparkle:edSignature="pNoLX5Pto90uRql/9YCYv0VCw5m0j2EM+S/rOrrXfpSvLa9yywfL+IpVQXCt+nY8W1wnr4BnSgMAQK384ChYCA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -6731,6 +6731,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: sGh6RkmRJ8l6jNOaYp2eoRbJ1cZQtNzqt78X+IMyN2rkbCfXEgPQsMAUgaUODulRwaD0FkzhK8J3El65R4uWDA==
-length: 1188457
+edSignature: nvx69FXfBng7dAkrVeWuj2rK7hnTmjyz674GZ7Y3fM+ooXV9Q8gFHFWMiq872IvTHwcz6dhjZZMRt5xaSMZKBw==
+length: 1188799
 -->
