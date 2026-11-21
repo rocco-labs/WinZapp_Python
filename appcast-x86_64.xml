@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5853alpha</title>
-      <pubDate>Sat, 21 Nov 2026 01:55:16 +0000</pubDate>
-      <sparkle:version>3.0.0.58531</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5853alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5854alpha</title>
+      <pubDate>Sat, 21 Nov 2026 02:31:26 +0000</pubDate>
+      <sparkle:version>3.0.0.58541</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5854alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="en" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- When a contact changes their profile name, their older messages in the open conversation are now updated at once with the new name, without closing and reopening the program. Applies to Neonize and WPPConnect.
 
 - Call links: in Calls (Alt+6), "Create call link" opens a window where you choose a voice or video call, create the link, copy it, send it to a chat or join its call. A call.whatsapp.com link in a message joins its call with Enter, or with "Join call" in its context menu, after a confirmation; a link opened in a browser also joins in WinZapp when WinZapp is the program set to open WhatsApp links (Settings &gt; General). Whoever joins a link first is the call's admin: people without a WhatsApp account wait in a waiting room, WinZapp says the name of each one who arrives, and the call window's "Waiting room" button lets them in or denies them. It works with Neonize and WPPConnect.
 
@@ -633,11 +635,13 @@ WHAT'S NEW
 - Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.
 
 - Calls: placing a call from a WhatsApp Business account (WPPConnect) no longer hangs for 75 seconds without ringing. WinZapp now answers by itself the "About this call" notice that WhatsApp shows on the first call from such accounts.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Quando um contato troca o nome do perfil, as mensagens antigas dele na conversa aberta agora são atualizadas na hora com o nome novo, sem precisar fechar e reabrir o programa. Vale para Neonize e para WPPConnect.
 
 - Links de ligação: em Ligações (Alt+6), "Criar link de ligação" abre uma janela onde você escolhe ligação de voz ou de vídeo, cria o link, copia, envia para uma conversa ou entra na ligação dele. Um link call.whatsapp.com recebido numa mensagem entra na ligação com Enter, ou com "Entrar na ligação" no menu de contexto, depois de uma confirmação; um link aberto no navegador também entra pelo WinZapp quando ele é o programa que abre os links do WhatsApp (Configurações &gt; Geral). Quem entra primeiro por um link é o administrador da ligação: as pessoas sem conta no WhatsApp esperam numa sala de espera, o WinZapp diz o nome de cada uma que chega, e o botão "Sala de espera" da janela da ligação as admite ou as recusa. Funciona com Neonize e WPPConnect.
 
@@ -1255,11 +1259,13 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.
 
 - Ligações: ligar a partir de uma conta do WhatsApp Business (WPPConnect) não fica mais travado por 75 segundos sem tocar. O WinZapp agora responde sozinho ao aviso "Sobre esta ligação" que o WhatsApp mostra na primeira ligação dessas contas.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Quando um contacto muda o nome do perfil, as mensagens antigas dessa pessoa na conversa aberta são atualizadas de imediato com o nome novo, sem ser preciso fechar e reabrir o programa. Aplica-se ao Neonize e ao WPPConnect.
 
 - Ligações de chamada: em Chamadas (Alt+6), "Criar ligação de chamada" abre uma janela onde escolhe chamada de voz ou de vídeo, cria a ligação, copia-a, envia-a para uma conversa ou entra na chamada. Uma ligação call.whatsapp.com recebida numa mensagem entra na chamada com Enter, ou com "Entrar na chamada" no menu de contexto, depois de uma confirmação; uma ligação aberta no navegador também entra pelo WinZapp quando este é o programa que abre as ligações do WhatsApp (Definições &gt; Geral). Quem entra primeiro por uma ligação é o administrador da chamada: as pessoas sem conta no WhatsApp esperam numa sala de espera, o WinZapp diz o nome de cada uma que chega, e o botão "Sala de espera" da janela da chamada admite-as ou recusa-as. Funciona com Neonize e WPPConnect.
 
@@ -1877,11 +1883,13 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.
 
 - Chamadas: ligar a partir de uma conta do WhatsApp Business (WPPConnect) já não fica bloqueado durante 75 segundos sem tocar. O WinZapp passa a responder sozinho ao aviso "Sobre esta chamada" que o WhatsApp mostra na primeira chamada dessas contas.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="es" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Cuando un contacto cambia su nombre de perfil, sus mensajes antiguos en la conversación abierta se actualizan al instante con el nombre nuevo, sin cerrar y volver a abrir el programa. Vale para Neonize y WPPConnect.
 
 - Enlaces de llamada: en Llamadas (Alt+6), "Crear enlace de llamada" abre una ventana donde eliges llamada de voz o videollamada, creas el enlace, lo copias, lo envías a un chat o te unes a su llamada. Un enlace call.whatsapp.com recibido en un mensaje te une a su llamada con Enter, o con "Unirse a la llamada" en el menú contextual, tras una confirmación; un enlace abierto en el navegador también se une desde WinZapp cuando es el programa que abre los enlaces de WhatsApp (Configuración &gt; General). Quien entra primero por un enlace es el administrador de la llamada: las personas sin cuenta de WhatsApp esperan en una sala de espera, WinZapp dice el nombre de cada una que llega, y el botón "Sala de espera" de la ventana de la llamada las admite o las rechaza. Funciona con Neonize y WPPConnect.
 
@@ -2499,11 +2507,13 @@ NOVEDADES
 - Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.
 
 - Llamadas: llamar desde una cuenta de WhatsApp Business (WPPConnect) ya no se queda bloqueado 75 segundos sin sonar. WinZapp ahora responde por sí solo al aviso "Acerca de esta llamada" que WhatsApp muestra en la primera llamada de esas cuentas.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="pl" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Gdy kontakt zmieni nazwę profilu, jego starsze wiadomości w otwartej rozmowie są od razu aktualizowane o nową nazwę, bez zamykania i ponownego otwierania programu. Dotyczy Neonize i WPPConnect.
 
 - Linki do połączeń: w Połączeniach (Alt+6) „Utwórz link do połączenia” otwiera okno, w którym wybierasz połączenie głosowe lub wideo, tworzysz link, kopiujesz go, wysyłasz do czatu albo dołączasz do jego połączenia. Link call.whatsapp.com otrzymany w wiadomości dołącza do połączenia po naciśnięciu Enter lub po wybraniu „Dołącz do połączenia” w menu kontekstowym, po potwierdzeniu; link otwarty w przeglądarce też dołącza w WinZapp, gdy jest to program otwierający linki WhatsApp (Ustawienia &gt; Ogólne). Kto pierwszy dołączy przez link, jest administratorem połączenia: osoby bez konta WhatsApp czekają w poczekalni, WinZapp mówi imię każdej z nich, a przycisk „Poczekalnia” w oknie połączenia wpuszcza je lub odrzuca. Działa z Neonize i WPPConnect.
 
@@ -3121,11 +3131,13 @@ NOWOŚCI
 - Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.
 
 - Połączenia: nawiązanie połączenia z konta WhatsApp Business (WPPConnect) nie zawiesza się już na 75 sekund bez dzwonienia. WinZapp sam odpowiada teraz na komunikat „Informacje o tym połączeniu”, który WhatsApp pokazuje przy pierwszym połączeniu z takich kont.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="tr" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Bir kişi profil adını değiştirdiğinde, açık sohbetteki eski mesajları programı kapatıp açmaya gerek kalmadan hemen yeni adla güncellenir. Neonize ve WPPConnect için geçerlidir.
 
 - Arama bağlantıları: Aramalar'da (Alt+6) "Arama bağlantısı oluştur", sesli veya görüntülü arama seçip bağlantıyı oluşturduğunuz, kopyaladığınız, bir sohbete gönderdiğiniz veya aramasına katıldığınız bir pencere açar. Bir iletide gelen call.whatsapp.com bağlantısı, onaydan sonra Enter ile ya da bağlam menüsündeki "Aramaya katıl" ile aramaya katılır; tarayıcıda açılan bir bağlantı da WinZapp WhatsApp bağlantılarını açan program olduğunda WinZapp'ta katılır (Ayarlar &gt; Genel). Bir bağlantıyla ilk katılan kişi aramanın yöneticisidir: WhatsApp hesabı olmayanlar bekleme odasında bekler, WinZapp gelen her kişinin adını söyler ve arama penceresindeki "Bekleme odası" düğmesi onları içeri alır veya reddeder. Neonize ve WPPConnect ile çalışır.
 
@@ -3743,11 +3755,13 @@ YENİLİKLER
 - Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.
 
 - Aramalar: bir WhatsApp Business hesabından (WPPConnect) arama yapmak artık çalmadan 75 saniye takılı kalmıyor. WinZapp, WhatsApp'ın bu hesaplardan yapılan ilk aramada gösterdiği "Bu arama hakkında" bildirimini artık kendisi yanıtlıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="ro" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Când un contact schimbă numele profilului, mesajele sale mai vechi din conversația deschisă sunt actualizate imediat cu numele nou, fără a închide și redeschide programul. Se aplică pentru Neonize și WPPConnect.
 
 - Linkuri de apel: în Apeluri (Alt+6), „Creați link de apel” deschide o fereastră în care alegeți apel vocal sau video, creați linkul, îl copiați, îl trimiteți într-o conversație sau vă alăturați apelului lui. Un link call.whatsapp.com primit într-un mesaj vă alătură apelului cu Enter sau cu „Alăturați-vă apelului” din meniul contextual, după o confirmare; un link deschis în browser vă alătură tot din WinZapp când acesta este programul care deschide linkurile WhatsApp (Setări &gt; General). Cine intră primul printr-un link este administratorul apelului: persoanele fără cont WhatsApp așteaptă într-o sală de așteptare, WinZapp spune numele fiecăreia care sosește, iar butonul „Sala de așteptare” din fereastra apelului le admite sau le respinge. Funcționează cu Neonize și WPPConnect.
 
@@ -4365,11 +4379,13 @@ NOUTĂȚI
 - Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.
 
 - Apeluri: inițierea unui apel dintr-un cont WhatsApp Business (WPPConnect) nu mai rămâne blocată 75 de secunde fără să sune. WinZapp răspunde acum singur la avizul „Despre acest apel” pe care WhatsApp îl afișează la primul apel din astfel de conturi.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="ar" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- عندما يغيّر أحد جهات الاتصال اسم ملفه الشخصي، تُحدَّث رسائله القديمة في المحادثة المفتوحة فورًا بالاسم الجديد دون إغلاق البرنامج وإعادة فتحه. ينطبق على Neonize وWPPConnect.
 
 - روابط المكالمات: في المكالمات (Alt+6)، يفتح «إنشاء رابط مكالمة» نافذة تختار فيها مكالمة صوتية أو فيديو، ثم تنشئ الرابط وتنسخه أو ترسله إلى محادثة أو تنضم إلى مكالمته. الرابط call.whatsapp.com الوارد في رسالة ينضم إلى مكالمته بالضغط على Enter أو بـ«انضم إلى المكالمة» من قائمة السياق، بعد تأكيد؛ والرابط المفتوح في المتصفح ينضم أيضًا عبر WinZapp عندما يكون هو البرنامج الذي يفتح روابط واتساب (الإعدادات &gt; عام). أول من ينضم عبر الرابط يصبح مشرف المكالمة: يبقى من لا يملك حساب واتساب في غرفة الانتظار، ويقول WinZapp اسم كل من يصل، ويقبلهم زر «غرفة الانتظار» في نافذة المكالمة أو يرفضهم. يعمل مع Neonize وWPPConnect.
 
@@ -4989,11 +5005,13 @@ NOUTĂȚI
 - الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.
 
 - المكالمات: لم يعد إجراء مكالمة من حساب WhatsApp Business (WPPConnect) يتعلّق 75 ثانية دون أن يرنّ. يردّ WinZapp الآن تلقائيًا على إشعار «حول هذه المكالمة» الذي يعرضه WhatsApp عند أول مكالمة من هذه الحسابات.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Fix silent call-link calls: keep the group update that follows the join ACK (#843)
+      <description xml:lang="it" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Quando un contatto cambia il nome del profilo, i suoi messaggi precedenti nella conversazione aperta vengono aggiornati subito con il nome nuovo, senza chiudere e riaprire il programma. Vale per Neonize e WPPConnect.
 
 - Link di chiamata: in Chiamate (Alt+6), "Crea link di chiamata" apre una finestra in cui scegli chiamata vocale o videochiamata, crei il link, lo copi, lo invii a una chat o ti unisci alla sua chiamata. Un link call.whatsapp.com ricevuto in un messaggio ti unisce alla chiamata con Invio, o con "Unisciti alla chiamata" nel menu contestuale, dopo una conferma; un link aperto nel browser si unisce anche da WinZapp quando è il programma che apre i link di WhatsApp (Impostazioni &gt; Generale). Chi entra per primo da un link è l'amministratore della chiamata: le persone senza account WhatsApp aspettano in una sala d'attesa, WinZapp dice il nome di ciascuna che arriva e il pulsante "Sala d'attesa" della finestra della chiamata le ammette o le rifiuta. Funziona con Neonize e WPPConnect.
 
@@ -5611,6 +5629,15 @@ WHAT'S NEW
 - Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.
 
 - Chiamate: avviare una chiamata da un account WhatsApp Business (WPPConnect) non resta più bloccato per 75 secondi senza squillare. WinZapp ora risponde da solo all'avviso "Informazioni su questa chiamata" che WhatsApp mostra alla prima chiamata di questi account.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5854alpha/WinZapp-macOS-x86_64.zip" length="342579697" type="application/octet-stream" sparkle:edSignature="j35wZViUQN0RoQQXejgiS4j3GpHP1bFZ3sDJaIv2iyHTfOIrfRoL2Gr0UNkZZe1of2X8stRqh1fYuc8QK3/7Cg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5853alpha</title>
+      <pubDate>Sat, 21 Nov 2026 01:55:16 +0000</pubDate>
+      <sparkle:version>3.0.0.58531</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5853alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5853alpha/WinZapp-macOS-x86_64.zip" length="342576229" type="application/octet-stream" sparkle:edSignature="s/+6iD/HBfrQLi1Ny7Vu5A86usDESjNgzUibuwU4hCOHkDC71u/5JFT29hIkH706ci+oqBG6jGW3QEWGx+duBw=="></enclosure>
     </item>
     <item>
@@ -5639,15 +5666,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5839alpha/WinZapp-macOS-x86_64.zip" length="342818865" type="application/octet-stream" sparkle:edSignature="SpvyB6oU91s23KPBW/pqBOyGmC/h/S79wFuviVE13tAr2bBnk4XYZ5I52pfcWDxwmW57DCCmhYyn0V6hpVxtAA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5726alpha</title>
-      <pubDate>Fri, 20 Nov 2026 16:17:58 +0000</pubDate>
-      <sparkle:version>3.0.0.57261</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5726alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5726alpha/WinZapp-macOS-x86_64.zip" length="342504813" type="application/octet-stream" sparkle:edSignature="ecpDu8RTkYxqy59GjFwCchCUiWQBKlc1CNG78EMlSWMaISOXfWEp7g97pyFz59nD2kaRNvcONaFDYLypbIRPDA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7262,6 +7280,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: dglx9RVMf2/IfFAR3F7u5qzC4i4atSVuyFgi9i7w1SwQLRA7jJTDl5e2pkEiYERElWEj13oyV59pGJkwGXfQAQ==
-length: 1290713
+edSignature: GuoTEFmJcVbIaUW460+aCEoJemTqrGiSsJ2WhwAE/Uf/Fhw3r8fwhhjjvJTeHbmQrMbSoNJFEQbQ1gL+3qiWCg==
+length: 1292601
 -->
