@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5854alpha</title>
-      <pubDate>Sat, 21 Nov 2026 02:31:25 +0000</pubDate>
-      <sparkle:version>3.0.0.58541</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5854alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5857alpha</title>
+      <pubDate>Sat, 21 Nov 2026 07:01:53 +0000</pubDate>
+      <sparkle:version>3.0.0.58571</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5857alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -635,7 +635,7 @@ WHAT'S NEW
 - Messages shown when opening a chat: the setting now accepts at most 1,000. Values of tens of thousands froze the window for over a minute when many messages arrived at once or while you were typing; a higher saved value is treated as 1,000 and Settings &gt; Messages asks for a number from 1 to 1,000.
 
 - Calls: placing a call from a WhatsApp Business account (WPPConnect) no longer hangs for 75 seconds without ringing. WinZapp now answers by itself the "About this call" notice that WhatsApp shows on the first call from such accounts.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1259,7 +1259,7 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a configuração agora aceita no máximo 1.000. Valores de dezenas de milhares congelavam a janela por mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto você digitava; um valor salvo maior é tratado como 1.000 e Configurações &gt; Mensagens pede um número de 1 a 1.000.
 
 - Ligações: ligar a partir de uma conta do WhatsApp Business (WPPConnect) não fica mais travado por 75 segundos sem tocar. O WinZapp agora responde sozinho ao aviso "Sobre esta ligação" que o WhatsApp mostra na primeira ligação dessas contas.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1883,7 +1883,7 @@ NOVIDADES
 - Mensagens mostradas ao abrir uma conversa: a definição passa a aceitar no máximo 1.000. Valores de dezenas de milhares bloqueavam a janela durante mais de um minuto quando chegavam muitas mensagens de uma vez ou enquanto escrevia; um valor guardado superior é tratado como 1.000 e Definições &gt; Mensagens pede um número de 1 a 1.000.
 
 - Chamadas: ligar a partir de uma conta do WhatsApp Business (WPPConnect) já não fica bloqueado durante 75 segundos sem tocar. O WinZapp passa a responder sozinho ao aviso "Sobre esta chamada" que o WhatsApp mostra na primeira chamada dessas contas.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2507,7 +2507,7 @@ NOVEDADES
 - Mensajes mostrados al abrir un chat: el ajuste ahora acepta como máximo 1.000. Valores de decenas de miles congelaban la ventana durante más de un minuto cuando llegaban muchos mensajes a la vez o mientras escribías; un valor guardado mayor se trata como 1.000 y Configuración &gt; Mensajes pide un número de 1 a 1.000.
 
 - Llamadas: llamar desde una cuenta de WhatsApp Business (WPPConnect) ya no se queda bloqueado 75 segundos sin sonar. WinZapp ahora responde por sí solo al aviso "Acerca de esta llamada" que WhatsApp muestra en la primera llamada de esas cuentas.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3131,7 +3131,7 @@ NOWOŚCI
 - Wiadomości pokazywane po otwarciu czatu: ustawienie przyjmuje teraz najwyżej 1000. Wartości rzędu dziesiątek tysięcy zawieszały okno na ponad minutę, gdy naraz przychodziło wiele wiadomości lub w trakcie pisania; wyższa zapisana wartość jest traktowana jak 1000, a Ustawienia &gt; Wiadomości wymagają liczby od 1 do 1000.
 
 - Połączenia: nawiązanie połączenia z konta WhatsApp Business (WPPConnect) nie zawiesza się już na 75 sekund bez dzwonienia. WinZapp sam odpowiada teraz na komunikat „Informacje o tym połączeniu”, który WhatsApp pokazuje przy pierwszym połączeniu z takich kont.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3755,7 +3755,7 @@ YENİLİKLER
 - Bir sohbet açılırken gösterilen mesajlar: ayar artık en fazla 1.000 kabul ediyor. On binlerce değerler, çok sayıda mesaj bir anda geldiğinde ya da yazarken pencereyi bir dakikadan uzun süre donduruyordu; kaydedilmiş daha yüksek bir değer 1.000 sayılır ve Ayarlar &gt; Mesajlar 1 ile 1.000 arasında bir sayı ister.
 
 - Aramalar: bir WhatsApp Business hesabından (WPPConnect) arama yapmak artık çalmadan 75 saniye takılı kalmıyor. WinZapp, WhatsApp'ın bu hesaplardan yapılan ilk aramada gösterdiği "Bu arama hakkında" bildirimini artık kendisi yanıtlıyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4379,7 +4379,7 @@ NOUTĂȚI
 - Mesajele afișate la deschiderea unei conversații: setarea acceptă acum cel mult 1.000. Valorile de zeci de mii blocau fereastra mai mult de un minut când soseau multe mesaje deodată sau în timp ce scriai; o valoare salvată mai mare este tratată ca 1.000, iar Setări &gt; Mesaje cere un număr de la 1 la 1.000.
 
 - Apeluri: inițierea unui apel dintr-un cont WhatsApp Business (WPPConnect) nu mai rămâne blocată 75 de secunde fără să sune. WinZapp răspunde acum singur la avizul „Despre acest apel” pe care WhatsApp îl afișează la primul apel din astfel de conturi.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5005,7 +5005,7 @@ NOUTĂȚI
 - الرسائل المعروضة عند فتح محادثة: صار الإعداد يقبل 1000 كحد أقصى. كانت القيم بعشرات الآلاف تجمّد النافذة أكثر من دقيقة عندما تصل رسائل كثيرة دفعة واحدة أو أثناء الكتابة؛ وتُعامل القيمة المحفوظة الأعلى على أنها 1000، وتطلب الإعدادات &gt; الرسائل رقمًا من 1 إلى 1000.
 
 - المكالمات: لم يعد إجراء مكالمة من حساب WhatsApp Business (WPPConnect) يتعلّق 75 ثانية دون أن يرنّ. يردّ WinZapp الآن تلقائيًا على إشعار «حول هذه المكالمة» الذي يعرضه WhatsApp عند أول مكالمة من هذه الحسابات.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Redraw a sender's older rows when their profile name changes (#844)
+      <description xml:lang="it" sparkle:format="plain-text">- Fix silent call-link calls: bind the joiner's audio to the epoch the join answer carries (#845)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5629,6 +5629,15 @@ WHAT'S NEW
 - Messaggi mostrati all'apertura di una chat: l'impostazione ora accetta al massimo 1.000. Valori di decine di migliaia bloccavano la finestra per oltre un minuto quando arrivavano molti messaggi insieme o mentre scrivevi; un valore salvato più alto viene trattato come 1.000 e Impostazioni &gt; Messaggi richiede un numero da 1 a 1.000.
 
 - Chiamate: avviare una chiamata da un account WhatsApp Business (WPPConnect) non resta più bloccato per 75 secondi senza squillare. WinZapp ora risponde da solo all'avviso "Informazioni su questa chiamata" che WhatsApp mostra alla prima chiamata di questi account.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5857alpha/WinZapp-macOS-arm64.zip" length="305324752" type="application/octet-stream" sparkle:edSignature="Q0u3zcpy70CO+8i5uLwx55XTTW+cjXNFM89oL+ktBKebuKFC8FPpCga9dWd3xqlA9MhWaOXbI2vlaJjRO/REDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5854alpha</title>
+      <pubDate>Sat, 21 Nov 2026 02:31:25 +0000</pubDate>
+      <sparkle:version>3.0.0.58541</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5854alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5854alpha/WinZapp-macOS-arm64.zip" length="305323715" type="application/octet-stream" sparkle:edSignature="WjnALDeG4d2poGn2TiNo1uqAQGvOJyrb4gj1DwnU3TTnjx8YtOPUVDsTK9Xmaj7gvCT4ZbQ6krk85OpLL0bDBw=="></enclosure>
     </item>
     <item>
@@ -5657,15 +5666,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5845alpha/WinZapp-macOS-arm64.zip" length="305392453" type="application/octet-stream" sparkle:edSignature="335lhzmuH5/7MWpPIN+uY5qud0vLe/uLknn9HRdkZ6v7gqi3wRjjKLC7US2T9jhJWqRTTSrlMzvqjGhTi5zlBA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5839alpha</title>
-      <pubDate>Fri, 20 Nov 2026 18:27:19 +0000</pubDate>
-      <sparkle:version>3.0.0.58391</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5839alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5839alpha/WinZapp-macOS-arm64.zip" length="305563270" type="application/octet-stream" sparkle:edSignature="3gGNd92A97fL04HCM8jH1GyCBwsUO/y6h1i9bQZnkthGZxK6jR/NIdkOWV7GUhUa9oX5ZNLhGxej9py2Hzo+CQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7280,6 +7280,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: s8Q0LfHzjFUaeBq6pnRDniAHRUQR9mu3GQT7d7fgUXMSN3VwZH/OYTTpfoqFrDenIM8ORbCAHOMtDReMUyndCw==
-length: 1292594
+edSignature: SYRqIOPjMumScff4uFWLehZ7AlaF7pAwPOIWXPjRCweTEhDjE+Q6YUfCBUHqCq/Abu+c4lUGpY2n28A+tdaPAg==
+length: 1292846
 -->
