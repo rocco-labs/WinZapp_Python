@@ -5,18 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5866alpha</title>
-      <pubDate>Sat, 21 Nov 2026 15:18:34 +0000</pubDate>
-      <sparkle:version>3.0.0.58661</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5866alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5867alpha</title>
+      <pubDate>Sat, 21 Nov 2026 15:47:26 +0000</pubDate>
+      <sparkle:version>3.0.0.58671</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5867alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="en" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- New option in Settings &gt; Accessibility: "Announce even when WinZapp is not focused", unchecked by default. Unchecked, WinZapp speaks through the screen reader only while one of its windows has focus, so it does not interrupt you while you work in another program, even with the window open; this covers every spoken announcement, the new-version notice included. Checked, announcements continue in every situation.
 
 - When a contact changes their profile name, their older messages in the open conversation are now updated at once with the new name, without closing and reopening the program. Applies to Neonize and WPPConnect.
 
@@ -640,12 +641,13 @@ WHAT'S NEW
 - Pasting a text file saved as UTF-16 (such as a Windows System Information report from msinfo32) into the message field no longer sends it as audio: it stays a document. Reported by UlisesMilani (#838).
 
 - Fixed: with a chat open and WinZapp in the foreground, an incoming message no longer shows the "1 unread message" marker; it arrives already read.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Nova opção em Configurações &gt; Acessibilidade: "Anunciar mesmo quando o WinZapp não estiver em foco", desmarcada por padrão. Desmarcada, o WinZapp só fala pelo leitor de tela enquanto uma de suas janelas está em foco, para não interromper quem trabalha em outro programa, mesmo com a janela aberta; isso vale para todos os anúncios falados, inclusive o aviso de nova versão. Marcada, os anúncios continuam em qualquer situação.
 
 - Quando um contato troca o nome do perfil, as mensagens antigas dele na conversa aberta agora são atualizadas na hora com o nome novo, sem precisar fechar e reabrir o programa. Vale para Neonize e para WPPConnect.
 
@@ -1269,12 +1271,13 @@ NOVIDADES
 - Colar no campo de mensagem um arquivo de texto salvo em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) não o envia mais como áudio: ele continua sendo um documento. Relatado por UlisesMilani (#838).
 
 - Corrigido: com a conversa aberta e o WinZapp em primeiro plano, uma mensagem recebida não aparece mais com o marcador "1 mensagem não lida"; ela já chega como lida.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Nova opção em Definições &gt; Acessibilidade: "Anunciar mesmo quando o WinZapp não estiver em foco", desmarcada por predefinição. Desmarcada, o WinZapp só fala pelo leitor de ecrã enquanto uma das suas janelas está em foco, para não interromper quem trabalha noutro programa, mesmo com a janela aberta; isto vale para todos os anúncios falados, incluindo o aviso de nova versão. Marcada, os anúncios continuam em qualquer situação.
 
 - Quando um contacto muda o nome do perfil, as mensagens antigas dessa pessoa na conversa aberta são atualizadas de imediato com o nome novo, sem ser preciso fechar e reabrir o programa. Aplica-se ao Neonize e ao WPPConnect.
 
@@ -1898,12 +1901,13 @@ NOVIDADES
 - Colar no campo de mensagem um ficheiro de texto guardado em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) já não o envia como áudio: continua a ser um documento. Comunicado por UlisesMilani (#838).
 
 - Corrigido: com a conversa aberta e o WinZapp em primeiro plano, uma mensagem recebida já não aparece com o marcador "1 mensagem não lida"; chega logo como lida.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="es" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Nueva opción en Configuración &gt; Accesibilidad: "Anunciar incluso cuando WinZapp no tenga el foco", desmarcada por defecto. Desmarcada, WinZapp solo habla por el lector de pantalla mientras una de sus ventanas tiene el foco, para no interrumpirte mientras trabajas en otro programa, aunque la ventana esté abierta; vale para todos los anuncios hablados, incluido el aviso de nueva versión. Marcada, los anuncios continúan en cualquier situación.
 
 - Cuando un contacto cambia su nombre de perfil, sus mensajes antiguos en la conversación abierta se actualizan al instante con el nombre nuevo, sin cerrar y volver a abrir el programa. Vale para Neonize y WPPConnect.
 
@@ -2527,12 +2531,13 @@ NOVEDADES
 - Pegar en el campo de mensaje un archivo de texto guardado en UTF-16 (como un informe de Información del sistema de Windows, de msinfo32) ya no lo envía como audio: sigue siendo un documento. Informado por UlisesMilani (#838).
 
 - Corregido: con la conversación abierta y WinZapp en primer plano, un mensaje recibido ya no muestra el marcador "1 mensaje no leído"; llega ya como leído.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="pl" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Nowa opcja w Ustawienia &gt; Dostępność: "Ogłaszaj nawet wtedy, gdy WinZapp nie jest aktywny", domyślnie wyłączona. Wyłączona, WinZapp mówi przez czytnik ekranu tylko wtedy, gdy jedno z jego okien ma fokus, aby nie przeszkadzać podczas pracy w innym programie, nawet gdy okno jest otwarte; dotyczy to wszystkich komunikatów głosowych, także powiadomienia o nowej wersji. Włączona, komunikaty są podawane zawsze.
 
 - Gdy kontakt zmieni nazwę profilu, jego starsze wiadomości w otwartej rozmowie są od razu aktualizowane o nową nazwę, bez zamykania i ponownego otwierania programu. Dotyczy Neonize i WPPConnect.
 
@@ -3156,12 +3161,13 @@ NOWOŚCI
 - Wklejenie do pola wiadomości pliku tekstowego zapisanego w UTF-16 (na przykład raportu Informacje o systemie z Windows, z msinfo32) nie wysyła go już jako dźwięku: pozostaje dokumentem. Zgłosił UlisesMilani (#838).
 
 - Naprawiono: gdy rozmowa jest otwarta, a WinZapp jest na pierwszym planie, nowa wiadomość nie pokazuje już znacznika „1 nieprzeczytana wiadomość”; od razu jest oznaczona jako przeczytana.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="tr" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Ayarlar &gt; Erişilebilirlik'te yeni seçenek: "WinZapp odakta değilken de duyur", varsayılan olarak işaretsiz. İşaretsizken WinZapp, ekran okuyucu üzerinden yalnızca pencerelerinden biri odaktayken konuşur; böylece pencere açık olsa bile başka bir programda çalışırken sizi bölmez. Bu, yeni sürüm bildirimi dahil tüm sesli duyurular için geçerlidir. İşaretliyken duyurular her durumda sürer.
 
 - Bir kişi profil adını değiştirdiğinde, açık sohbetteki eski mesajları programı kapatıp açmaya gerek kalmadan hemen yeni adla güncellenir. Neonize ve WPPConnect için geçerlidir.
 
@@ -3785,12 +3791,13 @@ YENİLİKLER
 - UTF-16 olarak kaydedilmiş bir metin dosyasını (msinfo32 ile alınan Windows Sistem Bilgileri raporu gibi) mesaj alanına yapıştırmak artık onu ses olarak göndermiyor: belge olarak kalıyor. UlisesMilani tarafından bildirildi (#838).
 
 - Düzeltildi: bir sohbet açıkken ve WinZapp ön plandayken gelen mesaj artık "1 okunmamış mesaj" işaretini göstermiyor; zaten okunmuş olarak geliyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="ro" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Opțiune nouă în Setări &gt; Accesibilitate: "Anunță chiar și când WinZapp nu este în prim-plan", debifată implicit. Debifată, WinZapp vorbește prin cititorul de ecran doar cât timp una dintre ferestrele sale are focalizarea, ca să nu te întrerupă când lucrezi în alt program, chiar și cu fereastra deschisă; se aplică tuturor anunțurilor vorbite, inclusiv notificării de versiune nouă. Bifată, anunțurile continuă în orice situație.
 
 - Când un contact schimbă numele profilului, mesajele sale mai vechi din conversația deschisă sunt actualizate imediat cu numele nou, fără a închide și redeschide programul. Se aplică pentru Neonize și WPPConnect.
 
@@ -4414,12 +4421,13 @@ NOUTĂȚI
 - Lipirea în câmpul mesajului a unui fișier text salvat în UTF-16 (cum este un raport Informații despre sistem din Windows, de la msinfo32) nu îl mai trimite ca audio: rămâne document. Raportat de UlisesMilani (#838).
 
 - Remediat: cu o conversație deschisă și WinZapp în prim-plan, un mesaj primit nu mai afișează marcajul „1 mesaj necitit”; sosește deja citit.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="ar" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- خيار جديد في الإعدادات &gt; إمكانية الوصول: "الإعلان حتى عندما لا يكون WinZapp في التركيز"، غير محدد افتراضيًا. عند عدم تحديده يتحدث WinZapp عبر قارئ الشاشة فقط أثناء تركيز إحدى نوافذه، حتى لا يقاطعك وأنت تعمل في برنامج آخر ولو كانت النافذة مفتوحة؛ ينطبق هذا على كل الإعلانات المنطوقة بما فيها إشعار الإصدار الجديد. عند تحديده تستمر الإعلانات في كل الحالات.
 
 - عندما يغيّر أحد جهات الاتصال اسم ملفه الشخصي، تُحدَّث رسائله القديمة في المحادثة المفتوحة فورًا بالاسم الجديد دون إغلاق البرنامج وإعادة فتحه. ينطبق على Neonize وWPPConnect.
 
@@ -5045,12 +5053,13 @@ NOUTĂȚI
 - لصق ملف نصي محفوظ بترميز UTF-16 (مثل تقرير معلومات النظام في Windows من msinfo32) في حقل الرسالة لم يعد يرسله كصوت: يبقى مستندًا. أبلغ عنه UlisesMilani (#838).
 
 - تم الإصلاح: عندما تكون المحادثة مفتوحة وWinZapp في المقدمة، لم تعد الرسالة الواردة تُظهر علامة «رسالة واحدة غير مقروءة»؛ بل تصل وقد عُلِّمت كمقروءة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Keep pasted UTF-16 text files as documents instead of audio (#850)
-- Fix unread marker for messages arriving in a focused open chat (#849)
+      <description xml:lang="it" sparkle:format="plain-text">- Add option to announce when WinZapp is not focused (#851)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Nuova opzione in Impostazioni &gt; Accessibilità: "Annuncia anche quando WinZapp non è in primo piano", disattivata per impostazione predefinita. Disattivata, WinZapp parla tramite il lettore di schermo solo mentre una delle sue finestre ha il focus, per non interromperti mentre lavori in un altro programma, anche con la finestra aperta; vale per tutti gli annunci vocali, compreso l'avviso di nuova versione. Attivata, gli annunci continuano in ogni situazione.
 
 - Quando un contatto cambia il nome del profilo, i suoi messaggi precedenti nella conversazione aperta vengono aggiornati subito con il nome nuovo, senza chiudere e riaprire il programma. Vale per Neonize e WPPConnect.
 
@@ -5674,6 +5683,15 @@ WHAT'S NEW
 - Incollare nel campo del messaggio un file di testo salvato in UTF-16 (come un rapporto Informazioni di sistema di Windows, da msinfo32) non lo invia più come audio: resta un documento. Segnalato da UlisesMilani (#838).
 
 - Corretto: con una chat aperta e WinZapp in primo piano, un messaggio in arrivo non mostra più l'indicatore "1 messaggio non letto"; arriva già come letto.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5867alpha/WinZapp-macOS-x86_64.zip" length="342412076" type="application/octet-stream" sparkle:edSignature="pc3SFv3Hcrf1A0H2d2Hpv9IUtWrqWQn7639b6skRUFgArrp6UHdmVxCqSjFAzmh6a751Wbvswv2dEMp6AquDDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5866alpha</title>
+      <pubDate>Sat, 21 Nov 2026 15:18:34 +0000</pubDate>
+      <sparkle:version>3.0.0.58661</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5866alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5866alpha/WinZapp-macOS-x86_64.zip" length="342410373" type="application/octet-stream" sparkle:edSignature="fpZrZWcONT/d0eM/FoDRURYTtiqjfb2MfCMF0sc5TN3NOpJRIRchhg93SpYh2owt6eaLmc33Uw7/AZ6UQmoGAQ=="></enclosure>
     </item>
     <item>
@@ -5702,15 +5720,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5853alpha/WinZapp-macOS-x86_64.zip" length="342576229" type="application/octet-stream" sparkle:edSignature="s/+6iD/HBfrQLi1Ny7Vu5A86usDESjNgzUibuwU4hCOHkDC71u/5JFT29hIkH706ci+oqBG6jGW3QEWGx+duBw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5849alpha</title>
-      <pubDate>Fri, 20 Nov 2026 23:49:12 +0000</pubDate>
-      <sparkle:version>3.0.0.58491</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5849alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5849alpha/WinZapp-macOS-x86_64.zip" length="342648267" type="application/octet-stream" sparkle:edSignature="HpCgGEtirNpehBxZtCBgQQDjSz9EY0RrCPIBYowo/DXzA5i3jgJFG2XLjEP6twGZKgO/l0r7ore9oExFJM9tBA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7325,6 +7334,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8QMylY+9If4Kc08qmMJO9kH6BqbO6z6DcfWREMt9sfKQO12QtMybKLo2Z+x4Ig+TrvL+C6fLYUbr9j3TkKcpBw==
-length: 1296915
+edSignature: Hz9dXS6sTi/Ir5XFhY4A2zp3LoWMjJQDX1phu7/ZmM7vA98Rg+gTKrjl4uMNfounLaNOrwES3djM4sI4KT6JAg==
+length: 1300385
 -->
