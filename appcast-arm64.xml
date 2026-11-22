@@ -5,14 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5907alpha</title>
-      <pubDate>Sun, 22 Nov 2026 04:36:09 +0000</pubDate>
-      <sparkle:version>3.0.0.59071</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5907alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5908alpha</title>
+      <pubDate>Sun, 22 Nov 2026 20:33:05 +0000</pubDate>
+      <sparkle:version>3.0.0.59081</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5908alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="en" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -649,8 +648,7 @@ WHAT'S NEW
 - Pasting a text file saved as UTF-16 (such as a Windows System Information report from msinfo32) into the message field no longer sends it as audio: it stays a document. Reported by UlisesMilani (#838).
 
 - Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1287,8 +1285,7 @@ NOVIDADES
 - Colar no campo de mensagem um arquivo de texto salvo em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) não o envia mais como áudio: ele continua sendo um documento. Relatado por UlisesMilani (#838).
 
 - Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1925,8 +1922,7 @@ NOVIDADES
 - Colar no campo de mensagem um ficheiro de texto guardado em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) já não o envia como áudio: continua a ser um documento. Comunicado por UlisesMilani (#838).
 
 - Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="es" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2563,8 +2559,7 @@ NOVEDADES
 - Pegar en el campo de mensaje un archivo de texto guardado en UTF-16 (como un informe de Información del sistema de Windows, de msinfo32) ya no lo envía como audio: sigue siendo un documento. Informado por UlisesMilani (#838).
 
 - Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="pl" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3202,8 +3197,7 @@ NOWOŚCI
 - Wklejenie do pola wiadomości pliku tekstowego zapisanego w UTF-16 (na przykład raportu Informacje o systemie z Windows, z msinfo32) nie wysyła go już jako dźwięku: pozostaje dokumentem. Zgłosił UlisesMilani (#838).
 
 - Ustawienia, Wiadomości: nowa opcja "Nie dodawaj nowych wiadomości z otwartego czatu do separatora nieprzeczytanych; oznaczaj je jako przeczytane od razu", domyślnie wyłączona. Wyłączona: wiadomości, które przychodzą, gdy czytasz otwarty czat, nadal zwiększają licznik separatora nieprzeczytanych, więc łatwo śledzić to, co przyszło później. Włączona: są czytane od razu, bez separatora.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="tr" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3840,8 +3834,7 @@ YENİLİKLER
 - UTF-16 olarak kaydedilmiş bir metin dosyasını (msinfo32 ile alınan Windows Sistem Bilgileri raporu gibi) mesaj alanına yapıştırmak artık onu ses olarak göndermiyor: belge olarak kalıyor. UlisesMilani tarafından bildirildi (#838).
 
 - Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="ro" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4478,8 +4471,7 @@ NOUTĂȚI
 - Lipirea în câmpul mesajului a unui fișier text salvat în UTF-16 (cum este un raport Informații despre sistem din Windows, de la msinfo32) nu îl mai trimite ca audio: rămâne document. Raportat de UlisesMilani (#838).
 
 - Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="ar" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5118,8 +5110,7 @@ NOUTĂȚI
 - لصق ملف نصي محفوظ بترميز UTF-16 (مثل تقرير معلومات النظام في Windows من msinfo32) في حقل الرسالة لم يعد يرسله كصوت: يبقى مستندًا. أبلغ عنه UlisesMilani (#838).
 
 - الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Do not start a sync round while a call is up (#872)
-- Warn when a connected call receives no media; log engine diagnostics (#873)
+      <description xml:lang="it" sparkle:format="plain-text">- Log dropped remote call audio and the answer-time audio session (#876)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5756,6 +5747,15 @@ WHAT'S NEW
 - Incollare nel campo del messaggio un file di testo salvato in UTF-16 (come un rapporto Informazioni di sistema di Windows, da msinfo32) non lo invia più come audio: resta un documento. Segnalato da UlisesMilani (#838).
 
 - Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5908alpha/WinZapp-macOS-arm64.zip" length="305496375" type="application/octet-stream" sparkle:edSignature="5fQ63shpFcoPz7RZTi7RjWLmt6a4SM2jAAK2rgV1ljyKkgs2jCNTToaDrgsv0+geHa10nwZylhzKfVLnPNr1Cg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5907alpha</title>
+      <pubDate>Sun, 22 Nov 2026 04:36:09 +0000</pubDate>
+      <sparkle:version>3.0.0.59071</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5907alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5907alpha/WinZapp-macOS-arm64.zip" length="305512028" type="application/octet-stream" sparkle:edSignature="iM20FWUhtq0TnREorJcbJb2EbW8k0T0g/upyYnNmtsPmWPR/7bhWOVTbOAYTzrEyZEaNGaHPSLshAoyZAUVJAg=="></enclosure>
     </item>
     <item>
@@ -5784,15 +5784,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5896alpha/WinZapp-macOS-arm64.zip" length="305573567" type="application/octet-stream" sparkle:edSignature="VIZW7uM6FVJ8qNPYEC4QlrdQuhvg6btLln7eGbm+o9mVKAxvhBUxZW5kJCwrDrqfkZDc6YJg0wluUVJYC1enCQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5895alpha</title>
-      <pubDate>Sat, 21 Nov 2026 23:50:23 +0000</pubDate>
-      <sparkle:version>3.0.0.58951</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5895alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5895alpha/WinZapp-macOS-arm64.zip" length="305570307" type="application/octet-stream" sparkle:edSignature="6L24hA0kRdzxr26jKP1g5sLjpxNBS5NxzfMUzevgmNjvPyEkADUO4MOaags53D7d2OewGAdd09Xo1t+quijeAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7407,6 +7398,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: xv5KM+zFkguF2a+UpYqTbzhjXndR2cNewPnzPI1MAkXrCIyTfx9IbfqijsFg+Z9dE//g2h9uZ2v7+P41Y+9jDg==
-length: 1318622
+edSignature: y3hx6I29K1C7wZh6GtDI8DiNUg4xPcFyiWE32d8UvZNcUqCORI/I5cyiLyXSxFG394lypL02iSQ+i8jNXkL+CA==
+length: 1318091
 -->
