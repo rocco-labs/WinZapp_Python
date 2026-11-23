@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5927alpha</title>
-      <pubDate>Mon, 23 Nov 2026 20:58:40 +0000</pubDate>
-      <sparkle:version>3.0.0.59271</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5927alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5928alpha</title>
+      <pubDate>Mon, 23 Nov 2026 23:13:11 +0000</pubDate>
+      <sparkle:version>3.0.0.59281</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5928alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="en" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -668,7 +668,7 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer fails to start (and pairing by QR code no longer stays stuck) because it asked for the ARM version of its library, which the program cannot load; it now uses the one for the architecture it really runs as.
 
 - Fixed: with install-on-exit turned on, after WinZapp announced that the update was downloaded, Help &gt; Install downloaded update stayed unavailable. The item is now available and installs the update right away, then starts WinZapp again; exiting still installs without restarting.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1325,7 +1325,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não deixa mais de iniciar (e o pareamento por QR code não fica mais travado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; agora ela usa a da arquitetura em que realmente roda.
 
 - Corrigido: com a instalação ao sair ligada, depois de avisar que a atualização foi baixada, Ajuda &gt; Instalar atualização baixada continuava indisponível. Agora o item fica disponível e instala a atualização na hora, reabrindo o WinZapp em seguida; sair continua instalando sem reabrir.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1982,7 +1982,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação deixa de falhar ao iniciar (e o emparelhamento por código QR deixa de ficar bloqueado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; passa a usar a da arquitetura em que realmente corre.
 
 - Corrigido: com a instalação ao sair ativada, depois de avisar que a atualização foi transferida, Ajuda &gt; Instalar atualização transferida continuava indisponível. Agora o item fica disponível e instala a atualização de imediato, voltando a abrir o WinZapp em seguida; sair continua a instalar sem voltar a abrir.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="es" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2639,7 +2639,7 @@ NOVEDADES
 - Neonize en Windows sobre ARM: el puente de conexión ya no deja de iniciarse (y el emparejamiento por código QR ya no se queda bloqueado) por pedir la versión ARM de su biblioteca, que el programa no puede cargar; ahora usa la de la arquitectura con la que realmente se ejecuta.
 
 - Corregido: con la instalación al salir activada, tras avisar de que la actualización se había descargado, Ayuda &gt; Instalar actualización descargada seguía sin estar disponible. Ahora el elemento está disponible e instala la actualización al momento y vuelve a abrir WinZapp; salir sigue instalando sin reabrir.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="pl" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3297,7 +3297,7 @@ NOWOŚCI
 - Neonize w systemie Windows na ARM: most połączenia nie przestaje już się uruchamiać (a parowanie kodem QR nie utyka), bo żądał wersji ARM swojej biblioteki, której program nie może załadować; teraz używa wersji dla architektury, na której naprawdę działa.
 
 - Naprawiono: gdy włączona była instalacja przy wyjściu, po komunikacie o pobraniu aktualizacji opcja Pomoc &gt; Zainstaluj pobraną aktualizację nadal była niedostępna. Teraz jest dostępna i od razu instaluje aktualizację, a potem ponownie uruchamia WinZapp; wyjście nadal instaluje bez ponownego uruchamiania.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="tr" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3954,7 +3954,7 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü, programın yükleyemediği ARM sürümünü istediği için artık başlatılamamazlık etmiyor (ve QR kodla eşleştirme takılı kalmıyor); artık gerçekte çalıştığı mimarinin sürümünü kullanıyor.
 
 - Düzeltildi: Çıkışta yükleme açıkken, güncellemenin indirildiği duyurulduktan sonra Yardım &gt; İndirilen güncellemeyi yükle öğesi kullanılamaz kalıyordu. Artık öğe kullanılabilir; güncellemeyi hemen yükler ve ardından WinZapp'ı yeniden başlatır; çıkış yapmak yine yeniden başlatmadan yükler.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="ro" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4611,7 +4611,7 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu mai eșuează la pornire (iar asocierea prin cod QR nu mai rămâne blocată) pentru că cerea versiunea ARM a bibliotecii sale, pe care programul nu o poate încărca; acum folosește versiunea arhitecturii pe care rulează de fapt.
 
 - Remediat: cu instalarea la ieșire activată, după anunțul că actualizarea a fost descărcată, Ajutor &gt; Instalează actualizarea descărcată rămânea indisponibil. Acum elementul este disponibil și instalează actualizarea imediat, apoi pornește din nou WinZapp; ieșirea continuă să instaleze fără repornire.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="ar" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5270,7 +5270,7 @@ NOUTĂȚI
 - Neonize على Windows على معالج ARM: لم يعد جسر الاتصال يفشل في البدء (ولم يعد الاقتران برمز QR يتعطل) بسبب طلبه نسخة ARM من مكتبته التي لا يستطيع البرنامج تحميلها؛ وهو الآن يستخدم نسخة البنية التي يعمل عليها فعلًا.
 
 - تم الإصلاح: مع تفعيل التثبيت عند الخروج، بقي الخيار مساعدة &gt; تثبيت التحديث المنزَّل غير متاح بعد الإعلان عن تنزيل التحديث. أصبح الخيار متاحاً الآن ويثبّت التحديث فوراً ثم يعيد تشغيل WinZapp؛ أما الخروج فيظل يثبّت التحديث دون إعادة التشغيل.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Pairing by code: keep the login after the code is accepted, say when WhatsApp refuses; open communities from the chat list in the Communities panel (#886)
+      <description xml:lang="it" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5927,6 +5927,15 @@ WHAT'S NEW
 - Neonize su Windows ARM: il ponte di connessione non smette più di avviarsi (e l'abbinamento con il codice QR non resta più bloccato) perché chiedeva la versione ARM della sua libreria, che il programma non riesce a caricare; ora usa quella dell'architettura con cui gira davvero.
 
 - Corretto: con l'installazione all'uscita attiva, dopo l'avviso che l'aggiornamento era stato scaricato, Guida &gt; Installa l'aggiornamento scaricato restava non disponibile. Ora la voce è disponibile e installa subito l'aggiornamento, poi riavvia WinZapp; uscire continua a installare senza riavviare.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5928alpha/WinZapp-macOS-arm64.zip" length="305433986" type="application/octet-stream" sparkle:edSignature="4kTptKYTNXpkK3dTAsQgmen4WXh55W9f7SsHize4UkQGVy8Tk8gdR43UXuY+l0bR/6l+g5/YD9sEUe1wGSViBg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5927alpha</title>
+      <pubDate>Mon, 23 Nov 2026 20:58:40 +0000</pubDate>
+      <sparkle:version>3.0.0.59271</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5927alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5927alpha/WinZapp-macOS-arm64.zip" length="305431990" type="application/octet-stream" sparkle:edSignature="0NOCoH9oQSfGpkOYeiOOkHrJPQRaLkyTStZvRg/sO1/A8PQpmDDmhbfcscFgRMGaL76wL3UhA8gdmM5QgR0OAw=="></enclosure>
     </item>
     <item>
@@ -5955,15 +5964,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5913alpha/WinZapp-macOS-arm64.zip" length="305584891" type="application/octet-stream" sparkle:edSignature="jRntXtDJZSlVdCFZOsDb4xNW+Or/TcZ4a8A1d83hmDKlORtmv0JR8UcxJLxZGImb++1hy+a1akeNdZ4WLNDoCQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5912alpha</title>
-      <pubDate>Mon, 23 Nov 2026 13:36:12 +0000</pubDate>
-      <sparkle:version>3.0.0.59121</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5912alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5912alpha/WinZapp-macOS-arm64.zip" length="305583235" type="application/octet-stream" sparkle:edSignature="ggofi3aX4ySWl99W04iLy+xz8fbyHlj/AXqoFhNb7v+L3wiwNBengMR83cLPk5QhUKnmICR+3Z3ztKm2WaJjBw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.2.0</title>
@@ -6018,6 +6018,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: YOC0e/W9jrYMS0T4DrSKCqhfVZ7vUPxvHHIptXLiVckH9GJhQEL2oALPIOUyCeCG5sqegRaNdNx0WcDqc1OaAg==
-length: 988997
+edSignature: 90KJ5waiZDOAGVWEbJ420eqJxw6wBel8NgDWesvxWsxu7Jb5JXXQekpmaTv9YAqvDuq4lfto//HlP49HJOIYAg==
+length: 988133
 -->
