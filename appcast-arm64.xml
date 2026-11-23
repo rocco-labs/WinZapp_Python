@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5909alpha</title>
-      <pubDate>Mon, 23 Nov 2026 00:11:21 +0000</pubDate>
-      <sparkle:version>3.0.0.59091</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5909alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5910alpha</title>
+      <pubDate>Mon, 23 Nov 2026 02:28:12 +0000</pubDate>
+      <sparkle:version>3.0.0.59101</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5910alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="en" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- The contact name on the quoted message of a reply now follows their most recent profile name instead of showing an old one, even when their original messages were already up to date. Applies to Neonize and WPPConnect.
 
 - Copying the selected messages (Ctrl+Alt+Shift+C, or Ctrl+C with "Replace shortcuts with bulk actions when selecting chats and messages" checked) now also copies documents, audio, images and videos: the files go to the clipboard at once and can be pasted together, for example in File Explorer, under their original names. In a selection that mixes text and files, the text comes along as a single block to paste into a text field. WinZapp says "Messages copied" and, if a file could not be downloaded, how many were left out.
 
@@ -650,11 +652,13 @@ WHAT'S NEW
 - Pasting a text file saved as UTF-16 (such as a Windows System Information report from msinfo32) into the message field no longer sends it as audio: it stays a document. Reported by UlisesMilani (#838).
 
 - Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O nome do contato na mensagem citada de uma resposta agora segue o nome mais recente do perfil dele, em vez de mostrar um nome antigo, mesmo quando as mensagens originais dele já estavam atualizadas. Vale para Neonize e para WPPConnect.
 
 - Copiar mensagens selecionadas (Ctrl+Alt+Shift+C, ou Ctrl+C com "Substituir atalhos por ações em massa ao selecionar conversas e mensagens" marcado) agora também copia documentos, áudios, imagens e vídeos: os arquivos vão para a área de transferência de uma vez e podem ser colados todos juntos, por exemplo no Explorador de Arquivos, com o nome original. Numa seleção que mistura texto e arquivos, o texto vai junto como um único bloco, para colar num campo de texto. O WinZapp diz "Mensagens copiadas" e, se algum arquivo não puder ser baixado, quantos ficaram de fora.
 
@@ -1289,11 +1293,13 @@ NOVIDADES
 - Colar no campo de mensagem um arquivo de texto salvo em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) não o envia mais como áudio: ele continua sendo um documento. Relatado por UlisesMilani (#838).
 
 - Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- O nome do contacto na mensagem citada de uma resposta passa a seguir o nome mais recente do perfil, em vez de mostrar um nome antigo, mesmo quando as mensagens originais dessa pessoa já estavam atualizadas. Aplica-se ao Neonize e ao WPPConnect.
 
 - Copiar as mensagens selecionadas (Ctrl+Alt+Shift+C, ou Ctrl+C com "Substituir atalhos por ações em massa ao selecionar conversas e mensagens" marcado) passa a copiar também documentos, áudios, imagens e vídeos: os ficheiros vão de uma só vez para a área de transferência e podem ser colados todos juntos, por exemplo no Explorador de Ficheiros, com o nome original. Numa seleção que mistura texto e ficheiros, o texto vai junto como um único bloco, para colar num campo de texto. O WinZapp diz "Mensagens copiadas" e, se algum ficheiro não puder ser transferido, quantos ficaram de fora.
 
@@ -1928,11 +1934,13 @@ NOVIDADES
 - Colar no campo de mensagem um ficheiro de texto guardado em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) já não o envia como áudio: continua a ser um documento. Comunicado por UlisesMilani (#838).
 
 - Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="es" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- El nombre del contacto en el mensaje citado de una respuesta ahora sigue su nombre de perfil más reciente en lugar de mostrar uno antiguo, aunque sus mensajes originales ya estuvieran actualizados. Vale para Neonize y WPPConnect.
 
 - Copiar los mensajes seleccionados (Ctrl+Alt+Shift+C, o Ctrl+C con "Sustituir atajos por acciones en masa al seleccionar chats y mensajes" marcado) ahora también copia documentos, audios, imágenes y vídeos: los archivos van al portapapeles de una vez y se pueden pegar todos juntos, por ejemplo en el Explorador de archivos, con su nombre original. En una selección que mezcla texto y archivos, el texto viaja como un único bloque para pegar en un campo de texto. WinZapp dice "Mensajes copiados" y, si no se pudo descargar algún archivo, cuántos quedaron fuera.
 
@@ -2567,11 +2575,13 @@ NOVEDADES
 - Pegar en el campo de mensaje un archivo de texto guardado en UTF-16 (como un informe de Información del sistema de Windows, de msinfo32) ya no lo envía como audio: sigue siendo un documento. Informado por UlisesMilani (#838).
 
 - Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="pl" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Nazwa kontaktu w cytowanej wiadomości odpowiedzi odpowiada teraz jego najnowszej nazwie profilu zamiast starej, nawet gdy jego oryginalne wiadomości były już zaktualizowane. Dotyczy Neonize i WPPConnect.
 
 - Kopiowanie zaznaczonych wiadomości (Ctrl+Alt+Shift+C albo Ctrl+C przy włączonej opcji „Zastąp skróty akcjami masowymi podczas zaznaczania czatów i wiadomości”) kopiuje teraz także dokumenty, nagrania audio, obrazy i filmy: pliki trafiają do schowka naraz i można je wkleić wszystkie razem, na przykład w Eksploratorze plików, pod ich oryginalnymi nazwami. W zaznaczeniu mieszającym tekst i pliki tekst trafia do schowka jako jeden blok do wklejenia w polu tekstowym. WinZapp mówi „Wiadomości skopiowane” i, jeśli jakiegoś pliku nie udało się pobrać, ile z nich pominięto.
 
@@ -3207,11 +3217,13 @@ NOWOŚCI
 - Wklejenie do pola wiadomości pliku tekstowego zapisanego w UTF-16 (na przykład raportu Informacje o systemie z Windows, z msinfo32) nie wysyła go już jako dźwięku: pozostaje dokumentem. Zgłosił UlisesMilani (#838).
 
 - Ustawienia, Wiadomości: nowa opcja "Nie dodawaj nowych wiadomości z otwartego czatu do separatora nieprzeczytanych; oznaczaj je jako przeczytane od razu", domyślnie wyłączona. Wyłączona: wiadomości, które przychodzą, gdy czytasz otwarty czat, nadal zwiększają licznik separatora nieprzeczytanych, więc łatwo śledzić to, co przyszło później. Włączona: są czytane od razu, bez separatora.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="tr" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Bir yanıtın alıntılanan mesajındaki kişi adı, kişinin orijinal mesajları zaten güncel olsa bile eski adı göstermek yerine artık en son profil adını izler. Neonize ve WPPConnect için geçerlidir.
 
 - Seçili iletileri kopyalama (Ctrl+Alt+Shift+C ya da "Sohbet ve mesaj seçerken kısayolları toplu işlemlerle değiştir" işaretliyken Ctrl+C) artık belgeleri, sesleri, resimleri ve videoları da kopyalıyor: dosyalar bir seferde panoya gider ve özgün adlarıyla, örneğin Dosya Gezgini'nde, hep birlikte yapıştırılabilir. Metin ve dosyaları karıştıran bir seçimde metin, bir metin alanına yapıştırılmak üzere tek blok olarak birlikte gelir. WinZapp "Mesajlar kopyalandı" der ve bir dosya indirilemediyse kaç tanesinin dışarıda kaldığını söyler.
 
@@ -3846,11 +3858,13 @@ YENİLİKLER
 - UTF-16 olarak kaydedilmiş bir metin dosyasını (msinfo32 ile alınan Windows Sistem Bilgileri raporu gibi) mesaj alanına yapıştırmak artık onu ses olarak göndermiyor: belge olarak kalıyor. UlisesMilani tarafından bildirildi (#838).
 
 - Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="ro" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Numele contactului din mesajul citat al unui răspuns urmează acum cel mai recent nume de profil, în loc să arate unul vechi, chiar dacă mesajele sale originale erau deja actualizate. Se aplică pentru Neonize și WPPConnect.
 
 - Copierea mesajelor selectate (Ctrl+Alt+Shift+C sau Ctrl+C cu „Înlocuiți comenzile rapide cu acțiuni în bloc atunci când selectați conversații și mesaje” bifată) copiază acum și documente, audio, imagini și videoclipuri: fișierele ajung în clipboard dintr-o dată și pot fi lipite toate împreună, de exemplu în File Explorer, cu numele lor original. Într-o selecție care amestecă text și fișiere, textul merge împreună ca un singur bloc, pentru a fi lipit într-un câmp de text. WinZapp spune „Mesaje copiate” și, dacă un fișier nu a putut fi descărcat, câte au rămas pe dinafară.
 
@@ -4485,11 +4499,13 @@ NOUTĂȚI
 - Lipirea în câmpul mesajului a unui fișier text salvat în UTF-16 (cum este un raport Informații despre sistem din Windows, de la msinfo32) nu îl mai trimite ca audio: rămâne document. Raportat de UlisesMilani (#838).
 
 - Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="ar" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- أصبح اسم جهة الاتصال في الرسالة المقتبسة ضمن الرد يتبع أحدث اسم لملفها الشخصي بدل عرض اسم قديم، حتى عندما تكون رسائلها الأصلية محدَّثة بالفعل. ينطبق على Neonize وWPPConnect.
 
 - نسخ الرسائل المحددة (Ctrl+Alt+Shift+C، أو Ctrl+C عندما يكون خيار «استبدال الاختصارات بإجراءات جماعية عند تحديد الدردشات والرسائل» محددًا) صار ينسخ أيضًا المستندات والملفات الصوتية والصور ومقاطع الفيديو: تنتقل الملفات إلى الحافظة دفعة واحدة ويمكن لصقها معًا، مثلًا في مستكشف الملفات، بأسمائها الأصلية. وفي تحديد يجمع بين النص والملفات يأتي النص معها ككتلة واحدة للصقها في حقل نصي. يقول WinZapp «تم نسخ الرسائل»، وإذا تعذّر تنزيل ملف يذكر عدد ما تُرك.
 
@@ -5126,11 +5142,13 @@ NOUTĂȚI
 - لصق ملف نصي محفوظ بترميز UTF-16 (مثل تقرير معلومات النظام في Windows من msinfo32) في حقل الرسالة لم يعد يرسله كصوت: يبقى مستندًا. أبلغ عنه UlisesMilani (#838).
 
 - الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Copy selected files to the clipboard with the bulk copy action (#878)
+      <description xml:lang="it" sparkle:format="plain-text">- Use the freshest profile name for the sender of a quoted message (#879)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Il nome del contatto nel messaggio citato di una risposta ora segue il suo nome di profilo più recente invece di mostrarne uno vecchio, anche quando i suoi messaggi originali erano già aggiornati. Vale per Neonize e WPPConnect.
 
 - La copia dei messaggi selezionati (Ctrl+Alt+Shift+C, oppure Ctrl+C con "Sostituisci le scorciatoie con le azioni in blocco quando selezioni chat e messaggi" attivo) ora copia anche documenti, audio, immagini e video: i file vanno negli appunti in una volta sola e si possono incollare tutti insieme, per esempio in Esplora file, con il nome originale. In una selezione che mescola testo e file, il testo viaggia insieme come un unico blocco da incollare in un campo di testo. WinZapp dice "Messaggi copiati" e, se un file non è stato scaricato, quanti ne sono rimasti fuori.
 
@@ -5765,6 +5783,15 @@ WHAT'S NEW
 - Incollare nel campo del messaggio un file di testo salvato in UTF-16 (come un rapporto Informazioni di sistema di Windows, da msinfo32) non lo invia più come audio: resta un documento. Segnalato da UlisesMilani (#838).
 
 - Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5910alpha/WinZapp-macOS-arm64.zip" length="309455861" type="application/octet-stream" sparkle:edSignature="qxxpo5JM5AI+hlFHUxhhsvx0Re++rSqekL6mDuMe8aWPzsDowAfDC0aX0rvxUe1q+ty0vph2SeZXD+8VRPNAAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5909alpha</title>
+      <pubDate>Mon, 23 Nov 2026 00:11:21 +0000</pubDate>
+      <sparkle:version>3.0.0.59091</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5909alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5909alpha/WinZapp-macOS-arm64.zip" length="305504136" type="application/octet-stream" sparkle:edSignature="dbtQlcsk6wpMiIMGrc/I7ubb+qHsfGR70Mv/9wu21KVZZCrACHl+AXHl0hECZIBEmjYSk1SwAO4GEPXTxW34DQ=="></enclosure>
     </item>
     <item>
@@ -5793,15 +5820,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5905alpha/WinZapp-macOS-arm64.zip" length="305501372" type="application/octet-stream" sparkle:edSignature="hiZ4xF1QYp8vxUHoo3KPmkwv6UZd1pyfbHuqw0ZnRyk1vTrDeR0A11U/d9/ArVGHcj6jcyBVR0kExzmnZxK1Aw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5898alpha</title>
-      <pubDate>Sun, 22 Nov 2026 03:30:58 +0000</pubDate>
-      <sparkle:version>3.0.0.58981</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5898alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5898alpha/WinZapp-macOS-arm64.zip" length="305574365" type="application/octet-stream" sparkle:edSignature="nWsrcNKIZH3axGobb5Wy8eIzl01lSkCp+7wb+lg6TllxBTNFnyQRFxye3h6+7ZqUAaNPcdT3FsW++/vbyxoLDw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7416,6 +7434,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: vGaAKyYy322eqb/E+MNDoTYkODLomy7U0+sYtpStey7VuObs98ZZoGu8PNfLdRZ3NS9vNt1X7D9ZzTl0kLiZBg==
-length: 1323559
+edSignature: 2eLxC4kfseL+n0SjLZyhmnopeu6Glbdk6IX97i/jM1x+KUXSBM+4hIoXasGagwZNnMogfazDxWQ4YJ0mUQZUAw==
+length: 1325716
 -->
