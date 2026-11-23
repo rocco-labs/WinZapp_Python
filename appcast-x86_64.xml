@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5912alpha</title>
-      <pubDate>Mon, 23 Nov 2026 13:36:12 +0000</pubDate>
-      <sparkle:version>3.0.0.59121</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5912alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5913alpha</title>
+      <pubDate>Mon, 23 Nov 2026 14:09:25 +0000</pubDate>
+      <sparkle:version>3.0.0.59131</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5913alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="en" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Copying just the caption of a message (Ctrl+Shift+C) now makes the screen reader say "Caption copied" instead of "Message copied", so it no longer sounds as if the file (photo, video or document) was copied.
 
 - The contact name on the quoted message of a reply now follows their most recent profile name instead of showing an old one, even when their original messages were already up to date. Applies to Neonize and WPPConnect.
 
@@ -654,11 +656,13 @@ WHAT'S NEW
 - Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.
 
 - With Neonize, "Add contact" in the conversation details now really saves the contact in the WhatsApp address book and on the phone. Before, the contact was written under the internal identifier (LID) instead of the phone number, and the iPhone dropped it seconds later, even though WinZapp said the synchronization had been requested.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Copiar só a legenda de uma mensagem (Ctrl+Shift+C) agora faz o leitor de tela dizer "Legenda copiada", e não "Mensagem copiada", para não parecer que o arquivo (foto, vídeo ou documento) foi copiado.
 
 - O nome do contato na mensagem citada de uma resposta agora segue o nome mais recente do perfil dele, em vez de mostrar um nome antigo, mesmo quando as mensagens originais dele já estavam atualizadas. Vale para Neonize e para WPPConnect.
 
@@ -1297,11 +1301,13 @@ NOVIDADES
 - Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.
 
 - No Neonize, "Adicionar contato" nos dados da conversa agora salva o contato de verdade na agenda do WhatsApp e do celular. Antes, o contato era gravado com o identificador interno (LID) no lugar do número, e o iPhone o descartava segundos depois, embora o WinZapp dissesse que a sincronização tinha sido solicitada.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Copiar só a legenda de uma mensagem (Ctrl+Shift+C) passa a fazer o leitor de ecrã dizer "Legenda copiada", e não "Mensagem copiada", para não parecer que o ficheiro (foto, vídeo ou documento) foi copiado.
 
 - O nome do contacto na mensagem citada de uma resposta passa a seguir o nome mais recente do perfil, em vez de mostrar um nome antigo, mesmo quando as mensagens originais dessa pessoa já estavam atualizadas. Aplica-se ao Neonize e ao WPPConnect.
 
@@ -1940,11 +1946,13 @@ NOVIDADES
 - Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.
 
 - Com o Neonize, "Adicionar contacto" nos dados da conversa passa a guardar mesmo o contacto na agenda do WhatsApp e do telemóvel. Antes, o contacto era gravado com o identificador interno (LID) no lugar do número, e o iPhone descartava-o segundos depois, embora o WinZapp dissesse que a sincronização tinha sido pedida.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="es" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Al copiar solo la leyenda de un mensaje (Ctrl+Shift+C), el lector de pantalla ahora dice "Leyenda copiada" en lugar de "Mensaje copiado", para que no parezca que se copió el archivo (foto, vídeo o documento).
 
 - El nombre del contacto en el mensaje citado de una respuesta ahora sigue su nombre de perfil más reciente en lugar de mostrar uno antiguo, aunque sus mensajes originales ya estuvieran actualizados. Vale para Neonize y WPPConnect.
 
@@ -2583,11 +2591,13 @@ NOVEDADES
 - Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.
 
 - Con Neonize, "Añadir contacto" en los datos de la conversación ahora guarda de verdad el contacto en la agenda de WhatsApp y en el teléfono. Antes, el contacto se grababa con el identificador interno (LID) en lugar del número, y el iPhone lo descartaba segundos después, aunque WinZapp decía que la sincronización se había solicitado.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="pl" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Po skopiowaniu samego podpisu wiadomości (Ctrl+Shift+C) czytnik ekranu mówi teraz „Podpis skopiowany” zamiast „Wiadomość skopiowana”, żeby nie sprawiało to wrażenia, że skopiowano plik (zdjęcie, film lub dokument).
 
 - Nazwa kontaktu w cytowanej wiadomości odpowiedzi odpowiada teraz jego najnowszej nazwie profilu zamiast starej, nawet gdy jego oryginalne wiadomości były już zaktualizowane. Dotyczy Neonize i WPPConnect.
 
@@ -3227,11 +3237,13 @@ NOWOŚCI
 - Ustawienia &gt; Interfejs &gt; Wiadomości: dodano domyślnie wyłączoną opcję „Gdy okno jest aktywne, oznaczaj nowe wiadomości w otwartym czacie od razu jako przeczytane, bez zwiększania licznika przy separatorze nieprzeczytanych”. Przy opcji wyłączonej wiadomości napływające podczas przeglądania czatu nadal zwiększają licznik przy separatorze, co pomaga śledzić nowe wiadomości. Po jej włączeniu są oznaczane jako przeczytane od razu, bez zwiększania tego licznika, gdy czat jest widoczny, a okno WinZappa pozostaje aktywne od co najmniej 5 sekund.
 
 - W Neonize opcja „Dodaj kontakt” w danych rozmowy naprawdę zapisuje teraz kontakt w książce adresowej WhatsApp i w telefonie. Wcześniej kontakt był zapisywany pod wewnętrznym identyfikatorem (LID) zamiast numeru telefonu, a iPhone odrzucał go po kilku sekundach, mimo że WinZapp mówił, że zażądał synchronizacji.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="tr" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Bir iletinin yalnızca açıklaması kopyalandığında (Ctrl+Shift+C) ekran okuyucu artık "İleti kopyalandı" yerine "Açıklama kopyalandı" diyor; böylece dosyanın (fotoğraf, video veya belge) kopyalandığı izlenimi verilmiyor.
 
 - Bir yanıtın alıntılanan mesajındaki kişi adı, kişinin orijinal mesajları zaten güncel olsa bile eski adı göstermek yerine artık en son profil adını izler. Neonize ve WPPConnect için geçerlidir.
 
@@ -3870,11 +3882,13 @@ YENİLİKLER
 - Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.
 
 - Neonize ile sohbet bilgilerindeki "Kişi ekle" artık kişiyi gerçekten WhatsApp rehberine ve telefona kaydediyor. Önceden kişi, telefon numarası yerine dahili tanımlayıcıyla (LID) yazılıyordu ve WinZapp eşitlemenin istendiğini söylese de iPhone onu birkaç saniye sonra siliyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="ro" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- La copierea doar a legendei unui mesaj (Ctrl+Shift+C), cititorul de ecran spune acum „Legenda a fost copiată”, nu „Mesaj copiat”, ca să nu pară că fișierul (poză, videoclip sau document) a fost copiat.
 
 - Numele contactului din mesajul citat al unui răspuns urmează acum cel mai recent nume de profil, în loc să arate unul vechi, chiar dacă mesajele sale originale erau deja actualizate. Se aplică pentru Neonize și WPPConnect.
 
@@ -4513,11 +4527,13 @@ NOUTĂȚI
 - Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.
 
 - Cu Neonize, „Adaugă contact” din datele conversației salvează acum cu adevărat contactul în agenda WhatsApp și pe telefon. Înainte, contactul era scris sub identificatorul intern (LID) în loc de numărul de telefon, iar iPhone-ul îl arunca după câteva secunde, deși WinZapp spunea că sincronizarea fusese solicitată.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="ar" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- عند نسخ توضيح الرسالة فقط (Ctrl+Shift+C)، يقول قارئ الشاشة الآن "تم نسخ التوضيح" بدلًا من "تم نسخ الرسالة"، حتى لا يبدو أن الملف (الصورة أو الفيديو أو المستند) قد نُسخ.
 
 - أصبح اسم جهة الاتصال في الرسالة المقتبسة ضمن الرد يتبع أحدث اسم لملفها الشخصي بدل عرض اسم قديم، حتى عندما تكون رسائلها الأصلية محدَّثة بالفعل. ينطبق على Neonize وWPPConnect.
 
@@ -5158,11 +5174,13 @@ NOUTĂȚI
 - الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.
 
 - في Neonize، أصبح «إضافة جهة اتصال» في بيانات المحادثة يحفظ جهة الاتصال فعلًا في دفتر عناوين واتساب وعلى الهاتف. كانت جهة الاتصال تُكتب سابقًا بالمعرّف الداخلي (LID) بدل رقم الهاتف، وكان الآيفون يتجاهلها بعد ثوانٍ، رغم أن WinZapp كان يقول إنه طلب المزامنة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
+      <description xml:lang="it" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Copiando solo la didascalia di un messaggio (Ctrl+Shift+C), il lettore di schermo ora dice "Didascalia copiata" invece di "Messaggio copiato", così non sembra che il file (foto, video o documento) sia stato copiato.
 
 - Il nome del contatto nel messaggio citato di una risposta ora segue il suo nome di profilo più recente invece di mostrarne uno vecchio, anche quando i suoi messaggi originali erano già aggiornati. Vale per Neonize e WPPConnect.
 
@@ -5801,6 +5819,15 @@ WHAT'S NEW
 - Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.
 
 - Con Neonize, "Aggiungi contatto" nei dati della conversazione ora salva davvero il contatto nella rubrica di WhatsApp e sul telefono. Prima il contatto veniva scritto con l'identificatore interno (LID) al posto del numero, e l'iPhone lo scartava pochi secondi dopo, anche se WinZapp diceva che la sincronizzazione era stata richiesta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5913alpha/WinZapp-macOS-x86_64.zip" length="342840427" type="application/octet-stream" sparkle:edSignature="hitrZ32oBaILycECtkkndkeUpxZWwZxfCxGl4MfxBInhVzAeli6cW5RYOImvHO/woMub4tW/oEqqhgHaDUwWAg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5912alpha</title>
+      <pubDate>Mon, 23 Nov 2026 13:36:12 +0000</pubDate>
+      <sparkle:version>3.0.0.59121</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5912alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5912alpha/WinZapp-macOS-x86_64.zip" length="342839982" type="application/octet-stream" sparkle:edSignature="cJPeZ6tLHjZLohtaRGnsONkBEDpnunVnXfgVnE1GogHxtzWo8MjIdP6wKvg2OvMg91GVFQt6gL4MM9+5j3KiAw=="></enclosure>
     </item>
     <item>
@@ -5829,15 +5856,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5909alpha/WinZapp-macOS-x86_64.zip" length="342761481" type="application/octet-stream" sparkle:edSignature="Z331UcXAHPSxKlMc3S9bNhniU8ayaK+vguKIo3/LWo8VCw/hghFYZeQeMPwDygFte9qO+4zfKPTP6qwCDRrYBA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5908alpha</title>
-      <pubDate>Sun, 22 Nov 2026 20:33:05 +0000</pubDate>
-      <sparkle:version>3.0.0.59081</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5908alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5908alpha/WinZapp-macOS-x86_64.zip" length="342752544" type="application/octet-stream" sparkle:edSignature="Hxwhlug3q+H2Y+ZR36X23D7fUrvtC7r3yhayZ/2PbH8A3ytnu+8ooyQWcxKIHLOzkoNqCWBycQX2Ddh8IJXZDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7452,6 +7470,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 8Ww6+1ONWZq81LB7Y11yF0s+eZ4TXEiLnTE2VZnrP8WgucCthacPPxI3a9512WFmQGECur8aSI7h+K0wikzyBg==
-length: 1329982
+edSignature: VegPgxGkkPpVPz7zOhdEtdmP9mRL36m9q+Yph59M1gPgXdXZ8kpb8XlzQGH2ROIBsYeWEDr/f8rAQ7AN5CSjDw==
+length: 1331816
 -->
