@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5913alpha</title>
-      <pubDate>Mon, 23 Nov 2026 14:09:25 +0000</pubDate>
-      <sparkle:version>3.0.0.59131</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5913alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5914alpha</title>
+      <pubDate>Mon, 23 Nov 2026 15:02:25 +0000</pubDate>
+      <sparkle:version>3.0.0.59141</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5914alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -655,8 +655,12 @@ WHAT'S NEW
 
 - Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.
 
-- With Neonize, "Add contact" in the conversation details now really saves the contact in the WhatsApp address book and on the phone. Before, the contact was written under the internal identifier (LID) instead of the phone number, and the iPhone dropped it seconds later, even though WinZapp said the synchronization had been requested.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- With Neonize, "Add contact" in the conversation details now really saves the contact in the WhatsApp address book and on the phone. Before, the contact was written under the internal identifier (LID) instead of the phone number, and the iPhone dropped it seconds later, even though WinZapp said the synchronization had been requested.
+
+- Neonize: when the connection bridge fails to start, WinZapp now says so out loud right away, instead of the notice being lost when the program crashed while showing it, and writes the end of the bridge's own output and the computer's processor architecture to the log, so the cause can be found.
+
+- Neonize on Windows on ARM: the connection bridge no longer fails to start (and pairing by QR code no longer stays stuck) because it asked for the ARM version of its library, which the program cannot load; it now uses the one for the architecture it really runs as.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1300,8 +1304,12 @@ NOVIDADES
 
 - Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.
 
-- No Neonize, "Adicionar contato" nos dados da conversa agora salva o contato de verdade na agenda do WhatsApp e do celular. Antes, o contato era gravado com o identificador interno (LID) no lugar do número, e o iPhone o descartava segundos depois, embora o WinZapp dissesse que a sincronização tinha sido solicitada.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- No Neonize, "Adicionar contato" nos dados da conversa agora salva o contato de verdade na agenda do WhatsApp e do celular. Antes, o contato era gravado com o identificador interno (LID) no lugar do número, e o iPhone o descartava segundos depois, embora o WinZapp dissesse que a sincronização tinha sido solicitada.
+
+- Neonize: quando a bridge de conexão não consegue iniciar, o WinZapp agora avisa por voz na hora, em vez de o aviso se perder quando o programa travava ao mostrá-lo, e grava no log o final da saída da própria bridge e a arquitetura do processador do computador, para que a causa possa ser encontrada.
+
+- Neonize no Windows em ARM: a bridge de conexão não deixa mais de iniciar (e o pareamento por QR code não fica mais travado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; agora ela usa a da arquitetura em que realmente roda.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1945,8 +1953,12 @@ NOVIDADES
 
 - Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.
 
-- Com o Neonize, "Adicionar contacto" nos dados da conversa passa a guardar mesmo o contacto na agenda do WhatsApp e do telemóvel. Antes, o contacto era gravado com o identificador interno (LID) no lugar do número, e o iPhone descartava-o segundos depois, embora o WinZapp dissesse que a sincronização tinha sido pedida.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- Com o Neonize, "Adicionar contacto" nos dados da conversa passa a guardar mesmo o contacto na agenda do WhatsApp e do telemóvel. Antes, o contacto era gravado com o identificador interno (LID) no lugar do número, e o iPhone descartava-o segundos depois, embora o WinZapp dissesse que a sincronização tinha sido pedida.
+
+- Neonize: quando a bridge de ligação não consegue iniciar, o WinZapp passa a avisar por voz de imediato, em vez de o aviso se perder quando o programa bloqueava ao mostrá-lo, e grava no registo o final da saída da própria bridge e a arquitetura do processador do computador, para que a causa possa ser encontrada.
+
+- Neonize no Windows em ARM: a bridge de ligação deixa de falhar ao iniciar (e o emparelhamento por código QR deixa de ficar bloqueado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; passa a usar a da arquitetura em que realmente corre.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2590,8 +2602,12 @@ NOVEDADES
 
 - Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.
 
-- Con Neonize, "Añadir contacto" en los datos de la conversación ahora guarda de verdad el contacto en la agenda de WhatsApp y en el teléfono. Antes, el contacto se grababa con el identificador interno (LID) en lugar del número, y el iPhone lo descartaba segundos después, aunque WinZapp decía que la sincronización se había solicitado.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- Con Neonize, "Añadir contacto" en los datos de la conversación ahora guarda de verdad el contacto en la agenda de WhatsApp y en el teléfono. Antes, el contacto se grababa con el identificador interno (LID) en lugar del número, y el iPhone lo descartaba segundos después, aunque WinZapp decía que la sincronización se había solicitado.
+
+- Neonize: cuando el puente de conexión no consigue iniciarse, WinZapp ahora lo avisa por voz al instante, en lugar de que el aviso se perdiera cuando el programa se bloqueaba al mostrarlo, y guarda en el registro el final de la salida del propio puente y la arquitectura del procesador del equipo, para poder encontrar la causa.
+
+- Neonize en Windows sobre ARM: el puente de conexión ya no deja de iniciarse (y el emparejamiento por código QR ya no se queda bloqueado) por pedir la versión ARM de su biblioteca, que el programa no puede cargar; ahora usa la de la arquitectura con la que realmente se ejecuta.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3236,8 +3252,12 @@ NOWOŚCI
 
 - Ustawienia &gt; Interfejs &gt; Wiadomości: dodano domyślnie wyłączoną opcję „Gdy okno jest aktywne, oznaczaj nowe wiadomości w otwartym czacie od razu jako przeczytane, bez zwiększania licznika przy separatorze nieprzeczytanych”. Przy opcji wyłączonej wiadomości napływające podczas przeglądania czatu nadal zwiększają licznik przy separatorze, co pomaga śledzić nowe wiadomości. Po jej włączeniu są oznaczane jako przeczytane od razu, bez zwiększania tego licznika, gdy czat jest widoczny, a okno WinZappa pozostaje aktywne od co najmniej 5 sekund.
 
-- W Neonize opcja „Dodaj kontakt” w danych rozmowy naprawdę zapisuje teraz kontakt w książce adresowej WhatsApp i w telefonie. Wcześniej kontakt był zapisywany pod wewnętrznym identyfikatorem (LID) zamiast numeru telefonu, a iPhone odrzucał go po kilku sekundach, mimo że WinZapp mówił, że zażądał synchronizacji.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- W Neonize opcja „Dodaj kontakt” w danych rozmowy naprawdę zapisuje teraz kontakt w książce adresowej WhatsApp i w telefonie. Wcześniej kontakt był zapisywany pod wewnętrznym identyfikatorem (LID) zamiast numeru telefonu, a iPhone odrzucał go po kilku sekundach, mimo że WinZapp mówił, że zażądał synchronizacji.
+
+- Neonize: gdy most połączenia nie może się uruchomić, WinZapp od razu mówi o tym głosem, zamiast gubić komunikat, gdy program zawieszał się przy jego wyświetlaniu, i zapisuje w logu koniec wyjścia samego mostu oraz architekturę procesora komputera, aby można było znaleźć przyczynę.
+
+- Neonize w systemie Windows na ARM: most połączenia nie przestaje już się uruchamiać (a parowanie kodem QR nie utyka), bo żądał wersji ARM swojej biblioteki, której program nie może załadować; teraz używa wersji dla architektury, na której naprawdę działa.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3881,8 +3901,12 @@ YENİLİKLER
 
 - Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.
 
-- Neonize ile sohbet bilgilerindeki "Kişi ekle" artık kişiyi gerçekten WhatsApp rehberine ve telefona kaydediyor. Önceden kişi, telefon numarası yerine dahili tanımlayıcıyla (LID) yazılıyordu ve WinZapp eşitlemenin istendiğini söylese de iPhone onu birkaç saniye sonra siliyordu.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- Neonize ile sohbet bilgilerindeki "Kişi ekle" artık kişiyi gerçekten WhatsApp rehberine ve telefona kaydediyor. Önceden kişi, telefon numarası yerine dahili tanımlayıcıyla (LID) yazılıyordu ve WinZapp eşitlemenin istendiğini söylese de iPhone onu birkaç saniye sonra siliyordu.
+
+- Neonize: bağlantı köprüsü başlatılamadığında WinZapp artık bunu hemen sesli olarak söyler; uyarı gösterilirken program kilitlendiği için kaybolmaz. Ayrıca nedenin bulunabilmesi için köprünün kendi çıktısının sonunu ve bilgisayarın işlemci mimarisini günlüğe yazar.
+
+- ARM üzerinde Windows'ta Neonize: bağlantı köprüsü, programın yükleyemediği ARM sürümünü istediği için artık başlatılamamazlık etmiyor (ve QR kodla eşleştirme takılı kalmıyor); artık gerçekte çalıştığı mimarinin sürümünü kullanıyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4526,8 +4550,12 @@ NOUTĂȚI
 
 - Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.
 
-- Cu Neonize, „Adaugă contact” din datele conversației salvează acum cu adevărat contactul în agenda WhatsApp și pe telefon. Înainte, contactul era scris sub identificatorul intern (LID) în loc de numărul de telefon, iar iPhone-ul îl arunca după câteva secunde, deși WinZapp spunea că sincronizarea fusese solicitată.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- Cu Neonize, „Adaugă contact” din datele conversației salvează acum cu adevărat contactul în agenda WhatsApp și pe telefon. Înainte, contactul era scris sub identificatorul intern (LID) în loc de numărul de telefon, iar iPhone-ul îl arunca după câteva secunde, deși WinZapp spunea că sincronizarea fusese solicitată.
+
+- Neonize: când puntea de conexiune nu poate porni, WinZapp o spune acum imediat cu voce, în loc să piardă anunțul atunci când programul se bloca afișându-l, și scrie în jurnal sfârșitul ieșirii punții și arhitectura procesorului computerului, pentru ca cauza să poată fi găsită.
+
+- Neonize pe Windows pe ARM: puntea de conexiune nu mai eșuează la pornire (iar asocierea prin cod QR nu mai rămâne blocată) pentru că cerea versiunea ARM a bibliotecii sale, pe care programul nu o poate încărca; acum folosește versiunea arhitecturii pe care rulează de fapt.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5173,8 +5201,12 @@ NOUTĂȚI
 
 - الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.
 
-- في Neonize، أصبح «إضافة جهة اتصال» في بيانات المحادثة يحفظ جهة الاتصال فعلًا في دفتر عناوين واتساب وعلى الهاتف. كانت جهة الاتصال تُكتب سابقًا بالمعرّف الداخلي (LID) بدل رقم الهاتف، وكان الآيفون يتجاهلها بعد ثوانٍ، رغم أن WinZapp كان يقول إنه طلب المزامنة.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Announce "Caption copied" when only the caption is copied (#882)
+- في Neonize، أصبح «إضافة جهة اتصال» في بيانات المحادثة يحفظ جهة الاتصال فعلًا في دفتر عناوين واتساب وعلى الهاتف. كانت جهة الاتصال تُكتب سابقًا بالمعرّف الداخلي (LID) بدل رقم الهاتف، وكان الآيفون يتجاهلها بعد ثوانٍ، رغم أن WinZapp كان يقول إنه طلب المزامنة.
+
+- في Neonize، عندما يتعذر تشغيل جسر الاتصال، يعلن WinZapp ذلك صوتيًا فورًا بدلًا من ضياع التنبيه عندما كان البرنامج يتعطل أثناء عرضه، ويكتب في السجل نهاية مخرجات الجسر نفسه وبنية معالج الكمبيوتر، حتى يمكن العثور على السبب.
+
+- Neonize على Windows على معالج ARM: لم يعد جسر الاتصال يفشل في البدء (ولم يعد الاقتران برمز QR يتعطل) بسبب طلبه نسخة ARM من مكتبته التي لا يستطيع البرنامج تحميلها؛ وهو الآن يستخدم نسخة البنية التي يعمل عليها فعلًا.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Fix Neonize bridge on Windows ARM and log why it exits early (#883)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5818,7 +5850,20 @@ WHAT'S NEW
 
 - Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.
 
-- Con Neonize, "Aggiungi contatto" nei dati della conversazione ora salva davvero il contatto nella rubrica di WhatsApp e sul telefono. Prima il contatto veniva scritto con l'identificatore interno (LID) al posto del numero, e l'iPhone lo scartava pochi secondi dopo, anche se WinZapp diceva che la sincronizzazione era stata richiesta.</description>
+- Con Neonize, "Aggiungi contatto" nei dati della conversazione ora salva davvero il contatto nella rubrica di WhatsApp e sul telefono. Prima il contatto veniva scritto con l'identificatore interno (LID) al posto del numero, e l'iPhone lo scartava pochi secondi dopo, anche se WinZapp diceva che la sincronizzazione era stata richiesta.
+
+- Neonize: quando il ponte di connessione non riesce ad avviarsi, WinZapp ora lo annuncia subito a voce, invece di perdere l'avviso quando il programma si bloccava mostrandolo, e scrive nel log la fine dell'output del ponte e l'architettura del processore del computer, così che la causa si possa trovare.
+
+- Neonize su Windows ARM: il ponte di connessione non smette più di avviarsi (e l'abbinamento con il codice QR non resta più bloccato) perché chiedeva la versione ARM della sua libreria, che il programma non riesce a caricare; ora usa quella dell'architettura con cui gira davvero.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5914alpha/WinZapp-macOS-x86_64.zip" length="342844199" type="application/octet-stream" sparkle:edSignature="oZAdJkuZM+Y1udBF+ACR7FXf36JhdqUUu8QxkEcibVB4pcbhFZN3v98KW4Tu3FDPo3V0Cxa3/xDm4Ggj+XdnCQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5913alpha</title>
+      <pubDate>Mon, 23 Nov 2026 14:09:25 +0000</pubDate>
+      <sparkle:version>3.0.0.59131</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5913alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5913alpha/WinZapp-macOS-x86_64.zip" length="342840427" type="application/octet-stream" sparkle:edSignature="hitrZ32oBaILycECtkkndkeUpxZWwZxfCxGl4MfxBInhVzAeli6cW5RYOImvHO/woMub4tW/oEqqhgHaDUwWAg=="></enclosure>
     </item>
     <item>
@@ -5847,15 +5892,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5910alpha/WinZapp-macOS-x86_64.zip" length="342689785" type="application/octet-stream" sparkle:edSignature="2JMpPl7V7PPv2hYs24o4tRP2sxTK2ROFHmMJoV5WyS0cz1p3loJeesqLvg4vhSrVZazoF+3Ja2MjRy4h6vVkCA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5909alpha</title>
-      <pubDate>Mon, 23 Nov 2026 00:11:22 +0000</pubDate>
-      <sparkle:version>3.0.0.59091</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5909alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5909alpha/WinZapp-macOS-x86_64.zip" length="342761481" type="application/octet-stream" sparkle:edSignature="Z331UcXAHPSxKlMc3S9bNhniU8ayaK+vguKIo3/LWo8VCw/hghFYZeQeMPwDygFte9qO+4zfKPTP6qwCDRrYBA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7470,6 +7506,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VegPgxGkkPpVPz7zOhdEtdmP9mRL36m9q+Yph59M1gPgXdXZ8kpb8XlzQGH2ROIBsYeWEDr/f8rAQ7AN5CSjDw==
-length: 1331816
+edSignature: ULyV0S/76Q9EHhld0WdcGKWP0PHAPxyqXenqUUVoKbXLOA6F6SnLfOCBr3sziJYB818rdT+n5TVprAvIUsFfBg==
+length: 1337287
 -->
