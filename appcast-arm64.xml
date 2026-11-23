@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5911alpha</title>
-      <pubDate>Mon, 23 Nov 2026 04:31:40 +0000</pubDate>
-      <sparkle:version>3.0.0.59111</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5911alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5912alpha</title>
+      <pubDate>Mon, 23 Nov 2026 13:36:12 +0000</pubDate>
+      <sparkle:version>3.0.0.59121</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5912alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+      <description xml:lang="en" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -651,8 +651,10 @@ WHAT'S NEW
 
 - Pasting a text file saved as UTF-16 (such as a Windows System Information report from msinfo32) into the message field no longer sends it as audio: it stays a document. Reported by UlisesMilani (#838).
 
-- Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Settings, Messages: new option "Stop new messages in the open chat from joining the unread separator; mark them as read on arrival", off by default. Off, messages that arrive while you read the open chat keep adding to the unread separator, so you can follow what came in later. On, they are read on arrival, with no separator.
+
+- With Neonize, "Add contact" in the conversation details now really saves the contact in the WhatsApp address book and on the phone. Before, the contact was written under the internal identifier (LID) instead of the phone number, and the iPhone dropped it seconds later, even though WinZapp said the synchronization had been requested.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1292,8 +1294,10 @@ NOVIDADES
 
 - Colar no campo de mensagem um arquivo de texto salvo em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) não o envia mais como áudio: ele continua sendo um documento. Relatado por UlisesMilani (#838).
 
-- Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Configurações, Mensagens: nova opção "Não acumular no separador de não lidas as mensagens que chegam à conversa aberta; marcá-las como lidas na chegada", desligada por padrão. Desligada, as mensagens que chegam enquanto você lê a conversa aberta continuam somando no separador de não lidas, para você acompanhar o que chegou depois. Ligada, elas são lidas ao chegar, sem separador.
+
+- No Neonize, "Adicionar contato" nos dados da conversa agora salva o contato de verdade na agenda do WhatsApp e do celular. Antes, o contato era gravado com o identificador interno (LID) no lugar do número, e o iPhone o descartava segundos depois, embora o WinZapp dissesse que a sincronização tinha sido solicitada.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1933,8 +1937,10 @@ NOVIDADES
 
 - Colar no campo de mensagem um ficheiro de texto guardado em UTF-16 (como um relatório de Informações do Sistema do Windows, do msinfo32) já não o envia como áudio: continua a ser um documento. Comunicado por UlisesMilani (#838).
 
-- Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Definições, Mensagens: nova opção "Não acumular no separador de mensagens por ler as mensagens que chegam à conversa aberta; marcá-las como lidas à chegada", desligada por predefinição. Desligada, as mensagens que chegam enquanto lê a conversa aberta continuam a somar no separador, para acompanhar o que chegou depois. Ligada, são lidas à chegada, sem separador.
+
+- Com o Neonize, "Adicionar contacto" nos dados da conversa passa a guardar mesmo o contacto na agenda do WhatsApp e do telemóvel. Antes, o contacto era gravado com o identificador interno (LID) no lugar do número, e o iPhone descartava-o segundos depois, embora o WinZapp dissesse que a sincronização tinha sido pedida.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2574,8 +2580,10 @@ NOVEDADES
 
 - Pegar en el campo de mensaje un archivo de texto guardado en UTF-16 (como un informe de Información del sistema de Windows, de msinfo32) ya no lo envía como audio: sigue siendo un documento. Informado por UlisesMilani (#838).
 
-- Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Configuración, Mensajes: nueva opción "Excluir los mensajes nuevos de la conversación abierta del separador de no leídos y marcarlos como leídos al llegar", desactivada por defecto. Desactivada, los mensajes que llegan mientras lees la conversación abierta siguen sumándose al separador de no leídos, para que sigas lo que llegó después. Activada, se leen al llegar, sin separador.
+
+- Con Neonize, "Añadir contacto" en los datos de la conversación ahora guarda de verdad el contacto en la agenda de WhatsApp y en el teléfono. Antes, el contacto se grababa con el identificador interno (LID) en lugar del número, y el iPhone lo descartaba segundos después, aunque WinZapp decía que la sincronización se había solicitado.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3216,8 +3224,10 @@ NOWOŚCI
 
 - Wklejenie do pola wiadomości pliku tekstowego zapisanego w UTF-16 (na przykład raportu Informacje o systemie z Windows, z msinfo32) nie wysyła go już jako dźwięku: pozostaje dokumentem. Zgłosił UlisesMilani (#838).
 
-- Ustawienia &gt; Interfejs &gt; Wiadomości: dodano domyślnie wyłączoną opcję „Gdy okno jest aktywne, oznaczaj nowe wiadomości w otwartym czacie od razu jako przeczytane, bez zwiększania licznika przy separatorze nieprzeczytanych”. Przy opcji wyłączonej wiadomości napływające podczas przeglądania czatu nadal zwiększają licznik przy separatorze, co pomaga śledzić nowe wiadomości. Po jej włączeniu są oznaczane jako przeczytane od razu, bez zwiększania tego licznika, gdy czat jest widoczny, a okno WinZappa pozostaje aktywne od co najmniej 5 sekund.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Ustawienia &gt; Interfejs &gt; Wiadomości: dodano domyślnie wyłączoną opcję „Gdy okno jest aktywne, oznaczaj nowe wiadomości w otwartym czacie od razu jako przeczytane, bez zwiększania licznika przy separatorze nieprzeczytanych”. Przy opcji wyłączonej wiadomości napływające podczas przeglądania czatu nadal zwiększają licznik przy separatorze, co pomaga śledzić nowe wiadomości. Po jej włączeniu są oznaczane jako przeczytane od razu, bez zwiększania tego licznika, gdy czat jest widoczny, a okno WinZappa pozostaje aktywne od co najmniej 5 sekund.
+
+- W Neonize opcja „Dodaj kontakt” w danych rozmowy naprawdę zapisuje teraz kontakt w książce adresowej WhatsApp i w telefonie. Wcześniej kontakt był zapisywany pod wewnętrznym identyfikatorem (LID) zamiast numeru telefonu, a iPhone odrzucał go po kilku sekundach, mimo że WinZapp mówił, że zażądał synchronizacji.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3857,8 +3867,10 @@ YENİLİKLER
 
 - UTF-16 olarak kaydedilmiş bir metin dosyasını (msinfo32 ile alınan Windows Sistem Bilgileri raporu gibi) mesaj alanına yapıştırmak artık onu ses olarak göndermiyor: belge olarak kalıyor. UlisesMilani tarafından bildirildi (#838).
 
-- Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Ayarlar, Mesajlar: yeni seçenek "Açık sohbette gelen yeni mesajları okunmamış mesajlar ayırıcısına ekleme; geldiklerinde okundu olarak işaretle", varsayılan olarak kapalı. Kapalıyken, açık sohbeti okurken gelen mesajlar okunmamış ayırıcısına eklenmeye devam eder; böylece sonradan geleni takip edersiniz. Açıkken geldiklerinde okunur, ayırıcı olmaz.
+
+- Neonize ile sohbet bilgilerindeki "Kişi ekle" artık kişiyi gerçekten WhatsApp rehberine ve telefona kaydediyor. Önceden kişi, telefon numarası yerine dahili tanımlayıcıyla (LID) yazılıyordu ve WinZapp eşitlemenin istendiğini söylese de iPhone onu birkaç saniye sonra siliyordu.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4498,8 +4510,10 @@ NOUTĂȚI
 
 - Lipirea în câmpul mesajului a unui fișier text salvat în UTF-16 (cum este un raport Informații despre sistem din Windows, de la msinfo32) nu îl mai trimite ca audio: rămâne document. Raportat de UlisesMilani (#838).
 
-- Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- Setări, Mesaje: opțiune nouă "Nu adăuga mesajele noi din conversația deschisă la separatorul de mesaje necitite; marchează-le ca citite la sosire", dezactivată implicit. Dezactivată, mesajele care sosesc cât timp citești conversația deschisă continuă să se adune în separatorul de mesaje necitite, ca să urmărești ce a sosit după. Activată, sunt citite la sosire, fără separator.
+
+- Cu Neonize, „Adaugă contact” din datele conversației salvează acum cu adevărat contactul în agenda WhatsApp și pe telefon. Înainte, contactul era scris sub identificatorul intern (LID) în loc de numărul de telefon, iar iPhone-ul îl arunca după câteva secunde, deși WinZapp spunea că sincronizarea fusese solicitată.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5141,8 +5155,10 @@ NOUTĂȚI
 
 - لصق ملف نصي محفوظ بترميز UTF-16 (مثل تقرير معلومات النظام في Windows من msinfo32) في حقل الرسالة لم يعد يرسله كصوت: يبقى مستندًا. أبلغ عنه UlisesMilani (#838).
 
-- الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Updated Polish localization and WhatsApp terminology (#880)
+- الإعدادات، الرسائل: خيار جديد «عدم إضافة الرسائل الجديدة في المحادثة المفتوحة إلى فاصل الرسائل غير المقروءة، ووضع علامة مقروءة عليها عند وصولها»، وهو معطّل افتراضيًا. عند تعطيله تستمر الرسائل التي تصل أثناء قراءتك للمحادثة المفتوحة في التراكم داخل فاصل الرسائل غير المقروءة لتتابع ما وصل لاحقًا. وعند تفعيله تُقرأ عند وصولها دون فاصل.
+
+- في Neonize، أصبح «إضافة جهة اتصال» في بيانات المحادثة يحفظ جهة الاتصال فعلًا في دفتر عناوين واتساب وعلى الهاتف. كانت جهة الاتصال تُكتب سابقًا بالمعرّف الداخلي (LID) بدل رقم الهاتف، وكان الآيفون يتجاهلها بعد ثوانٍ، رغم أن WinZapp كان يقول إنه طلب المزامنة.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- fix(neonize): save a contact under its number when the query answers with the LID (#881)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5782,7 +5798,18 @@ WHAT'S NEW
 
 - Incollare nel campo del messaggio un file di testo salvato in UTF-16 (come un rapporto Informazioni di sistema di Windows, da msinfo32) non lo invia più come audio: resta un documento. Segnalato da UlisesMilani (#838).
 
-- Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.</description>
+- Impostazioni, Messaggi: nuova opzione "Nella chat aperta, WinZapp segna come letti i nuovi messaggi e non li aggiunge al separatore dei non letti", disattivata per impostazione predefinita. Disattivata, i messaggi che arrivano mentre leggi la chat aperta continuano a sommarsi nel separatore dei non letti, così segui ciò che è arrivato dopo. Attivata, sono letti all'arrivo, senza separatore.
+
+- Con Neonize, "Aggiungi contatto" nei dati della conversazione ora salva davvero il contatto nella rubrica di WhatsApp e sul telefono. Prima il contatto veniva scritto con l'identificatore interno (LID) al posto del numero, e l'iPhone lo scartava pochi secondi dopo, anche se WinZapp diceva che la sincronizzazione era stata richiesta.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5912alpha/WinZapp-macOS-arm64.zip" length="305583235" type="application/octet-stream" sparkle:edSignature="ggofi3aX4ySWl99W04iLy+xz8fbyHlj/AXqoFhNb7v+L3wiwNBengMR83cLPk5QhUKnmICR+3Z3ztKm2WaJjBw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5911alpha</title>
+      <pubDate>Mon, 23 Nov 2026 04:31:40 +0000</pubDate>
+      <sparkle:version>3.0.0.59111</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5911alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5911alpha/WinZapp-macOS-arm64.zip" length="309458936" type="application/octet-stream" sparkle:edSignature="+Lau+GRyuw+HdZWdrg187zCavhndZlyksMBeMC+9L4EUYAyDmm+B2iuv4ycvP4T0Krm41KQdYIFE7TS+0tYCCg=="></enclosure>
     </item>
     <item>
@@ -5811,15 +5838,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5908alpha/WinZapp-macOS-arm64.zip" length="305496375" type="application/octet-stream" sparkle:edSignature="5fQ63shpFcoPz7RZTi7RjWLmt6a4SM2jAAK2rgV1ljyKkgs2jCNTToaDrgsv0+geHa10nwZylhzKfVLnPNr1Cg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5907alpha</title>
-      <pubDate>Sun, 22 Nov 2026 04:36:09 +0000</pubDate>
-      <sparkle:version>3.0.0.59071</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5907alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5907alpha/WinZapp-macOS-arm64.zip" length="305512028" type="application/octet-stream" sparkle:edSignature="iM20FWUhtq0TnREorJcbJb2EbW8k0T0g/upyYnNmtsPmWPR/7bhWOVTbOAYTzrEyZEaNGaHPSLshAoyZAUVJAg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.0.0</title>
@@ -7434,6 +7452,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: EC8Fytcqfsk8txPlOnhtNI7MvhHKaqNAJDAcKWtxdxGrYylP39NNX2nhNvdI0ivLmlJdzusNQRyA9eDYJJD9Cg==
-length: 1326625
+edSignature: p4D6TX9z7S8DWChPK+T8nzFmbrSw7aH04l7shZHePAuOeqNgLfLMMS9RGwb+aCk5wey8CHKYtOlHeM2NcNAFCg==
+length: 1329975
 -->
