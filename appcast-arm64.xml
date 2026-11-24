@@ -5,13 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5928alpha</title>
-      <pubDate>Mon, 23 Nov 2026 23:13:11 +0000</pubDate>
-      <sparkle:version>3.0.0.59281</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5928alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5934alpha</title>
+      <pubDate>Tue, 24 Nov 2026 14:33:06 +0000</pubDate>
+      <sparkle:version>3.0.0.59341</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5934alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+      <description xml:lang="en" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -19,7 +20,7 @@ WHAT'S NEW
 
 - Communities: Enter on a community in the chat list now opens the Communities panel with that community selected and the focus on its groups, instead of the community's own chat. Settings &gt; Interface &gt; Chats has the option, on by default.
 
-- Linking by phone number: the link no longer fails after WhatsApp on the phone accepts the pairing code. WinZapp used to close WhatsApp Web during the reload that finishes the login, or ask for a new code on it, so the phone showed the device as linked while WinZapp stayed on the pairing window. The pairing code window also lists its text, the code and Cancel in order instead of drawing them on top of each other.
+- Linking by phone number: the link no longer fails after WhatsApp on the phone accepts the pairing code. WinZapp used to close WhatsApp Web during the reload that finishes the login, or ask for a new code on it, so the phone showed the device as linked while WinZapp stayed on the pairing window. The pairing code window also lists its text, the code and Cancel in order instead of drawing them on top of each other. If WhatsApp Web still does not open your chats after the code is accepted, WinZapp now tries once more and then tells you, instead of waiting on the pairing window forever, and a link the phone accepted is no longer discarded when you restart WinZapp.
 
 - When WhatsApp temporarily refuses pairing codes for a number, WinZapp says so right away instead of staying on "connecting" for a minute and a half, and suggests "Connect with QR code", which does not use a pairing code.
 
@@ -667,8 +668,11 @@ WHAT'S NEW
 
 - Neonize on Windows on ARM: the connection bridge no longer fails to start (and pairing by QR code no longer stays stuck) because it asked for the ARM version of its library, which the program cannot load; it now uses the one for the architecture it really runs as.
 
-- Fixed: with install-on-exit turned on, after WinZapp announced that the update was downloaded, Help &gt; Install downloaded update stayed unavailable. The item is now available and installs the update right away, then starts WinZapp again; exiting still installs without restarting.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Fixed: with install-on-exit turned on, after WinZapp announced that the update was downloaded, Help &gt; Install downloaded update stayed unavailable. The item is now available and installs the update right away, then starts WinZapp again; exiting still installs without restarting.
+
+- Neonize: when the connection bridge takes too long to start, the program log now says whether it is still running and shows the last lines of its output, and the bridge writes each step of its start to its own log as it goes, so a bridge that stops half-way shows where.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -676,7 +680,7 @@ NOVIDADES
 
 - Comunidades: Enter numa comunidade da lista de conversas agora abre o painel Comunidades com essa comunidade selecionada e o foco nos grupos dela, em vez da conversa da própria comunidade. A opção fica em Configurações &gt; Interface &gt; Conversas, ligada por padrão.
 
-- Conectar pelo número de telefone: a conexão não falha mais depois que o WhatsApp do celular aceita o código de pareamento. O WinZapp fechava o WhatsApp Web durante o recarregamento que conclui o login, ou pedia um novo código nele, e o celular mostrava o aparelho como conectado enquanto o WinZapp continuava na janela de pareamento. A janela do código também passa a mostrar o texto, o código e Cancelar em ordem, em vez de desenhá-los uns sobre os outros.
+- Conectar pelo número de telefone: a conexão não falha mais depois que o WhatsApp do celular aceita o código de pareamento. O WinZapp fechava o WhatsApp Web durante o recarregamento que conclui o login, ou pedia um novo código nele, e o celular mostrava o aparelho como conectado enquanto o WinZapp continuava na janela de pareamento. A janela do código também passa a mostrar o texto, o código e Cancelar em ordem, em vez de desenhá-los uns sobre os outros. Se o WhatsApp Web ainda não abrir as conversas depois que o código é aceito, o WinZapp agora tenta mais uma vez e então avisa, em vez de esperar para sempre na janela de pareamento, e uma conexão que o celular aceitou não é mais descartada quando você reinicia o WinZapp.
 
 - Quando o WhatsApp recusa temporariamente códigos de pareamento para um número, o WinZapp avisa na hora, em vez de ficar em "conectando" por um minuto e meio, e sugere "Conectar com QR-CODE", que não usa código de pareamento.
 
@@ -1324,8 +1328,11 @@ NOVIDADES
 
 - Neonize no Windows em ARM: a bridge de conexão não deixa mais de iniciar (e o pareamento por QR code não fica mais travado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; agora ela usa a da arquitetura em que realmente roda.
 
-- Corrigido: com a instalação ao sair ligada, depois de avisar que a atualização foi baixada, Ajuda &gt; Instalar atualização baixada continuava indisponível. Agora o item fica disponível e instala a atualização na hora, reabrindo o WinZapp em seguida; sair continua instalando sem reabrir.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Corrigido: com a instalação ao sair ligada, depois de avisar que a atualização foi baixada, Ajuda &gt; Instalar atualização baixada continuava indisponível. Agora o item fica disponível e instala a atualização na hora, reabrindo o WinZapp em seguida; sair continua instalando sem reabrir.
+
+- Neonize: quando a bridge de conexão demora demais para iniciar, o log do programa agora diz se ela ainda está rodando e mostra as últimas linhas da saída dela, e a bridge grava no próprio log cada etapa do seu início conforme avança, para que uma bridge que pare no meio mostre onde.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1333,7 +1340,7 @@ NOVIDADES
 
 - Comunidades: Enter numa comunidade da lista de conversas abre agora o painel Comunidades com essa comunidade selecionada e o foco nos respetivos grupos, em vez da conversa da própria comunidade. A opção está em Definições &gt; Interface &gt; Conversas, ativada por predefinição.
 
-- Ligação pelo número de telefone: a ligação já não falha depois de o WhatsApp do telemóvel aceitar o código de emparelhamento. O WinZapp fechava o WhatsApp Web durante o recarregamento que conclui o início de sessão, ou pedia um novo código nele, e o telemóvel mostrava o dispositivo como ligado enquanto o WinZapp continuava na janela de emparelhamento. A janela do código passa também a mostrar o texto, o código e Cancelar por ordem, em vez de os desenhar uns sobre os outros.
+- Ligação pelo número de telefone: a ligação já não falha depois de o WhatsApp do telemóvel aceitar o código de emparelhamento. O WinZapp fechava o WhatsApp Web durante o recarregamento que conclui o início de sessão, ou pedia um novo código nele, e o telemóvel mostrava o dispositivo como ligado enquanto o WinZapp continuava na janela de emparelhamento. A janela do código passa também a mostrar o texto, o código e Cancelar por ordem, em vez de os desenhar uns sobre os outros. Se o WhatsApp Web continuar sem abrir as conversas depois de o código ser aceite, o WinZapp tenta agora mais uma vez e depois avisa, em vez de ficar à espera para sempre na janela de emparelhamento, e uma ligação que o telemóvel aceitou já não é descartada quando reinicia o WinZapp.
 
 - Quando o WhatsApp recusa temporariamente códigos de emparelhamento para um número, o WinZapp avisa de imediato, em vez de ficar em "a ligar" durante um minuto e meio, e sugere "Ligar-se através do código QR", que não usa código de emparelhamento.
 
@@ -1981,8 +1988,11 @@ NOVIDADES
 
 - Neonize no Windows em ARM: a bridge de ligação deixa de falhar ao iniciar (e o emparelhamento por código QR deixa de ficar bloqueado) por pedir a versão ARM da sua biblioteca, que o programa não consegue carregar; passa a usar a da arquitetura em que realmente corre.
 
-- Corrigido: com a instalação ao sair ativada, depois de avisar que a atualização foi transferida, Ajuda &gt; Instalar atualização transferida continuava indisponível. Agora o item fica disponível e instala a atualização de imediato, voltando a abrir o WinZapp em seguida; sair continua a instalar sem voltar a abrir.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Corrigido: com a instalação ao sair ativada, depois de avisar que a atualização foi transferida, Ajuda &gt; Instalar atualização transferida continuava indisponível. Agora o item fica disponível e instala a atualização de imediato, voltando a abrir o WinZapp em seguida; sair continua a instalar sem voltar a abrir.
+
+- Neonize: quando a bridge de ligação demora demasiado a iniciar, o registo do programa passa a dizer se ainda está a correr e mostra as últimas linhas da sua saída, e a bridge grava no seu próprio registo cada passo do arranque à medida que avança, para que uma bridge que pare a meio mostre onde.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -1990,7 +2000,7 @@ NOVEDADES
 
 - Comunidades: Intro sobre una comunidad de la lista de chats abre ahora el panel Comunidades con esa comunidad seleccionada y el foco en sus grupos, en lugar del chat de la propia comunidad. La opción está en Ajustes &gt; Interfaz &gt; Chats, activada de forma predeterminada.
 
-- Vincular con el número de teléfono: la vinculación ya no falla después de que WhatsApp en el teléfono acepte el código de emparejamiento. WinZapp cerraba WhatsApp Web durante la recarga que completa el inicio de sesión, o pedía en ella un código nuevo, y el teléfono mostraba el dispositivo como vinculado mientras WinZapp seguía en la ventana de emparejamiento. La ventana del código también muestra ahora el texto, el código y Cancelar en orden, en lugar de dibujarlos unos encima de otros.
+- Vincular con el número de teléfono: la vinculación ya no falla después de que WhatsApp en el teléfono acepte el código de emparejamiento. WinZapp cerraba WhatsApp Web durante la recarga que completa el inicio de sesión, o pedía en ella un código nuevo, y el teléfono mostraba el dispositivo como vinculado mientras WinZapp seguía en la ventana de emparejamiento. La ventana del código también muestra ahora el texto, el código y Cancelar en orden, en lugar de dibujarlos unos encima de otros. Si WhatsApp Web sigue sin abrir los chats después de aceptar el código, WinZapp ahora lo intenta una vez más y luego te avisa, en lugar de esperar para siempre en la ventana de emparejamiento, y una vinculación que el teléfono aceptó ya no se descarta al reiniciar WinZapp.
 
 - Cuando WhatsApp rechaza temporalmente los códigos de emparejamiento de un número, WinZapp lo dice al momento, en lugar de quedarse en "conectando" durante un minuto y medio, y sugiere "Conectar con código QR", que no usa código de emparejamiento.
 
@@ -2638,8 +2648,11 @@ NOVEDADES
 
 - Neonize en Windows sobre ARM: el puente de conexión ya no deja de iniciarse (y el emparejamiento por código QR ya no se queda bloqueado) por pedir la versión ARM de su biblioteca, que el programa no puede cargar; ahora usa la de la arquitectura con la que realmente se ejecuta.
 
-- Corregido: con la instalación al salir activada, tras avisar de que la actualización se había descargado, Ayuda &gt; Instalar actualización descargada seguía sin estar disponible. Ahora el elemento está disponible e instala la actualización al momento y vuelve a abrir WinZapp; salir sigue instalando sin reabrir.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Corregido: con la instalación al salir activada, tras avisar de que la actualización se había descargado, Ayuda &gt; Instalar actualización descargada seguía sin estar disponible. Ahora el elemento está disponible e instala la actualización al momento y vuelve a abrir WinZapp; salir sigue instalando sin reabrir.
+
+- Neonize: cuando el puente de conexión tarda demasiado en iniciarse, el registro del programa ahora dice si sigue en ejecución y muestra las últimas líneas de su salida, y el puente escribe en su propio registro cada paso de su inicio a medida que avanza, para que un puente que se detenga a medias muestre dónde.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2647,7 +2660,7 @@ NOWOŚCI
 
 - Społeczności: Enter na społeczności na liście czatów otwiera teraz panel Społeczności z zaznaczoną tą społecznością i fokusem na jej grupach zamiast czatu samej społeczności. Opcja jest w Ustawieniach &gt; Interfejs &gt; Czaty, domyślnie włączona.
 
-- Łączenie za pomocą numeru telefonu: połączenie nie kończy się już błędem po tym, jak WhatsApp na telefonie zaakceptuje kod parowania. WinZapp zamykał WhatsApp Web podczas przeładowania, które kończy logowanie, albo prosił na nim o nowy kod, więc telefon pokazywał urządzenie jako połączone, a WinZapp zostawał w oknie parowania. Okno kodu pokazuje teraz też tekst, kod i Anuluj po kolei, zamiast rysować je jedno na drugim.
+- Łączenie za pomocą numeru telefonu: połączenie nie kończy się już błędem po tym, jak WhatsApp na telefonie zaakceptuje kod parowania. WinZapp zamykał WhatsApp Web podczas przeładowania, które kończy logowanie, albo prosił na nim o nowy kod, więc telefon pokazywał urządzenie jako połączone, a WinZapp zostawał w oknie parowania. Okno kodu pokazuje teraz też tekst, kod i Anuluj po kolei, zamiast rysować je jedno na drugim. Jeśli po zaakceptowaniu kodu WhatsApp Web nadal nie otwiera czatów, WinZapp próbuje teraz jeszcze raz, a potem o tym informuje, zamiast czekać bez końca w oknie parowania, a połączenie zaakceptowane przez telefon nie jest już odrzucane po ponownym uruchomieniu WinZapp.
 
 - Gdy WhatsApp tymczasowo odmawia kodów parowania dla numeru, WinZapp mówi o tym od razu, zamiast przez półtorej minuty pozostawać w stanie "łączenie", i proponuje "Połącz za pomocą kodu QR", które nie używa kodu parowania.
 
@@ -3296,8 +3309,11 @@ NOWOŚCI
 
 - Neonize w systemie Windows na ARM: most połączenia nie przestaje już się uruchamiać (a parowanie kodem QR nie utyka), bo żądał wersji ARM swojej biblioteki, której program nie może załadować; teraz używa wersji dla architektury, na której naprawdę działa.
 
-- Naprawiono: gdy włączona była instalacja przy wyjściu, po komunikacie o pobraniu aktualizacji opcja Pomoc &gt; Zainstaluj pobraną aktualizację nadal była niedostępna. Teraz jest dostępna i od razu instaluje aktualizację, a potem ponownie uruchamia WinZapp; wyjście nadal instaluje bez ponownego uruchamiania.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Naprawiono: gdy włączona była instalacja przy wyjściu, po komunikacie o pobraniu aktualizacji opcja Pomoc &gt; Zainstaluj pobraną aktualizację nadal była niedostępna. Teraz jest dostępna i od razu instaluje aktualizację, a potem ponownie uruchamia WinZapp; wyjście nadal instaluje bez ponownego uruchamiania.
+
+- Neonize: gdy most połączenia uruchamia się zbyt długo, log programu mówi teraz, czy nadal działa, i pokazuje ostatnie linie jego wyjścia, a most zapisuje w swoim logu każdy krok startu na bieżąco, więc most zatrzymany w połowie pokazuje gdzie.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3305,7 +3321,7 @@ YENİLİKLER
 
 - Topluluklar: sohbet listesindeki bir toplulukta Enter artık topluluğun kendi sohbeti yerine Topluluklar panelini o topluluk seçili ve odak gruplarında olacak şekilde açıyor. Seçenek Ayarlar &gt; Arayüz &gt; Sohbetler içinde, varsayılan olarak açık.
 
-- Telefon numarasıyla bağlama: telefondaki WhatsApp eşleme kodunu kabul ettikten sonra bağlantı artık başarısız olmuyor. WinZapp, oturum açmayı tamamlayan yeniden yükleme sırasında WhatsApp Web'i kapatıyor ya da orada yeni bir kod istiyordu; telefon cihazı bağlı gösterirken WinZapp eşleme penceresinde kalıyordu. Kod penceresi artık metni, kodu ve İptal düğmesini üst üste çizmek yerine sırayla gösteriyor.
+- Telefon numarasıyla bağlama: telefondaki WhatsApp eşleme kodunu kabul ettikten sonra bağlantı artık başarısız olmuyor. WinZapp, oturum açmayı tamamlayan yeniden yükleme sırasında WhatsApp Web'i kapatıyor ya da orada yeni bir kod istiyordu; telefon cihazı bağlı gösterirken WinZapp eşleme penceresinde kalıyordu. Kod penceresi artık metni, kodu ve İptal düğmesini üst üste çizmek yerine sırayla gösteriyor. Kod kabul edildikten sonra WhatsApp Web sohbetlerinizi hâlâ açmazsa, WinZapp artık eşleme penceresinde sonsuza kadar beklemek yerine bir kez daha dener ve ardından size bildirir; telefonun kabul ettiği bir bağlantı da WinZapp'i yeniden başlattığınızda artık silinmez.
 
 - WhatsApp bir numara için eşleme kodlarını geçici olarak reddettiğinde WinZapp bunu bir buçuk dakika "bağlanıyor" durumunda beklemek yerine hemen söylüyor ve eşleme kodu kullanmayan "QR kodu ile bağlan" seçeneğini öneriyor.
 
@@ -3953,8 +3969,11 @@ YENİLİKLER
 
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü, programın yükleyemediği ARM sürümünü istediği için artık başlatılamamazlık etmiyor (ve QR kodla eşleştirme takılı kalmıyor); artık gerçekte çalıştığı mimarinin sürümünü kullanıyor.
 
-- Düzeltildi: Çıkışta yükleme açıkken, güncellemenin indirildiği duyurulduktan sonra Yardım &gt; İndirilen güncellemeyi yükle öğesi kullanılamaz kalıyordu. Artık öğe kullanılabilir; güncellemeyi hemen yükler ve ardından WinZapp'ı yeniden başlatır; çıkış yapmak yine yeniden başlatmadan yükler.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Düzeltildi: Çıkışta yükleme açıkken, güncellemenin indirildiği duyurulduktan sonra Yardım &gt; İndirilen güncellemeyi yükle öğesi kullanılamaz kalıyordu. Artık öğe kullanılabilir; güncellemeyi hemen yükler ve ardından WinZapp'ı yeniden başlatır; çıkış yapmak yine yeniden başlatmadan yükler.
+
+- Neonize: bağlantı köprüsü başlatılırken çok uzun sürdüğünde programın günlüğü artık hâlâ çalışıp çalışmadığını söyler ve çıktısının son satırlarını gösterir; köprü de başlangıcının her adımını ilerledikçe kendi günlüğüne yazar, böylece yarıda kalan bir köprü nerede durduğunu gösterir.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -3962,7 +3981,7 @@ NOUTĂȚI
 
 - Comunități: Enter pe o comunitate din lista de conversații deschide acum panoul Comunități cu acea comunitate selectată și focalizarea pe grupurile ei, în locul conversației comunității. Opțiunea este în Setări &gt; Interfață &gt; Conversații, activată implicit.
 
-- Conectarea cu numărul de telefon: conectarea nu mai eșuează după ce WhatsApp de pe telefon acceptă codul de asociere. WinZapp închidea WhatsApp Web în timpul reîncărcării care finalizează autentificarea, sau cerea un cod nou pe ea, iar telefonul arăta dispozitivul ca fiind conectat în timp ce WinZapp rămânea în fereastra de asociere. Fereastra codului arată acum și textul, codul și Anulare în ordine, în loc să le deseneze unele peste altele.
+- Conectarea cu numărul de telefon: conectarea nu mai eșuează după ce WhatsApp de pe telefon acceptă codul de asociere. WinZapp închidea WhatsApp Web în timpul reîncărcării care finalizează autentificarea, sau cerea un cod nou pe ea, iar telefonul arăta dispozitivul ca fiind conectat în timp ce WinZapp rămânea în fereastra de asociere. Fereastra codului arată acum și textul, codul și Anulare în ordine, în loc să le deseneze unele peste altele. Dacă WhatsApp Web tot nu deschide conversațiile după ce codul a fost acceptat, WinZapp încearcă acum încă o dată și apoi îți spune, în loc să aștepte la nesfârșit în fereastra de asociere, iar o conectare acceptată de telefon nu mai este pierdută când repornești WinZapp.
 
 - Când WhatsApp refuză temporar codurile de asociere pentru un număr, WinZapp spune imediat acest lucru, în loc să rămână la "se conectează" timp de un minut și jumătate, și sugerează „Conectați-vă cu codul QR”, care nu folosește un cod de asociere.
 
@@ -4610,8 +4629,11 @@ NOUTĂȚI
 
 - Neonize pe Windows pe ARM: puntea de conexiune nu mai eșuează la pornire (iar asocierea prin cod QR nu mai rămâne blocată) pentru că cerea versiunea ARM a bibliotecii sale, pe care programul nu o poate încărca; acum folosește versiunea arhitecturii pe care rulează de fapt.
 
-- Remediat: cu instalarea la ieșire activată, după anunțul că actualizarea a fost descărcată, Ajutor &gt; Instalează actualizarea descărcată rămânea indisponibil. Acum elementul este disponibil și instalează actualizarea imediat, apoi pornește din nou WinZapp; ieșirea continuă să instaleze fără repornire.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- Remediat: cu instalarea la ieșire activată, după anunțul că actualizarea a fost descărcată, Ajutor &gt; Instalează actualizarea descărcată rămânea indisponibil. Acum elementul este disponibil și instalează actualizarea imediat, apoi pornește din nou WinZapp; ieșirea continuă să instaleze fără repornire.
+
+- Neonize: când puntea de conexiune durează prea mult să pornească, jurnalul programului spune acum dacă încă rulează și arată ultimele linii ale ieșirii ei, iar puntea scrie în propriul jurnal fiecare pas al pornirii pe măsură ce avansează, astfel încât o punte oprită la jumătate arată unde.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -4619,7 +4641,7 @@ NOUTĂȚI
 
 - المجتمعات: الضغط على Enter على مجتمع في قائمة المحادثات يفتح الآن لوحة المجتمعات بهذا المجتمع محددًا مع التركيز على مجموعاته، بدلًا من محادثة المجتمع نفسه. الخيار في الإعدادات &gt; واجهة المستخدم &gt; الدردشات، ومفعّل افتراضيًا.
 
-- الربط برقم الهاتف: لم يعد الربط يفشل بعد أن يقبل واتساب على الهاتف رمز الاقتران. كان WinZapp يغلق واتساب ويب أثناء إعادة التحميل التي تُكمل تسجيل الدخول، أو يطلب فيها رمزًا جديدًا، فيعرض الهاتف الجهاز على أنه مرتبط بينما يبقى WinZapp في نافذة الاقتران. وأصبحت نافذة الرمز تعرض النص والرمز وزر الإلغاء بالترتيب بدلًا من رسمها فوق بعضها.
+- الربط برقم الهاتف: لم يعد الربط يفشل بعد أن يقبل واتساب على الهاتف رمز الاقتران. كان WinZapp يغلق واتساب ويب أثناء إعادة التحميل التي تُكمل تسجيل الدخول، أو يطلب فيها رمزًا جديدًا، فيعرض الهاتف الجهاز على أنه مرتبط بينما يبقى WinZapp في نافذة الاقتران. وأصبحت نافذة الرمز تعرض النص والرمز وزر الإلغاء بالترتيب بدلًا من رسمها فوق بعضها. وإذا لم يفتح واتساب ويب المحادثات بعد قبول الرمز، يحاول WinZapp الآن مرة أخرى ثم يخبرك بذلك بدلًا من الانتظار إلى ما لا نهاية في نافذة الاقتران، ولم يعد الربط الذي قبله الهاتف يُحذف عند إعادة تشغيل WinZapp.
 
 - عندما يرفض واتساب مؤقتًا رموز الاقتران لرقم ما، يخبرك WinZapp بذلك فورًا بدلًا من البقاء على "جارٍ الاتصال" لدقيقة ونصف، ويقترح «الاتصال برمز الاستجابة السريعة» الذي لا يستخدم رمز اقتران.
 
@@ -5269,8 +5291,11 @@ NOUTĂȚI
 
 - Neonize على Windows على معالج ARM: لم يعد جسر الاتصال يفشل في البدء (ولم يعد الاقتران برمز QR يتعطل) بسبب طلبه نسخة ARM من مكتبته التي لا يستطيع البرنامج تحميلها؛ وهو الآن يستخدم نسخة البنية التي يعمل عليها فعلًا.
 
-- تم الإصلاح: مع تفعيل التثبيت عند الخروج، بقي الخيار مساعدة &gt; تثبيت التحديث المنزَّل غير متاح بعد الإعلان عن تنزيل التحديث. أصبح الخيار متاحاً الآن ويثبّت التحديث فوراً ثم يعيد تشغيل WinZapp؛ أما الخروج فيظل يثبّت التحديث دون إعادة التشغيل.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Rename Portuguese-named user guide files to English (#888)
+- تم الإصلاح: مع تفعيل التثبيت عند الخروج، بقي الخيار مساعدة &gt; تثبيت التحديث المنزَّل غير متاح بعد الإعلان عن تنزيل التحديث. أصبح الخيار متاحاً الآن ويثبّت التحديث فوراً ثم يعيد تشغيل WinZapp؛ أما الخروج فيظل يثبّت التحديث دون إعادة التشغيل.
+
+- في Neonize، عندما يستغرق جسر الاتصال وقتًا طويلًا جدًا للبدء، يذكر سجل البرنامج الآن ما إذا كان لا يزال يعمل ويعرض آخر أسطر مخرجاته، ويكتب الجسر في سجله الخاص كل خطوة من بدايته أثناء تقدمه، فإذا توقف في منتصف الطريق يظهر مكان توقفه.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
+- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5278,7 +5303,7 @@ WHAT'S NEW
 
 - Community: Invio su una community nell'elenco delle chat ora apre il pannello Community con quella community selezionata e il focus sui suoi gruppi, invece della chat della community stessa. L'opzione è in Impostazioni &gt; Interfaccia &gt; Chat, attiva per impostazione predefinita.
 
-- Collegamento con il numero di telefono: il collegamento non fallisce più dopo che WhatsApp sul telefono ha accettato il codice di associazione. WinZapp chiudeva WhatsApp Web durante il ricaricamento che completa l'accesso, o vi chiedeva un nuovo codice, e il telefono mostrava il dispositivo come collegato mentre WinZapp restava sulla finestra di associazione. La finestra del codice ora mostra anche il testo, il codice e Annulla in ordine, invece di disegnarli uno sopra l'altro.
+- Collegamento con il numero di telefono: il collegamento non fallisce più dopo che WhatsApp sul telefono ha accettato il codice di associazione. WinZapp chiudeva WhatsApp Web durante il ricaricamento che completa l'accesso, o vi chiedeva un nuovo codice, e il telefono mostrava il dispositivo come collegato mentre WinZapp restava sulla finestra di associazione. La finestra del codice ora mostra anche il testo, il codice e Annulla in ordine, invece di disegnarli uno sopra l'altro. Se WhatsApp Web continua a non aprire le chat dopo che il codice è stato accettato, WinZapp ora riprova una volta e poi te lo dice, invece di restare per sempre sulla finestra di associazione, e un collegamento accettato dal telefono non viene più scartato quando riavvii WinZapp.
 
 - Quando WhatsApp rifiuta temporaneamente i codici di associazione per un numero, WinZapp lo dice subito, invece di restare su "connessione in corso" per un minuto e mezzo, e suggerisce "Connettiti con il codice QR", che non usa un codice di associazione.
 
@@ -5926,7 +5951,18 @@ WHAT'S NEW
 
 - Neonize su Windows ARM: il ponte di connessione non smette più di avviarsi (e l'abbinamento con il codice QR non resta più bloccato) perché chiedeva la versione ARM della sua libreria, che il programma non riesce a caricare; ora usa quella dell'architettura con cui gira davvero.
 
-- Corretto: con l'installazione all'uscita attiva, dopo l'avviso che l'aggiornamento era stato scaricato, Guida &gt; Installa l'aggiornamento scaricato restava non disponibile. Ora la voce è disponibile e installa subito l'aggiornamento, poi riavvia WinZapp; uscire continua a installare senza riavviare.</description>
+- Corretto: con l'installazione all'uscita attiva, dopo l'avviso che l'aggiornamento era stato scaricato, Guida &gt; Installa l'aggiornamento scaricato restava non disponibile. Ora la voce è disponibile e installa subito l'aggiornamento, poi riavvia WinZapp; uscire continua a installare senza riavviare.
+
+- Neonize: quando il ponte di connessione impiega troppo ad avviarsi, il log del programma ora dice se è ancora in esecuzione e mostra le ultime righe del suo output, e il ponte scrive nel proprio log ogni passo dell'avvio man mano che procede, così un ponte che si ferma a metà mostra dove.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5934alpha/WinZapp-macOS-arm64.zip" length="305053017" type="application/octet-stream" sparkle:edSignature="F/6IJcBOmNen2Uj3ljuW4v1I2zpk4Jp/cE3EH7iayP1bA3W0L5QgbW2/5R5bQZom8ppHAuSyubnL8n66j6adDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5928alpha</title>
+      <pubDate>Mon, 23 Nov 2026 23:13:11 +0000</pubDate>
+      <sparkle:version>3.0.0.59281</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5928alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5928alpha/WinZapp-macOS-arm64.zip" length="305433986" type="application/octet-stream" sparkle:edSignature="4kTptKYTNXpkK3dTAsQgmen4WXh55W9f7SsHize4UkQGVy8Tk8gdR43UXuY+l0bR/6l+g5/YD9sEUe1wGSViBg=="></enclosure>
     </item>
     <item>
@@ -5955,15 +5991,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5914alpha/WinZapp-macOS-arm64.zip" length="305587119" type="application/octet-stream" sparkle:edSignature="V6aW7WpDsPTh1CuRNOGCIHbtwGvH2e7eS/C6OsVin19XIckp6aKEy+tHEi6dZIRPd2e3Kl9yncq5bS6zKhJnCw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5913alpha</title>
-      <pubDate>Mon, 23 Nov 2026 14:09:25 +0000</pubDate>
-      <sparkle:version>3.0.0.59131</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5913alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5913alpha/WinZapp-macOS-arm64.zip" length="305584891" type="application/octet-stream" sparkle:edSignature="jRntXtDJZSlVdCFZOsDb4xNW+Or/TcZ4a8A1d83hmDKlORtmv0JR8UcxJLxZGImb++1hy+a1akeNdZ4WLNDoCQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.2.0</title>
@@ -6018,6 +6045,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 90KJ5waiZDOAGVWEbJ420eqJxw6wBel8NgDWesvxWsxu7Jb5JXXQekpmaTv9YAqvDuq4lfto//HlP49HJOIYAg==
-length: 988133
+edSignature: pwGO0ijEGmCdeJYSE2AO6zWNYdJqxeVvxRSjTqPuVjf23Bx6MGZSTX0yRq2d5MDhkEeKMJvoF3qiIt3ZXJUJAA==
+length: 994444
 -->
