@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5941alpha</title>
-      <pubDate>Tue, 24 Nov 2026 16:34:04 +0000</pubDate>
-      <sparkle:version>3.0.0.59411</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5941alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5942alpha</title>
+      <pubDate>Tue, 24 Nov 2026 17:05:31 +0000</pubDate>
+      <sparkle:version>3.0.0.59421</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5942alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Add the Czech interface language (#897)
+      <description xml:lang="en" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -673,8 +673,10 @@ WHAT'S NEW
 
 - Neonize: when the connection bridge takes too long to start, the program log now says whether it is still running and shows the last lines of its output, and the bridge writes each step of its start to its own log as it goes, so a bridge that stops half-way shows where.
 
-- Fixed: after switching the audio device, notification (toast) sounds stopped playing while chat audio and the other WinZapp sounds kept working. The switch left the already loaded notification sounds unusable; they are now reloaded together with the other sounds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Fixed: after switching the audio device, notification (toast) sounds stopped playing while chat audio and the other WinZapp sounds kept working. The switch left the already loaded notification sounds unusable; they are now reloaded together with the other sounds.
+
+- With Neonize, a contact saved with a first and last name no longer loses the last name in the conversation a few seconds later: the full name is stored in the right order, so the conversation keeps showing, for example, "Nuno Soares" instead of just "Nuno".</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1336,8 +1338,10 @@ NOVIDADES
 
 - Neonize: quando a bridge de conexão demora demais para iniciar, o log do programa agora diz se ela ainda está rodando e mostra as últimas linhas da saída dela, e a bridge grava no próprio log cada etapa do seu início conforme avança, para que uma bridge que pare no meio mostre onde.
 
-- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam funcionando. A troca deixava os sons de notificação já carregados inutilizáveis; agora eles são recarregados junto com os demais sons.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam funcionando. A troca deixava os sons de notificação já carregados inutilizáveis; agora eles são recarregados junto com os demais sons.
+
+- No Neonize, um contato salvo com nome e sobrenome não perde mais o sobrenome na conversa alguns segundos depois: o nome completo do contato é gravado na ordem certa e a conversa continua mostrando, por exemplo, "Nuno Soares" em vez de só "Nuno".</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1999,8 +2003,10 @@ NOVIDADES
 
 - Neonize: quando a bridge de ligação demora demasiado a iniciar, o registo do programa passa a dizer se ainda está a correr e mostra as últimas linhas da sua saída, e a bridge grava no seu próprio registo cada passo do arranque à medida que avança, para que uma bridge que pare a meio mostre onde.
 
-- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam a funcionar. A troca deixava os sons de notificação já carregados inutilizáveis; agora são recarregados juntamente com os restantes sons.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam a funcionar. A troca deixava os sons de notificação já carregados inutilizáveis; agora são recarregados juntamente com os restantes sons.
+
+- Com o Neonize, um contacto guardado com nome e apelido já não perde o apelido na conversa alguns segundos depois: o nome completo é gravado na ordem certa e a conversa continua a mostrar, por exemplo, "Nuno Soares" em vez de só "Nuno".</description>
+      <description xml:lang="es" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2662,8 +2668,10 @@ NOVEDADES
 
 - Neonize: cuando el puente de conexión tarda demasiado en iniciarse, el registro del programa ahora dice si sigue en ejecución y muestra las últimas líneas de su salida, y el puente escribe en su propio registro cada paso de su inicio a medida que avanza, para que un puente que se detenga a medias muestre dónde.
 
-- Corregido: después de cambiar el dispositivo de audio, los sonidos de notificación (toast) dejaban de sonar, mientras que los audios de los chats y los demás sonidos de WinZapp seguían funcionando. El cambio dejaba inutilizables los sonidos de notificación ya cargados; ahora se recargan junto con los demás sonidos.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Corregido: después de cambiar el dispositivo de audio, los sonidos de notificación (toast) dejaban de sonar, mientras que los audios de los chats y los demás sonidos de WinZapp seguían funcionando. El cambio dejaba inutilizables los sonidos de notificación ya cargados; ahora se recargan junto con los demás sonidos.
+
+- Con Neonize, un contacto guardado con nombre y apellido ya no pierde el apellido en la conversación unos segundos después: el nombre completo se guarda en el orden correcto y la conversación sigue mostrando, por ejemplo, "Nuno Soares" en lugar de solo "Nuno".</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3326,8 +3334,10 @@ NOWOŚCI
 
 - Neonize: gdy most połączenia uruchamia się zbyt długo, log programu mówi teraz, czy nadal działa, i pokazuje ostatnie linie jego wyjścia, a most zapisuje w swoim logu każdy krok startu na bieżąco, więc most zatrzymany w połowie pokazuje gdzie.
 
-- Naprawiono: po zmianie urządzenia audio dźwięki powiadomień (toast) przestawały być odtwarzane, a nagrania w rozmowach i pozostałe dźwięki WinZapp nadal działały. Zmiana urządzenia unieważniała już wczytane dźwięki powiadomień; teraz są ponownie wczytywane razem z pozostałymi dźwiękami.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Naprawiono: po zmianie urządzenia audio dźwięki powiadomień (toast) przestawały być odtwarzane, a nagrania w rozmowach i pozostałe dźwięki WinZapp nadal działały. Zmiana urządzenia unieważniała już wczytane dźwięki powiadomień; teraz są ponownie wczytywane razem z pozostałymi dźwiękami.
+
+- W Neonize kontakt zapisany z imieniem i nazwiskiem nie traci już nazwiska w rozmowie po kilku sekundach: pełna nazwa jest zapisywana w prawidłowej kolejności, więc rozmowa nadal pokazuje na przykład „Nuno Soares”, a nie samo „Nuno”.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3989,8 +3999,10 @@ YENİLİKLER
 
 - Neonize: bağlantı köprüsü başlatılırken çok uzun sürdüğünde programın günlüğü artık hâlâ çalışıp çalışmadığını söyler ve çıktısının son satırlarını gösterir; köprü de başlangıcının her adımını ilerledikçe kendi günlüğüne yazar, böylece yarıda kalan bir köprü nerede durduğunu gösterir.
 
-- Düzeltildi: ses aygıtı değiştirildikten sonra bildirim (toast) sesleri çalmaz oluyordu; sohbet sesleri ve WinZapp'ın diğer sesleri ise çalışmaya devam ediyordu. Aygıt değişikliği önceden yüklenmiş bildirim seslerini kullanılamaz hale getiriyordu; artık diğer seslerle birlikte yeniden yükleniyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Düzeltildi: ses aygıtı değiştirildikten sonra bildirim (toast) sesleri çalmaz oluyordu; sohbet sesleri ve WinZapp'ın diğer sesleri ise çalışmaya devam ediyordu. Aygıt değişikliği önceden yüklenmiş bildirim seslerini kullanılamaz hale getiriyordu; artık diğer seslerle birlikte yeniden yükleniyor.
+
+- Neonize ile ad ve soyadıyla kaydedilen bir kişi, birkaç saniye sonra sohbette soyadını artık kaybetmiyor: tam ad doğru sırayla saklanıyor, böylece sohbet örneğin yalnızca "Nuno" yerine "Nuno Soares" göstermeye devam ediyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4652,8 +4664,10 @@ NOUTĂȚI
 
 - Neonize: când puntea de conexiune durează prea mult să pornească, jurnalul programului spune acum dacă încă rulează și arată ultimele linii ale ieșirii ei, iar puntea scrie în propriul jurnal fiecare pas al pornirii pe măsură ce avansează, astfel încât o punte oprită la jumătate arată unde.
 
-- Remediat: după schimbarea dispozitivului audio, sunetele de notificare (toast) nu mai erau redate, în timp ce mesajele audio din conversații și celelalte sunete WinZapp continuau să funcționeze. Schimbarea făcea inutilizabile sunetele de notificare deja încărcate; acum sunt reîncărcate împreună cu celelalte sunete.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Remediat: după schimbarea dispozitivului audio, sunetele de notificare (toast) nu mai erau redate, în timp ce mesajele audio din conversații și celelalte sunete WinZapp continuau să funcționeze. Schimbarea făcea inutilizabile sunetele de notificare deja încărcate; acum sunt reîncărcate împreună cu celelalte sunete.
+
+- Cu Neonize, un contact salvat cu prenume și nume de familie nu mai pierde numele de familie în conversație după câteva secunde: numele complet este stocat în ordinea corectă, așa că conversația continuă să arate, de exemplu, „Nuno Soares” în loc de doar „Nuno”.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5317,8 +5331,10 @@ NOUTĂȚI
 
 - في Neonize، عندما يستغرق جسر الاتصال وقتًا طويلًا جدًا للبدء، يذكر سجل البرنامج الآن ما إذا كان لا يزال يعمل ويعرض آخر أسطر مخرجاته، ويكتب الجسر في سجله الخاص كل خطوة من بدايته أثناء تقدمه، فإذا توقف في منتصف الطريق يظهر مكان توقفه.
 
-- تم الإصلاح: بعد تبديل جهاز الصوت، كانت أصوات الإشعارات (toast) تتوقف عن العمل بينما تستمر الرسائل الصوتية في المحادثات وبقية أصوات WinZapp في العمل. كان التبديل يجعل أصوات الإشعارات المحمّلة مسبقًا غير صالحة؛ وهي الآن تُعاد تحميلها مع بقية الأصوات.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- تم الإصلاح: بعد تبديل جهاز الصوت، كانت أصوات الإشعارات (toast) تتوقف عن العمل بينما تستمر الرسائل الصوتية في المحادثات وبقية أصوات WinZapp في العمل. كان التبديل يجعل أصوات الإشعارات المحمّلة مسبقًا غير صالحة؛ وهي الآن تُعاد تحميلها مع بقية الأصوات.
+
+- في Neonize، لم تعد جهة الاتصال المحفوظة باسم أول واسم عائلة تفقد اسم العائلة في المحادثة بعد ثوانٍ: يُخزَّن الاسم الكامل بالترتيب الصحيح، فتواصل المحادثة عرض «Nuno Soares» مثلًا بدل «Nuno» فقط.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5980,8 +5996,10 @@ WHAT'S NEW
 
 - Neonize: quando il ponte di connessione impiega troppo ad avviarsi, il log del programma ora dice se è ancora in esecuzione e mostra le ultime righe del suo output, e il ponte scrive nel proprio log ogni passo dell'avvio man mano che procede, così un ponte che si ferma a metà mostra dove.
 
-- Corretto: dopo aver cambiato il dispositivo audio, i suoni delle notifiche (toast) smettevano di suonare, mentre gli audio delle chat e gli altri suoni di WinZapp continuavano a funzionare. Il cambio rendeva inutilizzabili i suoni di notifica già caricati; ora vengono ricaricati insieme agli altri suoni.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Add the Czech interface language (#897)
+- Corretto: dopo aver cambiato il dispositivo audio, i suoni delle notifiche (toast) smettevano di suonare, mentre gli audio delle chat e gli altri suoni di WinZapp continuavano a funzionare. Il cambio rendeva inutilizzabili i suoni di notifica già caricati; ora vengono ricaricati insieme agli altri suoni.
+
+- Con Neonize, un contatto salvato con nome e cognome non perde più il cognome nella conversazione pochi secondi dopo: il nome completo viene memorizzato nell'ordine giusto e la conversazione continua a mostrare, ad esempio, "Nuno Soares" invece di solo "Nuno".</description>
+      <description xml:lang="cs" sparkle:format="plain-text">- fix(neonize): keep the last name of a saved contact in the conversation name (#898)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
@@ -6643,7 +6661,18 @@ NOVINKY
 
 - Neonize: když spuštění mostu připojení trvá příliš dlouho, protokol programu teď říká, zda stále běží, a ukazuje poslední řádky jeho výstupu a most zapisuje každý krok svého spuštění do vlastního protokolu průběžně, takže most, který se zastaví v půli, ukáže kde.
 
-- Opraveno: po přepnutí zvukového zařízení přestaly hrát zvuky oznámení (toast), zatímco zvuk chatu a ostatní zvuky WinZappu fungovaly dál. Přepnutí nechalo už načtené zvuky oznámení nepoužitelné; nyní se načítají znovu spolu s ostatními zvuky.</description>
+- Opraveno: po přepnutí zvukového zařízení přestaly hrát zvuky oznámení (toast), zatímco zvuk chatu a ostatní zvuky WinZappu fungovaly dál. Přepnutí nechalo už načtené zvuky oznámení nepoužitelné; nyní se načítají znovu spolu s ostatními zvuky.
+
+- V Neonize už kontakt uložený s křestním jménem a příjmením o příjmení po několika sekundách v konverzaci nepřijde: celé jméno se ukládá ve správném pořadí, takže konverzace dál ukazuje například „Nuno Soares“ místo pouhého „Nuno“.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5942alpha/WinZapp-macOS-arm64.zip" length="305279528" type="application/octet-stream" sparkle:edSignature="wxVTe5SgKH7pY5KApHl7bkvakjsvgj//qSKHzruWumPIdh1yYjs8MwtcHaDQV7nmHHVdGQBJG7IKfO3XUuFHCA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5941alpha</title>
+      <pubDate>Tue, 24 Nov 2026 16:34:04 +0000</pubDate>
+      <sparkle:version>3.0.0.59411</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5941alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5941alpha/WinZapp-macOS-arm64.zip" length="305279739" type="application/octet-stream" sparkle:edSignature="7Xw+lGD5M8fTYX40sNAAMtOEco8P9ngJ2xqZmRKOpEVKBan0nFProqZkhWEPJAVVm6uwRhIjWsFEB9Y6QepDAw=="></enclosure>
     </item>
     <item>
@@ -6672,15 +6701,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5928alpha/WinZapp-macOS-arm64.zip" length="305433986" type="application/octet-stream" sparkle:edSignature="4kTptKYTNXpkK3dTAsQgmen4WXh55W9f7SsHize4UkQGVy8Tk8gdR43UXuY+l0bR/6l+g5/YD9sEUe1wGSViBg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5927alpha</title>
-      <pubDate>Mon, 23 Nov 2026 20:58:40 +0000</pubDate>
-      <sparkle:version>3.0.0.59271</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5927alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5927alpha/WinZapp-macOS-arm64.zip" length="305431990" type="application/octet-stream" sparkle:edSignature="0NOCoH9oQSfGpkOYeiOOkHrJPQRaLkyTStZvRg/sO1/A8PQpmDDmhbfcscFgRMGaL76wL3UhA8gdmM5QgR0OAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.2.0</title>
@@ -6735,6 +6755,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: VK/UXzMaIin77imh7uzlLzf7EbWfUiaF4FVtM7ng0FkaLIK6BU3nnrlf1+5487B8g/z8Sb5YEVMEoXMuIXgmBw==
-length: 1106736
+edSignature: 215sY4GH0jdqDFJTAR/rPkaX/4aCICGCzK2KrCH8P8i8m47lOVYY2vV7z2aoU3PJCKOeS61+DpgKUAeF0hExAA==
+length: 1109846
 -->
