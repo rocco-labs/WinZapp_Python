@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5943alpha</title>
-      <pubDate>Tue, 24 Nov 2026 18:02:39 +0000</pubDate>
-      <sparkle:version>3.0.0.59431</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5943alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5944alpha</title>
+      <pubDate>Tue, 24 Nov 2026 22:11:18 +0000</pubDate>
+      <sparkle:version>3.0.0.59441</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5944alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="en" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -678,7 +678,7 @@ WHAT'S NEW
 - With Neonize, a contact saved with a first and last name no longer loses the last name in the conversation a few seconds later: the full name is stored in the right order, so the conversation keeps showing, for example, "Nuno Soares" instead of just "Nuno".
 
 - Neonize: when the connection bridge gets stuck while starting, it now writes to its own log where it is stuck after 25 seconds.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1345,7 +1345,7 @@ NOVIDADES
 - No Neonize, um contato salvo com nome e sobrenome não perde mais o sobrenome na conversa alguns segundos depois: o nome completo do contato é gravado na ordem certa e a conversa continua mostrando, por exemplo, "Nuno Soares" em vez de só "Nuno".
 
 - Neonize: quando a bridge de conexão trava ao iniciar, ela agora grava no próprio log, depois de 25 segundos, em que ponto está parada.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -2012,7 +2012,7 @@ NOVIDADES
 - Com o Neonize, um contacto guardado com nome e apelido já não perde o apelido na conversa alguns segundos depois: o nome completo é gravado na ordem certa e a conversa continua a mostrar, por exemplo, "Nuno Soares" em vez de só "Nuno".
 
 - Neonize: quando a bridge de ligação bloqueia ao iniciar, passa a gravar no seu próprio registo, passados 25 segundos, em que ponto está parada.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="es" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2679,7 +2679,7 @@ NOVEDADES
 - Con Neonize, un contacto guardado con nombre y apellido ya no pierde el apellido en la conversación unos segundos después: el nombre completo se guarda en el orden correcto y la conversación sigue mostrando, por ejemplo, "Nuno Soares" en lugar de solo "Nuno".
 
 - Neonize: cuando el puente de conexión se queda atascado al iniciarse, ahora escribe en su propio registro, a los 25 segundos, en qué punto está atascado.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="pl" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3347,7 +3347,7 @@ NOWOŚCI
 - W Neonize kontakt zapisany z imieniem i nazwiskiem nie traci już nazwiska w rozmowie po kilku sekundach: pełna nazwa jest zapisywana w prawidłowej kolejności, więc rozmowa nadal pokazuje na przykład „Nuno Soares”, a nie samo „Nuno”.
 
 - Neonize: gdy most połączenia zawiesza się podczas uruchamiania, po 25 sekundach zapisuje teraz w swoim logu, w którym miejscu utknął.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="tr" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -4014,7 +4014,7 @@ YENİLİKLER
 - Neonize ile ad ve soyadıyla kaydedilen bir kişi, birkaç saniye sonra sohbette soyadını artık kaybetmiyor: tam ad doğru sırayla saklanıyor, böylece sohbet örneğin yalnızca "Nuno" yerine "Nuno Soares" göstermeye devam ediyor.
 
 - Neonize: bağlantı köprüsü başlatılırken takılırsa, artık 25 saniye sonra nerede takıldığını kendi günlüğüne yazar.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="ro" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4681,7 +4681,7 @@ NOUTĂȚI
 - Cu Neonize, un contact salvat cu prenume și nume de familie nu mai pierde numele de familie în conversație după câteva secunde: numele complet este stocat în ordinea corectă, așa că conversația continuă să arate, de exemplu, „Nuno Soares” în loc de doar „Nuno”.
 
 - Neonize: când puntea de conexiune se blochează la pornire, scrie acum în propriul jurnal, după 25 de secunde, în ce punct este blocată.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="ar" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5350,7 +5350,7 @@ NOUTĂȚI
 - في Neonize، لم تعد جهة الاتصال المحفوظة باسم أول واسم عائلة تفقد اسم العائلة في المحادثة بعد ثوانٍ: يُخزَّن الاسم الكامل بالترتيب الصحيح، فتواصل المحادثة عرض «Nuno Soares» مثلًا بدل «Nuno» فقط.
 
 - في Neonize، عندما يتعطل جسر الاتصال أثناء البدء، يكتب الآن في سجله الخاص، بعد 25 ثانية، أين توقف.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="it" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -6017,7 +6017,7 @@ WHAT'S NEW
 - Con Neonize, un contatto salvato con nome e cognome non perde più il cognome nella conversazione pochi secondi dopo: il nome completo viene memorizzato nell'ordine giusto e la conversazione continua a mostrare, ad esempio, "Nuno Soares" invece di solo "Nuno".
 
 - Neonize: quando il ponte di connessione si blocca all'avvio, ora scrive nel proprio log, dopo 25 secondi, in che punto è bloccato.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Dump the Neonize bridge's Python stack when its start hangs (#899)
+      <description xml:lang="cs" sparkle:format="plain-text">- Let the client start and stop the Neonize bridge on macOS (#901)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
@@ -6684,6 +6684,15 @@ NOVINKY
 - V Neonize už kontakt uložený s křestním jménem a příjmením o příjmení po několika sekundách v konverzaci nepřijde: celé jméno se ukládá ve správném pořadí, takže konverzace dál ukazuje například „Nuno Soares“ místo pouhého „Nuno“.
 
 - Neonize: když se most připojení při spouštění zasekne, po 25 sekundách nyní zapíše do svého logu, kde se zasekl.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5944alpha/WinZapp-macOS-arm64.zip" length="305169908" type="application/octet-stream" sparkle:edSignature="jqlFw3W+MzJQZc67VkrNCEMu4HUeUsjtDhMXI0HrnZKTFr82x6Vn6Ub+HNZ1ChuqnjBVA9kuEqg91xtIHgvtAQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5943alpha</title>
+      <pubDate>Tue, 24 Nov 2026 18:02:39 +0000</pubDate>
+      <sparkle:version>3.0.0.59431</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5943alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5943alpha/WinZapp-macOS-arm64.zip" length="305281133" type="application/octet-stream" sparkle:edSignature="WFf6FdcG1eRDrOfAaDUVHuvDiv1sChpVS5ba0uONhbvNYC0I8ewVKMBvNbrQqlBE0tU2tf1XsfityFh/PfSXAA=="></enclosure>
     </item>
     <item>
@@ -6712,15 +6721,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5940alpha/WinZapp-macOS-arm64.zip" length="305054790" type="application/octet-stream" sparkle:edSignature="9rTn5YLaPlTSQoHmGOdgZFuYO1PHvImKLj1xiVFi+PJmN7L4xErL183yBL4MDVwuJaUYCqrnQxspOZVyJCXyBw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5934alpha</title>
-      <pubDate>Tue, 24 Nov 2026 14:33:06 +0000</pubDate>
-      <sparkle:version>3.0.0.59341</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5934alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5934alpha/WinZapp-macOS-arm64.zip" length="305053017" type="application/octet-stream" sparkle:edSignature="F/6IJcBOmNen2Uj3ljuW4v1I2zpk4Jp/cE3EH7iayP1bA3W0L5QgbW2/5R5bQZom8ppHAuSyubnL8n66j6adDA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.2.0</title>
@@ -6775,6 +6775,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: OKCER8V/SYFK3O9jAOTtpop92Yhzfnd4zGVMmR+dnhVdv1qpIj/UqQChiVL5g9UW1E1YkEFszHaOw2iJYC3AAQ==
-length: 1111119
+edSignature: 8v76vx1cWeQGNhtU+a7vw2OrxR0zLYmq2fyiTlybzTWoopyj0YkoqtEkkG7Z7W6z+4hwVCom4Va/tVLEu+KrAA==
+length: 1111099
 -->
