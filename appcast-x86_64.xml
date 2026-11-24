@@ -5,14 +5,14 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5934alpha</title>
-      <pubDate>Tue, 24 Nov 2026 14:33:07 +0000</pubDate>
-      <sparkle:version>3.0.0.59341</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5934alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5940alpha</title>
+      <pubDate>Tue, 24 Nov 2026 15:29:52 +0000</pubDate>
+      <sparkle:version>3.0.0.59401</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5940alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+      <description xml:lang="en" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -81,7 +81,7 @@ WHAT'S NEW
 
 - Neonize: while the phone sends the message history, WinZapp says so and asks you to keep WhatsApp open on the phone's screen, warns when the phone stops (with the percentage), when it sends again and when it finishes; while it is stopped, WinZapp asks the phone for the rest every 90 seconds.
 
-- Neonize: the conversations that WhatsApp for iPhone leaves out of its first history batch (it now sends only 400) are now requested and imported as well.
+- Neonize: the conversations that WhatsApp for iPhone leaves out of its first history batch (it now sends only 400) are now requested and imported as well. When the phone does not send the list of the ones left out, WinZapp, once the pairing's history is done, asks the phone for the conversations that are missing and waits a few minutes for the answer before calling the sync complete.
 
 - Neonize: deleting a list also removes it from its chats, so they do not keep pointing at a list that no longer exists.
 
@@ -670,9 +670,11 @@ WHAT'S NEW
 
 - Fixed: with install-on-exit turned on, after WinZapp announced that the update was downloaded, Help &gt; Install downloaded update stayed unavailable. The item is now available and installs the update right away, then starts WinZapp again; exiting still installs without restarting.
 
-- Neonize: when the connection bridge takes too long to start, the program log now says whether it is still running and shows the last lines of its output, and the bridge writes each step of its start to its own log as it goes, so a bridge that stops half-way shows where.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: when the connection bridge takes too long to start, the program log now says whether it is still running and shows the last lines of its output, and the bridge writes each step of its start to its own log as it goes, so a bridge that stops half-way shows where.
+
+- Fixed: after switching the audio device, notification (toast) sounds stopped playing while chat audio and the other WinZapp sounds kept working. The switch left the already loaded notification sounds unusable; they are now reloaded together with the other sounds.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -741,7 +743,7 @@ NOVIDADES
 
 - Neonize: enquanto o celular envia o histórico de mensagens, o WinZapp avisa e pede que você mantenha o WhatsApp aberto na tela do celular, avisa quando o celular para (com a porcentagem), quando volta a enviar e quando termina; enquanto ele está parado, o WinZapp pede o resto ao celular a cada 90 segundos.
 
-- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (ele agora envia só 400) agora também são pedidas e importadas.
+- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (ele agora envia só 400) agora também são pedidas e importadas. Quando o celular não manda a lista dos que ficaram de fora, o WinZapp, ao terminar o histórico do pareamento, pede ao celular as conversas que faltam e espera a resposta por alguns minutos antes de dar a sincronização por concluída.
 
 - Neonize: apagar uma lista também a tira de suas conversas, que não ficam mais apontando para uma lista que não existe.
 
@@ -1330,9 +1332,11 @@ NOVIDADES
 
 - Corrigido: com a instalação ao sair ligada, depois de avisar que a atualização foi baixada, Ajuda &gt; Instalar atualização baixada continuava indisponível. Agora o item fica disponível e instala a atualização na hora, reabrindo o WinZapp em seguida; sair continua instalando sem reabrir.
 
-- Neonize: quando a bridge de conexão demora demais para iniciar, o log do programa agora diz se ela ainda está rodando e mostra as últimas linhas da saída dela, e a bridge grava no próprio log cada etapa do seu início conforme avança, para que uma bridge que pare no meio mostre onde.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: quando a bridge de conexão demora demais para iniciar, o log do programa agora diz se ela ainda está rodando e mostra as últimas linhas da saída dela, e a bridge grava no próprio log cada etapa do seu início conforme avança, para que uma bridge que pare no meio mostre onde.
+
+- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam funcionando. A troca deixava os sons de notificação já carregados inutilizáveis; agora eles são recarregados junto com os demais sons.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1401,7 +1405,7 @@ NOVIDADES
 
 - Neonize: enquanto o telemóvel envia o histórico de mensagens, o WinZapp avisa e pede que mantenha o WhatsApp aberto no ecrã do telemóvel, avisa quando o telemóvel pára (com a percentagem), quando volta a enviar e quando termina; enquanto está parado, o WinZapp pede o resto ao telemóvel de 90 em 90 segundos.
 
-- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (agora envia só 400) passam também a ser pedidas e importadas.
+- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (agora envia só 400) passam também a ser pedidas e importadas. Quando o telemóvel não envia a lista das que ficaram de fora, o WinZapp, ao terminar o histórico do emparelhamento, pede ao telemóvel as conversas que faltam e espera pela resposta alguns minutos antes de dar a sincronização por concluída.
 
 - Neonize: apagar uma lista também a retira das suas conversas, que deixam de apontar para uma lista que já não existe.
 
@@ -1990,9 +1994,11 @@ NOVIDADES
 
 - Corrigido: com a instalação ao sair ativada, depois de avisar que a atualização foi transferida, Ajuda &gt; Instalar atualização transferida continuava indisponível. Agora o item fica disponível e instala a atualização de imediato, voltando a abrir o WinZapp em seguida; sair continua a instalar sem voltar a abrir.
 
-- Neonize: quando a bridge de ligação demora demasiado a iniciar, o registo do programa passa a dizer se ainda está a correr e mostra as últimas linhas da sua saída, e a bridge grava no seu próprio registo cada passo do arranque à medida que avança, para que uma bridge que pare a meio mostre onde.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: quando a bridge de ligação demora demasiado a iniciar, o registo do programa passa a dizer se ainda está a correr e mostra as últimas linhas da sua saída, e a bridge grava no seu próprio registo cada passo do arranque à medida que avança, para que uma bridge que pare a meio mostre onde.
+
+- Corrigido: depois de trocar o dispositivo de áudio, os sons de notificação (toast) deixavam de tocar, enquanto os áudios das conversas e os outros sons do WinZapp continuavam a funcionar. A troca deixava os sons de notificação já carregados inutilizáveis; agora são recarregados juntamente com os restantes sons.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2061,7 +2067,7 @@ NOVEDADES
 
 - Neonize: mientras el teléfono envía el historial de mensajes, WinZapp lo avisa y te pide que mantengas WhatsApp abierto en la pantalla del teléfono, avisa cuando el teléfono se detiene (con el porcentaje), cuando vuelve a enviar y cuando termina; mientras está detenido, WinZapp le pide el resto al teléfono cada 90 segundos.
 
-- Neonize: los chats que WhatsApp para iPhone deja fuera del primer lote de historial (ahora envía solo 400) ahora también se piden y se importan.
+- Neonize: los chats que WhatsApp para iPhone deja fuera del primer lote de historial (ahora envía solo 400) ahora también se piden y se importan. Cuando el teléfono no envía la lista de las que quedaron fuera, WinZapp, al terminar el historial del emparejamiento, le pide al teléfono las conversaciones que faltan y espera la respuesta unos minutos antes de dar la sincronización por completada.
 
 - Neonize: eliminar una lista también la quita de sus chats, que ya no siguen apuntando a una lista que no existe.
 
@@ -2650,9 +2656,11 @@ NOVEDADES
 
 - Corregido: con la instalación al salir activada, tras avisar de que la actualización se había descargado, Ayuda &gt; Instalar actualización descargada seguía sin estar disponible. Ahora el elemento está disponible e instala la actualización al momento y vuelve a abrir WinZapp; salir sigue instalando sin reabrir.
 
-- Neonize: cuando el puente de conexión tarda demasiado en iniciarse, el registro del programa ahora dice si sigue en ejecución y muestra las últimas líneas de su salida, y el puente escribe en su propio registro cada paso de su inicio a medida que avanza, para que un puente que se detenga a medias muestre dónde.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: cuando el puente de conexión tarda demasiado en iniciarse, el registro del programa ahora dice si sigue en ejecución y muestra las últimas líneas de su salida, y el puente escribe en su propio registro cada paso de su inicio a medida que avanza, para que un puente que se detenga a medias muestre dónde.
+
+- Corregido: después de cambiar el dispositivo de audio, los sonidos de notificación (toast) dejaban de sonar, mientras que los audios de los chats y los demás sonidos de WinZapp seguían funcionando. El cambio dejaba inutilizables los sonidos de notificación ya cargados; ahora se recargan junto con los demás sonidos.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2722,7 +2730,7 @@ NOWOŚCI
 
 - Neonize: WinZapp ogłasza rozpoczęcie przesyłania historii wiadomości z telefonu i prosi o pozostawienie WhatsAppa otwartego na jego ekranie. Informuje też o zatrzymaniu przesyłania, podając osiągnięty procent postępu, oraz o wznowieniu i zakończeniu transferu. Podczas przerwy co 90 sekund ponawia prośbę o pozostałą część historii.
 
-- Neonize: WinZapp prosi teraz także o czaty pominięte przez WhatsAppa na iPhonie w pierwszej partii historii i je importuje. Ta pierwsza partia zawiera obecnie tylko 400 czatów.
+- Neonize: WinZapp prosi teraz także o czaty pominięte przez WhatsAppa na iPhonie w pierwszej partii historii i je importuje. Ta pierwsza partia zawiera obecnie tylko 400 czatów. Gdy telefon nie wysyła listy pominiętych czatów, WinZapp po zakończeniu historii parowania prosi telefon o brakujące czaty i czeka kilka minut na odpowiedź, zanim uzna synchronizację za zakończoną.
 
 - Neonize: usunięcie listy usuwa ją także z jej czatów, więc nie wskazują już na nieistniejącą listę.
 
@@ -3311,9 +3319,11 @@ NOWOŚCI
 
 - Naprawiono: gdy włączona była instalacja przy wyjściu, po komunikacie o pobraniu aktualizacji opcja Pomoc &gt; Zainstaluj pobraną aktualizację nadal była niedostępna. Teraz jest dostępna i od razu instaluje aktualizację, a potem ponownie uruchamia WinZapp; wyjście nadal instaluje bez ponownego uruchamiania.
 
-- Neonize: gdy most połączenia uruchamia się zbyt długo, log programu mówi teraz, czy nadal działa, i pokazuje ostatnie linie jego wyjścia, a most zapisuje w swoim logu każdy krok startu na bieżąco, więc most zatrzymany w połowie pokazuje gdzie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: gdy most połączenia uruchamia się zbyt długo, log programu mówi teraz, czy nadal działa, i pokazuje ostatnie linie jego wyjścia, a most zapisuje w swoim logu każdy krok startu na bieżąco, więc most zatrzymany w połowie pokazuje gdzie.
+
+- Naprawiono: po zmianie urządzenia audio dźwięki powiadomień (toast) przestawały być odtwarzane, a nagrania w rozmowach i pozostałe dźwięki WinZapp nadal działały. Zmiana urządzenia unieważniała już wczytane dźwięki powiadomień; teraz są ponownie wczytywane razem z pozostałymi dźwiękami.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3382,7 +3392,7 @@ YENİLİKLER
 
 - Neonize: telefon ileti geçmişini gönderirken WinZapp bunu söyler ve WhatsApp'ı telefonun ekranında açık tutmanızı ister; telefon durduğunda (yüzdeyle), yeniden gönderdiğinde ve bitirdiğinde uyarır; telefon durmuşken WinZapp her 90 saniyede bir kalanını telefondan ister.
 
-- Neonize: iPhone için WhatsApp'ın ilk geçmiş paketinin dışında bıraktığı sohbetler (artık yalnızca 400 gönderiyor) artık istenip içe aktarılıyor.
+- Neonize: iPhone için WhatsApp'ın ilk geçmiş paketinin dışında bıraktığı sohbetler (artık yalnızca 400 gönderiyor) artık istenip içe aktarılıyor. Telefon dışarıda bıraktığı sohbetlerin listesini göndermediğinde, WinZapp eşleştirme geçmişi bittikten sonra telefondan eksik sohbetleri ister ve eşzamanlamayı tamamlanmış saymadan önce yanıtı birkaç dakika bekler.
 
 - Neonize: bir listeyi silmek onu sohbetlerinden de kaldırır; böylece sohbetler artık var olmayan bir listeyi göstermeye devam etmez.
 
@@ -3971,9 +3981,11 @@ YENİLİKLER
 
 - Düzeltildi: Çıkışta yükleme açıkken, güncellemenin indirildiği duyurulduktan sonra Yardım &gt; İndirilen güncellemeyi yükle öğesi kullanılamaz kalıyordu. Artık öğe kullanılabilir; güncellemeyi hemen yükler ve ardından WinZapp'ı yeniden başlatır; çıkış yapmak yine yeniden başlatmadan yükler.
 
-- Neonize: bağlantı köprüsü başlatılırken çok uzun sürdüğünde programın günlüğü artık hâlâ çalışıp çalışmadığını söyler ve çıktısının son satırlarını gösterir; köprü de başlangıcının her adımını ilerledikçe kendi günlüğüne yazar, böylece yarıda kalan bir köprü nerede durduğunu gösterir.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: bağlantı köprüsü başlatılırken çok uzun sürdüğünde programın günlüğü artık hâlâ çalışıp çalışmadığını söyler ve çıktısının son satırlarını gösterir; köprü de başlangıcının her adımını ilerledikçe kendi günlüğüne yazar, böylece yarıda kalan bir köprü nerede durduğunu gösterir.
+
+- Düzeltildi: ses aygıtı değiştirildikten sonra bildirim (toast) sesleri çalmaz oluyordu; sohbet sesleri ve WinZapp'ın diğer sesleri ise çalışmaya devam ediyordu. Aygıt değişikliği önceden yüklenmiş bildirim seslerini kullanılamaz hale getiriyordu; artık diğer seslerle birlikte yeniden yükleniyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4042,7 +4054,7 @@ NOUTĂȚI
 
 - Neonize: cât timp telefonul trimite istoricul mesajelor, WinZapp anunță și vă cere să țineți WhatsApp deschis pe ecranul telefonului, avertizează când telefonul se oprește (cu procentul), când trimite din nou și când termină; cât timp este oprit, WinZapp cere restul de la telefon la fiecare 90 de secunde.
 
-- Neonize: conversațiile pe care WhatsApp pentru iPhone le lasă în afara primului lot de istoric (acum trimite doar 400) sunt acum cerute și importate și ele.
+- Neonize: conversațiile pe care WhatsApp pentru iPhone le lasă în afara primului lot de istoric (acum trimite doar 400) sunt acum cerute și importate și ele. Când telefonul nu trimite lista celor lăsate pe dinafară, WinZapp, după ce se termină istoricul asocierii, cere telefonului conversațiile care lipsesc și așteaptă câteva minute răspunsul înainte de a considera sincronizarea încheiată.
 
 - Neonize: ștergerea unei liste o scoate și din conversațiile ei, care nu mai arată spre o listă ce nu mai există.
 
@@ -4631,9 +4643,11 @@ NOUTĂȚI
 
 - Remediat: cu instalarea la ieșire activată, după anunțul că actualizarea a fost descărcată, Ajutor &gt; Instalează actualizarea descărcată rămânea indisponibil. Acum elementul este disponibil și instalează actualizarea imediat, apoi pornește din nou WinZapp; ieșirea continuă să instaleze fără repornire.
 
-- Neonize: când puntea de conexiune durează prea mult să pornească, jurnalul programului spune acum dacă încă rulează și arată ultimele linii ale ieșirii ei, iar puntea scrie în propriul jurnal fiecare pas al pornirii pe măsură ce avansează, astfel încât o punte oprită la jumătate arată unde.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- Neonize: când puntea de conexiune durează prea mult să pornească, jurnalul programului spune acum dacă încă rulează și arată ultimele linii ale ieșirii ei, iar puntea scrie în propriul jurnal fiecare pas al pornirii pe măsură ce avansează, astfel încât o punte oprită la jumătate arată unde.
+
+- Remediat: după schimbarea dispozitivului audio, sunetele de notificare (toast) nu mai erau redate, în timp ce mesajele audio din conversații și celelalte sunete WinZapp continuau să funcționeze. Schimbarea făcea inutilizabile sunetele de notificare deja încărcate; acum sunt reîncărcate împreună cu celelalte sunete.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -4702,7 +4716,7 @@ NOUTĂȚI
 
 - Neonize: بينما يرسل الهاتف سجل الرسائل يعلن WinZapp ذلك ويطلب منك إبقاء واتساب مفتوحًا على شاشة الهاتف، وينبّه عندما يتوقف الهاتف (مع النسبة المئوية) وعندما يعود إلى الإرسال وعندما ينتهي؛ وما دام متوقفًا يطلب WinZapp الباقي من الهاتف كل 90 ثانية.
 
-- Neonize: المحادثات التي يتركها واتساب على آيفون خارج أول دفعة من السجل (يرسل الآن 400 فقط) تُطلب الآن وتُستورد أيضًا.
+- Neonize: المحادثات التي يتركها واتساب على آيفون خارج أول دفعة من السجل (يرسل الآن 400 فقط) تُطلب الآن وتُستورد أيضًا. وعندما لا يرسل الهاتف قائمة المحادثات التي تُركت خارجًا، يطلب WinZapp من الهاتف المحادثات الناقصة بعد انتهاء سجل الاقتران، وينتظر الرد بضع دقائق قبل أن يعدّ المزامنة مكتملة.
 
 - Neonize: حذف قائمة يزيلها أيضًا من محادثاتها، فلا تظل تشير إلى قائمة لم تعد موجودة.
 
@@ -5293,9 +5307,11 @@ NOUTĂȚI
 
 - تم الإصلاح: مع تفعيل التثبيت عند الخروج، بقي الخيار مساعدة &gt; تثبيت التحديث المنزَّل غير متاح بعد الإعلان عن تنزيل التحديث. أصبح الخيار متاحاً الآن ويثبّت التحديث فوراً ثم يعيد تشغيل WinZapp؛ أما الخروج فيظل يثبّت التحديث دون إعادة التشغيل.
 
-- في Neonize، عندما يستغرق جسر الاتصال وقتًا طويلًا جدًا للبدء، يذكر سجل البرنامج الآن ما إذا كان لا يزال يعمل ويعرض آخر أسطر مخرجاته، ويكتب الجسر في سجله الخاص كل خطوة من بدايته أثناء تقدمه، فإذا توقف في منتصف الطريق يظهر مكان توقفه.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Log the Neonize bridge's start step by step and its output when it hangs (#892)
-- Pairing: finish a pairing the phone accepted, or say why it didn't (#893)
+- في Neonize، عندما يستغرق جسر الاتصال وقتًا طويلًا جدًا للبدء، يذكر سجل البرنامج الآن ما إذا كان لا يزال يعمل ويعرض آخر أسطر مخرجاته، ويكتب الجسر في سجله الخاص كل خطوة من بدايته أثناء تقدمه، فإذا توقف في منتصف الطريق يظهر مكان توقفه.
+
+- تم الإصلاح: بعد تبديل جهاز الصوت، كانت أصوات الإشعارات (toast) تتوقف عن العمل بينما تستمر الرسائل الصوتية في المحادثات وبقية أصوات WinZapp في العمل. كان التبديل يجعل أصوات الإشعارات المحمّلة مسبقًا غير صالحة؛ وهي الآن تُعاد تحميلها مع بقية الأصوات.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Neonize: ask the phone for the conversations a capped pairing left out (#894)
+- Fix notification sounds going silent after an audio device change (#895)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5364,7 +5380,7 @@ WHAT'S NEW
 
 - Neonize: mentre il telefono invia la cronologia dei messaggi, WinZapp lo dice e ti chiede di tenere WhatsApp aperto sullo schermo del telefono, avvisa quando il telefono si ferma (con la percentuale), quando riprende a inviare e quando finisce; mentre è fermo, WinZapp chiede il resto al telefono ogni 90 secondi.
 
-- Neonize: le conversazioni che WhatsApp per iPhone lascia fuori dal primo blocco di cronologia (ora ne invia solo 400) vengono ora richieste e importate anch'esse.
+- Neonize: le conversazioni che WhatsApp per iPhone lascia fuori dal primo blocco di cronologia (ora ne invia solo 400) vengono ora richieste e importate anch'esse. Quando il telefono non invia l'elenco di quelle lasciate fuori, WinZapp, terminata la cronologia dell'associazione, chiede al telefono le conversazioni mancanti e attende la risposta per qualche minuto prima di considerare completa la sincronizzazione.
 
 - Neonize: eliminare una lista la toglie anche dalle sue chat, che non puntano più a una lista che non esiste.
 
@@ -5953,7 +5969,18 @@ WHAT'S NEW
 
 - Corretto: con l'installazione all'uscita attiva, dopo l'avviso che l'aggiornamento era stato scaricato, Guida &gt; Installa l'aggiornamento scaricato restava non disponibile. Ora la voce è disponibile e installa subito l'aggiornamento, poi riavvia WinZapp; uscire continua a installare senza riavviare.
 
-- Neonize: quando il ponte di connessione impiega troppo ad avviarsi, il log del programma ora dice se è ancora in esecuzione e mostra le ultime righe del suo output, e il ponte scrive nel proprio log ogni passo dell'avvio man mano che procede, così un ponte che si ferma a metà mostra dove.</description>
+- Neonize: quando il ponte di connessione impiega troppo ad avviarsi, il log del programma ora dice se è ancora in esecuzione e mostra le ultime righe del suo output, e il ponte scrive nel proprio log ogni passo dell'avvio man mano che procede, così un ponte che si ferma a metà mostra dove.
+
+- Corretto: dopo aver cambiato il dispositivo audio, i suoni delle notifiche (toast) smettevano di suonare, mentre gli audio delle chat e gli altri suoni di WinZapp continuavano a funzionare. Il cambio rendeva inutilizzabili i suoni di notifica già caricati; ora vengono ricaricati insieme agli altri suoni.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5940alpha/WinZapp-macOS-x86_64.zip" length="342309560" type="application/octet-stream" sparkle:edSignature="b40X3GiLn67C5Utiw1sEIL7OVemUYLtA5E9W00pjQTexv19Usaxw5SELZafuy8Fm3IRwgvFZ36/GxvaK/ZBfDA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5934alpha</title>
+      <pubDate>Tue, 24 Nov 2026 14:33:07 +0000</pubDate>
+      <sparkle:version>3.0.0.59341</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5934alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5934alpha/WinZapp-macOS-x86_64.zip" length="342308611" type="application/octet-stream" sparkle:edSignature="WEaq7n6yJEyArmRDVVrdkqzGd62ULGpHkHJmmbNqLfAS/pCPZrm6iqrAsdSBT9eYtIfVOq75YKv4tPm8sWkAAw=="></enclosure>
     </item>
     <item>
@@ -5982,15 +6009,6 @@ WHAT'S NEW
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5915alpha/WinZapp-macOS-x86_64.zip" length="342676808" type="application/octet-stream" sparkle:edSignature="EoRM3GvdS/WbkrnvQAji1GAO5Op42SFwbcXwbCFYY2tnCuF8d7OjSzknyD+eSqkaQi//qo9TXSUnyio2N3KXBg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5914alpha</title>
-      <pubDate>Mon, 23 Nov 2026 15:02:25 +0000</pubDate>
-      <sparkle:version>3.0.0.59141</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5914alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5914alpha/WinZapp-macOS-x86_64.zip" length="342844199" type="application/octet-stream" sparkle:edSignature="oZAdJkuZM+Y1udBF+ACR7FXf36JhdqUUu8QxkEcibVB4pcbhFZN3v98KW4Tu3FDPo3V0Cxa3/xDm4Ggj+XdnCQ=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.2.0</title>
@@ -6045,6 +6063,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: rmZfKyjhBEgM4sxIBVdRLcIEpQ5B1a28nyJqQrzCC33OhKsVJAUlfS6QkEFqdkbaAiGLu6IKPpuh96K45zoBCA==
-length: 994452
+edSignature: /rS5CXCU58RkOIMiKXAUnzK7Z77YCgFEKlFOif5XqW3LV/5budlZ9l66WTocC51bnORNgWapDtdQSaJhhxOyBQ==
+length: 999615
 -->
