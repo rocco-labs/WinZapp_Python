@@ -388,6 +388,7 @@ jobs:
     continue-on-error: true
     outputs:
       tags: ${{ steps.plan.outputs.tags }}
+      redeploy: ${{ steps.plan.outputs.redeploy }}
     steps:
       - id: plan
         env:
@@ -447,11 +448,33 @@ jobs:
                   continue
               todo.append(tag)
           print("tags=" + json.dumps(todo))
+
+          # The appcast branch is committed BEFORE the Pages deploy, so a
+          # failed deploy left the branch ahead of the live feed and no later
+          # run noticed (2026-11-25: 5964 sat on the branch, the site stayed
+          # on 5944). Compare what users are served with the branch and ask
+          # for a deploy when they differ.
+          import urllib.request
+          owner, name = REPO.split("/")
+          stale = False
+          for arch in ("arm64", "x86_64"):
+              found, branch = gh("api", f"repos/{REPO}/contents/appcast-{arch}.xml?ref=appcast",
+                                 "-H", "Accept: application/vnd.github.raw", ok=True)
+              if not found:
+                  continue
+              url = f"https://{owner.lower()}.github.io/{name}/appcast-{arch}.xml?nocache={os.getpid()}"
+              try:
+                  live = urllib.request.urlopen(url, timeout=30).read().decode()
+              except Exception:
+                  live = ""
+              if live.strip() != branch.strip():
+                  stale = True
+          print("redeploy=" + ("true" if stale else "false"))
           PY
 
   appcast:
     needs: appcast-plan
-    if: ${{ !cancelled() && needs.appcast-plan.outputs.tags != '' && needs.appcast-plan.outputs.tags != '[]' }}
+    if: ${{ !cancelled() && ((needs.appcast-plan.outputs.tags != '' && needs.appcast-plan.outputs.tags != '[]') || needs.appcast-plan.outputs.redeploy == 'true') }}
     # Intel, not macos-15: arm64 runners are often unavailable (a job gets none
     # for 15 minutes and is cancelled), which would leave a published release
     # out of the feed. sign_update is universal.
@@ -592,8 +615,14 @@ jobs:
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site
+          # One name per attempt: a re-run of this job otherwise finds the
+          # first attempt's artifact too and deploy-pages refuses both
+          # ("Multiple artifacts named github-pages", 2026-11-25).
+          name: github-pages-${{ github.run_attempt }}
       - id: deploy
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
 
       - name: A release was refused
         # After the good ones are published: the run still fails, so a release
