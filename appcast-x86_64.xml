@@ -5,17 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5979alpha</title>
-      <pubDate>Wed, 25 Nov 2026 21:41:21 +0000</pubDate>
-      <sparkle:version>3.0.0.59791</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5979alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5983alpha</title>
+      <pubDate>Wed, 25 Nov 2026 22:56:38 +0000</pubDate>
+      <sparkle:version>3.0.0.59831</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5983alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="en" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- When the playback or recording device chosen in Settings, such as headphones, is not connected as WinZapp starts, WinZapp now says so once and uses the system default device, instead of showing a message box at every launch. The box held up startup until it was answered, so a launch with no one at the computer ended in an error saying the WinZapp API had failed to start in time, and the program closed. The chosen device is kept and used again once it is connected.
 
 - macOS: WinZapp's check for newer WhatsApp Web versions now works on Macs without Python from python.org installed. It used to fail with a certificate error that the log reported as "offline", so the list of versions never updated and, once WhatsApp stopped serving the build WinZapp was using, WPPConnect could no longer connect.
 
@@ -702,11 +704,13 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Quando o dispositivo de reprodução ou de gravação escolhido nas Configurações, como um fone de ouvido, não está conectado ao iniciar o WinZapp, o WinZapp agora avisa uma única vez por voz e usa o dispositivo padrão do sistema, em vez de mostrar uma caixa de mensagem a cada inicialização. A caixa travava a inicialização até ser respondida, então um início sem ninguém no computador terminava num erro dizendo que a API do WinZapp não iniciou a tempo, e o programa fechava. O dispositivo escolhido é mantido e volta a ser usado assim que estiver conectado.
 
 - macOS: a verificação de versões mais novas do WhatsApp Web agora funciona em Macs sem o Python do python.org instalado. Ela falhava com um erro de certificado que o log registrava como "offline", então a lista de versões nunca era atualizada e, quando o WhatsApp deixava de servir a versão que o WinZapp usava, o WPPConnect não conseguia mais conectar.
 
@@ -1393,11 +1397,13 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- Quando o dispositivo de reprodução ou de gravação escolhido nas Definições, como uns auscultadores, não está ligado ao iniciar o WinZapp, o WinZapp avisa agora uma única vez por voz e usa o dispositivo predefinido do sistema, em vez de mostrar uma caixa de mensagem em cada arranque. A caixa bloqueava o arranque até ser respondida, pelo que um arranque sem ninguém ao computador terminava num erro a dizer que a API do WinZapp não iniciou a tempo, e o programa fechava. O dispositivo escolhido é mantido e volta a ser usado assim que estiver ligado.
 
 - macOS: a verificação de versões mais recentes do WhatsApp Web funciona agora em Macs sem o Python do python.org instalado. Falhava com um erro de certificado que o registo indicava como "offline", pelo que a lista de versões nunca era atualizada e, quando o WhatsApp deixava de servir a versão que o WinZapp usava, o WPPConnect já não conseguia ligar.
 
@@ -2084,11 +2090,13 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="es" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- Cuando el dispositivo de reproducción o de grabación elegido en la Configuración, como unos auriculares, no está conectado al iniciar WinZapp, WinZapp ahora lo avisa una sola vez por voz y usa el dispositivo predeterminado del sistema, en lugar de mostrar un cuadro de mensaje en cada inicio. El cuadro detenía el inicio hasta que se respondía, así que un inicio sin nadie frente al ordenador terminaba en un error que decía que la API de WinZapp no se había iniciado a tiempo, y el programa se cerraba. El dispositivo elegido se conserva y se vuelve a usar en cuanto se conecta.
 
 - macOS: la comprobación de versiones más recientes de WhatsApp Web ahora funciona en Macs sin el Python de python.org instalado. Fallaba con un error de certificado que el registro anotaba como "offline", así que la lista de versiones nunca se actualizaba y, cuando WhatsApp dejaba de servir la versión que usaba WinZapp, WPPConnect ya no podía conectarse.
 
@@ -2775,11 +2783,13 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="pl" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- Gdy wybrane w Ustawieniach urządzenie odtwarzające lub nagrywające, na przykład słuchawki, nie jest podłączone przy uruchamianiu WinZapp, WinZapp teraz informuje o tym jeden raz mową i używa domyślnego urządzenia systemu, zamiast pokazywać okno komunikatu przy każdym uruchomieniu. Okno wstrzymywało uruchamianie do czasu odpowiedzi, więc uruchomienie bez nikogo przy komputerze kończyło się błędem, że API WinZapp nie uruchomiło się na czas, i program się zamykał. Wybrane urządzenie zostaje zachowane i jest znowu używane, gdy tylko zostanie podłączone.
 
 - macOS: sprawdzanie nowszych wersji WhatsApp Web działa teraz na Macach bez zainstalowanego Pythona z python.org. Wcześniej kończyło się błędem certyfikatu, który dziennik zapisywał jako "offline", więc lista wersji nigdy się nie aktualizowała, a gdy WhatsApp przestawał udostępniać wersję używaną przez WinZapp, WPPConnect nie mógł się już połączyć.
 
@@ -3467,11 +3477,13 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="tr" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- Ayarlar'da seçilen oynatma ya da kayıt cihazı, örneğin kulaklık, WinZapp başlarken bağlı değilse WinZapp artık bunu bir kez sesli olarak bildirir ve sistemin varsayılan cihazını kullanır; her açılışta bir ileti kutusu göstermez. Kutu yanıtlanana kadar açılışı bekletiyordu, bu yüzden bilgisayar başında kimse yokken yapılan bir açılış, WinZapp API'nin zamanında başlatılamadığını söyleyen bir hatayla bitiyor ve program kapanıyordu. Seçilen cihaz korunur ve bağlandığı anda yeniden kullanılır.
 
 - macOS: daha yeni WhatsApp Web sürümleri denetimi artık python.org Python'u yüklü olmayan Mac'lerde çalışıyor. Daha önce günlüğün "offline" olarak kaydettiği bir sertifika hatasıyla başarısız oluyordu; bu yüzden sürüm listesi hiç güncellenmiyor ve WhatsApp, WinZapp'in kullandığı sürümü sunmayı bıraktığında WPPConnect artık bağlanamıyordu.
 
@@ -4158,11 +4170,13 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="ro" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- Când dispozitivul de redare sau de înregistrare ales în Setări, de exemplu căștile, nu este conectat la pornirea WinZapp, WinZapp anunță acum acest lucru o singură dată prin voce și folosește dispozitivul implicit al sistemului, în loc să afișeze o casetă de mesaj la fiecare pornire. Caseta oprea pornirea până când primea un răspuns, așa că o pornire fără nimeni la calculator se termina cu o eroare că WinZapp API nu a pornit la timp, iar programul se închidea. Dispozitivul ales este păstrat și folosit din nou imediat ce este conectat.
 
 - macOS: verificarea versiunilor mai noi de WhatsApp Web funcționează acum pe Mac-uri fără Python de la python.org instalat. Eșua cu o eroare de certificat pe care jurnalul o nota ca "offline", așa că lista de versiuni nu se actualiza niciodată și, când WhatsApp nu mai servea versiunea folosită de WinZapp, WPPConnect nu se mai putea conecta.
 
@@ -4849,11 +4863,13 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="ar" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- عندما لا يكون جهاز التشغيل أو التسجيل المختار في الإعدادات، مثل سماعات الرأس، متصلًا عند بدء WinZapp، يعلن WinZapp ذلك الآن مرة واحدة بالكلام ويستخدم الجهاز الافتراضي للنظام، بدلًا من عرض مربع رسالة عند كل تشغيل. كان المربع يوقف بدء التشغيل حتى تتم الإجابة عليه، لذلك كان التشغيل دون وجود أحد أمام الحاسوب ينتهي بخطأ يفيد بأن واجهة WinZapp البرمجية لم تبدأ في الوقت المحدد، ثم يُغلق البرنامج. يُحتفظ بالجهاز المختار ويُستخدم مجددًا بمجرد توصيله.
 
 - macOS: يعمل الآن التحقق من وجود إصدارات أحدث من واتساب ويب على أجهزة Mac التي لم يُثبَّت عليها Python من python.org. كان يفشل بخطأ في الشهادة يسجله السجل على أنه "offline"، فلم تكن قائمة الإصدارات تُحدَّث أبدًا، وعندما يتوقف واتساب عن تقديم الإصدار الذي يستخدمه WinZapp، لم يعد WPPConnect قادرًا على الاتصال.
 
@@ -5542,11 +5558,13 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="it" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- Quando il dispositivo di riproduzione o di registrazione scelto nelle Impostazioni, ad esempio delle cuffie, non è collegato all'avvio di WinZapp, WinZapp ora lo annuncia una sola volta a voce e usa il dispositivo predefinito del sistema, invece di mostrare una finestra di messaggio a ogni avvio. La finestra bloccava l'avvio finché non veniva confermata, quindi un avvio senza nessuno al computer finiva con un errore secondo cui l'API di WinZapp non si era avviata in tempo, e il programma si chiudeva. Il dispositivo scelto viene mantenuto e torna a essere usato appena viene collegato.
 
 - macOS: il controllo delle versioni più recenti di WhatsApp Web ora funziona sui Mac senza Python di python.org installato. Falliva con un errore di certificato che il registro segnava come "offline", quindi l'elenco delle versioni non si aggiornava mai e, quando WhatsApp smetteva di servire la versione usata da WinZapp, WPPConnect non riusciva più a connettersi.
 
@@ -6233,11 +6251,13 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- macOS: let the WhatsApp Web catalogue check verify HTTPS without python.org's OpenSSL paths (#920)
+      <description xml:lang="cs" sparkle:format="plain-text">- Audio devices: announce a missing device at startup instead of a modal box (#926)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
 NOVINKY
+
+- Když přehrávací nebo nahrávací zařízení vybrané v Nastavení, například sluchátka, není při spuštění WinZappu připojené, WinZapp to teď jednou oznámí hlasem a použije výchozí zařízení systému, místo aby při každém spuštění zobrazil okno se zprávou. Okno zdržovalo spuštění, dokud na něj nikdo neodpověděl, takže spuštění bez nikoho u počítače skončilo chybou, že se API WinZappu nespustilo včas, a program se zavřel. Vybrané zařízení zůstává nastavené a znovu se použije, jakmile se připojí.
 
 - macOS: kontrola novějších verzí WhatsApp Web nyní funguje na Macích bez nainstalovaného Pythonu z python.org. Dříve selhávala s chybou certifikátu, kterou protokol zapisoval jako "offline", takže se seznam verzí nikdy neaktualizoval, a když WhatsApp přestal poskytovat verzi, kterou WinZapp používal, WPPConnect se už nemohl připojit.
 
@@ -6924,6 +6944,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5983alpha/WinZapp-macOS-x86_64.zip" length="383510986" type="application/octet-stream" sparkle:edSignature="MJlcztXS091YYA7V9cPXbgQIZJFCw0VV3Bo0utTf1Z18bnQtWGNVyiP4uYMywyZ6zgoCKrG8En5IH+HIN+ZGAw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5979alpha</title>
+      <pubDate>Wed, 25 Nov 2026 21:41:21 +0000</pubDate>
+      <sparkle:version>3.0.0.59791</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5979alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5979alpha/WinZapp-macOS-x86_64.zip" length="383509185" type="application/octet-stream" sparkle:edSignature="6iwGw/8unSc4CbvM074LauxfCnzUeWFT7TiMGfOP6LoYwnNtqOcB+/Kl1v4zt9gyrlWLt1YkeBpmxomJx91eBg=="></enclosure>
     </item>
     <item>
@@ -6952,15 +6981,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5964alpha/WinZapp-macOS-x86_64.zip" length="383479378" type="application/octet-stream" sparkle:edSignature="NcmvWpVhEY+vDUqWpjL78R6JfoHnuQ6iJVqj5DFOWqG2I5C3urYHsoh3TL2mBHT/U6OIXTu3nlqCqe9APyu8Cw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5944alpha</title>
-      <pubDate>Tue, 24 Nov 2026 22:11:18 +0000</pubDate>
-      <sparkle:version>3.0.0.59441</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5944alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5944alpha/WinZapp-macOS-x86_64.zip" length="342426800" type="application/octet-stream" sparkle:edSignature="019NTwC67CDtS1oA1OBu6LTFz8+Q8/flYp/OhjM6T9Ud+20WuO9DNEI+f221hd1JKM/bqXuLZewJy/JcvhVmCg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7037,6 +7057,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: /MM+/glTzcp9UBB+eTeR2X+Ud2t2Es9nYSy2Ll4qhGwdDpEGskeUoGvaa92u03oD/f5rztoL4KfGZecQb+PbBw==
-length: 1148567
+edSignature: Lr+7tyZSKPNk8GoOiF6mq9zIWfut4U+zBUjiZAiZwghpokBliyfQeI2+gZ4awuQ8kaXkz2iVjbP+svUmB7pvAw==
+length: 1154269
 -->
