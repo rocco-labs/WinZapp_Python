@@ -5,15 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5964alpha</title>
-      <pubDate>Wed, 25 Nov 2026 08:04:44 +0000</pubDate>
-      <sparkle:version>3.0.0.59641</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5964alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.5968alpha</title>
+      <pubDate>Wed, 25 Nov 2026 14:13:58 +0000</pubDate>
+      <sparkle:version>3.0.0.59681</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5968alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="en" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -32,6 +30,8 @@ WHAT'S NEW
 - Czech: WinZapp is now available in Czech (Čeština): the interface, the user guide, the installer and uninstaller (which follow the Windows display language) and these release notes. Czech is also offered as a language to translate messages into, and the spell checker supports it. Thanks to jaxcze for the translation.
 
 - Connect with QR code: the QR code shows up again. With the latest WhatsApp Web versions, some computers get a separate login page that only has the QR code screen, and on it WinZapp kept connecting until it gave up, without showing the code. The QR code now shows up on that page within a few seconds.
+
+- Logged out when WinZapp starts: with the latest WhatsApp Web versions, WinZapp opened WhatsApp Web's separate login page even for an account that was already linked, so the account came back logged out, showing a QR code, every time WinZapp started, and a device just linked with the QR code or the phone number was dropped again a few seconds later. WinZapp no longer opens that page for a linked account: WhatsApp Web opens your chats as usual, and the login page is only used to link.
 
 - Communities: Enter on a community in the chat list now opens the Communities panel with that community selected and the focus on its groups, instead of the community's own chat. Settings &gt; Interface &gt; Chats has the option, on by default.
 
@@ -696,9 +696,7 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -717,6 +715,8 @@ NOVIDADES
 - Tcheco: o WinZapp agora está disponível em tcheco (Čeština): a interface, o guia do usuário, o instalador e o desinstalador (que seguem o idioma de exibição do Windows) e estas notas de versão. O tcheco também aparece como idioma para traduzir mensagens, e o corretor ortográfico o suporta. Obrigado a jaxcze pela tradução.
 
 - Conectar com QR-CODE: o código QR voltou a aparecer. Nas versões mais recentes do WhatsApp Web, alguns computadores recebem uma página de login separada, só com a tela do código QR, e nela o WinZapp ficava conectando até desistir, sem mostrar o código. Agora o código QR aparece nessa página em poucos segundos.
+
+- Desconectado ao abrir o WinZapp: com as versões mais recentes do WhatsApp Web, o WinZapp abria a página de login separada do WhatsApp Web mesmo para uma conta já conectada, então a conta voltava desconectada, mostrando um código QR, toda vez que o WinZapp abria, e um aparelho recém-conectado pelo código QR ou pelo número de telefone era desconectado de novo poucos segundos depois. O WinZapp não abre mais essa página para uma conta conectada: o WhatsApp Web abre as suas conversas normalmente, e a página de login só é usada para conectar.
 
 - Comunidades: Enter numa comunidade da lista de conversas agora abre o painel Comunidades com essa comunidade selecionada e o foco nos grupos dela, em vez da conversa da própria comunidade. A opção fica em Configurações &gt; Interface &gt; Conversas, ligada por padrão.
 
@@ -1381,9 +1381,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1402,6 +1400,8 @@ NOVIDADES
 - Checo: o WinZapp está agora disponível em checo (Čeština): a interface, o guia do utilizador, o instalador e o desinstalador (que seguem o idioma de apresentação do Windows) e estas notas de versão. O checo também aparece como idioma para traduzir mensagens, e o corretor ortográfico suporta-o. Obrigado a jaxcze pela tradução.
 
 - Ligar-se através do código QR: o código QR voltou a aparecer. Nas versões mais recentes do WhatsApp Web, alguns computadores recebem uma página de início de sessão separada, só com o ecrã do código QR, e nela o WinZapp ficava a ligar até desistir, sem mostrar o código. Agora o código QR aparece nessa página em poucos segundos.
+
+- Sessão terminada ao abrir o WinZapp: com as versões mais recentes do WhatsApp Web, o WinZapp abria a página de início de sessão separada do WhatsApp Web mesmo para uma conta já ligada, por isso a conta voltava com a sessão terminada, a mostrar um código QR, sempre que o WinZapp abria, e um dispositivo acabado de ligar pelo código QR ou pelo número de telefone era desligado outra vez poucos segundos depois. O WinZapp já não abre essa página para uma conta ligada: o WhatsApp Web abre as suas conversas como de costume, e a página de início de sessão só é usada para ligar.
 
 - Comunidades: Enter numa comunidade da lista de conversas abre agora o painel Comunidades com essa comunidade selecionada e o foco nos respetivos grupos, em vez da conversa da própria comunidade. A opção está em Definições &gt; Interface &gt; Conversas, ativada por predefinição.
 
@@ -2066,9 +2066,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="es" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2087,6 +2085,8 @@ NOVEDADES
 - Checo: WinZapp ya está disponible en checo (Čeština): la interfaz, la guía del usuario, el instalador y el desinstalador (que siguen el idioma de visualización de Windows) y estas notas de la versión. El checo también se ofrece como idioma al que traducir mensajes, y el corrector ortográfico lo admite. Gracias a jaxcze por la traducción.
 
 - Conectar con código QR: el código QR vuelve a aparecer. Con las versiones más recientes de WhatsApp Web, algunos ordenadores reciben una página de inicio de sesión aparte, solo con la pantalla del código QR, y en ella WinZapp seguía conectando hasta rendirse, sin mostrar el código. Ahora el código QR aparece en esa página en pocos segundos.
+
+- Sesión cerrada al abrir WinZapp: con las versiones más recientes de WhatsApp Web, WinZapp abría la página de inicio de sesión separada de WhatsApp Web incluso para una cuenta ya vinculada, así que la cuenta volvía con la sesión cerrada, mostrando un código QR, cada vez que se abría WinZapp, y un dispositivo recién vinculado con el código QR o con el número de teléfono se desvinculaba de nuevo pocos segundos después. WinZapp ya no abre esa página para una cuenta vinculada: WhatsApp Web abre tus chats como siempre, y la página de inicio de sesión solo se usa para vincular.
 
 - Comunidades: Intro sobre una comunidad de la lista de chats abre ahora el panel Comunidades con esa comunidad seleccionada y el foco en sus grupos, en lugar del chat de la propia comunidad. La opción está en Ajustes &gt; Interfaz &gt; Chats, activada de forma predeterminada.
 
@@ -2751,9 +2751,7 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="pl" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -2772,6 +2770,8 @@ NOWOŚCI
 - Czeski: WinZapp jest teraz dostępny po czesku (Čeština): interfejs, przewodnik użytkownika, instalator i dezinstalator (które podążają za językiem wyświetlania Windows) oraz te informacje o wersji. Czeski jest też dostępny jako język tłumaczenia wiadomości, a sprawdzanie pisowni go obsługuje. Dziękujemy jaxcze za tłumaczenie.
 
 - Połącz za pomocą kodu QR: kod QR znowu się pojawia. W najnowszych wersjach WhatsApp Web niektóre komputery dostają osobną stronę logowania, tylko z ekranem kodu QR, i na niej WinZapp łączył się, aż w końcu rezygnował, nie pokazując kodu. Teraz kod QR pojawia się na tej stronie w ciągu kilku sekund.
+
+- Wylogowanie po uruchomieniu WinZapp: w najnowszych wersjach WhatsApp Web WinZapp otwierał osobną stronę logowania WhatsApp Web nawet dla konta, które było już połączone, więc przy każdym uruchomieniu WinZapp konto wracało wylogowane, z kodem QR, a urządzenie dopiero co połączone kodem QR lub numerem telefonu było po kilku sekundach znowu rozłączane. WinZapp nie otwiera już tej strony dla połączonego konta: WhatsApp Web otwiera czaty jak zwykle, a strona logowania służy tylko do połączenia.
 
 - Społeczności: Enter na społeczności na liście czatów otwiera teraz panel Społeczności z zaznaczoną tą społecznością i fokusem na jej grupach zamiast czatu samej społeczności. Opcja jest w Ustawieniach &gt; Interfejs &gt; Czaty, domyślnie włączona.
 
@@ -3437,9 +3437,7 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="tr" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -3458,6 +3456,8 @@ YENİLİKLER
 - Çekçe: WinZapp artık Çekçe (Čeština) olarak da kullanılabiliyor: arayüz, kullanım kılavuzu, yükleyici ve kaldırıcı (Windows görüntüleme diline uyar) ve bu sürüm notları. Çekçe ayrıca mesajların çevrileceği bir dil olarak sunulur ve yazım denetimi onu destekler. Çeviri için jaxcze'ye teşekkürler.
 
 - QR kodu ile bağlan: QR kodu yeniden görünüyor. En yeni WhatsApp Web sürümlerinde bazı bilgisayarlar yalnızca QR kodu ekranını içeren ayrı bir giriş sayfası alıyor ve WinZapp bu sayfada kodu göstermeden vazgeçene kadar bağlanmaya çalışıyordu. Artık QR kodu bu sayfada birkaç saniye içinde görünüyor.
+
+- WinZapp açılırken oturumun kapanması: en yeni WhatsApp Web sürümlerinde WinZapp, zaten bağlı olan bir hesap için bile WhatsApp Web'in ayrı giriş sayfasını açıyordu; bu yüzden WinZapp her açıldığında hesap oturumu kapalı ve QR kodu gösterir halde geri geliyordu, QR kodu veya telefon numarasıyla yeni bağlanan bir cihazın bağlantısı da birkaç saniye sonra yeniden kesiliyordu. WinZapp artık bağlı bir hesap için bu sayfayı açmıyor: WhatsApp Web sohbetlerinizi her zamanki gibi açıyor, giriş sayfası yalnızca bağlanmak için kullanılıyor.
 
 - Topluluklar: sohbet listesindeki bir toplulukta Enter artık topluluğun kendi sohbeti yerine Topluluklar panelini o topluluk seçili ve odak gruplarında olacak şekilde açıyor. Seçenek Ayarlar &gt; Arayüz &gt; Sohbetler içinde, varsayılan olarak açık.
 
@@ -4122,9 +4122,7 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="ro" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -4143,6 +4141,8 @@ NOUTĂȚI
 - Cehă: WinZapp este acum disponibil în cehă (Čeština): interfața, ghidul de utilizare, programul de instalare și cel de dezinstalare (care urmează limba de afișare din Windows) și aceste note de versiune. Ceha este oferită și ca limbă în care se pot traduce mesaje, iar verificatorul ortografic o acceptă. Mulțumim lui jaxcze pentru traducere.
 
 - Conectați-vă cu codul QR: codul QR apare din nou. În cele mai noi versiuni WhatsApp Web, unele calculatoare primesc o pagină de autentificare separată, doar cu ecranul codului QR, iar pe ea WinZapp încerca să se conecteze până renunța, fără să arate codul. Acum codul QR apare pe această pagină în câteva secunde.
+
+- Deconectat la pornirea WinZapp: cu cele mai noi versiuni WhatsApp Web, WinZapp deschidea pagina separată de autentificare a WhatsApp Web chiar și pentru un cont deja conectat, astfel că, la fiecare pornire a WinZapp, contul revenea deconectat, cu un cod QR, iar un dispozitiv abia conectat cu codul QR sau cu numărul de telefon era deconectat din nou după câteva secunde. WinZapp nu mai deschide această pagină pentru un cont conectat: WhatsApp Web vă deschide conversațiile ca de obicei, iar pagina de autentificare este folosită doar pentru conectare.
 
 - Comunități: Enter pe o comunitate din lista de conversații deschide acum panoul Comunități cu acea comunitate selectată și focalizarea pe grupurile ei, în locul conversației comunității. Opțiunea este în Setări &gt; Interfață &gt; Conversații, activată implicit.
 
@@ -4807,9 +4807,7 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="ar" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -4828,6 +4826,8 @@ NOUTĂȚI
 - التشيكية: أصبح WinZapp متاحًا الآن باللغة التشيكية (Čeština): الواجهة ودليل المستخدم وبرنامج التثبيت وبرنامج إلغاء التثبيت (اللذان يتبعان لغة العرض في Windows) وملاحظات الإصدار هذه. كما تُعرض التشيكية لغةً لترجمة الرسائل، ويدعمها المدقق الإملائي. شكرًا إلى jaxcze على الترجمة.
 
 - الاتصال برمز الاستجابة السريعة: عاد رمز الاستجابة السريعة إلى الظهور. في أحدث إصدارات واتساب ويب، تتلقى بعض الحواسيب صفحة تسجيل دخول منفصلة لا تحتوي إلا على شاشة رمز الاستجابة السريعة، وكان WinZapp يظل يحاول الاتصال فيها حتى يتوقف دون أن يعرض الرمز. أصبح رمز الاستجابة السريعة يظهر الآن في هذه الصفحة خلال ثوانٍ قليلة.
+
+- تسجيل الخروج عند تشغيل WinZapp: مع أحدث إصدارات واتساب ويب، كان WinZapp يفتح صفحة تسجيل الدخول المنفصلة في واتساب ويب حتى لحساب مرتبط بالفعل، فيعود الحساب وقد سُجّل الخروج منه ويظهر رمز الاستجابة السريعة في كل مرة يُشغَّل فيها WinZapp، وكان الجهاز المرتبط للتو برمز الاستجابة السريعة أو برقم الهاتف يُفصل مرة أخرى بعد ثوانٍ قليلة. لم يعد WinZapp يفتح هذه الصفحة لحساب مرتبط: يفتح واتساب ويب محادثاتك كالمعتاد، ولا تُستخدم صفحة تسجيل الدخول إلا للربط.
 
 - المجتمعات: الضغط على Enter على مجتمع في قائمة المحادثات يفتح الآن لوحة المجتمعات بهذا المجتمع محددًا مع التركيز على مجموعاته، بدلًا من محادثة المجتمع نفسه. الخيار في الإعدادات &gt; واجهة المستخدم &gt; الدردشات، ومفعّل افتراضيًا.
 
@@ -5494,9 +5494,7 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="it" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -5515,6 +5513,8 @@ WHAT'S NEW
 - Ceco: WinZapp è ora disponibile in ceco (Čeština): l'interfaccia, la guida per l'utente, il programma di installazione e di disinstallazione (che seguono la lingua di visualizzazione di Windows) e queste note di rilascio. Il ceco è offerto anche come lingua in cui tradurre i messaggi, e il correttore ortografico lo supporta. Grazie a jaxcze per la traduzione.
 
 - Connettiti con il codice QR: il codice QR torna a comparire. Con le versioni più recenti di WhatsApp Web, alcuni computer ricevono una pagina di accesso separata, con la sola schermata del codice QR, e lì WinZapp continuava a connettersi fino a rinunciare, senza mostrare il codice. Ora il codice QR compare in quella pagina in pochi secondi.
+
+- Disconnessione all'avvio di WinZapp: con le versioni più recenti di WhatsApp Web, WinZapp apriva la pagina di accesso separata di WhatsApp Web anche per un account già collegato, quindi a ogni avvio di WinZapp l'account tornava disconnesso, con un codice QR, e un dispositivo appena collegato con il codice QR o con il numero di telefono veniva scollegato di nuovo pochi secondi dopo. WinZapp non apre più quella pagina per un account collegato: WhatsApp Web apre le tue chat come al solito, e la pagina di accesso serve solo per collegarsi.
 
 - Community: Invio su una community nell'elenco delle chat ora apre il pannello Community con quella community selezionata e il focus sui suoi gruppi, invece della chat della community stessa. L'opzione è in Impostazioni &gt; Interfaccia &gt; Chat, attiva per impostazione predefinita.
 
@@ -6179,9 +6179,7 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- feat(audio): add native Neonize transport and NetEQ playout (#907)
-- Name user guide section files in each guide's own language (#909)
-- Neonize bridge: turn off Go async preemption under x64 emulation on ARM (#908)
+      <description xml:lang="cs" sparkle:format="plain-text">- WhatsApp Web pin: never serve the login-only page at / (linked accounts logged out on every start) (#913)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
@@ -6200,6 +6198,8 @@ NOVINKY
 - Čeština: WinZapp je nově k dispozici v češtině: rozhraní, návod k použití, instalační a odinstalační program (které se řídí jazykem zobrazení Windows) a tyto poznámky k vydání. Češtinu lze také zvolit jako jazyk, do kterého se zprávy překládají, a kontrola pravopisu ji podporuje. Za překlad děkujeme uživateli jaxcze.
 
 - Připojit pomocí QR kódu: QR kód se znovu zobrazuje. V nejnovějších verzích WhatsApp Web dostávají některé počítače samostatnou přihlašovací stránku jen s obrazovkou QR kódu a WinZapp se na ní připojoval, dokud to nevzdal, aniž by kód zobrazil. Nyní se na této stránce QR kód zobrazí během několika sekund.
+
+- Odhlášení při spuštění WinZappu: s nejnovějšími verzemi WhatsApp Web otevíral WinZapp samostatnou přihlašovací stránku WhatsApp Web i pro účet, který už byl propojený, takže se účet při každém spuštění WinZappu vrátil odhlášený s QR kódem a zařízení právě propojené QR kódem nebo telefonním číslem se po několika sekundách znovu odpojilo. WinZapp už tuto stránku pro propojený účet neotevírá: WhatsApp Web otevře vaše chaty jako obvykle a přihlašovací stránka slouží jen k propojení.
 
 - Komunity: Enter na komunitě v seznamu chatů nově otevře panel Komunity s vybranou komunitou a fokusem na jejích skupinách, místo chatu samotné komunity. Volba je v Nastavení &gt; Rozhraní &gt; Chaty a ve výchozím stavu je zapnutá.
 
@@ -6864,6 +6864,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5968alpha/WinZapp-macOS-arm64.zip" length="343326873" type="application/octet-stream" sparkle:edSignature="rPnJEHe7fx+9tzUnGBzEH0wfrfAUc6w5wbze/++AJb1WLgZhus2KzhZ8ElPMl1gfmqBUv5O2lMjPcZfd5qvHCw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5964alpha</title>
+      <pubDate>Wed, 25 Nov 2026 08:04:44 +0000</pubDate>
+      <sparkle:version>3.0.0.59641</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5964alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5964alpha/WinZapp-macOS-arm64.zip" length="348782914" type="application/octet-stream" sparkle:edSignature="L6g4EJsJD3Na2liHeBkwk+p2CIiYWgMLNaoBzmNzEsfNQOdK+RKhRUrlYDwfT8OOlICsPGS6yCWgMGI3Bg/+AA=="></enclosure>
     </item>
     <item>
@@ -6892,15 +6901,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5942alpha/WinZapp-macOS-arm64.zip" length="305279528" type="application/octet-stream" sparkle:edSignature="wxVTe5SgKH7pY5KApHl7bkvakjsvgj//qSKHzruWumPIdh1yYjs8MwtcHaDQV7nmHHVdGQBJG7IKfO3XUuFHCA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5941alpha</title>
-      <pubDate>Tue, 24 Nov 2026 16:34:04 +0000</pubDate>
-      <sparkle:version>3.0.0.59411</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5941alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5941alpha/WinZapp-macOS-arm64.zip" length="305279739" type="application/octet-stream" sparkle:edSignature="7Xw+lGD5M8fTYX40sNAAMtOEco8P9ngJ2xqZmRKOpEVKBan0nFProqZkhWEPJAVVm6uwRhIjWsFEB9Y6QepDAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -6977,6 +6977,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: kFQiS4wrT25oZ7l3B79vU4pRHfGSfl2zfTWJ5TV8hw5L/YU8h2uWG80kMxUXBv0YPP23fl6TMjxRv2GU8KFQDw==
-length: 1132821
+edSignature: pk4A7YlzydyY168PvKFAiQVfzsRv54pm0P5dcU/pS7G7lTLp25Xb5leTxSppwcAjcdphZUxTkoBxd3aQsds6Aw==
+length: 1137536
 -->
