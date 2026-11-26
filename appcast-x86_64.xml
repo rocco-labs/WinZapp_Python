@@ -5,18 +5,43 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.6002alpha</title>
-      <pubDate>Thu, 26 Nov 2026 04:02:33 +0000</pubDate>
-      <sparkle:version>3.0.0.60021</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6002alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.6003alpha</title>
+      <pubDate>Thu, 26 Nov 2026 15:32:41 +0000</pubDate>
+      <sparkle:version>3.0.0.60031</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6003alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="en" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect, connecting with a QR code or a phone number: after the phone accepts the pairing, WinZapp no longer says the connection failed while WhatsApp Web is still opening the chats. The check made 4 minutes after pairing could not read the connection state on recent WhatsApp Web versions and reported a working connection as failed.
+
+- WPPConnect: a browser named in the PUPPETEER_EXECUTABLE_PATH environment variable, such as a native Chrome for Windows on ARM, is used again, and when more than one browser version is downloaded WinZapp uses the one WPPConnect asks for, not the first one it finds.
+
+- Pinned messages: a chat's pinned messages button now opens the "Pinned messages" window, listing the pinned messages. Each one has the message list's context menu and shortcuts: copy, forward, react, star, unpin, delete, transcribe and the rest, with the keys you chose. Reply, edit and the other actions that take you into the chat close the window and run on the message, focused in the chat; Enter or "Go to message" takes you to it in the history.
+
+- Selected messages: "Unpin selected", under "Bulk actions" in the context menu, unpins every selected message that is pinned at once. With "Replace shortcuts with bulk actions when selecting chats and messages" checked, Ctrl+Shift+P pins the selected messages, or unpins them when all of them are already pinned.
+
+- New option in Settings &gt; Accessibility &gt; Spoken content: "Announce how many messages are pinned when a chat opens", checked by default. Unchecked, WinZapp no longer says "Pinned messages in this chat: N" when you open a chat.
+
+- New option in Settings &gt; General &gt; Notifications: "Notify reactions to your messages", checked by default. Unchecked, a reaction to one of your messages is not spoken, plays no sound and does not appear in Windows notifications; it still shows on the message and in the chat list.
+
+- Message text (Alt+C): the window has a new "Wrap long lines" box, checked by default. Unchecked, a line only ends where the message itself has a line break, whatever the length of the line or the size of the window. The choice is kept for next time, and copying still gives the text as it was written.
+
+- Calls: a call you started on your phone that became a group call can be rejoined from WinZapp after you leave it: "Join ongoing voice call" appears in the chat of each person still in it, and its row in the Calls tab shows their names. Works with Neonize and WPPConnect.
+
+- Neonize: joining a group call already under way, you now hear the people whose phones send audio in a format WinZapp used to drop; with them, you heard nobody.
+
+- Neonize group calls: each person's audio now has its own NetEQ playback, as in one-to-one calls, which smooths network jitter and audio loss for each of them separately; before, the whole group was mixed without it, with more gaps and delay. Live translation and devices not supported by NetEQ keep compatible playback.
+
+- Neonize calls: when an audio packet is lost and the next one carries a copy of it, as some phones send, WinZapp now plays that copy instead of filling the gap with an estimate.
+
+- Save As (Ctrl+Shift+S) on a JSON document received in a chat, such as the settings file app.json, now saves the file instead of saying it could not be downloaded.
+
+- Shortcuts: switching to another account right after changing a key, the account that comes up answers to the new key even while the previous one is still saving its settings; before, it could stay on the old key until it saved something.
 
 - Reconnecting after a long time offline: WinZapp now receives the accumulated messages, reactions and read receipts without freezing the interface on every database write, and the Neonize engine writes its database faster.
 - macOS: choosing another connection engine in the pairing window now restarts WinZapp on it. It used to say that WinZapp could not restart by itself, and the engine was not changed.
@@ -92,7 +117,7 @@ WHAT'S NEW
 
 - Portable version: on its first start, when the WinZapp installed on the computer has paired accounts, WinZapp asks whether to use a copy of them instead of linking one more device. The installation is only read; if it is running, WinZapp asks you to close it and choose Retry, and if the copy fails nothing is changed and a new device is linked.
 
-- Settings &gt; Shortcuts: the keys you change now apply to every account of the installation, not only the one where you changed them; a key set for switch to account 2 answers from every account. On the first start with this version, each account's changed keys join the installation's: where both changed a command the installation's key stays, and a key that another command already uses is left out.
+- Settings &gt; Shortcuts: the keys you change now apply to every account of the installation, not only the one where you changed them; a key set for switch to account 2 answers from every account. On the first start with this version, each account's changed keys join the installation's: where both changed a command the installation's key stays, and a key that another command already uses is left out. You can also keep keys for one account only: the "Use the same shortcuts in every account" box on the same page comes checked; unchecked, the keys you change in this account apply to it alone, and the other accounts keep theirs. Each shortcut's Change window also has a "Use this shortcut in every account" box, which follows the general one until you change it; a shortcut that does not follow the general box shows "every account" or "this account only" in the list.
 
 - Edited messages: Sound events gains "Edit of your message saved" (on) and "Message edited by someone else" for the program in the foreground and in the background (off); Settings &gt; General &gt; Notifications gains "Speak edits while the window is active" and "Notify edits while in the background" (off); and each conversation's data window has an "Edited messages" window to choose different sounds and announcements for that chat. Someone else's edit is announced only while WhatsApp still accepts an edit of that message, so edits replayed after a reconnection stay silent.
 
@@ -708,12 +733,37 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- WPPConnect, conectar com QR-CODE ou pelo número de telefone: depois que o celular aceita o pareamento, o WinZapp não diz mais que a conexão falhou enquanto o WhatsApp Web ainda está abrindo as conversas. A verificação feita 4 minutos depois do pareamento não conseguia ler o estado da conexão nas versões recentes do WhatsApp Web e dava como falha uma conexão que estava funcionando.
+
+- WPPConnect: um navegador indicado na variável de ambiente PUPPETEER_EXECUTABLE_PATH, como um Chrome nativo do Windows em ARM, volta a ser usado, e, quando há mais de uma versão do navegador baixada, o WinZapp usa a que a WPPConnect pede, e não a primeira que encontra.
+
+- Mensagens fixadas: o botão de mensagens fixadas da conversa agora abre a janela "Mensagens fixadas", com a lista das fixadas. Cada mensagem dela tem o menu de contexto e os atalhos da lista de mensagens: copiar, encaminhar, reagir, favoritar, desafixar, apagar, transcrever e os demais, com as teclas que você escolheu. Responder, editar e as outras ações que levam à conversa fecham a janela e são feitas na mensagem, já em foco na conversa; Enter ou "Ir para a mensagem" leva até ela no histórico.
+
+- Mensagens selecionadas: "Desafixar selecionadas", em "Ações em massa" no menu de contexto, desafixa de uma vez as mensagens selecionadas que estão fixadas. Com "Substituir atalhos por ações em massa ao selecionar conversas e mensagens" marcado, Ctrl+Shift+P fixa as mensagens selecionadas, ou as desafixa quando todas já estão fixadas.
+
+- Nova opção em Configurações &gt; Acessibilidade &gt; Conteúdo falado: "Informar quantas mensagens estão fixadas ao abrir uma conversa", marcada por padrão. Desmarcada, o WinZapp deixa de dizer "Mensagens fixadas nesta conversa: N" ao abrir uma conversa.
+
+- Nova opção em Configurações &gt; Geral &gt; Notificações: "Notificar reações às suas mensagens", marcada por padrão. Desmarcada, uma reação a uma mensagem sua não é falada, não toca som e não aparece nas notificações do Windows; ela continua aparecendo na mensagem e na lista de conversas.
+
+- Texto da mensagem (Alt+C): a janela ganha a caixa "Quebrar linhas longas", marcada por padrão. Desmarcada, uma linha só termina onde a própria mensagem tem uma quebra de linha, qualquer que seja o tamanho da linha ou da janela. A escolha vale para as próximas vezes, e copiar continua entregando o texto como foi escrito.
+
+- Ligações: uma ligação que você começou pelo celular e que virou ligação em grupo pode ser retomada pelo WinZapp depois que você sai dela: "Entrar na ligação de voz em andamento" aparece na conversa de cada pessoa que continua nela, e a linha da aba Ligações mostra o nome delas. Vale para Neonize e WPPConnect.
+
+- Neonize: ao entrar numa ligação em grupo que já está em andamento, você agora ouve as pessoas cujo celular manda o áudio num formato que o WinZapp antes descartava; com elas, você não ouvia ninguém.
+
+- Ligações em grupo no Neonize: o áudio de cada pessoa agora tem a sua própria reprodução com NetEQ, como nas chamadas individuais, que suaviza as variações de rede e as perdas de áudio de cada uma separadamente; antes, o grupo todo era misturado sem ele, com mais falhas e atraso. A tradução ao vivo e os dispositivos não atendidos pelo NetEQ continuam usando o modo compatível.
+
+- Ligações Neonize: quando um pacote de áudio se perde e o seguinte traz uma cópia dele, como alguns celulares mandam, o WinZapp agora toca essa cópia, em vez de preencher a falha com uma estimativa.
+
+- Salvar como (Ctrl+Shift+S) um documento JSON recebido numa conversa, como o arquivo app.json das configurações, agora salva o arquivo, em vez de dizer que não foi possível baixá-lo.
+
+- Atalhos: ao passar para outra conta logo depois de trocar uma tecla, a conta que aparece responde à tecla nova mesmo quando a anterior ainda está gravando as configurações; antes ela podia ficar com a tecla antiga até salvar alguma coisa.
 
 - Reconexão depois de muito tempo offline: o WinZapp agora recebe as mensagens, reações e confirmações de leitura acumuladas sem travar a interface a cada gravação no banco de dados, e o motor Neonize grava o seu banco mais rápido.
 - macOS: escolher outro motor de conexão na janela de pareamento agora reinicia o WinZapp nele. Antes aparecia que o WinZapp não conseguiu se reiniciar sozinho, e o motor não era alterado.
@@ -789,7 +839,7 @@ NOVIDADES
 
 - Versão portátil: no primeiro início, quando o WinZapp instalado no computador tem contas vinculadas, o WinZapp pergunta se você quer usar uma cópia delas em vez de vincular mais um dispositivo. A instalação só é lida; se ela estiver aberta, o WinZapp pede que você a feche e escolha Repetir, e, se a cópia falhar, nada é alterado e um novo dispositivo é vinculado.
 
-- Configurações &gt; Atalhos: as teclas que você troca agora valem para todas as contas da instalação, e não só para aquela em que você as trocou; uma tecla definida para ir para a conta 2 responde em todas as contas. No primeiro início com esta versão, as teclas trocadas em cada conta entram nas da instalação: se as duas trocaram o mesmo comando, vale a da instalação, e uma tecla que outro comando já usa fica de fora.
+- Configurações &gt; Atalhos: as teclas que você troca agora valem para todas as contas da instalação, e não só para aquela em que você as trocou; uma tecla definida para ir para a conta 2 responde em todas as contas. No primeiro início com esta versão, as teclas trocadas em cada conta entram nas da instalação: se as duas trocaram o mesmo comando, vale a da instalação, e uma tecla que outro comando já usa fica de fora. Você também pode manter teclas só para uma conta: a caixa "Usar os mesmos atalhos em todas as contas", na mesma aba, vem marcada; desmarcada, as teclas que você trocar nesta conta valem só para ela, e as das outras contas não mudam. A janela de alteração de cada atalho tem também a caixa "Usar este atalho em todas as contas", que segue a caixa geral até você mudá-la; um atalho que não segue a caixa geral aparece na lista com "em todas as contas" ou "só nesta conta".
 
 - Mensagens editadas: Eventos de som ganha "Edição da sua mensagem salva" (ativado) e "Mensagem editada por outra pessoa" com o programa em primeiro e em segundo plano (desativados); Configurações &gt; Geral &gt; Notificações ganha "Ler edições com a janela ativa" e "Notificar edições em segundo plano" (desativados); e a janela de dados de cada conversa tem uma janela "Mensagens editadas" para escolher sons e avisos diferentes naquela conversa. A edição de outra pessoa só é anunciada enquanto o WhatsApp ainda aceita editar aquela mensagem, então edições repetidas na reconexão ficam em silêncio.
 
@@ -1405,12 +1455,37 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
+
+- WPPConnect, ligar com QR-CODE ou pelo número de telefone: depois de o telemóvel aceitar o emparelhamento, o WinZapp já não diz que a ligação falhou enquanto o WhatsApp Web ainda está a abrir as conversas. A verificação feita 4 minutos depois do emparelhamento não conseguia ler o estado da ligação nas versões recentes do WhatsApp Web e dava como falhada uma ligação que estava a funcionar.
+
+- WPPConnect: um navegador indicado na variável de ambiente PUPPETEER_EXECUTABLE_PATH, como um Chrome nativo do Windows em ARM, volta a ser usado, e, quando há mais de uma versão do navegador transferida, o WinZapp usa a que a WPPConnect pede, e não a primeira que encontra.
+
+- Mensagens afixadas: o botão de mensagens afixadas da conversa abre agora a janela "Mensagens afixadas", com a lista das afixadas. Cada mensagem tem o menu de contexto e os atalhos da lista de mensagens: copiar, reencaminhar, reagir, marcar com estrela, desafixar, eliminar, transcrever e os restantes, com as teclas que escolheu. Responder, editar e as outras ações que levam à conversa fecham a janela e são feitas na mensagem, já em foco na conversa; Enter ou "Ir para a mensagem" leva até ela no histórico.
+
+- Mensagens selecionadas: "Desafixar selecionadas", em "Ações em massa" no menu de contexto, desafixa de uma só vez as mensagens selecionadas que estão afixadas. Com "Substituir atalhos por ações em massa ao selecionar conversas e mensagens" marcado, Ctrl+Shift+P afixa as mensagens selecionadas, ou desafixa-as quando todas já estão afixadas.
+
+- Nova opção em Definições &gt; Acessibilidade &gt; Conteúdo falado: "Informar quantas mensagens estão afixadas ao abrir uma conversa", marcada por predefinição. Desmarcada, o WinZapp deixa de dizer "Mensagens afixadas nesta conversa: N" ao abrir uma conversa.
+
+- Nova opção em Definições &gt; Geral &gt; Notificações: "Notificar reações às suas mensagens", marcada por predefinição. Desmarcada, uma reação a uma mensagem sua não é lida, não toca som e não aparece nas notificações do Windows; continua a aparecer na mensagem e na lista de conversas.
+
+- Texto da mensagem (Alt+C): a janela ganha a caixa "Quebrar linhas longas", marcada por predefinição. Desmarcada, uma linha só termina onde a própria mensagem tem uma quebra de linha, seja qual for o tamanho da linha ou da janela. A escolha fica guardada para as próximas vezes, e copiar continua a entregar o texto tal como foi escrito.
+
+- Chamadas: uma chamada que começou no telemóvel e que passou a chamada de grupo pode ser retomada pelo WinZapp depois de sair dela: "Entrar na chamada de voz em curso" aparece na conversa de cada pessoa que continua nela, e a linha do separador Chamadas mostra o nome delas. Vale para Neonize e WPPConnect.
+
+- Neonize: ao entrar numa chamada de grupo que já está em curso, passa a ouvir as pessoas cujo telemóvel envia o áudio num formato que o WinZapp antes descartava; com elas, não ouvia ninguém.
+
+- Chamadas de grupo no Neonize: o áudio de cada pessoa passa a ter a sua própria reprodução com NetEQ, como nas chamadas individuais, o que suaviza as variações de rede e as perdas de áudio de cada uma separadamente; antes, o grupo inteiro era misturado sem ele, com mais falhas e atraso. A tradução em direto e os dispositivos não suportados pelo NetEQ continuam a usar o modo compatível.
+
+- Chamadas Neonize: quando um pacote de áudio se perde e o seguinte traz uma cópia dele, como alguns telemóveis enviam, o WinZapp passa a reproduzir essa cópia, em vez de preencher a falha com uma estimativa.
+
+- Guardar como (Ctrl+Shift+S) um documento JSON recebido numa conversa, como o ficheiro app.json das definições, passa a guardar o ficheiro, em vez de dizer que não foi possível transferi-lo.
+
+- Atalhos: ao passar para outra conta logo depois de alterar uma tecla, a conta que aparece responde à tecla nova mesmo quando a anterior ainda está a gravar as definições; antes podia ficar com a tecla antiga até guardar alguma coisa.
 
 - Ligação depois de muito tempo offline: o WinZapp recebe agora as mensagens, reações e confirmações de leitura acumuladas sem bloquear a interface a cada gravação na base de dados, e o motor Neonize grava a sua base de dados mais depressa.
 - macOS: escolher outro motor de ligação na janela de emparelhamento reinicia agora o WinZapp nele. Antes aparecia que o WinZapp não conseguiu reiniciar-se sozinho, e o motor não era alterado.
@@ -1486,7 +1561,7 @@ NOVIDADES
 
 - Versão portátil: no primeiro arranque, quando o WinZapp instalado no computador tem contas associadas, o WinZapp pergunta se quer usar uma cópia delas em vez de associar mais um dispositivo. A instalação só é lida; se estiver aberta, o WinZapp pede que a feche e escolha Repetir, e, se a cópia falhar, nada é alterado e é associado um novo dispositivo.
 
-- Definições &gt; Atalhos: as teclas que altera passam a valer para todas as contas da instalação, e não só para aquela em que as alterou; uma tecla definida para ir para a conta 2 responde em todas as contas. No primeiro arranque com esta versão, as teclas alteradas em cada conta juntam-se às da instalação: se ambas alteraram o mesmo comando, vale a da instalação, e uma tecla que outro comando já usa fica de fora.
+- Definições &gt; Atalhos: as teclas que altera passam a valer para todas as contas da instalação, e não só para aquela em que as alterou; uma tecla definida para ir para a conta 2 responde em todas as contas. No primeiro arranque com esta versão, as teclas alteradas em cada conta juntam-se às da instalação: se ambas alteraram o mesmo comando, vale a da instalação, e uma tecla que outro comando já usa fica de fora. Também pode manter teclas só para uma conta: a caixa "Usar os mesmos atalhos em todas as contas", no mesmo separador, vem marcada; desmarcada, as teclas que alterar nesta conta valem só para ela, e as das outras contas não mudam. A janela de alteração de cada atalho tem também a caixa "Usar este atalho em todas as contas", que segue a caixa geral até a alterar; um atalho que não segue a caixa geral aparece na lista com "em todas as contas" ou "só nesta conta".
 
 - Mensagens editadas: Eventos de som ganha "Edição da sua mensagem guardada" (ativado) e "Mensagem editada por outra pessoa" com o programa em primeiro e em segundo plano (desativados); Definições &gt; Geral &gt; Notificações ganha "Ler edições com a janela ativa" e "Notificar edições em segundo plano" (desativados); e a janela de dados de cada conversa tem uma janela "Mensagens editadas" para escolher sons e avisos diferentes nessa conversa. A edição de outra pessoa só é anunciada enquanto o WhatsApp ainda aceita editar essa mensagem, por isso as edições repetidas na religação ficam em silêncio.
 
@@ -2102,12 +2177,37 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="es" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
+
+- WPPConnect, conectar con código QR o con el número de teléfono: después de que el teléfono acepta el emparejamiento, WinZapp ya no dice que la conexión falló mientras WhatsApp Web todavía está abriendo los chats. La comprobación que se hace 4 minutos después del emparejamiento no podía leer el estado de la conexión en las versiones recientes de WhatsApp Web y daba por fallida una conexión que funcionaba.
+
+- WPPConnect: un navegador indicado en la variable de entorno PUPPETEER_EXECUTABLE_PATH, como un Chrome nativo de Windows en ARM, vuelve a usarse, y cuando hay más de una versión del navegador descargada, WinZapp usa la que pide WPPConnect, no la primera que encuentra.
+
+- Mensajes fijados: el botón de mensajes fijados del chat ahora abre la ventana "Mensajes fijados", con la lista de los fijados. Cada mensaje tiene el menú contextual y los atajos de la lista de mensajes: copiar, reenviar, reaccionar, destacar, desfijar, eliminar, transcribir y los demás, con las teclas que elegiste. Responder, editar y las otras acciones que llevan al chat cierran la ventana y se hacen en el mensaje, ya enfocado en el chat; Enter o "Ir al mensaje" te lleva a él en el historial.
+
+- Mensajes seleccionados: "Desfijar seleccionados", en "Acciones en masa" del menú contextual, desfija de una vez los mensajes seleccionados que están fijados. Con "Sustituir atajos por acciones en masa al seleccionar chats y mensajes" marcado, Ctrl+Shift+P fija los mensajes seleccionados, o los desfija cuando todos ya están fijados.
+
+- Nueva opción en Configuración &gt; Accesibilidad &gt; Contenido hablado: "Anunciar cuántos mensajes están fijados al abrir un chat", marcada por defecto. Desmarcada, WinZapp deja de decir "Mensajes fijados en este chat: N" al abrir un chat.
+
+- Nueva opción en Configuración &gt; General &gt; Notificaciones: "Notificar reacciones a tus mensajes", marcada por defecto. Desmarcada, una reacción a uno de tus mensajes no se lee, no suena y no aparece en las notificaciones de Windows; sigue apareciendo en el mensaje y en la lista de chats.
+
+- Texto del mensaje (Alt+C): la ventana tiene la nueva casilla "Ajustar las líneas largas", marcada por defecto. Desmarcada, una línea solo termina donde el propio mensaje tiene un salto de línea, sea cual sea la longitud de la línea o el tamaño de la ventana. La elección se recuerda para las próximas veces, y copiar sigue entregando el texto tal como se escribió.
+
+- Llamadas: una llamada que empezaste en el teléfono y que se convirtió en llamada de grupo se puede retomar desde WinZapp después de salir de ella: "Unirse a la llamada de voz en curso" aparece en la conversación de cada persona que sigue en ella, y su fila en la pestaña Llamadas muestra sus nombres. Funciona con Neonize y WPPConnect.
+
+- Neonize: al unirte a una llamada de grupo ya en curso, ahora oyes a las personas cuyo teléfono envía el audio en un formato que WinZapp antes descartaba; con ellas, no oías a nadie.
+
+- Llamadas de grupo en Neonize: el audio de cada persona tiene ahora su propia reproducción con NetEQ, como en las llamadas individuales, que suaviza las variaciones de red y las pérdidas de audio de cada una por separado; antes, todo el grupo se mezclaba sin él, con más cortes y retraso. La traducción en directo y los dispositivos no admitidos por NetEQ mantienen la reproducción compatible.
+
+- Llamadas Neonize: cuando se pierde un paquete de audio y el siguiente trae una copia de él, como envían algunos teléfonos, WinZapp ahora reproduce esa copia en lugar de rellenar el hueco con una estimación.
+
+- Guardar como (Ctrl+Shift+S) en un documento JSON recibido en una conversación, como el archivo app.json de la configuración, ahora guarda el archivo, en lugar de decir que no se pudo descargar.
+
+- Atajos de teclado: al pasar a otra cuenta justo después de cambiar una tecla, la cuenta que aparece responde a la tecla nueva aunque la anterior siga guardando su configuración; antes podía quedarse con la tecla antigua hasta guardar algo.
 
 - Reconexión tras mucho tiempo sin conexión: WinZapp ahora recibe los mensajes, reacciones y confirmaciones de lectura acumulados sin bloquear la interfaz en cada escritura en la base de datos, y el motor Neonize escribe su base de datos más rápido.
 - macOS: elegir otro motor de conexión en la ventana de vinculación ahora reinicia WinZapp con él. Antes decía que WinZapp no pudo reiniciarse por sí solo, y el motor no se cambiaba.
@@ -2183,7 +2283,7 @@ NOVEDADES
 
 - Versión portátil: en el primer inicio, cuando el WinZapp instalado en el equipo tiene cuentas vinculadas, WinZapp pregunta si quieres usar una copia de ellas en lugar de vincular un dispositivo más. La instalación solo se lee; si está abierta, WinZapp te pide que la cierres y elijas Reintentar, y si la copia falla no se cambia nada y se vincula un dispositivo nuevo.
 
-- Configuración &gt; Atajos de teclado: las teclas que cambias ahora valen para todas las cuentas de la instalación, y no solo para aquella en la que las cambiaste; una tecla definida para ir a la cuenta 2 responde en todas las cuentas. En el primer inicio con esta versión, las teclas cambiadas en cada cuenta se unen a las de la instalación: si ambas cambiaron el mismo comando, vale la de la instalación, y una tecla que otro comando ya usa queda fuera.
+- Configuración &gt; Atajos de teclado: las teclas que cambias ahora valen para todas las cuentas de la instalación, y no solo para aquella en la que las cambiaste; una tecla definida para ir a la cuenta 2 responde en todas las cuentas. En el primer inicio con esta versión, las teclas cambiadas en cada cuenta se unen a las de la instalación: si ambas cambiaron el mismo comando, vale la de la instalación, y una tecla que otro comando ya usa queda fuera. También puedes mantener teclas solo para una cuenta: la casilla "Usar los mismos atajos en todas las cuentas", en la misma pestaña, viene marcada; desmarcada, las teclas que cambies en esta cuenta valen solo para ella, y las de las demás cuentas no cambian. La ventana para cambiar cada atajo tiene también la casilla "Usar este atajo en todas las cuentas", que sigue a la general hasta que la cambies; un atajo que no sigue la casilla general aparece en la lista con "en todas las cuentas" o "solo en esta cuenta".
 
 - Mensajes editados: Eventos de sonido incorpora "Edición de tu mensaje guardada" (activado) y "Mensaje editado por otra persona" con el programa en primer plano y en segundo plano (desactivados); Configuración &gt; General &gt; Notificaciones incorpora "Leer ediciones con la ventana activa" y "Notificar ediciones en segundo plano" (desactivados); y la ventana de datos de cada chat tiene una ventana "Mensajes editados" para elegir sonidos y avisos distintos en ese chat. La edición de otra persona solo se anuncia mientras WhatsApp aún acepta editar ese mensaje, así que las ediciones repetidas al reconectar quedan en silencio.
 
@@ -2799,12 +2899,37 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="pl" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
+
+- WPPConnect, łączenie kodem QR lub numerem telefonu: gdy telefon zaakceptuje parowanie, WinZapp nie mówi już, że połączenie się nie udało, kiedy WhatsApp Web wciąż otwiera czaty. Sprawdzenie wykonywane 4 minuty po parowaniu nie potrafiło odczytać stanu połączenia w nowych wersjach WhatsApp Web i uznawało działające połączenie za nieudane.
+
+- WPPConnect: przeglądarka wskazana w zmiennej środowiskowej PUPPETEER_EXECUTABLE_PATH, np. natywny Chrome dla Windows na ARM, znów jest używana, a gdy pobrano kilka wersji przeglądarki, WinZapp używa tej, której wymaga WPPConnect, a nie pierwszej znalezionej.
+
+- Przypięte wiadomości: przycisk przypiętych wiadomości czatu otwiera teraz okno „Przypięte wiadomości” z listą przypiętych. Każda wiadomość ma menu kontekstowe i skróty listy wiadomości: kopiowanie, przekazywanie, reakcje, oznaczanie gwiazdką, odpinanie, usuwanie, transkrypcję i pozostałe, z wybranymi przez Ciebie klawiszami. Odpowiedź, edycja i inne akcje prowadzące do czatu zamykają okno i są wykonywane na wiadomości, na której w czacie jest już fokus; Enter lub „Przejdź do wiadomości” przenosi do niej w historii.
+
+- Zaznaczone wiadomości: „Odepnij zaznaczone” w „Akcje masowe” menu kontekstowego odpina naraz zaznaczone wiadomości, które są przypięte. Gdy zaznaczone jest „Zastąp skróty akcjami masowymi podczas zaznaczania czatów i wiadomości”, Ctrl+Shift+P przypina zaznaczone wiadomości albo je odpina, gdy wszystkie są już przypięte.
+
+- Nowa opcja w Ustawienia &gt; Dostępność &gt; Zawartość mówiona: „Ogłaszaj liczbę przypiętych wiadomości po otwarciu czatu”, domyślnie włączona. Po jej wyłączeniu WinZapp nie mówi już „Przypięte wiadomości w tym czacie: N” po otwarciu czatu.
+
+- Nowa opcja w Ustawienia &gt; Ogólne &gt; Powiadomienia: „Powiadamiaj o reakcjach na Twoje wiadomości”, domyślnie włączona. Po jej wyłączeniu reakcja na Twoją wiadomość nie jest odczytywana, nie odtwarza dźwięku i nie pojawia się w powiadomieniach Windows; nadal widać ją przy wiadomości i na liście czatów.
+
+- Tekst wiadomości (Alt+C): okno ma nowe pole wyboru „Zawijaj długie wiersze”, domyślnie zaznaczone. Po jego odznaczeniu wiersz kończy się tylko tam, gdzie sama wiadomość ma podział wiersza, niezależnie od długości wiersza i rozmiaru okna. Wybór jest zapamiętywany, a kopiowanie nadal daje tekst w takiej postaci, w jakiej został napisany.
+
+- Połączenia: połączenie rozpoczęte na telefonie, które stało się połączeniem grupowym, można wznowić w WinZapp po wyjściu z niego: „Dołącz do trwającego połączenia głosowego” pojawia się w czacie każdej osoby, która nadal w nim jest, a jego wiersz na karcie Połączenia pokazuje ich nazwy. Działa z Neonize i WPPConnect.
+
+- Neonize: po dołączeniu do trwającego już połączenia grupowego słychać teraz osoby, których telefony wysyłają dźwięk w formacie, który WinZapp wcześniej odrzucał; przy nich nie było słychać nikogo.
+
+- Połączenia grupowe Neonize: dźwięk każdej osoby ma teraz własne odtwarzanie z NetEQ, tak jak w połączeniach indywidualnych, co łagodzi wahania sieci i utratę dźwięku osobno dla każdej z nich; wcześniej cała grupa była miksowana bez niego, z większą liczbą przerw i opóźnieniem. Tłumaczenie na żywo i urządzenia nieobsługiwane przez NetEQ nadal korzystają ze zgodnego odtwarzania.
+
+- Połączenia Neonize: gdy pakiet dźwięku zaginie, a następny niesie jego kopię, jak wysyłają niektóre telefony, WinZapp odtwarza teraz tę kopię, zamiast wypełniać lukę oszacowaniem.
+
+- Zapisz jako (Ctrl+Shift+S) dla dokumentu JSON odebranego w czacie, na przykład pliku ustawień app.json, teraz zapisuje plik zamiast zgłaszać, że nie udało się go pobrać.
+
+- Skróty klawiszowe: po przełączeniu na inne konto zaraz po zmianie klawisza konto, które się pojawia, reaguje na nowy klawisz, nawet gdy poprzednie nadal zapisuje ustawienia; wcześniej mogło zostać przy starym klawiszu, dopóki czegoś nie zapisało.
 
 - Ponowne połączenie po długim czasie offline: WinZapp odbiera teraz nagromadzone wiadomości, reakcje i potwierdzenia odczytu bez zawieszania interfejsu przy każdym zapisie do bazy danych, a silnik Neonize zapisuje swoją bazę szybciej.
 - macOS: wybranie innego silnika połączenia w oknie łączenia uruchamia teraz WinZapp ponownie z tym silnikiem. Wcześniej pojawiał się komunikat, że WinZapp nie mógł uruchomić się ponownie samodzielnie, a silnik nie był zmieniany.
@@ -2881,7 +3006,7 @@ NOWOŚCI
 
 - Wersja przenośna: jeśli przy pierwszym uruchomieniu znajdzie połączone konta w zainstalowanej wersji WinZappa, proponuje ich skopiowanie zamiast ponownego łączenia urządzenia z WhatsAppem. Nie zmienia zainstalowanej wersji. Jeśli ta wersja jest uruchomiona, prosi o jej zamknięcie i wybranie „Ponów próbę”. Gdy kopiowanie się nie uda, przechodzi do łączenia nowego urządzenia.
 
-- Ustawienia &gt; Interfejs &gt; Skróty klawiszowe: zmienione przypisania klawiszy obowiązują we wszystkich kontach danej instalacji, a nie tylko na koncie, na którym je zmieniono. Na przykład skrót polecenia „Przełącz na konto 2” działa na każdym koncie. Przy pierwszym uruchomieniu tej wersji własne przypisania z poszczególnych kont są scalane z ustawieniami instalacji. Przy różnych przypisaniach tego samego polecenia pierwszeństwo ma ustawienie instalacji; przypisanie klawisza zajętego już przez inne polecenie jest pomijane.
+- Ustawienia &gt; Interfejs &gt; Skróty klawiszowe: zmienione przypisania klawiszy obowiązują na wszystkich kontach danej instalacji, a nie tylko na koncie, na którym je zmieniono. Na przykład skrót polecenia „Przełącz na konto 2” działa na każdym koncie. Przy pierwszym uruchomieniu tej wersji własne przypisania z poszczególnych kont są scalane z ustawieniami instalacji. Przy różnych przypisaniach tego samego polecenia pierwszeństwo ma ustawienie instalacji; przypisanie klawisza zajętego już przez inne polecenie jest pomijane. Można też zachować klawisze tylko dla jednego konta: pole wyboru „Używaj tych samych skrótów na wszystkich kontach” w tej samej karcie jest domyślnie zaznaczone; po jego odznaczeniu klawisze zmienione na tym koncie obowiązują tylko na nim, a pozostałe konta zachowują swoje. Okno zmiany każdego skrótu ma także pole wyboru „Używaj tego skrótu na wszystkich kontach”, które podąża za polem ogólnym, dopóki go nie zmienisz; skrót, który nie podąża za polem ogólnym, ma na liście dopisek „na wszystkich kontach” lub „tylko na tym koncie”.
 
 - Edytowane wiadomości: w ustawieniach Dźwięki zdarzeń dodano „Zapisano zmiany w Twojej wiadomości” (domyślnie włączone) oraz zdarzenia edycji wiadomości przez inną osobę, gdy WinZapp jest na pierwszym planie lub w tle (domyślnie wyłączone). W Ustawienia &gt; Ogólne &gt; Powiadomienia są opcje „Odczytuj wiadomości edytowane przez innych, gdy okno jest aktywne” oraz „Powiadamiaj o wiadomościach edytowanych przez inne osoby, gdy WinZapp jest w tle” (domyślnie wyłączone). Przycisk „Edytowane wiadomości” w oknie danych czatu otwiera jego własne ustawienia dźwięków i ogłoszeń. Zmiana treści wykonana przez inną osobę jest ogłaszana tylko w okresie, w którym WhatsApp nadal pozwala edytować tę wiadomość; starsze edycje odtworzone po ponownym połączeniu nie wywołują ogłoszeń.
 
@@ -3497,12 +3622,37 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="tr" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
+
+- WPPConnect, QR kodu veya telefon numarasıyla bağlanma: telefon eşleştirmeyi kabul ettikten sonra WhatsApp Web sohbetleri hâlâ açarken WinZapp artık bağlantının başarısız olduğunu söylemiyor. Eşleştirmeden 4 dakika sonra yapılan kontrol, WhatsApp Web'in yeni sürümlerinde bağlantı durumunu okuyamıyor ve çalışan bir bağlantıyı başarısız sayıyordu.
+
+- WPPConnect: PUPPETEER_EXECUTABLE_PATH ortam değişkeninde belirtilen bir tarayıcı, örneğin ARM üzerinde Windows için yerel bir Chrome, yeniden kullanılıyor; birden fazla tarayıcı sürümü indirilmişse WinZapp bulduğu ilk sürümü değil, WPPConnect'in istediğini kullanıyor.
+
+- Sabitlenen mesajlar: sohbetin sabitlenen mesajlar düğmesi artık sabitlenen mesajları listeleyen "Sabitlenen mesajlar" penceresini açıyor. Her mesajda mesaj listesinin bağlam menüsü ve kısayolları bulunur: kopyalama, iletme, tepki verme, yıldızlama, sabitlemeyi kaldırma, silme, yazıya dökme ve diğerleri, seçtiğiniz tuşlarla. Yanıtlama, düzenleme ve sizi sohbete götüren diğer işlemler pencereyi kapatır ve sohbette odaklanmış mesaj üzerinde yapılır; Enter veya "Mesaja git" sizi geçmişte o mesaja götürür.
+
+- Seçili mesajlar: bağlam menüsündeki "Toplu işlemler" altında "Seçilenlerin sabitlemesini kaldır", seçili mesajlardan sabitlenmiş olanların sabitlemesini tek seferde kaldırır. "Sohbet ve mesaj seçerken kısayolları toplu işlemlerle değiştir" işaretliyken Ctrl+Shift+P seçili mesajları sabitler, hepsi zaten sabitlenmişse sabitlemelerini kaldırır.
+
+- Ayarlar &gt; Erişilebilirlik &gt; Konuşulan içerik bölümünde yeni seçenek: "Bir sohbet açılınca kaç mesajın sabitlendiğini duyur", varsayılan olarak işaretli. İşaret kaldırılırsa WinZapp bir sohbet açıldığında artık "Bu sohbetteki sabitlenen mesajlar: N" demez.
+
+- Ayarlar &gt; Genel &gt; Bildirimler bölümünde yeni seçenek: "Mesajlarınıza gelen tepkileri bildir", varsayılan olarak işaretli. İşaret kaldırılırsa mesajlarınızdan birine gelen tepki okunmaz, ses çalmaz ve Windows bildirimlerinde görünmez; mesajın üzerinde ve sohbet listesinde görünmeye devam eder.
+
+- Mesaj metni (Alt+C): pencerede varsayılan olarak işaretli yeni "Uzun satırları kaydır" kutusu var. İşaret kaldırılırsa satır, satırın uzunluğu veya pencerenin boyutu ne olursa olsun yalnızca mesajın kendi satır sonunda biter. Seçim sonraki açılışlar için hatırlanır ve kopyalama metni yine yazıldığı gibi verir.
+
+- Aramalar: telefonda başlattığınız ve grup aramasına dönüşen bir aramaya, ondan ayrıldıktan sonra WinZapp üzerinden yeniden katılabilirsiniz: aramada kalan her kişinin sohbetinde "Devam eden sesli aramaya katıl" görünür ve Aramalar sekmesindeki satırı onların adlarını gösterir. Neonize ve WPPConnect ile çalışır.
+
+- Neonize: zaten sürmekte olan bir grup aramasına katıldığınızda, telefonu sesi WinZapp'in önceden attığı bir biçimde gönderen kişileri artık duyarsınız; onlarla kimseyi duymuyordunuz.
+
+- Neonize grup aramaları: her kişinin sesi artık bire bir aramalarda olduğu gibi kendi NetEQ oynatmasına sahip; bu, her birinin ağ dalgalanmalarını ve ses kaybını ayrı ayrı azaltır. Önceden tüm grup NetEQ olmadan karıştırılıyordu ve daha fazla kesinti ve gecikme oluyordu. Canlı çeviri ve NetEQ tarafından desteklenmeyen aygıtlar uyumlu oynatmayı kullanmaya devam eder.
+
+- Neonize aramaları: bir ses paketi kaybolduğunda ve sonraki paket onun bir kopyasını taşıdığında (bazı telefonlar bunu gönderir), WinZapp artık boşluğu bir tahminle doldurmak yerine bu kopyayı çalar.
+
+- Bir sohbette alınan JSON belgesinde, örneğin ayarların app.json dosyasında, Farklı Kaydet (Ctrl+Shift+S) artık indirilemediğini söylemek yerine dosyayı kaydeder.
+
+- Kısayollar: bir tuşu değiştirdikten hemen sonra başka bir hesaba geçtiğinizde, önceki hesap ayarlarını hâlâ kaydediyor olsa bile açılan hesap yeni tuşa yanıt verir; önceden bir şey kaydedene kadar eski tuşta kalabiliyordu.
 
 - Uzun süre çevrimdışı kaldıktan sonra yeniden bağlanma: WinZapp artık biriken mesajları, tepkileri ve okundu bilgilerini her veritabanı yazımında arayüzü dondurmadan alıyor ve Neonize motoru veritabanını daha hızlı yazıyor.
 - macOS: eşleştirme penceresinde başka bir bağlantı motoru seçmek artık WinZapp'ı o motorla yeniden başlatıyor. Önceden WinZapp'ın kendi kendine yeniden başlatılamadığı söyleniyor ve motor değiştirilmiyordu.
@@ -3578,7 +3728,7 @@ YENİLİKLER
 
 - Taşınabilir sürüm: ilk başlatmada, bilgisayarda kurulu WinZapp'ın bağlı hesapları varsa WinZapp, bir cihaz daha bağlamak yerine bunların bir kopyasını kullanmak isteyip istemediğinizi sorar. Kurulum yalnızca okunur; çalışıyorsa WinZapp kapatmanızı ve Yeniden Dene'yi seçmenizi ister, kopyalama başarısız olursa hiçbir şey değişmez ve yeni bir cihaz bağlanır.
 
-- Ayarlar &gt; Kısayollar: değiştirdiğiniz tuşlar artık yalnızca değiştirdiğiniz hesapta değil, kurulumun tüm hesaplarında geçerlidir; 2. hesaba geç için ayarlanan tuş her hesaptan yanıt verir. Bu sürümle ilk başlatmada her hesabın değiştirilmiş tuşları kurulumunkilere katılır: ikisi de aynı komutu değiştirdiyse kurulumun tuşu kalır, başka bir komutun zaten kullandığı tuş dışarıda bırakılır.
+- Ayarlar &gt; Kısayollar: değiştirdiğiniz tuşlar artık yalnızca değiştirdiğiniz hesapta değil, kurulumun tüm hesaplarında geçerlidir; 2. hesaba geç için ayarlanan tuş her hesaptan yanıt verir. Bu sürümle ilk başlatmada her hesabın değiştirilmiş tuşları kurulumunkilere katılır: ikisi de aynı komutu değiştirdiyse kurulumun tuşu kalır, başka bir komutun zaten kullandığı tuş dışarıda bırakılır. Tuşları yalnızca bir hesap için de tutabilirsiniz: aynı sekmedeki "Tüm hesaplarda aynı kısayolları kullan" kutusu işaretli gelir; işareti kaldırılınca bu hesapta değiştirdiğiniz tuşlar yalnızca onda geçerli olur, diğer hesaplar kendi tuşlarını korur. Her kısayolun değiştirme penceresinde de "Bu kısayolu tüm hesaplarda kullan" kutusu vardır; siz değiştirene kadar genel kutuyu izler. Genel kutuyu izlemeyen bir kısayol listede "tüm hesaplarda" ya da "yalnızca bu hesapta" ile görünür.
 
 - Düzenlenen mesajlar: Ses olayları'na "Mesajınızdaki düzenleme kaydedildi" (açık) ile program ön planda ve arka plandayken "Başkası tarafından düzenlenen mesaj" (kapalı) eklendi; Ayarlar &gt; Genel &gt; Bildirimler'e "Pencere etkinken düzenlemeleri oku" ve "Arka planda düzenlemeleri bildir" (kapalı) eklendi; her sohbetin veri penceresinde de o sohbet için farklı sesler ve duyurular seçmeye yarayan bir "Düzenlenen mesajlar" penceresi var. Başkasının düzenlemesi yalnızca WhatsApp o iletinin düzenlenmesini hâlâ kabul ettiği sürece duyurulur; bu yüzden yeniden bağlanınca tekrarlanan düzenlemeler sessiz kalır.
 
@@ -4194,12 +4344,37 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="ro" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
+
+- WPPConnect, conectarea cu cod QR sau cu numărul de telefon: după ce telefonul acceptă asocierea, WinZapp nu mai spune că conectarea a eșuat cât timp WhatsApp Web încă deschide conversațiile. Verificarea făcută la 4 minute după asociere nu putea citi starea conexiunii în versiunile recente ale WhatsApp Web și considera eșuată o conexiune care funcționa.
+
+- WPPConnect: un browser indicat în variabila de mediu PUPPETEER_EXECUTABLE_PATH, cum ar fi un Chrome nativ pentru Windows pe ARM, este folosit din nou, iar când sunt descărcate mai multe versiuni ale browserului, WinZapp o folosește pe cea cerută de WPPConnect, nu prima pe care o găsește.
+
+- Mesaje fixate: butonul de mesaje fixate al conversației deschide acum fereastra „Mesaje fixate”, cu lista mesajelor fixate. Fiecare mesaj are meniul contextual și comenzile rapide ale listei de mesaje: copiere, redirecționare, reacție, marcare cu stea, anularea fixării, ștergere, transcriere și celelalte, cu tastele pe care le-ați ales. Răspunsul, editarea și celelalte acțiuni care vă duc în conversație închid fereastra și se fac pe mesaj, deja focalizat în conversație; Enter sau „Accesați mesajul” vă duce la el în istoric.
+
+- Mesaje selectate: „Anulați fixarea selecției”, din „Acțiuni în bloc” din meniul contextual, anulează dintr-o dată fixarea mesajelor selectate care sunt fixate. Cu „Înlocuiți comenzile rapide cu acțiuni în bloc atunci când selectați conversații și mesaje” bifată, Ctrl+Shift+P fixează mesajele selectate sau le anulează fixarea când toate sunt deja fixate.
+
+- Opțiune nouă în Setări &gt; Accesibilitate &gt; Conținut vorbit: „Anunțați câte mesaje sunt fixate la deschiderea unei conversații”, bifată implicit. Debifată, WinZapp nu mai spune „Mesaje fixate în acest chat: N” când deschideți o conversație.
+
+- Opțiune nouă în Setări &gt; Generale &gt; Notificări: „Notifică reacțiile la mesajele dvs.”, bifată implicit. Debifată, o reacție la un mesaj al dvs. nu este citită, nu redă niciun sunet și nu apare în notificările Windows; ea apare în continuare pe mesaj și în lista de conversații.
+
+- Textul mesajului (Alt+C): fereastra are caseta nouă „Încadrează rândurile lungi”, bifată implicit. Debifată, un rând se termină doar acolo unde mesajul însuși are un sfârșit de rând, oricare ar fi lungimea rândului sau mărimea ferestrei. Alegerea este reținută, iar copierea dă în continuare textul așa cum a fost scris.
+
+- Apeluri: un apel început de pe telefon care a devenit apel de grup poate fi reluat din WinZapp după ce ați ieșit din el: „Alăturați-vă apelului vocal în desfășurare” apare în conversația fiecărei persoane care este încă în apel, iar rândul lui din fila Apeluri arată numele lor. Funcționează cu Neonize și WPPConnect.
+
+- Neonize: când intrați într-un apel de grup deja în desfășurare, acum auziți persoanele al căror telefon trimite sunetul într-un format pe care WinZapp îl arunca înainte; cu ele, nu auzeați pe nimeni.
+
+- Apeluri de grup Neonize: sunetul fiecărei persoane are acum propria redare cu NetEQ, ca în apelurile individuale, care atenuează variațiile rețelei și pierderile audio ale fiecăreia separat; înainte, tot grupul era mixat fără el, cu mai multe întreruperi și întârziere. Traducerea în timp real și dispozitivele neacceptate de NetEQ păstrează redarea compatibilă.
+
+- Apeluri Neonize: când se pierde un pachet audio și următorul aduce o copie a lui, cum trimit unele telefoane, WinZapp redă acum acea copie în loc să umple golul cu o estimare.
+
+- Salvare ca (Ctrl+Shift+S) pe un document JSON primit într-o conversație, cum ar fi fișierul de setări app.json, salvează acum fișierul în loc să spună că nu a putut fi descărcat.
+
+- Comenzi rapide: când treceți la alt cont imediat după ce ați schimbat o tastă, contul care apare răspunde la tasta nouă chiar dacă cel anterior încă își salvează setările; înainte putea rămâne pe tasta veche până salva ceva.
 
 - Reconectare după mult timp offline: WinZapp primește acum mesajele, reacțiile și confirmările de citire acumulate fără să blocheze interfața la fiecare scriere în baza de date, iar motorul Neonize își scrie baza de date mai repede.
 - macOS: alegerea altui motor de conectare în fereastra de asociere repornește acum WinZapp cu acel motor. Înainte apărea mesajul că WinZapp nu a putut reporni singur, iar motorul nu era schimbat.
@@ -4275,7 +4450,7 @@ NOUTĂȚI
 
 - Versiunea portabilă: la prima pornire, când WinZapp instalat pe computer are conturi asociate, WinZapp întreabă dacă doriți să folosiți o copie a lor în loc să asociați încă un dispozitiv. Instalarea este doar citită; dacă rulează, WinZapp vă cere să o închideți și să alegeți Reîncercare, iar dacă copierea eșuează nu se schimbă nimic și se asociază un dispozitiv nou.
 
-- Setări &gt; Comenzi rapide: tastele pe care le schimbați se aplică acum tuturor conturilor instalării, nu doar celui în care le-ați schimbat; o tastă setată pentru treceți la contul 2 răspunde din orice cont. La prima pornire cu această versiune, tastele schimbate în fiecare cont se alătură celor ale instalării: dacă ambele au schimbat aceeași comandă, rămâne tasta instalării, iar o tastă pe care o folosește deja altă comandă este lăsată deoparte.
+- Setări &gt; Comenzi rapide: tastele pe care le schimbați se aplică acum tuturor conturilor instalării, nu doar celui în care le-ați schimbat; o tastă setată pentru treceți la contul 2 răspunde din orice cont. La prima pornire cu această versiune, tastele schimbate în fiecare cont se alătură celor ale instalării: dacă ambele au schimbat aceeași comandă, rămâne tasta instalării, iar o tastă pe care o folosește deja altă comandă este lăsată deoparte. Puteți păstra și taste doar pentru un cont: caseta „Folosește aceleași comenzi rapide în toate conturile”, din aceeași filă, vine bifată; debifată, tastele pe care le schimbați în acest cont se aplică doar lui, iar celelalte conturi le păstrează pe ale lor. Fereastra de modificare a fiecărei comenzi rapide are și caseta „Folosește această comandă rapidă în toate conturile”, care urmează caseta generală până când o schimbați; o comandă rapidă care nu urmează caseta generală apare în listă cu „în toate conturile” sau „doar în acest cont”.
 
 - Mesaje editate: Evenimente sonore primește „Editarea mesajului dvs. a fost salvată” (activat) și „Mesaj editat de altcineva” pentru programul în prim-plan și în fundal (dezactivate); Setări &gt; General &gt; Notificări primește „Citește editările când fereastra este activă” și „Notifică editările în fundal” (dezactivate); iar fereastra de date a fiecărei conversații are o fereastră „Mesaje editate” pentru a alege sunete și anunțuri diferite în acea conversație. Editarea altcuiva este anunțată doar cât timp WhatsApp mai acceptă editarea acelui mesaj, deci editările reluate după o reconectare rămân tăcute.
 
@@ -4891,12 +5066,37 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="ar" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
+
+- WPPConnect، الاتصال برمز QR أو برقم الهاتف: بعد أن يقبل الهاتف الاقتران، لم يعد WinZapp يقول إن الاتصال فشل بينما لا يزال واتساب ويب يفتح الدردشات. كان الفحص الذي يجري بعد 4 دقائق من الاقتران لا يستطيع قراءة حالة الاتصال في الإصدارات الحديثة من واتساب ويب، فيعدّ اتصالًا يعمل اتصالًا فاشلًا.
+
+- WPPConnect: يُستخدم من جديد المتصفح المحدد في متغير البيئة PUPPETEER_EXECUTABLE_PATH، مثل Chrome أصلي لويندوز على ARM، وعندما تكون هناك أكثر من نسخة منزّلة من المتصفح يستخدم WinZapp النسخة التي تطلبها WPPConnect، لا أول نسخة يجدها.
+
+- الرسائل المثبتة: يفتح زر الرسائل المثبتة في الدردشة الآن نافذة «الرسائل المثبتة» التي تعرض قائمة الرسائل المثبتة. لكل رسالة فيها قائمة السياق واختصارات قائمة الرسائل: النسخ وإعادة التوجيه ورد الفعل والتمييز بنجمة وإلغاء التثبيت والحذف والتفريغ النصي وغيرها، بالمفاتيح التي اخترتها. الرد والتعديل والإجراءات الأخرى التي تنقلك إلى الدردشة تغلق النافذة وتُنفَّذ على الرسالة بعد التركيز عليها في الدردشة؛ وينقلك Enter أو «اذهب إلى الرسالة» إليها في السجل.
+
+- الرسائل المحددة: يلغي «إلغاء تثبيت المحدد»، في «إجراءات جماعية» من قائمة السياق، تثبيت الرسائل المحددة المثبتة دفعة واحدة. وعند تفعيل «استبدال الاختصارات بإجراءات جماعية عند تحديد الدردشات والرسائل»، يثبّت Ctrl+Shift+P الرسائل المحددة، أو يلغي تثبيتها إذا كانت كلها مثبتة.
+
+- خيار جديد في الإعدادات &gt; إمكانية الوصول &gt; المحتوى المنطوق: «الإعلان عن عدد الرسائل المثبتة عند فتح دردشة»، مفعّل افتراضيًا. عند إلغاء تفعيله، لا يقول WinZapp بعد الآن «الرسائل المثبتة في هذه الدردشة: N» عند فتح دردشة.
+
+- خيار جديد في الإعدادات &gt; عام &gt; الإشعارات: «إشعار بردود الفعل على رسائلك»، مفعّل افتراضيًا. عند إلغاء تفعيله، لا يُنطق رد الفعل على إحدى رسائلك ولا يُشغَّل له صوت ولا يظهر في إشعارات ويندوز؛ ويبقى ظاهرًا على الرسالة وفي قائمة الدردشات.
+
+- نص الرسالة (Alt+C): في النافذة خانة جديدة «التفاف الأسطر الطويلة»، مفعّلة افتراضيًا. عند إلغاء تفعيلها، لا ينتهي السطر إلا حيث يوجد فاصل أسطر في الرسالة نفسها، مهما كان طول السطر أو حجم النافذة. يُحفظ الاختيار للمرات القادمة، ويبقى النسخ يعطي النص كما كُتب.
+
+- المكالمات: يمكن الآن الانضمام من جديد من WinZapp إلى مكالمة بدأتها من هاتفك ثم صارت مكالمة جماعية، بعد أن تغادرها: يظهر «انضم إلى المكالمة الصوتية الجارية» في دردشة كل شخص لا يزال فيها، ويعرض صفها في تبويب المكالمات أسماءهم. يعمل مع Neonize وWPPConnect.
+
+- Neonize: عند الانضمام إلى مكالمة جماعية جارية بالفعل، تسمع الآن الأشخاص الذين ترسل هواتفهم الصوت بصيغة كان WinZapp يتجاهلها من قبل؛ ومعهم لم تكن تسمع أحدًا.
+
+- مكالمات Neonize الجماعية: أصبح لصوت كل شخص الآن تشغيله الخاص باستخدام NetEQ، كما في المكالمات الفردية، مما يخفف تقلبات الشبكة وفقدان الصوت لكل منهم على حدة؛ وكانت المجموعة كلها تُمزج من قبل بدونه، مع انقطاعات وتأخير أكثر. تستمر الترجمة المباشرة والأجهزة التي لا يدعمها NetEQ في استخدام التشغيل المتوافق.
+
+- مكالمات Neonize: عندما تُفقد حزمة صوت وتحمل الحزمة التالية نسخة منها، كما ترسل بعض الهواتف، يشغّل WinZapp الآن هذه النسخة بدلًا من ملء الفجوة بتقدير.
+
+- أصبح «حفظ باسم» (Ctrl+Shift+S) لمستند JSON مستلَم في دردشة، مثل ملف الإعدادات app.json، يحفظ الملف بدلًا من القول إنه تعذّر تنزيله.
+
+- الاختصارات: عند الانتقال إلى حساب آخر بعد تغيير مفتاح مباشرة، يستجيب الحساب الذي يظهر للمفتاح الجديد حتى لو كان الحساب السابق لا يزال يحفظ إعداداته؛ وكان من قبل قد يبقى على المفتاح القديم حتى يحفظ شيئًا.
 
 - إعادة الاتصال بعد وقت طويل دون اتصال: يستقبل WinZapp الآن الرسائل والتفاعلات وإيصالات القراءة المتراكمة دون تجميد الواجهة عند كل عملية كتابة في قاعدة البيانات، ويكتب محرك Neonize قاعدة بياناته بسرعة أكبر.
 - macOS: اختيار محرك اتصال آخر في نافذة الاقتران يعيد الآن تشغيل WinZapp عليه. كانت تظهر سابقًا رسالة بأنه تعذر على WinZapp إعادة تشغيل نفسه، ولم يتغير المحرك.
@@ -4972,7 +5172,7 @@ NOUTĂȚI
 
 - النسخة المحمولة: عند أول تشغيل، إن كان لـ WinZapp المثبت على الحاسوب حسابات مرتبطة، يسأل WinZapp هل تريد استخدام نسخة منها بدل ربط جهاز آخر. يُقرأ التثبيت فقط؛ وإن كان قيد التشغيل يطلب منك إغلاقه واختيار إعادة المحاولة، وإن فشل النسخ لا يتغير شيء ويُربط جهاز جديد.
 
-- الإعدادات &gt; اختصارات لوحة المفاتيح: أصبحت المفاتيح التي تغيّرها سارية على كل حسابات التثبيت، لا على الحساب الذي غيّرتها فيه وحده؛ فالمفتاح المعيَّن لـالانتقال إلى الحساب 2 يستجيب من كل حساب. عند أول تشغيل بهذا الإصدار تنضم المفاتيح المغيَّرة في كل حساب إلى مفاتيح التثبيت: إن غيّر الاثنان الأمر نفسه بقي مفتاح التثبيت، ويُستبعد المفتاح الذي يستخدمه أمر آخر بالفعل.
+- الإعدادات &gt; اختصارات لوحة المفاتيح: أصبحت المفاتيح التي تغيّرها سارية على كل حسابات التثبيت، لا على الحساب الذي غيّرتها فيه وحده؛ فالمفتاح المعيَّن لـالانتقال إلى الحساب 2 يستجيب من كل حساب. عند أول تشغيل بهذا الإصدار تنضم المفاتيح المغيَّرة في كل حساب إلى مفاتيح التثبيت: إن غيّر الاثنان الأمر نفسه بقي مفتاح التثبيت، ويُستبعد المفتاح الذي يستخدمه أمر آخر بالفعل. ويمكنك أيضًا الاحتفاظ بمفاتيح لحساب واحد فقط: يأتي المربع "استخدام نفس الاختصارات في جميع الحسابات" في الصفحة نفسها محددًا؛ وعند إلغاء تحديده تسري المفاتيح التي تغيّرها في هذا الحساب عليه وحده، وتحتفظ الحسابات الأخرى بمفاتيحها. وفي نافذة تغيير كل اختصار أيضًا المربع "استخدام هذا الاختصار في جميع الحسابات"، الذي يتبع المربع العام إلى أن تغيّره؛ ويظهر الاختصار الذي لا يتبع المربع العام في القائمة مع "في جميع الحسابات" أو "في هذا الحساب فقط".
 
 - الرسائل المعدّلة: تضيف أحداث الصوت «تم حفظ تعديل رسالتك» (مفعّل) و«رسالة عدّلها شخص آخر» للبرنامج في المقدمة وفي الخلفية (معطّلان)؛ وتضيف الإعدادات &gt; عام &gt; الإشعارات «قراءة التعديلات والنافذة نشطة» و«إشعار بالتعديلات في الخلفية» (معطّلان)؛ ولنافذة بيانات كل محادثة نافذة «الرسائل المعدّلة» لاختيار أصوات وإعلانات مختلفة لتلك المحادثة. لا يُعلَن عن تعديل شخص آخر إلا ما دام واتساب يقبل تعديل تلك الرسالة، فتبقى التعديلات المعادة بعد إعادة الاتصال صامتة.
 
@@ -5590,12 +5790,37 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="it" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
+
+- WPPConnect, connessione con codice QR o con il numero di telefono: dopo che il telefono accetta l'associazione, WinZapp non dice più che la connessione non è riuscita mentre WhatsApp Web sta ancora aprendo le chat. Il controllo fatto 4 minuti dopo l'associazione non riusciva a leggere lo stato della connessione nelle versioni recenti di WhatsApp Web e dava per fallita una connessione che funzionava.
+
+- WPPConnect: un browser indicato nella variabile d'ambiente PUPPETEER_EXECUTABLE_PATH, come un Chrome nativo per Windows su ARM, viene di nuovo usato, e quando sono scaricate più versioni del browser WinZapp usa quella richiesta da WPPConnect, non la prima che trova.
+
+- Messaggi fissati: il pulsante dei messaggi fissati della chat ora apre la finestra "Messaggi fissati", con l'elenco dei messaggi fissati. Ogni messaggio ha il menu contestuale e le scorciatoie dell'elenco dei messaggi: copiare, inoltrare, reagire, aggiungere ai preferiti, sfissare, eliminare, trascrivere e gli altri, con i tasti che hai scelto. Rispondere, modificare e le altre azioni che portano nella chat chiudono la finestra e si eseguono sul messaggio, già a fuoco nella chat; Invio o "Vai al messaggio" ti porta al messaggio nella cronologia.
+
+- Messaggi selezionati: "Sfissa selezionati", in "Azioni in blocco" nel menu contestuale, sfissa in una volta i messaggi selezionati che sono fissati. Con "Sostituisci le scorciatoie con le azioni in blocco quando selezioni chat e messaggi" attivato, Ctrl+Shift+P fissa i messaggi selezionati, oppure li sfissa quando sono già tutti fissati.
+
+- Nuova opzione in Impostazioni &gt; Accessibilità &gt; Contenuto parlato: "Annuncia quanti messaggi sono fissati all'apertura di una chat", attiva per impostazione predefinita. Disattivata, WinZapp non dice più "Messaggi fissati in questa chat: N" quando apri una chat.
+
+- Nuova opzione in Impostazioni &gt; Generale &gt; Notifiche: "Notifica le reazioni ai tuoi messaggi", attiva per impostazione predefinita. Disattivata, una reazione a un tuo messaggio non viene letta, non suona e non compare nelle notifiche di Windows; continua a comparire sul messaggio e nell'elenco delle chat.
+
+- Testo del messaggio (Alt+C): la finestra ha la nuova casella "A capo automatico delle righe lunghe", attiva per impostazione predefinita. Disattivata, una riga finisce solo dove il messaggio stesso va a capo, qualunque sia la lunghezza della riga o la dimensione della finestra. La scelta viene ricordata, e la copia restituisce sempre il testo come è stato scritto.
+
+- Chiamate: una chiamata iniziata dal telefono e diventata di gruppo si può riprendere da WinZapp dopo esserne usciti: "Unisciti alla chiamata vocale in corso" compare nella chat di ogni persona ancora presente, e la sua riga nella scheda Chiamate mostra i loro nomi. Funziona con Neonize e WPPConnect.
+
+- Neonize: entrando in una chiamata di gruppo già in corso, ora senti le persone il cui telefono invia l’audio in un formato che WinZapp prima scartava; con loro non sentivi nessuno.
+
+- Chiamate di gruppo Neonize: l’audio di ogni persona ha ora la sua riproduzione con NetEQ, come nelle chiamate individuali, che attenua le variazioni di rete e le perdite audio di ciascuna separatamente; prima tutto il gruppo veniva mixato senza, con più interruzioni e ritardo. La traduzione dal vivo e i dispositivi non supportati da NetEQ mantengono la riproduzione compatibile.
+
+- Chiamate Neonize: quando un pacchetto audio va perso e il successivo ne porta una copia, come inviano alcuni telefoni, WinZapp ora riproduce quella copia invece di riempire il vuoto con una stima.
+
+- Salva con nome (Ctrl+Shift+S) su un documento JSON ricevuto in una chat, come il file app.json delle impostazioni, ora salva il file invece di dire che non è stato possibile scaricarlo.
+
+- Scorciatoie da tastiera: passando a un altro account subito dopo aver cambiato un tasto, l’account che compare risponde al tasto nuovo anche mentre il precedente sta ancora salvando le impostazioni; prima poteva restare sul tasto vecchio finché non salvava qualcosa.
 
 - Riconnessione dopo molto tempo offline: WinZapp ora riceve i messaggi, le reazioni e le conferme di lettura accumulati senza bloccare l'interfaccia a ogni scrittura nel database, e il motore Neonize scrive il suo database più velocemente.
 - macOS: scegliere un altro motore di connessione nella finestra di associazione ora riavvia WinZapp con quel motore. Prima diceva che WinZapp non era riuscito a riavviarsi automaticamente e il motore non veniva cambiato.
@@ -5671,7 +5896,7 @@ WHAT'S NEW
 
 - Versione portatile: al primo avvio, quando il WinZapp installato sul computer ha account collegati, WinZapp chiede se vuoi usarne una copia invece di collegare un altro dispositivo. L'installazione viene solo letta; se è in esecuzione, WinZapp ti chiede di chiuderla e scegliere Riprova, e se la copia fallisce non cambia nulla e viene collegato un nuovo dispositivo.
 
-- Impostazioni &gt; Scorciatoie da tastiera: i tasti che cambi ora valgono per tutti gli account dell'installazione, non solo per quello in cui li hai cambiati; un tasto impostato per passa all'account 2 risponde da ogni account. Al primo avvio con questa versione, i tasti cambiati in ogni account si uniscono a quelli dell'installazione: se entrambi hanno cambiato lo stesso comando resta il tasto dell'installazione, e un tasto che un altro comando usa già viene lasciato fuori.
+- Impostazioni &gt; Scorciatoie da tastiera: i tasti che cambi ora valgono per tutti gli account dell'installazione, non solo per quello in cui li hai cambiati; un tasto impostato per passa all'account 2 risponde da ogni account. Al primo avvio con questa versione, i tasti cambiati in ogni account si uniscono a quelli dell'installazione: se entrambi hanno cambiato lo stesso comando resta il tasto dell'installazione, e un tasto che un altro comando usa già viene lasciato fuori. Puoi anche tenere tasti solo per un account: la casella "Usa le stesse scorciatoie in tutti gli account", nella stessa scheda, è selezionata; deselezionata, i tasti che cambi in questo account valgono solo per lui, e quelli degli altri account non cambiano. La finestra di modifica di ogni scorciatoia ha anche la casella "Usa questa scorciatoia in tutti gli account", che segue quella generale finché non la cambi; una scorciatoia che non segue la casella generale compare nell'elenco con "in tutti gli account" o "solo in questo account".
 
 - Messaggi modificati: Eventi sonori ottiene "Modifica del tuo messaggio salvata" (attivo) e "Messaggio modificato da un'altra persona" per il programma in primo piano e in background (disattivi); Impostazioni &gt; Generale &gt; Notifiche ottiene "Leggi le modifiche con la finestra attiva" e "Notifica le modifiche in background" (disattivi); e la finestra dei dati di ogni conversazione ha una finestra "Messaggi modificati" per scegliere suoni e annunci diversi in quella chat. La modifica di un'altra persona viene annunciata solo finché WhatsApp accetta ancora di modificare quel messaggio, quindi le modifiche riproposte dopo una riconnessione restano silenziose.
 
@@ -6287,12 +6512,37 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
-- Make the NetEq toolchain opt-in in setup-neonize (#933)
+      <description xml:lang="cs" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
 NOVINKY
+
+- WPPConnect, připojení kódem QR nebo telefonním číslem: když telefon spárování přijme, WinZapp už neříká, že se připojení nezdařilo, zatímco WhatsApp Web ještě otevírá chaty. Kontrola prováděná 4 minuty po spárování nedokázala v nových verzích WhatsApp Webu přečíst stav připojení a funkční připojení vyhodnotila jako neúspěšné.
+
+- WPPConnect: prohlížeč uvedený v proměnné prostředí PUPPETEER_EXECUTABLE_PATH, například nativní Chrome pro Windows na ARM, se zase používá, a když je staženo více verzí prohlížeče, WinZapp použije tu, kterou požaduje WPPConnect, ne první nalezenou.
+
+- Připnuté zprávy: tlačítko připnutých zpráv chatu teď otevírá okno „Připnuté zprávy“ se seznamem připnutých zpráv. Každá zpráva v něm má místní nabídku a klávesové zkratky seznamu zpráv: kopírování, přeposlání, reakci, označení hvězdičkou, odepnutí, smazání, přepis a ostatní, s klávesami, které jste si zvolili. Odpověď, úprava a další akce, které vedou do chatu, okno zavřou a provedou se na zprávě, na které už je v chatu fokus; Enter nebo „Přejít na zprávu“ vás k ní přenese v historii.
+
+- Vybrané zprávy: „Odepnout vybrané“ v „Hromadné akce“ místní nabídky odepne najednou vybrané zprávy, které jsou připnuté. Když je zaškrtnuto „Při výběru chatů a zpráv nahradit zkratky hromadnými akcemi“, Ctrl+Shift+P vybrané zprávy připne, nebo je odepne, když už jsou připnuté všechny.
+
+- Nová volba v Nastavení &gt; Přístupnost &gt; Mluvený obsah: „Při otevření chatu ohlásit počet připnutých zpráv“, ve výchozím stavu zapnutá. Když ji vypnete, WinZapp už po otevření chatu neříká „Připnuté zprávy v tomto chatu: N“.
+
+- Nová volba v Nastavení &gt; Obecné &gt; Oznámení: „Oznamovat reakce na vaše zprávy“, ve výchozím stavu zapnutá. Když ji vypnete, reakce na vaši zprávu se nepřečte, nepřehraje zvuk a neobjeví se v oznámeních Windows; dál je vidět u zprávy a v seznamu chatů.
+
+- Text zprávy (Alt+C): okno má nové zaškrtávací políčko „Zalamovat dlouhé řádky“, ve výchozím stavu zaškrtnuté. Když ho zrušíte, řádek končí jen tam, kde má zpráva sama zalomení řádku, bez ohledu na délku řádku nebo velikost okna. Volba se pamatuje i pro příště a kopírování dál vrací text tak, jak byl napsán.
+
+- Hovory: hovor, který jste zahájili v telefonu a který se změnil na skupinový, můžete po svém odchodu znovu připojit z WinZappu: v chatu každé osoby, která v něm zůstává, se objeví „Připojit se k probíhajícímu hlasovému hovoru“ a řádek na kartě Hovory ukazuje jejich jména. Platí pro Neonize i WPPConnect.
+
+- Neonize: když se připojíte ke skupinovému hovoru, který už probíhá, nově uslyšíte lidi, jejichž telefon posílá zvuk ve formátu, který WinZapp dříve zahazoval; s nimi jste neslyšeli nikoho.
+
+- Skupinové hovory Neonize: zvuk každé osoby má nyní vlastní přehrávání pomocí NetEQ, stejně jako v individuálních hovorech, které vyrovnává kolísání sítě a výpadky zvuku každé z nich zvlášť; dříve se celá skupina míchala bez něj, s více výpadky a zpožděním. Živý překlad a zařízení nepodporovaná NetEQ nadále používají kompatibilní přehrávání.
+
+- Hovory Neonize: když se ztratí zvukový paket a další nese jeho kopii, jak ji některé telefony posílají, WinZapp nyní přehraje tuto kopii, místo aby mezeru vyplnil odhadem.
+
+- Uložit jako (Ctrl+Shift+S) u dokumentu JSON přijatého v chatu, například souboru nastavení app.json, nyní soubor uloží, místo aby oznámilo, že ho nelze stáhnout.
+
+- Klávesové zkratky: když hned po změně klávesy přepnete na jiný účet, zobrazený účet reaguje na novou klávesu, i když předchozí účet ještě ukládá nastavení; dříve mohl zůstat u staré klávesy, dokud něco neuložil.
 
 - Opětovné připojení po dlouhé době offline: WinZapp nyní přijímá nahromaděné zprávy, reakce a potvrzení o přečtení, aniž by se při každém zápisu do databáze zasekávalo rozhraní, a engine Neonize zapisuje svou databázi rychleji.
 - macOS: volba jiného enginu připojení v okně párování teď WinZapp restartuje s tímto enginem. Dříve se zobrazilo, že se WinZapp nemohl sám restartovat, a engine se nezměnil.
@@ -6368,7 +6618,7 @@ NOVINKY
 
 - Přenosná verze: při prvním spuštění, když WinZapp nainstalovaný v počítači má spárované účty, se WinZapp zeptá, zda místo připojení dalšího zařízení použít jejich kopii. Instalace se jen čte; pokud běží, WinZapp vás požádá, abyste ji zavřeli a zvolili Zkusit znovu, a pokud se kopírování nezdaří, nic se nezmění a připojí se nové zařízení.
 
-- Nastavení &gt; Klávesové zkratky: klávesy, které změníte, se nově uplatní u všech účtů instalace, nejen u toho, kde jste je změnili; klávesa nastavená pro přepnutí na účet 2 reaguje z každého účtu. Při prvním spuštění s touto verzí se změněné klávesy každého účtu přidají k těm instalace: když oba změnily tentýž příkaz, zůstane klávesa instalace, a klávesa, kterou už používá jiný příkaz, se vynechá.
+- Nastavení &gt; Klávesové zkratky: klávesy, které změníte, se nově uplatní u všech účtů instalace, nejen u toho, kde jste je změnili; klávesa nastavená pro přepnutí na účet 2 reaguje z každého účtu. Při prvním spuštění s touto verzí se změněné klávesy každého účtu přidají k těm instalace: když oba změnily tentýž příkaz, zůstane klávesa instalace, a klávesa, kterou už používá jiný příkaz, se vynechá. Klávesy si také můžete ponechat jen pro jeden účet: políčko „Používat stejné zkratky ve všech účtech“ na téže stránce je zaškrtnuté; když ho zrušíte, klávesy, které v tomto účtu změníte, platí jen pro něj a ostatní účty si ponechají své. Okno Změnit u každé zkratky má také políčko „Používat tuto zkratku ve všech účtech“, které se řídí obecným políčkem, dokud ho nezměníte; zkratka, která se obecným políčkem neřídí, má v seznamu uvedeno „ve všech účtech“ nebo „jen v tomto účtu“.
 
 - Upravené zprávy: Zvukové události získávají „Úprava vaší zprávy uložena“ (zapnuto) a „Zprávu upravil někdo jiný“ pro program v popředí a na pozadí (vypnuto); Nastavení &gt; Obecné &gt; Oznámení získává „Vyslovovat úpravy, když je okno aktivní“ a „Oznamovat úpravy, když je okno na pozadí“ (vypnuto); a okno s údaji každého chatu má okno „Upravené zprávy“ pro volbu jiných zvuků a oznámení pro daný chat. Úprava od někoho jiného se oznámí, jen dokud WhatsApp úpravu dané zprávy ještě přijímá, takže úpravy přehrané po opětovném připojení zůstanou tiché.
 
@@ -6984,6 +7234,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6003alpha/WinZapp-macOS-x86_64.zip" length="382921641" type="application/octet-stream" sparkle:edSignature="FKwJVhE/z0+9D2vbOW1YiKYHfbAGJj69GMODQ2JlUGTRYuBvb0wJO8Vfp5GPefdfJClO1GPufMOeDCMrhG0ADg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.6002alpha</title>
+      <pubDate>Thu, 26 Nov 2026 04:02:33 +0000</pubDate>
+      <sparkle:version>3.0.0.60021</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6002alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6002alpha/WinZapp-macOS-x86_64.zip" length="383090109" type="application/octet-stream" sparkle:edSignature="JPdPHI/V5T54URbopeg8db2ll7Yi1M0zPcgtzaJlwmTGsRbU8513o8bY7JLt59Z+eJQ0rJcYARVaydwOCaNeBA=="></enclosure>
     </item>
     <item>
@@ -7012,15 +7271,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5983alpha/WinZapp-macOS-x86_64.zip" length="383510986" type="application/octet-stream" sparkle:edSignature="MJlcztXS091YYA7V9cPXbgQIZJFCw0VV3Bo0utTf1Z18bnQtWGNVyiP4uYMywyZ6zgoCKrG8En5IH+HIN+ZGAw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5979alpha</title>
-      <pubDate>Wed, 25 Nov 2026 21:41:21 +0000</pubDate>
-      <sparkle:version>3.0.0.59791</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5979alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5979alpha/WinZapp-macOS-x86_64.zip" length="383509185" type="application/octet-stream" sparkle:edSignature="6iwGw/8unSc4CbvM074LauxfCnzUeWFT7TiMGfOP6LoYwnNtqOcB+/Kl1v4zt9gyrlWLt1YkeBpmxomJx91eBg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7097,6 +7347,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: eshPqAQYL6dD73y+5+6yPVeEWahtwKeXqbT/h5+Ccinx9ulYCntjh8zXgmLztl+plzTo4ocbc/LqDQF5bd5cAQ==
-length: 1162949
+edSignature: z3l7DwNpj9YpR1retfEEyB16QFJ6N/SOyajdbKM4kLsC+f1OhQtl4Q7s2aBDYBbRi3MTuPRuoEsjqN5bb7HsBA==
+length: 1210239
 -->
