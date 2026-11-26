@@ -5,19 +5,20 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.5992alpha</title>
-      <pubDate>Thu, 26 Nov 2026 02:47:55 +0000</pubDate>
-      <sparkle:version>3.0.0.59921</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5992alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.6002alpha</title>
+      <pubDate>Thu, 26 Nov 2026 04:02:33 +0000</pubDate>
+      <sparkle:version>3.0.0.60021</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6002alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="en" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Reconnecting after a long time offline: WinZapp now receives the accumulated messages, reactions and read receipts without freezing the interface on every database write, and the Neonize engine writes its database faster.
 - macOS: choosing another connection engine in the pairing window now restarts WinZapp on it. It used to say that WinZapp could not restart by itself, and the engine was not changed.
 - History of unknown groups: WinZapp no longer freezes its interface when it recovers old messages of a group it did not know yet. It used to look up the group's name on the interface thread, and each lookup could take up to 10 seconds during which WinZapp did not respond. The name is now looked up in the background and appears as soon as it arrives.
 - When the playback or recording device chosen in Settings, such as headphones, is not connected as WinZapp starts, WinZapp now says so once and uses the system default device, instead of showing a message box at every launch. The box held up startup until it was answered, so a launch with no one at the computer ended in an error saying the WinZapp API had failed to start in time, and the program closed. The chosen device is kept and used again once it is connected.
@@ -707,13 +708,14 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Reconexão depois de muito tempo offline: o WinZapp agora recebe as mensagens, reações e confirmações de leitura acumuladas sem travar a interface a cada gravação no banco de dados, e o motor Neonize grava o seu banco mais rápido.
 - macOS: escolher outro motor de conexão na janela de pareamento agora reinicia o WinZapp nele. Antes aparecia que o WinZapp não conseguiu se reiniciar sozinho, e o motor não era alterado.
 - Histórico de grupos desconhecidos: o WinZapp não trava mais a interface ao recuperar mensagens antigas de um grupo que ainda não conhecia. Antes ele buscava o nome do grupo na própria thread da interface, e cada busca podia levar até 10 segundos sem que o WinZapp respondesse. Agora o nome é buscado em segundo plano e aparece assim que chega.
 - Quando o dispositivo de reprodução ou de gravação escolhido nas Configurações, como um fone de ouvido, não está conectado ao iniciar o WinZapp, o WinZapp agora avisa uma única vez por voz e usa o dispositivo padrão do sistema, em vez de mostrar uma caixa de mensagem a cada inicialização. A caixa travava a inicialização até ser respondida, então um início sem ninguém no computador terminava num erro dizendo que a API do WinZapp não iniciou a tempo, e o programa fechava. O dispositivo escolhido é mantido e volta a ser usado assim que estiver conectado.
@@ -1403,13 +1405,14 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Ligação depois de muito tempo offline: o WinZapp recebe agora as mensagens, reações e confirmações de leitura acumuladas sem bloquear a interface a cada gravação na base de dados, e o motor Neonize grava a sua base de dados mais depressa.
 - macOS: escolher outro motor de ligação na janela de emparelhamento reinicia agora o WinZapp nele. Antes aparecia que o WinZapp não conseguiu reiniciar-se sozinho, e o motor não era alterado.
 - Histórico de grupos desconhecidos: o WinZapp já não bloqueia a interface ao recuperar mensagens antigas de um grupo que ainda não conhecia. Antes procurava o nome do grupo na própria thread da interface, e cada pesquisa podia demorar até 10 segundos sem que o WinZapp respondesse. Agora o nome é procurado em segundo plano e aparece assim que chega.
 - Quando o dispositivo de reprodução ou de gravação escolhido nas Definições, como uns auscultadores, não está ligado ao iniciar o WinZapp, o WinZapp avisa agora uma única vez por voz e usa o dispositivo predefinido do sistema, em vez de mostrar uma caixa de mensagem em cada arranque. A caixa bloqueava o arranque até ser respondida, pelo que um arranque sem ninguém ao computador terminava num erro a dizer que a API do WinZapp não iniciou a tempo, e o programa fechava. O dispositivo escolhido é mantido e volta a ser usado assim que estiver ligado.
@@ -2099,13 +2102,14 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="es" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Reconexión tras mucho tiempo sin conexión: WinZapp ahora recibe los mensajes, reacciones y confirmaciones de lectura acumulados sin bloquear la interfaz en cada escritura en la base de datos, y el motor Neonize escribe su base de datos más rápido.
 - macOS: elegir otro motor de conexión en la ventana de vinculación ahora reinicia WinZapp con él. Antes decía que WinZapp no pudo reiniciarse por sí solo, y el motor no se cambiaba.
 - Historial de grupos desconocidos: WinZapp ya no bloquea la interfaz al recuperar mensajes antiguos de un grupo que aún no conocía. Antes buscaba el nombre del grupo en el propio hilo de la interfaz, y cada búsqueda podía tardar hasta 10 segundos sin que WinZapp respondiera. Ahora el nombre se busca en segundo plano y aparece en cuanto llega.
 - Cuando el dispositivo de reproducción o de grabación elegido en la Configuración, como unos auriculares, no está conectado al iniciar WinZapp, WinZapp ahora lo avisa una sola vez por voz y usa el dispositivo predeterminado del sistema, en lugar de mostrar un cuadro de mensaje en cada inicio. El cuadro detenía el inicio hasta que se respondía, así que un inicio sin nadie frente al ordenador terminaba en un error que decía que la API de WinZapp no se había iniciado a tiempo, y el programa se cerraba. El dispositivo elegido se conserva y se vuelve a usar en cuanto se conecta.
@@ -2795,13 +2799,14 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="pl" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Ponowne połączenie po długim czasie offline: WinZapp odbiera teraz nagromadzone wiadomości, reakcje i potwierdzenia odczytu bez zawieszania interfejsu przy każdym zapisie do bazy danych, a silnik Neonize zapisuje swoją bazę szybciej.
 - macOS: wybranie innego silnika połączenia w oknie łączenia uruchamia teraz WinZapp ponownie z tym silnikiem. Wcześniej pojawiał się komunikat, że WinZapp nie mógł uruchomić się ponownie samodzielnie, a silnik nie był zmieniany.
 - Historia nieznanych grup: WinZapp nie blokuje już interfejsu podczas odzyskiwania starych wiadomości grupy, której jeszcze nie znał. Wcześniej szukał nazwy grupy w wątku interfejsu, a każde wyszukiwanie mogło trwać do 10 sekund, w czasie których WinZapp nie odpowiadał. Teraz nazwa jest pobierana w tle i pojawia się, gdy tylko nadejdzie.
 - Gdy wybrane w Ustawieniach urządzenie odtwarzające lub nagrywające, na przykład słuchawki, nie jest podłączone przy uruchamianiu WinZapp, WinZapp teraz informuje o tym jeden raz mową i używa domyślnego urządzenia systemu, zamiast pokazywać okno komunikatu przy każdym uruchomieniu. Okno wstrzymywało uruchamianie do czasu odpowiedzi, więc uruchomienie bez nikogo przy komputerze kończyło się błędem, że API WinZapp nie uruchomiło się na czas, i program się zamykał. Wybrane urządzenie zostaje zachowane i jest znowu używane, gdy tylko zostanie podłączone.
@@ -3492,13 +3497,14 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="tr" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Uzun süre çevrimdışı kaldıktan sonra yeniden bağlanma: WinZapp artık biriken mesajları, tepkileri ve okundu bilgilerini her veritabanı yazımında arayüzü dondurmadan alıyor ve Neonize motoru veritabanını daha hızlı yazıyor.
 - macOS: eşleştirme penceresinde başka bir bağlantı motoru seçmek artık WinZapp'ı o motorla yeniden başlatıyor. Önceden WinZapp'ın kendi kendine yeniden başlatılamadığı söyleniyor ve motor değiştirilmiyordu.
 - Bilinmeyen grupların geçmişi: WinZapp, henüz tanımadığı bir grubun eski iletilerini kurtarırken artık arayüzü kilitlemiyor. Önceden grubun adını arayüz iş parçacığında arıyordu ve her arama 10 saniyeye kadar sürebiliyor, bu sürede WinZapp yanıt vermiyordu. Ad artık arka planda aranıyor ve gelir gelmez görünüyor.
 - Ayarlar'da seçilen oynatma ya da kayıt cihazı, örneğin kulaklık, WinZapp başlarken bağlı değilse WinZapp artık bunu bir kez sesli olarak bildirir ve sistemin varsayılan cihazını kullanır; her açılışta bir ileti kutusu göstermez. Kutu yanıtlanana kadar açılışı bekletiyordu, bu yüzden bilgisayar başında kimse yokken yapılan bir açılış, WinZapp API'nin zamanında başlatılamadığını söyleyen bir hatayla bitiyor ve program kapanıyordu. Seçilen cihaz korunur ve bağlandığı anda yeniden kullanılır.
@@ -4188,13 +4194,14 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="ro" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Reconectare după mult timp offline: WinZapp primește acum mesajele, reacțiile și confirmările de citire acumulate fără să blocheze interfața la fiecare scriere în baza de date, iar motorul Neonize își scrie baza de date mai repede.
 - macOS: alegerea altui motor de conectare în fereastra de asociere repornește acum WinZapp cu acel motor. Înainte apărea mesajul că WinZapp nu a putut reporni singur, iar motorul nu era schimbat.
 - Istoricul grupurilor necunoscute: WinZapp nu mai blochează interfața când recuperează mesaje vechi ale unui grup pe care nu îl cunoștea încă. Înainte căuta numele grupului chiar în firul interfeței, iar fiecare căutare putea dura până la 10 secunde, timp în care WinZapp nu răspundea. Acum numele este căutat în fundal și apare imediat ce ajunge.
 - Când dispozitivul de redare sau de înregistrare ales în Setări, de exemplu căștile, nu este conectat la pornirea WinZapp, WinZapp anunță acum acest lucru o singură dată prin voce și folosește dispozitivul implicit al sistemului, în loc să afișeze o casetă de mesaj la fiecare pornire. Caseta oprea pornirea până când primea un răspuns, așa că o pornire fără nimeni la calculator se termina cu o eroare că WinZapp API nu a pornit la timp, iar programul se închidea. Dispozitivul ales este păstrat și folosit din nou imediat ce este conectat.
@@ -4884,13 +4891,14 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="ar" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- إعادة الاتصال بعد وقت طويل دون اتصال: يستقبل WinZapp الآن الرسائل والتفاعلات وإيصالات القراءة المتراكمة دون تجميد الواجهة عند كل عملية كتابة في قاعدة البيانات، ويكتب محرك Neonize قاعدة بياناته بسرعة أكبر.
 - macOS: اختيار محرك اتصال آخر في نافذة الاقتران يعيد الآن تشغيل WinZapp عليه. كانت تظهر سابقًا رسالة بأنه تعذر على WinZapp إعادة تشغيل نفسه، ولم يتغير المحرك.
 - سجل المجموعات غير المعروفة: لم يعد WinZapp يجمّد الواجهة عند استعادة رسائل قديمة لمجموعة لم يكن يعرفها بعد. كان يبحث سابقًا عن اسم المجموعة في خيط الواجهة نفسه، وقد يستغرق كل بحث حتى 10 ثوانٍ لا يستجيب خلالها WinZapp. الآن يُبحث عن الاسم في الخلفية ويظهر فور وصوله.
 - عندما لا يكون جهاز التشغيل أو التسجيل المختار في الإعدادات، مثل سماعات الرأس، متصلًا عند بدء WinZapp، يعلن WinZapp ذلك الآن مرة واحدة بالكلام ويستخدم الجهاز الافتراضي للنظام، بدلًا من عرض مربع رسالة عند كل تشغيل. كان المربع يوقف بدء التشغيل حتى تتم الإجابة عليه، لذلك كان التشغيل دون وجود أحد أمام الحاسوب ينتهي بخطأ يفيد بأن واجهة WinZapp البرمجية لم تبدأ في الوقت المحدد، ثم يُغلق البرنامج. يُحتفظ بالجهاز المختار ويُستخدم مجددًا بمجرد توصيله.
@@ -5582,13 +5590,14 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="it" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Riconnessione dopo molto tempo offline: WinZapp ora riceve i messaggi, le reazioni e le conferme di lettura accumulati senza bloccare l'interfaccia a ogni scrittura nel database, e il motore Neonize scrive il suo database più velocemente.
 - macOS: scegliere un altro motore di connessione nella finestra di associazione ora riavvia WinZapp con quel motore. Prima diceva che WinZapp non era riuscito a riavviarsi automaticamente e il motore non veniva cambiato.
 - Cronologia dei gruppi sconosciuti: WinZapp non blocca più l'interfaccia quando recupera vecchi messaggi di un gruppo che non conosceva ancora. Prima cercava il nome del gruppo nel thread dell'interfaccia, e ogni ricerca poteva durare fino a 10 secondi senza che WinZapp rispondesse. Ora il nome viene cercato in background e compare appena arriva.
 - Quando il dispositivo di riproduzione o di registrazione scelto nelle Impostazioni, ad esempio delle cuffie, non è collegato all'avvio di WinZapp, WinZapp ora lo annuncia una sola volta a voce e usa il dispositivo predefinito del sistema, invece di mostrare una finestra di messaggio a ogni avvio. La finestra bloccava l'avvio finché non veniva confermata, quindi un avvio senza nessuno al computer finiva con un errore secondo cui l'API di WinZapp non si era avviata in tempo, e il programma si chiudeva. Il dispositivo scelto viene mantenuto e torna a essere usato appena viene collegato.
@@ -6278,13 +6287,14 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Prepare the pinned NetEq toolchain in setup-neonize (#929)
-- Avoid blocking the UI on historical group name lookups (#931)
+      <description xml:lang="cs" sparkle:format="plain-text">- Speed up offline replay and queue UI event persistence (#932)
+- Make the NetEq toolchain opt-in in setup-neonize (#933)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
 NOVINKY
 
+- Opětovné připojení po dlouhé době offline: WinZapp nyní přijímá nahromaděné zprávy, reakce a potvrzení o přečtení, aniž by se při každém zápisu do databáze zasekávalo rozhraní, a engine Neonize zapisuje svou databázi rychleji.
 - macOS: volba jiného enginu připojení v okně párování teď WinZapp restartuje s tímto enginem. Dříve se zobrazilo, že se WinZapp nemohl sám restartovat, a engine se nezměnil.
 - Historie neznámých skupin: WinZapp už nezamrzá, když obnovuje staré zprávy skupiny, kterou ještě neznal. Dříve hledal název skupiny přímo ve vlákně rozhraní a každé hledání mohlo trvat až 10 sekund, během nichž WinZapp neodpovídal. Název se nyní hledá na pozadí a zobrazí se, jakmile dorazí.
 - Když přehrávací nebo nahrávací zařízení vybrané v Nastavení, například sluchátka, není při spuštění WinZappu připojené, WinZapp to teď jednou oznámí hlasem a použije výchozí zařízení systému, místo aby při každém spuštění zobrazil okno se zprávou. Okno zdržovalo spuštění, dokud na něj nikdo neodpověděl, takže spuštění bez nikoho u počítače skončilo chybou, že se API WinZappu nespustilo včas, a program se zavřel. Vybrané zařízení zůstává nastavené a znovu se použije, jakmile se připojí.
@@ -6974,6 +6984,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6002alpha/WinZapp-macOS-x86_64.zip" length="383090109" type="application/octet-stream" sparkle:edSignature="JPdPHI/V5T54URbopeg8db2ll7Yi1M0zPcgtzaJlwmTGsRbU8513o8bY7JLt59Z+eJQ0rJcYARVaydwOCaNeBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.5992alpha</title>
+      <pubDate>Thu, 26 Nov 2026 02:47:55 +0000</pubDate>
+      <sparkle:version>3.0.0.59921</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.5992alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5992alpha/WinZapp-macOS-x86_64.zip" length="383077826" type="application/octet-stream" sparkle:edSignature="CmBHyjzSJbyYVfhXmBG0/BJGQlD5LnDnOpq2PqIun/OZkn0HfBe+43wGr05Bl0k48nYvezR5ubr9I1cEAsH8Dw=="></enclosure>
     </item>
     <item>
@@ -7002,15 +7021,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5979alpha/WinZapp-macOS-x86_64.zip" length="383509185" type="application/octet-stream" sparkle:edSignature="6iwGw/8unSc4CbvM074LauxfCnzUeWFT7TiMGfOP6LoYwnNtqOcB+/Kl1v4zt9gyrlWLt1YkeBpmxomJx91eBg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5977alpha</title>
-      <pubDate>Wed, 25 Nov 2026 17:57:00 +0000</pubDate>
-      <sparkle:version>3.0.0.59771</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5977alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5977alpha/WinZapp-macOS-x86_64.zip" length="383485602" type="application/octet-stream" sparkle:edSignature="YtU6ceZSkL/aEXP/2t4mRJbPQH6Lq+XsMV730Elwe05iRL9LQPqwLksxO+wF0UZleCIC3XRCpeadN9+lNRtHDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7087,6 +7097,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: AMfb/tgxcbz/g/aJyvpS8es08b6gk7ZRpT5xViGPZXxVeBojhfpM3f1UzCbWaYJNTvZtOXH/18S8/94dVaZFAQ==
-length: 1160417
+edSignature: eshPqAQYL6dD73y+5+6yPVeEWahtwKeXqbT/h5+Ccinx9ulYCntjh8zXgmLztl+plzTo4ocbc/LqDQF5bd5cAQ==
+length: 1162949
 -->
