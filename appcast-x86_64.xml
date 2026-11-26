@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.6003alpha</title>
-      <pubDate>Thu, 26 Nov 2026 15:32:41 +0000</pubDate>
-      <sparkle:version>3.0.0.60031</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6003alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.6004alpha</title>
+      <pubDate>Thu, 26 Nov 2026 19:21:56 +0000</pubDate>
+      <sparkle:version>3.0.0.60041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6004alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="en" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -733,7 +733,7 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -1455,7 +1455,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
@@ -2177,7 +2177,7 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="es" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
@@ -2899,7 +2899,7 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="pl" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
@@ -3622,7 +3622,7 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="tr" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
@@ -4344,7 +4344,7 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="ro" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
@@ -5066,7 +5066,7 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="ar" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
@@ -5790,7 +5790,7 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="it" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
@@ -6512,7 +6512,7 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- General fixes: pinned messages window, per-account shortcuts, call rejoin, Neonize group NetEq, #912 pairing (#934)
+      <description xml:lang="cs" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
@@ -7234,6 +7234,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6004alpha/WinZapp-macOS-x86_64.zip" length="382948563" type="application/octet-stream" sparkle:edSignature="ootJYmR0HIFHEhRocgfx0E6fV8wW7LaXE3qTyTA164o+N6GjCYOqipF/TyxvA/acCmlwMrBBRuNEjDvi5TjNBA=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.6003alpha</title>
+      <pubDate>Thu, 26 Nov 2026 15:32:41 +0000</pubDate>
+      <sparkle:version>3.0.0.60031</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6003alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6003alpha/WinZapp-macOS-x86_64.zip" length="382921641" type="application/octet-stream" sparkle:edSignature="FKwJVhE/z0+9D2vbOW1YiKYHfbAGJj69GMODQ2JlUGTRYuBvb0wJO8Vfp5GPefdfJClO1GPufMOeDCMrhG0ADg=="></enclosure>
     </item>
     <item>
@@ -7262,15 +7271,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5986alpha/WinZapp-macOS-x86_64.zip" length="383519363" type="application/octet-stream" sparkle:edSignature="x0PEtI2WQB2c/RBlaydoZ08YXlDnaqWpFA4FTi9Cb5jrEIFXga2YIEXK+KaQaKuq/BGenVnRgfkx0kjce1ooAg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5983alpha</title>
-      <pubDate>Wed, 25 Nov 2026 22:56:38 +0000</pubDate>
-      <sparkle:version>3.0.0.59831</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5983alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5983alpha/WinZapp-macOS-x86_64.zip" length="383510986" type="application/octet-stream" sparkle:edSignature="MJlcztXS091YYA7V9cPXbgQIZJFCw0VV3Bo0utTf1Z18bnQtWGNVyiP4uYMywyZ6zgoCKrG8En5IH+HIN+ZGAw=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7347,6 +7347,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: z3l7DwNpj9YpR1retfEEyB16QFJ6N/SOyajdbKM4kLsC+f1OhQtl4Q7s2aBDYBbRi3MTuPRuoEsjqN5bb7HsBA==
-length: 1210239
+edSignature: vNdd/GO8+z7fgb9EEUlg7rIno+VOonK7AcBjfoVQZ1FP/h+16mhtmufClkmvqaJ5dkuTbxq5J2+rdKoR0izmDg==
+length: 1209829
 -->
