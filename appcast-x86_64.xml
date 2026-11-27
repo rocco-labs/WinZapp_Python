@@ -5,18 +5,19 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.6004alpha</title>
-      <pubDate>Thu, 26 Nov 2026 19:21:56 +0000</pubDate>
-      <sparkle:version>3.0.0.60041</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6004alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.6005alpha</title>
+      <pubDate>Fri, 27 Nov 2026 00:44:35 +0000</pubDate>
+      <sparkle:version>3.0.0.60051</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6005alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Sent messages: with the Neonize engine, messages you sent could disappear from the conversation when WinZapp was reopened, because no copy of them was stored. Each sent message is now stored as soon as its delivery is confirmed.
 - WPPConnect, connecting with a QR code or a phone number: after the phone accepts the pairing, WinZapp no longer says the connection failed while WhatsApp Web is still opening the chats. The check made 4 minutes after pairing could not read the connection state on recent WhatsApp Web versions and reported a working connection as failed.
 
 - WPPConnect: a browser named in the PUPPETEER_EXECUTABLE_PATH environment variable, such as a native Chrome for Windows on ARM, is used again, and when more than one browser version is downloaded WinZapp uses the one WPPConnect asks for, not the first one it finds.
@@ -733,12 +734,13 @@ WHAT'S NEW
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
 - Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Mensagens enviadas: no motor Neonize, as mensagens que você enviava podiam sumir da conversa ao reabrir o WinZapp, porque nenhuma cópia delas era guardada. Agora cada mensagem enviada é guardada assim que o envio é confirmado.
 - WPPConnect, conectar com QR-CODE ou pelo número de telefone: depois que o celular aceita o pareamento, o WinZapp não diz mais que a conexão falhou enquanto o WhatsApp Web ainda está abrindo as conversas. A verificação feita 4 minutos depois do pareamento não conseguia ler o estado da conexão nas versões recentes do WhatsApp Web e dava como falha uma conexão que estava funcionando.
 
 - WPPConnect: um navegador indicado na variável de ambiente PUPPETEER_EXECUTABLE_PATH, como um Chrome nativo do Windows em ARM, volta a ser usado, e, quando há mais de uma versão do navegador baixada, o WinZapp usa a que a WPPConnect pede, e não a primeira que encontra.
@@ -1455,12 +1457,13 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
 - Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- Mensagens enviadas: no motor Neonize, as mensagens que enviava podiam desaparecer da conversa ao reabrir o WinZapp, porque nenhuma cópia delas era guardada. Agora cada mensagem enviada é guardada assim que o envio é confirmado.
 - WPPConnect, ligar com QR-CODE ou pelo número de telefone: depois de o telemóvel aceitar o emparelhamento, o WinZapp já não diz que a ligação falhou enquanto o WhatsApp Web ainda está a abrir as conversas. A verificação feita 4 minutos depois do emparelhamento não conseguia ler o estado da ligação nas versões recentes do WhatsApp Web e dava como falhada uma ligação que estava a funcionar.
 
 - WPPConnect: um navegador indicado na variável de ambiente PUPPETEER_EXECUTABLE_PATH, como um Chrome nativo do Windows em ARM, volta a ser usado, e, quando há mais de uma versão do navegador transferida, o WinZapp usa a que a WPPConnect pede, e não a primeira que encontra.
@@ -2177,12 +2180,13 @@ NOVIDADES
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
 - Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="es" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- Mensajes enviados: con el motor Neonize, los mensajes que enviabas podían desaparecer de la conversación al reabrir WinZapp, porque no se guardaba ninguna copia. Ahora cada mensaje enviado se guarda en cuanto se confirma el envío.
 - WPPConnect, conectar con código QR o con el número de teléfono: después de que el teléfono acepta el emparejamiento, WinZapp ya no dice que la conexión falló mientras WhatsApp Web todavía está abriendo los chats. La comprobación que se hace 4 minutos después del emparejamiento no podía leer el estado de la conexión en las versiones recientes de WhatsApp Web y daba por fallida una conexión que funcionaba.
 
 - WPPConnect: un navegador indicado en la variable de entorno PUPPETEER_EXECUTABLE_PATH, como un Chrome nativo de Windows en ARM, vuelve a usarse, y cuando hay más de una versión del navegador descargada, WinZapp usa la que pide WPPConnect, no la primera que encuentra.
@@ -2899,12 +2903,13 @@ NOVEDADES
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
 - Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- Wysłane wiadomości: w silniku Neonize wiadomości, które wysłałeś, mogły znikać z rozmowy po ponownym otwarciu WinZapp, ponieważ nie zapisywano ich kopii. Teraz każda wysłana wiadomość jest zapisywana, gdy tylko wysłanie zostanie potwierdzone.
 - WPPConnect, łączenie kodem QR lub numerem telefonu: gdy telefon zaakceptuje parowanie, WinZapp nie mówi już, że połączenie się nie udało, kiedy WhatsApp Web wciąż otwiera czaty. Sprawdzenie wykonywane 4 minuty po parowaniu nie potrafiło odczytać stanu połączenia w nowych wersjach WhatsApp Web i uznawało działające połączenie za nieudane.
 
 - WPPConnect: przeglądarka wskazana w zmiennej środowiskowej PUPPETEER_EXECUTABLE_PATH, np. natywny Chrome dla Windows na ARM, znów jest używana, a gdy pobrano kilka wersji przeglądarki, WinZapp używa tej, której wymaga WPPConnect, a nie pierwszej znalezionej.
@@ -3622,12 +3627,13 @@ NOWOŚCI
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
 - Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- Gönderilen mesajlar: Neonize motorunda, gönderdiğiniz mesajlar WinZapp yeniden açıldığında konuşmadan kaybolabiliyordu, çünkü bir kopyaları saklanmıyordu. Gönderilen her mesaj artık gönderimi onaylanır onaylanmaz saklanıyor.
 - WPPConnect, QR kodu veya telefon numarasıyla bağlanma: telefon eşleştirmeyi kabul ettikten sonra WhatsApp Web sohbetleri hâlâ açarken WinZapp artık bağlantının başarısız olduğunu söylemiyor. Eşleştirmeden 4 dakika sonra yapılan kontrol, WhatsApp Web'in yeni sürümlerinde bağlantı durumunu okuyamıyor ve çalışan bir bağlantıyı başarısız sayıyordu.
 
 - WPPConnect: PUPPETEER_EXECUTABLE_PATH ortam değişkeninde belirtilen bir tarayıcı, örneğin ARM üzerinde Windows için yerel bir Chrome, yeniden kullanılıyor; birden fazla tarayıcı sürümü indirilmişse WinZapp bulduğu ilk sürümü değil, WPPConnect'in istediğini kullanıyor.
@@ -4344,12 +4350,13 @@ YENİLİKLER
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
 - Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- Mesaje trimise: cu motorul Neonize, mesajele pe care le trimiteai puteau dispărea din conversație la redeschiderea WinZapp, pentru că nu se salva nicio copie a lor. Acum fiecare mesaj trimis este salvat imediat ce trimiterea este confirmată.
 - WPPConnect, conectarea cu cod QR sau cu numărul de telefon: după ce telefonul acceptă asocierea, WinZapp nu mai spune că conectarea a eșuat cât timp WhatsApp Web încă deschide conversațiile. Verificarea făcută la 4 minute după asociere nu putea citi starea conexiunii în versiunile recente ale WhatsApp Web și considera eșuată o conexiune care funcționa.
 
 - WPPConnect: un browser indicat în variabila de mediu PUPPETEER_EXECUTABLE_PATH, cum ar fi un Chrome nativ pentru Windows pe ARM, este folosit din nou, iar când sunt descărcate mai multe versiuni ale browserului, WinZapp o folosește pe cea cerută de WPPConnect, nu prima pe care o găsește.
@@ -5066,12 +5073,13 @@ NOUTĂȚI
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
 - Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- الرسائل المرسلة: مع محرك Neonize، كانت الرسائل التي ترسلها قد تختفي من المحادثة عند إعادة فتح WinZapp، لأنه لم تكن تُحفظ منها أي نسخة. أصبحت كل رسالة مرسلة تُحفظ الآن فور تأكيد إرسالها.
 - WPPConnect، الاتصال برمز QR أو برقم الهاتف: بعد أن يقبل الهاتف الاقتران، لم يعد WinZapp يقول إن الاتصال فشل بينما لا يزال واتساب ويب يفتح الدردشات. كان الفحص الذي يجري بعد 4 دقائق من الاقتران لا يستطيع قراءة حالة الاتصال في الإصدارات الحديثة من واتساب ويب، فيعدّ اتصالًا يعمل اتصالًا فاشلًا.
 
 - WPPConnect: يُستخدم من جديد المتصفح المحدد في متغير البيئة PUPPETEER_EXECUTABLE_PATH، مثل Chrome أصلي لويندوز على ARM، وعندما تكون هناك أكثر من نسخة منزّلة من المتصفح يستخدم WinZapp النسخة التي تطلبها WPPConnect، لا أول نسخة يجدها.
@@ -5790,12 +5798,13 @@ NOUTĂȚI
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
 - Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="it" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- Messaggi inviati: con il motore Neonize, i messaggi che inviavi potevano sparire dalla conversazione alla riapertura di WinZapp, perché non ne veniva salvata alcuna copia. Ora ogni messaggio inviato viene salvato non appena l’invio è confermato.
 - WPPConnect, connessione con codice QR o con il numero di telefono: dopo che il telefono accetta l'associazione, WinZapp non dice più che la connessione non è riuscita mentre WhatsApp Web sta ancora aprendo le chat. Il controllo fatto 4 minuti dopo l'associazione non riusciva a leggere lo stato della connessione nelle versioni recenti di WhatsApp Web e dava per fallita una connessione che funzionava.
 
 - WPPConnect: un browser indicato nella variabile d'ambiente PUPPETEER_EXECUTABLE_PATH, come un Chrome nativo per Windows su ARM, viene di nuovo usato, e quando sono scaricate più versioni del browser WinZapp usa quella richiesta da WPPConnect, non la prima che trova.
@@ -6512,12 +6521,13 @@ WHAT'S NEW
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
 - Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- feat(calls): make the NetEQ playback component an optional download (#935)
+      <description xml:lang="cs" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
 NOVINKY
 
+- Odeslané zprávy: u enginu Neonize mohly vámi odeslané zprávy po novém otevření WinZapp z konverzace zmizet, protože se neukládala žádná jejich kopie. Každá odeslaná zpráva se nyní uloží, jakmile je odeslání potvrzeno.
 - WPPConnect, připojení kódem QR nebo telefonním číslem: když telefon spárování přijme, WinZapp už neříká, že se připojení nezdařilo, zatímco WhatsApp Web ještě otevírá chaty. Kontrola prováděná 4 minuty po spárování nedokázala v nových verzích WhatsApp Webu přečíst stav připojení a funkční připojení vyhodnotila jako neúspěšné.
 
 - WPPConnect: prohlížeč uvedený v proměnné prostředí PUPPETEER_EXECUTABLE_PATH, například nativní Chrome pro Windows na ARM, se zase používá, a když je staženo více verzí prohlížeče, WinZapp použije tu, kterou požaduje WPPConnect, ne první nalezenou.
@@ -7234,6 +7244,15 @@ NOVINKY
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
 - Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6005alpha/WinZapp-macOS-x86_64.zip" length="382780966" type="application/octet-stream" sparkle:edSignature="DNtS4OM6el+WXoCDu2DprRlLIh6AKMBDO8d3+O4+espAyrPPyNLWFgwjUa0DH3/+SSxnEz5MHSNx2XFYtlvzCg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.6004alpha</title>
+      <pubDate>Thu, 26 Nov 2026 19:21:56 +0000</pubDate>
+      <sparkle:version>3.0.0.60041</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6004alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6004alpha/WinZapp-macOS-x86_64.zip" length="382948563" type="application/octet-stream" sparkle:edSignature="ootJYmR0HIFHEhRocgfx0E6fV8wW7LaXE3qTyTA164o+N6GjCYOqipF/TyxvA/acCmlwMrBBRuNEjDvi5TjNBA=="></enclosure>
     </item>
     <item>
@@ -7262,15 +7281,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5992alpha/WinZapp-macOS-x86_64.zip" length="383077826" type="application/octet-stream" sparkle:edSignature="CmBHyjzSJbyYVfhXmBG0/BJGQlD5LnDnOpq2PqIun/OZkn0HfBe+43wGr05Bl0k48nYvezR5ubr9I1cEAsH8Dw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5986alpha</title>
-      <pubDate>Thu, 26 Nov 2026 00:09:25 +0000</pubDate>
-      <sparkle:version>3.0.0.59861</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5986alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5986alpha/WinZapp-macOS-x86_64.zip" length="383519363" type="application/octet-stream" sparkle:edSignature="x0PEtI2WQB2c/RBlaydoZ08YXlDnaqWpFA4FTi9Cb5jrEIFXga2YIEXK+KaQaKuq/BGenVnRgfkx0kjce1ooAg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7347,6 +7357,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: vNdd/GO8+z7fgb9EEUlg7rIno+VOonK7AcBjfoVQZ1FP/h+16mhtmufClkmvqaJ5dkuTbxq5J2+rdKoR0izmDg==
-length: 1209829
+edSignature: DllNSI4DxJkUdRQ15sqlwvrnhUvAqcLTzzoMaW/U/0G09tGzhNWZXo2y72EsyQa8NAETJ+MiF4ZiOXqg/fBFAQ==
+length: 1212274
 -->
