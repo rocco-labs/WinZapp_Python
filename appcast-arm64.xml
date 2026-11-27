@@ -5,18 +5,22 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.0.0.6005alpha</title>
-      <pubDate>Fri, 27 Nov 2026 00:44:34 +0000</pubDate>
-      <sparkle:version>3.0.0.60051</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6005alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.0.0.6009alpha</title>
+      <pubDate>Fri, 27 Nov 2026 02:15:57 +0000</pubDate>
+      <sparkle:version>3.0.0.60091</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6009alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+      <description xml:lang="en" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- WPPConnect: the Chromium used by WPPConnect no longer adds a "Search with Chromium" button to the Windows notification area. Chromium's floating search feature, which creates that button, is now turned off in the internal browser.
 - Sent messages: with the Neonize engine, messages you sent could disappear from the conversation when WinZapp was reopened, because no copy of them was stored. Each sent message is now stored as soon as its delivery is confirmed.
 - WPPConnect, connecting with a QR code or a phone number: after the phone accepts the pairing, WinZapp no longer says the connection failed while WhatsApp Web is still opening the chats. The check made 4 minutes after pairing could not read the connection state on recent WhatsApp Web versions and reported a working connection as failed.
 
@@ -134,7 +138,7 @@ WHAT'S NEW
 
 - Neonize: while the phone sends the message history, WinZapp says so and asks you to keep WhatsApp open on the phone's screen, warns when the phone stops (with the percentage), when it sends again and when it finishes; while it is stopped, WinZapp asks the phone for the rest every 90 seconds.
 
-- Neonize: the conversations that WhatsApp for iPhone leaves out of its first history batch (it now sends only 400) are now requested and imported as well. When the phone does not send the list of the ones left out, WinZapp, once the pairing's history is done, asks the phone for the conversations that are missing and waits a few minutes for the answer before calling the sync complete.
+- Neonize: the conversations that WhatsApp for iPhone leaves out of its first history batch (it now sends only 400) are now requested and imported as well. When the phone does not send the list of the ones left out, WinZapp, once the pairing's history is done, asks the phone for the conversations that are missing and waits a few minutes for the answer before calling the sync complete. On WPPConnect, after the first sync, WinZapp asks the phone once for the conversations beyond that first batch when the list is close to that limit.
 
 - Neonize: deleting a list also removes it from its chats, so they do not keep pointing at a list that no longer exists.
 
@@ -733,13 +737,19 @@ WHAT'S NEW
 
 - Neonize on Windows on ARM: the connection bridge no longer closes by itself right after starting (with the message that it could not be started), which prevented pairing.
 
-- Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: the Neonize engine now comes with WinZapp for Mac too, on Apple Silicon and Intel, and connects straight to WhatsApp, without a browser. Choose it in the "Connection engine" list of the connection window or in Settings &gt; Connection.
+
+- New option in Settings &gt; General &gt; Notifications: "Consider me away after a period without using WinZapp: show me offline and stop marking messages as read", on by default, with the time in minutes (2 by default). After that long without a key press or a click in WinZapp, even with the window in front, you show as offline and messages arriving in the open conversation are no longer marked as read; they stay unread until you use WinZapp again, and then the open conversation is marked as read. A call, a recording or audio playing counts as being present. Turned off, none of this happens.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Esta versão traz as comunidades e uma janela de configurações reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- WPPConnect: o Chromium usado pelo WPPConnect não coloca mais o botão "Pesquisar com o Chromium" na área de notificação do Windows. O recurso de busca flutuante do Chromium, que cria esse botão, agora fica desligado no navegador interno.
 - Mensagens enviadas: no motor Neonize, as mensagens que você enviava podiam sumir da conversa ao reabrir o WinZapp, porque nenhuma cópia delas era guardada. Agora cada mensagem enviada é guardada assim que o envio é confirmado.
 - WPPConnect, conectar com QR-CODE ou pelo número de telefone: depois que o celular aceita o pareamento, o WinZapp não diz mais que a conexão falhou enquanto o WhatsApp Web ainda está abrindo as conversas. A verificação feita 4 minutos depois do pareamento não conseguia ler o estado da conexão nas versões recentes do WhatsApp Web e dava como falha uma conexão que estava funcionando.
 
@@ -857,7 +867,7 @@ NOVIDADES
 
 - Neonize: enquanto o celular envia o histórico de mensagens, o WinZapp avisa e pede que você mantenha o WhatsApp aberto na tela do celular, avisa quando o celular para (com a porcentagem), quando volta a enviar e quando termina; enquanto ele está parado, o WinZapp pede o resto ao celular a cada 90 segundos.
 
-- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (ele agora envia só 400) agora também são pedidas e importadas. Quando o celular não manda a lista dos que ficaram de fora, o WinZapp, ao terminar o histórico do pareamento, pede ao celular as conversas que faltam e espera a resposta por alguns minutos antes de dar a sincronização por concluída.
+- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (ele agora envia só 400) agora também são pedidas e importadas. Quando o celular não manda a lista dos que ficaram de fora, o WinZapp, ao terminar o histórico do pareamento, pede ao celular as conversas que faltam e espera a resposta por alguns minutos antes de dar a sincronização por concluída. No WPPConnect, depois da primeira sincronização, o WinZapp pede uma vez ao celular as conversas além desse primeiro lote quando a lista está perto desse limite.
 
 - Neonize: apagar uma lista também a tira de suas conversas, que não ficam mais apontando para uma lista que não existe.
 
@@ -1456,13 +1466,19 @@ NOVIDADES
 
 - Neonize no Windows em ARM: a bridge de conexão não fecha mais sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o pareamento.
 
-- Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: o motor Neonize agora também vem no WinZapp para Mac, em Apple Silicon e Intel, e conecta direto ao WhatsApp, sem navegador. Escolha-o na lista "Motor de conexão" da janela de conexão ou em Configurações &gt; Conexão.
+
+- Nova opção em Configurações &gt; Geral &gt; Notificações: "Considerar-me ausente depois de um tempo sem usar o WinZapp: aparecer offline e parar de marcar mensagens como lidas", marcada por padrão, com o tempo em minutos (2 por padrão). Passado esse tempo sem uma tecla ou um clique no WinZapp, mesmo com a janela em primeiro plano, você aparece offline e as mensagens que chegam na conversa aberta deixam de ser marcadas como lidas; elas continuam não lidas até você voltar a usar o WinZapp, e então a conversa aberta é marcada como lida. Uma ligação, uma gravação ou um áudio tocando contam como presença. Desmarcada, nada disso acontece.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Esta versão traz as comunidades e uma janela de definições reorganizada, além de tudo o que veio na versão 2.1.0.0.
 
 NOVIDADES
 
+- WPPConnect: o Chromium usado pelo WPPConnect já não coloca o botão "Pesquisar com o Chromium" na área de notificação do Windows. A funcionalidade de pesquisa flutuante do Chromium, que cria esse botão, fica agora desligada no navegador interno.
 - Mensagens enviadas: no motor Neonize, as mensagens que enviava podiam desaparecer da conversa ao reabrir o WinZapp, porque nenhuma cópia delas era guardada. Agora cada mensagem enviada é guardada assim que o envio é confirmado.
 - WPPConnect, ligar com QR-CODE ou pelo número de telefone: depois de o telemóvel aceitar o emparelhamento, o WinZapp já não diz que a ligação falhou enquanto o WhatsApp Web ainda está a abrir as conversas. A verificação feita 4 minutos depois do emparelhamento não conseguia ler o estado da ligação nas versões recentes do WhatsApp Web e dava como falhada uma ligação que estava a funcionar.
 
@@ -1580,7 +1596,7 @@ NOVIDADES
 
 - Neonize: enquanto o telemóvel envia o histórico de mensagens, o WinZapp avisa e pede que mantenha o WhatsApp aberto no ecrã do telemóvel, avisa quando o telemóvel pára (com a percentagem), quando volta a enviar e quando termina; enquanto está parado, o WinZapp pede o resto ao telemóvel de 90 em 90 segundos.
 
-- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (agora envia só 400) passam também a ser pedidas e importadas. Quando o telemóvel não envia a lista das que ficaram de fora, o WinZapp, ao terminar o histórico do emparelhamento, pede ao telemóvel as conversas que faltam e espera pela resposta alguns minutos antes de dar a sincronização por concluída.
+- Neonize: as conversas que o WhatsApp do iPhone deixa de fora do primeiro lote de histórico (agora envia só 400) passam também a ser pedidas e importadas. Quando o telemóvel não envia a lista das que ficaram de fora, o WinZapp, ao terminar o histórico do emparelhamento, pede ao telemóvel as conversas que faltam e espera pela resposta alguns minutos antes de dar a sincronização por concluída. No WPPConnect, depois da primeira sincronização, o WinZapp pede uma vez ao telemóvel as conversas além desse primeiro lote quando a lista está perto desse limite.
 
 - Neonize: apagar uma lista também a retira das suas conversas, que deixam de apontar para uma lista que já não existe.
 
@@ -2179,13 +2195,19 @@ NOVIDADES
 
 - Neonize no Windows em ARM: a bridge de ligação já não fecha sozinha logo ao iniciar (com a mensagem de que não foi possível iniciá-la), o que impedia o emparelhamento.
 
-- Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: o motor Neonize vem agora também no WinZapp para Mac, em Apple Silicon e Intel, e liga-se diretamente ao WhatsApp, sem navegador. Escolha-o na lista "Motor de ligação" da janela de ligação ou em Definições &gt; Ligação.
+
+- Nova opção em Definições &gt; Geral &gt; Notificações: "Considerar-me ausente após algum tempo sem utilizar o WinZapp: aparecer offline e deixar de marcar as mensagens como lidas", ativa por predefinição, com o tempo em minutos (2 por predefinição). Passado esse tempo sem uma tecla ou um clique no WinZapp, mesmo com a janela em primeiro plano, aparece offline e as mensagens que chegam à conversa aberta deixam de ser marcadas como lidas; continuam por ler até voltar a utilizar o WinZapp, e então a conversa aberta é marcada como lida. Uma chamada, uma gravação ou um áudio a tocar contam como presença. Desativada, nada disto acontece.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Esta versión trae las comunidades y una ventana de configuración reorganizada, además de todo lo de la versión 2.1.0.0.
 
 NOVEDADES
 
+- WPPConnect: el Chromium que usa WPPConnect ya no añade el botón "Buscar con Chromium" al área de notificación de Windows. La función de búsqueda flotante de Chromium, que crea ese botón, ahora está desactivada en el navegador interno.
 - Mensajes enviados: con el motor Neonize, los mensajes que enviabas podían desaparecer de la conversación al reabrir WinZapp, porque no se guardaba ninguna copia. Ahora cada mensaje enviado se guarda en cuanto se confirma el envío.
 - WPPConnect, conectar con código QR o con el número de teléfono: después de que el teléfono acepta el emparejamiento, WinZapp ya no dice que la conexión falló mientras WhatsApp Web todavía está abriendo los chats. La comprobación que se hace 4 minutos después del emparejamiento no podía leer el estado de la conexión en las versiones recientes de WhatsApp Web y daba por fallida una conexión que funcionaba.
 
@@ -2303,7 +2325,7 @@ NOVEDADES
 
 - Neonize: mientras el teléfono envía el historial de mensajes, WinZapp lo avisa y te pide que mantengas WhatsApp abierto en la pantalla del teléfono, avisa cuando el teléfono se detiene (con el porcentaje), cuando vuelve a enviar y cuando termina; mientras está detenido, WinZapp le pide el resto al teléfono cada 90 segundos.
 
-- Neonize: los chats que WhatsApp para iPhone deja fuera del primer lote de historial (ahora envía solo 400) ahora también se piden y se importan. Cuando el teléfono no envía la lista de las que quedaron fuera, WinZapp, al terminar el historial del emparejamiento, le pide al teléfono las conversaciones que faltan y espera la respuesta unos minutos antes de dar la sincronización por completada.
+- Neonize: los chats que WhatsApp para iPhone deja fuera del primer lote de historial (ahora envía solo 400) ahora también se piden y se importan. Cuando el teléfono no envía la lista de las que quedaron fuera, WinZapp, al terminar el historial del emparejamiento, le pide al teléfono las conversaciones que faltan y espera la respuesta unos minutos antes de dar la sincronización por completada. En WPPConnect, tras la primera sincronización, WinZapp pide una vez al teléfono las conversaciones más allá de ese primer lote cuando la lista se acerca a ese límite.
 
 - Neonize: eliminar una lista también la quita de sus chats, que ya no siguen apuntando a una lista que no existe.
 
@@ -2902,13 +2924,19 @@ NOVEDADES
 
 - Neonize en Windows en ARM: el puente de conexión ya no se cierra solo nada más iniciarse (con el mensaje de que no se pudo iniciar), lo que impedía la vinculación.
 
-- Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: el motor Neonize ahora también viene en WinZapp para Mac, en Apple Silicon e Intel, y se conecta directamente a WhatsApp, sin navegador. Elígelo en la lista "Motor de conexión" de la ventana de conexión o en Configuración &gt; Conexión.
+
+- Nueva opción en Configuración &gt; General &gt; Notificaciones: "Considerarme ausente tras un tiempo sin usar WinZapp: aparecer sin conexión y dejar de marcar los mensajes como leídos", activada por defecto, con el tiempo en minutos (2 por defecto). Pasado ese tiempo sin una tecla ni un clic en WinZapp, aunque la ventana esté en primer plano, apareces sin conexión y los mensajes que llegan a la conversación abierta dejan de marcarse como leídos; siguen sin leer hasta que vuelves a usar WinZapp, y entonces la conversación abierta se marca como leída. Una llamada, una grabación o un audio en reproducción cuentan como presencia. Desactivada, nada de esto ocurre.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 W tej wersji pojawiają się społeczności i zreorganizowane okno ustawień, oprócz wszystkiego, co przyniosła wersja 2.1.0.0.
 
 NOWOŚCI
 
+- WPPConnect: Chromium używany przez WPPConnect nie dodaje już przycisku „Wyszukaj w Chromium” do obszaru powiadomień systemu Windows. Pływająca wyszukiwarka Chromium, która tworzy ten przycisk, jest teraz wyłączona we wbudowanej przeglądarce.
 - Wysłane wiadomości: w silniku Neonize wiadomości, które wysłałeś, mogły znikać z rozmowy po ponownym otwarciu WinZapp, ponieważ nie zapisywano ich kopii. Teraz każda wysłana wiadomość jest zapisywana, gdy tylko wysłanie zostanie potwierdzone.
 - WPPConnect, łączenie kodem QR lub numerem telefonu: gdy telefon zaakceptuje parowanie, WinZapp nie mówi już, że połączenie się nie udało, kiedy WhatsApp Web wciąż otwiera czaty. Sprawdzenie wykonywane 4 minuty po parowaniu nie potrafiło odczytać stanu połączenia w nowych wersjach WhatsApp Web i uznawało działające połączenie za nieudane.
 
@@ -3027,7 +3055,7 @@ NOWOŚCI
 
 - Neonize: WinZapp ogłasza rozpoczęcie przesyłania historii wiadomości z telefonu i prosi o pozostawienie WhatsAppa otwartego na jego ekranie. Informuje też o zatrzymaniu przesyłania, podając osiągnięty procent postępu, oraz o wznowieniu i zakończeniu transferu. Podczas przerwy co 90 sekund ponawia prośbę o pozostałą część historii.
 
-- Neonize: WinZapp prosi teraz także o czaty pominięte przez WhatsAppa na iPhonie w pierwszej partii historii i je importuje. Ta pierwsza partia zawiera obecnie tylko 400 czatów. Gdy telefon nie wysyła listy pominiętych czatów, WinZapp po zakończeniu historii parowania prosi telefon o brakujące czaty i czeka kilka minut na odpowiedź, zanim uzna synchronizację za zakończoną.
+- Neonize: WinZapp prosi teraz także o czaty pominięte przez WhatsAppa na iPhonie w pierwszej partii historii i je importuje. Ta pierwsza partia zawiera obecnie tylko 400 czatów. Gdy telefon nie wysyła listy pominiętych czatów, WinZapp po zakończeniu historii parowania prosi telefon o brakujące czaty i czeka kilka minut na odpowiedź, zanim uzna synchronizację za zakończoną. W WPPConnect, po pierwszej synchronizacji, WinZapp raz prosi telefon o czaty spoza tej pierwszej partii, gdy lista jest bliska tego limitu.
 
 - Neonize: usunięcie listy usuwa ją także z jej czatów, więc nie wskazują już na nieistniejącą listę.
 
@@ -3626,13 +3654,19 @@ NOWOŚCI
 
 - Neonize w Windows na ARM: most połączenia nie zamyka się już sam zaraz po uruchomieniu (z komunikatem, że nie udało się go uruchomić), co uniemożliwiało parowanie.
 
-- Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: silnik Neonize jest teraz dostępny także w WinZapp na Maca, na Apple Silicon i Intel, i łączy się bezpośrednio z WhatsAppem, bez przeglądarki. Wybierz go na liście "Silnik połączenia" w oknie połączenia albo w Ustawienia &gt; Połączenie.
+
+- Nowa opcja w Ustawienia &gt; Ogólne &gt; Powiadomienia: "Uznaj mnie za nieobecnego po okresie nieużywania WinZapp: pokazuj mnie jako offline i przestań oznaczać wiadomości jako przeczytane", domyślnie włączona, z czasem podawanym w minutach (domyślnie 2). Po tym czasie bez naciśnięcia klawisza ani kliknięcia w WinZapp, nawet gdy okno jest na wierzchu, jesteś widoczny jako offline, a wiadomości przychodzące do otwartej rozmowy nie są już oznaczane jako przeczytane; pozostają nieprzeczytane, dopóki znowu nie użyjesz WinZapp, a wtedy otwarta rozmowa zostaje oznaczona jako przeczytana. Rozmowa, nagrywanie i odtwarzany dźwięk liczą się jako obecność. Po wyłączeniu nic z tego się nie dzieje.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Bu sürüm, 2.1.0.0 sürümündeki her şeye ek olarak toplulukları ve yeniden düzenlenmiş bir ayarlar penceresi getirir.
 
 YENİLİKLER
 
+- WPPConnect: WPPConnect'in kullandığı Chromium artık Windows bildirim alanına "Chromium ile ara" düğmesi eklemiyor. Bu düğmeyi oluşturan Chromium'un kayan arama özelliği, dahili tarayıcıda artık kapalı.
 - Gönderilen mesajlar: Neonize motorunda, gönderdiğiniz mesajlar WinZapp yeniden açıldığında konuşmadan kaybolabiliyordu, çünkü bir kopyaları saklanmıyordu. Gönderilen her mesaj artık gönderimi onaylanır onaylanmaz saklanıyor.
 - WPPConnect, QR kodu veya telefon numarasıyla bağlanma: telefon eşleştirmeyi kabul ettikten sonra WhatsApp Web sohbetleri hâlâ açarken WinZapp artık bağlantının başarısız olduğunu söylemiyor. Eşleştirmeden 4 dakika sonra yapılan kontrol, WhatsApp Web'in yeni sürümlerinde bağlantı durumunu okuyamıyor ve çalışan bir bağlantıyı başarısız sayıyordu.
 
@@ -3750,7 +3784,7 @@ YENİLİKLER
 
 - Neonize: telefon ileti geçmişini gönderirken WinZapp bunu söyler ve WhatsApp'ı telefonun ekranında açık tutmanızı ister; telefon durduğunda (yüzdeyle), yeniden gönderdiğinde ve bitirdiğinde uyarır; telefon durmuşken WinZapp her 90 saniyede bir kalanını telefondan ister.
 
-- Neonize: iPhone için WhatsApp'ın ilk geçmiş paketinin dışında bıraktığı sohbetler (artık yalnızca 400 gönderiyor) artık istenip içe aktarılıyor. Telefon dışarıda bıraktığı sohbetlerin listesini göndermediğinde, WinZapp eşleştirme geçmişi bittikten sonra telefondan eksik sohbetleri ister ve eşzamanlamayı tamamlanmış saymadan önce yanıtı birkaç dakika bekler.
+- Neonize: iPhone için WhatsApp'ın ilk geçmiş paketinin dışında bıraktığı sohbetler (artık yalnızca 400 gönderiyor) artık istenip içe aktarılıyor. Telefon dışarıda bıraktığı sohbetlerin listesini göndermediğinde, WinZapp eşleştirme geçmişi bittikten sonra telefondan eksik sohbetleri ister ve eşzamanlamayı tamamlanmış saymadan önce yanıtı birkaç dakika bekler. WPPConnect'te, ilk eşzamanlamadan sonra liste bu sınıra yakınsa WinZapp telefondan bu ilk paketin ötesindeki sohbetleri bir kez ister.
 
 - Neonize: bir listeyi silmek onu sohbetlerinden de kaldırır; böylece sohbetler artık var olmayan bir listeyi göstermeye devam etmez.
 
@@ -4349,13 +4383,19 @@ YENİLİKLER
 
 - ARM üzerinde Windows'ta Neonize: bağlantı köprüsü artık başlar başlamaz kendiliğinden kapanmıyor (başlatılamadığı mesajıyla), bu da eşleştirmeyi engelliyordu.
 
-- Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: Neonize motoru artık Mac için WinZapp'te de, Apple Silicon ve Intel'de geliyor ve tarayıcı olmadan doğrudan WhatsApp'a bağlanıyor. Bağlantı penceresindeki "Bağlantı motoru" listesinden ya da Ayarlar &gt; Bağlantı'dan seçin.
+
+- Ayarlar &gt; Genel &gt; Bildirimler içinde yeni seçenek: "WinZapp kullanılmadan belirli bir süre geçtikten sonra beni uzakta say: çevrimdışı görün ve mesajları okundu olarak işaretlemeyi bırak", varsayılan olarak açık, süre dakika olarak ayarlanır (varsayılan 2). WinZapp'ta bu süre boyunca hiçbir tuşa basılmaz ya da tıklanmazsa, pencere öndeyken bile çevrimdışı görünürsünüz ve açık sohbete gelen mesajlar artık okundu olarak işaretlenmez; WinZapp'ı yeniden kullanana kadar okunmamış kalır, ardından açık sohbet okundu olarak işaretlenir. Bir arama, bir kayıt ya da çalan bir ses de varlık sayılır. Kapalıyken bunların hiçbiri olmaz.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Această versiune aduce comunitățile și o fereastră de setări reorganizată, pe lângă tot ce a adus versiunea 2.1.0.0.
 
 NOUTĂȚI
 
+- WPPConnect: Chromium folosit de WPPConnect nu mai adaugă butonul „Caută cu Chromium” în zona de notificare din Windows. Funcția de căutare plutitoare din Chromium, care creează acest buton, este acum dezactivată în browserul intern.
 - Mesaje trimise: cu motorul Neonize, mesajele pe care le trimiteai puteau dispărea din conversație la redeschiderea WinZapp, pentru că nu se salva nicio copie a lor. Acum fiecare mesaj trimis este salvat imediat ce trimiterea este confirmată.
 - WPPConnect, conectarea cu cod QR sau cu numărul de telefon: după ce telefonul acceptă asocierea, WinZapp nu mai spune că conectarea a eșuat cât timp WhatsApp Web încă deschide conversațiile. Verificarea făcută la 4 minute după asociere nu putea citi starea conexiunii în versiunile recente ale WhatsApp Web și considera eșuată o conexiune care funcționa.
 
@@ -4473,7 +4513,7 @@ NOUTĂȚI
 
 - Neonize: cât timp telefonul trimite istoricul mesajelor, WinZapp anunță și vă cere să țineți WhatsApp deschis pe ecranul telefonului, avertizează când telefonul se oprește (cu procentul), când trimite din nou și când termină; cât timp este oprit, WinZapp cere restul de la telefon la fiecare 90 de secunde.
 
-- Neonize: conversațiile pe care WhatsApp pentru iPhone le lasă în afara primului lot de istoric (acum trimite doar 400) sunt acum cerute și importate și ele. Când telefonul nu trimite lista celor lăsate pe dinafară, WinZapp, după ce se termină istoricul asocierii, cere telefonului conversațiile care lipsesc și așteaptă câteva minute răspunsul înainte de a considera sincronizarea încheiată.
+- Neonize: conversațiile pe care WhatsApp pentru iPhone le lasă în afara primului lot de istoric (acum trimite doar 400) sunt acum cerute și importate și ele. Când telefonul nu trimite lista celor lăsate pe dinafară, WinZapp, după ce se termină istoricul asocierii, cere telefonului conversațiile care lipsesc și așteaptă câteva minute răspunsul înainte de a considera sincronizarea încheiată. Pe WPPConnect, după prima sincronizare, WinZapp cere o dată telefonului conversațiile din afara acelui prim lot când lista este aproape de această limită.
 
 - Neonize: ștergerea unei liste o scoate și din conversațiile ei, care nu mai arată spre o listă ce nu mai există.
 
@@ -5072,13 +5112,19 @@ NOUTĂȚI
 
 - Neonize pe Windows pe ARM: puntea de conexiune nu se mai închide singură imediat după pornire (cu mesajul că nu a putut fi pornită), ceea ce împiedica asocierea.
 
-- Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: motorul Neonize vine acum și în WinZapp pentru Mac, pe Apple Silicon și Intel, și se conectează direct la WhatsApp, fără browser. Alegeți-l din lista "Motor de conectare" a ferestrei de conectare sau din Setări &gt; Conexiune.
+
+- Opțiune nouă în Setări &gt; Generale &gt; Notificări: "Consideră-mă absent după o perioadă fără să folosesc WinZapp: apar offline și nu mai marca mesajele drept citite", bifată implicit, cu timpul în minute (2 implicit). După acest timp fără o tastă apăsată sau un clic în WinZapp, chiar și cu fereastra în prim-plan, apari offline, iar mesajele care ajung în conversația deschisă nu mai sunt marcate drept citite; rămân necitite până când folosești din nou WinZapp, iar atunci conversația deschisă este marcată drept citită. Un apel, o înregistrare sau un sunet redat contează ca prezență. Debifată, nimic din toate acestea nu se întâmplă.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 يضيف هذا الإصدار المجتمعات ونافذة إعدادات أُعيد تنظيمها، فوق كل ما في الإصدار 2.1.0.0.
 
 الجديد
 
+- WPPConnect: لم يعد Chromium الذي يستخدمه WPPConnect يضيف زر «البحث باستخدام Chromium» إلى منطقة الإشعارات في ويندوز. ميزة البحث العائمة في Chromium، التي تنشئ هذا الزر، أصبحت الآن معطّلة في المتصفح الداخلي.
 - الرسائل المرسلة: مع محرك Neonize، كانت الرسائل التي ترسلها قد تختفي من المحادثة عند إعادة فتح WinZapp، لأنه لم تكن تُحفظ منها أي نسخة. أصبحت كل رسالة مرسلة تُحفظ الآن فور تأكيد إرسالها.
 - WPPConnect، الاتصال برمز QR أو برقم الهاتف: بعد أن يقبل الهاتف الاقتران، لم يعد WinZapp يقول إن الاتصال فشل بينما لا يزال واتساب ويب يفتح الدردشات. كان الفحص الذي يجري بعد 4 دقائق من الاقتران لا يستطيع قراءة حالة الاتصال في الإصدارات الحديثة من واتساب ويب، فيعدّ اتصالًا يعمل اتصالًا فاشلًا.
 
@@ -5196,7 +5242,7 @@ NOUTĂȚI
 
 - Neonize: بينما يرسل الهاتف سجل الرسائل يعلن WinZapp ذلك ويطلب منك إبقاء واتساب مفتوحًا على شاشة الهاتف، وينبّه عندما يتوقف الهاتف (مع النسبة المئوية) وعندما يعود إلى الإرسال وعندما ينتهي؛ وما دام متوقفًا يطلب WinZapp الباقي من الهاتف كل 90 ثانية.
 
-- Neonize: المحادثات التي يتركها واتساب على آيفون خارج أول دفعة من السجل (يرسل الآن 400 فقط) تُطلب الآن وتُستورد أيضًا. وعندما لا يرسل الهاتف قائمة المحادثات التي تُركت خارجًا، يطلب WinZapp من الهاتف المحادثات الناقصة بعد انتهاء سجل الاقتران، وينتظر الرد بضع دقائق قبل أن يعدّ المزامنة مكتملة.
+- Neonize: المحادثات التي يتركها واتساب على آيفون خارج أول دفعة من السجل (يرسل الآن 400 فقط) تُطلب الآن وتُستورد أيضًا. وعندما لا يرسل الهاتف قائمة المحادثات التي تُركت خارجًا، يطلب WinZapp من الهاتف المحادثات الناقصة بعد انتهاء سجل الاقتران، وينتظر الرد بضع دقائق قبل أن يعدّ المزامنة مكتملة. وفي WPPConnect، بعد المزامنة الأولى، يطلب WinZapp مرة واحدة من الهاتف المحادثات التي تتجاوز أول دفعة عندما تقترب القائمة من هذا الحد.
 
 - Neonize: حذف قائمة يزيلها أيضًا من محادثاتها، فلا تظل تشير إلى قائمة لم تعد موجودة.
 
@@ -5797,13 +5843,19 @@ NOUTĂȚI
 
 - في Neonize على Windows بمعالج ARM: لم يعد جسر الاتصال يُغلق من تلقاء نفسه فور بدئه (مع رسالة تفيد بتعذّر تشغيله)، وهو ما كان يمنع الاقتران.
 
-- Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: أصبح محرك Neonize متاحًا الآن في WinZapp لأجهزة Mac أيضًا، على Apple Silicon وIntel، ويتصل مباشرة بواتساب دون متصفح. اختره من قائمة «محرك الاتصال» في نافذة الاتصال أو من الإعدادات &gt; الاتصال.
+
+- خيار جديد في الإعدادات &gt; عام &gt; الإشعارات: «اعتبرني غائبًا بعد فترة من عدم استخدام WinZapp: أظهرني غير متصل وتوقف عن تعيين الرسائل كمقروءة»، مفعّل افتراضيًا، مع تحديد المدة بالدقائق (دقيقتان افتراضيًا). بعد انقضاء هذه المدة دون ضغط أي مفتاح أو نقرة في WinZapp، حتى لو كانت النافذة في المقدمة، تظهر غير متصل ولا تُعيَّن الرسائل الواصلة إلى المحادثة المفتوحة كمقروءة؛ وتبقى غير مقروءة إلى أن تستخدم WinZapp من جديد، وعندها تُعيَّن المحادثة المفتوحة كمقروءة. تُحسب المكالمة والتسجيل والصوت قيد التشغيل حضورًا. وعند إلغاء التفعيل لا يحدث شيء من هذا.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 This release brings communities and a reorganized settings window, on top of everything in version 2.1.0.0.
 
 WHAT'S NEW
 
+- WPPConnect: il Chromium usato da WPPConnect non aggiunge più il pulsante "Cerca con Chromium" all'area di notifica di Windows. La ricerca flottante di Chromium, che crea quel pulsante, ora è disattivata nel browser interno.
 - Messaggi inviati: con il motore Neonize, i messaggi che inviavi potevano sparire dalla conversazione alla riapertura di WinZapp, perché non ne veniva salvata alcuna copia. Ora ogni messaggio inviato viene salvato non appena l’invio è confermato.
 - WPPConnect, connessione con codice QR o con il numero di telefono: dopo che il telefono accetta l'associazione, WinZapp non dice più che la connessione non è riuscita mentre WhatsApp Web sta ancora aprendo le chat. Il controllo fatto 4 minuti dopo l'associazione non riusciva a leggere lo stato della connessione nelle versioni recenti di WhatsApp Web e dava per fallita una connessione che funzionava.
 
@@ -5921,7 +5973,7 @@ WHAT'S NEW
 
 - Neonize: mentre il telefono invia la cronologia dei messaggi, WinZapp lo dice e ti chiede di tenere WhatsApp aperto sullo schermo del telefono, avvisa quando il telefono si ferma (con la percentuale), quando riprende a inviare e quando finisce; mentre è fermo, WinZapp chiede il resto al telefono ogni 90 secondi.
 
-- Neonize: le conversazioni che WhatsApp per iPhone lascia fuori dal primo blocco di cronologia (ora ne invia solo 400) vengono ora richieste e importate anch'esse. Quando il telefono non invia l'elenco di quelle lasciate fuori, WinZapp, terminata la cronologia dell'associazione, chiede al telefono le conversazioni mancanti e attende la risposta per qualche minuto prima di considerare completa la sincronizzazione.
+- Neonize: le conversazioni che WhatsApp per iPhone lascia fuori dal primo blocco di cronologia (ora ne invia solo 400) vengono ora richieste e importate anch'esse. Quando il telefono non invia l'elenco di quelle lasciate fuori, WinZapp, terminata la cronologia dell'associazione, chiede al telefono le conversazioni mancanti e attende la risposta per qualche minuto prima di considerare completa la sincronizzazione. Su WPPConnect, dopo la prima sincronizzazione, WinZapp chiede una volta al telefono le conversazioni oltre quel primo blocco quando l'elenco è vicino a quel limite.
 
 - Neonize: eliminare una lista la toglie anche dalle sue chat, che non puntano più a una lista che non esiste.
 
@@ -6520,13 +6572,19 @@ WHAT'S NEW
 
 - Neonize su Windows su ARM: il ponte di connessione non si chiude più da solo subito dopo l'avvio (con il messaggio che non è stato possibile avviarlo), cosa che impediva l'associazione.
 
-- Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Fix: messages sent on Neonize disappearing from conversations (#937)
+- Mac: il motore Neonize ora è incluso anche in WinZapp per Mac, su Apple Silicon e Intel, e si connette direttamente a WhatsApp, senza browser. Sceglilo nell'elenco "Motore di connessione" della finestra di connessione o in Impostazioni &gt; Connessione.
+
+- Nuova opzione in Impostazioni &gt; Generale &gt; Notifiche: "Considerami assente dopo un periodo senza usare WinZapp: risulta offline e non segnare più i messaggi come letti", attiva per impostazione predefinita, con il tempo in minuti (2 per impostazione predefinita). Trascorso quel tempo senza un tasto premuto o un clic in WinZapp, anche con la finestra in primo piano, risulti offline e i messaggi che arrivano nella conversazione aperta non vengono più segnati come letti; restano da leggere finché non usi di nuovo WinZapp, e allora la conversazione aperta viene segnata come letta. Una chiamata, una registrazione o un audio in riproduzione contano come presenza. Disattivata, nulla di tutto questo accade.</description>
+      <description xml:lang="cs" sparkle:format="plain-text">- Fix: WPPConnect's Chromium adds a "Search with Chromium" button to the tray (#939)
+- Recent conversations: measure the bootstrap cap on the block's conversations (#938)
+- feat(presence): away mode after a period without using WinZapp (#942)
+- WPPConnect: ask the phone for the chats past the 399-chat first batch (#940)
 
 Toto vydání přináší komunity a přepracované okno nastavení, navíc ke všemu, co obsahuje verze 2.1.0.0.
 
 NOVINKY
 
+- WPPConnect: Chromium používaný WPPConnectem už nepřidává do oznamovací oblasti Windows tlačítko „Hledat pomocí Chromium“. Plovoucí vyhledávání Chromium, které toto tlačítko vytváří, je ve vestavěném prohlížeči nyní vypnuté.
 - Odeslané zprávy: u enginu Neonize mohly vámi odeslané zprávy po novém otevření WinZapp z konverzace zmizet, protože se neukládala žádná jejich kopie. Každá odeslaná zpráva se nyní uloží, jakmile je odeslání potvrzeno.
 - WPPConnect, připojení kódem QR nebo telefonním číslem: když telefon spárování přijme, WinZapp už neříká, že se připojení nezdařilo, zatímco WhatsApp Web ještě otevírá chaty. Kontrola prováděná 4 minuty po spárování nedokázala v nových verzích WhatsApp Webu přečíst stav připojení a funkční připojení vyhodnotila jako neúspěšné.
 
@@ -6644,7 +6702,7 @@ NOVINKY
 
 - Neonize: když telefon posílá historii zpráv, WinZapp to oznámí a požádá vás, abyste na telefonu nechali WhatsApp otevřený na obrazovce, upozorní, když telefon přestane (s procentem), když začne znovu posílat a když skončí; dokud je zastavený, WinZapp se telefonu každých 90 sekund ptá na zbytek.
 
-- Neonize: chaty, které WhatsApp pro iPhone vynechává z první dávky historie (nově posílá jen 400), se nově také vyžádají a naimportují. Když telefon neodešle seznam vynechaných, WinZapp po dokončení historie párování požádá telefon o chybějící chaty a před prohlášením synchronizace za dokončenou několik minut čeká na odpověď.
+- Neonize: chaty, které WhatsApp pro iPhone vynechává z první dávky historie (nově posílá jen 400), se nově také vyžádají a naimportují. Když telefon neodešle seznam vynechaných, WinZapp po dokončení historie párování požádá telefon o chybějící chaty a před prohlášením synchronizace za dokončenou několik minut čeká na odpověď. Na WPPConnect WinZapp po první synchronizaci jednou požádá telefon o chaty nad rámec první dávky, když se seznam blíží tomuto limitu.
 
 - Neonize: smazání seznamu ho také odebere z jeho chatů, takže neukazují na seznam, který už neexistuje.
 
@@ -7243,7 +7301,18 @@ NOVINKY
 
 - Neonize ve Windows na ARM: most připojení se už hned po spuštění sám nezavře (se zprávou, že ho nebylo možné spustit), což znemožňovalo spárování.
 
-- Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.</description>
+- Mac: engine Neonize je nyní i ve WinZapp pro Mac, na Apple Silicon i Intel, a připojuje se přímo k WhatsAppu, bez prohlížeče. Vyberte ho v seznamu "Engine připojení" v okně připojení nebo v Nastavení &gt; Připojení.
+
+- Nová volba v Nastavení &gt; Obecné &gt; Oznámení: „Považovat mě za nepřítomného po určité době bez používání WinZapp: zobrazovat mě offline a přestat označovat zprávy jako přečtené“, ve výchozím stavu zapnutá, s časem v minutách (výchozí 2). Po uplynutí této doby bez stisku klávesy nebo kliknutí ve WinZapp, i když je okno v popředí, se zobrazujete jako offline a zprávy přicházející do otevřené konverzace se již neoznačují jako přečtené; zůstávají nepřečtené, dokud WinZapp znovu nepoužijete, a pak se otevřená konverzace označí jako přečtená. Hovor, nahrávání nebo přehrávaný zvuk se počítají jako přítomnost. Při vypnutí se nic z toho neděje.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6009alpha/WinZapp-macOS-arm64.zip" length="342644922" type="application/octet-stream" sparkle:edSignature="RZZQO8g9WMbRJJ/7DnnQOCivNrg457aHbpJMhA+O8Bj5uH/eMHEHEIdMrffsviddNDoWAPprtCIHYEQ18FG5CQ=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.0.0.6005alpha</title>
+      <pubDate>Fri, 27 Nov 2026 00:44:34 +0000</pubDate>
+      <sparkle:version>3.0.0.60051</sparkle:version>
+      <sparkle:shortVersionString>3.0.0.6005alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6005alpha/WinZapp-macOS-arm64.zip" length="342622409" type="application/octet-stream" sparkle:edSignature="AvSz1otrWIwpAvAfJlp4P8kQnbsBEGGDLTVDBTHklyJtLoWp80nrvFHL7rxwYMAD1E7lw+x36un+uK76eBc4CA=="></enclosure>
     </item>
     <item>
@@ -7272,15 +7341,6 @@ NOVINKY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6002alpha/WinZapp-macOS-arm64.zip" length="342931601" type="application/octet-stream" sparkle:edSignature="CAEHEYSSPQzlswRS+QiCBb4TjacQaNtdd+CE5lYf8c693Ek2uDSjY8tj3AjpRrheV40m4Lw0OcaSrSJrHgOcAw=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.5992alpha</title>
-      <pubDate>Thu, 26 Nov 2026 02:47:55 +0000</pubDate>
-      <sparkle:version>3.0.0.59921</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.5992alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.5992alpha/WinZapp-macOS-arm64.zip" length="342924405" type="application/octet-stream" sparkle:edSignature="n3lOvLCXXzJkEcL7T6F+hUBZA5ZyhNK22sNz573t2ruakIvGOh0UFCaXMmzijZdXulTch1/bNO9WzUItxQ7ACA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 2.1.3.0</title>
@@ -7357,6 +7417,6 @@ CORECTĂRI
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: lPoLKXBnfquctCbi/UThsKScvk6qM5wp3hXq8WLZF1EU882Q4h5lTqSWpoNg13L2foRGJwhtlN3WnOGAwSWhBQ==
-length: 1212265
+edSignature: Gb5bEvNcT8RlFhbdLQaYEi8kVN/oAbQQvKkE9jAKN1I5aZk3rJnS3vowjj7WB2bYZGs+tti2RftXvwDJz6HqCA==
+length: 1226087
 -->
