@@ -5,13 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.1.0.6014alpha</title>
-      <pubDate>Fri, 27 Nov 2026 15:34:57 +0000</pubDate>
-      <sparkle:version>3.1.0.60141</sparkle:version>
-      <sparkle:shortVersionString>3.1.0.6014alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.1.0.6015alpha</title>
+      <pubDate>Fri, 27 Nov 2026 17:49:46 +0000</pubDate>
+      <sparkle:version>3.1.0.60151</sparkle:version>
+      <sparkle:shortVersionString>3.1.0.6015alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="en" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 The highlights of this release are the new Neonize engine, faster and lighter, which connects to WhatsApp without a browser (WPPConnect stays available as the alternative), group calls and call links, and AI improvements: summaries, writing help, message translation (online or offline), and better transcriptions and descriptions. It also brings communities, channels, a contacts list, a reorganized settings window and three new languages.
 
@@ -122,7 +122,7 @@ FIXES
 - Pasting a text file saved as UTF-16 into the message field no longer sends it as audio: it stays a document.
 
 - Global hotkey: with a WinZapp window waiting for an answer, the hotkey brings that window to the front, and AI image descriptions say when the provider's credit ran out. The account log no longer records the WPPConnect session's access code.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Os destaques desta versão são o novo motor Neonize, mais rápido e leve, que conecta ao WhatsApp sem navegador (a WPPConnect continua disponível como alternativa), as ligações em grupo e os links de ligação, e as melhorias de IA: resumos, ajuda de escrita, tradução de mensagens (online ou offline), e transcrições e descrições melhores. Traz também comunidades, canais, uma lista de contatos, uma janela de configurações reorganizada e três novos idiomas.
 
@@ -233,7 +233,7 @@ CORREÇÕES
 - Colar no campo de mensagem um arquivo de texto salvo em UTF-16 não o envia mais como áudio: ele continua sendo um documento.
 
 - Tecla de atalho global: com uma janela do WinZapp esperando uma resposta, a tecla de atalho traz essa janela para a frente, e as descrições de imagem por IA avisam quando o crédito do provedor acabou. O log da conta não registra mais o código de acesso da sessão da WPPConnect.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Os destaques desta versão são o novo motor Neonize, mais rápido e leve, que se liga ao WhatsApp sem navegador (o WPPConnect continua disponível como alternativa), as chamadas de grupo e as ligações de chamada, e as melhorias de IA: resumos, ajuda de escrita, tradução de mensagens (online ou offline), e melhores transcrições e descrições. Traz também comunidades, canais, uma lista de contactos, uma janela de definições reorganizada e três novos idiomas.
 
@@ -344,7 +344,7 @@ CORREÇÕES
 - Colar um ficheiro de texto guardado em UTF-16 no campo de mensagem deixa de o enviar como áudio: continua a ser um documento.
 
 - Tecla de atalho global: com uma janela do WinZapp à espera de uma resposta, a tecla de atalho traz essa janela para a frente, e as descrições de imagens por IA dizem quando o crédito do fornecedor acabou. O registo da conta deixa de guardar o código de acesso da sessão do WPPConnect.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="es" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Lo más destacado de esta versión es el nuevo motor Neonize, más rápido y ligero, que se conecta a WhatsApp sin navegador (WPPConnect sigue disponible como alternativa), las llamadas de grupo y los enlaces de llamada, y las mejoras de IA: resúmenes, ayuda para escribir, traducción de mensajes (en línea o sin conexión) y mejores transcripciones y descripciones. También trae comunidades, canales, una lista de contactos, una ventana de configuración reorganizada y tres idiomas nuevos.
 
@@ -455,7 +455,7 @@ CORRECCIONES
 - Pegar en el campo de mensaje un archivo de texto guardado como UTF-16 ya no lo envía como audio: sigue siendo un documento.
 
 - Atajo global: con una ventana de WinZapp esperando una respuesta, el atajo trae esa ventana al frente, y las descripciones de imágenes con IA dicen cuándo se agotó el crédito del proveedor. El registro de la cuenta ya no guarda el código de acceso de la sesión de WPPConnect.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="pl" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Najważniejsze w tej wersji to nowy silnik Neonize, szybszy i lżejszy, który łączy się z WhatsAppem bez przeglądarki (WPPConnect pozostaje dostępny jako alternatywa), połączenia grupowe i linki do połączeń oraz ulepszenia AI: podsumowania, pomoc w pisaniu, tłumaczenie wiadomości (online lub offline) oraz lepsze transkrypcje i opisy. Pojawiają się też społeczności, kanały, lista kontaktów, zreorganizowane okno ustawień oraz trzy nowe języki.
 
@@ -566,7 +566,7 @@ POPRAWKI
 - Wklejenie do pola wiadomości pliku tekstowego zapisanego jako UTF-16 nie wysyła go już jako audio: zostaje dokumentem.
 
 - Globalny skrót: gdy okno WinZapp czeka na odpowiedź, skrót wysuwa to okno na wierzch, a opisy obrazów przez AI mówią, gdy skończył się kredyt dostawcy. Log konta nie zapisuje już kodu dostępu sesji WPPConnect.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="tr" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Bu sürümün öne çıkanları, WhatsApp'a tarayıcı olmadan bağlanan, daha hızlı ve daha hafif yeni Neonize motoru (WPPConnect alternatif olarak kullanılabilir durumda kalır), grup aramaları ve arama bağlantıları ve yapay zekâ iyileştirmeleridir: özetler, yazma yardımı, mesaj çevirisi (çevrimiçi veya çevrimdışı) ile daha iyi yazıya dökmeler ve betimlemeler. Ayrıca topluluklar, kanallar, bir kişiler listesi, yeniden düzenlenmiş bir ayarlar penceresi ve üç yeni dil getirir.
 
@@ -677,7 +677,7 @@ DÜZELTMELER
 - UTF-16 olarak kaydedilmiş bir metin dosyasını mesaj alanına yapıştırmak artık onu ses olarak göndermez: belge olarak kalır.
 
 - Genel kısayol: cevap bekleyen bir WinZapp penceresi varken kısayol o pencereyi öne getirir ve yapay zekâ görsel betimlemeleri sağlayıcının kredisi bittiğinde bunu söyler. Hesap günlüğü artık WPPConnect oturumunun erişim kodunu kaydetmez.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="ro" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Punctele principale ale acestei versiuni sunt noul motor Neonize, mai rapid și mai ușor, care se conectează la WhatsApp fără browser (WPPConnect rămâne disponibil ca alternativă), apelurile de grup și linkurile de apel, precum și îmbunătățirile AI: rezumate, ajutor la scriere, traducerea mesajelor (online sau offline) și transcrieri și descrieri mai bune. Aduce și comunități, canale, o listă de contacte, o fereastră de setări reorganizată și trei limbi noi.
 
@@ -788,7 +788,7 @@ CORECTĂRI
 - Lipirea în câmpul de mesaj a unui fișier text salvat ca UTF-16 nu îl mai trimite ca audio: rămâne document.
 
 - Comanda rapidă globală: cu o fereastră WinZapp care așteaptă un răspuns, comanda aduce acea fereastră în față, iar descrierile AI ale imaginilor spun când creditul furnizorului s-a terminat. Jurnalul contului nu mai înregistrează codul de acces al sesiunii WPPConnect.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="ar" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 أبرز ما في هذا الإصدار محرك Neonize الجديد، الأسرع والأخف، الذي يتصل بواتساب دون متصفح (ويبقى WPPConnect متاحًا بديلًا)، ومكالمات المجموعات وروابط المكالمات، وتحسينات الذكاء الاصطناعي: الملخصات والمساعدة في الكتابة وترجمة الرسائل (عبر الإنترنت أو دون اتصال)، وتفريغات نصية وأوصاف أفضل. ويضيف أيضًا المجتمعات والقنوات وقائمة جهات الاتصال ونافذة إعدادات أُعيد تنظيمها وثلاث لغات جديدة.
 
@@ -899,7 +899,7 @@ FIXES
 - لصق ملف نصي محفوظ بترميز UTF-16 في حقل الرسالة لم يعد يرسله كصوت: يبقى مستندًا.
 
 - المفتاح العام: عندما تكون نافذة WinZapp بانتظار إجابة، يجلب المفتاح العام تلك النافذة إلى الأمام، وتقول أوصاف الصور بالذكاء الاصطناعي عندما ينفد رصيد الموفّر. ولم يعد سجل الحساب يسجّل رمز الوصول إلى جلسة WPPConnect.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="it" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 The highlights of this release are the new Neonize engine, faster and lighter, which connects to WhatsApp without a browser (WPPConnect stays available as the alternative), group calls and call links, and AI improvements: summaries, writing help, message translation (online or offline), and better transcriptions and descriptions. It also brings communities, channels, a contacts list, a reorganized settings window and three new languages.
 
@@ -1010,7 +1010,7 @@ FIXES
 - Pasting a text file saved as UTF-16 into the message field no longer sends it as audio: it stays a document.
 
 - Global hotkey: with a WinZapp window waiting for an answer, the hotkey brings that window to the front, and AI image descriptions say when the provider's credit ran out. The account log no longer records the WPPConnect session's access code.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Czech: free Alt+R, Alt+N and Alt+Y for the shortcuts they already have (from #947) (#951)
+      <description xml:lang="cs" sparkle:format="plain-text">- User guide: fix the Alt letters of Messages and main navigation (cs, en-US, tr-TR, ar) (#953)
 
 Hlavními novinkami tohoto vydání jsou nový engine Neonize, rychlejší a lehčí, který se k WhatsAppu připojuje bez prohlížeče (WPPConnect zůstává k dispozici jako alternativa), skupinové hovory a odkazy na hovory a vylepšení AI: shrnutí, pomoc s psaním, překlad zpráv (online i offline) a lepší přepisy a popisy. Přináší také komunity, kanály, seznam kontaktů, přepracované okno nastavení a tři nové jazyky.
 
@@ -1121,6 +1121,15 @@ OPRAVY
 - Vložení textového souboru uloženého jako UTF-16 do pole zprávy ho už neodešle jako zvuk: zůstane dokumentem.
 
 - Globální klávesová zkratka: když okno WinZappu čeká na odpověď, zkratka přenese toto okno do popředí a popisy obrázků pomocí AI řeknou, když poskytovateli došel kredit. Protokol účtu už nezaznamenává přístupový kód session WPPConnect.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6015alpha/WinZapp-macOS-x86_64.zip" length="382301226" type="application/octet-stream" sparkle:edSignature="+phRviAzRcVAXzHvx/lYlPFBfDKnSNQ5c5JsRgAGIGJArIyaK/yMPvLYy+NIYsT5JmFExgVzKpgSTPMHMCl9Dw=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.1.0.6014alpha</title>
+      <pubDate>Fri, 27 Nov 2026 15:34:57 +0000</pubDate>
+      <sparkle:version>3.1.0.60141</sparkle:version>
+      <sparkle:shortVersionString>3.1.0.6014alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6014alpha/WinZapp-macOS-x86_64.zip" length="382269664" type="application/octet-stream" sparkle:edSignature="HcI3Ab5fvFuSje4n2RfGzsz2Gt0+40Kj2IH4YaaL8otkn0+yAfQqx7ItaqkTPfx3+REEShzdO7+OfPugOYiPBQ=="></enclosure>
     </item>
     <item>
@@ -1149,15 +1158,6 @@ OPRAVY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6005alpha/WinZapp-macOS-x86_64.zip" length="382780966" type="application/octet-stream" sparkle:edSignature="DNtS4OM6el+WXoCDu2DprRlLIh6AKMBDO8d3+O4+espAyrPPyNLWFgwjUa0DH3/+SSxnEz5MHSNx2XFYtlvzCg=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.6004alpha</title>
-      <pubDate>Thu, 26 Nov 2026 19:21:56 +0000</pubDate>
-      <sparkle:version>3.0.0.60041</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6004alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6004alpha/WinZapp-macOS-x86_64.zip" length="382948563" type="application/octet-stream" sparkle:edSignature="ootJYmR0HIFHEhRocgfx0E6fV8wW7LaXE3qTyTA164o+N6GjCYOqipF/TyxvA/acCmlwMrBBRuNEjDvi5TjNBA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 3.0.0.0</title>
@@ -2275,6 +2275,6 @@ OPRAVY
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: OYlkKiQdB26f4Tub9Ebvv74mWC36uKNj7gjELKlmb2pdm9xvhvSGh60LQZ+Lb/66YpMHxpZ7N8PO94EkBTobCw==
-length: 553675
+edSignature: USunsQi7prAMdmc2JNePqg6Knd817d2d8S6Drfh6VMAW3E4gJO8RyjFpQBvM8fJFHlzorRlJmUvVmVdJdEjgAQ==
+length: 553715
 -->
