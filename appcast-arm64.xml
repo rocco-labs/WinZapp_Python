@@ -5,17 +5,13 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (arm64)</title>
     <language>en</language>
     <item>
-      <title>WinZapp 3.1.0.6021alpha</title>
-      <pubDate>Sat, 28 Nov 2026 03:49:01 +0000</pubDate>
-      <sparkle:version>3.1.0.60211</sparkle:version>
-      <sparkle:shortVersionString>3.1.0.6021alpha</sparkle:shortVersionString>
+      <title>WinZapp 3.1.0.6022alpha</title>
+      <pubDate>Sat, 28 Nov 2026 05:56:17 +0000</pubDate>
+      <sparkle:version>3.1.0.60221</sparkle:version>
+      <sparkle:shortVersionString>3.1.0.6022alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="en" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 This release brings fixes on top of 3.0.0.0.
 
@@ -72,11 +68,7 @@ WHAT'S NEW
 FIXES
 
 - Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Esta versão traz correções sobre a 3.0.0.0.
 
@@ -133,11 +125,7 @@ NOVIDADES
 CORREÇÕES
 
 - Abertura do WinZapp: em um disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto salvava a lista de contatos, e abrir normalmente na tentativa seguinte. Salvar muitos contatos agora espera tanto quanto os outros salvamentos em lote, e um contato que não puder ser salvo na inicialização não impede mais o WinZapp de abrir.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Esta versão traz correções sobre a 3.0.0.0.
 
@@ -194,11 +182,7 @@ NOVIDADES
 CORREÇÕES
 
 - Abertura do WinZapp: num disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto guardava a lista de contactos, e abrir normalmente na tentativa seguinte. Guardar muitos contactos passa a esperar tanto quanto as outras gravações em lote, e um contacto que não possa ser guardado no arranque já não impede o WinZapp de abrir.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="es" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Esta versión trae correcciones sobre la 3.0.0.0.
 
@@ -255,11 +239,7 @@ NOVEDADES
 CORRECCIONES
 
 - Apertura de WinZapp: en un disco lento, WinZapp podía detenerse al iniciar con "Database call timed out after 20s" mientras guardaba la lista de contactos, y abrirse con normalidad al intentarlo de nuevo. Guardar muchos contactos ahora espera tanto como los demás guardados en lote, y un contacto que no se pueda guardar al iniciar ya no impide que WinZapp se abra.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="pl" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 To wydanie przynosi poprawki do wersji 3.0.0.0.
 
@@ -316,11 +296,7 @@ NOWOŚCI
 POPRAWKI
 
 - Uruchamianie WinZapp: na wolnym dysku WinZapp mógł zatrzymać się przy starcie z komunikatem „Database call timed out after 20s” podczas zapisywania listy kontaktów, a przy kolejnej próbie otwierał się normalnie. Zapis dużej liczby kontaktów czeka teraz tak długo jak inne zapisy zbiorcze, a kontakt, którego nie da się zapisać przy starcie, nie uniemożliwia już otwarcia WinZapp.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="tr" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Bu sürüm 3.0.0.0 üzerine düzeltmeler getirir.
 
@@ -377,11 +353,7 @@ YENİLİKLER
 DÜZELTMELER
 
 - WinZapp'ı açma: yavaş bir diskte WinZapp, kişi listesini kaydederken başlangıçta "Database call timed out after 20s" hatasıyla durabiliyor, bir sonraki denemede normal açılıyordu. Çok sayıda kişiyi kaydetmek artık diğer toplu kayıtlar kadar bekliyor ve başlangıçta kaydedilemeyen bir kişi WinZapp'ın açılmasını artık engellemiyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="ro" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Această versiune aduce corectări față de 3.0.0.0.
 
@@ -438,11 +410,7 @@ NOUTĂȚI
 CORECTĂRI
 
 - Deschiderea WinZapp: pe un disc lent, WinZapp se putea opri la pornire cu „Database call timed out after 20s” în timp ce salva lista de contacte, și se deschidea normal la următoarea încercare. Salvarea unui număr mare de contacte așteaptă acum la fel de mult ca celelalte salvări în bloc, iar un contact care nu poate fi salvat la pornire nu mai împiedică deschiderea WinZapp.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="ar" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 يأتي هذا الإصدار من WinZapp بإصلاحات فوق الإصدار 3.0.0.0.
 
@@ -499,11 +467,7 @@ WHAT'S NEW
 FIXES
 
 - فتح WinZapp: على قرص بطيء، كان WinZapp قد يتوقف عند بدء التشغيل مع الرسالة "Database call timed out after 20s" أثناء حفظ قائمة جهات الاتصال، ثم يفتح بشكل طبيعي في المحاولة التالية. أصبح حفظ عدد كبير من جهات الاتصال ينتظر مثل عمليات الحفظ المجمّعة الأخرى، ولم تعد جهة اتصال يتعذر حفظها عند بدء التشغيل تمنع WinZapp من الفتح.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="it" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 This release brings fixes on top of 3.0.0.0.
 
@@ -560,11 +524,7 @@ WHAT'S NEW
 FIXES
 
 - Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
-- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
-- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
-- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
-- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+      <description xml:lang="cs" sparkle:format="plain-text">- Recent conversations: try WhatsApp Web's own request shape first and log every peer answer (#965)
 
 Toto vydání přináší opravy oproti verzi 3.0.0.0.
 
@@ -621,6 +581,15 @@ NOVINKY
 OPRAVY
 
 - Spuštění WinZapp: na pomalém disku se WinZapp mohl při spuštění zastavit s chybou „Database call timed out after 20s“, když ukládal seznam kontaktů, a při dalším pokusu se normálně otevřel. Uložení velkého počtu kontaktů nyní čeká stejně dlouho jako ostatní hromadná ukládání a kontakt, který se při spuštění nepodaří uložit, už WinZapp neznemožní otevřít.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6022alpha/WinZapp-macOS-arm64.zip" length="348700055" type="application/octet-stream" sparkle:edSignature="3w+nNCd1vQroiH9QbtfmuNWUdqhet4eEad2vreReeHV6/E3elBOz3HHl8x/qiwvMhYdEXH9Ktx7s9nLe0rGUDg=="></enclosure>
+    </item>
+    <item>
+      <title>WinZapp 3.1.0.6021alpha</title>
+      <pubDate>Sat, 28 Nov 2026 03:49:01 +0000</pubDate>
+      <sparkle:version>3.1.0.60211</sparkle:version>
+      <sparkle:shortVersionString>3.1.0.6021alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6021alpha/WinZapp-macOS-arm64.zip" length="343231207" type="application/octet-stream" sparkle:edSignature="zVcWWmy1lpifvz9e6YxtSwO9xaDLqCvJ8hJj0+Y/8x4LSslwW0Uw4IqlcAX5/kVdjwG64KGoo+I+fPifnw73Aw=="></enclosure>
     </item>
     <item>
@@ -649,15 +618,6 @@ OPRAVY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6014alpha/WinZapp-macOS-arm64.zip" length="347572291" type="application/octet-stream" sparkle:edSignature="J4deoRvyPpxyKXtPvqhdffu5zQS3a1RHhpBbjDS8yvtXMICKoXyvtkwxhXngk9q16HBY/0ootAoeiiRzt4apDQ=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.1.0.6013alpha</title>
-      <pubDate>Fri, 27 Nov 2026 14:39:10 +0000</pubDate>
-      <sparkle:version>3.1.0.60131</sparkle:version>
-      <sparkle:shortVersionString>3.1.0.6013alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6013alpha/WinZapp-macOS-arm64.zip" length="347568449" type="application/octet-stream" sparkle:edSignature="BMe/pLsXnzm9kFiBZN9mLtoM5dmCMoZ4WTJGLQVd4/xmsiBX7eu14z7ng/lST0E0x209hK/6cxBRz0FzMmTBDg=="></enclosure>
     </item>
     <item>
       <title>WinZapp 3.0.0.0</title>
@@ -1775,6 +1735,6 @@ OPRAVY
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ie/qZD/VjsEmAcltc8CzNJf+XN1Sk92LioLidhwU3czqRdrlbXH2R1yA7Uh2/6t+HxGNqv/UMpSVMDHwr25XDA==
-length: 421328
+edSignature: eKFaToiVNEr6yq+lKe3vRQg7Po8wxCZD46tKhq1yebnp/j/kijmZMj5DFW5yyix3BdpSrPmpUTjwk7ufRZg+BA==
+length: 417358
 -->
