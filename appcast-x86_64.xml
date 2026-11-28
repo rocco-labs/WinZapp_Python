@@ -5,82 +5,631 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <title>WinZapp for macOS (x86_64)</title>
     <language>en</language>
     <item>
+      <title>WinZapp 3.1.0.6021alpha</title>
+      <pubDate>Sat, 28 Nov 2026 03:49:01 +0000</pubDate>
+      <sparkle:version>3.1.0.60211</sparkle:version>
+      <sparkle:shortVersionString>3.1.0.6021alpha</sparkle:shortVersionString>
+      <sparkle:channel>alpha</sparkle:channel>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <description xml:lang="en" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+This release brings fixes on top of 3.0.0.0.
+
+WHAT'S NEW
+
+- AI descriptions: opening Ctrl+Shift+I on a photo, sticker or video that already has a description saved with its message now shows that saved text at once, without a new request and without using your quota. "Run again (new request)" and follow-up questions are still there.
+
+- AI chat summaries: the text sent for a summary now includes the AI description already saved with photos, stickers and videos, the options of polls (and their votes, when known) and a short excerpt of the message each reply quotes. When something asks you a question, a request, a date or a link, the summary ends with a short list of those items.
+
+- Text without sending anything: in the AI window of a photo, sticker or video, the "Read text on this computer" button reads the text in the picture with Windows' own text recognition, with no internet, no key and no consent window (it needs a text recognition language installed in Windows). When you convert a PDF to accessible text, WinZapp now first reads the text the PDF itself contains, on this computer; only a scanned PDF without text goes on to the AI providers, and "Run again (new request)" asks an AI to also describe the pictures.
+
+- AI requests: when a provider answers "too many requests" or "unavailable" and asks to wait only a few seconds, WinZapp waits that moment and tries the same provider once more before moving on to the next one. Cancelling still stops everything at once.
+
+- Settings, Online AI: the new "Usage summary..." button opens a window that says, for each provider, how many requests it answered and how many failed, with the reason of the last failure, and a "Reset counters" button. Only counts are kept, never the content of a message, a request or an answer.
+
+- Videos: the online AI description now looks at up to five frames spread over the video, joined into one picture, instead of a single frame. The model is told the frames are in order and that it cannot know what happens between them or hear the sound, which is still never sent. The consent window says that several frames, without sound, are sent. Settings, Online AI, "Types of media handled...": the new "Describe videos from several frames" box, on by default, can be switched off to send one frame again.
+
+- Result window of a picture, sticker, video or PDF: the new "Quick analysis" choice and "Analyze" button run the same file again with another request: "Extract only the text", "Read receipt, bill or PIX proof" (amount, receiver, date and code or key, without guessing: an unclear value is marked to be confirmed and what could not be read is listed) or "Read table or menu". "Use my own instruction" enables the "Your instruction" field, where you type what you want from the file. The answer replaces the previous one and goes through the same consent.
+
+- Settings, Online AI, "Types of media handled...": two new options, both off by default, "Include the caption when describing media" and "Include the quoted message when describing media". When on, that text, written by other people in the chat, is sent with the description request, and a separate consent says so.
+
+- Writing help: besides the four actions, "Use my own instruction" lets you type what to do with the draft (for example, "summarize in one line"), and "Suggest a reply draft" asks the AI for a reply based on the last 10 messages of the conversation and your draft. This sends those messages and the names of who wrote them, so it asks for its own consent, every time in locked chats. The suggestion only replaces your draft if you choose "Replace draft".
+
+- A video can now keep an AI description and a local transcription at the same time. When both are put in the message's line, the line says both, for example "..., description: ..., transcription: ...". Deleting the transcription (Alt+Shift+Delete or the context menu) keeps the description; deleting again removes the description. A message deleted for everyone loses both.
+
+- AI answers: a new option in Settings, Online AI, "Types of media handled...", "Show answers as they arrive" (off by default), makes the result window of a description, a PDF or a chat summary fill in whole lines or sentences while the AI is still writing, at most once a second, instead of waiting for the complete answer. The waiting sound stops and the window says once that the answer is arriving; the answer is still read aloud once, when it is complete. If the request fails or you cancel it, the partial text is discarded, and Cancel and Esc close the connection at once. Voice messages and the writing help are not affected.
+
+- Local AI models: Settings, Online AI now lists Ollama and LM Studio next to the online providers. You give the server's address (the usual one is filled in) and choose a model you installed; WinZapp then describes pictures, stickers and video frames, summarizes chats, helps you write and runs the quick analysis modes on your own computer, with no API key and nothing sent out. Without a chosen model the provider is not used, and the window says so. If you set an address that is not on this computer, WinZapp treats it as an online provider and asks for your consent first. Voice messages and PDFs are not handled by local models.
+
+- Chat summary: a new opt-in option, "Summarize older messages too (several requests)" (Settings, Online AI, "Types of media handled..."), lets a long backlog be summarized in up to 6 parts plus one request that joins them, instead of dropping the older messages. The consent says how many requests may be made, the window says "Summarizing part 2 of 5...", and if a part fails no summary is shown as if it were complete.
+
+- Settings, Online AI: the new "Providers by task..." button opens a window where each kind of task (voice messages, photos, stickers, videos, PDF, message summary and writing help) can have its own providers in its own order. Check "Use the general order for this task" to keep things as they are; otherwise use "Include or leave out" and the move buttons to build the route. A task with its own route only uses the providers in it (if none is ready, the action is not offered), and every provider still asks for your consent as before.
+
+- Videos: in the AI window of a video, the new "Understand full video" button tells what is seen and what is said in one text. It uses the transcription already saved with the video, or transcribes the speech on this computer (a progress window with Cancel); the sound never leaves the computer. A consent of its own, asked every time the window opens and never remembered, says that the pictures taken from the video and the transcribed text are sent, and names the providers. If the speech cannot be transcribed you are told why and may describe only the images, and the answer then says it covers only the images. The text sent is limited to its first 12,000 characters. Follow-up questions and "Run again (new request)" keep working; the answer is not put in the message line, so it never replaces the saved description or transcription.
+
+- Message reading profiles: in Settings &gt; User interface &gt; Messages, "Customize how each message row is read" chooses the order in which your screen reader says each message. "Default" is the row you already know. "Content first" says the message before the sender, time and status. "Concise" leaves out the sender and the time when they repeat the previous message's. Searching the conversation still finds messages by content and by name.
+
+- Jump by type of message: Alt+F5 / Alt+Shift+F5 go to the next / previous voice message not played yet, Alt+F6 to a photo, video or sticker, Alt+F7 to a document, Alt+F8 to a poll and Alt+F9 to a link (Alt+Shift adds the previous one). The screen reader says the type and the position ("Document: 2 of 5") and, past the last or the first one, says there is no more instead of starting over. The keys can be changed in Settings &gt; Keyboard shortcuts.
+
+- Search all conversations: Ctrl+Shift+G, or "Search all conversations" in the File menu, searches the text of every chat stored on this computer: messages, captions, file names, polls, contact cards, the transcriptions and AI descriptions saved with voice messages, photos and videos, and the names of senders and chats. Results read "chat — sender — date — excerpt"; Enter opens the chat on that message, Esc stops a running search. The encrypted history is read in the background without freezing the window, up to 200 results are listed, and locked chats stay out of the results while the vault is closed.
+
+- Low vision: Settings &gt; Interface &gt; Font size makes the text of lists, message fields and windows larger (110% to 200%), and Ctrl+= (or Ctrl++), Ctrl+- and Ctrl+Shift+Z make it larger, smaller and back to the default, saying the new size. It is off by default, so nothing changes until you choose a size. WinZapp sets no colors of its own, so the Windows high contrast theme keeps applying.
+
+- Drafts: what you typed and did not send now survives closing WinZapp, restarting it and automatic updates. It is kept on this computer only encrypted, never as plain text, and comes back, mentions included, when you open the conversation again; a locked conversation's draft comes back only once the vault is open. Sending or erasing the text, deleting the conversation or logging out removes it. In Settings &gt; Interface &gt; Chats, "Keep unsent text as encrypted drafts after restarting WinZapp" (on by default) turns this off.
+
+- Local transcription of long recordings (over 2 minutes): the result window now also has a list of moments, each row starting with its time, like "[01:05] ...". "Listen from here" (or Enter) jumps the voice message to that second when that message is the one playing, and "Copy with times" copies the rows; the text above and the window's Copy and Save stay free of times. A transcription opened again from the message has the text only, without this list.
+
+- Local transcription vocabulary: in Settings, Local transcription, Advanced options, "Vocabulary" takes names, acronyms and terms (one per line) that Whisper should expect, to get them spelled right. The list stays on this computer, is never written to the log and never goes online; whisper.cpp only uses the terms without accents. A transcription already saved is not redone when the list changes.
+
+- Dictation in the message field: Ctrl+Shift+J starts listening to the microphone and the same key stops it. The speech is transcribed on this computer, with the local Whisper you already set up, and the text goes in at the cursor of the message (replacing the selection, if there is one) and is read aloud. The message is never sent by itself, the audio is never saved or sent anywhere, and if no model is ready WinZapp says why instead of downloading one. It is refused with a clear sentence while you record a voice message or are in a call. The key can be changed in Settings &gt; Keyboard shortcuts.
+
+- Live captions in calls: during a call, "Live captions" (Ctrl+Shift+X, or its button in the call window) opens a window, without taking the focus from the call controls, that lists what the other person says as whole phrases, transcribed on this computer by the local Whisper model; pressing the command again moves to the window. "Copy" and "Save..." act only when you press them, nothing is saved by itself, and "Speak the captions aloud" is off by default. Live captions are refused while a message transcription or a dictation is using the model, and they turn themselves off if the call audio starts to suffer.
+
+FIXES
+
+- Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
+      <description xml:lang="pt-BR" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Esta versão traz correções sobre a 3.0.0.0.
+
+NOVIDADES
+
+- Descrições com IA: ao abrir Ctrl+Shift+I numa foto, figurinha ou vídeo que já tem uma descrição salva com a mensagem, o WinZapp mostra esse texto na hora, sem fazer um novo pedido e sem gastar a sua cota. "Executar novamente (nova solicitação)" e as perguntas de acompanhamento continuam disponíveis.
+
+- Resumo de mensagens com IA: o texto enviado para o resumo agora inclui a descrição por IA já salva de fotos, figurinhas e vídeos, as opções das enquetes (e os votos, quando conhecidos) e um trecho da mensagem que cada resposta cita. Quando algo pede de você uma resposta, um pedido, uma data ou um link, o resumo termina com uma lista curta desses itens.
+
+- Texto sem enviar nada: na janela de IA de uma foto, figurinha ou vídeo, o botão "Ler o texto neste computador" lê o texto da imagem com o reconhecimento de texto do próprio Windows, sem internet, sem chave e sem janela de consentimento (precisa de um idioma de reconhecimento de texto instalado no Windows). Ao converter um PDF em texto acessível, o WinZapp agora lê primeiro o texto que o próprio PDF contém, neste computador; só um PDF escaneado, sem texto, segue para os provedores de IA, e "Executar novamente (nova solicitação)" pede a uma IA que descreva também as imagens.
+
+- Pedidos de IA: quando um provedor responde "muitas solicitações" ou "indisponível" e pede para esperar só alguns segundos, o WinZapp espera esse instante e tenta o mesmo provedor mais uma vez antes de passar ao próximo. Cancelar continua interrompendo tudo na hora.
+
+- Configurações, IA online: o novo botão "Uso e falhas da IA..." abre uma janela que diz, para cada provedor, quantas solicitações ele respondeu e quantas falharam, com o motivo da última falha, e um botão "Zerar contadores". Só os números são guardados, nunca o conteúdo de uma mensagem, de um pedido ou de uma resposta.
+
+- Vídeos: a descrição por IA online agora olha até cinco quadros espalhados pelo vídeo, reunidos numa só imagem, em vez de um único quadro. O modelo é avisado de que os quadros estão em ordem e de que não sabe o que acontece entre eles nem ouve o som, que continua sem ser enviado. A janela de consentimento diz que vários quadros, sem som, são enviados. Configurações, IA online, "Tipos de mídia processados...": a nova caixa "Descrever vídeos com vários quadros", ligada por padrão, pode ser desligada para voltar a enviar um só quadro.
+
+- Janela de resultado de uma imagem, figurinha, vídeo ou PDF: a nova escolha "Análise rápida" e o botão "Analisar" executam o mesmo arquivo de novo com outro pedido: "Extrair somente o texto", "Ler comprovante, boleto ou PIX" (valor, recebedor, data e código ou chave, sem chutar: um valor duvidoso é marcado para confirmar e o que não foi possível ler é listado) ou "Ler tabela ou cardápio". "Usar minha própria instrução" habilita o campo "Sua instrução", onde você digita o que quer do arquivo. A resposta substitui a anterior e passa pelo mesmo consentimento.
+
+- Configurações, IA online, "Tipos de mídia processados...": duas novas opções, ambas desligadas por padrão, "Incluir a legenda ao descrever mídias" e "Incluir a mensagem citada ao descrever mídias". Ligadas, esse texto, escrito por outras pessoas na conversa, é enviado junto com o pedido de descrição, e um consentimento separado avisa isso.
+
+- Ajuda de escrita: além das quatro ações, "Usar minha própria instrução" permite digitar o que fazer com o rascunho (por exemplo, "resuma em uma linha"), e "Sugerir rascunho de resposta" pede à IA uma resposta com base nas últimas 10 mensagens da conversa e no seu rascunho. Isso envia essas mensagens e os nomes de quem as escreveu, por isso pede um consentimento próprio, sempre nas conversas trancadas. A sugestão só substitui o seu rascunho se você escolher "Substituir rascunho".
+
+- Um vídeo agora pode guardar ao mesmo tempo uma descrição por IA e uma transcrição local. Quando as duas estão na linha da mensagem, a linha diz as duas, por exemplo "..., descrição: ..., transcrição: ...". Apagar a transcrição (Alt+Shift+Delete ou o menu de contexto) mantém a descrição; apagar de novo remove a descrição. Uma mensagem apagada para todos perde as duas.
+
+- Respostas da IA: uma nova opção em Configurações, IA online, "Tipos de mídia processados...", "Mostrar as respostas conforme chegam" (desligada por padrão), faz a janela de resultado de uma descrição, de um PDF ou de um resumo de conversa ser preenchida por linhas ou frases inteiras enquanto a IA ainda escreve, no máximo uma vez por segundo, em vez de esperar a resposta completa. O som de espera para e a janela avisa uma vez que a resposta está chegando; a resposta continua sendo lida em voz alta uma única vez, quando estiver completa. Se o pedido falhar ou você cancelar, o texto parcial é descartado, e Cancelar e Esc encerram a conexão na hora. Mensagens de voz e a ajuda de escrita não mudam.
+
+- Modelos de IA locais: Configurações, IA online agora lista Ollama e LM Studio junto aos provedores online. Você informa o endereço do servidor (o usual já vem preenchido) e escolhe um modelo que instalou; o WinZapp então descreve imagens, figurinhas e quadros de vídeo, resume conversas, ajuda a escrever e roda os modos de análise rápida no seu próprio computador, sem chave de API e sem enviar nada para fora. Sem um modelo escolhido o provedor não é usado, e a janela avisa. Se você definir um endereço que não é deste computador, o WinZapp o trata como um provedor online e pede o seu consentimento antes. Modelos locais não atendem mensagens de voz nem PDFs.
+
+- Resumo de conversa: uma nova opção, desligada por padrão, "Resumir também as mensagens mais antigas (vários pedidos)" (Configurações, IA online, "Tipos de mídia processados..."), permite resumir um volume grande de mensagens em até 6 partes mais um pedido que as une, em vez de descartar as mais antigas. O consentimento diz quantos pedidos podem ser feitos, a janela diz "Resumindo a parte 2 de 5..." e, se uma parte falhar, nenhum resumo é mostrado como se estivesse completo.
+
+- Configurações, IA online: o novo botão "Ajuste dos provedores por tarefa..." abre uma janela em que cada tipo de tarefa (mensagens de voz, fotos, figurinhas, vídeos, PDF, resumo de mensagens e ajuda de escrita) pode ter os seus próprios provedores, na sua própria ordem. Marque "Usar a ordem geral para esta tarefa" para deixar tudo como está; senão use "Incluir ou deixar de fora" e os botões de mover para montar a rota. Uma tarefa com rota própria usa só os provedores dela (se nenhum estiver pronto, a ação não é oferecida), e cada provedor continua pedindo o seu consentimento como antes.
+
+- Vídeos: na janela de IA de um vídeo, o novo botão "Entender o vídeo completo" conta num só texto o que se vê e o que se fala. Ele usa a transcrição já guardada com o vídeo ou transcreve a fala neste computador (uma janela de progresso com Cancelar); o som nunca sai do computador. Um consentimento próprio, pedido toda vez que a janela abre e nunca lembrado, diz que os quadros tirados do vídeo e o texto transcrito são enviados e cita os provedores. Se a fala não puder ser transcrita, o WinZapp diz o motivo e você pode descrever só as imagens, e a resposta então diz que cobre só as imagens. O texto enviado é limitado aos seus primeiros 12.000 caracteres. As perguntas de acompanhamento e "Executar novamente (nova solicitação)" continuam funcionando; a resposta não vai para a linha da mensagem, então nunca substitui a descrição nem a transcrição guardadas.
+
+- Perfis de leitura das mensagens: em Configurações &gt; Interface do usuário &gt; Mensagens, "Personalizar como cada mensagem é lida" escolhe a ordem em que o leitor de tela diz cada mensagem. "Padrão" é a linha que você já conhece. "Conteúdo primeiro" diz a mensagem antes do remetente, da hora e do estado. "Conciso" omite o remetente e a hora quando repetem os da mensagem anterior. A pesquisa na conversa continua achando as mensagens pelo conteúdo e pelo nome.
+
+- Salto por tipo de mensagem: Alt+F5 / Alt+Shift+F5 vão para a próxima / anterior mensagem de voz ainda não reproduzida, Alt+F6 para uma foto, vídeo ou figurinha, Alt+F7 para um documento, Alt+F8 para uma enquete e Alt+F9 para um link (Alt+Shift traz a anterior). O leitor de tela diz o tipo e a posição ("Documento: 2 de 5") e, depois da última ou antes da primeira, diz que não há mais nenhuma em vez de recomeçar. As teclas podem ser mudadas em Configurações &gt; Atalhos de teclado.
+
+- Pesquisar em todas as conversas: Ctrl+Shift+G, ou "Pesquisar em todas as conversas" no menu Arquivo, pesquisa o texto de todas as conversas guardadas neste computador: mensagens, legendas, nomes de arquivos, enquetes, cartões de contato, as transcrições e descrições por IA salvas com mensagens de voz, fotos e vídeos, e os nomes de quem enviou e das conversas. Os resultados leem "conversa — remetente — data — trecho"; Enter abre a conversa na mensagem encontrada, Esc interrompe uma pesquisa em andamento. O histórico criptografado é lido em segundo plano, sem travar a janela, até 200 resultados são listados, e as conversas trancadas ficam fora dos resultados enquanto o cofre está fechado.
+
+- Baixa visão: em Configurações &gt; Interface &gt; Tamanho da fonte, o texto das listas, dos campos de mensagem e das janelas fica maior (de 110% a 200%), e Ctrl+= (ou Ctrl++), Ctrl+- e Ctrl+Shift+Z aumentam, diminuem e voltam ao padrão, dizendo o novo tamanho. Vem desligado, então nada muda até você escolher um tamanho. O WinZapp não define cores próprias, então o tema de alto contraste do Windows continua valendo.
+
+- Rascunhos: o que você digitou e não enviou agora sobrevive ao fechamento do WinZapp, à reinicialização e às atualizações automáticas. Fica neste computador somente criptografado, nunca como texto simples, e volta, com as menções, quando você abre a conversa de novo; o rascunho de uma conversa trancada só volta com o cofre aberto. Enviar ou apagar o texto, excluir a conversa ou sair da conta remove o rascunho. Em Configurações &gt; Interface &gt; Conversas, "Manter os rascunhos criptografados ao fechar o WinZapp" (ativada por padrão) desliga isso.
+
+- Transcrição local de gravações longas (mais de 2 minutos): a janela do resultado passa a ter também uma lista de momentos, cada linha começando pelo tempo, como "[01:05] ...". "Ouvir daqui" (ou Enter) leva a mensagem de voz para aquele segundo quando é ela que está tocando, e "Copiar com tempos" copia as linhas; o texto acima e os botões Copiar e Salvar da janela continuam sem tempos. Uma transcrição aberta de novo a partir da mensagem tem só o texto, sem essa lista.
+
+- Vocabulário da transcrição local: em Configurações, Transcrição local, Opções avançadas, o campo "Vocabulário" recebe nomes, siglas e termos (um por linha) que o Whisper deve esperar, para escrevê-los certo. A lista fica neste computador, nunca é escrita no registro e nunca vai para a internet; o whisper.cpp só usa os termos sem acento. Uma transcrição já salva não é refeita quando a lista muda.
+
+- Ditado no campo de mensagem: Ctrl+Shift+J começa a ouvir o microfone e a mesma tecla para. A fala é transcrita neste computador, com o Whisper local que você já configurou, e o texto entra na posição do cursor da mensagem (substituindo a seleção, se houver) e é lido em voz alta. A mensagem nunca é enviada sozinha, o áudio nunca é guardado nem enviado a lugar nenhum, e se não houver um modelo pronto o WinZapp diz o motivo em vez de baixar um. O ditado é recusado com uma frase clara enquanto você grava uma mensagem de voz ou está em uma ligação. A tecla pode ser alterada em Configurações &gt; Atalhos de teclado.
+
+- Legendas ao vivo nas ligações: durante uma ligação, "Legendas ao vivo" (Ctrl+Shift+X, ou o botão na janela da ligação) abre uma janela, sem tirar o foco dos controles da ligação, que lista o que a outra pessoa diz em frases completas, transcritas neste computador pelo modelo Whisper local; pressionar o comando de novo leva até a janela. "Copiar" e "Salvar..." agem só quando você os aciona, nada é salvo sozinho, e "Falar as legendas em voz alta" vem desligada. As legendas ao vivo são recusadas enquanto uma transcrição de mensagem ou um ditado usa o modelo, e se desligam sozinhas se o áudio da ligação começar a sofrer.
+
+CORREÇÕES
+
+- Abertura do WinZapp: em um disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto salvava a lista de contatos, e abrir normalmente na tentativa seguinte. Salvar muitos contatos agora espera tanto quanto os outros salvamentos em lote, e um contato que não puder ser salvo na inicialização não impede mais o WinZapp de abrir.</description>
+      <description xml:lang="pt-PT" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Esta versão traz correções sobre a 3.0.0.0.
+
+NOVIDADES
+
+- Descrições com IA: ao abrir Ctrl+Shift+I numa foto, autocolante ou vídeo que já tem uma descrição guardada com a mensagem, o WinZapp mostra esse texto de imediato, sem fazer um novo pedido e sem gastar a sua quota. "Executar novamente (novo pedido)" e as perguntas de acompanhamento continuam disponíveis.
+
+- Resumo de mensagens com IA: o texto enviado para o resumo passa a incluir a descrição por IA já guardada de fotos, autocolantes e vídeos, as opções das sondagens (e os votos, quando conhecidos) e um excerto da mensagem que cada resposta cita. Quando algo lhe pede uma resposta, um pedido, uma data ou uma ligação, o resumo termina com uma lista curta desses itens.
+
+- Texto sem enviar nada: na janela de IA de uma foto, autocolante ou vídeo, o botão "Ler o texto neste computador" lê o texto da imagem com o reconhecimento de texto do próprio Windows, sem internet, sem chave e sem janela de consentimento (precisa de um idioma de reconhecimento de texto instalado no Windows). Ao converter um PDF em texto acessível, o WinZapp passa a ler primeiro o texto que o próprio PDF contém, neste computador; só um PDF digitalizado, sem texto, segue para os fornecedores de IA, e "Executar novamente (novo pedido)" pede a uma IA que descreva também as imagens.
+
+- Pedidos de IA: quando um fornecedor responde "demasiados pedidos" ou "indisponível" e pede para esperar apenas alguns segundos, o WinZapp espera esse instante e tenta o mesmo fornecedor mais uma vez antes de passar ao seguinte. Cancelar continua a interromper tudo de imediato.
+
+- Definições, IA online: o novo botão "Uso e falhas da IA..." abre uma janela que diz, para cada fornecedor, quantos pedidos respondeu e quantos falharam, com o motivo da última falha, e um botão "Repor contadores". Só os números são guardados, nunca o conteúdo de uma mensagem, de um pedido ou de uma resposta.
+
+- Vídeos: a descrição por IA online passa a olhar até cinco imagens espalhadas pelo vídeo, reunidas numa só imagem, em vez de uma única. O modelo é avisado de que as imagens estão por ordem e de que não sabe o que acontece entre elas nem ouve o som, que continua a não ser enviado. A janela de consentimento diz que são enviadas várias imagens, sem som. Definições, IA online, "Tipos de conteúdo processados...": a nova caixa "Descrever vídeos com vários quadros", ligada por predefinição, pode ser desligada para voltar a enviar uma só imagem.
+
+- Janela de resultado de uma imagem, autocolante, vídeo ou PDF: a nova escolha "Análise rápida" e o botão "Analisar" executam o mesmo ficheiro de novo com outro pedido: "Extrair apenas o texto", "Ler comprovativo, fatura ou PIX" (valor, destinatário, data e código ou chave, sem adivinhar: um valor duvidoso é marcado para confirmar e o que não foi possível ler é listado) ou "Ler tabela ou ementa". "Usar a minha própria instrução" ativa o campo "A sua instrução", onde escreve o que quer do ficheiro. A resposta substitui a anterior e passa pelo mesmo consentimento.
+
+- Definições, IA online, "Tipos de conteúdo processados...": duas novas opções, ambas desativadas por predefinição, "Incluir a legenda ao descrever conteúdos" e "Incluir a mensagem citada ao descrever conteúdos". Ativadas, esse texto, escrito por outras pessoas na conversa, é enviado com o pedido de descrição, e um consentimento separado avisa disso.
+
+- Ajuda de escrita: além das quatro ações, "Usar a minha própria instrução" permite escrever o que fazer com o rascunho (por exemplo, "resuma numa linha"), e "Sugerir rascunho de resposta" pede à IA uma resposta com base nas últimas 10 mensagens da conversa e no seu rascunho. Isto envia essas mensagens e os nomes de quem as escreveu, por isso pede um consentimento próprio, sempre nas conversas trancadas. A sugestão só substitui o seu rascunho se escolher "Substituir rascunho".
+
+- Um vídeo pode agora guardar ao mesmo tempo uma descrição por IA e uma transcrição local. Quando as duas estão na linha da mensagem, a linha diz as duas, por exemplo "..., descrição: ..., transcrição: ...". Apagar a transcrição (Alt+Shift+Delete ou o menu de contexto) mantém a descrição; apagar de novo remove a descrição. Uma mensagem apagada para todos perde as duas.
+
+- Respostas da IA: uma nova opção em Definições, IA online, "Tipos de conteúdo processados...", "Mostrar as respostas à medida que chegam" (desligada por predefinição), faz com que a janela de resultado de uma descrição, de um PDF ou de um resumo de conversa seja preenchida por linhas ou frases inteiras enquanto a IA ainda escreve, no máximo uma vez por segundo, em vez de esperar pela resposta completa. O som de espera pára e a janela avisa uma vez que a resposta está a chegar; a resposta continua a ser lida em voz alta uma única vez, quando estiver completa. Se o pedido falhar ou o cancelar, o texto parcial é descartado, e Cancelar e Esc terminam a ligação de imediato. As mensagens de voz e a ajuda de escrita não mudam.
+
+- Modelos de IA locais: Definições, IA online passa a listar o Ollama e o LM Studio junto aos fornecedores online. Indica o endereço do servidor (o habitual já vem preenchido) e escolhe um modelo que instalou; o WinZapp descreve então imagens, autocolantes e fotogramas de vídeo, resume conversas, ajuda a escrever e executa os modos de análise rápida no seu próprio computador, sem chave de API e sem enviar nada para fora. Sem um modelo escolhido o fornecedor não é utilizado, e a janela avisa. Se definir um endereço que não é deste computador, o WinZapp trata-o como um fornecedor online e pede primeiro o seu consentimento. Os modelos locais não tratam mensagens de voz nem PDF.
+
+- Resumo de conversa: uma nova opção, desligada por predefinição, "Resumir também as mensagens mais antigas (vários pedidos)" (Definições, IA online, "Tipos de conteúdo processados..."), permite resumir um grande volume de mensagens em até 6 partes mais um pedido que as junta, em vez de descartar as mais antigas. O consentimento diz quantos pedidos podem ser feitos, a janela diz "A resumir a parte 2 de 5..." e, se uma parte falhar, nenhum resumo é mostrado como se estivesse completo.
+
+- Definições, IA online: o novo botão "Ajuste dos fornecedores por tarefa..." abre uma janela em que cada tipo de tarefa (mensagens de voz, fotografias, figurinhas, vídeos, PDF, resumo de mensagens e ajuda de escrita) pode ter os seus próprios fornecedores, na sua própria ordem. Marque "Usar a ordem geral para esta tarefa" para deixar tudo como está; caso contrário, use "Incluir ou deixar de fora" e os botões de mover para montar a rota. Uma tarefa com rota própria usa apenas os fornecedores dela (se nenhum estiver pronto, a ação não é oferecida), e cada fornecedor continua a pedir o seu consentimento como antes.
+
+- Vídeos: na janela de IA de um vídeo, o novo botão "Perceber o vídeo completo" conta num só texto o que se vê e o que se fala. Usa a transcrição já guardada com o vídeo ou transcreve a fala neste computador (uma janela de progresso com Cancelar); o som nunca sai do computador. Um consentimento próprio, pedido sempre que a janela abre e nunca memorizado, diz que as imagens retiradas do vídeo e o texto transcrito são enviados e indica os fornecedores. Se a fala não puder ser transcrita, o WinZapp diz o motivo e pode descrever só as imagens, e a resposta diz então que abrange só as imagens. O texto enviado é limitado aos primeiros 12 000 caracteres. As perguntas de acompanhamento e "Executar novamente (novo pedido)" continuam a funcionar; a resposta não vai para a linha da mensagem, por isso nunca substitui a descrição nem a transcrição guardadas.
+
+- Perfis de leitura das mensagens: em Definições &gt; Interface do utilizador &gt; Mensagens, "Perfil de leitura de cada mensagem (ordem e redução)" escolhe a ordem em que o leitor de ecrã diz cada mensagem. "Predefinido" é a linha que já conhece. "Conteúdo primeiro" diz a mensagem antes do remetente, da hora e do estado. "Conciso" omite o remetente e a hora quando repetem os da mensagem anterior. A pesquisa na conversa continua a encontrar as mensagens pelo conteúdo e pelo nome.
+
+- Salto por tipo de mensagem: Alt+F5 / Alt+Shift+F5 vão para a mensagem de voz seguinte / anterior ainda por reproduzir, Alt+F6 para uma foto, vídeo ou sticker, Alt+F7 para um documento, Alt+F8 para uma sondagem e Alt+F9 para uma ligação (Alt+Shift traz a anterior). O leitor de ecrã diz o tipo e a posição ("Documento: 2 de 5") e, depois da última ou antes da primeira, diz que não há mais nenhuma em vez de recomeçar. As teclas podem ser mudadas em Definições &gt; Atalhos de teclado.
+
+- Procurar em todas as conversas: Ctrl+Shift+G, ou "Procurar em todas as conversas" no menu Ficheiro, procura o texto de todas as conversas guardadas neste computador: mensagens, legendas, nomes de ficheiros, sondagens, cartões de contacto, as transcrições e descrições por IA guardadas com mensagens de voz, fotos e vídeos, e os nomes de quem enviou e das conversas. Os resultados leem "conversa — remetente — data — excerto"; Enter abre a conversa na mensagem encontrada, Esc interrompe uma procura em curso. O histórico encriptado é lido em segundo plano, sem bloquear a janela, são listados até 200 resultados, e as conversas trancadas ficam fora dos resultados enquanto o cofre está fechado.
+
+- Baixa visão: em Definições &gt; Interface &gt; Tamanho do tipo de letra, o texto das listas, dos campos de mensagem e das janelas fica maior (de 110% a 200%), e Ctrl+= (ou Ctrl++), Ctrl+- e Ctrl+Shift+Z aumentam, diminuem e voltam ao predefinido, dizendo o novo tamanho. Vem desligado, pelo que nada muda até escolher um tamanho. O WinZapp não define cores próprias, pelo que o tema de alto contraste do Windows continua a aplicar-se.
+
+- Rascunhos: o que escreveu e não enviou passa a sobreviver ao fecho do WinZapp, ao reinício e às atualizações automáticas. Fica neste computador apenas cifrado, nunca como texto simples, e volta, com as menções, quando abre a conversa de novo; o rascunho de uma conversa trancada só volta com o cofre aberto. Enviar ou apagar o texto, eliminar a conversa ou terminar a sessão remove o rascunho. Em Definições &gt; Interface &gt; Conversas, "Manter os rascunhos cifrados ao fechar o WinZapp" (ativada por predefinição) desliga isto.
+
+- Transcrição local de gravações longas (mais de 2 minutos): a janela do resultado passa a ter também uma lista de momentos, cada linha a começar pelo tempo, como "[01:05] ...". "Ouvir daqui" (ou Enter) leva a mensagem de voz para esse segundo quando é ela que está a ser reproduzida, e "Copiar com tempos" copia as linhas; o texto acima e os botões Copiar e Guardar da janela continuam sem tempos. Uma transcrição aberta de novo a partir da mensagem tem só o texto, sem esta lista.
+
+- Vocabulário da transcrição local: em Definições, Transcrição local, Opções avançadas, o campo "Vocabulário" recebe nomes, siglas e termos (um por linha) que o Whisper deve esperar, para os escrever certo. A lista fica neste computador, nunca é escrita no registo e nunca vai para a internet; o whisper.cpp só usa os termos sem acento. Uma transcrição já guardada não é refeita quando a lista muda.
+
+- Ditado no campo da mensagem: Ctrl+Shift+J começa a ouvir o microfone e a mesma tecla pára. A fala é transcrita neste computador, com o Whisper local que já configurou, e o texto entra na posição do cursor da mensagem (substituindo a seleção, se houver) e é lido em voz alta. A mensagem nunca é enviada sozinha, o áudio nunca é guardado nem enviado para lado nenhum, e se não houver um modelo pronto o WinZapp diz o motivo em vez de transferir um. O ditado é recusado com uma frase clara enquanto grava uma mensagem de voz ou está numa chamada. A tecla pode ser alterada em Configurações &gt; Atalhos de teclado.
+
+- Legendas em direto nas chamadas: durante uma chamada, "Legendas em direto" (Ctrl+Shift+X, ou o botão na janela da chamada) abre uma janela, sem tirar o foco dos controlos da chamada, que lista o que a outra pessoa diz em frases completas, transcritas neste computador pelo modelo Whisper local; premir o comando de novo leva até à janela. "Copiar" e "Guardar..." atuam só quando os aciona, nada é guardado sozinho, e "Ler as legendas em voz alta" vem desligada. As legendas em direto são recusadas enquanto uma transcrição de mensagem ou um ditado usa o modelo, e desligam-se sozinhas se o áudio da chamada começar a sofrer.
+
+CORREÇÕES
+
+- Abertura do WinZapp: num disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto guardava a lista de contactos, e abrir normalmente na tentativa seguinte. Guardar muitos contactos passa a esperar tanto quanto as outras gravações em lote, e um contacto que não possa ser guardado no arranque já não impede o WinZapp de abrir.</description>
+      <description xml:lang="es" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Esta versión trae correcciones sobre la 3.0.0.0.
+
+NOVEDADES
+
+- Descripciones con IA: al abrir Ctrl+Shift+I en una foto, un sticker o un vídeo que ya tiene una descripción guardada con el mensaje, WinZapp muestra ese texto al instante, sin hacer una nueva solicitud y sin gastar tu cuota. "Ejecutar de nuevo (nueva petición)" y las preguntas de seguimiento siguen disponibles.
+
+- Resumen de mensajes con IA: el texto que se envía para el resumen ahora incluye la descripción por IA ya guardada de fotos, stickers y vídeos, las opciones de las encuestas (y sus votos, cuando se conocen) y un extracto del mensaje que cita cada respuesta. Cuando algo te pide una respuesta, una petición, una fecha o un enlace, el resumen termina con una lista breve de esos elementos.
+
+- Texto sin enviar nada: en la ventana de IA de una foto, un sticker o un vídeo, el botón "Leer el texto en este equipo" lee el texto de la imagen con el reconocimiento de texto del propio Windows, sin internet, sin clave y sin ventana de consentimiento (necesita un idioma de reconocimiento de texto instalado en Windows). Al convertir un PDF en texto accesible, WinZapp ahora lee primero el texto que contiene el propio PDF, en este equipo; solo un PDF escaneado, sin texto, pasa a los proveedores de IA, y "Ejecutar de nuevo (nueva petición)" pide a una IA que describa también las imágenes.
+
+- Solicitudes de IA: cuando un proveedor responde "demasiadas peticiones" o "no disponible" y pide esperar solo unos segundos, WinZapp espera ese instante y prueba una vez más con el mismo proveedor antes de pasar al siguiente. Cancelar sigue deteniéndolo todo al instante.
+
+- Configuración, IA en línea: el nuevo botón "Resumen de uso..." abre una ventana que indica, para cada proveedor, cuántas peticiones respondió y cuántas fallaron, con el motivo del último fallo, y un botón "Restablecer contadores". Solo se guardan números, nunca el contenido de un mensaje, de una petición o de una respuesta.
+
+- Vídeos: la descripción con IA en línea ahora mira hasta cinco fotogramas repartidos por el vídeo, reunidos en una sola imagen, en lugar de uno solo. Se avisa al modelo de que los fotogramas están en orden y de que no sabe qué ocurre entre ellos ni oye el sonido, que sigue sin enviarse. La ventana de consentimiento indica que se envían varios fotogramas, sin sonido. Configuración, IA en línea, "Tipos de contenido procesados...": la nueva casilla "Describir vídeos con varios fotogramas", activada por defecto, se puede desactivar para volver a enviar un solo fotograma.
+
+- Ventana de resultado de una imagen, sticker, vídeo o PDF: la nueva opción "Análisis rápido" y el botón "Analizar" ejecutan el mismo archivo de nuevo con otra petición: "Extraer solo el texto", "Leer comprobante, factura o PIX" (importe, destinatario, fecha y código o clave, sin adivinar: un valor dudoso se marca para confirmar y se enumera lo que no se pudo leer) o "Leer tabla o menú". "Usar mi propia instrucción" activa el campo "Tu instrucción", donde escribes lo que quieres del archivo. La respuesta sustituye a la anterior y pasa por el mismo consentimiento.
+
+- Configuración, IA en línea, "Tipos de contenido procesados...": dos opciones nuevas, ambas desactivadas por defecto, "Incluir el pie de foto al describir contenido" e "Incluir el mensaje citado al describir contenido". Al activarlas, ese texto, escrito por otras personas del chat, se envía junto con la solicitud de descripción, y un consentimiento aparte lo avisa.
+
+- Ayuda para escribir: además de las cuatro acciones, "Usar mi propia instrucción" permite escribir qué hacer con el borrador (por ejemplo, "resume en una línea"), y "Sugerir un borrador de respuesta" pide a la IA una respuesta basada en los últimos 10 mensajes de la conversación y en tu borrador. Esto envía esos mensajes y los nombres de quienes los escribieron, por eso pide un consentimiento propio, siempre en los chats bloqueados. La sugerencia solo sustituye tu borrador si eliges "Reemplazar borrador".
+
+- Un vídeo ahora puede guardar a la vez una descripción por IA y una transcripción local. Cuando las dos están en la línea del mensaje, la línea dice las dos, por ejemplo "..., descripción: ..., transcripción: ...". Borrar la transcripción (Alt+Shift+Delete o el menú contextual) conserva la descripción; borrar de nuevo elimina la descripción. Un mensaje eliminado para todos pierde las dos.
+
+- Respuestas de la IA: una nueva opción en Configuración, IA en línea, "Tipos de contenido procesados...", "Mostrar las respuestas a medida que llegan" (desactivada por defecto), hace que la ventana de resultado de una descripción, un PDF o un resumen de conversación se rellene con líneas o frases completas mientras la IA aún escribe, como máximo una vez por segundo, en lugar de esperar a la respuesta completa. El sonido de espera se detiene y la ventana avisa una vez de que la respuesta está llegando; la respuesta se sigue leyendo en voz alta una sola vez, cuando está completa. Si la petición falla o la cancelas, el texto parcial se descarta, y Cancelar y Esc cierran la conexión al instante. Los mensajes de voz y la ayuda de escritura no cambian.
+
+- Modelos de IA locales: Configuración, IA en línea ahora lista Ollama y LM Studio junto a los proveedores en línea. Indicas la dirección del servidor (la habitual ya viene rellenada) y eliges un modelo que hayas instalado; WinZapp describe entonces imágenes, stickers y fotogramas de vídeo, resume chats, te ayuda a escribir y ejecuta los modos de análisis rápido en tu propio equipo, sin clave de API y sin enviar nada fuera. Sin un modelo elegido no se usa el proveedor, y la ventana lo dice. Si pones una dirección que no está en este equipo, WinZapp la trata como un proveedor en línea y pide tu consentimiento antes. Los modelos locales no atienden mensajes de voz ni PDF.
+
+- Resumen de conversación: una nueva opción, desactivada por defecto, "Resumir también los mensajes más antiguos (varias peticiones)" (Configuración, IA en línea, "Tipos de contenido procesados..."), permite resumir un historial largo en hasta 6 partes más una petición que las une, en lugar de descartar los más antiguos. El consentimiento dice cuántas peticiones pueden hacerse, la ventana dice "Resumiendo la parte 2 de 5..." y, si una parte falla, no se muestra ningún resumen como si estuviera completo.
+
+- Configuración, IA en línea: el nuevo botón "Proveedores por tarea..." abre una ventana en la que cada tipo de tarea (mensajes de voz, fotos, stickers, vídeos, PDF, resumen de mensajes y ayuda para escribir) puede tener sus propios proveedores, en su propio orden. Marca "Usar el orden general para esta tarea" para dejarlo todo como está; si no, usa "Incluir u omitir" y los botones de mover para montar la ruta. Una tarea con ruta propia solo usa los proveedores de esa ruta (si ninguno está listo, la acción no se ofrece), y cada proveedor sigue pidiendo tu consentimiento como antes.
+
+- Vídeos: en la ventana de IA de un vídeo, el nuevo botón "Entender el vídeo completo" cuenta en un solo texto lo que se ve y lo que se dice. Usa la transcripción ya guardada con el vídeo o transcribe lo que se dice en este equipo (una ventana de progreso con Cancelar); el sonido nunca sale del equipo. Un consentimiento propio, que se pide cada vez que se abre la ventana y nunca se recuerda, indica que se envían las imágenes tomadas del vídeo y el texto transcrito, y nombra a los proveedores. Si no se puede transcribir lo que se dice, se te explica el motivo y puedes describir solo las imágenes, y la respuesta indica entonces que solo incluye las imágenes. El texto enviado se limita a sus primeros 12.000 caracteres. Las preguntas de seguimiento y "Ejecutar de nuevo (nueva petición)" siguen funcionando; la respuesta no se coloca en la línea del mensaje, así que nunca sustituye la descripción ni la transcripción guardadas.
+
+- Perfiles de lectura de los mensajes: en Configuración &gt; Interfaz de usuario &gt; Mensajes, "Diseño de la lectura de cada mensaje" elige el orden en que el lector de pantalla dice cada mensaje. "Predeterminado" es la línea que ya conoces. "Contenido primero" dice el mensaje antes del remitente, la hora y el estado. "Conciso" omite el remitente y la hora cuando se repiten los del mensaje anterior. La búsqueda en la conversación sigue encontrando los mensajes por contenido y por nombre.
+
+- Salto por tipo de mensaje: Alt+F5 / Alt+Shift+F5 van al mensaje de voz siguiente / anterior aún sin reproducir, Alt+F6 a una foto, vídeo o sticker, Alt+F7 a un documento, Alt+F8 a una encuesta y Alt+F9 a un enlace (Alt+Shift trae el anterior). El lector de pantalla dice el tipo y la posición ("Documento: 2 de 5") y, tras el último o antes del primero, dice que no hay más en lugar de empezar de nuevo. Las teclas se pueden cambiar en Configuración &gt; Atajos de teclado.
+
+- Buscar en todos los chats: Ctrl+Shift+G, o "Buscar en todos los chats" en el menú Archivo, busca el texto de todos los chats guardados en este equipo: mensajes, pies de foto, nombres de archivo, encuestas, tarjetas de contacto, las transcripciones y descripciones por IA guardadas con mensajes de voz, fotos y vídeos, y los nombres de quienes envían y de los chats. Los resultados leen "chat — remitente — fecha — fragmento"; Enter abre el chat en el mensaje encontrado, Esc detiene una búsqueda en curso. El historial cifrado se lee en segundo plano, sin bloquear la ventana, se listan hasta 200 resultados y los chats bloqueados quedan fuera de los resultados mientras la bóveda está cerrada.
+
+- Baja visión: en Configuración &gt; Interfaz &gt; Tamaño de letra, el texto de las listas, los campos de mensaje y las ventanas se hace más grande (del 110% al 200%), y Ctrl+= (o Ctrl++), Ctrl+- y Ctrl+Shift+Z lo aumentan, lo reducen y vuelven al predeterminado, diciendo el nuevo tamaño. Viene desactivado, así que nada cambia hasta que elijas un tamaño. WinZapp no define colores propios, así que el tema de alto contraste de Windows sigue aplicándose.
+
+- Borradores: lo que escribiste y no enviaste ahora sobrevive al cierre de WinZapp, al reinicio y a las actualizaciones automáticas. Se guarda en este equipo solo cifrado, nunca como texto sin cifrar, y vuelve, con las menciones, cuando abres el chat de nuevo; el borrador de un chat bloqueado solo vuelve cuando la caja fuerte está abierta. Enviar o borrar el texto, eliminar el chat o cerrar la sesión lo elimina. En Configuración &gt; Interfaz &gt; Chats, "Guardar los borradores cifrados al reiniciar WinZapp" (activada por defecto) lo desactiva.
+
+- Transcripción local de grabaciones largas (más de 2 minutos): la ventana del resultado tiene ahora también una lista de momentos, cada fila con su hora al principio, como "[01:05] ...". "Escuchar desde aquí" (o Intro) lleva el mensaje de voz a ese segundo cuando es el que se está reproduciendo, y "Copiar con horas" copia las filas; el texto de arriba y los botones Copiar y Guardar de la ventana siguen sin horas. Una transcripción que se abre de nuevo desde el mensaje tiene solo el texto, sin esta lista.
+
+- Vocabulario de la transcripción local: en Configuración, Transcripción local, Opciones avanzadas, "Vocabulario" admite nombres, siglas y términos (uno por línea) que Whisper debe esperar para escribirlos bien. La lista se queda en este equipo, nunca se escribe en el registro y nunca va a internet; whisper.cpp solo usa los términos sin acentos. Una transcripción ya guardada no se rehace al cambiar la lista.
+
+- Dictado en el campo del mensaje: Ctrl+Shift+J empieza a escuchar el micrófono y la misma tecla lo detiene. La voz se transcribe en este equipo, con el Whisper local que ya configuraste, y el texto entra en la posición del cursor del mensaje (sustituyendo la selección, si la hay) y se lee en voz alta. El mensaje nunca se envía solo, el audio nunca se guarda ni se envía a ningún sitio, y si no hay un modelo listo WinZapp dice el motivo en lugar de descargar uno. Se rechaza con una frase clara mientras grabas un mensaje de voz o estás en una llamada. La tecla se puede cambiar en Configuración &gt; Atajos de teclado.
+
+- Subtítulos en directo en las llamadas: durante una llamada, "Subtítulos en directo" (Ctrl+Shift+X, o su botón en la ventana de la llamada) abre una ventana, sin quitar el foco a los controles de la llamada, que enumera lo que dice la otra persona en frases completas, transcritas en este equipo por el modelo Whisper local; al pulsar el comando de nuevo se pasa a la ventana. "Copiar" y "Guardar..." actúan solo cuando los pulsas, nada se guarda solo, y "Leer los subtítulos en voz alta" viene desactivada. Los subtítulos en directo se rechazan mientras una transcripción de mensaje o un dictado usa el modelo, y se desactivan solos si el audio de la llamada empieza a resentirse.
+
+CORRECCIONES
+
+- Apertura de WinZapp: en un disco lento, WinZapp podía detenerse al iniciar con "Database call timed out after 20s" mientras guardaba la lista de contactos, y abrirse con normalidad al intentarlo de nuevo. Guardar muchos contactos ahora espera tanto como los demás guardados en lote, y un contacto que no se pueda guardar al iniciar ya no impide que WinZapp se abra.</description>
+      <description xml:lang="pl" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+To wydanie przynosi poprawki do wersji 3.0.0.0.
+
+NOWOŚCI
+
+- Opisy SI: po otwarciu Ctrl+Shift+I na zdjęciu, naklejce lub filmie, które mają już opis zapisany przy wiadomości, WinZapp od razu pokazuje ten tekst, bez nowego żądania i bez zużywania limitu. "Wykonaj ponownie (nowe żądanie)" oraz pytania uzupełniające nadal są dostępne.
+
+- Podsumowanie wiadomości przez SI: tekst wysyłany do podsumowania zawiera teraz zapisany wcześniej opis SI zdjęć, naklejek i filmów, opcje ankiet (oraz głosy, gdy są znane) i krótki fragment wiadomości, którą cytuje każda odpowiedź. Gdy coś wymaga od ciebie odpowiedzi, prośby, daty lub linku, podsumowanie kończy się krótką listą takich pozycji.
+
+- Tekst bez wysyłania czegokolwiek: w oknie SI zdjęcia, naklejki lub filmu przycisk "Odczytaj tekst na tym komputerze" odczytuje tekst z obrazu za pomocą rozpoznawania tekstu wbudowanego w system Windows, bez internetu, bez klucza i bez okna zgody (wymaga zainstalowanego w systemie Windows języka rozpoznawania tekstu). Przy zamianie pliku PDF na dostępny tekst WinZapp najpierw odczytuje na tym komputerze tekst zawarty w samym pliku; tylko zeskanowany plik PDF bez tekstu trafia do dostawców SI, a "Wykonaj ponownie (nowe żądanie)" prosi SI o opisanie także obrazów.
+
+- Żądania AI: gdy dostawca odpowiada "zbyt wiele żądań" lub "niedostępny" i prosi o odczekanie tylko kilku sekund, WinZapp czeka ten moment i próbuje jeszcze raz u tego samego dostawcy, zanim przejdzie do następnego. Anulowanie nadal przerywa wszystko od razu.
+
+- Ustawienia, AI online: nowy przycisk "Podsumowanie użycia..." otwiera okno, które podaje dla każdego dostawcy, ile żądań obsłużył i ile się nie powiodło, wraz z powodem ostatniego niepowodzenia, oraz przycisk "Zeruj liczniki". Zapisywane są tylko liczby, nigdy treść wiadomości, żądania ani odpowiedzi.
+
+- Wideo: opis przez internetową AI obejmuje teraz do pięciu klatek rozłożonych na całym filmie, złożonych w jeden obraz, zamiast jednej klatki. Model dostaje informację, że klatki są w kolejności i że nie wie, co dzieje się między nimi, ani nie słyszy dźwięku, który nadal nie jest wysyłany. Okno zgody mówi, że wysyłanych jest kilka klatek, bez dźwięku. Ustawienia, AI online, "Rodzaje plików do przetwarzania...": nowe pole "Opisuj wideo na podstawie kilku klatek", domyślnie włączone, można wyłączyć, aby znów wysyłać jedną klatkę.
+
+- Okno wyniku zdjęcia, naklejki, wideo lub PDF: nowy wybór "Szybka analiza" i przycisk "Analizuj" uruchamiają ten sam plik ponownie z innym poleceniem: "Wyodrębnij tylko tekst", "Odczytaj paragon, rachunek lub potwierdzenie PIX" (kwota, odbiorca, data oraz kod lub klucz, bez zgadywania: niepewna wartość jest oznaczana do potwierdzenia, a to, czego nie udało się odczytać, jest wymienione) albo "Odczytaj tabelę lub menu". "Użyj własnego polecenia" włącza pole "Twoje polecenie", w którym wpisujesz, czego chcesz od pliku. Odpowiedź zastępuje poprzednią i przechodzi przez tę samą zgodę.
+
+- Ustawienia, SI online, "Rodzaje plików do przetwarzania...": dwie nowe opcje, obie domyślnie wyłączone, "Dołącz podpis przy opisywaniu plików" i "Dołącz cytowaną wiadomość przy opisywaniu plików". Po włączeniu ten tekst, napisany przez inne osoby na czacie, jest wysyłany razem z prośbą o opis, a osobna zgoda o tym informuje.
+
+- Pomoc w pisaniu: oprócz czterech czynności "Użyj własnego polecenia" pozwala wpisać, co zrobić ze szkicem (na przykład "streść w jednej linijce"), a "Zaproponuj szkic odpowiedzi" prosi AI o odpowiedź na podstawie ostatnich 10 wiadomości rozmowy i Twojego szkicu. To wysyła te wiadomości i nazwy ich autorów, więc wymaga osobnej zgody, w zablokowanych czatach za każdym razem. Propozycja zastępuje Twój szkic tylko wtedy, gdy wybierzesz "Zastąp szkic".
+
+- Film może teraz przechowywać jednocześnie opis SI i lokalną transkrypcję. Gdy oba są w wierszu wiadomości, wiersz podaje oba, na przykład "..., opis: ..., transkrypcja: ...". Usunięcie transkrypcji (Alt+Shift+Delete lub menu kontekstowe) zachowuje opis; ponowne usunięcie kasuje opis. Wiadomość usunięta dla wszystkich traci oba.
+
+- Odpowiedzi AI: nowa opcja w Ustawieniach, AI online, "Rodzaje plików do przetwarzania...", "Pokazuj odpowiedzi w miarę ich nadchodzenia" (domyślnie wyłączona), sprawia, że okno wyniku opisu, pliku PDF lub podsumowania rozmowy wypełnia się całymi wierszami lub zdaniami, gdy AI jeszcze pisze, najwyżej raz na sekundę, zamiast czekać na całą odpowiedź. Dźwięk oczekiwania cichnie, a okno raz informuje, że odpowiedź nadchodzi; odpowiedź nadal jest czytana na głos jeden raz, gdy jest kompletna. Jeśli żądanie się nie powiedzie albo je anulujesz, częściowy tekst jest odrzucany, a Anuluj i Esc natychmiast zamykają połączenie. Wiadomości głosowe i pomoc w pisaniu się nie zmieniają.
+
+- Lokalne modele AI: Ustawienia, AI online wymieniają teraz Ollama i LM Studio obok dostawców online. Podajesz adres serwera (zwykły jest już wpisany) i wybierasz zainstalowany model; WinZapp opisuje wtedy obrazy, naklejki i klatki wideo, streszcza czaty, pomaga w pisaniu i uruchamia tryby szybkiej analizy na Twoim komputerze, bez klucza API i bez wysyłania czegokolwiek na zewnątrz. Bez wybranego modelu dostawca nie jest używany, a okno o tym informuje. Jeśli ustawisz adres, który nie wskazuje tego komputera, WinZapp traktuje go jak dostawcę online i najpierw prosi o Twoją zgodę. Modele lokalne nie obsługują wiadomości głosowych ani plików PDF.
+
+- Podsumowanie rozmowy: nowa opcja, domyślnie wyłączona, "Podsumowuj też starsze wiadomości (kilka żądań)" (Ustawienia, AI online, "Rodzaje plików do przetwarzania..."), pozwala podsumować długą zaległą rozmowę w maksymalnie 6 częściach plus jednym żądaniu, które je łączy, zamiast pomijać starsze wiadomości. Zgoda podaje, ile żądań może zostać wysłanych, okno mówi "Podsumowuję część 2 z 5...", a gdy część się nie powiedzie, żadne podsumowanie nie jest pokazywane jako kompletne.
+
+- Ustawienia, AI online: nowy przycisk "Dostawcy według zadań..." otwiera okno, w którym każdy rodzaj zadania (wiadomości głosowe, zdjęcia, naklejki, wideo, PDF, podsumowanie wiadomości i pomoc w pisaniu) może mieć własnych dostawców we własnej kolejności. Zaznacz "Użyj ogólnej kolejności dla tego zadania", aby zostawić wszystko tak jak jest; w przeciwnym razie użyj "Włącz lub pomiń" i przycisków przenoszenia, aby ułożyć trasę. Zadanie z własną trasą korzysta tylko z dostawców z tej trasy (jeśli żaden nie jest gotowy, czynność nie jest oferowana), a każdy dostawca nadal prosi o Twoją zgodę jak dotąd.
+
+- Wideo: w oknie AI filmu nowy przycisk "Zrozum cały film" opowiada w jednym tekście, co widać i co słychać. Używa transkrypcji już zapisanej przy filmie albo wykonuje transkrypcję mowy na tym komputerze (okno postępu z przyciskiem Anuluj); dźwięk nigdy nie opuszcza komputera. Osobna zgoda, pytana przy każdym otwarciu okna i nigdy niezapamiętywana, mówi, że wysyłane są klatki z filmu i tekst transkrypcji, oraz wymienia dostawców. Jeśli mowy nie da się przepisać, WinZapp podaje powód i możesz opisać tylko obrazy, a odpowiedź informuje wtedy, że obejmuje tylko obrazy. Wysyłany tekst jest ograniczony do pierwszych 12 000 znaków. Pytania uzupełniające i "Wykonaj ponownie (nowe żądanie)" nadal działają; odpowiedź nie trafia do wiersza wiadomości, więc nigdy nie zastępuje zapisanego opisu ani transkrypcji.
+
+- Profile odczytu wiadomości: w Ustawieniach &gt; Interfejs użytkownika &gt; Wiadomości opcja "Profil odczytu każdej wiadomości na liście" wybiera kolejność, w jakiej czytnik ekranu mówi każdą wiadomość. "Domyślny" to wiersz, który już znasz. "Najpierw treść" mówi wiadomość przed nadawcą, godziną i stanem. "Zwięzły" pomija nadawcę i godzinę, gdy powtarzają się z poprzedniej wiadomości. Wyszukiwanie w rozmowie nadal znajduje wiadomości po treści i po nazwie.
+
+- Skok według rodzaju wiadomości: Alt+F5 / Alt+Shift+F5 przechodzą do następnej / poprzedniej jeszcze nieodtworzonej wiadomości głosowej, Alt+F6 do zdjęcia, wideo lub naklejki, Alt+F7 do dokumentu, Alt+F8 do ankiety, a Alt+F9 do linku (z Alt+Shift do poprzedniej). Czytnik ekranu mówi rodzaj i pozycję ("Dokument: 2 z 5"), a po ostatniej lub przed pierwszą mówi, że nie ma już kolejnych, zamiast zaczynać od nowa. Klawisze można zmienić w Ustawienia &gt; Skróty klawiszowe.
+
+- Szukaj we wszystkich czatach: Ctrl+Shift+G lub "Szukaj we wszystkich czatach" w menu Plik przeszukuje tekst wszystkich czatów zapisanych na tym komputerze: wiadomości, podpisy, nazwy plików, ankiety, wizytówki kontaktów, transkrypcje i opisy AI zapisane przy wiadomościach głosowych, zdjęciach i filmach oraz nazwy nadawców i czatów. Wyniki czytają "czat — nadawca — data — fragment"; Enter otwiera czat na znalezionej wiadomości, Esc przerywa trwające wyszukiwanie. Zaszyfrowana historia jest czytana w tle, bez blokowania okna, wyświetlanych jest do 200 wyników, a zablokowane czaty są pomijane w wynikach, gdy sejf jest zamknięty.
+
+- Słabowidzenie: w Ustawieniach &gt; Interfejs &gt; Rozmiar czcionki tekst list, pól wiadomości i okien staje się większy (od 110% do 200%), a Ctrl+= (lub Ctrl++), Ctrl+- i Ctrl+Shift+Z powiększają go, zmniejszają i przywracają domyślny, mówiąc nowy rozmiar. Opcja jest domyślnie wyłączona, więc nic się nie zmienia, dopóki nie wybierzesz rozmiaru. WinZapp nie ustawia własnych kolorów, więc motyw wysokiego kontrastu systemu Windows nadal obowiązuje.
+
+- Wersje robocze: to, co napisano i nie wysłano, przetrwa teraz zamknięcie WinZappa, ponowne uruchomienie i automatyczne aktualizacje. Tekst jest przechowywany na tym komputerze wyłącznie w postaci zaszyfrowanej, nigdy jawnym tekstem, i wraca wraz ze wzmiankami po ponownym otwarciu czatu; wersja robocza zablokowanego czatu wraca dopiero po otwarciu sejfu. Wysłanie lub skasowanie tekstu, usunięcie czatu albo wylogowanie ją usuwa. W Ustawienia &gt; Interfejs &gt; Czaty opcja "Zachowaj zaszyfrowane wersje robocze po ponownym uruchomieniu WinZapp" (domyślnie włączona) wyłącza to zachowanie.
+
+- Lokalna transkrypcja długich nagrań (ponad 2 minuty): okno wyniku ma teraz także listę fragmentów, każdy wiersz zaczyna się od czasu, np. "[01:05] ...". "Słuchaj od tego miejsca" (lub Enter) przenosi wiadomość głosową do tej sekundy, gdy właśnie ta wiadomość jest odtwarzana, a "Kopiuj z czasami" kopiuje wiersze; tekst powyżej oraz Kopiuj i Zapisz w oknie pozostają bez czasów. Transkrypcja otwarta ponownie z wiadomości ma sam tekst, bez tej listy.
+
+- Słownik lokalnej transkrypcji: w Ustawieniach, Transkrypcja lokalna, Opcje zaawansowane, pole "Słownik" przyjmuje nazwy, skróty i terminy (po jednym w wierszu), których Whisper ma się spodziewać, aby zapisać je poprawnie. Lista zostaje na tym komputerze, nigdy nie trafia do dziennika ani do internetu; whisper.cpp używa tylko terminów bez znaków diakrytycznych. Zapisana już transkrypcja nie jest robiona od nowa po zmianie listy.
+
+- Dyktowanie w polu wiadomości: Ctrl+Shift+J zaczyna nasłuchiwanie mikrofonu, a ten sam klawisz je zatrzymuje. Mowa jest transkrybowana na tym komputerze za pomocą skonfigurowanego już lokalnego Whispera, a tekst trafia w miejsce kursora w wiadomości (zastępując zaznaczenie, jeśli jest) i jest odczytywany na głos. Wiadomość nigdy nie jest wysyłana sama, dźwięk nigdy nie jest zapisywany ani nigdzie wysyłany, a gdy nie ma gotowego modelu, WinZapp podaje powód zamiast go pobierać. Dyktowanie jest odrzucane czytelnym komunikatem, gdy nagrywasz wiadomość głosową lub rozmawiasz. Klawisz można zmienić w Ustawienia &gt; Skróty klawiszowe.
+
+- Napisy na żywo w połączeniach: podczas połączenia "Napisy na żywo" (Ctrl+Shift+X lub przycisk w oknie połączenia) otwierają okno, bez zabierania fokusu elementom sterującym połączenia, które wypisuje to, co mówi druga osoba, w całych zdaniach, transkrybowanych na tym komputerze przez lokalny model Whisper; ponowne naciśnięcie polecenia przenosi do okna. "Kopiuj" i "Zapisz..." działają tylko po naciśnięciu, nic nie zapisuje się samo, a "Czytaj napisy na głos" jest domyślnie wyłączone. Napisy na żywo są odrzucane, gdy model jest używany do transkrypcji wiadomości lub dyktowania, i wyłączają się same, jeśli dźwięk połączenia zaczyna na tym cierpieć.
+
+POPRAWKI
+
+- Uruchamianie WinZapp: na wolnym dysku WinZapp mógł zatrzymać się przy starcie z komunikatem „Database call timed out after 20s” podczas zapisywania listy kontaktów, a przy kolejnej próbie otwierał się normalnie. Zapis dużej liczby kontaktów czeka teraz tak długo jak inne zapisy zbiorcze, a kontakt, którego nie da się zapisać przy starcie, nie uniemożliwia już otwarcia WinZapp.</description>
+      <description xml:lang="tr" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Bu sürüm 3.0.0.0 üzerine düzeltmeler getirir.
+
+YENİLİKLER
+
+- Yapay zeka açıklamaları: iletiyle birlikte kaydedilmiş bir açıklaması olan bir fotoğraf, çıkartma veya videoda Ctrl+Shift+I açıldığında WinZapp bu kayıtlı metni hemen gösterir; yeni bir istek yapmaz ve kotanızı harcamaz. "Yeniden çalıştır (yeni istek)" ve ek sorular kullanılabilir kalır.
+
+- Yapay zeka ile ileti özeti: özet için gönderilen metin artık fotoğraf, çıkartma ve videolar için önceden kaydedilmiş yapay zeka açıklamasını, anketlerin seçeneklerini (biliniyorsa oylarını) ve her yanıtın alıntıladığı iletiden kısa bir bölümü içerir. Bir şey sizden yanıt, rica, tarih veya bağlantı istiyorsa özet bu öğelerin kısa bir listesiyle biter.
+
+- Hiçbir şey göndermeden metin: bir fotoğraf, çıkartma veya videonun yapay zeka penceresindeki "Metni bu bilgisayarda oku" düğmesi, resimdeki metni Windows'un kendi metin tanımasıyla okur; internet, anahtar ve onay penceresi gerekmez (Windows'ta kurulu bir metin tanıma dili gerekir). Bir PDF'yi erişilebilir metne dönüştürürken WinZapp artık önce PDF'nin kendi içindeki metni bu bilgisayarda okur; yalnızca metni olmayan taranmış bir PDF yapay zeka sağlayıcılarına gider ve "Yeniden çalıştır (yeni istek)" bir yapay zekadan resimleri de anlatmasını ister.
+
+- Yapay zekâ istekleri: bir sağlayıcı "çok fazla istek" veya "kullanılamıyor" yanıtı verip yalnızca birkaç saniye beklemenizi istediğinde WinZapp o kadar bekler ve bir sonrakine geçmeden önce aynı sağlayıcıyı bir kez daha dener. İptal etmek yine her şeyi anında durdurur.
+
+- Ayarlar, Çevrimiçi Yapay Zekâ: yeni "Kullanım özeti..." düğmesi, her sağlayıcı için kaç isteği yanıtladığını ve kaçının başarısız olduğunu, son hatanın nedeniyle birlikte söyleyen bir pencere ve bir "Sayaçları sıfırla" düğmesi açar. Yalnızca sayılar saklanır; bir mesajın, bir isteğin veya bir yanıtın içeriği asla saklanmaz.
+
+- Videolar: çevrimiçi yapay zeka betimlemesi artık videoya yayılmış beş kareye kadarına bakıyor; kareler tek bir görüntüde birleştiriliyor. Modele karelerin sıralı olduğu, aralarında ne olduğunu bilmediği ve hâlâ gönderilmeyen sesi duymadığı söylenir. Onay penceresi birkaç karenin sessiz olarak gönderildiğini belirtir. Ayarlar, Çevrimiçi yapay zeka, "İşlenecek içerik türleri...": varsayılan olarak açık olan yeni "Videoları birkaç kare ile betimle" kutusu, tek kare göndermeye dönmek için kapatılabilir.
+
+- Bir fotoğrafın, çıkartmanın, videonun veya PDF'nin sonuç penceresi: yeni "Hızlı analiz" seçimi ve "Analiz et" düğmesi aynı dosyayı başka bir istekle yeniden çalıştırır: "Yalnızca metni çıkar", "Makbuz, fatura veya PIX dekontunu oku" (tutar, alıcı, tarih ve kod veya anahtar; tahmin yürütmeden: belirsiz bir değer onaylanmak üzere işaretlenir, okunamayanlar listelenir) veya "Tabloyu veya menüyü oku". "Kendi talimatımı kullan", dosyadan ne istediğinizi yazdığınız "Talimatınız" alanını etkinleştirir. Yanıt öncekinin yerine geçer ve aynı onaydan geçer.
+
+- Ayarlar, Çevrimiçi Yapay Zekâ, "İşlenecek içerik türleri...": ikisi de varsayılan olarak kapalı iki yeni seçenek, "Dosyaları betimlerken altyazıyı ekle" ve "Dosyaları betimlerken alıntılanan iletiyi ekle". Açıkken sohbetteki diğer kişilerin yazdığı bu metin betimleme isteğiyle birlikte gönderilir ve ayrı bir onay bunu bildirir.
+
+- Yazma yardımı: dört işleme ek olarak "Kendi talimatımı kullan" taslakla ne yapılacağını yazmanızı sağlar (örneğin "tek satırda özetle"), "Yanıt taslağı öner" ise yapay zekâdan konuşmanın son 10 iletisine ve taslağınıza dayanan bir yanıt ister. Bu, o iletileri ve yazanların adlarını gönderir; bu yüzden kendi onayını ister, kilitli sohbetlerde her seferinde. Öneri, taslağınızın yerine ancak "Taslağı değiştir"i seçerseniz geçer.
+
+- Bir video artık aynı anda bir yapay zeka açıklamasını ve yerel bir dökümü saklayabilir. İkisi de iletinin satırına konulduğunda satır ikisini de söyler, örneğin "..., açıklama: ..., döküm: ...". Dökümü silmek (Alt+Shift+Delete veya bağlam menüsü) açıklamayı korur; yeniden silmek açıklamayı kaldırır. Herkesten silinen bir ileti ikisini de kaybeder.
+
+- Yapay zekâ yanıtları: Ayarlar, Çevrimiçi Yapay Zekâ, "İşlenecek içerik türleri..." bölümündeki yeni "Yanıtları geldikçe göster" seçeneği (varsayılan olarak kapalı), bir betimlemenin, PDF'nin veya sohbet özetinin sonuç penceresini, yapay zekâ henüz yazarken, en fazla saniyede bir kez, bütün satırlar veya cümlelerle doldurur; yanıtın tamamını beklemez. Bekleme sesi durur ve pencere yanıtın geldiğini bir kez bildirir; yanıt yine tamamlandığında bir kez sesli okunur. İstek başarısız olursa ya da iptal ederseniz kısmi metin atılır; İptal ve Esc bağlantıyı hemen kapatır. Sesli iletiler ve yazma yardımı değişmez.
+
+- Yerel yapay zekâ modelleri: Ayarlar, Çevrimiçi yapay zekâ artık çevrimiçi sağlayıcıların yanında Ollama ve LM Studio'yu da listeler. Sunucunun adresini girersiniz (olağan adres hazır gelir) ve kurduğunuz bir modeli seçersiniz; WinZapp bunun üzerine görselleri, çıkartmaları ve video karelerini betimler, sohbetleri özetler, yazmanıza yardım eder ve hızlı çözümleme kiplerini kendi bilgisayarınızda, API anahtarı olmadan ve dışarıya hiçbir şey göndermeden çalıştırır. Model seçilmezse sağlayıcı kullanılmaz ve pencere bunu söyler. Bu bilgisayarda olmayan bir adres girerseniz WinZapp onu çevrimiçi sağlayıcı gibi görür ve önce onayınızı ister. Yerel modeller sesli mesajları ve PDF'leri işlemez.
+
+- Sohbet özeti: varsayılan olarak kapalı yeni bir seçenek, "Daha eski mesajları da özetle (birden çok istek)" (Ayarlar, Çevrimiçi Yapay Zekâ, "İşlenecek içerik türleri..."), eski mesajları bırakmak yerine uzun bir yazışmanın en fazla 6 parça ve bunları birleştiren bir istekle özetlenmesini sağlar. Onay kaç isteğin yapılabileceğini söyler, pencere "Özetleniyor: 2. parça, toplam 5..." der ve bir parça başarısız olursa hiçbir özet tam gibi gösterilmez.
+
+- Ayarlar, Çevrimiçi Yapay Zekâ: yeni "Görev başına sağlayıcılar..." düğmesi, her görev türünün (sesli mesajlar, fotoğraflar, çıkartmalar, videolar, PDF, mesaj özeti ve yazma yardımı) kendi sağlayıcılarına ve kendi sırasına sahip olabildiği bir pencere açar. Her şeyi olduğu gibi bırakmak için "Bu görev için genel sırayı kullan" seçeneğini işaretleyin; aksi halde rotayı oluşturmak için "Dahil et veya çıkar" ve taşıma düğmelerini kullanın. Kendi rotası olan bir görev yalnızca o rotadaki sağlayıcıları kullanır (hiçbiri hazır değilse eylem sunulmaz) ve her sağlayıcı daha önceki gibi izninizi ister.
+
+- Videolar: bir videonun yapay zekâ penceresinde yeni "Videonun tamamını anla" düğmesi, görülenleri ve söylenenleri tek bir metinde anlatır. Videoyla birlikte saklanan yazıya dökümü kullanır ya da konuşmayı bu bilgisayarda yazıya döker (İptal düğmeli bir ilerleme penceresi); ses bilgisayardan asla çıkmaz. Pencere her açıldığında sorulan ve asla hatırlanmayan ayrı bir onay, videodan alınan görüntülerin ve yazıya dökülen metnin gönderildiğini söyler ve sağlayıcıları adlandırır. Konuşma yazıya dökülemezse nedeni söylenir ve yalnızca görüntüleri anlatabilirsiniz; yanıt da yalnızca görüntüleri kapsadığını belirtir. Gönderilen metin ilk 12.000 karakterle sınırlıdır. Takip soruları ve "Yeniden çalıştır (yeni istek)" çalışmaya devam eder; yanıt mesaj satırına konmaz, bu yüzden saklanan betimlemenin veya yazıya dökümün yerini asla almaz.
+
+- Mesaj okuma profilleri: Ayarlar &gt; Kullanıcı arayüzü &gt; Mesajlar bölümünde "Mesaj okuma profili", ekran okuyucunun her mesajı hangi sırayla söyleyeceğini seçer. "Varsayılan" zaten bildiğiniz satırdır. "Önce içerik" mesajı gönderenden, saatten ve durumdan önce söyler. "Kısa" gönderen ve saat önceki mesajla aynıysa onları söylemez. Konuşmada arama mesajları yine içeriğe ve ada göre bulur.
+
+- Mesaj türüne göre atlama: Alt+F5 / Alt+Shift+F5 henüz oynatılmamış sonraki / önceki sesli mesaja, Alt+F6 fotoğraf, video veya çıkartmaya, Alt+F7 belgeye, Alt+F8 ankete, Alt+F9 bağlantıya gider (Alt+Shift öncekini getirir). Ekran okuyucu türü ve konumu ("Belge: 2 / 5") söyler; sonuncudan sonra veya ilkinden önce başa dönmek yerine başka olmadığını söyler. Tuşlar Ayarlar &gt; Kısayollar bölümünden değiştirilebilir.
+
+- Tüm sohbetlerde ara: Ctrl+Shift+G veya Dosya menüsündeki "Tüm sohbetlerde ara", bu bilgisayarda saklanan bütün sohbetlerin metnini arar: mesajlar, açıklamalar, dosya adları, anketler, kişi kartları, sesli mesajlar, fotoğraflar ve videolarla birlikte kaydedilen yazıya dökümler ve yapay zekâ betimlemeleri, ayrıca gönderenlerin ve sohbetlerin adları. Sonuçlar "sohbet — gönderen — tarih — alıntı" diye okunur; Enter sohbeti bulunan mesajda açar, Esc süren bir aramayı durdurur. Şifreli geçmiş arka planda, pencereyi dondurmadan okunur, en fazla 200 sonuç listelenir ve kilitli sohbetler kasa kapalıyken sonuçların dışında kalır.
+
+- Az görme: Ayarlar &gt; Arayüz &gt; Yazı tipi boyutu bölümü listelerin, mesaj alanlarının ve pencerelerin metnini büyütür (110% ile 200% arası); Ctrl+= (veya Ctrl++), Ctrl+- ve Ctrl+Shift+Z ise onu büyütür, küçültür ve varsayılana döndürür, yeni boyutu söyler. Varsayılan olarak kapalıdır, yani bir boyut seçene kadar hiçbir şey değişmez. WinZapp kendi renklerini belirlemez, bu yüzden Windows yüksek karşıtlık teması geçerli olmaya devam eder.
+
+- Taslaklar: yazıp göndermediğiniz metin artık WinZapp kapatılıp yeniden başlatıldığında ve otomatik güncellemelerde de korunur. Bu bilgisayarda yalnızca şifreli olarak tutulur, hiçbir zaman düz metin olarak değil, ve sohbeti yeniden açtığınızda bahsetmeleriyle birlikte geri gelir; kilitli bir sohbetin taslağı ancak kasa açıldığında geri gelir. Metni göndermek veya silmek, sohbeti silmek ya da oturumu kapatmak taslağı kaldırır. Ayarlar &gt; Arayüz &gt; Sohbetler bölümündeki "Taslakları şifreli olarak sakla, WinZapp kapansa da" (varsayılan olarak açık) bunu kapatır.
+
+- Uzun kayıtların yerel dökümü (2 dakikadan uzun): sonuç penceresinde artık bir bölümler listesi de var; her satır süresiyle başlar, örneğin "[01:05] ...". "Buradan dinle" (veya Enter), o mesaj çalıyorsa sesli mesajı o saniyeye götürür; "Sürelerle kopyala" satırları kopyalar. Üstteki metin ile pencerenin Kopyala ve Kaydet düğmeleri sürelerden arınmış kalır. Mesajdan yeniden açılan bir döküm yalnızca metni içerir, bu liste olmaz.
+
+- Yerel döküm kelime listesi: Ayarlar, Yerel döküm, Gelişmiş seçenekler içindeki "Kelime listesi" alanı, Whisper'ın doğru yazması için beklemesi gereken adları, kısaltmaları ve terimleri (her satırda bir tane) alır. Liste bu bilgisayarda kalır, günlüğe asla yazılmaz ve internete gitmez; whisper.cpp yalnızca aksansız terimleri kullanır. Zaten kaydedilmiş bir döküm, liste değişince yeniden yapılmaz.
+
+- Mesaj alanında dikte: Ctrl+Shift+J mikrofonu dinlemeye başlar, aynı tuş durdurur. Konuşma bu bilgisayarda, daha önce kurduğunuz yerel Whisper ile metne dönüştürülür; metin mesajdaki imleç konumuna girer (varsa seçili metnin yerine geçer) ve sesli okunur. Mesaj kendiliğinden asla gönderilmez, ses asla kaydedilmez ya da bir yere gönderilmez; hazır bir model yoksa WinZapp bir model indirmek yerine nedenini söyler. Sesli mesaj kaydederken veya aramadayken dikte açık bir cümleyle reddedilir. Tuş Ayarlar &gt; Klavye kısayolları bölümünden değiştirilebilir.
+
+- Aramalarda canlı altyazı: arama sırasında "Canlı altyazı" (Ctrl+Shift+X veya arama penceresindeki düğmesi), arama denetimlerinin odağını almadan, karşı tarafın söylediklerini bu bilgisayarda yerel Whisper modeliyle metne dönüştürülmüş tam cümleler olarak listeleyen bir pencere açar; komuta tekrar basmak pencereye geçirir. "Kopyala" ve "Kaydet..." yalnızca bastığınızda çalışır, hiçbir şey kendiliğinden kaydedilmez ve "Altyazıları sesli oku" varsayılan olarak kapalıdır. Model bir mesajın yazıya dökümü veya dikte için kullanılırken canlı altyazı reddedilir ve arama sesi bozulmaya başlarsa kendiliğinden kapanır.
+
+DÜZELTMELER
+
+- WinZapp'ı açma: yavaş bir diskte WinZapp, kişi listesini kaydederken başlangıçta "Database call timed out after 20s" hatasıyla durabiliyor, bir sonraki denemede normal açılıyordu. Çok sayıda kişiyi kaydetmek artık diğer toplu kayıtlar kadar bekliyor ve başlangıçta kaydedilemeyen bir kişi WinZapp'ın açılmasını artık engellemiyor.</description>
+      <description xml:lang="ro" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Această versiune aduce corectări față de 3.0.0.0.
+
+NOUTĂȚI
+
+- Descrieri cu IA: la deschiderea Ctrl+Shift+I pe o fotografie, un sticker sau un videoclip care are deja o descriere salvată împreună cu mesajul, WinZapp afișează imediat acel text, fără o nouă cerere și fără să consume cota ta. "Rulează din nou (cerere nouă)" și întrebările suplimentare rămân disponibile.
+
+- Rezumatul mesajelor cu IA: textul trimis pentru rezumat include acum descrierea IA deja salvată a fotografiilor, stickerelor și videoclipurilor, opțiunile sondajelor (și voturile, când sunt cunoscute) și un fragment din mesajul citat de fiecare răspuns. Când ceva îți cere un răspuns, o solicitare, o dată sau un link, rezumatul se încheie cu o listă scurtă a acestor elemente.
+
+- Text fără a trimite nimic: în fereastra IA a unei fotografii, a unui sticker sau a unui videoclip, butonul "Citește textul pe acest computer" citește textul din imagine cu recunoașterea de text din Windows, fără internet, fără cheie și fără fereastră de consimțământ (necesită o limbă de recunoaștere a textului instalată în Windows). La conversia unui PDF în text accesibil, WinZapp citește acum mai întâi textul conținut de PDF, pe acest computer; doar un PDF scanat, fără text, merge mai departe la furnizorii de IA, iar "Rulează din nou (cerere nouă)" cere unei IA să descrie și imaginile.
+
+- Cereri AI: când un furnizor răspunde "prea multe cereri" sau "indisponibil" și cere să aștepți doar câteva secunde, WinZapp așteaptă acel moment și încearcă încă o dată la același furnizor înainte de a trece la următorul. Anularea oprește în continuare totul imediat.
+
+- Setări, AI online: noul buton "Rezumatul utilizării..." deschide o fereastră care spune, pentru fiecare furnizor, câte cereri a rezolvat și câte au eșuat, cu motivul ultimului eșec, și un buton "Resetează contoarele". Se păstrează doar numerele, niciodată conținutul unui mesaj, al unei cereri sau al unui răspuns.
+
+- Videoclipuri: descrierea cu IA online se uită acum la până la cinci cadre răspândite în videoclip, reunite într-o singură imagine, în loc de un singur cadru. Modelul este înștiințat că cadrele sunt în ordine și că nu știe ce se întâmplă între ele și nici nu aude sunetul, care tot nu se trimite. Fereastra de consimțământ spune că se trimit mai multe cadre, fără sunet. Setări, IA online, "Tipuri de conținut procesate...": noua casetă "Descrieți videoclipurile din mai multe cadre", activată implicit, poate fi dezactivată pentru a trimite din nou un singur cadru.
+
+- Fereastra de rezultat a unei imagini, a unui autocolant, a unui videoclip sau a unui PDF: noua alegere "Analiză rapidă" și butonul "Analizează" rulează din nou același fișier cu altă cerere: "Extrage doar textul", "Citește chitanța, factura sau dovada PIX" (suma, destinatarul, data și codul sau cheia, fără ghicit: o valoare nesigură este marcată pentru confirmare, iar ce nu s-a putut citi este enumerat) sau "Citește tabelul sau meniul". "Folosește instrucțiunea mea" activează câmpul "Instrucțiunea ta", unde scrii ce vrei de la fișier. Răspunsul îl înlocuiește pe cel anterior și trece prin același consimțământ.
+
+- Setări, AI online, "Tipuri de conținut procesate...": două opțiuni noi, ambele dezactivate implicit, "Include legenda la descrierea conținutului" și "Include mesajul citat la descrierea conținutului". Când sunt active, acel text, scris de alte persoane din conversație, este trimis odată cu cererea de descriere, iar un consimțământ separat spune asta.
+
+- Ajutor la scriere: pe lângă cele patru acțiuni, "Folosește instrucțiunea mea" îți permite să scrii ce să se facă cu ciorna (de exemplu, "rezumă într-o linie"), iar "Sugerează o ciornă de răspuns" cere AI-ului un răspuns pe baza ultimelor 10 mesaje ale conversației și a ciornei tale. Aceasta trimite acele mesaje și numele celor care le-au scris, de aceea cere un consimțământ propriu, de fiecare dată în conversațiile blocate. Sugestia îți înlocuiește ciorna doar dacă alegi "Înlocuiește ciorna".
+
+- Un videoclip poate păstra acum în același timp o descriere cu IA și o transcriere locală. Când ambele sunt în linia mesajului, linia le spune pe amândouă, de exemplu "..., descriere: ..., transcriere: ...". Ștergerea transcrierii (Alt+Shift+Delete sau meniul contextual) păstrează descrierea; o a doua ștergere elimină descrierea. Un mesaj șters pentru toți le pierde pe amândouă.
+
+- Răspunsurile AI: o nouă opțiune în Setări, AI online, "Tipuri de conținut procesate...", "Afișați răspunsurile pe măsură ce sosesc" (dezactivată implicit), face ca fereastra de rezultat a unei descrieri, a unui PDF sau a unui rezumat al conversației să se completeze cu rânduri sau propoziții întregi cât timp AI încă scrie, cel mult o dată pe secundă, în loc să aștepte răspunsul complet. Sunetul de așteptare se oprește, iar fereastra anunță o dată că răspunsul sosește; răspunsul este citit în continuare cu voce tare o singură dată, când este complet. Dacă cererea eșuează sau o anulați, textul parțial este eliminat, iar Anulare și Esc închid conexiunea imediat. Mesajele vocale și ajutorul la scriere nu se schimbă.
+
+- Modele AI locale: Setări, IA online listează acum Ollama și LM Studio lângă furnizorii online. Indici adresa serverului (cea obișnuită este deja completată) și alegi un model pe care l-ai instalat; WinZapp descrie atunci imagini, abțibilduri și cadre video, rezumă conversații, te ajută să scrii și rulează modurile de analiză rapidă pe propriul tău computer, fără cheie API și fără să trimită nimic în exterior. Fără un model ales furnizorul nu este folosit, iar fereastra spune asta. Dacă setezi o adresă care nu este pe acest computer, WinZapp o tratează ca pe un furnizor online și îți cere mai întâi consimțământul. Modelele locale nu tratează mesaje vocale sau PDF-uri.
+
+- Rezumatul conversației: o opțiune nouă, dezactivată implicit, "Rezumați și mesajele mai vechi (mai multe cereri)" (Setări, AI online, "Tipuri de conținut procesate..."), permite rezumarea unei conversații lungi în cel mult 6 părți plus o cerere care le unește, în loc să fie lăsate deoparte mesajele mai vechi. Consimțământul spune câte cereri pot fi făcute, fereastra spune "Rezum partea 2 din 5...", iar dacă o parte eșuează, niciun rezumat nu este afișat ca și cum ar fi complet.
+
+- Setări, AI online: noul buton "Furnizori pe sarcini..." deschide o fereastră în care fiecare tip de sarcină (mesaje vocale, fotografii, autocolante, videoclipuri, PDF, rezumatul mesajelor și ajutor la scriere) poate avea proprii furnizori, în propria ordine. Bifează "Folosește ordinea generală pentru această sarcină" ca să lași totul cum este; altfel folosește "Include sau exclude" și butoanele de mutare ca să alcătuiești ruta. O sarcină cu rută proprie folosește doar furnizorii din ea (dacă niciunul nu este gata, acțiunea nu este oferită), iar fiecare furnizor continuă să ceară acordul tău ca până acum.
+
+- Videoclipuri: în fereastra AI a unui videoclip, noul buton "Înțelege videoclipul complet" spune într-un singur text ce se vede și ce se spune. Folosește transcrierea deja salvată cu videoclipul sau transcrie vorbirea pe acest computer (o fereastră de progres cu Anulează); sunetul nu părăsește niciodată computerul. Un acord separat, cerut de fiecare dată când se deschide fereastra și niciodată reținut, spune că imaginile extrase din videoclip și textul transcris sunt trimise și numește furnizorii. Dacă vorbirea nu poate fi transcrisă, ți se spune motivul și poți descrie doar imaginile, iar răspunsul spune atunci că acoperă doar imaginile. Textul trimis este limitat la primele 12.000 de caractere. Întrebările de continuare și "Rulează din nou (cerere nouă)" funcționează în continuare; răspunsul nu este pus în rândul mesajului, deci nu înlocuiește niciodată descrierea sau transcrierea salvate.
+
+- Profiluri de citire a mesajelor: în Setări &gt; Interfața utilizatorului &gt; Mesaje, "Cum se citește fiecare mesaj din listă" alege ordinea în care cititorul de ecran spune fiecare mesaj. "Implicit" este rândul pe care îl știi deja. "Conținutul primul" spune mesajul înaintea expeditorului, orei și stării. "Concis" omite expeditorul și ora când se repetă de la mesajul anterior. Căutarea în conversație găsește în continuare mesajele după conținut și după nume.
+
+- Salt după tipul mesajului: Alt+F5 / Alt+Shift+F5 merg la următorul / anteriorul mesaj vocal încă nereprodus, Alt+F6 la o fotografie, un videoclip sau un autocolant, Alt+F7 la un document, Alt+F8 la un sondaj și Alt+F9 la un link (cu Alt+Shift, la cel anterior). Cititorul de ecran spune tipul și poziția ("Document: 2 din 5") și, după ultimul sau înainte de primul, spune că nu mai există altele în loc să reînceapă. Tastele pot fi schimbate în Setări &gt; Comenzi rapide.
+
+- Căutare în toate conversațiile: Ctrl+Shift+G sau "Căutare în toate conversațiile" din meniul Fișier caută în textul tuturor conversațiilor păstrate pe acest computer: mesaje, legende, nume de fișiere, sondaje, cărți de contact, transcrierile și descrierile cu IA salvate la mesaje vocale, fotografii și videoclipuri, precum și numele expeditorilor și ale conversațiilor. Rezultatele citesc "conversație — expeditor — dată — fragment"; Enter deschide conversația la mesajul găsit, Esc oprește o căutare în curs. Istoricul criptat este citit în fundal, fără a bloca fereastra, sunt listate până la 200 de rezultate, iar conversațiile blocate rămân în afara rezultatelor cât timp seiful este închis.
+
+- Vedere slabă: în Setări &gt; Interfață &gt; Dimensiune font, textul listelor, al câmpurilor de mesaj și al ferestrelor devine mai mare (de la 110% la 200%), iar Ctrl+= (sau Ctrl++), Ctrl+- și Ctrl+Shift+Z îl măresc, îl micșorează și revin la cel implicit, spunând noua dimensiune. Vine dezactivat, deci nimic nu se schimbă până nu alegi o dimensiune. WinZapp nu setează culori proprii, așa că tema Windows cu contrast ridicat se aplică în continuare.
+
+- Ciorne: ce ați scris și nu ați trimis supraviețuiește acum închiderii WinZapp, repornirii și actualizărilor automate. Se păstrează pe acest computer numai criptat, niciodată ca text simplu, și revine, cu mențiunile, când deschideți din nou conversația; ciorna unei conversații blocate revine doar după deschiderea seifului. Trimiterea sau ștergerea textului, ștergerea conversației sau deconectarea o elimină. În Setări &gt; Interfață &gt; Conversații, "Păstrează ciornele criptate după închiderea aplicației WinZapp" (activată implicit) oprește acest lucru.
+
+- Transcrierea locală a înregistrărilor lungi (peste 2 minute): fereastra rezultatului are acum și o listă de momente, fiecare rând începând cu timpul său, ca "[01:05] ...". "Ascultă de aici" (sau Enter) duce mesajul vocal la acea secundă când acel mesaj este cel redat, iar "Copiază cu timpii" copiază rândurile; textul de deasupra și butoanele Copiați și Salvați ale ferestrei rămân fără timpi. O transcriere deschisă din nou din mesaj are doar textul, fără această listă.
+
+- Vocabularul transcrierii locale: în Setări, Transcriere locală, Opțiuni avansate, câmpul "Vocabular" primește nume, sigle și termeni (câte unul pe rând) pe care Whisper trebuie să-i aștepte, ca să-i scrie corect. Lista rămâne pe acest computer, nu este scrisă niciodată în jurnal și nu ajunge niciodată pe internet; whisper.cpp folosește doar termenii fără diacritice. O transcriere deja salvată nu este refăcută când lista se schimbă.
+
+- Dictare în câmpul mesajului: Ctrl+Shift+J începe ascultarea microfonului, iar aceeași tastă o oprește. Vorbirea este transcrisă pe acest computer, cu Whisper local pe care l-ați configurat deja, iar textul intră la poziția cursorului din mesaj (înlocuind selecția, dacă există) și este citit cu voce tare. Mesajul nu este trimis niciodată de la sine, sunetul nu este salvat și nici trimis nicăieri, iar dacă nu există un model pregătit, WinZapp spune motivul în loc să descarce unul. Dictarea este refuzată cu o frază clară cât timp înregistrați un mesaj vocal sau sunteți într-un apel. Tasta se poate schimba în Setări &gt; Comenzi rapide de la tastatură.
+
+- Subtitrări în timp real în apeluri: în timpul unui apel, "Subtitrări în timp real" (Ctrl+Shift+X sau butonul din fereastra apelului) deschide o fereastră, fără a lua focalizarea de la comenzile apelului, care enumeră ce spune cealaltă persoană în fraze complete, transcrise pe acest computer de modelul Whisper local; apăsarea din nou a comenzii duce la fereastră. "Copiați" și "Salvați..." acționează doar când le apăsați, nimic nu se salvează singur, iar "Citiți subtitrările cu voce tare" este dezactivată implicit. Subtitrările în timp real sunt refuzate cât timp o transcriere de mesaj sau o dictare folosește modelul și se opresc singure dacă sunetul apelului începe să sufere.
+
+CORECTĂRI
+
+- Deschiderea WinZapp: pe un disc lent, WinZapp se putea opri la pornire cu „Database call timed out after 20s” în timp ce salva lista de contacte, și se deschidea normal la următoarea încercare. Salvarea unui număr mare de contacte așteaptă acum la fel de mult ca celelalte salvări în bloc, iar un contact care nu poate fi salvat la pornire nu mai împiedică deschiderea WinZapp.</description>
+      <description xml:lang="ar" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+يأتي هذا الإصدار من WinZapp بإصلاحات فوق الإصدار 3.0.0.0.
+
+WHAT'S NEW
+
+- أوصاف الذكاء الاصطناعي: عند فتح Ctrl+Shift+I على صورة أو ملصق أو فيديو لديه وصف محفوظ مع رسالته، يعرض WinZapp هذا النص المحفوظ فورًا، دون طلب جديد ودون استهلاك حصتك. يبقى "تشغيل مرة أخرى (طلب جديد)" والأسئلة الإضافية متاحين.
+
+- تلخيص الرسائل بالذكاء الاصطناعي: يتضمن النص المرسل للتلخيص الآن وصف الذكاء الاصطناعي المحفوظ مسبقًا للصور والملصقات ومقاطع الفيديو، وخيارات الاستطلاعات (وأصواتها عند معرفتها)، ومقتطفًا قصيرًا من الرسالة التي يقتبسها كل رد. وعندما يطلب منك شيء ما إجابة أو طلبًا أو تاريخًا أو رابطًا، ينتهي الملخص بقائمة قصيرة بهذه العناصر.
+
+- نص دون إرسال أي شيء: في نافذة الذكاء الاصطناعي لصورة أو ملصق أو فيديو، يقرأ الزر "قراءة النص على هذا الكمبيوتر" النص الموجود في الصورة بالتعرف على النص المدمج في ويندوز، دون إنترنت ودون مفتاح ودون نافذة موافقة (يحتاج إلى لغة للتعرف على النص مثبتة في ويندوز). وعند تحويل ملف PDF إلى نص يسهل الوصول إليه، يقرأ WinZapp الآن أولًا النص الموجود في الملف نفسه على هذا الكمبيوتر؛ ولا ينتقل إلى مزودي الذكاء الاصطناعي إلا ملف PDF ممسوح ضوئيًا بلا نص، ويطلب "تشغيل مرة أخرى (طلب جديد)" من الذكاء الاصطناعي وصف الصور أيضًا.
+
+- طلبات الذكاء الاصطناعي: عندما يردّ موفّر بأن الطلبات كثيرة أو بأنه غير متاح ويطلب الانتظار بضع ثوانٍ فقط، ينتظر WinZapp هذه اللحظة ثم يعيد المحاولة مع الموفّر نفسه مرة واحدة قبل الانتقال إلى التالي. ويظل الإلغاء يوقف كل شيء فورًا.
+
+- الإعدادات، الذكاء الاصطناعي عبر الإنترنت: يفتح الزر الجديد "ملخص الاستخدام…" نافذة تذكر لكل موفّر عدد الطلبات التي أجاب عنها وعدد التي أخفقت، مع سبب آخر إخفاق، وفيها زر "إعادة تعيين العدادات". تُحفظ الأرقام فقط، ولا يُحفظ أبدًا محتوى رسالة أو طلب أو إجابة.
+
+- مقاطع الفيديو: صار وصف الذكاء الاصطناعي عبر الإنترنت ينظر إلى ما يصل إلى خمسة إطارات موزعة على الفيديو ومجمعة في صورة واحدة بدل إطار واحد. يُخبَر النموذج بأن الإطارات مرتبة وبأنه لا يعرف ما يحدث بينها ولا يسمع الصوت الذي ما زال لا يُرسل. تذكر نافذة الموافقة أن عدة إطارات تُرسل دون صوت. الإعدادات، الذكاء الاصطناعي عبر الإنترنت، "أنواع الوسائط المعالجة…": يمكن إيقاف خانة "وصف الفيديو من عدة إطارات" المفعّلة افتراضيًا للعودة إلى إرسال إطار واحد.
+
+- نافذة نتيجة صورة أو ملصق أو فيديو أو PDF: الاختيار الجديد "تحليل سريع" وزر "تحليل" يشغّلان الملف نفسه مرة أخرى بطلب آخر: "استخراج النص فقط" أو "قراءة إيصال أو فاتورة أو إثبات PIX" (المبلغ والمستلم والتاريخ والرمز أو المفتاح، دون تخمين: تُعلَّم القيمة غير الواضحة لتأكيدها وتُذكر الأجزاء التي تعذرت قراءتها) أو "قراءة جدول أو قائمة طعام". "استخدام تعليماتي الخاصة" يفعّل حقل "تعليماتك" الذي تكتب فيه ما تريده من الملف. تحل الإجابة محل السابقة وتمر بالموافقة نفسها.
+
+- الإعدادات، الذكاء الاصطناعي عبر الإنترنت، "أنواع الوسائط المعالجة...": خياران جديدان، كلاهما متوقف افتراضيا، "تضمين التعليق عند وصف الوسائط" و"تضمين الرسالة المقتبسة عند وصف الوسائط". عند تفعيلهما يُرسل هذا النص، الذي كتبه آخرون في الدردشة، مع طلب الوصف، وتنبّه موافقة منفصلة إلى ذلك.
+
+- مساعدة الكتابة: إضافة إلى الإجراءات الأربعة، يتيح "استخدام تعليماتي الخاصة" كتابة ما يُفعل بالمسودة (مثل "لخّص في سطر واحد")، ويطلب "اقتراح مسودة رد" من الذكاء الاصطناعي ردًا مبنيًا على آخر 10 رسائل في المحادثة ومسودتك. يرسل ذلك هذه الرسائل وأسماء من كتبوها، لذا يطلب موافقة خاصة به، وفي كل مرة في المحادثات المقفلة. لا يحل الاقتراح محل مسودتك إلا إذا اخترت "استبدال المسودة".
+
+- يمكن الآن أن يحتفظ الفيديو في الوقت نفسه بوصف بالذكاء الاصطناعي وبتفريغ نصي محلي. عندما يكون الاثنان في سطر الرسالة، يذكر السطر الاثنين، مثل "...، الوصف: ...، التفريغ النصي: ...". حذف التفريغ النصي (Alt+Shift+Delete أو قائمة السياق) يُبقي الوصف؛ والحذف مرة أخرى يزيل الوصف. والرسالة المحذوفة للجميع تفقد الاثنين.
+
+- إجابات الذكاء الاصطناعي: خيار جديد في الإعدادات، الذكاء الاصطناعي عبر الإنترنت، "أنواع الوسائط المعالجة…"، هو "عرض الإجابات تدريجيا أثناء وصولها" (متوقف افتراضيا)، يجعل نافذة النتيجة لوصف أو ملف PDF أو ملخص محادثة تمتلئ بأسطر أو جمل كاملة بينما لا يزال الذكاء الاصطناعي يكتب، مرة واحدة في الثانية على الأكثر، بدل انتظار الإجابة كاملة. يتوقف صوت الانتظار وتعلن النافذة مرة واحدة أن الإجابة تصل، وتبقى الإجابة تُقرأ بصوت عال مرة واحدة عند اكتمالها. إذا فشل الطلب أو ألغيته يُتجاهل النص الجزئي، ويغلق إلغاء وEsc الاتصال فورا. الرسائل الصوتية ومساعدة الكتابة لا تتغير.
+
+- نماذج الذكاء الاصطناعي المحلية: تعرض الإعدادات، الذكاء الاصطناعي عبر الإنترنت، الآن Ollama وLM Studio بجانب الموفّرين عبر الإنترنت. تُدخل عنوان الخادم (يكون المعتاد معبّأً) وتختار نموذجًا ثبّتَّه؛ عندها يصف WinZapp الصور والملصقات وإطارات الفيديو، ويلخّص المحادثات، ويساعدك في الكتابة، ويشغّل أوضاع التحليل السريع على جهازك، من دون مفتاح API ومن دون إرسال أي شيء إلى الخارج. بدون نموذج مختار لا يُستخدم الموفّر وتقول النافذة ذلك. وإذا ضبطت عنوانًا ليس على هذا الكمبيوتر فيعامله WinZapp كموفّر عبر الإنترنت ويطلب موافقتك أولًا. لا تتعامل النماذج المحلية مع الرسائل الصوتية ولا ملفات PDF.
+
+- ملخص المحادثة: خيار جديد متوقف افتراضيا هو "تلخيص الرسائل الأقدم أيضًا (عدة طلبات)" (الإعدادات، الذكاء الاصطناعي عبر الإنترنت، "أنواع الوسائط المعالجة…")، يتيح تلخيص كمية كبيرة من الرسائل على ما يصل إلى 6 أجزاء مع طلب يجمعها، بدلًا من تجاهل الرسائل الأقدم. تذكر نافذة الموافقة عدد الطلبات الممكنة، وتقول النافذة "جارٍ تلخيص الجزء 2 من 5..."، وإذا فشل جزء فلا يُعرض أي ملخص كأنه كامل.
+
+- الإعدادات، الذكاء الاصطناعي عبر الإنترنت: يفتح الزر الجديد «الموفّرون حسب نوع المهمة…» نافذة يمكن فيها لكل نوع من المهام (الرسائل الصوتية والصور والملصقات والفيديو وPDF وتلخيص الرسائل ومساعدة الكتابة) أن يكون له موفّروه الخاصون بترتيبه الخاص. حدّد «استخدام الترتيب العام لهذه المهمة» ليبقى كل شيء كما هو؛ وإلا فاستخدم «تضمين أو استبعاد» وأزرار التحريك لبناء المسار. المهمة ذات المسار الخاص لا تستخدم إلا الموفّرين الموجودين فيه (وإن لم يكن أحدهم جاهزًا فلا يُعرض الإجراء)، ويظل كل موفّر يطلب موافقتك كما في السابق.
+
+- مقاطع الفيديو: في نافذة الذكاء الاصطناعي لمقطع فيديو، يروي الزر الجديد "فهم الفيديو كاملاً" ما يُرى وما يُقال في نص واحد. يستخدم التفريغ المحفوظ مع الفيديو أو يفرّغ الكلام على هذا الكمبيوتر (نافذة تقدّم فيها إلغاء)؛ ولا يغادر الصوت الكمبيوتر أبداً. موافقة خاصة تُطلب في كل مرة تُفتح فيها النافذة ولا تُحفظ أبداً تقول إن الصور المأخوذة من الفيديو والنص المفرَّغ تُرسل، وتسمّي الموفّرين. إذا تعذر تفريغ الكلام يُذكر السبب ويمكنك وصف الصور فقط، وتقول الإجابة حينها إنها تشمل الصور فقط. النص المرسل محدود بأول 12000 حرف منه. تظل أسئلة المتابعة و"تشغيل مرة أخرى (طلب جديد)" تعمل؛ ولا تُوضع الإجابة في سطر الرسالة، فلا تحل أبداً محل الوصف أو التفريغ المحفوظين.
+
+- ملفات قراءة الرسائل: في الإعدادات &gt; واجهة المستخدم &gt; الرسائل، يحدد خيار "شكل قراءة كل رسالة في القائمة" الترتيب الذي يقرأ به قارئ الشاشة كل رسالة. "الافتراضي" هو السطر الذي تعرفه. "المحتوى أولًا" يقرأ الرسالة قبل المرسل والوقت والحالة. "موجز" يحذف المرسل والوقت عندما يتكرران من الرسالة السابقة. ويظل البحث في المحادثة يجد الرسائل بالمحتوى وبالاسم.
+
+- القفز حسب نوع الرسالة: ينتقل Alt+F5 / Alt+Shift+F5 إلى الرسالة الصوتية التالية / السابقة التي لم تُشغَّل بعد، وAlt+F6 إلى صورة أو فيديو أو ملصق، وAlt+F7 إلى مستند، وAlt+F8 إلى استطلاع، وAlt+F9 إلى رابط (مع Alt+Shift إلى السابق). يذكر قارئ الشاشة النوع والموضع ("مستند: 2 من 5")، وبعد الأخيرة أو قبل الأولى يقول إنه لا يوجد المزيد بدلاً من البدء من جديد. يمكن تغيير المفاتيح من الإعدادات &gt; اختصارات لوحة المفاتيح.
+
+- البحث في جميع الدردشات: يبحث Ctrl+Shift+G، أو «البحث في جميع الدردشات» من قائمة الملف، في نص كل الدردشات المحفوظة على هذا الكمبيوتر: الرسائل والتعليقات وأسماء الملفات والاستطلاعات وبطاقات جهات الاتصال والنصوص المفرغة وأوصاف الذكاء الاصطناعي المحفوظة مع الرسائل الصوتية والصور والفيديوهات، وكذلك أسماء المرسلين والدردشات. تقرأ النتائج «الدردشة — المرسل — التاريخ — مقتطف»؛ يفتح Enter الدردشة عند الرسالة التي عُثر عليها، ويوقف Esc بحثًا جاريًا. يُقرأ السجل المشفّر في الخلفية دون تجميد النافذة، وتُعرض حتى 200 نتيجة، وتبقى الدردشات المقفلة خارج النتائج ما دام القبو مغلقًا.
+
+- ضعف البصر: في الإعدادات &gt; واجهة المستخدم &gt; حجم الخط يصبح نص القوائم وحقول الرسائل والنوافذ أكبر (من 110% إلى 200%)، وتكبّره Ctrl+= (أو Ctrl++) وتصغّره Ctrl+- وتعيده Ctrl+Shift+Z إلى الافتراضي مع نطق الحجم الجديد. الخيار متوقف افتراضيًا، فلا يتغير شيء حتى تختار حجمًا. لا يحدد WinZapp ألوانًا خاصة به، لذلك تظل سمة التباين العالي في ويندوز مطبقة.
+
+- المسودات: ما كتبته ولم ترسله يبقى الآن بعد إغلاق WinZapp وإعادة تشغيله والتحديثات التلقائية. يُحفظ على هذا الكمبيوتر مشفرًا فقط، وليس نصًا عاديًا أبدًا، ويعود مع الإشارات عند فتح الدردشة مرة أخرى؛ ولا تعود مسودة الدردشة المقفلة إلا بعد فتح الخزنة. يزيله إرسال النص أو مسحه أو حذف الدردشة أو تسجيل الخروج. في الإعدادات &gt; واجهة المستخدم &gt; الدردشات، يوقف الخيار «الاحتفاظ بالمسودات المشفرة بعد إغلاق WinZapp» (مفعّل افتراضيًا) هذا السلوك.
+
+- التفريغ النصي المحلي للتسجيلات الطويلة (أكثر من دقيقتين): تحتوي نافذة النتيجة الآن أيضًا على قائمة باللحظات، يبدأ كل صف بوقته، مثل "[01:05] ...". "استمع من هنا" (أو Enter) ينقل الرسالة الصوتية إلى تلك الثانية عندما تكون هذه الرسالة قيد التشغيل، و"نسخ مع الأوقات" ينسخ الصفوف؛ أما النص أعلاه ونسخ النافذة وحفظها فيبقى بلا أوقات. التفريغ المفتوح مرة أخرى من الرسالة يحتوي على النص فقط، بدون هذه القائمة.
+
+- مفردات التفريغ النصي المحلي: في الإعدادات، التفريغ النصي المحلي، خيارات متقدمة، يقبل حقل "المفردات" أسماء واختصارات ومصطلحات (واحد في كل سطر) يجب أن يتوقعها Whisper لتُكتب بشكل صحيح. تبقى القائمة على هذا الكمبيوتر ولا تُكتب في السجل ولا تُرسل عبر الإنترنت؛ ويستخدم whisper.cpp المصطلحات التي بلا علامات تشكيل أو حروف مُمَيَّزة فقط. التفريغ المحفوظ مسبقًا لا يُعاد عند تغيير القائمة.
+
+- الإملاء في حقل الرسالة: يبدأ Ctrl+Shift+J الاستماع إلى الميكروفون، ويوقفه المفتاح نفسه. يُفرَّغ الكلام نصيًا على هذا الكمبيوتر باستخدام Whisper المحلي الذي أعددته سابقًا، ثم يدخل النص عند موضع المؤشر في الرسالة (ويحل محل التحديد إن وُجد) ويُقرأ بصوت عالٍ. لا تُرسل الرسالة من تلقاء نفسها أبدًا، ولا يُحفظ الصوت ولا يُرسل إلى أي مكان، وإن لم يوجد نموذج جاهز فإن WinZapp يذكر السبب بدل تنزيل نموذج. يُرفض الإملاء بجملة واضحة أثناء تسجيل رسالة صوتية أو أثناء مكالمة. يمكن تغيير المفتاح من الإعدادات &gt; اختصارات لوحة المفاتيح.
+
+- التفريغ النصي الحي في المكالمات: أثناء المكالمة، يفتح «التفريغ النصي الحي» (Ctrl+Shift+X أو زره في نافذة المكالمة) نافذة، دون أخذ التركيز من عناصر التحكم في المكالمة، تسرد ما يقوله الطرف الآخر في جمل كاملة يفرغها نموذج Whisper المحلي على هذا الكمبيوتر؛ والضغط على الأمر مرة أخرى ينقلك إلى النافذة. لا يعمل «نسخ» و«احفظ…» إلا عند الضغط عليهما، ولا يُحفظ شيء من تلقاء نفسه، و«قراءة التفريغ النصي بصوت عالٍ» متوقفة افتراضيًا. يُرفض التفريغ النصي الحي ما دام نموذج ما يُستخدم في تفريغ رسالة أو في إملاء، ويتوقف من تلقاء نفسه إذا بدأ صوت المكالمة يتأثر.
+
+FIXES
+
+- فتح WinZapp: على قرص بطيء، كان WinZapp قد يتوقف عند بدء التشغيل مع الرسالة "Database call timed out after 20s" أثناء حفظ قائمة جهات الاتصال، ثم يفتح بشكل طبيعي في المحاولة التالية. أصبح حفظ عدد كبير من جهات الاتصال ينتظر مثل عمليات الحفظ المجمّعة الأخرى، ولم تعد جهة اتصال يتعذر حفظها عند بدء التشغيل تمنع WinZapp من الفتح.</description>
+      <description xml:lang="it" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+This release brings fixes on top of 3.0.0.0.
+
+WHAT'S NEW
+
+- Descrizioni con IA: aprendo Ctrl+Shift+I su una foto, un adesivo o un video che ha già una descrizione salvata con il messaggio, WinZapp mostra subito quel testo, senza fare una nuova richiesta e senza consumare la tua quota. "Esegui di nuovo (nuova richiesta)" e le domande di approfondimento restano disponibili.
+
+- Riassunto dei messaggi con IA: il testo inviato per il riassunto ora include la descrizione IA già salvata di foto, adesivi e video, le opzioni dei sondaggi (e i voti, quando noti) e un estratto del messaggio che ogni risposta cita. Quando qualcosa ti chiede una risposta, una richiesta, una data o un link, il riassunto termina con un breve elenco di questi elementi.
+
+- Testo senza inviare nulla: nella finestra IA di una foto, un adesivo o un video, il pulsante "Leggi il testo su questo computer" legge il testo dell'immagine con il riconoscimento del testo di Windows, senza internet, senza chiave e senza finestra di consenso (serve una lingua di riconoscimento del testo installata in Windows). Quando converti un PDF in testo accessibile, WinZapp ora legge prima il testo contenuto nel PDF stesso, su questo computer; solo un PDF scansionato, senza testo, passa ai provider IA, e "Esegui di nuovo (nuova richiesta)" chiede a un'IA di descrivere anche le immagini.
+
+- Richieste IA: quando un provider risponde "troppe richieste" o "non disponibile" e chiede di attendere solo pochi secondi, WinZapp attende quel momento e riprova una volta con lo stesso provider prima di passare al successivo. Annullare continua a fermare tutto subito.
+
+- Impostazioni, IA online: il nuovo pulsante "Riepilogo d'uso..." apre una finestra che indica, per ogni provider, quante richieste ha soddisfatto e quante sono fallite, con il motivo dell'ultimo errore, e un pulsante "Azzera i contatori". Vengono conservati solo i numeri, mai il contenuto di un messaggio, di una richiesta o di una risposta.
+
+- Video: la descrizione con IA online ora guarda fino a cinque fotogrammi distribuiti nel video, riuniti in una sola immagine, invece di uno solo. Al modello viene detto che i fotogrammi sono in ordine e che non sa cosa accade tra uno e l'altro né sente l'audio, che continua a non essere inviato. La finestra di consenso dice che vengono inviati più fotogrammi, senza audio. Impostazioni, IA online, "Tipi di contenuto elaborati...": la nuova casella "Descrivi i video da più fotogrammi", attiva per impostazione predefinita, si può disattivare per tornare a inviare un solo fotogramma.
+
+- Finestra del risultato di un'immagine, sticker, video o PDF: la nuova scelta "Analisi rapida" e il pulsante "Analizza" eseguono di nuovo lo stesso file con un'altra richiesta: "Estrai solo il testo", "Leggi ricevuta, bolletta o prova PIX" (importo, destinatario, data e codice o chiave, senza indovinare: un valore dubbio viene segnato da confermare e ciò che non si è riusciti a leggere viene elencato) oppure "Leggi tabella o menu". "Usa la mia istruzione" abilita il campo "La tua istruzione", dove scrivi cosa vuoi dal file. La risposta sostituisce la precedente e passa per lo stesso consenso.
+
+- Impostazioni, IA online, "Tipi di contenuto elaborati...": due nuove opzioni, entrambe disattivate per impostazione predefinita, "Includi la didascalia quando descrivi i contenuti" e "Includi il messaggio citato quando descrivi i contenuti". Se attive, quel testo, scritto da altre persone nella chat, viene inviato con la richiesta di descrizione e un consenso separato lo segnala.
+
+- Aiuto per la scrittura: oltre alle quattro azioni, "Usa la mia istruzione" permette di scrivere cosa fare con la bozza (per esempio, "riassumi in una riga") e "Suggerisci una bozza di risposta" chiede all'IA una risposta basata sugli ultimi 10 messaggi della conversazione e sulla tua bozza. Questo invia quei messaggi e i nomi di chi li ha scritti, quindi chiede un consenso proprio, ogni volta nelle chat bloccate. Il suggerimento sostituisce la tua bozza solo se scegli "Sostituisci bozza".
+
+- Un video ora può conservare insieme una descrizione IA e una trascrizione locale. Quando entrambe sono nella riga del messaggio, la riga le dice entrambe, per esempio "..., descrizione: ..., trascrizione: ...". Eliminare la trascrizione (Alt+Shift+Delete o il menu contestuale) mantiene la descrizione; eliminare di nuovo rimuove la descrizione. Un messaggio eliminato per tutti perde entrambe.
+
+- Risposte dell'IA: una nuova opzione in Impostazioni, IA online, "Tipi di contenuto elaborati...", "Mostra le risposte man mano che arrivano" (disattivata per impostazione predefinita), fa riempire la finestra del risultato di una descrizione, di un PDF o di un riepilogo di conversazione con righe o frasi intere mentre l'IA sta ancora scrivendo, al massimo una volta al secondo, invece di attendere la risposta completa. Il suono di attesa si ferma e la finestra avvisa una volta che la risposta sta arrivando; la risposta viene letta ad alta voce una sola volta, quando è completa. Se la richiesta fallisce o la annulli, il testo parziale viene scartato, e Annulla ed Esc chiudono subito la connessione. I messaggi vocali e l'aiuto alla scrittura non cambiano.
+
+- Modelli di IA locali: Impostazioni, IA online ora elenca Ollama e LM Studio accanto ai provider online. Indichi l'indirizzo del server (quello abituale è già compilato) e scegli un modello che hai installato; WinZapp descrive allora immagini, sticker e fotogrammi di video, riassume le chat, ti aiuta a scrivere ed esegue le modalità di analisi rapida sul tuo computer, senza chiave API e senza inviare nulla all'esterno. Senza un modello scelto il provider non viene usato e la finestra lo dice. Se imposti un indirizzo che non è su questo computer, WinZapp lo tratta come un provider online e chiede prima il tuo consenso. I modelli locali non gestiscono messaggi vocali né PDF.
+
+- Riepilogo di conversazione: una nuova opzione, disattivata per impostazione predefinita, "Riassumi anche i messaggi più vecchi (più richieste)" (Impostazioni, IA online, "Tipi di contenuto elaborati..."), permette di riassumere un gran numero di messaggi in al massimo 6 parti più una richiesta che le unisce, invece di scartare i più vecchi. Il consenso dice quante richieste possono essere fatte, la finestra dice "Riassumo la parte 2 di 5..." e, se una parte non riesce, nessun riepilogo viene mostrato come se fosse completo.
+
+- Impostazioni, IA online: il nuovo pulsante "Provider per compito..." apre una finestra in cui ogni tipo di compito (messaggi vocali, foto, adesivi, video, PDF, riepilogo dei messaggi e aiuto per la scrittura) può avere i propri provider, nel proprio ordine. Seleziona "Usa l'ordine generale per questo compito" per lasciare tutto com'è; altrimenti usa "Includi o escludi" e i pulsanti di spostamento per comporre il percorso. Un compito con percorso proprio usa solo i provider al suo interno (se nessuno è pronto, l'azione non viene proposta) e ogni provider continua a chiedere il tuo consenso come prima.
+
+- Video: nella finestra di IA di un video, il nuovo pulsante "Comprendi il video completo" racconta in un solo testo ciò che si vede e ciò che si dice. Usa la trascrizione già salvata con il video oppure trascrive il parlato su questo computer (una finestra di avanzamento con Annulla); l'audio non lascia mai il computer. Un consenso apposito, chiesto ogni volta che la finestra si apre e mai ricordato, dice che le immagini estratte dal video e il testo trascritto vengono inviati e nomina i provider. Se il parlato non può essere trascritto, ne viene detto il motivo e puoi descrivere solo le immagini, e la risposta dice allora che riguarda solo le immagini. Il testo inviato è limitato ai suoi primi 12.000 caratteri. Le domande di approfondimento e "Esegui di nuovo (nuova richiesta)" continuano a funzionare; la risposta non viene messa nella riga del messaggio, quindi non sostituisce mai la descrizione né la trascrizione salvate.
+
+- Profili di lettura dei messaggi: in Impostazioni &gt; Interfaccia utente &gt; Messaggi, "Com'è letto ogni messaggio nell'elenco" sceglie l'ordine in cui il lettore di schermo dice ogni messaggio. "Predefinito" è la riga che già conosci. "Prima il contenuto" dice il messaggio prima di mittente, ora e stato. "Conciso" omette mittente e ora quando ripetono quelli del messaggio precedente. La ricerca nella conversazione continua a trovare i messaggi per contenuto e per nome.
+
+- Salto per tipo di messaggio: Alt+F5 / Alt+Shift+F5 passano al messaggio vocale successivo / precedente non ancora riprodotto, Alt+F6 a una foto, un video o un adesivo, Alt+F7 a un documento, Alt+F8 a un sondaggio e Alt+F9 a un link (Alt+Shift porta al precedente). Il lettore dello schermo dice il tipo e la posizione ("Documento: 2 di 5") e, dopo l'ultimo o prima del primo, dice che non ce ne sono altri invece di ricominciare. I tasti si possono cambiare in Impostazioni &gt; Scorciatoie da tastiera.
+
+- Cerca in tutte le chat: Ctrl+Shift+G, oppure "Cerca in tutte le chat" nel menu File, cerca il testo di tutte le chat salvate su questo computer: messaggi, didascalie, nomi dei file, sondaggi, biglietti da visita, le trascrizioni e le descrizioni con IA salvate con messaggi vocali, foto e video, e i nomi di chi ha inviato e delle chat. I risultati leggono "chat — mittente — data — estratto"; Invio apre la chat sul messaggio trovato, Esc interrompe una ricerca in corso. La cronologia cifrata viene letta in secondo piano, senza bloccare la finestra, vengono elencati fino a 200 risultati e le chat bloccate restano fuori dai risultati mentre la cassaforte è chiusa.
+
+- Ipovisione: in Impostazioni &gt; Interfaccia &gt; Dimensione carattere, il testo di elenchi, campi dei messaggi e finestre diventa più grande (dal 110% al 200%), e Ctrl+= (o Ctrl++), Ctrl+- e Ctrl+Shift+Z lo ingrandiscono, lo riducono e tornano al predefinito, dicendo la nuova dimensione. È disattivato di default, quindi non cambia nulla finché non scegli una dimensione. WinZapp non imposta colori propri, quindi il tema ad alto contrasto di Windows continua ad applicarsi.
+
+- Bozze: ciò che hai scritto e non hai inviato ora sopravvive alla chiusura di WinZapp, al riavvio e agli aggiornamenti automatici. Resta su questo computer solo cifrato, mai come testo in chiaro, e torna, con le menzioni, quando riapri la conversazione; la bozza di una conversazione bloccata torna solo quando la vault è aperta. Inviare o cancellare il testo, eliminare la conversazione o uscire dall'account la rimuove. In Impostazioni &gt; Interfaccia utente &gt; Chat, "Conserva le bozze cifrate anche più tardi, dopo il riavvio di WinZapp" (attiva per impostazione predefinita) la disattiva.
+
+- Trascrizione locale di registrazioni lunghe (oltre 2 minuti): la finestra del risultato ha ora anche un elenco di momenti, ogni riga con il suo tempo all'inizio, come "[01:05] ...". "Ascolta da qui" (o Invio) porta il messaggio vocale a quel secondo quando è quello in riproduzione, e "Copia con i tempi" copia le righe; il testo sopra e i pulsanti Copia e Salva della finestra restano senza tempi. Una trascrizione riaperta dal messaggio ha solo il testo, senza questo elenco.
+
+- Vocabolario della trascrizione locale: in Impostazioni, Trascrizione locale, Opzioni Avanzate, "Vocabolario" accetta nomi, sigle e termini (uno per riga) che Whisper deve aspettarsi per scriverli bene. L'elenco resta su questo computer, non viene mai scritto nel registro e non va mai online; whisper.cpp usa solo i termini senza accenti. Una trascrizione già salvata non viene rifatta quando l'elenco cambia.
+
+- Dettatura nel campo del messaggio: Ctrl+Shift+J inizia ad ascoltare il microfono e lo stesso tasto lo ferma. Il parlato viene trascritto su questo computer, con il Whisper locale che hai già configurato, e il testo entra nella posizione del cursore del messaggio (sostituendo la selezione, se c'è) e viene letto ad alta voce. Il messaggio non viene mai inviato da solo, l'audio non viene mai salvato né inviato da nessuna parte e, se non c'è un modello pronto, WinZapp ne dice il motivo invece di scaricarne uno. Viene rifiutata con una frase chiara mentre registri un messaggio vocale o sei in una chiamata. Il tasto si può cambiare in Impostazioni &gt; Scorciatoie da tastiera.
+
+- Sottotitoli dal vivo nelle chiamate: durante una chiamata, "Sottotitoli dal vivo" (Ctrl+Shift+X, o il suo pulsante nella finestra della chiamata) apre una finestra, senza togliere il focus ai controlli della chiamata, che elenca ciò che dice l'altra persona in frasi complete, trascritte su questo computer dal modello Whisper locale; premendo di nuovo il comando si passa alla finestra. "Copia" e "Salva..." agiscono solo quando li premi, nulla viene salvato da solo, e "Leggi i sottotitoli a voce alta" è disattivata di default. I sottotitoli dal vivo vengono rifiutati mentre una trascrizione di messaggio o un dettato usa il modello, e si disattivano da soli se l'audio della chiamata comincia a risentirne.
+
+FIXES
+
+- Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
+      <description xml:lang="cs" sparkle:format="plain-text">- feat(transcription): segment seek, custom vocabulary, message dictation and live call captions (#962)
+- Approve WPPConnect-Server 2.10.99 in the approved-versions manifest (#964)
+- feat(drafts): persist encrypted unsent message drafts across restarts (#959)
+- feat(accessibility): add configurable reading profiles, semantic jump, global search, and low-vision font scaling (#960)
+- feat(ai): expand AI media with offline OCR, local PDF, local LLMs, routing, streaming, and quick actions (#963)
+
+Toto vydání přináší opravy oproti verzi 3.0.0.0.
+
+NOVINKY
+
+- Popisy pomocí AI: stisknutím Ctrl+Shift+I u fotky, nálepky nebo videa, které už má popis uložený u zprávy, se tento uložený text zobrazí okamžitě, bez nového požadavku a bez čerpání vašeho limitu. Tlačítko „Spustit znovu (nový požadavek)“ i doplňující otázky zůstávají k dispozici.
+
+- Souhrn chatu pomocí AI: text odesílaný k souhrnu nyní zahrnuje popis AI už uložený u fotek, nálepek a videí, možnosti anket (a jejich hlasy, pokud jsou známé) a krátký úryvek zprávy, kterou každá odpověď cituje. Pokud něco vyžaduje odpověď, požadavek, datum nebo odkaz, souhrn končí krátkým seznamem těchto položek.
+
+- Text bez odesílání čehokoli: v okně AI u fotky, nálepky nebo videa tlačítko „Přečíst text v tomto počítači“ přečte text z obrázku pomocí vlastního rozpoznávání textu ve Windows, bez internetu, bez klíče a bez okna se souhlasem (vyžaduje jazyk rozpoznávání textu nainstalovaný ve Windows). Při převodu PDF na přístupný text WinZapp nyní nejprve přečte text, který obsahuje samotné PDF v tomto počítači; pouze naskenované PDF bez textu pokračuje k poskytovatelům AI a „Spustit znovu (nový požadavek)“ požádá AI také o popis obrázků.
+
+- Požadavky na AI: když poskytovatel odpoví „příliš mnoho požadavků“ nebo „nedostupné“ a požádá o čekání jen několik sekund, WinZapp tuto chvíli počká a zkusí stejného poskytovatele ještě jednou, než přejde k dalšímu. Zrušení nadále okamžitě vše zastaví.
+
+- Nastavení, Online AI: nové tlačítko „Přehled využití...“ otevře okno, které pro každého poskytovatele uvádí, kolik požadavků vyřídil a kolik selhalo, spolu s důvodem posledního selhání a tlačítkem „Vynulovat počítadla“. Ukládají se pouze počty, nikdy obsah zprávy, požadavku nebo odpovědi.
+
+- Videa: popis online AI nyní sleduje až pět snímků rozmístěných po celém videu, spojených do jednoho obrázku, místo jediného snímku. Model je upozorněn, že snímky jdou po sobě a že nemůže vědět, co se děje mezi nimi, ani neslyší zvuk, který se nadále nikdy neodesílá. Okno se souhlasem uvádí, že se odesílá několik snímků bez zvuku. Nastavení, Online AI, „Zpracovávané typy médií...“: nové políčko „Popisovat videa z více snímků“, ve výchozím stavu zapnuté, lze vypnout pro návrat k jednomu snímku.
+
+- Okno výsledku obrázku, nálepky, videa nebo PDF: nová volba „Rychlá analýza“ a tlačítko „Analyzovat“ spustí tentýž soubor znovu s jiným požadavkem: „Extrahovat pouze text“, „Přečíst účtenku, fakturu nebo potvrzení o platbě“ (částka, příjemce, datum a kód nebo klíč, bez hádání: nejasná hodnota se označí k ověření a vypíše se, co nebylo možné přečíst) nebo „Přečíst tabulku nebo jídelní lístek“. „Použít vlastní pokyn“ zpřístupní pole „Váš pokyn“, kam napíšete, co ze souboru chcete. Odpověď nahradí předchozí a projde stejným souhlasem.
+
+- Nastavení, Online AI, „Zpracovávané typy médií...“: dvě nové možnosti, obě ve výchozím stavu vypnuté, „Zahrnout popisek při popisu médií“ a „Zahrnout citovanou zprávu při popisu médií“. Když jsou zapnuté, tento text napsaný ostatními lidmi v chatu se odešle s požadavkem na popis a informuje o tom samostatný souhlas.
+
+- Pomoc se psaním: kromě čtyř akcí vám „Použít vlastní pokyn“ umožní napsat, co s konceptem udělat (například „shrň v jednom řádku“), a „Navrhnout koncept odpovědi“ požádá AI o odpověď na základě posledních 10 zpráv konverzace a vašeho konceptu. Tím se odešlou tyto zprávy a jména jejich autorů, takže se vyžádá vlastní souhlas, a u uzamčených chatů pokaždé. Návrh nahradí váš koncept jen tehdy, když zvolíte „Nahradit koncept“.
+
+- Video nyní může mít současně uložený popis pomocí AI i místní přepis. Když jsou na řádku zprávy oba, řádek oznámí oba, například „..., popis: ..., přepis: ...“. Smazání přepisu (Alt+Shift+Delete nebo místní nabídka) popis ponechá; opakované smazání odstraní popis. Zpráva smazaná pro všechny ztratí obojí.
+
+- Odpovědi AI: nová možnost v Nastavení, Online AI, „Zpracovávané typy médií...“, „Zobrazovat odpovědi postupně, jak přicházejí“ (ve výchozím stavu vypnuto), vyplňuje okno výsledku popisu, PDF nebo souhrnu chatu po celých řádcích či větách, zatímco AI ještě píše, nejvýše jednou za sekundu, místo čekání na celou odpověď. Zvuk čekání ustane a okno jednou oznámí, že odpověď přichází; po dokončení se stále přečte nahlas jednou celá. Pokud požadavek selže nebo ho zrušíte, částečný text se zahodí a Zrušit i Esc spojení ihned ukončí. Hlasových zpráv a pomoci se psaním se to netýká.
+
+- Místní modely AI: Nastavení, Online AI nyní vedle online poskytovatelů uvádí Ollama a LM Studio. Zadáte adresu serveru (obvyklá je předvyplněná) a zvolíte nainstalovaný model; WinZapp pak popisuje obrázky, nálepky a snímky videí, shrnuje chaty, pomáhá se psaním a spouští režimy rychlé analýzy přímo v tomto počítači, bez klíče API a bez odesílání čehokoli ven. Bez zvoleného modelu se poskytovatel nepoužije a okno na to upozorní. Pokud zadáte adresu, která není v tomto počítači, WinZapp ji bere jako online poskytovatele a nejprve požádá o váš souhlas. Místní modely nezpracovávají hlasové zprávy ani soubory PDF.
+
+- Souhrn chatu: nová volitelná možnost „Shrnout také starší zprávy (více požadavků)“ (Nastavení, Online AI, „Zpracovávané typy médií...“) umožní shrnout dlouhou historii až v 6 částech plus jeden požadavek, který je spojí, místo zahazování starších zpráv. Souhlas uvede, kolik požadavků může být odesláno, okno hlásí „Shrnuji část 2 z 5...“ a při selhání části se nezobrazí neúplný souhrn jako hotový.
+
+- Nastavení, Online AI: nové tlačítko „Poskytovatelé podle úkolu...“ otevře okno, kde může mít každý druh úkolu (hlasové zprávy, fotky, nálepky, videa, PDF, souhrn zpráv a pomoc se psaním) své vlastní poskytovatele ve vlastním pořadí. Zaškrtnutím „Použít pro tento úkol obecné pořadí“ zachováte stávající nastavení; jinak pomocí „Zahrnout nebo vynechat“ a tlačítek přesunu sestavíte pořadí. Úkol s vlastním pořadím používá jen poskytovatele v něm (pokud není žádný připravený, akce se nenabídne) a každý poskytovatel dál žádá o váš souhlas jako dříve.
+
+- Videa: v okně AI u videa nové tlačítko „Porozumět celému videu“ spojí do jednoho textu, co je vidět a co se říká. Použije přepis už uložený u videa, nebo řeč přepíše v tomto počítači (okno průběhu se Zrušit); zvuk nikdy neopustí počítač. Vlastní souhlas, zobrazovaný při každém otevření okna a nikdy neukládaný, upozorní, že snímky z videa i přepsaný text budou odeslány, a uvede poskytovatele. Pokud řeč nelze přepsat, dozvíte se proč a můžete popsat jen obrázky; odpověď pak uvede, že pokrývá jen obrázky. Odesílaný text je omezen na prvních 12 000 znaků. Doplňující otázky a „Spustit znovu (nový požadavek)“ dál fungují; odpověď se nevkládá do řádku zprávy, takže nikdy nenahradí uložený popis ani přepis.
+
+- Profily čtení zpráv: v Nastavení &gt; Uživatelské rozhraní &gt; Zprávy volba „Přizpůsobit způsob čtení jednotlivých zpráv“ určuje pořadí, v jakém odečítač obrazovky zprávu čte. „Výchozí“ je řádek, jak ho znáte. „Nejprve obsah“ přečte zprávu před odesílatelem, časem a stavem. „Stručné“ vynechá odesílatele a čas, když se opakují z předchozí zprávy. Hledání v konverzaci nadále nachází zprávy podle obsahu i podle jména.
+
+- Skok podle typu zprávy: Alt+F5 / Alt+Shift+F5 přejde na další / předchozí dosud nepřehranou hlasovou zprávu, Alt+F6 na fotku, video nebo nálepku, Alt+F7 na dokument, Alt+F8 na anketu a Alt+F9 na odkaz (Alt+Shift přidává předchozí). Odečítač oznámí typ a pozici („Dokument: 2 z 5“) a za poslední či před první zprávou oznámí, že další už není, místo aby začínal znovu. Klávesy lze změnit v Nastavení &gt; Klávesové zkratky.
+
+- Prohledat všechny konverzace: Ctrl+Shift+G nebo „Prohledat všechny konverzace“ v nabídce Soubor prohledá text všech chatů uložených v tomto počítači: zprávy, popisky, názvy souborů, ankety, karty kontaktů, přepisy a popisy AI uložené u hlasových zpráv, fotek a videí a jména odesílatelů a chatů. Výsledky čtou „chat — odesílatel — datum — úryvek“; Enter otevře chat na dané zprávě, Esc běžící hledání zastaví. Šifrovaná historie se čte na pozadí bez zamrznutí okna, vypíše se až 200 výsledků a uzamčené chaty zůstávají mimo výsledky, dokud je trezor zavřený.
+
+- Slabozrací: Nastavení &gt; Rozhraní &gt; Velikost písma zvětší text seznamů, polí zpráv a oken (110 % až 200 %) a Ctrl+= (nebo Ctrl++), Ctrl+- a Ctrl+Shift+Z ho zvětší, zmenší a vrátí na výchozí hodnotu s oznámením nové velikosti. Ve výchozím stavu je volba vypnutá, dokud velikost nezvolíte. WinZapp nenastavuje vlastní barvy, takže motiv vysokého kontrastu Windows platí dál.
+
+- Koncepty: to, co jste napsali a neodeslali, nyní přečká zavření WinZappu, jeho restart i automatické aktualizace. Ukládá se v tomto počítači pouze šifrovaně, nikdy jako prostý text, a po novém otevření konverzace se vrátí včetně zmínek; koncept uzamčené konverzace se vrátí až po otevření trezoru. Odeslání nebo smazání textu, odstranění konverzace nebo odhlášení koncept smaže. V Nastavení &gt; Rozhraní &gt; Chaty jej vypnete políčkem „Ponechat neodeslaný text jako šifrované koncepty po restartu WinZappu“ (ve výchozím stavu zapnuto).
+
+- Místní přepis dlouhých nahrávek (přes 2 minuty): okno výsledku nyní obsahuje také seznam okamžiků, kde každý řádek začíná časem, například „[01:05] ...“. „Poslechnout odsud“ (nebo Enter) posune hlasovou zprávu na danou sekundu, pokud právě hraje, a „Kopírovat s časy“ zkopíruje řádky; text výše a tlačítka Kopírovat a Uložit zůstávají bez časů. Přepis znovu otevřený ze zprávy obsahuje jen text bez tohoto seznamu.
+
+- Slovník místního přepisu: v Nastavení, Místní přepis, Pokročilé možnosti pole „Slovník“ přijímá jména, zkratky a pojmy (jeden na řádek), které má Whisper očekávat, aby je zapsal správně. Seznam zůstává v tomto počítači, nikdy se nezapisuje do protokolu a nikdy nejde na internet; whisper.cpp používá pojmy pouze bez diakritiky. Již uložený přepis se při změně seznamu znovu nespouští.
+
+- Diktování do pole zprávy: Ctrl+Shift+J začne poslouchat mikrofon a stejná klávesa diktování zastaví. Řeč se přepíše v tomto počítači pomocí místního modelu Whisper, který už máte nastavený, text se vloží na pozici kurzoru ve zprávě (případně nahradí výběr) a přečte se nahlas. Zpráva se sama nikdy neodešle, zvuk se nikam neukládá ani neodesílá, a pokud není připraven žádný model, WinZapp řekne proč, místo aby ho stahoval. Během nahrávání hlasové zprávy nebo hovoru je diktování srozumitelnou větou odmítnuto. Klávesu lze změnit v Nastavení &gt; Klávesové zkratky.
+
+- Živé titulky při hovorech: během hovoru „Živé titulky“ (Ctrl+Shift+X nebo tlačítko v okně hovoru) otevřou okno, aniž by vzaly fokus ovládacím prvkům hovoru, které vypisuje v celých větách, co říká druhá osoba, přepsané v tomto počítači místním modelem Whisper; opakovaným stisknutím příkazu do okna přejdete. „Kopírovat“ a „Uložit...“ jednají jen při stisknutí, nic se neukládá samo a „Číst titulky nahlas“ je ve výchozím stavu vypnuté. Živé titulky jsou odmítnuty, dokud model používá přepis zprávy nebo diktování, a samy se vypnou, pokud začne trpět zvuk hovoru.
+
+OPRAVY
+
+- Spuštění WinZapp: na pomalém disku se WinZapp mohl při spuštění zastavit s chybou „Database call timed out after 20s“, když ukládal seznam kontaktů, a při dalším pokusu se normálně otevřel. Uložení velkého počtu kontaktů nyní čeká stejně dlouho jako ostatní hromadná ukládání a kontakt, který se při spuštění nepodaří uložit, už WinZapp neznemožní otevřít.</description>
+      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6021alpha/WinZapp-macOS-x86_64.zip" length="383465228" type="application/octet-stream" sparkle:edSignature="Kbfs+gelpoMsH3Iyi5aZ+Lbhm0jTzToBhC24Ac3uQqOcFo//+OuyQu5PAAhVWQyGLMnEcauVF48ccmMytw0NDA=="></enclosure>
+    </item>
+    <item>
       <title>WinZapp 3.1.0.6016alpha</title>
       <pubDate>Fri, 27 Nov 2026 23:20:27 +0000</pubDate>
       <sparkle:version>3.1.0.60161</sparkle:version>
       <sparkle:shortVersionString>3.1.0.6016alpha</sparkle:shortVersionString>
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description xml:lang="en" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-This release brings fixes on top of 3.0.0.0.
-
-FIXES
-
-- Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
-      <description xml:lang="pt-BR" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Esta versão traz correções sobre a 3.0.0.0.
-
-CORREÇÕES
-
-- Abertura do WinZapp: em um disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto salvava a lista de contatos, e abrir normalmente na tentativa seguinte. Salvar muitos contatos agora espera tanto quanto os outros salvamentos em lote, e um contato que não puder ser salvo na inicialização não impede mais o WinZapp de abrir.</description>
-      <description xml:lang="pt-PT" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Esta versão traz correções sobre a 3.0.0.0.
-
-CORREÇÕES
-
-- Abertura do WinZapp: num disco lento, o WinZapp podia parar ao iniciar com "Database call timed out after 20s" enquanto guardava a lista de contactos, e abrir normalmente na tentativa seguinte. Guardar muitos contactos passa a esperar tanto quanto as outras gravações em lote, e um contacto que não possa ser guardado no arranque já não impede o WinZapp de abrir.</description>
-      <description xml:lang="es" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Esta versión trae correcciones sobre la 3.0.0.0.
-
-CORRECCIONES
-
-- Apertura de WinZapp: en un disco lento, WinZapp podía detenerse al iniciar con "Database call timed out after 20s" mientras guardaba la lista de contactos, y abrirse con normalidad al intentarlo de nuevo. Guardar muchos contactos ahora espera tanto como los demás guardados en lote, y un contacto que no se pueda guardar al iniciar ya no impide que WinZapp se abra.</description>
-      <description xml:lang="pl" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-To wydanie przynosi poprawki do wersji 3.0.0.0.
-
-POPRAWKI
-
-- Uruchamianie WinZapp: na wolnym dysku WinZapp mógł zatrzymać się przy starcie z komunikatem „Database call timed out after 20s” podczas zapisywania listy kontaktów, a przy kolejnej próbie otwierał się normalnie. Zapis dużej liczby kontaktów czeka teraz tak długo jak inne zapisy zbiorcze, a kontakt, którego nie da się zapisać przy starcie, nie uniemożliwia już otwarcia WinZapp.</description>
-      <description xml:lang="tr" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Bu sürüm 3.0.0.0 üzerine düzeltmeler getirir.
-
-DÜZELTMELER
-
-- WinZapp'ı açma: yavaş bir diskte WinZapp, kişi listesini kaydederken başlangıçta "Database call timed out after 20s" hatasıyla durabiliyor, bir sonraki denemede normal açılıyordu. Çok sayıda kişiyi kaydetmek artık diğer toplu kayıtlar kadar bekliyor ve başlangıçta kaydedilemeyen bir kişi WinZapp'ın açılmasını artık engellemiyor.</description>
-      <description xml:lang="ro" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Această versiune aduce corectări față de 3.0.0.0.
-
-CORECTĂRI
-
-- Deschiderea WinZapp: pe un disc lent, WinZapp se putea opri la pornire cu „Database call timed out after 20s” în timp ce salva lista de contacte, și se deschidea normal la următoarea încercare. Salvarea unui număr mare de contacte așteaptă acum la fel de mult ca celelalte salvări în bloc, iar un contact care nu poate fi salvat la pornire nu mai împiedică deschiderea WinZapp.</description>
-      <description xml:lang="ar" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-يأتي هذا الإصدار من WinZapp بإصلاحات فوق الإصدار 3.0.0.0.
-
-FIXES
-
-- فتح WinZapp: على قرص بطيء، كان WinZapp قد يتوقف عند بدء التشغيل مع الرسالة "Database call timed out after 20s" أثناء حفظ قائمة جهات الاتصال، ثم يفتح بشكل طبيعي في المحاولة التالية. أصبح حفظ عدد كبير من جهات الاتصال ينتظر مثل عمليات الحفظ المجمّعة الأخرى، ولم تعد جهة اتصال يتعذر حفظها عند بدء التشغيل تمنع WinZapp من الفتح.</description>
-      <description xml:lang="it" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-This release brings fixes on top of 3.0.0.0.
-
-FIXES
-
-- Opening WinZapp: on a slow disk, WinZapp could stop at startup with "Database call timed out after 20s" while it saved the address book, and open normally on the next try. Saving a large number of contacts now waits as long as the other bulk saves, and a contact that cannot be saved at startup no longer stops WinZapp from opening.</description>
-      <description xml:lang="cs" sparkle:format="plain-text">- Startup: a slow disk no longer stops WinZapp while the cleaned contacts are saved (#955)
-
-Toto vydání přináší opravy oproti verzi 3.0.0.0.
-
-OPRAVY
-
-- Spuštění WinZapp: na pomalém disku se WinZapp mohl při spuštění zastavit s chybou „Database call timed out after 20s“, když ukládal seznam kontaktů, a při dalším pokusu se normálně otevřel. Uložení velkého počtu kontaktů nyní čeká stejně dlouho jako ostatní hromadná ukládání a kontakt, který se při spuštění nepodaří uložit, už WinZapp neznemožní otevřít.</description>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6016alpha/WinZapp-macOS-x86_64.zip" length="382334207" type="application/octet-stream" sparkle:edSignature="8cZSotBScgVgyNUSBFvJ1P4G+ZTgid5QoMaMGny/AqUe21DN0IgDgRpzwcb8p9Bozs+cUgxHc/v2f2Aypm2pAw=="></enclosure>
     </item>
     <item>
@@ -109,15 +658,6 @@ OPRAVY
       <sparkle:channel>alpha</sparkle:channel>
       <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
       <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.1.0.6013alpha/WinZapp-macOS-x86_64.zip" length="382267127" type="application/octet-stream" sparkle:edSignature="J9h22ExYWnHL7Q9Svk8pRuyfLuYCIcOtjsVlCsVuXvNTBu3TiREFi72/c5rp3ob+VeIS6bEeC7EBZb/XGJ2IDA=="></enclosure>
-    </item>
-    <item>
-      <title>WinZapp 3.0.0.6009alpha</title>
-      <pubDate>Fri, 27 Nov 2026 02:15:58 +0000</pubDate>
-      <sparkle:version>3.0.0.60091</sparkle:version>
-      <sparkle:shortVersionString>3.0.0.6009alpha</sparkle:shortVersionString>
-      <sparkle:channel>alpha</sparkle:channel>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/rocco-labs/WinZapp_Python/releases/download/v3.0.0.6009alpha/WinZapp-macOS-x86_64.zip" length="382803062" type="application/octet-stream" sparkle:edSignature="HDOLEaJ2KTsrpVsPZeQeWJpHbQcsf27oBlOs6zoB4dpvEbw7Zo3FVtBeu/IG7KLvDoxnyF+AJurW6BoGnaaLDA=="></enclosure>
     </item>
     <item>
       <title>WinZapp 3.0.0.0</title>
@@ -1235,6 +1775,6 @@ OPRAVY
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: PdHzKujQBgoIfWBcAzRn8hbJIRddaEv+A4lxfB3XwsPCuyZ6fqOJmdRBO+yq5/zcmh3SorblqDECbbutQid9Bw==
-length: 285425
+edSignature: 4zBxAFysE42JFhZbgVjDFSWIBIFVhG+aV4B8p3zXBtM2qQYpacNq4EtyGQfnjjnmmABHhy+7ORuMDBUqBNqFBw==
+length: 421337
 -->
